@@ -1,0 +1,663 @@
+<?php
+require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
+?>
+<?php
+/**
+ * ============================================================
+ * /about/index.php — About God's Country Tree Service
+ * God's Country Tree Service LLC — DeLand, FL
+ * Phase 5 — story, values, milestones, credentials, CTA
+ * ============================================================
+ */
+
+$currentPage = 'about';
+
+// V2.2 CTR meta (trade noun + city + differentiator + CTA)
+$pageTitle       = "About God's Country Tree Service | DeLand, FL Tree Service";
+$pageDescription = "Meet God's Country Tree Service — a licensed & insured DeLand, FL tree service and bobcat crew serving Volusia County since 2014. Free estimates. Call today.";
+$canonicalUrl    = $siteUrl . '/about/';
+
+// ---- Images (content/image-manifest.md allocation) ----
+$imgBase = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/';
+
+$heroImage        = $imgBase . '1784062729745-ekffah-31162327_2042462179307717_7701525571804594176_n.webp'; // land clearing panorama
+$heroImagePreload = $heroImage;
+$ogImage          = $heroImage;
+
+$storyImage = [
+    'src' => $imgBase . '1784062746583-ngan68-51461668_2236294529924480_5804998056910782464_n.webp',
+    'alt' => "God's Country Tree Service crew member in company shirt and cap on a DeLand, FL job site",
+];
+$storyImage2 = [
+    'src' => $imgBase . '1784062762583-gyhtdt-489069018_1475682530496918_5987390642167918859_n.webp',
+    'alt' => 'Grapple loader lifting a fallen tree section during cleanup in DeLand, FL',
+];
+$valuesImage = [
+    'src' => $imgBase . '1784062768583-3pwb0r-650559399_1767273341337834_4780224751141932631_n.webp',
+    'alt' => "God's Country climber roped high in a live oak canopy over a DeLand, FL yard",
+];
+
+// ---- Core values ----
+$values = [
+    ['icon' => 'shield-check', 'title' => 'Accountable & Insured', 'text' => "We're licensed and insured, and we'll show you the paperwork before a saw starts. When the job's done, we're still here in DeLand to answer for it."],
+    ['icon' => 'trees',        'title' => 'Certified Arborist Judgment', 'text' => "If pruning or crown reduction can save a tree, we say so. Removal is the answer when it's the honest answer — never just the bigger invoice."],
+    ['icon' => 'truck',        'title' => 'One Crew, Whole Job', 'text' => 'Tree work and bobcat work under one roof — climbing, rigging, grapple loading, chipping, hauling, and stump grinding without a second contractor.'],
+    ['icon' => 'map-pin',      'title' => 'Local, Not Storm-Chasing', 'text' => "Our trucks are on Volusia County streets year-round, not just the week after a hurricane. We live where we work — and it shows in how we leave a yard."],
+];
+
+// ---- Milestones (grounded: founded 2014, 12 years) ----
+$milestones = [
+    ['year' => '2014', 'title' => 'God\'s Country is founded in DeLand', 'text' => 'The company opens its doors in DeLand with a simple promise in its name — keeping God\'s Country beautiful, one tree at a time, for Volusia County homeowners.'],
+    ['year' => '2016', 'title' => 'Bobcat & land services added', 'text' => 'Skid-steer and grapple equipment join the fleet, letting one crew handle land clearing, debris, and grading alongside the climbing and cutting.'],
+    ['year' => '2017', 'title' => 'Hurricane Irma proving ground', 'text' => 'When Irma tore across Central Florida, the crew ran round-the-clock storm cleanup across the DeLand area — the work that built our 24/7 reputation.'],
+    ['year' => '2020', 'title' => 'Commercial & HOA work expands', 'text' => 'Office parks, communities, and property managers across Volusia County put God\'s Country on standing maintenance schedules for their tree canopies.'],
+    ['year' => 'Today', 'title' => '12+ years, same local crew', 'text' => 'More than a decade in, the same DeLand-based team still climbs, rigs, and cleans up the county\'s oaks, pines, and palms — through every storm season in between.'],
+];
+
+// ---- Credentials (grounded: licensed/insured, BBB, certified arborist) ----
+$credentials = [
+    ['icon' => 'badge-check', 'title' => 'Licensed & Insured', 'text' => 'Full liability and workers\' compensation coverage — proof available on request.'],
+    ['icon' => 'trees',       'title' => 'Certified Arborist Expertise', 'text' => 'Tree health, risk, and pruning decisions guided by certified arborist knowledge.'],
+    ['icon' => 'award',       'title' => 'BBB Business Profile', 'text' => 'An established, reviewable business profile you can verify before you hire.'],
+    ['icon' => 'clock',       'title' => '24/7 Storm Response', 'text' => 'Around-the-clock emergency availability through Central Florida\'s hurricane season.'],
+];
+
+// ---- Stats band ----
+$aboutStats = [
+    ['counter' => 12, 'suffix' => '+',     'label' => 'Years Serving DeLand'],
+    ['counter' => 12, 'suffix' => '',      'label' => 'Specialized Tree Services'],
+    ['counter' => 50, 'suffix' => '-Mile', 'label' => 'Service Radius'],
+    ['counter' => 24, 'suffix' => '/7',    'label' => 'Storm Response'],
+];
+
+// ---- Schema: AboutPage + BreadcrumbList (references homepage org) ----
+$aboutPageSchema = [
+    '@context' => 'https://schema.org',
+    '@type'    => 'AboutPage',
+    '@id'      => $canonicalUrl . '#webpage',
+    'url'      => $canonicalUrl,
+    'name'     => $pageTitle,
+    'about'    => ['@id' => $siteUrl . '/#organization'],
+    'primaryImageOfPage' => $heroImage,
+];
+
+$pageSchema = '<script type="application/ld+json">' . json_encode($aboutPageSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>'
+    . generateBreadcrumbSchema([
+        ['name' => 'Home', 'url' => '/'],
+        ['name' => 'About'],
+    ]);
+
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
+?>
+
+<style>
+/* ============================================================
+   About — page-specific styles
+   Techniques: C1.4 layered hero, C5.4 drop cap, C6 asymmetric
+   split, bento value grid, C6.3 stats band, vertical timeline,
+   credentials grid, C3 diagonal + torn dividers, C9.2 glow CTA,
+   C5.1 numbered watermarks. Tokens only — no hardcoded values.
+   ============================================================ */
+
+/* ---- C1.4 Layered hero ---- */
+.about-hero {
+  position: relative;
+  min-height: 56vh;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.about-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(
+    160deg,
+    color-mix(in srgb, var(--color-dark) 90%, transparent) 0%,
+    color-mix(in srgb, var(--color-primary-dark) 74%, transparent) 55%,
+    color-mix(in srgb, var(--color-primary) 52%, transparent) 100%
+  );
+}
+.about-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  opacity: 0.05;
+  pointer-events: none;
+}
+.about-hero .container {
+  position: relative;
+  z-index: 2;
+  padding-top: calc(var(--nav-height) + var(--space-12));
+  padding-bottom: var(--space-12);
+}
+.about-hero .hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: color-mix(in srgb, var(--color-accent) 14%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-accent) 38%, transparent);
+  border-radius: var(--radius-full);
+  padding: var(--space-1) var(--space-4);
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: var(--color-accent);
+  margin-bottom: var(--space-5);
+}
+.about-hero h1 {
+  color: var(--color-white);
+  font-size: clamp(2.2rem, 4.4vw, 3.6rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+  max-width: 20ch;
+  margin-bottom: var(--space-5);
+}
+.about-hero h1 .text-accent { color: var(--color-accent); }
+.about-hero .hero-answer {
+  color: color-mix(in srgb, var(--color-white) 92%, transparent);
+  font-size: var(--font-size-lg);
+  max-width: 62ch;
+  margin: 0;
+}
+
+/* ---- Numbered section watermarks (C5.1) ---- */
+.numbered-section { position: relative; }
+.numbered-section::before {
+  content: attr(data-num);
+  position: absolute;
+  top: var(--space-4);
+  right: clamp(1rem, 4vw, 3rem);
+  font-family: var(--font-heading);
+  font-size: clamp(5rem, 12vw, 9rem);
+  font-weight: 800;
+  line-height: 1;
+  color: color-mix(in srgb, var(--color-primary) 6%, transparent);
+  pointer-events: none;
+  z-index: 0;
+}
+.numbered-section--dark::before { color: color-mix(in srgb, var(--color-white) 7%, transparent); }
+.numbered-section > .container { position: relative; z-index: 1; }
+
+/* ---- Section title block ---- */
+.section-title { text-align: center; margin-bottom: var(--space-12); }
+.section-title h2 {
+  margin-bottom: var(--space-4);
+  max-width: 28ch;
+  margin-left: auto;
+  margin-right: auto;
+  text-wrap: balance;
+}
+.section-title .answer-block {
+  max-width: 68ch;
+  margin: 0 auto var(--space-3);
+  font-size: var(--font-size-lg);
+  color: var(--color-text);
+}
+.section-subtitle {
+  display: block;
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-weight: 600;
+  color: var(--color-accent);
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-3);
+}
+
+/* ---- Story: asymmetric split + drop cap + framed photo ---- */
+.story-section { background: var(--color-white); }
+.story-split {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: var(--space-12);
+  align-items: center;
+}
+.story-copy .eyebrow-label { margin-bottom: var(--space-3); }
+.story-copy h2 { text-wrap: balance; margin-bottom: var(--space-5); }
+.story-copy .drop-cap::first-letter {
+  float: left;
+  font-family: var(--font-heading);
+  font-size: 4.2rem;
+  font-weight: 800;
+  line-height: 0.85;
+  padding: var(--space-1) var(--space-3) 0 0;
+  color: var(--color-primary);
+}
+.story-copy p { color: var(--color-text); margin-bottom: var(--space-4); line-height: 1.75; }
+.story-copy p:last-child { margin-bottom: 0; }
+.story-image {
+  position: relative;
+}
+.story-image img {
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.story-image::before {
+  content: '';
+  position: absolute;
+  inset: var(--space-5) calc(-1 * var(--space-5)) calc(-1 * var(--space-5)) var(--space-5);
+  border: 2px solid var(--color-accent);
+  border-radius: var(--radius-lg);
+  z-index: 0;
+  pointer-events: none;
+}
+.story-badge {
+  position: absolute;
+  left: calc(-1 * var(--space-5));
+  bottom: var(--space-8);
+  z-index: 2;
+  background: var(--color-accent);
+  color: var(--color-dark);
+  padding: var(--space-5) var(--space-6);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+}
+.story-badge .big { font-family: var(--font-heading); font-size: var(--font-size-4xl); font-weight: 800; line-height: 1; }
+.story-badge .small { font-size: var(--font-size-xs); text-transform: uppercase; letter-spacing: 1px; margin-top: var(--space-1); }
+
+/* ---- Values bento grid ---- */
+.values-section { background: var(--color-cream); }
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+}
+.value-card {
+  position: relative;
+  display: flex;
+  gap: var(--space-5);
+  padding: var(--space-8);
+  border-radius: var(--radius-lg);
+  background: var(--color-white);
+  box-shadow: var(--shadow-sm);
+  border-left: 4px solid var(--color-primary);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+.value-card:nth-child(even) { border-left-color: var(--color-accent); }
+.value-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.value-icon {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  background: var(--color-card-tint-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+}
+.value-card:nth-child(even) .value-icon { background: var(--color-card-tint-3); color: var(--color-accent); }
+.value-icon svg, .value-icon i { width: 26px; height: 26px; }
+.value-card h3 { font-size: var(--font-size-lg); margin-bottom: var(--space-2); text-wrap: balance; }
+.value-card p { color: var(--color-gray); font-size: var(--font-size-sm); margin: 0; line-height: 1.65; }
+
+/* ---- Stats band (C6.3 with internal dividers, over photo) ---- */
+.about-stats {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding: clamp(4rem, 10vh, 7rem) 0;
+}
+.about-stats::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(150deg, color-mix(in srgb, var(--color-dark) 92%, transparent), color-mix(in srgb, var(--color-primary-dark) 80%, transparent));
+}
+.about-stats .container { position: relative; z-index: 1; }
+.about-stats .stat-item {
+  border-left: 1px solid color-mix(in srgb, var(--color-white) 18%, transparent);
+  padding-left: var(--space-6);
+  text-align: left;
+}
+.about-stats .stat-item:first-child { border-left: 0; padding-left: 0; }
+.about-stats .stat-number {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-6xl);
+  font-weight: 800;
+  color: var(--color-white);
+  line-height: 1;
+}
+.about-stats .stat-number .stat-accent { color: var(--color-accent); }
+.about-stats .stat-label {
+  font-size: var(--font-size-sm);
+  color: color-mix(in srgb, var(--color-white) 78%, transparent);
+  margin-top: var(--space-2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+@media (max-width: 768px) {
+  .about-stats .stat-item, .about-stats .stat-item:first-child {
+    border-left: 0; padding-left: 0; text-align: center;
+  }
+}
+
+/* ---- Timeline (vertical milestones) ---- */
+.timeline-section { background: var(--color-white); }
+.timeline {
+  max-width: 820px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: var(--space-8);
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: var(--space-2);
+  bottom: var(--space-2);
+  width: 2px;
+  background: linear-gradient(to bottom, var(--color-primary), color-mix(in srgb, var(--color-accent) 70%, var(--color-primary)));
+}
+.timeline-item {
+  position: relative;
+  padding-bottom: var(--space-10);
+}
+.timeline-item:last-child { padding-bottom: 0; }
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: calc(-1 * var(--space-8) + 1px);
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: var(--radius-full);
+  background: var(--color-white);
+  border: 3px solid var(--color-primary);
+  box-shadow: 0 0 0 5px color-mix(in srgb, var(--color-primary) 10%, transparent);
+}
+.timeline-item:nth-child(even)::before { border-color: var(--color-accent); box-shadow: 0 0 0 5px color-mix(in srgb, var(--color-accent) 12%, transparent); }
+.timeline-year {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: var(--font-size-sm);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-1);
+}
+.timeline-item h3 { font-size: var(--font-size-lg); margin-bottom: var(--space-2); text-wrap: balance; }
+.timeline-item p { color: var(--color-gray); font-size: var(--font-size-sm); margin: 0; max-width: 60ch; line-height: 1.7; }
+
+/* ---- Credentials strip ---- */
+.creds-section { background: var(--color-cream); }
+.creds-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-5);
+}
+.cred-card {
+  text-align: center;
+  padding: var(--space-8) var(--space-5);
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border-top: 3px solid var(--color-primary);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+.cred-card:nth-child(even) { border-top-color: var(--color-accent); }
+.cred-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.cred-icon {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto var(--space-4);
+  border-radius: var(--radius-full);
+  background: var(--color-card-tint-1);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cred-card:nth-child(even) .cred-icon { background: var(--color-card-tint-3); color: var(--color-accent); }
+.cred-icon svg, .cred-icon i { width: 24px; height: 24px; }
+.cred-card h3 { font-size: var(--font-size-base); margin-bottom: var(--space-2); }
+.cred-card p { color: var(--color-gray); font-size: var(--font-size-sm); margin: 0; line-height: 1.6; }
+.creds-verify {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  margin-top: var(--space-10);
+}
+.creds-verify .btn { text-transform: none; }
+
+/* ---- C9.2 Closing CTA with radial glow ---- */
+.closing-cta {
+  position: relative;
+  background: var(--color-dark);
+  padding: clamp(4rem, 10vh, 7rem) 0;
+  text-align: center;
+  overflow: hidden;
+}
+.closing-cta::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 160%;
+  background: radial-gradient(ellipse at center, color-mix(in srgb, var(--color-primary) 45%, transparent) 0%, transparent 65%);
+  pointer-events: none;
+}
+.closing-cta .container { position: relative; z-index: 1; }
+.closing-cta h2 { color: var(--color-white); max-width: 26ch; margin: 0 auto var(--space-4); text-wrap: balance; }
+.closing-cta p { color: color-mix(in srgb, var(--color-white) 82%, transparent); max-width: 60ch; margin: 0 auto var(--space-8); }
+.closing-cta .hero-actions { display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap; }
+
+/* ---- SVG dividers ---- */
+.svg-divider {
+  display: block;
+  overflow: hidden;
+  line-height: 0;
+  height: clamp(32px, 5vw, 64px);
+  position: relative;
+  z-index: 2;
+}
+.svg-divider svg { display: block; width: 100%; height: 100%; }
+.svg-divider--flush { margin-bottom: -1px; }
+
+/* Reveal stagger delays */
+html.js-anim [data-animate].reveal-delay-1 { transition-delay: 0.08s; }
+html.js-anim [data-animate].reveal-delay-2 { transition-delay: 0.16s; }
+html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
+
+/* ---- Responsive ---- */
+@media (max-width: 1024px) {
+  .story-split { grid-template-columns: 1fr; gap: var(--space-12); }
+  .story-image { max-width: 460px; margin: 0 auto; }
+  .creds-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .about-hero { min-height: auto; }
+  .about-hero h1 { font-size: clamp(1.9rem, 7vw, 2.6rem); }
+  .numbered-section::before { font-size: clamp(3.5rem, 16vw, 6rem); }
+  .values-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .creds-grid { grid-template-columns: 1fr; }
+  .story-badge { left: 50%; transform: translateX(-50%); bottom: calc(-1 * var(--space-6)); }
+  .story-image::before { display: none; }
+  .about-hero .hero-answer { font-size: var(--font-size-base); }
+}
+</style>
+
+<!-- ============ HERO ============ -->
+<section class="about-hero" style="background-image:url('<?php echo e($heroImage); ?>');" aria-label="About God's Country Tree Service in DeLand, Florida">
+  <div class="container">
+    <span class="hero-eyebrow">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+      About Us &middot; DeLand, FL
+    </span>
+    <h1>The Local Crew Behind <span class="text-accent">God's Country</span></h1>
+    <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service and bobcat crew based in DeLand, Florida, keeping Volusia County's oaks, pines, and palms healthy and safe since <?php echo e($yearEstablished); ?>. Same local team, year-round — not storm-chasers passing through.</p>
+  </div>
+</section>
+
+<!-- Breadcrumb -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="/">Home</a></li>
+      <li class="breadcrumb-sep" aria-hidden="true">&rsaquo;</li>
+      <li aria-current="page">About</li>
+    </ol>
+  </div>
+</nav>
+
+<!-- ============ STORY — 01 ============ -->
+<section class="numbered-section story-section" data-num="01" aria-label="Our story">
+  <div class="container">
+    <div class="story-split">
+      <div class="story-copy">
+        <span class="eyebrow-label">Our Story</span>
+        <h2>Built in DeLand, Not Trucked In After a Storm</h2>
+        <p class="drop-cap" data-animate><?php echo e($siteName); ?> started in <?php echo e($yearEstablished); ?> with a name that doubles as a promise &mdash; <em>Keeping God's Country Beautiful</em>. For more than a decade, the same DeLand-based crew has climbed, rigged, and cleaned up the trees that make Central Florida what it is: the sprawling live oaks, the tall slash pines, the palms that line every DeLand street.</p>
+        <p data-animate>Tree work here isn't tidy. Volusia County's biggest trees usually stand closer to a house than they are tall, in sandy soil that loosens its grip a little more with every hurricane season. That's why homeowners call a real tree service instead of renting a chainsaw &mdash; and why we run our own climbers, boom lift, chipper, and grapple loader rather than subbing the hard parts out.</p>
+        <p data-animate>Adding bobcat and land services early on meant one crew could finish a whole job: cut, rigged, hauled, ground, and graded, without a second contractor showing up a week later. Through Hurricane Irma and every storm since, that all-in-one approach is what let us answer the phone at 2 a.m. and still show up for scheduled trims the next morning.</p>
+      </div>
+      <div class="story-image" data-animate="right">
+        <img src="<?php echo e($storyImage['src']); ?>" alt="<?php echo e($storyImage['alt']); ?>" width="600" height="750" loading="lazy">
+        <div class="story-badge">
+          <div class="big"><?php echo e($yearsInBusiness); ?>+</div>
+          <div class="small">Years in DeLand</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Divider: diagonal (white → cream) -->
+<div class="svg-divider svg-divider--flush" aria-hidden="true">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none"><polygon fill="var(--color-cream)" points="0,60 1200,10 1200,60"/></svg>
+</div>
+
+<!-- ============ VALUES — 02 ============ -->
+<section class="numbered-section values-section" data-num="02" aria-label="What we stand for">
+  <div class="container">
+    <div class="section-title" data-animate>
+      <span class="eyebrow-label">What We Stand For</span>
+      <h2>How God's Country Approaches Every DeLand Tree Job</h2>
+      <p class="answer-block"><?php echo e($siteName); ?> runs on four principles that show up on every job in DeLand &mdash; accountability you can verify, honest arborist judgment, one crew for the whole job, and a local presence that doesn't disappear after storm season.</p>
+      <span class="section-subtitle"><?php echo e($tagline); ?></span>
+    </div>
+
+    <div class="values-grid">
+      <?php foreach ($values as $i => $value): ?>
+      <article class="value-card reveal-delay-<?php echo ($i % 3) + 1; ?>" data-animate>
+        <div class="value-icon"><i data-lucide="<?php echo e($value['icon']); ?>"></i></div>
+        <div>
+          <h3><?php echo e($value['title']); ?></h3>
+          <p><?php echo e($value['text']); ?></p>
+        </div>
+      </article>
+      <?php endforeach; ?>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS BAND ============ -->
+<section class="about-stats" style="background-image:url('<?php echo e($storyImage2['src']); ?>');" aria-label="God's Country by the numbers">
+  <div class="container">
+    <div class="section-title" data-animate style="margin-bottom: var(--space-10);">
+      <span class="eyebrow-label" style="color: var(--color-accent);">By the Numbers</span>
+      <h2 style="color: var(--color-white);">A Decade-Plus of DeLand Tree Work</h2>
+    </div>
+    <div class="stats-grid" data-p1-dynamic>
+      <?php foreach ($aboutStats as $stat): ?>
+      <div class="stat-item">
+        <div class="stat-number"><span data-counter="<?php echo e($stat['counter']); ?>" data-suffix="<?php echo e($stat['suffix']); ?>">0</span></div>
+        <div class="stat-label"><?php echo e($stat['label']); ?></div>
+      </div>
+      <?php endforeach; ?>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TIMELINE — 03 ============ -->
+<section class="numbered-section timeline-section" data-num="03" aria-label="Company milestones">
+  <div class="container">
+    <div class="section-title" data-animate>
+      <span class="eyebrow-label">The Road Here</span>
+      <h2>Twelve Years of Growing With DeLand</h2>
+      <p class="answer-block">From a single DeLand crew in <?php echo e($yearEstablished); ?> to a full tree-and-bobcat operation, God's Country Tree Service has grown one storm season and one satisfied neighbor at a time.</p>
+    </div>
+
+    <ol class="timeline" data-p1-dynamic>
+      <?php foreach ($milestones as $m): ?>
+      <li class="timeline-item" data-animate="left">
+        <span class="timeline-year"><?php echo e($m['year']); ?></span>
+        <h3><?php echo e($m['title']); ?></h3>
+        <p><?php echo e($m['text']); ?></p>
+      </li>
+      <?php endforeach; ?>
+    </ol>
+  </div>
+</section>
+
+<!-- Divider: torn (white → cream) -->
+<div class="svg-divider svg-divider--flush" aria-hidden="true">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,60 L0,38 L70,42 L140,33 L220,44 L300,30 L390,46 L470,36 L570,44 L670,28 L770,41 L870,33 L960,44 L1060,31 L1150,41 L1200,36 L1200,60 Z" fill="var(--color-cream)"/></svg>
+</div>
+
+<!-- ============ CREDENTIALS — 04 ============ -->
+<section class="numbered-section creds-section" data-num="04" aria-label="Credentials and certifications">
+  <div class="container">
+    <div class="section-title" data-animate>
+      <span class="eyebrow-label">Credentials</span>
+      <h2>Why DeLand Homeowners Can Hire With Confidence</h2>
+      <p class="answer-block"><?php echo e($siteName); ?> backs its work with the credentials storm-chasers can't show you &mdash; full licensing and insurance, certified arborist expertise, an established BBB business profile, and genuine 24/7 storm availability across Volusia County.</p>
+    </div>
+
+    <div class="creds-grid">
+      <?php foreach ($credentials as $i => $cred): ?>
+      <article class="cred-card reveal-delay-<?php echo ($i % 3) + 1; ?>" data-animate>
+        <div class="cred-icon"><i data-lucide="<?php echo e($cred['icon']); ?>"></i></div>
+        <h3><?php echo e($cred['title']); ?></h3>
+        <p><?php echo e($cred['text']); ?></p>
+      </article>
+      <?php endforeach; ?>
+    </div>
+
+    <div class="creds-verify" data-animate>
+      <a class="btn btn-secondary" href="<?php echo e($integrations['bbb_url']); ?>" target="_blank" rel="noopener">
+        <i data-lucide="badge-check"></i> View Our BBB Profile
+      </a>
+      <a class="btn btn-secondary" href="<?php echo e($integrations['gbp_url']); ?>" target="_blank" rel="noopener">
+        <i data-lucide="star"></i> Read Google Reviews
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLOSING CTA ============ -->
+<section class="closing-cta" aria-label="Get a free estimate">
+  <div class="container">
+    <span class="eyebrow-label" style="color: var(--color-accent);">Free &middot; Local &middot; No Obligation</span>
+    <h2>Put a DeLand Crew You Can Verify on Your Trees</h2>
+    <p>Whether it's a leaning oak, an overgrown canopy, or a whole lot that needs clearing, <?php echo e($siteName); ?> will walk the property, give you an honest read, and put a straight price in writing &mdash; usually within 24 hours.</p>
+    <div class="hero-actions">
+      <a href="/contact/" class="btn btn-accent btn-lg">Get a Free Estimate</a>
+      <a href="/services/" class="btn btn-outline-white btn-lg">Explore Our Services</a>
+    </div>
+  </div>
+</section>
+
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

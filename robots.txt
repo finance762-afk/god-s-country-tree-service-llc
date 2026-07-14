@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+Disallow: /includes/
+Disallow: /thank-you
+Disallow: /thank-you.php
+
+# AI crawlers welcome (AEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://god-s-country-tree-service-llc.pageone.cloud/sitemap.xml
