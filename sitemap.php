@@ -26,6 +26,14 @@ foreach ($services as $svc) {
     $urls[] = ['/services/' . $svc['slug'] . '/', 'monthly', '0.8'];
 }
 
+// Service area overview + individual community pages
+$urls[] = ['/service-area/', 'monthly', '0.7'];
+foreach ($serviceAreas as $area) {
+    if (!empty($area['hasPage'])) {
+        $urls[] = ['/service-area/' . $area['slug'] . '/', 'monthly', '0.6'];
+    }
+}
+
 // Core content pages
 $urls[] = ['/about/',   'monthly', '0.6'];
 $urls[] = ['/contact/', 'monthly', '0.7'];
