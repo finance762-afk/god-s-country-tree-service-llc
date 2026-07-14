@@ -42,10 +42,15 @@ DirectoryIndex index.php index.html
 # Clean URLs
 <IfModule mod_rewrite.c>
     RewriteEngine On
+
+    # Dynamic sitemap — /sitemap.xml is served by sitemap.php (Phase 5)
+    RewriteRule ^sitemap\.xml$ /sitemap.php [L]
+
+    # NOTE: no "!-d" condition — it breaks subdirectory/index.php pages
+    # on Hostinger (see CLAUDE.md .htaccess rules).
     RewriteCond %{REQUEST_URI} !^/assets/
     RewriteCond %{REQUEST_URI} !^/includes/
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^([^\.]+)$ $1.php [NC,L]
     RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
     RewriteRule ^ /%1 [NC,L,R=301]

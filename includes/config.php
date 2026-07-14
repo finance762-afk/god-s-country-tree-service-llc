@@ -147,13 +147,26 @@ $socialLinks = [];
 $googleAnalyticsId = 'G-XXXXXXXXXX'; // placeholder — replace post-launch
 
 // ---- Brand Colors ------------------------------------------
-// From build-plan.json design block (extracted_from_logo: false —
-// pending Phase 0/2 logo analysis refinement).
+// Phase 2 logo analysis (Logo_Updated.png, 1723x913, ~1.9:1
+// combination mark): monochrome royal blue #0f30b0 on white.
+// Primary = exact logo fill; accent = warm amber for CTA contrast.
 $colors = [
-    'primary'   => '#1a2b3c',
-    'secondary' => '#4d5e6f',
-    'accent'    => '#06b6d4',
+    'primary'      => '#0f30b0',
+    'primary-dark' => '#0a2178',
+    'secondary'    => '#16265e',
+    'accent'       => '#f59e0b',
 ];
+
+// ---- Logo Analysis (Phase 2) -------------------------------
+$logoAnalysis = [
+    'aspect_ratio' => 1.89,          // combination mark (1.5:1–3:1)
+    'nav_height'   => '56px',        // 50–60px band for combination marks
+    'fill_color'   => '#0f30b0',     // sampled flat fill at full res
+    'background'   => 'checkerboard baked in — use TEXT logo in nav, image only on light surfaces',
+];
+
+// ---- Cache Busting -----------------------------------------
+$cssVersion = '2'; // increment on every framework.css change
 
 // ---- Business Facts ----------------------------------------
 $yearsInBusiness = 12;
