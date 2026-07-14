@@ -46,7 +46,6 @@ $ogImage = $ogImage ?? $logoUrl;
 <!-- Primary SEO -->
 <title><?php echo e($pageTitle); ?></title>
 <meta name="description" content="<?php echo e($pageDescription); ?>">
-<meta name="keywords" content="<?php echo e(implode(', ', $secondaryKeywords)); ?>">
 <?php if (!empty($noindex)): ?>
 <meta name="robots" content="noindex,nofollow">
 <?php endif; ?>
@@ -60,12 +59,6 @@ $ogImage = $ogImage ?? $logoUrl;
 <meta property="og:image" content="<?php echo e($ogImage); ?>">
 <meta property="og:site_name" content="<?php echo e($siteName); ?>">
 <meta property="og:locale" content="en_US">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="<?php echo e($pageTitle); ?>">
-<meta name="twitter:description" content="<?php echo e($pageDescription); ?>">
-<meta name="twitter:image" content="<?php echo e($ogImage); ?>">
 
 <!-- Fonts: Bricolage Grotesque (headings) + Figtree (body) — variable -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
