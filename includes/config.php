@@ -246,11 +246,11 @@ $logoAnalysis = [
     'aspect_ratio' => 1.89,          // combination mark (1.5:1–3:1)
     'nav_height'   => '56px',        // 50–60px band for combination marks
     'fill_color'   => '#0f30b0',     // sampled flat fill at full res
-    'background'   => 'checkerboard baked in — use TEXT logo in nav, image only on light surfaces',
+    'background'   => 'transparent PNG (/assets/images/logo.png) — light bg knocked out; use full image logo on white/light surfaces',
 ];
 
 // ---- Cache Busting -----------------------------------------
-$cssVersion = '3'; // increment on every framework.css change
+$cssVersion = '4'; // increment on every framework.css change
 
 // ---- Business Facts ----------------------------------------
 $yearsInBusiness = 12;

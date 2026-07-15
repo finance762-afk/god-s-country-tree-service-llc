@@ -14,8 +14,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 $currentPage = 'about';
 
 // V2.2 CTR meta (trade noun + city + differentiator + CTA)
-$pageTitle       = "About God's Country Tree Service | DeLand, FL Tree Service";
-$pageDescription = "Meet God's Country Tree Service — a licensed & insured DeLand, FL tree service and bobcat crew serving Volusia County since 2014. Free estimates. Call today.";
+$pageTitle       = "About God's Country Tree Service | Owner-Operated, DeLand FL";
+$pageDescription = "Meet Caleb, owner of God's Country Tree Service — a trained arborist with 21+ years of hands-on tree care, now serving Central & North Central Florida. Free estimates.";
 $canonicalUrl    = $siteUrl . '/about/';
 
 // ---- Images (content/image-manifest.md allocation) ----
@@ -38,34 +38,34 @@ $valuesImage = [
     'alt' => "God's Country climber roped high in a live oak canopy over a DeLand, FL yard",
 ];
 
-// ---- Core values ----
+// ---- Core values (grounded in owner's story: honesty, arborist training, tree+bobcat, clean job sites) ----
 $values = [
-    ['icon' => 'shield-check', 'title' => 'Accountable & Insured', 'text' => "We're licensed and insured, and we'll show you the paperwork before a saw starts. When the job's done, we're still here in DeLand to answer for it."],
-    ['icon' => 'trees',        'title' => 'Certified Arborist Judgment', 'text' => "If pruning or crown reduction can save a tree, we say so. Removal is the answer when it's the honest answer — never just the bigger invoice."],
-    ['icon' => 'truck',        'title' => 'One Crew, Whole Job', 'text' => 'Tree work and bobcat work under one roof — climbing, rigging, grapple loading, chipping, hauling, and stump grinding without a second contractor.'],
-    ['icon' => 'map-pin',      'title' => 'Local, Not Storm-Chasing', 'text' => "Our trucks are on Volusia County streets year-round, not just the week after a hurricane. We live where we work — and it shows in how we leave a yard."],
+    ['icon' => 'handshake',    'title' => 'Honest Recommendations', 'text' => "We don't believe in cutting corners — only trees that truly need it. You get straight recommendations, fair pricing, and clear communication before any work begins."],
+    ['icon' => 'trees',        'title' => 'Trained Arborist Judgment', 'text' => 'Decades of hands-on experience and modern arborist practices guide every pruning, trimming, and removal decision — so we preserve healthy trees whenever we can.'],
+    ['icon' => 'truck',        'title' => 'One Crew, Whole Job', 'text' => 'Tree service and bobcat service under one roof — climbing, rigging, removals, land clearing, and cleanup handled by the same experienced crew, no second contractor.'],
+    ['icon' => 'sparkles',     'title' => 'Cleaner Than We Found It', 'text' => 'Every project is done safely and professionally, and we leave every job site cleaner than we found it — because that is how we would want our own property treated.'],
 ];
 
-// ---- Milestones (grounded: founded 2014, 12 years) ----
+// ---- Owner's journey (grounded in Caleb's story) ----
 $milestones = [
-    ['year' => '2014', 'title' => 'God\'s Country is founded in DeLand', 'text' => 'The company opens its doors in DeLand with a simple promise in its name — keeping God\'s Country beautiful, one tree at a time, for Volusia County homeowners.'],
-    ['year' => '2016', 'title' => 'Bobcat & land services added', 'text' => 'Skid-steer and grapple equipment join the fleet, letting one crew handle land clearing, debris, and grading alongside the climbing and cutting.'],
-    ['year' => '2017', 'title' => 'Hurricane Irma proving ground', 'text' => 'When Irma tore across Central Florida, the crew ran round-the-clock storm cleanup across the DeLand area — the work that built our 24/7 reputation.'],
-    ['year' => '2020', 'title' => 'Commercial & HOA work expands', 'text' => 'Office parks, communities, and property managers across Volusia County put God\'s Country on standing maintenance schedules for their tree canopies.'],
-    ['year' => 'Today', 'title' => '12+ years, same local crew', 'text' => 'More than a decade in, the same DeLand-based team still climbs, rigs, and cleans up the county\'s oaks, pines, and palms — through every storm season in between.'],
+    ['year' => 'The Beginning', 'title' => 'Raised in the timber industry', 'text' => 'Caleb grew up around trees, learning how they grow and what it takes to work safely around them — falling timber, operating equipment, climbing, and running saws.'],
+    ['year' => 'The Craft',     'title' => 'Trained as an arborist', 'text' => 'Those early years led into professional arboriculture, where Caleb learned proper tree pruning, trimming, removal, rigging, climbing, and long-term tree health.'],
+    ['year' => '21+ Years',     'title' => 'Owned a tree service in the Pacific Northwest', 'text' => 'For more than 21 years, Caleb owned and operated a successful Pacific Northwest tree service, helping thousands of homeowners and businesses maintain and protect their trees.'],
+    ['year' => 'A New Chapter', 'title' => 'Faith and family brought us to Florida', 'text' => "Through what Caleb believes was God's timing, the family moved to Florida and he was given the opportunity to purchase God's Country Tree Service."],
+    ['year' => 'Today',         'title' => 'Serving Central & North Central Florida', 'text' => "God's Country already had a strong reputation for honesty and dependable service. Today the goal is simple — continue that reputation for even more Florida families and businesses."],
 ];
 
-// ---- Credentials (grounded: licensed/insured, BBB, certified arborist) ----
+// ---- Credentials (grounded: licensed/insured, arborist training, BBB, storm response) ----
 $credentials = [
     ['icon' => 'badge-check', 'title' => 'Licensed & Insured', 'text' => 'Full liability and workers\' compensation coverage — proof available on request.'],
-    ['icon' => 'trees',       'title' => 'Certified Arborist Expertise', 'text' => 'Tree health, risk, and pruning decisions guided by certified arborist knowledge.'],
+    ['icon' => 'trees',       'title' => 'Trained Arborist Expertise', 'text' => 'Tree health, risk, and pruning decisions guided by decades of hands-on arborist experience.'],
     ['icon' => 'award',       'title' => 'BBB Business Profile', 'text' => 'An established, reviewable business profile you can verify before you hire.'],
     ['icon' => 'clock',       'title' => '24/7 Storm Response', 'text' => 'Around-the-clock emergency availability through Central Florida\'s hurricane season.'],
 ];
 
 // ---- Stats band ----
 $aboutStats = [
-    ['counter' => 12, 'suffix' => '+',     'label' => 'Years Serving DeLand'],
+    ['counter' => 21, 'suffix' => '+',     'label' => 'Years of Tree Experience'],
     ['counter' => 12, 'suffix' => '',      'label' => 'Specialized Tree Services'],
     ['counter' => 50, 'suffix' => '-Mile', 'label' => 'Service Radius'],
     ['counter' => 24, 'suffix' => '/7',    'label' => 'Storm Response'],
@@ -270,6 +270,34 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 }
 .story-badge .big { font-family: var(--font-heading); font-size: var(--font-size-4xl); font-weight: 800; line-height: 1; }
 .story-badge .small { font-size: var(--font-size-xs); text-transform: uppercase; letter-spacing: 1px; margin-top: var(--space-1); }
+
+/* ---- Owner's letter continuation (constrained reading column) ---- */
+.story-letter {
+  max-width: 72ch;
+  margin: var(--space-12) auto 0;
+}
+.story-letter p { color: var(--color-text); margin-bottom: var(--space-4); line-height: 1.8; }
+.story-pullquote {
+  position: relative;
+  margin: var(--space-8) 0;
+  padding: var(--space-6) var(--space-8);
+  border-left: 4px solid var(--color-accent);
+  border-radius: var(--radius-md);
+  background: var(--color-card-tint-3);
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-weight: 700;
+  font-size: var(--font-size-xl);
+  line-height: 1.5;
+  color: var(--color-primary);
+  text-wrap: balance;
+}
+.story-signoff {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin: 0;
+}
 
 /* ---- Values bento grid ---- */
 .values-section { background: var(--color-cream); }
@@ -506,8 +534,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
       About Us &middot; DeLand, FL
     </span>
-    <h1>The Local Crew Behind <span class="text-accent">God's Country</span></h1>
-    <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service and bobcat crew based in DeLand, Florida, keeping Volusia County's oaks, pines, and palms healthy and safe since <?php echo e($yearEstablished); ?>. Same local team, year-round — not storm-chasers passing through.</p>
+    <h1>Meet the Owner Behind <span class="text-accent">God's Country</span></h1>
+    <p class="hero-answer"><?php echo e($siteName); ?> is owner-operated by Caleb, a trained arborist with more than 21 years of hands-on tree care. Raised in the timber industry and now rooted in Florida, he keeps Central and North Central Florida's oaks, pines, and palms healthy, safe, and cared for the right way.</p>
   </div>
 </section>
 
@@ -523,23 +551,33 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 </nav>
 
 <!-- ============ STORY — 01 ============ -->
-<section class="numbered-section story-section" data-num="01" aria-label="Our story">
+<section class="numbered-section story-section" data-num="01" aria-label="About God's Country Tree Service">
   <div class="container">
     <div class="story-split">
       <div class="story-copy">
-        <span class="eyebrow-label">Our Story</span>
-        <h2>Built in DeLand, Not Trucked In After a Storm</h2>
-        <p class="drop-cap" data-animate><?php echo e($siteName); ?> started in <?php echo e($yearEstablished); ?> with a name that doubles as a promise &mdash; <em>Keeping God's Country Beautiful</em>. For more than a decade, the same DeLand-based crew has climbed, rigged, and cleaned up the trees that make Central Florida what it is: the sprawling live oaks, the tall slash pines, the palms that line every DeLand street.</p>
-        <p data-animate>Tree work here isn't tidy. Volusia County's biggest trees usually stand closer to a house than they are tall, in sandy soil that loosens its grip a little more with every hurricane season. That's why homeowners call a real tree service instead of renting a chainsaw &mdash; and why we run our own climbers, boom lift, chipper, and grapple loader rather than subbing the hard parts out.</p>
-        <p data-animate>Adding bobcat and land services early on meant one crew could finish a whole job: cut, rigged, hauled, ground, and graded, without a second contractor showing up a week later. Through Hurricane Irma and every storm since, that all-in-one approach is what let us answer the phone at 2 a.m. and still show up for scheduled trims the next morning.</p>
+        <span class="eyebrow-label">Meet the Owner</span>
+        <h2>About God's Country Tree Service</h2>
+        <p class="drop-cap" data-animate>My name is Caleb, and trees have been a part of my life for as long as I can remember. Growing up in the timber industry gave me the opportunity to learn how trees grow, how forests stay healthy, and what it takes to safely work around them.</p>
+        <p data-animate>I spent my younger years falling timber, operating equipment, climbing trees, running saws, and learning firsthand how to care for one of God's greatest creations. Those experiences eventually led me into professional arboriculture, where I trained as an arborist and learned the proper techniques for tree pruning, trimming, removal, rigging, climbing, and preserving the long-term health of trees.</p>
+        <p data-animate>For more than 21 years, I owned and operated a successful tree service in the Pacific Northwest. During that time, I helped thousands of homeowners and businesses safely maintain their trees, remove hazardous trees, improve the health of mature landscapes, and protect their properties. Every job reinforced something I have always believed &mdash; doing the work the right way is more important than doing it the fastest.</p>
       </div>
       <div class="story-image" data-animate="right">
         <img src="<?php echo e($storyImage['src']); ?>" alt="<?php echo e($storyImage['alt']); ?>" width="600" height="750" loading="lazy">
         <div class="story-badge">
-          <div class="big"><?php echo e($yearsInBusiness); ?>+</div>
-          <div class="small">Years in DeLand</div>
+          <div class="big">21+</div>
+          <div class="small">Years of Tree Work</div>
         </div>
       </div>
+    </div>
+
+    <div class="story-letter" data-animate>
+      <p>Faith and family eventually brought us to the great state of Florida, and through what I truly believe was God's timing, I was given the opportunity to purchase God's Country Tree Service. The company already had a strong reputation throughout North Central Florida for honesty, dependable service, and treating customers like neighbors. I knew those were values worth continuing.</p>
+      <p>Today, my goal is simple: continue building on that reputation while serving even more homeowners, businesses, farms, and property owners throughout Central and North Central Florida. Whether we're removing a dangerous tree after a storm, carefully pruning valuable shade trees, clearing a lot for a new project, or helping improve the health and appearance of your property, I want every customer to feel confident they made the right choice.</p>
+      <p>As a husband, father, homeowner, and business owner myself, I know how important it is to hire someone you can trust. When someone works on your property, you deserve honest recommendations, fair pricing, clear communication, and work that's done safely and professionally. That's exactly how we approach every project, no matter the size.</p>
+      <p>At God's Country Tree Service, we combine decades of hands-on experience with professional-grade equipment, modern arborist practices, and old-fashioned customer service. We don't believe in cutting corners &mdash; only trees that truly need it. Our mission is to provide safe, reliable tree services that protect your property, preserve healthy trees whenever possible, and leave every job site cleaner than we found it.</p>
+      <p>We're grateful for every customer who puts their trust in us, and we look forward to serving families and businesses across Florida for many years to come.</p>
+      <blockquote class="story-pullquote">From our family to yours, thank you for considering God's Country Tree Service. We look forward to earning your trust.</blockquote>
+      <p class="story-signoff">&mdash; Caleb, Owner &middot; God's Country Tree Service</p>
     </div>
   </div>
 </section>
@@ -554,8 +592,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="section-title" data-animate>
       <span class="eyebrow-label">What We Stand For</span>
-      <h2>How God's Country Approaches Every DeLand Tree Job</h2>
-      <p class="answer-block"><?php echo e($siteName); ?> runs on four principles that show up on every job in DeLand &mdash; accountability you can verify, honest arborist judgment, one crew for the whole job, and a local presence that doesn't disappear after storm season.</p>
+      <h2>How God's Country Approaches Every Florida Tree Job</h2>
+      <p class="answer-block"><?php echo e($siteName); ?> runs on four principles that show up on every project &mdash; honest recommendations and fair pricing, trained arborist judgment, one crew for the whole job, and a job site left cleaner than we found it.</p>
       <span class="section-subtitle"><?php echo e($tagline); ?></span>
     </div>
 
@@ -578,7 +616,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="section-title" data-animate style="margin-bottom: var(--space-10);">
       <span class="eyebrow-label" style="color: var(--color-accent);">By the Numbers</span>
-      <h2 style="color: var(--color-white);">A Decade-Plus of DeLand Tree Work</h2>
+      <h2 style="color: var(--color-white);">Experience You Can Stand Behind</h2>
     </div>
     <div class="stats-grid" data-p1-dynamic>
       <?php foreach ($aboutStats as $stat): ?>
@@ -596,8 +634,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="section-title" data-animate>
       <span class="eyebrow-label">The Road Here</span>
-      <h2>Twelve Years of Growing With DeLand</h2>
-      <p class="answer-block">From a single DeLand crew in <?php echo e($yearEstablished); ?> to a full tree-and-bobcat operation, God's Country Tree Service has grown one storm season and one satisfied neighbor at a time.</p>
+      <h2>From the Timber Woods to God's Country</h2>
+      <p class="answer-block">From the timber industry to more than 21 years running his own Pacific Northwest tree service, owner Caleb's path led to purchasing God's Country Tree Service and continuing its trusted reputation across Central and North Central Florida.</p>
     </div>
 
     <ol class="timeline" data-p1-dynamic>
@@ -622,8 +660,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Credentials</span>
-      <h2>Why DeLand Homeowners Can Hire With Confidence</h2>
-      <p class="answer-block"><?php echo e($siteName); ?> backs its work with the credentials storm-chasers can't show you &mdash; full licensing and insurance, certified arborist expertise, an established BBB business profile, and genuine 24/7 storm availability across Volusia County.</p>
+      <h2>Why Florida Homeowners Can Hire With Confidence</h2>
+      <p class="answer-block"><?php echo e($siteName); ?> backs its work with credentials you can verify &mdash; full licensing and insurance, decades of trained arborist expertise, an established BBB business profile, and genuine 24/7 storm availability across Central and North Central Florida.</p>
     </div>
 
     <div class="creds-grid">
@@ -651,7 +689,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 <section class="closing-cta" aria-label="Get a free estimate">
   <div class="container">
     <span class="eyebrow-label" style="color: var(--color-accent);">Free &middot; Local &middot; No Obligation</span>
-    <h2>Put a DeLand Crew You Can Verify on Your Trees</h2>
+    <h2>Put an Owner-Operated Crew You Can Trust on Your Trees</h2>
     <p>Whether it's a leaning oak, an overgrown canopy, or a whole lot that needs clearing, <?php echo e($siteName); ?> will walk the property, give you an honest read, and put a straight price in writing &mdash; usually within 24 hours.</p>
     <div class="hero-actions">
       <a href="/contact/" class="btn btn-accent btn-lg">Get a Free Estimate</a>
