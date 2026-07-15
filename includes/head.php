@@ -21,7 +21,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 
 $currentPage = $currentPage ?? 'home';
-$logoUrl     = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/logo/1784062391252-qz7ix9-Logo_Updated.png';
+$logoUrl     = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/gallery/1784115422582-Updated_Gods_Country_Logo.png';
 
 // V2.1 trade-noun default title + V2.2 CTR-engineered default description
 $pageTitle = $pageTitle

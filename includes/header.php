@@ -14,7 +14,7 @@
     <div class="navbar-inner container">
 
       <a href="/" class="navbar-logo" aria-label="<?php echo e($siteName); ?> — Home">
-        <img src="/assets/images/logo.png" class="navbar-logo-img" width="700" height="371" alt="<?php echo e($siteName); ?> — tree service and bobcat service in North Central Florida" fetchpriority="high">
+        <img src="/assets/images/logo.png" class="navbar-logo-img" width="700" height="370" alt="<?php echo e($siteName); ?> — tree service in Central-East Florida" fetchpriority="high">
       </a>
 
       <ul class="navbar-links">
