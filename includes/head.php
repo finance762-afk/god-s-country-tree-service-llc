@@ -78,7 +78,9 @@ $ogImage = $ogImage ?? $logoUrl;
 <link rel="preload" as="image" href="<?php echo e($heroImagePreload); ?>" fetchpriority="high">
 <?php endif; ?>
 
-<!-- Google Analytics — replace G-XXXXXXXXXX with the client measurement ID post-launch
+<!-- Google Analytics — to be activated post-launch with client's GA4 property ID
+<script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo e($googleAnalyticsId); ?>"></script>
+<parameter name="new_string"><!-- Google Analytics — to be activated post-launch with client's GA4 property ID
 <script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo e($googleAnalyticsId); ?>"></script>
 <script>
   window.dataLayer = window.dataLayer || [];

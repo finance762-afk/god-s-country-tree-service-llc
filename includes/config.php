@@ -228,7 +228,7 @@ $serviceAreas = [
 $socialLinks = [];
 
 // ---- Analytics ---------------------------------------------
-$googleAnalyticsId = 'G-XXXXXXXXXX'; // placeholder — replace post-launch
+$googleAnalyticsId = 'G-PENDING'; // to be configured post-launch with client's GA4 property
 
 // ---- Brand Colors ------------------------------------------
 // Phase 2 logo analysis (Logo_Updated.png, 1723x913, ~1.9:1
