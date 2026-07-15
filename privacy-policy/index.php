@@ -64,7 +64,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 <!-- ============ HERO ============ -->
 <section class="hero hero--legal" aria-label="Privacy Policy">
   <div class="container">
-    <span class="hero-eyebrow-badge"><i data-lucide="shield"></i> Legal</span>
+    <span class="hero-eyebrow-badge"><?php echo icon('shield'); ?> Legal</span>
     <h1>Privacy Policy</h1>
     <span class="section-subtitle">your data, our commitments</span>
     <p class="legal-updated">Last Updated: <?php echo e($lastUpdated); ?></p>

@@ -1,12 +1,13 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php';
 
 /**
  * ============================================================
  * sitemap.php — Dynamic XML sitemap (served at /sitemap.xml)
  * God's Country Tree Service LLC — DeLand, FL
- * Phase 5 — all indexable pages incl. compliance pages.
+ * Phase 5 — all indexable pages incl. compliance pages + blog.
  * thank-you and 404 are intentionally excluded (noindex).
  * ============================================================
  */
@@ -38,6 +39,12 @@ foreach ($serviceAreas as $area) {
 $urls[] = ['/about/',   'monthly', '0.6'];
 $urls[] = ['/contact/', 'monthly', '0.7'];
 $urls[] = ['/faq/',     'monthly', '0.6'];
+
+// Blog (Premium tier)
+$urls[] = ['/blog/', 'weekly', '0.8'];
+foreach ($blogPosts as $post) {
+    $urls[] = ['/blog/' . $post['slug'] . '/', 'monthly', '0.7'];
+}
 
 // Compliance pages (yearly, low priority)
 $urls[] = ['/privacy-policy/', 'yearly', '0.3'];

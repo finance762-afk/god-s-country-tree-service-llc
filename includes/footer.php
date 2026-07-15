@@ -138,9 +138,7 @@
 </div>
 
 <!-- Scripts: Lucide loads first (synchronous), then site scripts (defer) -->
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 <script>
-  if (window.lucide) { lucide.createIcons(); }
 </script>
 <?php if (!empty($useSwiper)): ?>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>

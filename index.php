@@ -800,7 +800,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
           <img src="<?php echo e($card['img']); ?>" alt="<?php echo e($card['alt']); ?>" width="600" height="360" loading="lazy">
         </div>
         <div class="service-card__body">
-          <div class="service-card__icon"><i data-lucide="<?php echo e($card['icon']); ?>"></i></div>
+          <div class="service-card__icon"><?php echo icon($card['icon']); ?></div>
           <h3><?php echo e($card['name']); ?></h3>
           <p class="service-card__desc"><?php echo e($card['desc']); ?></p>
           <ul>
@@ -916,10 +916,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <div class="review-badge-strip" data-animate>
       <a class="review-badge" href="<?php echo e($integrations['gbp_url']); ?>" target="_blank" rel="noopener">
-        <i data-lucide="star"></i> Review Us on Google
+        <?php echo icon('star'); ?> Review Us on Google
       </a>
       <a class="review-badge" href="<?php echo e($integrations['bbb_url']); ?>" target="_blank" rel="noopener">
-        <i data-lucide="badge-check"></i> BBB Business Profile
+        <?php echo icon('badge-check'); ?> BBB Business Profile
       </a>
     </div>
   </div>
@@ -942,7 +942,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="faq-grid" data-p1-dynamic>
       <?php foreach ($faqs as $faq): ?>
       <div class="faq-item" data-animate>
-        <div class="faq-icon"><i data-lucide="help-circle"></i></div>
+        <div class="faq-icon"><?php echo icon('help-circle'); ?></div>
         <div>
           <h3><?php echo e($faq['q']); ?></h3>
           <p><?php echo e($faq['a']); ?></p>

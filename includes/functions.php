@@ -161,3 +161,33 @@ function generateMetaTags($title, $description, $canonical) {
     $html .= '<link rel="canonical" href="' . e($canonical) . "\">\n";
     return $html;
 }
+
+/**
+ * Inline SVG icon from lucide-icons reference directory.
+ * Replaces runtime data-lucide injection per performance-2026.md Part C.
+ * Usage: <?php echo icon('check'); ?> or <?php echo icon($iconVar); ?>
+ */
+function icon($name, $class = '') {
+    static $cache = [];
+
+    if (isset($cache[$name])) {
+        $svg = $cache[$name];
+    } else {
+        $iconPath = $_SERVER['DOCUMENT_ROOT'] . '/../crm/references/lucide-icons/' . $name . '.svg';
+        if (!file_exists($iconPath)) {
+            return '<!-- icon not found: ' . e($name) . ' -->';
+        }
+        $svg = file_get_contents($iconPath);
+        // Strip the license comment and normalize whitespace
+        $svg = preg_replace('/<!--.*?-->\s*/s', '', $svg);
+        $svg = trim($svg);
+        $cache[$name] = $svg;
+    }
+
+    // If a custom class is provided, inject it into the SVG tag
+    if ($class) {
+        $svg = str_replace('<svg', '<svg class="' . e($class) . '"', $svg);
+    }
+
+    return $svg;
+}

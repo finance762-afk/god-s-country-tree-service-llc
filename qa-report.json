@@ -9,13 +9,13 @@
   "expected_slug": "god-s-country-tree-service-llc",
   "passed": false,
   "grade": "F",
-  "score_pct": 94,
+  "score_pct": 95,
   "summary": {
     "total": 190,
-    "passed": 173,
-    "failed": 12,
+    "passed": 174,
+    "failed": 11,
     "warn": 5,
-    "blockers_failed": 6,
+    "blockers_failed": 5,
     "warnings_failed": 8
   },
   "techniques_detected": [
@@ -1825,7 +1825,7 @@
     {
       "status": "pass",
       "check": "Content H2 question ratio",
-      "detail": "152/180 content H2s are questions (84%; 9 CTA/label H2s exempt)",
+      "detail": "151/180 content H2s are questions (84%; 9 CTA/label H2s exempt)",
       "file": "",
       "severity": "blocker",
       "expected": null,
@@ -2100,7 +2100,7 @@
     {
       "status": "fail",
       "check": "keyword-map.json integrity",
-      "detail": "tree service deland fl: heading not found in index.php; tree removal deland fl: heading not found in services/tree-removal/index.php; tree trimming deland fl: heading not found in services/tree-trimming-services/index.php; tree pruning deland fl: heading not found in services/tree-pruning-services/index.php; crown reduction deland: heading not found in services/crown-reduction-shaping/index.php (+5 more)",
+      "detail": "tree service deland fl: heading not found in index.php; tree removal: heading not found in services/tree-removal/index.php; tree removal deland fl: heading not found in services/tree-removal/index.php; tree trimming services: heading not found in services/tree-trimming-services/index.php; tree trimming deland fl: heading not found in services/tree-trimming-services/index.php (+18 more)",
       "file": "",
       "severity": "blocker",
       "expected": null,
@@ -2109,14 +2109,14 @@
       "section": "Pipeline v2 (GSC-driven)"
     },
     {
-      "status": "fail",
+      "status": "pass",
       "check": "Keyword coverage vs build plan",
-      "detail": "Unmapped plan keywords: residential tree services, commercial & hoa tree services, tree maintenance & care, certified arborist services, crown reduction deland fl, dead tree removal deland fl",
+      "detail": "All 63 planned keywords mapped",
       "file": "",
       "severity": "blocker",
       "expected": null,
       "actual": null,
-      "fix_hint": "Every keyword in build-plan.json pipeline_v2.keyword_page_map must appear in keyword-map.json",
+      "fix_hint": "",
       "section": "Pipeline v2 (GSC-driven)"
     },
     {
@@ -2245,23 +2245,12 @@
     {
       "status": "fail",
       "check": "keyword-map.json integrity",
-      "detail": "tree service deland fl: heading not found in index.php; tree removal deland fl: heading not found in services/tree-removal/index.php; tree trimming deland fl: heading not found in services/tree-trimming-services/index.php; tree pruning deland fl: heading not found in services/tree-pruning-services/index.php; crown reduction deland: heading not found in services/crown-reduction-shaping/index.php (+5 more)",
+      "detail": "tree service deland fl: heading not found in index.php; tree removal: heading not found in services/tree-removal/index.php; tree removal deland fl: heading not found in services/tree-removal/index.php; tree trimming services: heading not found in services/tree-trimming-services/index.php; tree trimming deland fl: heading not found in services/tree-trimming-services/index.php (+18 more)",
       "file": "",
       "severity": "blocker",
       "expected": null,
       "actual": null,
       "fix_hint": "Every map entry needs an existing page and (if set) a heading string present in that page",
-      "section": "Pipeline v2 (GSC-driven)"
-    },
-    {
-      "status": "fail",
-      "check": "Keyword coverage vs build plan",
-      "detail": "Unmapped plan keywords: residential tree services, commercial & hoa tree services, tree maintenance & care, certified arborist services, crown reduction deland fl, dead tree removal deland fl",
-      "file": "",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "Every keyword in build-plan.json pipeline_v2.keyword_page_map must appear in keyword-map.json",
       "section": "Pipeline v2 (GSC-driven)"
     },
     {

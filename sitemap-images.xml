@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage Hero -->
+  <url>
+    <loc>https://god-s-country-tree-service-llc.pageone.cloud/</loc>
+    <image:image>
+      <image:loc>https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/1784062762583-gyhtdt-489069018_1475682530496918_5987390642167918859_n.webp</image:loc>
+      <image:caption>Fallen tree removal with grapple loader in DeLand, FL</image:caption>
+      <image:title>God's Country Tree Service crew handling storm damage</image:title>
+    </image:image>
+  </url>
+
+  <!-- Tree Removal Service -->
+  <url>
+    <loc>https://god-s-country-tree-service-llc.pageone.cloud/services/tree-removal/</loc>
+    <image:image>
+      <image:loc>https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/1784062730640-gzvyp4-31206267_2042462085974393_6334697554642468864_n.webp</image:loc>
+      <image:caption>Pines marked with red X before tree removal in DeLand, FL</image:caption>
+      <image:title>Tree removal preparation in DeLand</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/1784062753583-2wp304-76756943_2456228011264463_6144757071268020224_n.webp</image:loc>
+      <image:caption>Grapple loader carrying massive oak log section in DeLand, FL</image:caption>
+      <image:title>Heavy equipment tree removal in DeLand</image:title>
+    </image:image>
+  </url>
+
+  <!-- Tree Trimming Service -->
+  <url>
+    <loc>https://god-s-country-tree-service-llc.pageone.cloud/services/tree-trimming-services/</loc>
+    <image:image>
+      <image:loc>https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/1784062768583-3pwb0r-650559399_1767273341337834_4780224751141932631_n.webp</image:loc>
+      <image:caption>Climber trimming limbs inside live oak canopy in DeLand, FL</image:caption>
+      <image:title>Professional tree trimming in DeLand</image:title>
+    </image:image>
+  </url>
+
+  <!-- Tree Pruning Service -->
+  <url>
+    <loc>https://god-s-country-tree-service-llc.pageone.cloud/services/tree-pruning-services/</loc>
+    <image:image>
+      <image:loc>https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/1784062767583-96o2mm-650224392_1767273321337836_3694986581662424202_n.webp</image:loc>
+      <image:caption>Roped arborist pruning branches inside oak canopy in DeLand, FL</image:caption>
+      <image:title>Certified arborist tree pruning in DeLand</image:title>
+    </image:image>
+  </url>
+
+  <!-- Crown Reduction Service -->
+  <url>
+    <loc>https://god-s-country-tree-service-llc.pageone.cloud/services/crown-reduction-shaping/</loc>
+    <image:image>
+      <image:loc>https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/1784062745583-ri3d15-51248376_2242050436015556_1895589103194341376_n.webp</image:loc>
+      <image:caption>Cleanly reduced and shaped mature oak crown in DeLand, FL</image:caption>
+      <image:title>Crown reduction and shaping in DeLand</image:title>
+    </image:image>
+  </url>
+
+  <!-- Emergency Tree Service -->
+  <url>
+    <loc>https://god-s-country-tree-service-llc.pageone.cloud/services/emergency-tree-service-storm-cleanup/</loc>
+    <image:image>
+      <image:loc>https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/1784062761586-95i7hi-487384453_1464923548239483_3259835514318021231_n.webp</image:loc>
+      <image:caption>Climber topping storm-damaged tree during emergency service in DeLand, FL</image:caption>
+      <image:title>24-hour emergency tree service in DeLand</image:title>
+    </image:image>
+  </url>
+
+  <!-- Tree Planting Service -->
+  <url>
+    <loc>https://god-s-country-tree-service-llc.pageone.cloud/services/tree-planting-shrub-installation/</loc>
+    <image:image>
+      <image:loc>https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/1784062733583-jhvosk-35788256_2078205079066760_5169623066409435136_n.webp</image:loc>
+      <image:caption>Freshly planted and mulched landscape beds with palms and shrubs in DeLand, FL</image:caption>
+      <image:title>Professional tree and shrub planting in DeLand</image:title>
+    </image:image>
+  </url>
+
+  <!-- Blog Post: Hurricane Preparation -->
+  <url>
+    <loc>https://god-s-country-tree-service-llc.pageone.cloud/blog/hurricane-prep-tree-trimming-deland/</loc>
+    <image:image>
+      <image:loc>https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/1784062740583-2dtirn-42754196_2163954730491794_5374692911386460160_n.webp</image:loc>
+      <image:caption>Hurricane tree preparation work in DeLand, Florida</image:caption>
+      <image:title>Hurricane season tree preparation in DeLand</image:title>
+    </image:image>
+  </url>
+
+</urlset>

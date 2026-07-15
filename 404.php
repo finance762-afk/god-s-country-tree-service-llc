@@ -14,7 +14,7 @@ $currentPage = '404';
 $noindex     = true;
 
 $pageTitle       = "Page Not Found (404) | God's Country Tree Service";
-$pageDescription = "That page couldn't be found. Explore God's Country Tree Service — tree removal, trimming, and 24/7 storm cleanup in DeLand, FL.";
+$pageDescription = "That page couldn't be found. God's Country Tree Service in DeLand, FL — licensed & insured, 12+ years local experience, 24/7 storm cleanup. Call for a free estimate.";
 $canonicalUrl    = $siteUrl . '/404';
 
 // ---- Popular destinations ----
@@ -145,7 +145,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="popular-grid">
       <?php foreach ($popularLinks as $link): ?>
       <a class="popular-card" href="<?php echo e($link['url']); ?>">
-        <span class="pc-ico"><i data-lucide="<?php echo e($link['icon']); ?>"></i></span>
+        <span class="pc-ico"><?php echo icon($link['icon']); ?></span>
         <span>
           <strong><?php echo e($link['label']); ?></strong>
           <span><?php echo e($link['desc']); ?></span>

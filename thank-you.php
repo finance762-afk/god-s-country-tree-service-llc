@@ -15,7 +15,7 @@ $currentPage = 'thank-you';
 $noindex     = true;
 
 $pageTitle       = "Thank You | God's Country Tree Service, DeLand FL";
-$pageDescription = "Thanks for reaching out to God's Country Tree Service. We've received your request and will respond within 24 hours.";
+$pageDescription = "Thanks for reaching out! God's Country Tree Service in DeLand, FL — licensed & insured, 12+ years experience. We'll respond within 24 hours with your free estimate.";
 $canonicalUrl    = $siteUrl . '/thank-you';
 
 // ---- What happens next ----
@@ -148,7 +148,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 <!-- ============ CONFIRMATION HERO ============ -->
 <section class="ty-hero" aria-label="Request received">
   <div class="container">
-    <div class="ty-check"><i data-lucide="check"></i></div>
+    <div class="ty-check"><?php echo icon('check'); ?></div>
     <h1>Thanks &mdash; <span class="accent">We've Got It</span></h1>
     <p>Your request is in front of the <?php echo e($siteName); ?> crew here in DeLand. Sit tight &mdash; we'll be in touch within 24 hours with next steps.</p>
     <div class="ty-actions">
@@ -169,7 +169,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <div class="ty-steps">
       <?php foreach ($nextSteps as $step): ?>
       <article class="ty-step">
-        <div class="ts-ico"><i data-lucide="<?php echo e($step['icon']); ?>"></i></div>
+        <div class="ts-ico"><?php echo icon($step['icon']); ?></div>
         <h3><?php echo e($step['title']); ?></h3>
         <p><?php echo $step['text']; ?></p>
       </article>
@@ -183,11 +183,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   <div class="container">
     <div class="ty-review-card">
       <div class="ty-review-stars" aria-hidden="true">
-        <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+        <?php echo icon('star'); ?><?php echo icon('star'); ?><?php echo icon('star'); ?><?php echo icon('star'); ?><?php echo icon('star'); ?>
       </div>
       <h2>Worked With Us Before?</h2>
       <p>If God's Country Tree Service has taken care of your trees, a quick Google review helps other DeLand neighbors find a crew they can trust.</p>
-      <a href="<?php echo e($integrations['review_request_url']); ?>" class="btn btn-primary btn-lg" target="_blank" rel="noopener"><i data-lucide="star"></i> Leave Us a Google Review</a>
+      <a href="<?php echo e($integrations['review_request_url']); ?>" class="btn btn-primary btn-lg" target="_blank" rel="noopener"><?php echo icon('star'); ?> Leave Us a Google Review</a>
     </div>
   </div>
 </section>
