@@ -56,7 +56,7 @@ $includedCards = [
     ['icon' => 'scissors',     'title' => 'Scheduled trimming & lifting', 'text' => 'Canopy raised over drives, parking, and walkways on a planned cycle — clearance stays legal and predictable instead of overgrown and urgent.'],
     ['icon' => 'shield-alert', 'title' => 'Hazard & dead tree removal',   'text' => 'Declining pines and hollowing oaks flagged at walk-throughs come down in controlled sections before they choose their own timing.'],
     ['icon' => 'zap',          'title' => 'Storm response & cleanup',     'text' => 'When weather hits Volusia County, contract properties get the first calls — downed trees and hangers cleared, drives reopened.'],
-    ['icon' => 'shovel',       'title' => 'Lot clearing & bobcat work',   'text' => 'Tree service and bobcat service from one company: clearing, brush work, and overgrown acreage mowed as part of the same contract.'],
+    ['icon' => 'shovel',       'title' => 'Lot clearing & skid-steer work',   'text' => 'Tree service and land clearing from one company: clearing, brush work, and overgrown acreage mowed as part of the same contract.'],
     ['icon' => 'truck',        'title' => 'Chipping & debris hauling',    'text' => 'Our own chipper, grapple loader, and trucks — brush and logs leave the property the same day, never stacked at the curb for weeks.'],
     ['icon' => 'file-check',   'title' => 'Assessment & documentation',   'text' => 'Every visit ends in writing: what was inspected, what was done, what to watch. Paper your board, manager, or carrier can actually use.'],
 ];
@@ -74,7 +74,7 @@ $comparison = [
 $hoaPoints = [
     ['strong' => 'Board-ready paperwork.',   'text' => 'Written assessments and line-item quotes your board can circulate, question, and vote on — not a price shouted from a truck window.'],
     ['strong' => 'Insurance before the saw.', 'text' => 'Licensed and insured, with documentation available before the crew arrives. Associations should never have to take coverage on faith.'],
-    ['strong' => 'One point of contact.',     'text' => 'A single crew and a single number for the whole property — trimming, removals, storm calls, and bobcat work, without chasing three vendors.'],
+    ['strong' => 'One point of contact.',     'text' => 'A single crew and a single number for the whole property — trimming, removals, storm calls, and skid-steer work, without chasing three vendors.'],
     ['strong' => 'Scheduled around residents.', 'text' => 'Notice goes out before we do. Equipment stages where it will not pin in parking, and bigger communities are phased to keep common areas usable.'],
 ];
 
@@ -101,8 +101,8 @@ $faqs = [
         'a' => 'We do — and contract clients get the first calls after a storm moves through Volusia County. Fallen trees on drives, hangers over walkways, and debris across common areas are cleared with our own grapple loader and chipper, then hauled off. It is the same crew you see at scheduled visits, not subcontractors.',
     ],
     [
-        'q' => 'Do you also handle lot clearing and bobcat work?',
-        'a' => "Tree service and bobcat service come from the same company — it's painted on the trucks. Lot clearing, brush work, mowing overgrown acreage, and debris hauling can fold into the same contract, which is why property owners and developers around DeLand often hire us for the whole site rather than just the trees.",
+        'q' => 'Do you also handle lot clearing and skid-steer work?',
+        'a' => "Tree service and land clearing come from the same company — the same crew that trims your trees clears your lots. Lot clearing, brush work, mowing overgrown acreage, and debris hauling can fold into the same contract, which is why property owners and developers around DeLand often hire us for the whole site rather than just the trees.",
     ],
     [
         'q' => 'Do you cover commercial properties outside DeLand?',
@@ -769,7 +769,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <h1>Commercial &amp; HOA Tree Services in DeLand, FL &mdash; <span class="text-accent">Tree Service That Keeps Properties Covered</span></h1>
 
-    <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving commercial properties and HOA communities across Volusia County since <?php echo e($yearEstablished); ?>. Scheduled maintenance contracts, insurance documented before the first cut, and one crew for trees, cleanup, and bobcat work &mdash; with written assessments within 24 hours.</p>
+    <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving commercial properties and HOA communities across Volusia County since <?php echo e($yearEstablished); ?>. Scheduled maintenance contracts, insurance documented before the first cut, and one crew for trees, cleanup, and land clearing &mdash; with written assessments within 24 hours.</p>
 
     <div class="hero-actions">
       <a href="/#estimate-form" class="btn btn-accent btn-lg">Request a Property Assessment</a>
@@ -819,7 +819,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">One Crew, Whole Property</span>
       <h2>What does commercial tree service include for DeLand properties?</h2>
-      <p class="answer-block">Commercial tree service from God&rsquo;s Country covers scheduled trimming and canopy lifting, hazard and dead tree removal, storm response, lot clearing, and full debris hauling &mdash; one licensed and insured crew running its own bobcat, chipper, and grapple loader. Every visit ends with the site clean and the work documented in writing.</p>
+      <p class="answer-block">Commercial tree service from God&rsquo;s Country covers scheduled trimming and canopy lifting, hazard and dead tree removal, storm response, lot clearing, and full debris hauling &mdash; one licensed and insured crew running its own skid steer, chipper, and grapple loader. Every visit ends with the site clean and the work documented in writing.</p>
     </div>
 
     <div class="com-stats-row" data-p1-dynamic>
@@ -944,7 +944,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       </figure>
       <figure class="reveal-delay-1" data-animate>
         <img src="<?php echo e($bodyPhotos['acreage']['src']); ?>" alt="<?php echo e($bodyPhotos['acreage']['alt']); ?>" width="800" height="800" loading="lazy">
-        <figcaption>Acreage mowed and cleared near DeLand &mdash; bobcat work from the same crew</figcaption>
+        <figcaption>Acreage mowed and cleared near DeLand &mdash; skid-steer work from the same crew</figcaption>
       </figure>
     </div>
 

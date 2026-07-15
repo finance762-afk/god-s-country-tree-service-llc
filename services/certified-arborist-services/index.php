@@ -986,7 +986,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
           </li>
           <li data-animate>
             <i data-lucide="wrench"></i>
-            <p><strong>One local crew carries out the plan.</strong> The same DeLand tree service that diagnoses your tree does the pruning, crown reduction, or removal &mdash; tree and bobcat work included.</p>
+            <p><strong>One local crew carries out the plan.</strong> The same DeLand tree service that diagnoses your tree does the pruning, crown reduction, or removal &mdash; tree work and land clearing included.</p>
           </li>
         </ul>
       </div>

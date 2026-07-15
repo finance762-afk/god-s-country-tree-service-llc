@@ -52,7 +52,7 @@ $scenarios = [
     ['icon' => 'home',           'title' => 'Oak limbs parked over the roof',    'text' => 'Live oak limbs creeping over shingles and gutters are the classic DeLand call. Crown clearance keeps leaves out of the valleys and heavy wood off the house before wind ever tests it.'],
     ['icon' => 'waves',          'title' => 'The pine leaning at the pool',      'text' => 'A slash pine tilting toward a screen enclosure is a math problem, not a mystery. We assess the lean, the root plate in sandy Central Florida soil, and tell you honestly if it stays or goes.'],
     ['icon' => 'cloud-lightning', 'title' => 'Hurricane-season prep',            'text' => 'June through November is when overloaded canopies fail. A pre-season pass takes off deadwood and thins wind-catching growth while it\'s still a routine visit, not an emergency.'],
-    ['icon' => 'sprout',         'title' => 'The overgrown corner of the yard',  'text' => 'Years of untouched growth, a stump nobody dealt with, palms full of dead fronds. One visit with the chipper and bobcat reclaims the corner — brush chipped, debris hauled, grade raked.'],
+    ['icon' => 'sprout',         'title' => 'The overgrown corner of the yard',  'text' => 'Years of untouched growth, a stump nobody dealt with, palms full of dead fronds. One visit with the chipper and skid steer reclaims the corner — brush chipped, debris hauled, grade raked.'],
 ];
 
 // ---- Visit steps (service breakdown) ----
@@ -74,7 +74,7 @@ $costFactors = [
 
 // ---- Comparison: juggling contractors vs one crew ----
 $comparison = [
-    ['them' => 'One company trims, another hauls, a third grinds the stump — three schedules, three invoices', 'us' => 'Tree work and bobcat work from one DeLand crew: one schedule, one written quote'],
+    ['them' => 'One company trims, another hauls, a third grinds the stump — three schedules, three invoices', 'us' => 'Tree work and land clearing from one DeLand crew: one schedule, one written quote'],
     ['them' => 'Each vendor blames the last one for the ruts in the lawn',                                      'us' => 'The crew that cuts is the crew that mats the turf and flags the irrigation'],
     ['them' => 'Nobody owns a plan for the yard as a whole',                                                    'us' => 'One walk-through covers every tree — this visit and what to watch next season'],
     ['them' => 'A mobilization fee baked into every separate trip',                                             'us' => 'Trimming, removal, and stump work bundled into a single visit when it saves you money'],
@@ -85,7 +85,7 @@ $comparison = [
 $faqs = [
     [
         'q' => 'Can one visit cover trimming, a removal, and stump work together?',
-        'a' => "Yes — that's the point of hiring a crew that runs its own climbing gear, chipper, grapple loader, and bobcat. We quote the whole yard as one job, sequence the work so debris moves once, and finish in a single mobilization. Most DeLand homeowners save money bundling compared to booking each task separately.",
+        'a' => "Yes — that's the point of hiring a crew that runs its own climbing gear, chipper, grapple loader, and skid steer. We quote the whole yard as one job, sequence the work so debris moves once, and finish in a single mobilization. Most DeLand homeowners save money bundling compared to booking each task separately.",
     ],
     [
         'q' => 'Do I need to be home while the crew works?',
@@ -813,7 +813,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="hero-trust">
       <span class="hero-trust-item"><i data-lucide="shield-check"></i> Licensed &amp; Insured</span>
       <span class="hero-trust-item"><i data-lucide="award"></i> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
-      <span class="hero-trust-item"><i data-lucide="wrench"></i> Tree + Bobcat, One Crew</span>
+      <span class="hero-trust-item"><i data-lucide="wrench"></i> Tree + Land Clearing, One Crew</span>
       <span class="hero-trust-item"><i data-lucide="clock"></i> Estimates Within 24 Hours</span>
     </div>
   </div>
@@ -825,7 +825,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">One Call Covers It</span>
       <h2>Do you handle residential tree removal as well as trimming?</h2>
-      <p class="answer-block">Yes &mdash; trimming, pruning, and full residential tree removal all come from the same God's Country crew. Because we run our own bobcat, chipper, and grapple equipment, a job that starts as a trim can fold in a takedown and stump work in the same visit, under one written DeLand quote.</p>
+      <p class="answer-block">Yes &mdash; trimming, pruning, and full residential tree removal all come from the same God's Country crew. Because we run our own skid steer, chipper, and grapple equipment, a job that starts as a trim can fold in a takedown and stump work in the same visit, under one written DeLand quote.</p>
     </div>
 
     <p class="res-lede" data-animate>This page is the homeowner's front door to everything we do. Most yards need a mix: <a href="/services/tree-trimming-services/">tree trimming</a> to get live oak limbs off the roofline, structural <a href="/services/tree-pruning-services/">tree pruning</a> to keep young canopies growing strong, and sometimes a full <a href="/services/tree-removal/">tree removal</a> when a pine is past saving. Whatever combination your lot needs, it's one crew, one plan, and one price.</p>
@@ -835,7 +835,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <div class="res-featured-icon"><i data-lucide="house"></i></div>
         <h3>Every yard job, one crew</h3>
         <p>DeLand lots collect tree work the way garages collect projects: the oak that needs shaping, the palm full of brown fronds, the stump from three summers ago. Instead of booking three companies, you book one walk-through.</p>
-        <p>We climb, rig, chip, grind, and haul with our own equipment &mdash; tree service and bobcat service under the same name since <?php echo e($yearEstablished); ?> &mdash; so nothing on the list waits for a subcontractor.</p>
+        <p>We climb, rig, chip, grind, and haul with our own equipment &mdash; tree service and land clearing under the same name since <?php echo e($yearEstablished); ?> &mdash; so nothing on the list waits for a subcontractor.</p>
       </article>
       <?php foreach ($scenarios as $i => $sc): ?>
       <article class="res-scenario-card reveal-delay-<?php echo ($i % 3) + 1; ?>" data-animate>
@@ -981,7 +981,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Do the Yard Math</span>
       <h2>Why hire one DeLand crew instead of juggling separate contractors?</h2>
-      <p class="answer-block">Because a yard split between a trimming company, a hauling guy, and a stump grinder costs more and coordinates worse. God's Country Tree Service runs tree work and bobcat work as one DeLand crew &mdash; one schedule, one written quote, and one company accountable for how the yard looks after.</p>
+      <p class="answer-block">Because a yard split between a trimming company, a hauling guy, and a stump grinder costs more and coordinates worse. God's Country Tree Service runs tree work and land clearing as one DeLand crew &mdash; one schedule, one written quote, and one company accountable for how the yard looks after.</p>
     </div>
 
     <div class="res-compare-grid">

@@ -914,7 +914,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
           </li>
           <li data-animate>
             <i data-lucide="check-circle"></i>
-            <p><strong>One crew, canopy to curb.</strong> Climbing, rigging, chipping, and cleanup from the same tree-and-bobcat company &mdash; no second contractor to schedule, no brush pile left at the street.</p>
+            <p><strong>One crew, canopy to curb.</strong> Climbing, rigging, chipping, and cleanup from the same tree-and-land-clearing company &mdash; no second contractor to schedule, no brush pile left at the street.</p>
           </li>
           <li data-animate>
             <i data-lucide="check-circle"></i>

@@ -599,7 +599,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="svcx-local-grid">
       <div class="svcx-local-copy" data-animate>
         <p>Central Florida is hard on trees. Sandy soil loosens root plates, summer squalls and hurricane season load canopies past their limits, and the live oaks that make DeLand's older neighborhoods worth living in grow heavier every year. A tree service that's local &mdash; not trucked in behind a storm &mdash; sees the same yards year after year and knows which of those oaks can be saved and which are done.</p>
-        <p>That's the crew you get with every one of the twelve services on this page: climbing, rigging, bobcat and grapple work, chipping, hauling, and stump grinding from one company, so the job is finished by the people who quoted it.</p>
+        <p>That's the crew you get with every one of the twelve services on this page: climbing, rigging, skid-steer and grapple work, chipping, hauling, and stump grinding from one company, so the job is finished by the people who quoted it.</p>
         <div class="svcx-area-chips" data-p1-dynamic>
           <?php foreach (['DeLand', 'Deltona', 'Orange City', 'DeBary', 'Lake Helen', 'Volusia County'] as $area): ?>
           <span class="svcx-area-chip"><i data-lucide="map-pin"></i> <?php echo e($area); ?></span>
@@ -612,7 +612,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
           <li><i data-lucide="shield-check"></i> Licensed &amp; insured &mdash; proof on request before work starts</li>
           <li><i data-lucide="award"></i> <?php echo e($yearsInBusiness); ?>+ years based in DeLand, since <?php echo e($yearEstablished); ?></li>
           <li><i data-lucide="zap"></i> 24/7 emergency storm response, every hurricane season</li>
-          <li><i data-lucide="truck"></i> Tree crew and bobcat service from one company</li>
+          <li><i data-lucide="truck"></i> Tree crew and land clearing from one company</li>
           <li><i data-lucide="clock"></i> Free written estimates within 24 hours</li>
         </ul>
       </aside>

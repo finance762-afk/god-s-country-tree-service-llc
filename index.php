@@ -113,7 +113,7 @@ $tickerItems = [
     'Free Estimates in 24 Hours',
     'Certified Arborists',
     'Residential &amp; Commercial',
-    'Tree &amp; Bobcat Service',
+    'Tree &amp; Land Clearing',
     'Serving Volusia County',
     'DeLand, Florida — Since 2014',
     'Debris Removal Included',
@@ -786,7 +786,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <h2>What Tree Services Does God's Country Tree Service Offer in <span class="text-accent">DeLand</span>?</h2>
       <p class="hero-answer"><?php echo e($siteName); ?> provides twelve tree services in DeLand, FL &mdash; tree removal, trimming, pruning, crown reduction, dead and hazardous tree removal, 24-hour emergency storm cleanup, fallen tree cleanup, tree planting, and certified arborist care &mdash; for homeowners, businesses, and HOA communities across Volusia County.</p>
       <span class="section-subtitle"><?php echo e($tagline); ?></span>
-      <p class="prose">One local crew handles the whole job &mdash; climbing, rigging, bobcat work, debris hauling, and stump grinding &mdash; so you never juggle multiple contractors.</p>
+      <p class="prose">One local crew handles the whole job &mdash; climbing, rigging, skid-steer work, debris hauling, and stump grinding &mdash; so you never juggle multiple contractors.</p>
     </div>
 
     <div class="services-grid services-grid--home" data-p1-dynamic>
@@ -873,7 +873,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <span class="eyebrow-label">Local Roots</span>
         <h2>Why DeLand Homeowners Call <span class="text-accent">God's Country</span> First</h2>
         <p class="about-lede" data-animate><?php echo e($siteName); ?> was built in DeLand, not trucked in after a storm. Since <?php echo e($yearEstablished); ?>, the same local crew has handled Volusia County's oaks, pines, and palms &mdash; with the licensing, insurance, and certified arborist expertise that fly-by-night storm-chasers can't show you.</p>
-        <p data-animate>You'll see our branded trucks and skid steers on DeLand streets year-round, not just after hurricanes. Tree work and bobcat work from one provider means the job gets finished &mdash; cut, hauled, ground, and graded &mdash; without a second contractor.</p>
+        <p data-animate>You'll see our branded trucks and skid steers on DeLand streets year-round, not just after hurricanes. Tree work and land clearing from one provider means the job gets finished &mdash; cut, hauled, ground, and graded &mdash; without a second contractor.</p>
 
         <h3 style="margin-top: var(--space-8);">The God's Country 4-Step Process</h3>
         <ol class="process-steps" data-p1-dynamic>

@@ -81,7 +81,7 @@ $plantingSteps = [
         'caption'  => 'Sago and shrub bed finished in fresh mulch',
         'title'    => 'Sourcing, bed prep & the dig',
         'text'     => "We source healthy nursery stock and inspect every root ball before it goes in the ground. Beds get edged and prepped, holes get dug wide and shallow — in sandy Central Florida soil the root flare sits at grade, never buried.",
-        'includes' => ['Healthy nursery stock, inspected first', 'Wide, shallow planting at the root flare', 'Bobcat work for big beds and field-grown trees'],
+        'includes' => ['Healthy nursery stock, inspected first', 'Wide, shallow planting at the root flare', 'Skid-steer work for big beds and field-grown trees'],
     ],
     [
         'photo'    => 'mulchbeds',
@@ -97,7 +97,7 @@ $comparison = [
     ['them' => "Whatever's on the rack that weekend, root-bound or not",   'us' => 'Species matched to your sun, soil, and space — inspected stock'],
     ['them' => 'Shovel hole, root flare buried, potting soil backfill',    'us' => 'Wide, shallow planting at grade, done the way trees establish'],
     ['them' => '"Water it when you think of it" through a Florida summer', 'us' => 'A written establishment watering schedule for sandy soil'],
-    ['them' => 'One tree at a time, one aching weekend at a time',         'us' => 'One crew with tree and bobcat equipment — beds done in a day'],
+    ['them' => 'One tree at a time, one aching weekend at a time',         'us' => 'One crew with tree and land-clearing equipment — beds done in a day'],
     ['them' => 'Nobody to call when it browns out by August',              'us' => 'A local DeLand tree service that answers the phone after planting day'],
 ];
 
@@ -964,7 +964,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       </div>
       <div class="plt-cost-card reveal-delay-2" data-animate>
         <h3>Bed prep &amp; soil work</h3>
-        <p>Edging new beds, removing old roots or sod, and grading with our bobcat all shape the price. Sandy soil rarely needs heavy amendment &mdash; it needs correct depth and mulch, which every quote includes.</p>
+        <p>Edging new beds, removing old roots or sod, and grading with our skid steer all shape the price. Sandy soil rarely needs heavy amendment &mdash; it needs correct depth and mulch, which every quote includes.</p>
       </div>
       <div class="plt-cost-card reveal-delay-3" data-animate>
         <h3>Quantity &amp; access</h3>
@@ -985,16 +985,16 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Beyond the Backyard</span>
       <h2>Do you handle landscape planting services for businesses and HOAs?</h2>
-      <p class="answer-block">Yes &mdash; landscape planting services for DeLand businesses, HOA communities, and commercial properties are regular work for our crew. We phase installs so entrances stay open, carry the documented insurance boards and property managers ask for, and bring our own bobcat for bed prep, grading, and large-stock placement.</p>
+      <p class="answer-block">Yes &mdash; landscape planting services for DeLand businesses, HOA communities, and commercial properties are regular work for our crew. We phase installs so entrances stay open, carry the documented insurance boards and property managers ask for, and bring our own skid steer for bed prep, grading, and large-stock placement.</p>
     </div>
 
     <div class="plt-biz-split">
       <div>
-        <p class="plt-drop-cap" data-animate>Planting at scale is where having one crew with both tree and bobcat equipment pays off. Entrance beds, streetscape trees, buffer hedges, and common-area shade can go in as one coordinated job instead of a parade of subcontractors &mdash; the same combination that has handled tree work across Volusia County since <?php echo e($yearEstablished); ?>. And because we also remove, trim, and prune, we plant with the next twenty years in mind, not just the ribbon-cutting photo.</p>
+        <p class="plt-drop-cap" data-animate>Planting at scale is where having one crew with both tree and land-clearing equipment pays off. Entrance beds, streetscape trees, buffer hedges, and common-area shade can go in as one coordinated job instead of a parade of subcontractors &mdash; the same combination that has handled tree work across Volusia County since <?php echo e($yearEstablished); ?>. And because we also remove, trim, and prune, we plant with the next twenty years in mind, not just the ribbon-cutting photo.</p>
         <ul class="plt-biz-points" data-p1-dynamic>
           <li data-animate>
             <i data-lucide="check-circle"></i>
-            <p><strong>One crew, whole install.</strong> Design input, sourcing, bed prep, bobcat grading, planting, and mulch from a single company &mdash; one schedule, one point of contact.</p>
+            <p><strong>One crew, whole install.</strong> Design input, sourcing, bed prep, skid-steer grading, planting, and mulch from a single company &mdash; one schedule, one point of contact.</p>
           </li>
           <li data-animate>
             <i data-lucide="check-circle"></i>

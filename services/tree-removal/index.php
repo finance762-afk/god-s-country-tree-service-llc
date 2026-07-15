@@ -801,7 +801,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <ul class="expert-points" data-p1-dynamic>
           <li data-animate>
             <i data-lucide="check-circle"></i>
-            <p><strong>One crew, whole job.</strong> Tree work and bobcat work from the same company &mdash; climbing, rigging, grapple loading, chipping, hauling, and stump grinding without a second contractor.</p>
+            <p><strong>One crew, whole job.</strong> Tree work and land clearing from the same company &mdash; climbing, rigging, grapple loading, chipping, hauling, and stump grinding without a second contractor.</p>
           </li>
           <li data-animate>
             <i data-lucide="check-circle"></i>

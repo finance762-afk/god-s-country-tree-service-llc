@@ -862,7 +862,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <div class="fln-grapple-split">
       <div>
-        <p data-animate>The photo at the top of this page is a real DeLand blow-down: a mature live oak flat across a yard with our Kubota grapple track loader moving in. That pairing &mdash; tree crew and bobcat-style machine under one roof &mdash; is the whole reason our fallen tree cleanup moves fast. Nobody waits on a subcontractor with a loader, and nobody hand-drags a 40-foot canopy across your grass one armload at a time.</p>
+        <p data-animate>The photo at the top of this page is a real DeLand blow-down: a mature live oak flat across a yard with our Kubota grapple track loader moving in. That pairing &mdash; tree crew and grapple machine under one roof &mdash; is the whole reason our fallen tree cleanup moves fast. Nobody waits on a subcontractor with a loader, and nobody hand-drags a 40-foot canopy across your grass one armload at a time.</p>
         <ul class="fln-grapple-points" data-p1-dynamic>
           <li data-animate>
             <i data-lucide="check-circle"></i>
@@ -874,7 +874,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
           </li>
           <li data-animate>
             <i data-lucide="check-circle"></i>
-            <p><strong>One crew, full restoration.</strong> Tree work and bobcat work from the same company means the job ends with a raked, level, usable yard &mdash; not a pile by the curb and a wave goodbye.</p>
+            <p><strong>One crew, full restoration.</strong> Tree work and land clearing from the same company means the job ends with a raked, level, usable yard &mdash; not a pile by the curb and a wave goodbye.</p>
           </li>
         </ul>
       </div>

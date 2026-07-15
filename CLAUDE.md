@@ -17,6 +17,40 @@ Rules below win when they conflict with anything in references.
 
 ---
 
+## MODEL POLICY (which Claude model runs each task)
+
+The pipeline picks a model **per task** — it must never inherit the CLI's
+default model (that once let Fable 5 burn ~$49 of credits on a single premium
+phase). Opus is reserved for design-critical, first-impression, and vision
+work; the bulk of a site — inner pages, structure, QA, fixes, edits — runs on
+Sonnet at roughly one-fifth the per-token cost.
+
+**Authoritative source: `packages/design-portal/lib/phase-prompts.ts`**
+(`getPhaseModel()`, `BUILD_MODELS`, `TASK_MODELS`). This table documents that
+config — change both together.
+
+| Task | Model | Why |
+|---|---|---|
+| Phase 1 — Intake + Logo Analysis | **Opus 4.8** | Logo vision + design-token derivation sets the whole site's look |
+| Phase 2 — CSS Architecture + PHP Includes | Sonnet | Mechanical scaffolding; framework.css already exists |
+| Phase 3 — Homepage | **Opus 4.8** | The hero and highest-traffic page — the first impression |
+| Phase 4 — Service Pages | **Opus 4.8 (Premium only)** / Sonnet (Basic, Standard) | Premium buys editorial depth across many pages; other tiers are fine on Sonnet |
+| Phase 5 — About / Contact / FAQ | Sonnet | Straightforward content pages |
+| Phase 6 — Service Area(s) | Sonnet | Templated area pages |
+| Phase 7 — SEO/AEO + QA generation | Sonnet | Tag/schema generation; QA scoring is a Python script |
+| QA narrative audit (`qa/start`) | Sonnet | Analytical, not generative |
+| QA fixes (`qa-check`, run-phase fix loop, `fix-qa`) | Sonnet | Mechanical corrections |
+| AI edits (`ai-edit`) | Sonnet | Small ad-hoc client/staff edits |
+| Personalization Layer (Phase 8) | Sonnet | Content swaps on an existing build |
+
+Net effect: Opus runs on **2 phases** for Basic/Standard (1 + 3) and **3** for
+Premium (1 + 3 + 4); everything else is Sonnet. To shift a phase's tier→model
+mapping, edit `OPUS_PHASES` in `phase-prompts.ts`. Sonnet here is
+`claude-sonnet-4-5` (proven in this pipeline); bump `BUILD_MODELS.sonnet` to
+upgrade all Sonnet tasks at once.
+
+---
+
 ## Tier Visual Quality Matrix (MANDATORY — ENFORCED BY QA)
 
 Every build is assigned a tier in the build prompt. The tier determines the visual bar.
@@ -716,3 +750,89 @@ At the bottom of each `/services/{slug}/index.php` page, render 3 randomly-selec
 - Use the same tint on adjacent cards
 - Use stock photos when client photos exist for that service
 
+
+
+---
+
+# V2 STANDARDS (GSC-DRIVEN — PIPELINE V2 BUILDS ONLY)
+
+> This section exists because real Google Search Console data from deployed Page One sites
+> exposed systematic blind spots in the v1 templates. Each rule below is traced to that
+> evidence. These rules are ADDITIVE to everything above — where they conflict with a v1
+> rule, the V2 rule wins on v2 builds. Enforced by `qa_audit.py --v2`.
+
+## V2.1 Trade-noun language in titles and H1s (REQUIRED)
+
+**Evidence:** searchers use trade nouns ("carpenter near me", "handyman El Cajon"); v1 templates
+used service-category language ("Carpentry & Construction"). Those pages earned impressions only
+on category terms and missed the trade-noun queries entirely.
+
+- Every service page `<title>` and H1 MUST include the trade noun a searcher would use ALONGSIDE
+  the category name: `Carpenter in San Diego, CA | Carpentry & Construction Services`.
+- Map categories to trade nouns at plan time: carpentry → carpenter, plumbing → plumber,
+  tile installation → tile installer, electrical → electrician, landscaping → landscaper,
+  gutters → gutter installer, roofing → roofer, painting → painter, handyman stays handyman.
+- The trade noun MUST also appear naturally in the first 100 words of body copy.
+
+## V2.2 CTR-engineered titles and metas (REQUIRED)
+
+**Evidence:** pages at positions 8–15 with near-zero CTR — the snippet gave no reason to click.
+
+- Meta description formula: **[trade noun + city] + [differentiator] + [CTA]**.
+- Differentiator = at least one concrete USP from the intake: Same-Day Service, Licensed & Insured,
+  ★4.9 Google Rating, 25+ Years, Free Estimates, Financing Available. Use separators (• or |) for
+  scannability.
+- CTA = an action verb phrase: "Call for a free estimate today", "Get your quote in 24 hours".
+- Titles ≤ 60 chars, metas 140–160 chars. NO keyword-only metas; every meta must contain a USP
+  and a CTA — `qa_audit.py --v2` fails the build otherwise.
+
+## V2.3 Competitive-category service tiers (REQUIRED)
+
+**Evidence:** one high-competition page (home theater / TV mounting — specialist companies compete
+for it) earned the most impressions at the worst positions because every service got equal-weight
+treatment.
+
+- Each service in build-plan.json carries `competitive_tier: standard | high_competition`.
+- `high_competition` services get: a DEDICATED page (never grouped), 2× content depth
+  (800+ words), FAQPage schema with 4+ questions, and internal links from EVERY area page.
+- `standard` services follow the normal v1 grouping rules.
+
+## V2.4 Question-format AEO blocks (REQUIRED on every service page)
+
+**Evidence:** a question-format query ranked position 5 for the pilot client — the only
+top-5 ranking the site had.
+
+- Every service page includes at least one H2 phrased as the question a searcher would ask
+  ("How much does seamless gutter installation cost in Madison, MS?") followed by a direct,
+  40–60 word answer paragraph (speakable/snippet-ready), consistent with the AEO standards
+  in aeo-content-schema.md.
+
+## V2.5 Keyword-to-page coverage map (REQUIRED)
+
+**Evidence:** several intake keywords (IKEA, patio, pool table) earned zero impressions despite
+being "on the page" — nothing actually targeted them.
+
+- The build MUST maintain `keyword-map.json` at the repo root: an array of
+  `{ "keyword": "...", "page": "services/x.php", "heading": "the exact H1/H2 that targets it" }`.
+- EVERY keyword in build-plan.json (primary, secondary, per-service) appears exactly once.
+- The referenced page file must exist and the heading text must appear in it.
+- This file is the contract the nightly GSC rules engine checks reality against
+  (zero-impression targets); the 30-day post-launch check runs automatically once the
+  property is registered.
+
+## V2.6 Homepage focus (REQUIRED)
+
+**Evidence:** the pilot homepage sat at position ~97 on mismatched broad terms because it
+targeted generic positioning instead of one cluster.
+
+- The homepage targets ONE primary keyword cluster (the build plan's `primary_keyword` and its
+  close variants). Title, H1, and hero copy all commit to that cluster.
+- Generic positioning ("Your Trusted Local Contractor") may appear only AFTER the
+  cluster-targeted hero, never as the H1/title.
+
+## V2.7 What carries over unchanged
+
+Tinted Image Card pattern, dual-mode navbar, logo analysis Phase 0, the PHP-include
+architecture, the tier system (Basic/Standard/Premium), Formsubmit.co forms, all legal/
+compliance requirements, the performance budget, and the deploy flow are UNCHANGED from the
+standards above.

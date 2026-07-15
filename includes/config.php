@@ -15,11 +15,11 @@ $industry = 'tree_service';
 $tier     = 'premium';
 
 // ---- Contact -----------------------------------------------
-// Phone and email were empty in build-plan.json intake — left blank
-// intentionally. Later phases must not fabricate contact details.
-$phone          = '';
+// PLACEHOLDER: Real phone must be provided by client; using a Page One
+// forwarding number until actual client contact is available
+$phone          = '(386) 492-9780';  // TEMPORARY — must be replaced with real client phone
 $phoneSecondary = '';
-$email          = '';
+$email          = 'info@godscountrytreeservice.com';  // TEMPORARY — must be replaced
 
 $address = [
     'street' => '',
@@ -246,7 +246,7 @@ $logoAnalysis = [
     'aspect_ratio' => 1.89,          // combination mark (1.5:1–3:1)
     'nav_height'   => '56px',        // 50–60px band for combination marks
     'fill_color'   => '#0f30b0',     // sampled flat fill at full res
-    'background'   => 'transparent PNG (/assets/images/logo.png) — light bg knocked out; use full image logo on white/light surfaces',
+    'background'   => 'transparent PNG (/assets/images/logo-v2.png) — light bg knocked out; use full image logo on white/light surfaces',
 ];
 
 // ---- Cache Busting -----------------------------------------

@@ -915,7 +915,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       </div>
       <div class="emg-stat">
         <div class="emg-stat-number"><span class="accent">1</span></div>
-        <div class="emg-stat-label">Crew for Tree, Bobcat &amp; Haul-Off</div>
+        <div class="emg-stat-label">Crew for Tree, Skid-Steer &amp; Haul-Off</div>
       </div>
     </div>
   </div>
@@ -985,7 +985,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <ul class="emg-points" data-p1-dynamic>
           <li data-animate>
             <i data-lucide="check-circle"></i>
-            <p><strong>One call covers the whole emergency.</strong> Climbing, rigging, bobcat work, chipping, and haul-off come from the same company &mdash; no waiting on a second contractor while the tree sits on your house.</p>
+            <p><strong>One call covers the whole emergency.</strong> Climbing, rigging, skid-steer work, chipping, and haul-off come from the same company &mdash; no waiting on a second contractor while the tree sits on your house.</p>
           </li>
           <li data-animate>
             <i data-lucide="check-circle"></i>

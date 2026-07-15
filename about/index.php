@@ -38,11 +38,11 @@ $valuesImage = [
     'alt' => "God's Country climber roped high in a live oak canopy over a DeLand, FL yard",
 ];
 
-// ---- Core values (grounded in owner's story: honesty, arborist training, tree+bobcat, clean job sites) ----
+// ---- Core values (grounded in owner's story: honesty, arborist training, tree + land clearing, clean job sites) ----
 $values = [
     ['icon' => 'handshake',    'title' => 'Honest Recommendations', 'text' => "We don't believe in cutting corners — only trees that truly need it. You get straight recommendations, fair pricing, and clear communication before any work begins."],
     ['icon' => 'trees',        'title' => 'Trained Arborist Judgment', 'text' => 'Decades of hands-on experience and modern arborist practices guide every pruning, trimming, and removal decision — so we preserve healthy trees whenever we can.'],
-    ['icon' => 'truck',        'title' => 'One Crew, Whole Job', 'text' => 'Tree service and bobcat service under one roof — climbing, rigging, removals, land clearing, and cleanup handled by the same experienced crew, no second contractor.'],
+    ['icon' => 'truck',        'title' => 'One Crew, Whole Job', 'text' => 'Tree service and land clearing under one roof — climbing, rigging, removals, skid-steer work, and cleanup handled by the same experienced crew, no second contractor.'],
     ['icon' => 'sparkles',     'title' => 'Cleaner Than We Found It', 'text' => 'Every project is done safely and professionally, and we leave every job site cleaner than we found it — because that is how we would want our own property treated.'],
 ];
 

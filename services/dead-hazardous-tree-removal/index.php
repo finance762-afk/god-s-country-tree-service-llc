@@ -798,7 +798,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <ul class="dhz-expert-points" data-p1-dynamic>
           <li data-animate>
             <i data-lucide="check-circle"></i>
-            <p><strong>Machines carry the risk.</strong> When a trunk is too far gone to climb, our boom lift and compact grapple loader do the reaching and the lifting &mdash; the same one-crew tree-and-bobcat setup, no subcontractors.</p>
+            <p><strong>Machines carry the risk.</strong> When a trunk is too far gone to climb, our boom lift and compact grapple loader do the reaching and the lifting &mdash; the same one-crew tree-and-land-clearing setup, no subcontractors.</p>
           </li>
           <li data-animate>
             <i data-lucide="check-circle"></i>

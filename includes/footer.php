@@ -87,7 +87,7 @@
         <p>
           <strong><?php echo e($siteName); ?></strong> is a tree service company based in
           <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"><span itemprop="addressLocality">DeLand</span>, <span itemprop="addressRegion">Florida</span> <span itemprop="postalCode"><?php echo e($address['zip']); ?></span></span>,
-          serving homeowners, businesses, and HOA communities across Volusia County. With <?php echo e($yearsInBusiness); ?>+ years in business since <?php echo e($yearEstablished); ?>, the company provides tree removal, tree trimming, tree pruning, crown reduction, dead and hazardous tree removal, 24-hour emergency storm cleanup, tree planting, and certified arborist services &mdash; plus bobcat service for land and debris work.
+          serving homeowners, businesses, and HOA communities across Volusia County. With <?php echo e($yearsInBusiness); ?>+ years in business since <?php echo e($yearEstablished); ?>, the company provides tree removal, tree trimming, tree pruning, crown reduction, dead and hazardous tree removal, 24-hour emergency storm cleanup, tree planting, and certified arborist services &mdash; plus land clearing and debris work.
         </p>
       </div>
 

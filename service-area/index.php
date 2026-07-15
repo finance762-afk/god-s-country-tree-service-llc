@@ -535,10 +535,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <div class="sa-coverage-copy">
         <span class="sa-eyebrow">One Local Crew, One Region</span>
         <h2 style="text-wrap:balance; margin-bottom: var(--space-4);">What areas does God's Country Tree Service cover around DeLand?</h2>
-        <p class="answer-block drop-cap">God's Country Tree Service covers DeLand and the surrounding west-Volusia communities within about a 50-mile radius, including Deltona, Orange City, DeBary, Lake Helen, and DeLeon Springs. From our DeLand base we bring the same climbers, grapple loader, and bobcat to every job &mdash; residential, commercial, or HOA &mdash; with free written estimates in 24 hours.</p>
+        <p class="answer-block drop-cap">God's Country Tree Service covers DeLand and the surrounding west-Volusia communities within about a 50-mile radius, including Deltona, Orange City, DeBary, Lake Helen, and DeLeon Springs. From our DeLand base we bring the same climbers, grapple loader, and skid steer to every job &mdash; residential, commercial, or HOA &mdash; with free written estimates in 24 hours.</p>
         <ul class="sa-coverage-points" data-p1-dynamic>
           <li data-animate><i data-lucide="map-pin"></i><p><strong>Based in DeLand since <?php echo e($yearEstablished); ?>.</strong> We are your neighbors, not storm-chasers who leave when the hurricane season ends.</p></li>
-          <li data-animate><i data-lucide="truck"></i><p><strong>Full equipment travels with us.</strong> Climbing gear, boom lift, grapple loader, chipper, and bobcat reach every town on this page.</p></li>
+          <li data-animate><i data-lucide="truck"></i><p><strong>Full equipment travels with us.</strong> Climbing gear, boom lift, grapple loader, chipper, and skid steer reach every town on this page.</p></li>
           <li data-animate><i data-lucide="clock"></i><p><strong>24-hour emergency response.</strong> When a storm drops a tree anywhere in west Volusia, we answer around the clock.</p></li>
         </ul>
       </div>
