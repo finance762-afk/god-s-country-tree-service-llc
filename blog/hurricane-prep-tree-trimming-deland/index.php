@@ -1,11 +1,13 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php';
 
 $pageTitle = 'When to Trim Trees Before Hurricane Season in DeLand, FL | ' . $siteName;
 $pageDescription = 'Hurricane season starts June 1st in Florida. Learn when and how to trim trees to reduce storm damage risk in DeLand and Central Florida. Expert arborist advice.';
 $canonicalUrl = $siteUrl . '/blog/hurricane-prep-tree-trimming-deland/';
 $currentPage = 'blog';
+$pageSchema = blogPostSchema('hurricane-prep-tree-trimming-deland', 'hurricane tree trimming DeLand FL, storm prep tree service Florida, hurricane season tree preparation, wind damage tree trimming, tree trimming before hurricane season, Volusia County storm cleanup', $pageDescription);
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>

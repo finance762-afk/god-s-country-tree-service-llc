@@ -7,6 +7,7 @@ $pageTitle = 'Does Homeowners Insurance Cover Fallen Tree Removal in Florida? | 
 $pageDescription = 'Florida homeowners insurance typically covers tree removal when a tree damages insured property. Learn what\'s covered, what\'s not, coverage limits, and how to file a claim in DeLand after storm damage.';
 $canonicalUrl = $siteUrl . '/blog/insurance-fallen-tree-removal-florida/';
 $currentPage = 'blog';
+$pageSchema = blogPostSchema('insurance-fallen-tree-removal-florida', 'homeowners insurance fallen tree removal Florida, tree damage insurance claim DeLand, storm damage tree removal coverage, neighbor tree fell on my property Florida, emergency tree removal DeLand FL', $pageDescription);
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>

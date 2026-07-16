@@ -7,6 +7,7 @@ $pageTitle = 'Is My Tree Dangerous? 9 Warning Signs DeLand Homeowners Should Not
 $pageDescription = 'Dead branches, trunk cracks, fungal growth, and sudden lean signal tree failure risk in DeLand, FL. Recognize hazard signs before a storm drops a tree on your home. Expert arborist guide.';
 $canonicalUrl = $siteUrl . '/blog/signs-dangerous-tree-deland/';
 $currentPage = 'blog';
+$pageSchema = blogPostSchema('signs-dangerous-tree-deland', 'dangerous tree warning signs, hazardous tree removal DeLand FL, dead tree removal Florida, leaning tree risk, tree trunk cracks, tree fungus Florida, tree risk assessment Volusia County', $pageDescription);
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>

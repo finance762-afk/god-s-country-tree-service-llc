@@ -79,3 +79,65 @@ $blogPosts = [
         'readtime' => '7 min read',
     ],
 ];
+
+/**
+ * Build the BlogPosting + BreadcrumbList @graph JSON-LD for a post.
+ * Registry-driven: headline, image, dates, and category all come from
+ * $blogPosts. Pages pass their slug + a keywords string and echo the
+ * result via head.php's $pageSchema hook.
+ *
+ * @param string $slug        Post slug (must exist in $blogPosts)
+ * @param string $keywords    Comma-separated keyword string for this post
+ * @param string $description Meta description (reuse $pageDescription)
+ * @return string             Full <script type="application/ld+json"> block
+ */
+function blogPostSchema($slug, $keywords, $description)
+{
+    global $blogPosts, $siteUrl, $siteName;
+
+    $post = null;
+    foreach ($blogPosts as $p) {
+        if ($p['slug'] === $slug) { $post = $p; break; }
+    }
+    if ($post === null) {
+        return '';
+    }
+
+    $postUrl = $siteUrl . '/blog/' . $post['slug'] . '/';
+    $graph = [
+        '@context' => 'https://schema.org',
+        '@graph'   => [
+            [
+                '@type'            => 'BlogPosting',
+                '@id'              => $postUrl . '#article',
+                'headline'         => $post['title'],
+                'description'      => $description,
+                'image'            => $post['image'],
+                'datePublished'    => $post['dateISO'],
+                'dateModified'     => $post['dateISO'],
+                'author'           => [
+                    '@type' => 'Organization',
+                    'name'  => $siteName,
+                    '@id'   => $siteUrl . '/#organization',
+                ],
+                'publisher'        => ['@id' => $siteUrl . '/#organization'],
+                'url'              => $postUrl,
+                'mainEntityOfPage' => $postUrl,
+                'articleSection'   => $post['category'],
+                'keywords'         => $keywords,
+            ],
+            [
+                '@type'           => 'BreadcrumbList',
+                'itemListElement' => [
+                    ['@type' => 'ListItem', 'position' => 1, 'name' => 'Home', 'item' => $siteUrl . '/'],
+                    ['@type' => 'ListItem', 'position' => 2, 'name' => 'Blog', 'item' => $siteUrl . '/blog/'],
+                    ['@type' => 'ListItem', 'position' => 3, 'name' => $post['title'], 'item' => $postUrl],
+                ],
+            ],
+        ],
+    ];
+
+    return '<script type="application/ld+json">'
+        . json_encode($graph, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE)
+        . '</script>';
+}
