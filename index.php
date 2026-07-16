@@ -733,6 +733,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_subject" value="New estimate request from <?php echo e($_SERVER['HTTP_HOST'] ?? 'website'); ?>">
+        <input type="hidden" name="_cc" value="CustomerService@pageoneinsights.com">
         <!-- Honeypot -->
         <input type="text" name="_honey" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
         <!-- Tracking -->
