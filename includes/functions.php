@@ -173,7 +173,7 @@ function icon($name, $class = '') {
     if (isset($cache[$name])) {
         $svg = $cache[$name];
     } else {
-        $iconPath = $_SERVER['DOCUMENT_ROOT'] . '/../crm/references/lucide-icons/' . $name . '.svg';
+        $iconPath = '/home/calvin/crm/references/lucide-icons/' . $name . '.svg';
         if (!file_exists($iconPath)) {
             return '<!-- icon not found: ' . e($name) . ' -->';
         }

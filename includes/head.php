@@ -60,11 +60,12 @@ $ogImage = $ogImage ?? $logoUrl;
 <meta property="og:site_name" content="<?php echo e($siteName); ?>">
 <meta property="og:locale" content="en_US">
 
-<!-- Fonts: Bricolage Grotesque (headings) + Figtree (body) — self-hosted per performance-2026.md Part D -->
+<!-- Fonts: 3-font system — Bricolage Grotesque (headings) + Figtree (body) + Caveat (accent) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="dns-prefetch" href="https://db.pageone.cloud">
-<link rel="preload" href="/assets/fonts/fonts.css" as="style">
-<link href="/assets/fonts/fonts.css" rel="stylesheet">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700;800&family=Figtree:wght@300;400;500;600;700&family=Caveat:wght@500;600;700&display=swap" as="style">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700;800&family=Figtree:wght@300;400;500;600;700&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
 
 <!-- Styles -->
 <link rel="stylesheet" href="/assets/css/framework.css?v=<?php echo e($cssVersion ?? '1'); ?>">

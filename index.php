@@ -398,12 +398,13 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 .section-title .hero-answer { margin-bottom: var(--space-3); }
 .section-subtitle {
   display: block;
-  font-family: var(--font-heading);
-  font-style: italic;
+  font-family: var(--font-accent);
   font-weight: 600;
   color: var(--color-accent);
-  font-size: var(--font-size-lg);
-  margin-bottom: var(--space-3);
+  font-size: var(--font-size-xl);
+  margin-top: var(--space-2);
+  margin-bottom: var(--space-4);
+  line-height: 1.3;
 }
 .section-title .prose {
   margin-left: auto;
