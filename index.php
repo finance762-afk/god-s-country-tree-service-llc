@@ -690,7 +690,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         Serving DeLand Since <?php echo e($yearEstablished); ?>
       </span>
 
-      <h1 class="hero-title">Tree Service in DeLand, FL &mdash; <span class="gradient-text">Year-Round Care</span></h1>
+      <h1 class="hero-title">Tree Service in DeLand, FL &mdash; <span class="gradient-text text-accent">Year-Round Care</span></h1>
 
       <p class="hero-subtitle"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving homes, businesses, and HOA communities across Volusia County since <?php echo e($yearEstablished); ?>. Certified arborist expertise, 24-hour emergency response when you need it, and free estimates within 24 hours &mdash; from the local crew who's here year-round.</p>
 

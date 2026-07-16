@@ -514,10 +514,10 @@ QA validates these by class name. Builds missing these classes auto-fail.
       <!-- Repeat this card for each service. Tints rotate 1, 2, 3, 1, 2, 3... -->
       <article class="service-card-with-image card-tint-1 reveal-up reveal-delay-1">
         <div class="service-card__image">
-          <img src="/assets/images/{photo}.jpg" alt="{descriptive alt}" width="600" height="360" loading="lazy">
+          <img src="/assets/images/{photo}.jpg" srcset="/assets/images/{photo}-480.webp 480w, /assets/images/{photo}-960.webp 960w, /assets/images/{photo}-1600.webp 1600w" sizes="(max-width: 768px) 100vw, 600px" alt="{descriptive alt}" width="600" height="360" loading="lazy">
         </div>
         <div class="service-card__body">
-          <div class="service-card__icon"><i data-lucide="{lucide-icon-name}"></i></div>
+          <div class="service-card__icon"><!-- inline SVG from references/lucide-icons/{icon-name}.svg (NOT data-lucide) --></div>
           <h3>{Service Name}</h3>
           <p class="service-card__desc">{1-sentence description, no fluff}</p>
           <ul>
