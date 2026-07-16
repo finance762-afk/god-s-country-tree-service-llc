@@ -202,7 +202,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   border: 1px solid color-mix(in srgb, var(--color-accent) 38%, transparent);
   border-radius: var(--radius-full);
   padding: var(--space-1) var(--space-4);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;
@@ -250,7 +250,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   position: absolute;
   top: var(--space-4);
   right: clamp(1rem, 4vw, 3rem);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: clamp(5rem, 12vw, 9rem);
   font-weight: 800;
   line-height: 1;
@@ -267,7 +267,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 .dlt-title { text-align: center; margin-bottom: var(--space-12); }
 .dlt-title .eyebrow-label {
   display: inline-block;
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;
@@ -302,7 +302,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 }
 .dlt-drop::first-letter {
   float: left;
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: 4.2rem;
   font-weight: 800;
   line-height: 0.82;
@@ -398,7 +398,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 }
 .dlt-score-icon svg, .dlt-score-icon i { width: 22px; height: 22px; }
 .dlt-score .dlt-score-num {
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: clamp(2.4rem, 5vw, 3.4rem);
   font-weight: 800;
   line-height: 1;
@@ -527,7 +527,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 .dlt-cta .container { position: relative; z-index: 1; }
 .dlt-cta .eyebrow-label {
   display: inline-block;
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;

@@ -216,7 +216,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   border: 1px solid color-mix(in srgb, var(--color-accent) 40%, transparent);
   border-radius: var(--radius-full);
   padding: var(--space-1) var(--space-4);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;
@@ -271,7 +271,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 }
 .eyebrow-label {
   display: inline-block;
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;
@@ -311,7 +311,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   position: absolute;
   top: calc(-1 * var(--space-4));
   right: var(--space-2);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: clamp(4.5rem, 8vw, 7rem);
   font-weight: 800;
   line-height: 1;
@@ -415,7 +415,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   max-width: 240px;
 }
 .dhz-big-stat .dhz-stat-number {
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: clamp(3rem, 6vw, 4.6rem);
   font-weight: 800;
   line-height: 1;
@@ -423,7 +423,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 }
 .dhz-big-stat .dhz-stat-number span { color: var(--color-accent); }
 .dhz-big-stat .dhz-stat-label {
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -486,7 +486,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   position: absolute;
   top: var(--space-4);
   right: var(--space-5);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-sm);
   font-weight: 800;
   letter-spacing: 2px;
@@ -586,7 +586,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   border: 1px solid var(--color-gray-light);
   border-radius: var(--radius-full);
   padding: var(--space-2) var(--space-5);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-weight: 700;
   font-size: var(--font-size-sm);
   color: var(--color-dark);

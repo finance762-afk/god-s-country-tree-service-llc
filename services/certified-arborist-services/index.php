@@ -221,7 +221,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   border: 1px solid color-mix(in srgb, var(--color-accent) 38%, transparent);
   border-radius: var(--radius-full);
   padding: var(--space-1) var(--space-4);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;
@@ -266,7 +266,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   position: absolute;
   top: var(--space-4);
   right: clamp(1rem, 4vw, 3rem);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: clamp(5rem, 12vw, 9rem);
   font-weight: 800;
   line-height: 1;
@@ -293,7 +293,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 }
 .eyebrow-label {
   display: inline-block;
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;
@@ -309,7 +309,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   margin: 0 auto var(--space-12);
   padding: var(--space-8) var(--space-8) var(--space-8) clamp(3.5rem, 8vw, 6rem);
   border-left: 4px solid var(--color-accent);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: clamp(1.35rem, 2.6vw, 2rem);
   font-weight: 500;
   font-style: italic;
@@ -323,7 +323,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   position: absolute;
   left: clamp(0.5rem, 2vw, 1.5rem);
   top: calc(-1 * var(--space-2));
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: clamp(4.5rem, 9vw, 7rem);
   font-weight: 800;
   font-style: normal;
@@ -348,7 +348,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 .arb-lede { max-width: 760px; margin: 0 auto var(--space-10); }
 .arb-lede .drop-cap::first-letter {
   float: left;
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: 4.4rem;
   font-weight: 800;
   line-height: 0.85;
@@ -478,7 +478,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   text-align: center;
 }
 .arb-cred-stat .big-number {
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: clamp(2.6rem, 5vw, 4rem);
   font-weight: 800;
   line-height: 1;
@@ -486,7 +486,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 }
 .arb-cred-stat .big-number span { color: var(--color-accent); }
 .arb-cred-stat .big-label {
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -558,7 +558,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   position: absolute;
   right: var(--space-4);
   top: var(--space-3);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-3xl);
   font-weight: 800;
   color: color-mix(in srgb, var(--color-primary) 10%, transparent);
@@ -705,7 +705,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   border: 1px solid var(--color-gray-light);
   border-radius: var(--radius-full);
   padding: var(--space-2) var(--space-5);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-weight: 700;
   font-size: var(--font-size-sm);
   color: var(--color-dark);

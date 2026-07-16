@@ -235,7 +235,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   border: 1px solid color-mix(in srgb, var(--color-accent) 38%, transparent);
   border-radius: var(--radius-full);
   padding: var(--space-1) var(--space-4);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;
@@ -283,7 +283,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   position: absolute;
   top: var(--space-4);
   right: clamp(1rem, 4vw, 3rem);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: clamp(5rem, 12vw, 9rem);
   font-weight: 800;
   line-height: 1;
@@ -310,7 +310,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 }
 .eyebrow-label {
   display: inline-block;
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;
@@ -422,7 +422,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 }
 .plt-species-tag {
   display: inline-block;
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;
@@ -469,7 +469,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   border-radius: var(--radius-sm);
 }
 .plt-polaroid figcaption {
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-sm);
   font-style: italic;
   color: var(--color-gray);
@@ -480,7 +480,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   display: inline-flex;
   align-items: center;
   gap: var(--space-3);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-weight: 800;
   font-size: var(--font-size-sm);
   text-transform: uppercase;
@@ -555,7 +555,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 }
 .plt-drop-cap::first-letter {
   float: left;
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: 4.2rem;
   font-weight: 800;
   line-height: 0.85;
@@ -600,7 +600,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   z-index: -1;
 }
 .plt-big-stat .plt-big-number {
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: clamp(4rem, 8vw, 6.5rem);
   font-weight: 800;
   line-height: 1;
@@ -608,7 +608,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 }
 .plt-big-stat .plt-big-number span { color: var(--color-accent); }
 .plt-big-stat .plt-big-label {
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -706,7 +706,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   border: 1px solid var(--color-gray-light);
   border-radius: var(--radius-full);
   padding: var(--space-2) var(--space-5);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-weight: 700;
   font-size: var(--font-size-sm);
   color: var(--color-dark);

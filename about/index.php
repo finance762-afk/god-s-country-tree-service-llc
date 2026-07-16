@@ -146,7 +146,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   border: 1px solid color-mix(in srgb, var(--color-accent) 38%, transparent);
   border-radius: var(--radius-full);
   padding: var(--space-1) var(--space-4);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;
@@ -178,7 +178,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   position: absolute;
   top: var(--space-4);
   right: clamp(1rem, 4vw, 3rem);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: clamp(5rem, 12vw, 9rem);
   font-weight: 800;
   line-height: 1;
@@ -227,7 +227,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 .story-copy h2 { text-wrap: balance; margin-bottom: var(--space-5); }
 .story-copy .drop-cap::first-letter {
   float: left;
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: 4.2rem;
   font-weight: 800;
   line-height: 0.85;
@@ -285,7 +285,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   border-left: 4px solid var(--color-accent);
   border-radius: var(--radius-md);
   background: var(--color-card-tint-3);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-style: italic;
   font-weight: 700;
   font-size: var(--font-size-xl);
@@ -294,7 +294,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   text-wrap: balance;
 }
 .story-signoff {
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-weight: 700;
   color: var(--color-primary-dark);
   margin: 0;
@@ -357,7 +357,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 }
 .about-stats .stat-item:first-child { border-left: 0; padding-left: 0; }
 .about-stats .stat-number {
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-6xl);
   font-weight: 800;
   color: var(--color-white);
@@ -414,7 +414,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 .timeline-item:nth-child(even)::before { border-color: var(--color-accent); box-shadow: 0 0 0 5px color-mix(in srgb, var(--color-accent) 12%, transparent); }
 .timeline-year {
   display: inline-block;
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-weight: 800;
   font-size: var(--font-size-sm);
   letter-spacing: 1px;

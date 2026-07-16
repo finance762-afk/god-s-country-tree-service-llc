@@ -216,7 +216,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   border: 1px solid color-mix(in srgb, var(--color-accent) 38%, transparent);
   border-radius: var(--radius-full);
   padding: var(--space-1) var(--space-4);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;
@@ -261,7 +261,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   position: absolute;
   top: var(--space-4);
   right: clamp(1rem, 4vw, 3rem);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: clamp(5rem, 12vw, 9rem);
   font-weight: 800;
   line-height: 1;
@@ -288,7 +288,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 }
 .eyebrow-label {
   display: inline-block;
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;
@@ -329,7 +329,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 .fln-triage-icon svg, .fln-triage-icon i { width: 24px; height: 24px; }
 .fln-triage-label {
   display: inline-block;
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;
@@ -403,7 +403,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   text-align: left;
 }
 .fln-grapple-stat .big-number {
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: clamp(2.4rem, 4vw, 3.4rem);
   font-weight: 800;
   line-height: 1;
@@ -411,7 +411,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 }
 .fln-grapple-stat .big-number span { color: var(--color-accent); }
 .fln-grapple-stat .big-label {
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -471,7 +471,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 .fln-timeline-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
 .fln-timeline-step {
   display: block;
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;
@@ -588,7 +588,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   gap: var(--space-2);
   background: color-mix(in srgb, var(--color-dark) 80%, transparent);
   color: var(--color-white);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;
@@ -626,7 +626,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   border: 1px solid var(--color-gray-light);
   border-radius: var(--radius-full);
   padding: var(--space-2) var(--space-5);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-weight: 700;
   font-size: var(--font-size-sm);
   color: var(--color-dark);

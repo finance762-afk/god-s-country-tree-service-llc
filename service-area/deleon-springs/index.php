@@ -200,7 +200,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   border: 1px solid color-mix(in srgb, var(--color-accent) 38%, transparent);
   border-radius: var(--radius-full);
   padding: var(--space-1) var(--space-4);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;
@@ -241,7 +241,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   position: absolute;
   top: var(--space-4);
   right: clamp(1rem, 4vw, 3rem);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: clamp(5rem, 12vw, 9rem);
   font-weight: 800;
   line-height: 1;
@@ -268,7 +268,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 }
 .dls-eyebrow {
   display: inline-block;
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;
@@ -308,7 +308,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 .dls-prose p:last-child { margin-bottom: 0; }
 .dls-drop-cap::first-letter {
   float: left;
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: 4.2rem;
   font-weight: 800;
   line-height: 0.82;
@@ -369,7 +369,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   color: var(--color-white);
   border-radius: var(--radius-full);
   padding: var(--space-2) var(--space-4);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;
@@ -391,7 +391,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   text-wrap: pretty;
 }
 .dls-zig-copy .dls-zig-num {
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-sm);
   font-weight: 800;
   color: color-mix(in srgb, var(--color-primary) 45%, transparent);

@@ -130,7 +130,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   border: 1px solid color-mix(in srgb, var(--color-accent) 38%, transparent);
   border-radius: var(--radius-full);
   padding: var(--space-1) var(--space-4);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;
@@ -170,7 +170,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   position: absolute;
   top: var(--space-4);
   right: clamp(1rem, 4vw, 3rem);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: clamp(5rem, 12vw, 9rem);
   font-weight: 800;
   line-height: 1;
@@ -186,7 +186,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 .sa-section-title .answer-block { max-width: 70ch; margin: 0 auto var(--space-3); font-size: var(--font-size-lg); color: var(--color-text); }
 .sa-eyebrow {
   display: inline-block;
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;
@@ -205,7 +205,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 }
 .sa-coverage-copy .drop-cap::first-letter {
   float: left;
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: 4rem;
   font-weight: 800;
   line-height: 0.85;
@@ -314,7 +314,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   display: inline-flex;
   align-items: center;
   gap: var(--space-2);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-weight: 700;
   font-size: var(--font-size-sm);
   color: var(--color-primary);
@@ -346,7 +346,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   text-align: center;
 }
 .sa-stat .num {
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: clamp(2.6rem, 6vw, 4rem);
   font-weight: 800;
   line-height: 1;
@@ -354,7 +354,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 }
 .sa-stat .num span { color: var(--color-accent); }
 .sa-stat .lbl {
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;

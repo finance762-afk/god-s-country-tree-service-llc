@@ -213,7 +213,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   border: 1px solid color-mix(in srgb, var(--color-accent) 38%, transparent);
   border-radius: var(--radius-full);
   padding: var(--space-1) var(--space-4);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;
@@ -261,7 +261,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   position: absolute;
   top: var(--space-4);
   right: clamp(1rem, 4vw, 3rem);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: clamp(5rem, 12vw, 9rem);
   font-weight: 800;
   line-height: 1;
@@ -288,7 +288,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 }
 .eyebrow-label {
   display: inline-block;
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;
@@ -303,7 +303,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   margin: 0 auto var(--space-12);
   padding-left: var(--space-8);
   border-left: 4px solid var(--color-accent);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: clamp(1.35rem, 2.6vw, 1.9rem);
   font-weight: 600;
   line-height: 1.4;
@@ -390,7 +390,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 }
 .com-stat-block:last-child { border-right: none; }
 .com-stat-number {
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: clamp(2.4rem, 5vw, 3.4rem);
   font-weight: 800;
   color: var(--color-white);
@@ -566,7 +566,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   border-radius: var(--radius-full);
   background: var(--color-dark);
   color: var(--color-accent);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-weight: 800;
   font-size: var(--font-size-sm);
   letter-spacing: 1px;
@@ -578,7 +578,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 }
 .com-ledger-tag {
   display: inline-block;
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;
@@ -640,7 +640,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   border: 1px solid var(--color-gray-light);
   border-radius: var(--radius-full);
   padding: var(--space-2) var(--space-5);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-weight: 700;
   font-size: var(--font-size-sm);
   color: var(--color-dark);

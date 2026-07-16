@@ -236,7 +236,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   border: 1px solid color-mix(in srgb, var(--color-accent) 38%, transparent);
   border-radius: var(--radius-full);
   padding: var(--space-1) var(--space-4);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;
@@ -281,7 +281,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   position: absolute;
   top: var(--space-4);
   left: clamp(1rem, 4vw, 3rem);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: clamp(5rem, 12vw, 9rem);
   font-weight: 800;
   line-height: 1;
@@ -309,7 +309,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 }
 .eyebrow-label {
   display: inline-block;
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;
@@ -354,7 +354,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 .mnt-plan-card--them h3 svg, .mnt-plan-card--them h3 i { color: var(--color-gray); }
 .mnt-plan-tag {
   display: inline-block;
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;
@@ -413,7 +413,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   z-index: -1;
 }
 .mnt-stat-card .mnt-big-number {
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: clamp(3.4rem, 7vw, 5.5rem);
   font-weight: 800;
   line-height: 1;
@@ -421,7 +421,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 }
 .mnt-stat-card .mnt-big-number span { color: var(--color-accent); }
 .mnt-stat-card .mnt-big-label {
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -486,7 +486,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 .mnt-tl-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
 .mnt-tl-step {
   display: block;
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;
@@ -550,7 +550,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   position: absolute;
   top: calc(-1 * var(--space-4));
   right: var(--space-2);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: clamp(4rem, 7vw, 6rem);
   font-weight: 800;
   line-height: 1;
@@ -572,7 +572,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 .mnt-quarter-icon svg, .mnt-quarter-icon i { width: 24px; height: 24px; }
 .mnt-quarter-months {
   display: block;
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;
@@ -685,7 +685,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   border: 1px solid var(--color-gray-light);
   border-radius: var(--radius-full);
   padding: var(--space-2) var(--space-5);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-weight: 700;
   font-size: var(--font-size-sm);
   color: var(--color-dark);

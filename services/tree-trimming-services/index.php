@@ -231,7 +231,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   border: 1px solid color-mix(in srgb, var(--color-accent) 38%, transparent);
   border-radius: var(--radius-full);
   padding: var(--space-1) var(--space-4);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;
@@ -279,7 +279,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   position: absolute;
   top: var(--space-4);
   right: clamp(1rem, 4vw, 3rem);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: clamp(5rem, 12vw, 9rem);
   font-weight: 800;
   line-height: 1;
@@ -306,7 +306,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 }
 .eyebrow-label {
   display: inline-block;
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 700;
   text-transform: uppercase;
@@ -321,7 +321,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   margin: 0 auto var(--space-12);
   padding-left: var(--space-8);
   border-left: 4px solid var(--color-accent);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: clamp(1.35rem, 2.6vw, 2rem);
   font-weight: 600;
   line-height: 1.35;
@@ -425,7 +425,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   z-index: -1;
 }
 .trm-stat .big-number {
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: clamp(4rem, 8vw, 6.5rem);
   font-weight: 800;
   line-height: 1;
@@ -433,7 +433,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 }
 .trm-stat .big-number span { color: var(--color-accent); }
 .trm-stat .big-label {
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -455,7 +455,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 .trm-row:nth-child(even) .trm-row-text  { order: 1; }
 .trm-row-num {
   display: inline-block;
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-sm);
   font-weight: 800;
   letter-spacing: 2px;
@@ -582,7 +582,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   display: inline-flex;
   align-items: center;
   gap: var(--space-2);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 800;
   text-transform: uppercase;
@@ -608,7 +608,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   right: var(--space-4);
   background: var(--color-accent);
   color: var(--color-dark);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-size: var(--font-size-xs);
   font-weight: 800;
   text-transform: uppercase;
@@ -682,7 +682,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   border: 1px solid var(--color-gray-light);
   border-radius: var(--radius-full);
   padding: var(--space-2) var(--space-5);
-  font-family: var(--font-heading);
+  font-family: var(--font-accent);
   font-weight: 700;
   font-size: var(--font-size-sm);
   color: var(--color-dark);
