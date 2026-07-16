@@ -688,9 +688,9 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         Serving DeLand Since <?php echo e($yearEstablished); ?>
       </span>
 
-      <h1 class="hero-title">Tree Service in DeLand, FL &mdash; <span class="gradient-text">Built for Storm Country</span></h1>
+      <h1 class="hero-title">Tree Service in DeLand, FL &mdash; <span class="gradient-text">Year-Round Care</span></h1>
 
-      <p class="hero-subtitle"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving homes, businesses, and HOA communities across Volusia County since <?php echo e($yearEstablished); ?>. Certified arborist expertise, 24-hour storm response, and free estimates within 24 hours &mdash; from the local crew, not the storm-chasers.</p>
+      <p class="hero-subtitle"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving homes, businesses, and HOA communities across Volusia County since <?php echo e($yearEstablished); ?>. Certified arborist expertise, 24-hour emergency response when you need it, and free estimates within 24 hours &mdash; from the local crew who's here year-round.</p>
 
       <div class="hero-actions">
         <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Estimate</a>
@@ -833,7 +833,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label" style="color: var(--color-accent);">The Track Record</span>
       <h2>Twelve Years of Tree Work in God's Country</h2>
-      <p><?php echo e($siteName); ?> has been climbing, cutting, and cleaning up DeLand's oaks, pines, and palms since <?php echo e($yearEstablished); ?> &mdash; through every hurricane season in between.</p>
+      <p><?php echo e($siteName); ?> has been climbing, cutting, and cleaning up DeLand's oaks, pines, and palms since <?php echo e($yearEstablished); ?> &mdash; building relationships with homeowners and businesses who value consistent, professional care.</p>
     </div>
     <div class="stats-grid" data-p1-dynamic>
       <?php foreach ($homeStats as $stat): ?>
@@ -855,13 +855,13 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 </section>
 
 <!-- ============ MID-PAGE CTA BANNER ============ -->
-<section class="cta-banner" aria-label="Storm season call to action">
+<section class="cta-banner" aria-label="Preventative care call to action">
   <div class="container">
-    <span class="eyebrow-label" style="color: var(--color-accent);">Don't Wait for the Wind</span>
-    <h2>Hurricane Season Doesn't Reschedule. Your Trees Shouldn't Either.</h2>
-    <p>The dead limb over your roof and the leaning oak by the driveway are cheapest to deal with <em>before</em> the storm. Get a free assessment now &mdash; and if the storm beats you to it, we answer 24/7.</p>
+    <span class="eyebrow-label" style="color: var(--color-accent);">Smart Tree Care</span>
+    <h2>Regular Maintenance Keeps Your Property Safe Year-Round</h2>
+    <p>Addressing tree issues early — dead limbs, poor structure, or unstable growth — is more affordable and safer than waiting for problems to escalate. Get a free assessment from a certified arborist, and know you have 24/7 support if something unexpected happens.</p>
     <a href="#estimate-form" class="btn btn-accent btn-lg">Request a Free Assessment</a>
-    <a href="/services/emergency-tree-service-storm-cleanup/" class="btn btn-outline-white btn-lg">Emergency Storm Cleanup</a>
+    <a href="/services/emergency-tree-service-storm-cleanup/" class="btn btn-outline-white btn-lg">24/7 Emergency Response</a>
   </div>
 </section>
 
@@ -873,8 +873,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <div class="about-content">
         <span class="eyebrow-label">Local Roots</span>
         <h2>Why DeLand Homeowners Call <span class="text-accent">God's Country</span> First</h2>
-        <p class="about-lede" data-animate><?php echo e($siteName); ?> was built in DeLand, not trucked in after a storm. Since <?php echo e($yearEstablished); ?>, the same local crew has handled Volusia County's oaks, pines, and palms &mdash; with the licensing, insurance, and certified arborist expertise that fly-by-night storm-chasers can't show you.</p>
-        <p data-animate>You'll see our branded trucks and skid steers on DeLand streets year-round, not just after hurricanes. Tree work and land clearing from one provider means the job gets finished &mdash; cut, hauled, ground, and graded &mdash; without a second contractor.</p>
+        <p class="about-lede" data-animate><?php echo e($siteName); ?> was built in DeLand. Since <?php echo e($yearEstablished); ?>, the same local crew has handled Volusia County's oaks, pines, and palms &mdash; with the licensing, insurance, and certified arborist expertise that comes from year-round service.</p>
+        <p data-animate>You'll see our branded trucks and skid steers on DeLand streets all year. Tree work and land clearing from one provider means the job gets finished &mdash; cut, hauled, ground, and graded &mdash; without a second contractor.</p>
 
         <h3 style="margin-top: var(--space-8);">The God's Country 4-Step Process</h3>
         <ol class="process-steps" data-p1-dynamic>

@@ -36,10 +36,10 @@
   --color-card-tint-3: rgba(245, 158, 11, 0.09);
   --color-card-tint-neutral: rgba(245, 247, 250, 1);
 
-  /* Typography — 3-font system: Bricolage Grotesque (heading) + Figtree (body) + Caveat (accent) */
-  --font-heading: 'Bricolage Grotesque', 'Segoe UI', system-ui, sans-serif;
-  --font-body: 'Figtree', 'Segoe UI', system-ui, sans-serif;
-  --font-accent: 'Caveat', cursive;
+  /* Typography — 3-font system: Archivo Black (heading) + Inter (body) + Shadows Into Light (accent) */
+  --font-heading: 'Archivo Black', 'Impact', system-ui, sans-serif;
+  --font-body: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  --font-accent: 'Shadows Into Light', cursive;
 
   /* Fluid type scale */
   --fs-h1: clamp(2.5rem, 5vw, 6rem);
