@@ -967,6 +967,9 @@ html.js-anim [data-animate].animated { transform: none; }
   font-weight: 500;
 }
 
+/* Generic section wrapper — blog index + shared page sections */
+.section { padding: var(--space-16) 0; }
+
 /* Blog grid — index page */
 .blog-grid {
   display: grid;

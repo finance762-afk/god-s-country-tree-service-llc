@@ -7,13 +7,9 @@ $pageTitle = 'Is My Tree Dangerous? 9 Warning Signs DeLand Homeowners Should Not
 $pageDescription = 'Dead branches, trunk cracks, fungal growth, and sudden lean signal tree failure risk in DeLand, FL. Recognize hazard signs before a storm drops a tree on your home. Expert arborist guide.';
 $canonicalUrl = $siteUrl . '/blog/signs-dangerous-tree-deland/';
 $currentPage = 'blog';
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php'; ?>
-<body>
-
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php'; ?>
 
 <main id="main-content">
   <article class="blog-post">
@@ -242,6 +238,3 @@ $currentPage = 'blog';
 </main>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
-
-</body>
-</html>

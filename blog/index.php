@@ -7,13 +7,9 @@ $pageTitle = 'Tree Care Blog | ' . $siteName;
 $pageDescription = 'Expert tree care advice from DeLand, FL certified arborists. Learn about tree trimming, pruning, storm preparation, and Central Florida tree health.';
 $canonicalUrl = $siteUrl . '/blog/';
 $currentPage = 'blog';
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php'; ?>
-<body>
-
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php'; ?>
 
 <main id="main-content">
   <section class="page-hero">
@@ -50,6 +46,3 @@ $currentPage = 'blog';
 </main>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
-
-</body>
-</html>

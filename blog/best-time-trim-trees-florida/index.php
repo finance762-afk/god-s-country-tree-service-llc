@@ -7,13 +7,9 @@ $pageTitle = 'Florida Tree-Trimming Calendar: When to Prune Oaks, Palms, Pines, 
 $pageDescription = 'Best months to trim live oaks, palms, pines, and magnolias in DeLand, FL. Avoid oak wilt season, palm over-pruning, and storm-season trimming mistakes. Month-by-month pruning guide from certified arborists.';
 $canonicalUrl = $siteUrl . '/blog/best-time-trim-trees-florida/';
 $currentPage = 'blog';
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php'; ?>
-<body>
-
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php'; ?>
 
 <main id="main-content">
   <article class="blog-post">
@@ -232,6 +228,3 @@ $currentPage = 'blog';
 </main>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
-
-</body>
-</html>

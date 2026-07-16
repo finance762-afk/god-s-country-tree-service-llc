@@ -81,8 +81,6 @@ $ogImage = $ogImage ?? $logoUrl;
 
 <!-- Google Analytics — to be activated post-launch with client's GA4 property ID
 <script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo e($googleAnalyticsId); ?>"></script>
-<parameter name="new_string"><!-- Google Analytics — to be activated post-launch with client's GA4 property ID
-<script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo e($googleAnalyticsId); ?>"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}

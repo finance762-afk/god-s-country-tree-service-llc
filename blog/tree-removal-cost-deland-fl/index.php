@@ -7,13 +7,9 @@ $pageTitle = 'How Much Does Tree Removal Cost in DeLand, FL? 2026 Price Guide | 
 $pageDescription = 'DeLand tree removal costs $300-$2,500+ depending on size, species, and access. Oak, pine, and palm pricing, emergency removal rates, crane costs, and stump grinding explained by local arborists.';
 $canonicalUrl = $siteUrl . '/blog/tree-removal-cost-deland-fl/';
 $currentPage = 'blog';
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php'; ?>
-<body>
-
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php'; ?>
 
 <main id="main-content">
   <article class="blog-post">
@@ -190,6 +186,3 @@ $currentPage = 'blog';
 </main>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
-
-</body>
-</html>

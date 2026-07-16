@@ -6,18 +6,14 @@ $pageTitle = 'When to Trim Trees Before Hurricane Season in DeLand, FL | ' . $si
 $pageDescription = 'Hurricane season starts June 1st in Florida. Learn when and how to trim trees to reduce storm damage risk in DeLand and Central Florida. Expert arborist advice.';
 $canonicalUrl = $siteUrl . '/blog/hurricane-prep-tree-trimming-deland/';
 $currentPage = 'blog';
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php'; ?>
-<body>
-
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/nav.php'; ?>
 
 <main id="main-content">
   <article class="blog-post">
     <header class="blog-post__header">
-      <div class="container narrow">
+      <div class="container">
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="/">Home</a>
           <span class="breadcrumb-sep" aria-hidden="true">/</span>
@@ -36,7 +32,7 @@ $currentPage = 'blog';
     </header>
 
     <div class="blog-post__content">
-      <div class="container narrow">
+      <div class="container">
         <p class="lead">Hurricane season runs June 1 to November 30 in Florida. The best time to trim trees for storm protection is <strong>March through May</strong> — after winter dormancy ends, before active hurricane months begin.</p>
 
         <h2>Why trim trees before hurricane season in DeLand?</h2>
@@ -103,112 +99,3 @@ $currentPage = 'blog';
 </main>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
-
-<style>
-.blog-post__header {
-  background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
-  color: white;
-  padding: var(--space-3xl) 0 var(--space-2xl);
-}
-.container.narrow {
-  max-width: 65ch;
-  margin: 0 auto;
-  padding: 0 var(--space-md);
-}
-.breadcrumb {
-  font-size: 0.9rem;
-  margin-bottom: var(--space-md);
-  opacity: 0.9;
-}
-.breadcrumb a { text-decoration: underline; }
-.blog-category {
-  display: inline-block;
-  background: rgba(255,255,255,0.2);
-  padding: var(--space-xs) var(--space-sm);
-  border-radius: var(--radius-sm);
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: var(--space-sm);
-}
-.blog-post__header h1 {
-  font-size: clamp(2rem, 5vw, 3rem);
-  margin: var(--space-sm) 0;
-  text-wrap: balance;
-}
-.blog-meta {
-  font-size: 0.95rem;
-  opacity: 0.9;
-}
-.blog-meta-sep {
-  margin: 0 var(--space-xs);
-}
-.blog-post__content {
-  padding: var(--space-3xl) 0;
-}
-.blog-post__content .lead {
-  font-size: 1.25rem;
-  line-height: 1.6;
-  color: var(--color-text);
-  margin-bottom: var(--space-xl);
-}
-.blog-post__content h2 {
-  font-size: 1.75rem;
-  margin: var(--space-2xl) 0 var(--space-md);
-  color: var(--color-primary);
-  text-wrap: balance;
-}
-.blog-post__content h3 {
-  font-size: 1.4rem;
-  margin: var(--space-xl) 0 var(--space-md);
-  color: var(--color-primary-dark);
-}
-.blog-post__content p {
-  margin-bottom: var(--space-md);
-  line-height: 1.7;
-}
-.blog-post__content ul {
-  margin: var(--space-md) 0;
-  padding-left: var(--space-lg);
-}
-.blog-post__content li {
-  margin-bottom: var(--space-sm);
-  line-height: 1.7;
-}
-.blog-post__content a {
-  color: var(--color-primary);
-  text-decoration: underline;
-}
-.blog-cta {
-  background: var(--color-card-tint-1);
-  padding: var(--space-xl);
-  border-radius: var(--radius-md);
-  margin: var(--space-3xl) 0 var(--space-2xl);
-  text-align: center;
-}
-.blog-cta h3 {
-  margin-top: 0;
-}
-.blog-cta p {
-  margin-bottom: var(--space-lg);
-}
-.blog-related-services {
-  border-top: 2px solid var(--color-border);
-  padding-top: var(--space-xl);
-  margin-top: var(--space-2xl);
-}
-.blog-related-services h3 {
-  margin-top: 0;
-}
-.blog-related-services ul {
-  list-style: none;
-  padding: 0;
-}
-.blog-related-services li {
-  margin-bottom: var(--space-sm);
-}
-</style>
-
-</body>
-</html>
