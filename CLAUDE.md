@@ -27,6 +27,20 @@ inherits the CLI default. Full per-phase table is in `CLAUDE-websites-v2.md` →
 
 ---
 
+## Performance & Asset Standards (v6.2 — MANDATORY, ENFORCED BY `qa_audit.py`)
+
+These are hard QA blockers on every new build. Full spec: `references/performance-2026.md`.
+
+- **Self-hosted fonts — NO Google Fonts CDN.** The scaffold copies the chosen variable woff2 into `/assets/fonts/` and declares `@font-face` (with `font-display: swap`) in `framework.css`. Never add `fonts.googleapis.com` / `fonts.gstatic.com` preconnect or `<link>`. Preload only the above-the-fold heading face: `<link rel="preload" href="/assets/fonts/<file>.woff2" as="font" type="font/woff2" crossorigin>`. Font sources live in `references/fonts/`; filenames are the lowercased-hyphenated family name (`Bricolage Grotesque` → `bricolage-grotesque.woff2`).
+- **Inline SVG icons — NO runtime injection.** Paste the raw `<svg>` from `references/lucide-icons/<name>.svg` at build time (add `aria-hidden="true"` + `width`/`height`). Never `<i data-lucide>`, `lucide.createIcons()`, or a Lucide/unpkg CDN `<script>`.
+- **Responsive images.** Every hero/card `<img>` needs `srcset` + `sizes`. The pipeline pre-generates `/assets/images/<name>-480.webp`, `-960.webp`, `-1600.webp` for on-disk photos — reference those exact files (omit a descriptor whose file is absent). Remote/Imgur photos still get a `sizes` attribute. Explicit `width`/`height` always; hero uses `loading="eager" fetchpriority="high"`, others `loading="lazy"`.
+- **No CDN JS toys.** No VanillaTilt CDN; carousels are CSS scroll-snap unless a Swiper feature is genuinely required. Total JS ≤ 100KB, hero image ≤ 150KB.
+- **Forbidden tags (also QA blockers):** `<meta name="keywords">`, any Twitter/X Card tags (`twitter:*`), and `aggregateRating`/`ratingValue` in JSON-LD.
+
+> Pre-v6.2 sites audit with `qa_audit.py --legacy`. New builds are graded against v6.2 by default.
+
+---
+
 ## Tier Visual Quality Matrix (MANDATORY — ENFORCED BY QA)
 
 Every build is assigned a tier in the build prompt. The tier determines the visual bar.
@@ -537,7 +551,7 @@ QA validates these by class name. Builds missing these classes auto-fail.
 
 **Bullet rule:** EXACTLY 3 bullets per card. Not 2, not 4. Each bullet 3-6 words, scannable, benefit-driven (not feature-only). Examples: "Same-day install on most homes", "Insurance claim support", "20–30 year service life". Avoid: "We use the best materials" (vague), "High-quality professional service" (filler).
 
-**Icon mapping:** Use Lucide icons appropriate to the service. Industry guidance:
+**Icon mapping:** Use icons appropriate to the service, inlined as raw `<svg>` from `references/lucide-icons/<name>.svg` at build time (v6.2 — never `data-lucide`, `createIcons`, or a Lucide CDN). Industry guidance (names map to the `.svg` files):
 - Roofing: `home`, `shield`, `cloud-rain`, `wrench`, `hammer`, `hard-hat`, `building-2`
 - Gutters: `ruler`, `droplets`, `filter`, `wrench`, `shield`, `building-2`, `sparkles`
 - Lawn/Landscape: `leaf`, `scissors`, `sprout`, `flower-2`, `tree-pine`, `sun`

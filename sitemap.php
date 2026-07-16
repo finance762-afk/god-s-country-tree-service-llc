@@ -1,4 +1,9 @@
 <?php
+// Fallback for DOCUMENT_ROOT when not set (CLI or misconfigured server)
+if (empty($_SERVER['DOCUMENT_ROOT'])) {
+    $_SERVER['DOCUMENT_ROOT'] = dirname(__FILE__);
+}
+
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php';
