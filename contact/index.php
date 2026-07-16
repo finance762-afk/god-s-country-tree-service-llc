@@ -327,7 +327,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_subject" value="New lead from <?php echo e($siteName); ?>">
-          <input type="hidden" name="_cc" value="CustomerService@pageoneinsights.com">
 
           <!-- Honeypot (visually hidden; bots fill it) -->
           <input type="text" name="_honey" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">

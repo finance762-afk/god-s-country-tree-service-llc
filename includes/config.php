@@ -15,11 +15,9 @@ $industry = 'tree_service';
 $tier     = 'premium';
 
 // ---- Contact -----------------------------------------------
-// PLACEHOLDER: Real phone must be provided by client; using a Page One
-// forwarding number until actual client contact is available
-$phone          = '(386) 492-9780';  // TEMPORARY — must be replaced with real client phone
+$phone          = '(407) 280-3484';
 $phoneSecondary = '';
-$email          = 'info@godscountrytreeservice.com';  // TEMPORARY — must be replaced
+$email          = 'godscountrytreeservice@gmail.com';
 
 $address = [
     'street' => '',
@@ -258,7 +256,7 @@ $yearEstablished = 2014;
 $businessHours   = 'Monday 7 AM–10 PM, Tuesday 7 AM–10 PM, Wednesday 7 AM–10 PM, Thursday 7 AM–10 PM, Friday 7 AM–10 PM, Saturday 8 AM–9 PM, Sunday Closed';
 
 // ---- Forms -------------------------------------------------
-$formAction = 'https://formsubmit.co/CustomerService@pageoneinsights.com';
+$formAction = 'https://formsubmit.co/godscountrytreeservice@gmail.com';
 
 // ---- Integrations (from build-plan.json) -------------------
 $integrations = [
