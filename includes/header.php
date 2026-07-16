@@ -29,6 +29,7 @@
           </ul>
         </li>
         <li><a href="/service-area/"<?php echo isActivePage('service-area', $currentPage); ?>>Service Area</a></li>
+        <li><a href="/blog/"<?php echo isActivePage('blog', $currentPage); ?>>Blog</a></li>
         <li><a href="/about/"<?php echo isActivePage('about', $currentPage); ?>>About</a></li>
         <li><a href="/contact/"<?php echo isActivePage('contact', $currentPage); ?>>Contact</a></li>
       </ul>
@@ -65,6 +66,7 @@
       </ul>
     </li>
     <li><a href="/service-area/"<?php echo isActivePage('service-area', $currentPage); ?>>Service Area</a></li>
+    <li><a href="/blog/"<?php echo isActivePage('blog', $currentPage); ?>>Blog</a></li>
     <li><a href="/about/"<?php echo isActivePage('about', $currentPage); ?>>About</a></li>
     <li><a href="/contact/"<?php echo isActivePage('contact', $currentPage); ?>>Contact</a></li>
   </ul>
