@@ -26,7 +26,7 @@ $heroImagePreload = $heroImage;
 $ogImage          = $heroImage;
 
 $storyImage = [
-    'src' => $imgBase . '1784062746583-ngan68-51461668_2236294529924480_5804998056910782464_n.webp',
+    'src' => 'https://i.imgur.com/2ilJCjR.jpeg',
     'alt' => "God's Country Tree Service crew member in company shirt and cap on a DeLand, FL job site",
 ];
 $storyImage2 = [

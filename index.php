@@ -24,7 +24,7 @@ $imgBase = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-
 
 $heroImage        = $imgBase . '1784062762583-gyhtdt-489069018_1475682530496918_5987390642167918859_n.webp'; // fallen tree + grapple loader, landscape
 $statsImage       = $imgBase . '1784062729745-ekffah-31162327_2042462179307717_7701525571804594176_n.webp'; // land clearing, excavator
-$aboutImage       = $imgBase . '1784062746583-ngan68-51461668_2236294529924480_5804998056910782464_n.webp'; // crew member portrait
+$aboutImage       = 'https://i.imgur.com/7RtOm11.jpeg'; // crew member portrait
 $ogImage          = $heroImage;
 $heroImagePreload = $heroImage;
 
