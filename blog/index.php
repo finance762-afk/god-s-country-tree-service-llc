@@ -18,12 +18,13 @@ $currentPage = 'blog';
 <main id="main-content">
   <section class="page-hero">
     <div class="container">
+      <span class="eyebrow-label">Tree Care Insights</span>
       <h1>Tree Care Blog</h1>
       <p class="lead">Expert advice from certified arborists serving DeLand and Volusia County since 2014</p>
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" style="background: linear-gradient(180deg, var(--color-light) 0%, var(--color-white) 100%);">
     <div class="container">
       <div class="blog-grid">
 
