@@ -763,8 +763,8 @@ html.js-anim [data-animate].animated { transform: none; }
 
 /* === Responsive: Tablet (768px) === */
 @media (max-width: 768px) {
-  .navbar-logo-img { height: 58px; }
-  .site-header.scrolled .navbar-logo-img { height: 48px; }
+  .navbar-logo-img { height: 96px; }
+  .site-header.scrolled .navbar-logo-img { height: 76px; }
 
   .stats-grid { grid-template-columns: 1fr 1fr; gap: var(--space-6); }
   .about-split { grid-template-columns: 1fr; gap: var(--space-8); }
