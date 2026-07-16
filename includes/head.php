@@ -60,12 +60,12 @@ $ogImage = $ogImage ?? $logoUrl;
 <meta property="og:site_name" content="<?php echo e($siteName); ?>">
 <meta property="og:locale" content="en_US">
 
-<!-- Fonts: 3-font system — Rye (headings) + Crimson Pro (body) + Permanent Marker (accent) -->
+<!-- Fonts: 3-font system — Fjalla One (headings) + Open Sans (body) + Caveat (accent) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="dns-prefetch" href="https://db.pageone.cloud">
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Rye&family=Crimson+Pro:wght@300;400;500;600;700&family=Permanent+Marker&display=swap" as="style">
-<link href="https://fonts.googleapis.com/css2?family=Rye&family=Crimson+Pro:wght@300;400;500;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:wght@300;400;500;600;700&family=Caveat:wght@400;500;600;700&display=swap" as="style">
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:wght@300;400;500;600;700&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <!-- Styles -->
 <link rel="stylesheet" href="/assets/css/framework.css?v=<?php echo e($cssVersion ?? '1'); ?>">
