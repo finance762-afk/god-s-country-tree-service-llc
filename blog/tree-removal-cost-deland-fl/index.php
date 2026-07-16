@@ -65,7 +65,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <p>Dead trees cost more to remove than healthy ones. Dead wood is unpredictable — branches can snap unexpectedly, and the trunk may be structurally compromised. Storm-damaged or leaning trees also increase risk and labor time. If you're <a href="/blog/signs-dangerous-tree-deland/">dealing with a hazardous tree</a>, removal should happen before the next storm, not after it falls on your house.</p>
 
         <h3>Emergency vs. Scheduled Removal</h3>
-        <p>Emergency tree removal during or immediately after a storm costs 2-3× normal rates. Demand spikes, crews work extended hours, and risk increases when removing partially failed trees. If you schedule removal during the off-season (December through March in DeLand), you may get better pricing than during peak storm season (June through November).</p>
+        <p><a href="/services/emergency-tree-service-storm-cleanup/">Emergency tree removal</a> during or immediately after a storm costs 2-3× normal rates. Demand spikes, crews work extended hours, and risk increases when removing partially failed trees. If you schedule removal during the off-season (December through March in DeLand), you may get better pricing than during peak storm season (June through November). <a href="/blog/hurricane-prep-tree-trimming-deland/">Plan ahead with hurricane prep tree trimming</a> to avoid emergency costs.</p>
 
         <h2>DeLand Tree Removal Cost by Species</h2>
 
@@ -81,7 +81,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <h2>Additional Tree Removal Costs in DeLand</h2>
 
         <h3>Stump Grinding</h3>
-        <p>Tree removal quotes typically don't include stump grinding. Grinding a 12-18 inch diameter stump costs $100-$200. Larger stumps (24-36 inches) run $200-$400. If you plan to replant, sod, or build where the tree stood, budget for stump grinding. Leaving the stump invites termites, fungal growth, and re-sprouting on some species.</p>
+        <p>Tree removal quotes typically don't include stump grinding. Grinding a 12-18 inch diameter stump costs $100-$200. Larger stumps (24-36 inches) run $200-$400. If you plan to replant, sod, or build where the tree stood, budget for <a href="/services/stump-grinding-removal/">stump grinding</a>. Leaving the stump invites termites, fungal growth, and re-sprouting on some species.</p>
 
         <h3>Debris Hauling and Disposal</h3>
         <p>Most DeLand tree services include debris hauling in their removal quote, but confirm before signing. Some companies charge separately for hauling if the job produces excessive debris (multiple large trees, storm cleanup). Disposal fees depend on local rates at yard waste facilities — Volusia County residents can use the West Volusia Transfer Station, but commercial tree services pay tipping fees that get passed to the customer.</p>
@@ -150,6 +150,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             <li><a href="/services/dead-hazardous-tree-removal/">Dead & Hazardous Tree Removal</a></li>
             <li><a href="/services/stump-grinding-removal/">Stump Grinding & Removal</a></li>
             <li><a href="/services/emergency-tree-service-storm-cleanup/">Emergency Tree Service & Storm Cleanup</a></li>
+            <li><a href="/services/tree-health-assessments/">Tree Health Assessments</a></li>
           </ul>
         </div>
 
@@ -158,7 +159,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <div class="blog-grid">
             <?php
             // Show related articles from the same or related categories
-            $relatedSlugs = ['tree-removal-permit-deland-fl', 'signs-dangerous-tree-deland'];
+            $relatedSlugs = ['tree-removal-permit-deland-fl', 'signs-dangerous-tree-deland', 'insurance-fallen-tree-removal-florida'];
             foreach ($blogPosts as $post) {
               if (in_array($post['slug'], $relatedSlugs)) {
                 ?>

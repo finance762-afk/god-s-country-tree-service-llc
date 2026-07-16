@@ -72,7 +72,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <p>Both the City of DeLand and Volusia County typically exempt certain trees from permit requirements, but you may need to document the exemption. Common exemptions include:</p>
 
         <h3>Dead or Dying Trees</h3>
-        <p>A tree that is dead, dying, or in irreversible decline is usually exempt. However, the city or county may require an arborist report or site inspection to confirm the tree's condition before you cut it. <a href="/blog/signs-dangerous-tree-deland/">If you're unsure whether a tree is dead or just dormant</a>, schedule an inspection before cutting — removing a living protected tree without a permit can result in fines.</p>
+        <p>A tree that is dead, dying, or in irreversible decline is usually exempt. However, the city or county may require an arborist report or site inspection to confirm the tree's condition before you cut it. <a href="/blog/signs-dangerous-tree-deland/">If you're unsure whether a tree is dead or just dormant</a>, schedule an inspection before cutting — removing a living protected tree without a permit can result in fines. <a href="/services/tree-health-assessments/">Professional tree health assessments</a> provide documentation that supports permit exemptions.</p>
 
         <h3>Hazardous Trees</h3>
         <p>Trees that pose an immediate threat to structures, utilities, or public safety are typically exempt. Hazard examples include trees with severe trunk cracks, co-dominant stem splits, significant lean toward a building, or extensive root damage. Document the hazard with photos and, if possible, an arborist's written assessment. If the tree falls into the <a href="/blog/tree-removal-cost-deland-fl/">emergency removal category</a>, you may not have time to wait for permit approval, but notify the city or county afterward if required.</p>
@@ -135,9 +135,9 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <p>If the tree poses an imminent threat, document the hazard with photos and written communication to the neighbor. If they refuse to address it and the tree later causes damage, your documentation may support an insurance claim or legal action. In extreme cases where a tree threatens public safety (leaning over a street or sidewalk), contact the city or county — they may inspect and require the owner to remove it.</p>
 
         <h2>Should You Remove a Tree Yourself or Hire a Professional?</h2>
-        <p>Even if a permit isn't required, tree removal is dangerous work. Any tree over 15 feet tall, within 10 feet of power lines, or requiring a chainsaw while on a ladder should be handled by a licensed, insured tree service. Homeowner chainsaw accidents and power line contacts send people to the hospital every year in Central Florida.</p>
+        <p>Even if a permit isn't required, tree removal is dangerous work. Any tree over 15 feet tall, within 10 feet of power lines, or requiring a chainsaw while on a ladder should be handled by a <a href="/services/tree-removal/">licensed, insured tree service</a>. Homeowner chainsaw accidents and power line contacts send people to the hospital every year in Central Florida.</p>
 
-        <p>A professional tree service like God's Country Tree Service can assess whether a permit is needed, obtain it if required, and perform the removal safely. We've been removing trees in DeLand and Volusia County since 2014 — we know the local regulations and can navigate the permit process efficiently.</p>
+        <p>A professional tree service like God's Country Tree Service can assess whether a permit is needed, obtain it if required, and perform the removal safely. We've been removing trees in DeLand and Volusia County since 2014 — we know the local regulations and can navigate the permit process efficiently. <a href="/blog/tree-removal-cost-deland-fl/">Understand what tree removal costs</a> so you can budget appropriately for permitted removals.</p>
 
         <div class="blog-cta">
           <h3>Not sure if your tree needs a permit?</h3>
@@ -151,6 +151,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             <li><a href="/services/tree-removal/">Tree Removal Services</a></li>
             <li><a href="/services/dead-hazardous-tree-removal/">Dead & Hazardous Tree Removal</a></li>
             <li><a href="/services/tree-health-assessments/">Tree Health Assessments</a></li>
+            <li><a href="/services/certified-arborist-services/">Certified Arborist Services</a></li>
           </ul>
         </div>
 
@@ -158,7 +159,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <h3>Related Articles</h3>
           <div class="blog-grid">
             <?php
-            $relatedSlugs = ['tree-removal-cost-deland-fl', 'signs-dangerous-tree-deland'];
+            $relatedSlugs = ['tree-removal-cost-deland-fl', 'signs-dangerous-tree-deland', 'best-time-trim-trees-florida'];
             foreach ($blogPosts as $post) {
               if (in_array($post['slug'], $relatedSlugs)) {
                 ?>
