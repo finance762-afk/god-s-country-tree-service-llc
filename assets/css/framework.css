@@ -224,12 +224,13 @@ section.hero {
   position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
   backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
   background: rgba(255, 255, 255, 0.92);
-  border-bottom: 1px solid rgba(15, 48, 176, 0.08);
+  border-bottom: 3px solid var(--color-white);
   transition: all var(--transition-base);
 }
 .site-header.scrolled {
   background: rgba(255, 255, 255, 0.98);
   box-shadow: 0 2px 20px rgba(13, 22, 56, 0.12);
+  border-bottom: 3px solid var(--color-white);
 }
 .navbar { width: 100%; }
 .navbar-inner {
