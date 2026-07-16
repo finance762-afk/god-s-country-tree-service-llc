@@ -21,7 +21,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 
 $currentPage = $currentPage ?? 'home';
-$logoUrl     = $siteUrl . '/assets/images/logo-v2.webp';
+$logoUrl     = $siteUrl . '/assets/images/Gods-Country-Newest-Logo.png';
 
 // V2.1 trade-noun default title + V2.2 CTR-engineered default description
 $pageTitle = $pageTitle

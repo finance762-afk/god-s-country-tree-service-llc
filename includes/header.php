@@ -14,7 +14,7 @@
     <div class="navbar-inner container">
 
       <a href="/" class="navbar-logo" aria-label="<?php echo e($siteName); ?> — Home">
-        <img src="/assets/images/logo-v2.webp" class="navbar-logo-img" width="700" height="370" alt="<?php echo e($siteName); ?> — tree service in Central-East Florida" fetchpriority="high">
+        <img src="/assets/images/Gods-Country-Newest-Logo.png" class="navbar-logo-img" width="1672" height="941" alt="<?php echo e($siteName); ?> — tree service in Central-East Florida" fetchpriority="high">
       </a>
 
       <ul class="navbar-links">
