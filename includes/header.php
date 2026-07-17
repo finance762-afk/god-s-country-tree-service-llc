@@ -36,7 +36,7 @@
 
       <div class="navbar-cta">
         <?php if (!empty($phone)): ?>
-        <a href="<?php echo e(phoneHref($phone)); ?>" class="navbar-phone">
+        <a href="<?php echo e(phoneHref($phone)); ?>" class="navbar-phone<?php echo !empty($integrations['accepts_sms']) ? ' navbar-phone--sms' : ''; ?>"<?php echo !empty($integrations['accepts_sms']) ? ' title="Call or text us"' : ''; ?>>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           <?php echo e(formatPhone($phone)); ?>
         </a>
@@ -73,6 +73,11 @@
   <div class="mobile-menu-cta">
     <?php if (!empty($phone)): ?>
     <a href="<?php echo e(phoneHref($phone)); ?>" class="btn btn-outline-white">Call <?php echo e(formatPhone($phone)); ?></a>
+    <?php if (!empty($integrations['accepts_sms'])): ?>
+    <a href="sms:<?php echo e(preg_replace('/^tel:/', '', phoneHref($phone))); ?>" class="btn btn-outline-white">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true" style="display:inline-block;vertical-align:middle;margin-right:0.35rem"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Text Us
+    </a>
+    <?php endif; ?>
     <?php endif; ?>
     <a href="/contact/" class="btn btn-accent">Get a Free Estimate</a>
   </div>

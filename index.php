@@ -698,6 +698,11 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Estimate</a>
         <?php if (!empty($phone)): ?>
         <a href="<?php echo e(phoneHref($phone)); ?>" class="btn btn-outline-white btn-lg">Call Now <?php echo e(formatPhone($phone)); ?></a>
+        <?php if (!empty($integrations['accepts_sms'])): ?>
+        <a href="sms:<?php echo e(preg_replace('/^tel:/', '', phoneHref($phone))); ?>" class="btn btn-outline-white btn-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true" style="display:inline-block;vertical-align:middle;margin-right:0.35rem"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Text Us
+        </a>
+        <?php endif; ?>
         <?php else: ?>
         <a href="/services/" class="btn btn-outline-white btn-lg">Explore Our Services</a>
         <?php endif; ?>
