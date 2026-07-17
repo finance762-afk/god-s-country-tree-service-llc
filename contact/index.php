@@ -372,7 +372,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
           <div class="form-field">
             <label for="c-message"><span>Tell Us About Your Trees</span>
-              <textarea id="c-message" name="message" rows="5" placeholder="What's going on — a leaning oak, dead limbs over the roof, an overgrown lot, storm cleanup? Include your city if it's outside DeLand."></textarea>
+              <textarea id="c-message" name="message" rows="5" placeholder="What's going on — a leaning oak, dead limbs over the roof, an overgrown lot, storm cleanup? Include your city if it's outside DeLand.">Request for Service: </textarea>
             </label>
           </div>
 
