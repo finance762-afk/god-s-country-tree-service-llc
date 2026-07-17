@@ -973,6 +973,9 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <div class="arb-expert-copy">
         <span class="eyebrow-label">Judgment First, Equipment Second</span>
         <h2>When should you call an arborist instead of a general tree service?</h2>
+        <figure style="margin: 0 0 var(--space-6); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md);" data-animate>
+          <img src="https://i.imgur.com/EpmXxaJ.jpeg" alt="Certified arborist examining tree health in DeLand, Florida" width="800" height="600" loading="lazy" style="width: 100%; height: auto; display: block;">
+        </figure>
         <p class="answer-block">Call an arborist when the question is &ldquo;what&rsquo;s wrong with this tree?&rdquo; rather than &ldquo;how fast can it come down?&rdquo; A professional tree service with certified arborist expertise diagnoses before it cuts &mdash; so a treatable oak gets a care plan, and only genuine hazards get the saw.</p>
 
         <ul class="arb-cred-rows" data-p1-dynamic>
