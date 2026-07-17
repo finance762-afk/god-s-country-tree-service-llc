@@ -63,6 +63,15 @@ $credentials = [
     ['icon' => 'clock',       'title' => '24/7 Storm Response', 'text' => 'Around-the-clock emergency availability through Central Florida\'s hurricane season.'],
 ];
 
+// ---- Certification Badges (actual credential images) ----
+$certificationBadges = [
+    [
+        'src' => 'https://i.imgur.com/EpmXxaJ.jpeg',
+        'alt' => 'Certified Arborist certification from International Society of Arboriculture',
+        'title' => 'ISA Certified Arborist',
+    ],
+];
+
 // ---- Stats band ----
 $aboutStats = [
     ['counter' => 21, 'suffix' => '+',     'label' => 'Years of Tree Experience'],
@@ -467,6 +476,44 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 }
 .creds-verify .btn { text-transform: none; }
 
+/* ---- Certification Badges (actual credential images) ---- */
+.certification-badges {
+  margin-top: var(--space-12);
+  text-align: center;
+}
+.badges-title {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-2xl);
+  color: var(--color-primary);
+  margin-bottom: var(--space-6);
+  text-wrap: balance;
+}
+.badges-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-8);
+  flex-wrap: wrap;
+}
+.cert-badge {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  max-width: 280px;
+}
+.cert-badge:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: var(--shadow-lg);
+}
+.cert-badge img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-sm);
+}
+
 /* ---- C9.2 Closing CTA with radial glow ---- */
 .closing-cta {
   position: relative;
@@ -525,6 +572,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   .story-badge { left: 50%; transform: translateX(-50%); bottom: calc(-1 * var(--space-6)); }
   .story-image::before { display: none; }
   .about-hero .hero-answer { font-size: var(--font-size-base); }
+  .cert-badge { max-width: 240px; }
+  .badges-title { font-size: var(--font-size-xl); }
 }
 </style>
 
@@ -674,6 +723,19 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       </article>
       <?php endforeach; ?>
     </div>
+
+    <?php if (!empty($certificationBadges)): ?>
+    <div class="certification-badges" data-animate>
+      <h3 class="badges-title">Our Certifications</h3>
+      <div class="badges-grid">
+        <?php foreach ($certificationBadges as $badge): ?>
+        <div class="cert-badge">
+          <img src="<?php echo e($badge['src']); ?>" alt="<?php echo e($badge['alt']); ?>" title="<?php echo e($badge['title']); ?>" loading="lazy">
+        </div>
+        <?php endforeach; ?>
+      </div>
+    </div>
+    <?php endif; ?>
 
     <div class="creds-verify" data-animate>
       <a class="btn btn-secondary" href="<?php echo e($integrations['bbb_url']); ?>" target="_blank" rel="noopener">
