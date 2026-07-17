@@ -47,22 +47,22 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         </div>
 
         <h2>What Affects Tree Removal Cost in DeLand, FL?</h2>
-        <p>God's Country Tree Service prices tree removal based on six main factors. Understanding these helps you predict whether your quote will land at the low or high end of the range.</p>
+        <p>God's Country Tree Service prices tree removal based on six main factors. While tree size matters, accessibility and hazards drive the price more than height alone. A 40-foot tree in a tight backyard surrounded by structures costs more than a 70-foot tree in an open field — the work complexity, not the tape measure, determines the final bill.</p>
 
-        <h3>Tree Size and Height</h3>
-        <p>Height drives labor time and equipment needs. A 25-foot crape myrtle takes 2-3 hours with a crew of two. A 70-foot laurel oak can take 6-8 hours with a crew of three plus a bucket truck. The taller the tree, the more rigging, cutting, and lowering required to bring sections down safely without damaging your property.</p>
+        <h3>Location and Access (Biggest Cost Driver)</h3>
+        <p>Accessibility is the single biggest factor in tree removal pricing. A tree in an open front yard costs less than the same tree wedged between your house and a fence. Tight backyards, trees over pools or patios, and trees within 10 feet of structures require <a href="/blog/signs-dangerous-tree-deland/">careful rigging and piece-by-piece removal</a> instead of directional felling. If crane access is the only safe option, add $800-$1,500 to the base price for crane rental and operator time. A small 30-foot tree in a confined space with overhead wires and a fence on three sides can cost more than a 60-foot tree in an open yard — the labor hours, rigging complexity, and equipment needs multiply fast when access is restricted.</p>
+
+        <h3>Proximity to Power Lines and Structures (High-Risk Premium)</h3>
+        <p>Trees touching or within 10 feet of power lines require extra safety protocols, slower work, and sometimes coordination with Duke Energy. If the utility must de-energize lines temporarily, expect delays and higher costs. Trees overhanging roofs, pools, garages, or neighbor properties add risk and precision work that doubles or triples labor time compared to a tree with clear drop zones. Some homeowners assume Duke will remove the tree for free — they won't. Duke trims branches away from wires but doesn't remove trees on private property.</p>
+
+        <h3>Tree Condition and Hazards</h3>
+        <p>Dead trees cost more to remove than healthy ones. Dead wood is unpredictable — branches can snap unexpectedly, and the trunk may be structurally compromised. Storm-damaged or leaning trees also increase risk and labor time. A tree with visible cracks, cavities, fungal growth, or structural defects requires extra rigging, slower cuts, and specialized safety measures. If you're <a href="/blog/signs-dangerous-tree-deland/">dealing with a hazardous tree</a>, removal should happen before the next storm, not after it falls on your house. Hazard trees often cost 50-100% more than healthy trees of the same size because the crew must treat every cut as a potential failure point.</p>
+
+        <h3>Tree Size and Height (One Factor Among Many)</h3>
+        <p>Height influences labor time and equipment needs, but it's only one factor. A 25-foot crape myrtle in an open yard takes 2-3 hours with a crew of two. A 70-foot laurel oak in the same open yard might take 6-8 hours with a crew of three plus a bucket truck. But that same 25-foot crape myrtle wedged behind a house near power lines can take just as long as the 70-foot oak in the open. The taller the tree, the more rigging, cutting, and lowering required — but accessibility and hazards determine whether that work happens efficiently or requires meticulous piece-by-piece dismantling.</p>
 
         <h3>Tree Species</h3>
         <p>Oak removal costs more per foot than pine removal because oak wood is denser and harder to cut. Palm removal costs vary by height — short palms are quick work, but 40-foot cabbage palms require specialized equipment. Mature live oaks with sprawling canopies cost more than columnar pines of the same height because the canopy footprint determines how much rigging and lowering work the crew must perform.</p>
-
-        <h3>Location and Access</h3>
-        <p>A tree in an open front yard costs less than the same tree wedged between your house and a fence. Tight backyards, trees over pools or patios, and trees within 10 feet of structures require <a href="/blog/signs-dangerous-tree-deland/">careful rigging and piece-by-piece removal</a> instead of directional felling. If crane access is the only safe option, add $800-$1,500 to the base price for crane rental and operator time.</p>
-
-        <h3>Proximity to Power Lines</h3>
-        <p>Trees touching or within 10 feet of power lines require extra safety protocols, slower work, and sometimes coordination with Duke Energy. If the utility must de-energize lines temporarily, expect delays and higher costs. Some homeowners assume Duke will remove the tree for free — they won't. Duke trims branches away from wires but doesn't remove trees on private property.</p>
-
-        <h3>Tree Condition</h3>
-        <p>Dead trees cost more to remove than healthy ones. Dead wood is unpredictable — branches can snap unexpectedly, and the trunk may be structurally compromised. Storm-damaged or leaning trees also increase risk and labor time. If you're <a href="/blog/signs-dangerous-tree-deland/">dealing with a hazardous tree</a>, removal should happen before the next storm, not after it falls on your house.</p>
 
         <h3>Emergency vs. Scheduled Removal</h3>
         <p><a href="/services/emergency-tree-service-storm-cleanup/">Emergency tree removal</a> during or immediately after a storm costs 2-3× normal rates. Demand spikes, crews work extended hours, and risk increases when removing partially failed trees. If you schedule removal during the off-season (December through March in DeLand), you may get better pricing than during peak storm season (June through November). <a href="/blog/hurricane-prep-tree-trimming-deland/">Plan ahead with hurricane prep tree trimming</a> to avoid emergency costs.</p>
