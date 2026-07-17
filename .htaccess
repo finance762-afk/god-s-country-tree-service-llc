@@ -46,11 +46,15 @@ DirectoryIndex index.php index.html
     # Dynamic sitemap — /sitemap.xml is served by sitemap.php (Phase 5)
     RewriteRule ^sitemap\.xml$ /sitemap.php [L]
 
-    # NOTE: no "!-d" condition — it breaks subdirectory/index.php pages
-    # on Hostinger (see CLAUDE.md .htaccess rules).
+    # Rewrite extensionless URLs to their .php file ONLY when that file
+    # exists. Without the existence check, a request for an existing
+    # DIRECTORY (/services/) was rewritten to services/.php → 404 on every
+    # subdirectory page in production (Apache), while nginx previews hid it.
+    # Directories fall through to DirectoryIndex.
     RewriteCond %{REQUEST_URI} !^/assets/
     RewriteCond %{REQUEST_URI} !^/includes/
     RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{DOCUMENT_ROOT}/$1.php -f
     RewriteRule ^([^\.]+)$ $1.php [NC,L]
     RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
     RewriteRule ^ /%1 [NC,L,R=301]
