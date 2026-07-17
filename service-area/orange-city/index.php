@@ -27,7 +27,7 @@ $heroImage        = 'https://db.pageone.cloud/storage/v1/object/public/client-as
 $heroImagePreload = $heroImage;
 $ogImage          = $heroImage;
 
-$imgClimber = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/1784062768583-3pwb0r-650559399_1767273341337834_4780224751141932631_n.webp';
+$imgClimber = 'https://i.imgur.com/NSUVrpT.jpeg';
 $imgLakeOak = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/1784062743583-mfq8fe-46027175_2188053541415246_7752010700460916736_n.webp';
 
 // ---- Heritage-oak preservation timeline (SIGNATURE) -------

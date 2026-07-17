@@ -34,7 +34,7 @@ $storyImage2 = [
     'alt' => 'Caleb, owner of God\'s Country Tree Service, positioned high in a pine tree during arborist work in DeLand, FL',
 ];
 $valuesImage = [
-    'src' => $imgBase . '1784062768583-3pwb0r-650559399_1767273341337834_4780224751141932631_n.webp',
+    'src' => 'https://i.imgur.com/NSUVrpT.jpeg',
     'alt' => "God's Country climber roped high in a live oak canopy over a DeLand, FL yard",
 ];
 

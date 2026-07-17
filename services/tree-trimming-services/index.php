@@ -36,7 +36,7 @@ $bodyPhotos = [
         'alt' => "God's Country bucket truck extended into an oak canopy in DeLand, FL",
     ],
     'climber' => [
-        'src' => $imgBase . '1784062768583-3pwb0r-650559399_1767273341337834_4780224751141932631_n.webp',
+        'src' => 'https://i.imgur.com/NSUVrpT.jpeg',
         'alt' => "God's Country climber trimming limbs inside a live oak canopy in DeLand, FL",
     ],
     'loader' => [
