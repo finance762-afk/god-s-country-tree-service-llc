@@ -27,9 +27,7 @@ $address = [
 ];
 
 // ---- Domain / URLs -----------------------------------------
-// build-plan.json has no production_domain — default to the preview
-// domain "{$slug}.pageone.cloud". NEVER blank.
-$domain  = $slug . '.pageone.cloud';
+$domain  = 'godscountrytree.com';
 $siteUrl = 'https://' . $domain;
 // NOTE: $canonicalUrl is NOT set here — each page sets its own
 // $canonicalUrl from $siteUrl + path before including head.php.
