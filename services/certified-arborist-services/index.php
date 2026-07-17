@@ -30,11 +30,11 @@ $ogImage          = $heroImage;
 
 $bodyPhotos = [
     'rigged' => [
-        'src' => $imgBase . '1784062760583-r3tkj0-487167442_1464220628309775_3432880231540439500_n.webp',
+        'src' => $imgBase . '1784062740583-2dtirn-42754196_2163954730491794_5374692911386460160_n.webp',
         'alt' => 'Climbing arborist rigged with rope and carabiners in an oak over a DeLand, FL lake',
     ],
     'canopy' => [
-        'src' => $imgBase . '1784062743583-mfq8fe-46027175_2188053541415246_7752010700460916736_n.webp',
+        'src' => $imgBase . '1784062745583-ri3d15-51248376_2242050436015556_1895589103194341376_n.webp',
         'alt' => 'Helmeted arborist working in an oak canopy above a DeLand, FL lake',
     ],
 ];
