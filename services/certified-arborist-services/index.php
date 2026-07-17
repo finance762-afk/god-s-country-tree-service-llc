@@ -37,10 +37,6 @@ $bodyPhotos = [
         'src' => $imgBase . '1784062743583-mfq8fe-46027175_2188053541415246_7752010700460916736_n.webp',
         'alt' => 'Helmeted arborist working in an oak canopy above a DeLand, FL lake',
     ],
-    'portrait' => [
-        'src' => $imgBase . '1784062746583-ngan68-51461668_2236294529924480_5804998056910782464_n.webp',
-        'alt' => "God's Country Tree Service crew member in front of a magnolia in DeLand, FL",
-    ],
 ];
 
 // ---- Symptom cards (what an arborist reads) ----
@@ -959,17 +955,6 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 <section class="numbered-section arb-expert" data-num="02" aria-label="When to call an arborist">
   <div class="container">
     <div class="arb-expert-grid">
-      <figure class="arb-portrait" data-animate>
-        <div class="arb-portrait-inner">
-          <img src="<?php echo e($bodyPhotos['portrait']['src']); ?>" alt="<?php echo e($bodyPhotos['portrait']['alt']); ?>" width="800" height="1000" loading="lazy">
-        </div>
-        <figcaption>The crew that assesses your trees is the crew that works on them.</figcaption>
-        <div class="arb-cred-stat">
-          <div class="big-number"><?php echo e($yearsInBusiness); ?><span>+</span></div>
-          <div class="big-label">Years Reading DeLand Trees</div>
-        </div>
-      </figure>
-
       <div class="arb-expert-copy">
         <span class="eyebrow-label">Judgment First, Equipment Second</span>
         <h2>When should you call an arborist instead of a general tree service?</h2>
