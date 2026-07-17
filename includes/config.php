@@ -145,7 +145,7 @@ $serviceAreas = [
         'direction' => 'home base',
         'distance'  => '',
         'icon'      => 'house',
-        'img'       => $imgAreaBase . '1784062743583-mfq8fe-46027175_2188053541415246_7752010700460916736_n.webp',
+        'img'       => 'https://i.imgur.com/Awf2Hm0.jpeg',
         'blurb'     => 'Our DeLand home base — the Athens of Florida, Stetson University, and a downtown canopy of live oaks we have cared for since 2014.',
         'landmarks' => ['Stetson University', 'Downtown Woodland Boulevard', 'Blue Spring State Park'],
     ],
