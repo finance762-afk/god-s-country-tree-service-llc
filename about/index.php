@@ -26,12 +26,12 @@ $heroImagePreload = $heroImage;
 $ogImage          = $heroImage;
 
 $storyImage = [
-    'src' => 'https://i.imgur.com/2ilJCjR.jpeg',
-    'alt' => "God's Country Tree Service crew member in company shirt and cap on a DeLand, FL job site",
+    'src' => 'https://i.imgur.com/kwDolQt.jpeg',
+    'alt' => "Caleb, owner of God's Country Tree Service, in orange arborist helmet with blue sky background on a DeLand, FL job site",
 ];
 $storyImage2 = [
-    'src' => $imgBase . '1784062762583-gyhtdt-489069018_1475682530496918_5987390642167918859_n.webp',
-    'alt' => 'Grapple loader lifting a fallen tree section during cleanup in DeLand, FL',
+    'src' => 'https://i.imgur.com/Awf2Hm0.jpeg',
+    'alt' => 'Caleb, owner of God\'s Country Tree Service, positioned high in a pine tree during arborist work in DeLand, FL',
 ];
 $valuesImage = [
     'src' => $imgBase . '1784062768583-3pwb0r-650559399_1767273341337834_4780224751141932631_n.webp',

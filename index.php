@@ -24,7 +24,7 @@ $imgBase = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-
 
 $heroImage        = $imgBase . '1784062762583-gyhtdt-489069018_1475682530496918_5987390642167918859_n.webp'; // fallen tree + grapple loader, landscape
 $statsImage       = $imgBase . '1784062729745-ekffah-31162327_2042462179307717_7701525571804594176_n.webp'; // land clearing, excavator
-$aboutImage       = 'https://i.imgur.com/7RtOm11.jpeg'; // crew member portrait
+$aboutImage       = 'https://i.imgur.com/kwDolQt.jpeg'; // owner Caleb in orange helmet with blue sky
 $ogImage          = $heroImage;
 $heroImagePreload = $heroImage;
 
@@ -892,7 +892,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       </div>
 
       <div class="about-image about-image--framed" data-animate="right">
-        <img src="<?php echo e($aboutImage); ?>" alt="God's Country Tree Service crew member in company shirt and cap in DeLand, FL" width="600" height="750" loading="lazy">
+        <img src="<?php echo e($aboutImage); ?>" alt="Caleb, owner of God's Country Tree Service, in orange arborist helmet on a DeLand, FL job site" width="600" height="750" loading="lazy">
         <div class="stat-overlay">
           <div class="big-number"><?php echo e($yearsInBusiness); ?>+</div>
           <div class="label">Years in DeLand</div>
