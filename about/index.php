@@ -26,8 +26,8 @@ $heroImagePreload = $heroImage;
 $ogImage          = $heroImage;
 
 $storyImage = [
-    'src' => 'https://i.imgur.com/kwDolQt.jpeg',
-    'alt' => "Caleb, owner of God's Country Tree Service, in orange arborist helmet with blue sky background on a DeLand, FL job site",
+    'src' => 'https://i.imgur.com/Awf2Hm0.jpeg',
+    'alt' => 'Caleb, owner of God\'s Country Tree Service, positioned high in a pine tree during arborist work in DeLand, FL',
 ];
 $storyImage2 = [
     'src' => 'https://i.imgur.com/Awf2Hm0.jpeg',
