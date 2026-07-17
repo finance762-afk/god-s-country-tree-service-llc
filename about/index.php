@@ -661,8 +661,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Credentials</span>
-      <h2>Why Florida Homeowners Can Hire With Confidence</h2>
-      <p class="answer-block"><?php echo e($siteName); ?> backs its work with credentials you can verify &mdash; full licensing and insurance, decades of trained arborist expertise, an established BBB business profile, and genuine 24/7 storm availability across Central and North Central Florida.</p>
+      <h2>Why Florida Homeowners &amp; Businesses Can Hire With Confidence</h2>
+      <p class="answer-block"><?php echo e($siteName); ?> backs its work with credentials you can verify &mdash; full licensing and insurance, decades of trained arborist expertise, an established BBB business profile, and genuine 24/7 storm availability across Central and North Central Florida. Property managers and HOA boards receive documentation before work begins, and commercial contracts include scheduled maintenance and written assessments.</p>
     </div>
 
     <div class="creds-grid">
@@ -689,12 +689,12 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 <!-- ============ CLOSING CTA ============ -->
 <section class="closing-cta" aria-label="Get a free estimate">
   <div class="container">
-    <span class="eyebrow-label" style="color: var(--color-accent);">Free &middot; Local &middot; No Obligation</span>
-    <h2>Put an Owner-Operated Crew You Can Trust on Your Trees</h2>
-    <p>Whether it's a leaning oak, an overgrown canopy, or a whole lot that needs clearing, <?php echo e($siteName); ?> will walk the property, give you an honest read, and put a straight price in writing &mdash; usually within 24 hours.</p>
+    <span class="eyebrow-label" style="color: var(--color-accent);">Residential &middot; Commercial &middot; HOA</span>
+    <h2>Put an Owner-Operated Crew You Can Trust on Your Property</h2>
+    <p>Whether you're a homeowner with a leaning oak, a property manager needing scheduled maintenance, or a business owner with a lot that needs clearing &mdash; <?php echo e($siteName); ?> will walk the property, give you an honest read, and put a straight price in writing, usually within 24 hours.</p>
     <div class="hero-actions">
       <a href="/contact/" class="btn btn-accent btn-lg">Get a Free Estimate</a>
-      <a href="/services/" class="btn btn-outline-white btn-lg">Explore Our Services</a>
+      <a href="/services/commercial-hoa-tree-services/" class="btn btn-outline-white btn-lg">Commercial Contracts</a>
     </div>
   </div>
 </section>

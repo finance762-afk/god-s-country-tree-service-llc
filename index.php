@@ -32,6 +32,15 @@ $heroImagePreload = $heroImage;
 // Icons are Lucide names; every adjacent card differs. Exactly 3 bullets each.
 $homeServiceCards = [
     [
+        'slug'    => 'commercial-hoa-tree-services',
+        'name'    => 'Commercial & HOA Tree Services',
+        'icon'    => 'building-2',
+        'img'     => $imgBase . '1784062730039-tm1j7f-31172143_2042462125974389_3563289646844608512_n.webp',
+        'alt'     => 'Skid steer and truck behind tree-protection fencing on commercial tree service job in DeLand, FL',
+        'desc'    => 'Scheduled maintenance contracts for businesses, HOAs, and property managers.',
+        'bullets' => ['Contract pricing & scheduling', 'Insurance documented up front', 'One crew for trees & land clearing'],
+    ],
+    [
         'slug'    => 'tree-planting-shrub-installation',
         'name'    => 'Tree Planting & Shrub Installation',
         'icon'    => 'sprout',
@@ -109,14 +118,16 @@ $homeServiceCards = [
 $tickerItems = [
     'Licensed &amp; Insured',
     '12+ Years in Business',
+    'Commercial Contracts Available',
     '24/7 Storm Response',
     'Free Estimates in 24 Hours',
     'Certified Arborists',
+    'HOA &amp; Property Management',
     'Residential &amp; Commercial',
     'Tree &amp; Land Clearing',
     'Serving Volusia County',
     'DeLand, Florida — Since 2014',
-    'Debris Removal Included',
+    'Scheduled Maintenance Programs',
 ];
 
 // ---- Stats (grounded: years, service count, radius, 24/7) ----
@@ -692,7 +703,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
       <h1 class="hero-title">Tree Service in DeLand, FL &mdash; <span class="gradient-text text-accent">Year-Round Care</span></h1>
 
-      <p class="hero-subtitle"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving homes, businesses, and HOA communities across Volusia County since <?php echo e($yearEstablished); ?>. Certified arborist expertise, 24-hour emergency response when you need it, and free estimates within 24 hours &mdash; from the local crew who's here year-round.</p>
+      <p class="hero-subtitle"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving residential, commercial, and HOA properties across Volusia County since <?php echo e($yearEstablished); ?>. Scheduled maintenance contracts for businesses, 24-hour emergency response, and certified arborist expertise &mdash; from the local crew who's here year-round.</p>
 
       <div class="hero-actions">
         <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Estimate</a>
@@ -712,6 +723,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <span class="hero-trust-item">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
           Licensed &amp; Insured
+        </span>
+        <span class="hero-trust-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+          Commercial Contracts
         </span>
         <span class="hero-trust-item">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
@@ -792,9 +807,9 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">What We Do</span>
       <h2>What Tree Services Does God's Country Tree Service Offer in <span class="text-accent">DeLand</span>?</h2>
-      <p class="hero-answer"><?php echo e($siteName); ?> provides twelve tree services in DeLand, FL &mdash; tree removal, trimming, pruning, crown reduction, dead and hazardous tree removal, 24-hour emergency storm cleanup, fallen tree cleanup, tree planting, and certified arborist care &mdash; for homeowners, businesses, and HOA communities across Volusia County.</p>
+      <p class="hero-answer"><?php echo e($siteName); ?> provides twelve tree services in DeLand, FL &mdash; commercial contracts, residential care, tree removal, trimming, pruning, crown reduction, dead and hazardous tree removal, 24-hour emergency storm cleanup, fallen tree cleanup, tree planting, and certified arborist care &mdash; for property managers, HOA communities, businesses, and homeowners across Volusia County.</p>
       <span class="section-subtitle"><?php echo e($tagline); ?></span>
-      <p class="prose">One local crew handles the whole job &mdash; climbing, rigging, skid-steer work, debris hauling, and stump grinding &mdash; so you never juggle multiple contractors.</p>
+      <p class="prose">One local crew handles the whole job &mdash; climbing, rigging, skid-steer work, debris hauling, and stump grinding &mdash; so businesses and property managers never juggle multiple contractors or uncoordinated schedules.</p>
     </div>
 
     <div class="services-grid services-grid--home" data-p1-dynamic>
@@ -864,11 +879,11 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 <!-- ============ MID-PAGE CTA BANNER ============ -->
 <section class="cta-banner" aria-label="Preventative care call to action">
   <div class="container">
-    <span class="eyebrow-label" style="color: var(--color-accent);">Smart Tree Care</span>
-    <h2>Regular Maintenance Keeps Your Property Safe Year-Round</h2>
-    <p>Addressing tree issues early — dead limbs, poor structure, or unstable growth — is more affordable and safer than waiting for problems to escalate. Get a free assessment from a certified arborist, and know you have 24/7 support if something unexpected happens.</p>
-    <a href="#estimate-form" class="btn btn-accent btn-lg">Request a Free Assessment</a>
-    <a href="/services/emergency-tree-service-storm-cleanup/" class="btn btn-outline-white btn-lg">24/7 Emergency Response</a>
+    <span class="eyebrow-label" style="color: var(--color-accent);">Commercial Tree Contracts</span>
+    <h2>Scheduled Maintenance Keeps Commercial Properties Safe &amp; Compliant Year-Round</h2>
+    <p>Property managers, HOAs, and businesses trust <?php echo e($siteName); ?> for contract-based tree care — scheduled visits, written documentation for liability protection, and emergency storm response when you need it. One licensed crew handles trimming, removal, land clearing, and debris hauling, so you never coordinate multiple vendors.</p>
+    <a href="/services/commercial-hoa-tree-services/" class="btn btn-accent btn-lg">Commercial Tree Services</a>
+    <a href="#estimate-form" class="btn btn-outline-white btn-lg">Request a Property Assessment</a>
   </div>
 </section>
 
@@ -964,12 +979,12 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 <!-- ============ CLOSING CTA ============ -->
 <section class="closing-cta" aria-label="Get a free estimate">
   <div class="container">
-    <span class="eyebrow-label" style="color: var(--color-accent);">Free &middot; Fast &middot; No Obligation</span>
+    <span class="eyebrow-label" style="color: var(--color-accent);">Residential &middot; Commercial &middot; HOA</span>
     <h2>Get Your Free Tree Service Estimate in DeLand</h2>
-    <p>Tell us what's going on with your trees &mdash; a leaning oak, storm damage, an overgrown canopy, or a planting project. <?php echo e($siteName); ?> responds within 24 hours with a straight, all-in quote.</p>
+    <p>Property managers, business owners, and homeowners across Volusia County trust <?php echo e($siteName); ?> for professional tree care. Whether you need a one-time removal, seasonal trimming, or a scheduled commercial contract &mdash; we respond within 24 hours with a written, all-in quote.</p>
     <div class="hero-actions">
       <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Estimate</a>
-      <a href="/contact/" class="btn btn-outline-white btn-lg">Contact Us</a>
+      <a href="/services/commercial-hoa-tree-services/" class="btn btn-outline-white btn-lg">Commercial Contracts</a>
     </div>
   </div>
 </section>

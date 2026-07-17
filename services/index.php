@@ -28,6 +28,15 @@ $ogImage          = $heroImage;
 // ---- Decision guide paths ----
 $decisionPaths = [
     [
+        'icon'  => 'building-2',
+        'title' => 'Managing a commercial property',
+        'text'  => 'Property managers, HOA boards, and business owners need scheduled maintenance contracts with documentation, insurance, and one crew for trees, land clearing, and storm response.',
+        'links' => [
+            ['label' => 'Commercial & HOA Services', 'url' => '/services/commercial-hoa-tree-services/'],
+            ['label' => 'Maintenance Contracts',     'url' => '/services/tree-maintenance-care/'],
+        ],
+    ],
+    [
         'icon'  => 'siren',
         'title' => 'Something already happened',
         'text'  => 'A tree is down, split, or hanging over the house after a storm. Start with emergency response — we answer 24/7 and make the scene safe first, then handle cleanup.',
