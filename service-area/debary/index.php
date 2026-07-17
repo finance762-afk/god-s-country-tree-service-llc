@@ -564,7 +564,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <span aria-current="page">DeBary</span>
     </nav>
 
-    <span class="dby-eyebrow"><i data-lucide="map-pin"></i> Tree Service &middot; DeBary, FL</span>
+    <span class="dby-eyebrow"><?php echo icon('map-pin'); ?> Tree Service &middot; DeBary, FL</span>
 
     <h1>Tree Service in DeBary, FL &mdash; <span class="text-accent">From SunRail Subdivisions to Heritage Estates</span></h1>
 
@@ -576,10 +576,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     </div>
 
     <div class="hero-trust">
-      <span class="hero-trust-item"><i data-lucide="shield-check"></i> Licensed &amp; Insured</span>
-      <span class="hero-trust-item"><i data-lucide="award"></i> <?php echo e($yearsInBusiness); ?>+ Years in Volusia County</span>
-      <span class="hero-trust-item"><i data-lucide="building-2"></i> HOA &amp; Residential Crews</span>
-      <span class="hero-trust-item"><i data-lucide="clock"></i> Estimates Within 24 Hours</span>
+      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
+      <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in Volusia County</span>
+      <span class="hero-trust-item"><?php echo icon('building-2'); ?> HOA &amp; Residential Crews</span>
+      <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
     </div>
   </div>
 </section>
@@ -640,26 +640,26 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <div class="dby-compare-divider" aria-hidden="true"></div>
 
       <article class="dby-compare-col dby-compare-col--young reveal-delay-1" data-animate="left">
-        <span class="dby-compare-tag"><i data-lucide="sprout"></i> New Growth</span>
+        <span class="dby-compare-tag"><?php echo icon('sprout'); ?> New Growth</span>
         <h3>SunRail-Era Subdivisions</h3>
         <p>Riviera Bella, Glen Abbey, and Springview were planted with young live oaks and sabal palms. Trained early, they grow into strong, storm-resistant shade trees instead of hazards.</p>
         <ul class="dby-compare-list">
-          <li><i data-lucide="check"></i> Structural pruning that corrects co-dominant leaders</li>
-          <li><i data-lucide="check"></i> Tree &amp; shrub planting matched to Florida natives</li>
-          <li><i data-lucide="check"></i> Early shaping so canopies clear roofs and drives</li>
-          <li><i data-lucide="check"></i> HOA-friendly scheduling and documented insurance</li>
+          <li><?php echo icon('check'); ?> Structural pruning that corrects co-dominant leaders</li>
+          <li><?php echo icon('check'); ?> Tree &amp; shrub planting matched to Florida natives</li>
+          <li><?php echo icon('check'); ?> Early shaping so canopies clear roofs and drives</li>
+          <li><?php echo icon('check'); ?> HOA-friendly scheduling and documented insurance</li>
         </ul>
       </article>
 
       <article class="dby-compare-col dby-compare-col--heritage reveal-delay-2" data-animate="right">
-        <span class="dby-compare-tag"><i data-lucide="trees"></i> Heritage</span>
+        <span class="dby-compare-tag"><?php echo icon('trees'); ?> Heritage</span>
         <h3>Estate Oaks Around DeBary Hall</h3>
         <p>The mature live oaks near DeBary Hall and the city&rsquo;s older streets predate the subdivisions. Around trees like these, preservation almost always beats removal.</p>
         <ul class="dby-compare-list">
-          <li><i data-lucide="check"></i> Crown reduction to lighten heavy, overextended limbs</li>
-          <li><i data-lucide="check"></i> Deadwood removal and careful canopy thinning</li>
-          <li><i data-lucide="check"></i> Honest save-or-remove calls from experienced crews</li>
-          <li><i data-lucide="check"></i> Removal only when decay makes an oak a real hazard</li>
+          <li><?php echo icon('check'); ?> Crown reduction to lighten heavy, overextended limbs</li>
+          <li><?php echo icon('check'); ?> Deadwood removal and careful canopy thinning</li>
+          <li><?php echo icon('check'); ?> Honest save-or-remove calls from experienced crews</li>
+          <li><?php echo icon('check'); ?> Removal only when decay makes an oak a real hazard</li>
         </ul>
       </article>
     </div>
@@ -678,9 +678,9 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <h2>Scheduling that works for a SunRail commuter town</h2>
         <p>DeBary&rsquo;s SunRail station sends a lot of the neighborhood toward Orlando every morning, so we don&rsquo;t need you standing in the driveway to get the work done. We assess, quote in writing within 24 hours, and coordinate the details by phone and email.</p>
         <ul class="dby-schedule__points">
-          <li><i data-lucide="calendar-check"></i> <span><strong>HOA &amp; property-manager scheduling.</strong> Common-area rounds and gated-community access planned ahead, with insurance on file.</span></li>
-          <li><i data-lucide="file-text"></i> <span><strong>Free written estimates in 24 hours.</strong> Scope, cleanup, and hauling spelled out before any crew arrives.</span></li>
-          <li><i data-lucide="truck"></i> <span><strong>One crew, whole job.</strong> Climbing, grapple loading, chipping, and haul-off from the same DeBary-serving team.</span></li>
+          <li><?php echo icon('calendar-check'); ?> <span><strong>HOA &amp; property-manager scheduling.</strong> Common-area rounds and gated-community access planned ahead, with insurance on file.</span></li>
+          <li><?php echo icon('file-text'); ?> <span><strong>Free written estimates in 24 hours.</strong> Scope, cleanup, and hauling spelled out before any crew arrives.</span></li>
+          <li><?php echo icon('truck'); ?> <span><strong>One crew, whole job.</strong> Climbing, grapple loading, chipping, and haul-off from the same DeBary-serving team.</span></li>
         </ul>
       </div>
     </div>
@@ -716,17 +716,17 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <div class="dby-why-grid">
       <article class="dby-why-card card-tint-1 reveal-delay-1" data-animate>
-        <div class="dby-why-card__icon"><i data-lucide="map-pin"></i></div>
+        <div class="dby-why-card__icon"><?php echo icon('map-pin'); ?></div>
         <h3>Local &amp; Year-Round</h3>
         <p>Based in DeLand since <?php echo e($yearEstablished); ?>, about 12 miles north of DeBary. The same crew works the city every week &mdash; not a storm-chasing outfit that disappears by month&rsquo;s end.</p>
       </article>
       <article class="dby-why-card card-tint-2 reveal-delay-2" data-animate>
-        <div class="dby-why-card__icon"><i data-lucide="tree-deciduous"></i></div>
+        <div class="dby-why-card__icon"><?php echo icon('tree-deciduous'); ?></div>
         <h3>Right Cut for the Tree&rsquo;s Age</h3>
         <p>Structural pruning for young subdivision oaks, preservation-first crown work for the heritage estate trees near DeBary Hall. We read the tree before we recommend the work.</p>
       </article>
       <article class="dby-why-card card-tint-3 reveal-delay-3" data-animate>
-        <div class="dby-why-card__icon"><i data-lucide="shield-check"></i></div>
+        <div class="dby-why-card__icon"><?php echo icon('shield-check'); ?></div>
         <h3>Licensed, Insured, In Writing</h3>
         <p>Proof of insurance before we start, free written estimates within 24 hours, and debris hauling spelled out in the quote &mdash; the paperwork DeBary HOAs and homeowners can count on.</p>
       </article>
@@ -751,7 +751,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="dby-faq-grid">
       <?php foreach ($faqs as $faq): ?>
       <div class="dby-faq-item" data-animate>
-        <div class="dby-faq-item__icon"><i data-lucide="help-circle"></i></div>
+        <div class="dby-faq-item__icon"><?php echo icon('help-circle'); ?></div>
         <div>
           <h3><?php echo e($faq['q']); ?></h3>
           <p class="faq-answer"><?php echo e($faq['a']); ?></p>

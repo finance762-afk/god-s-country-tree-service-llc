@@ -408,14 +408,14 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           </fieldset>
 
           <button type="submit" class="btn btn-accent btn-lg btn-block">Send My Request</button>
-          <p class="form-reassure"><i data-lucide="lock"></i> Your details go straight to the DeLand crew &mdash; never sold or shared.</p>
+          <p class="form-reassure"><?php echo icon('lock'); ?> Your details go straight to the DeLand crew &mdash; never sold or shared.</p>
         </form>
       </div>
 
       <!-- Info sidebar -->
       <aside class="contact-info" aria-label="Business details">
         <div class="info-card">
-          <h3><span class="ico"><i data-lucide="map-pin"></i></span> Where We Work</h3>
+          <h3><span class="ico"><?php echo icon('map-pin'); ?></span> Where We Work</h3>
           <p><strong><?php echo e($siteName); ?></strong><br>
           Based in <?php echo e($address['city']); ?>, <?php echo e($address['state']); ?> <?php echo e($address['zip']); ?><br>
           Serving DeLand, Deltona, Orange City, DeBary, Lake Helen &amp; Volusia County (about a 50-mile radius).</p>
@@ -424,7 +424,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
         <?php if (!empty($phone)): ?>
         <div class="info-card">
-          <h3><span class="ico"><i data-lucide="phone"></i></span> Call or Text</h3>
+          <h3><span class="ico"><?php echo icon('phone'); ?></span> Call or Text</h3>
           <p><a class="info-link" href="<?php echo e(phoneHref($phone)); ?>"><?php echo e(formatPhone($phone)); ?></a></p>
           <?php if (!empty($integrations['accepts_sms'])): ?>
           <p>Text us anytime &mdash; we reply fast during business hours.</p>
@@ -434,23 +434,23 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
         <?php if (!empty($email)): ?>
         <div class="info-card">
-          <h3><span class="ico"><i data-lucide="mail"></i></span> Email</h3>
+          <h3><span class="ico"><?php echo icon('mail'); ?></span> Email</h3>
           <p><a class="info-link" href="mailto:<?php echo e($email); ?>"><?php echo e($email); ?></a></p>
         </div>
         <?php endif; ?>
 
         <div class="info-card">
-          <h3><span class="ico"><i data-lucide="clock"></i></span> Business Hours</h3>
+          <h3><span class="ico"><?php echo icon('clock'); ?></span> Business Hours</h3>
           <table class="hours-table">
             <?php foreach ($hoursRows as $row): ?>
             <tr><td><?php echo e($row['days']); ?></td><td><?php echo e($row['time']); ?></td></tr>
             <?php endforeach; ?>
           </table>
-          <span class="hours-badge"><i data-lucide="zap"></i> 24/7 Emergency Storm Response</span>
+          <span class="hours-badge"><?php echo icon('zap'); ?> 24/7 Emergency Storm Response</span>
         </div>
 
         <div class="info-card">
-          <h3><span class="ico"><i data-lucide="badge-check"></i></span> Verify Us</h3>
+          <h3><span class="ico"><?php echo icon('badge-check'); ?></span> Verify Us</h3>
           <p>Licensed &amp; insured, with <?php echo e($yearsInBusiness); ?>+ years in DeLand.</p>
           <p><a class="info-link" href="<?php echo e($integrations['gbp_url']); ?>" target="_blank" rel="noopener">Google Reviews &rarr;</a><br>
           <a class="info-link" href="<?php echo e($integrations['bbb_url']); ?>" target="_blank" rel="noopener">BBB Business Profile &rarr;</a></p>
@@ -479,8 +479,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <?php echo $integrations['gbp_map_embed']; ?>
       </div>
       <div class="map-actions">
-        <a class="btn btn-secondary" href="<?php echo e($integrations['directions_url']); ?>" target="_blank" rel="noopener"><i data-lucide="navigation"></i> Get Directions</a>
-        <a class="btn btn-secondary" href="<?php echo e($integrations['gbp_url']); ?>" target="_blank" rel="noopener"><i data-lucide="map-pin"></i> View on Google</a>
+        <a class="btn btn-secondary" href="<?php echo e($integrations['directions_url']); ?>" target="_blank" rel="noopener"><?php echo icon('navigation'); ?> Get Directions</a>
+        <a class="btn btn-secondary" href="<?php echo e($integrations['gbp_url']); ?>" target="_blank" rel="noopener"><?php echo icon('map-pin'); ?> View on Google</a>
       </div>
     </div>
   </div>

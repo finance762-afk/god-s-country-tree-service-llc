@@ -134,7 +134,7 @@ function renderServiceCards(array $slugs, array $serviceCardData) {
           <img src="<?php echo e($card['img']); ?>" alt="<?php echo e($card['alt']); ?>" width="600" height="360" loading="lazy">
         </div>
         <div class="service-card__body">
-          <div class="service-card__icon"><i data-lucide="<?php echo e($card['icon']); ?>"></i></div>
+          <div class="service-card__icon"><?php echo icon(($card['icon'])); ?></div>
           <h3><?php echo e($card['name']); ?></h3>
           <p class="service-card__desc"><?php echo e($card['desc']); ?></p>
           <ul>

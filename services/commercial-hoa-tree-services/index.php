@@ -777,10 +777,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     </div>
 
     <div class="hero-trust">
-      <span class="hero-trust-item"><i data-lucide="shield-check"></i> Licensed &amp; Insured</span>
-      <span class="hero-trust-item"><i data-lucide="award"></i> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
-      <span class="hero-trust-item"><i data-lucide="calendar-check"></i> Scheduled Contract Work</span>
-      <span class="hero-trust-item"><i data-lucide="clock"></i> Assessments Within 24 Hours</span>
+      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
+      <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
+      <span class="hero-trust-item"><?php echo icon('calendar-check'); ?> Scheduled Contract Work</span>
+      <span class="hero-trust-item"><?php echo icon('clock'); ?> Assessments Within 24 Hours</span>
     </div>
   </div>
 </section>
@@ -799,7 +799,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="com-risk-grid">
       <?php foreach ($riskCards as $i => $card): ?>
       <article class="com-risk-card reveal-delay-<?php echo ($i % 3) + 1; ?>" data-animate>
-        <div class="com-risk-icon"><i data-lucide="<?php echo e($card['icon']); ?>"></i></div>
+        <div class="com-risk-icon"><?php echo icon(($card['icon'])); ?></div>
         <h3><?php echo e($card['title']); ?></h3>
         <p><?php echo e($card['text']); ?></p>
       </article>
@@ -844,7 +844,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="com-glass-grid">
       <?php foreach ($includedCards as $i => $card): ?>
       <article class="com-glass-card reveal-delay-<?php echo ($i % 3) + 1; ?>" data-animate>
-        <div class="com-glass-icon"><i data-lucide="<?php echo e($card['icon']); ?>"></i></div>
+        <div class="com-glass-icon"><?php echo icon(($card['icon'])); ?></div>
         <h3><?php echo e($card['title']); ?></h3>
         <p><?php echo e($card['text']); ?></p>
       </article>
@@ -870,7 +870,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <ul class="com-hoa-points" data-p1-dynamic>
           <?php foreach ($hoaPoints as $point): ?>
           <li data-animate>
-            <i data-lucide="check-circle"></i>
+            <?php echo icon('check-circle'); ?>
             <p><strong><?php echo e($point['strong']); ?></strong> <?php echo e($point['text']); ?></p>
           </li>
           <?php endforeach; ?>
@@ -905,7 +905,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <h3>Waiting for the phone call</h3>
         <ul>
           <?php foreach ($comparison as $row): ?>
-          <li><i data-lucide="x"></i> <?php echo e($row['reactive']); ?></li>
+          <li><?php echo icon('x'); ?> <?php echo e($row['reactive']); ?></li>
           <?php endforeach; ?>
         </ul>
       </div>
@@ -915,7 +915,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <h3>Maintenance on the calendar</h3>
         <ul>
           <?php foreach ($comparison as $row): ?>
-          <li><i data-lucide="check"></i> <?php echo e($row['scheduled']); ?></li>
+          <li><?php echo icon('check'); ?> <?php echo e($row['scheduled']); ?></li>
           <?php endforeach; ?>
         </ul>
       </div>
@@ -950,10 +950,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <div class="review-badge-strip" data-animate>
       <a class="review-badge" href="<?php echo e($integrations['gbp_url']); ?>" target="_blank" rel="noopener">
-        <i data-lucide="star"></i> Read Our Google Reviews
+        <?php echo icon('star'); ?> Read Our Google Reviews
       </a>
       <a class="review-badge" href="<?php echo e($integrations['bbb_url']); ?>" target="_blank" rel="noopener">
-        <i data-lucide="badge-check"></i> BBB Business Profile
+        <?php echo icon('badge-check'); ?> BBB Business Profile
       </a>
     </div>
   </div>
@@ -971,7 +971,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="faq-grid" data-p1-dynamic>
       <?php foreach ($faqs as $faq): ?>
       <div class="faq-item" data-animate>
-        <div class="faq-icon"><i data-lucide="help-circle"></i></div>
+        <div class="faq-icon"><?php echo icon('help-circle'); ?></div>
         <div>
           <h3><?php echo e($faq['q']); ?></h3>
           <p class="faq-answer"><?php echo e($faq['a']); ?></p>

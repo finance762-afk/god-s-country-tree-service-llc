@@ -799,10 +799,10 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     </div>
 
     <div class="hero-trust">
-      <span class="hero-trust-item"><i data-lucide="shield-check"></i> Licensed &amp; Insured</span>
-      <span class="hero-trust-item"><i data-lucide="award"></i> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
-      <span class="hero-trust-item"><i data-lucide="scissors"></i> All Tree Sizes</span>
-      <span class="hero-trust-item"><i data-lucide="clock"></i> Estimates Within 24 Hours</span>
+      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
+      <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
+      <span class="hero-trust-item"><?php echo icon('scissors'); ?> All Tree Sizes</span>
+      <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
     </div>
   </div>
 </section>
@@ -821,7 +821,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="trm-signs" data-p1-dynamic>
       <?php foreach ($trimSigns as $i => $sign): ?>
       <article class="trm-sign reveal-delay-<?php echo ($i % 4) + 1; ?>" data-animate>
-        <div class="trm-sign-icon"><i data-lucide="<?php echo e($sign['icon']); ?>"></i></div>
+        <div class="trm-sign-icon"><?php echo icon(($sign['icon'])); ?></div>
         <div>
           <h3><?php echo e($sign['title']); ?></h3>
           <p><?php echo e($sign['text']); ?></p>
@@ -851,15 +851,15 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
         <p class="trm-diy-lede" data-animate>Anyone can shorten a branch. What <?php echo e($yearsInBusiness); ?> years of trimming DeLand trees buys you is knowing <strong>which branch, where to cut it, and what the tree will do about it next season</strong>. Topped oaks, lion-tailed limbs, and hurricane-cut palms all grow back weaker &mdash; and cost more to fix than trimming right the first time.</p>
         <ul class="trm-points" data-p1-dynamic>
           <li data-animate>
-            <i data-lucide="check-circle"></i>
+            <?php echo icon('check-circle'); ?>
             <p><strong>Collar cuts that heal.</strong> Every limb comes off at the branch collar so the wound closes naturally &mdash; no stubs, no flush cuts, no rot pockets for Florida humidity to work on.</p>
           </li>
           <li data-animate>
-            <i data-lucide="check-circle"></i>
+            <?php echo icon('check-circle'); ?>
             <p><strong>Balanced thinning, never stripping.</strong> We take the deadwood and problem limbs while keeping the interior growth a canopy needs to stay strong in wind.</p>
           </li>
           <li data-animate>
-            <i data-lucide="check-circle"></i>
+            <?php echo icon('check-circle'); ?>
             <p><strong>Rope, saddle, and bucket truck.</strong> Trimming from proper rigging instead of a leaning ladder is why the crew goes home healthy and your fence stays in one piece.</p>
           </li>
         </ul>
@@ -899,7 +899,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
           <p><?php echo e($type['text']); ?></p>
           <ul class="trm-row-bullets">
             <?php foreach ($type['bullets'] as $bullet): ?>
-            <li><i data-lucide="check"></i> <?php echo e($bullet); ?></li>
+            <li><?php echo icon('check'); ?> <?php echo e($bullet); ?></li>
             <?php endforeach; ?>
           </ul>
         </div>
@@ -929,7 +929,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
         <?php if (!empty($season['badge'])): ?>
         <span class="trm-quarter-badge"><?php echo e($season['badge']); ?></span>
         <?php endif; ?>
-        <span class="trm-quarter-months"><i data-lucide="<?php echo e($season['icon']); ?>"></i> <?php echo e($season['months']); ?></span>
+        <span class="trm-quarter-months"><?php echo icon(($season['icon'])); ?> <?php echo e($season['months']); ?></span>
         <h3><?php echo e($season['title']); ?></h3>
         <p><?php echo e($season['text']); ?></p>
       </article>
@@ -977,7 +977,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
         <p class="answer-block">If you're searching for tree trimming near me in DeLand, the crew in this photo is the one that shows up. God's Country Tree Service works from DeLand across roughly 50 miles of Volusia County &mdash; Deltona, Orange City, DeBary, and Lake Helen included &mdash; with the same bucket truck, climbers, and 24-hour estimates.</p>
         <div class="trm-area-chips" data-p1-dynamic>
           <?php foreach (['DeLand', 'Deltona', 'Orange City', 'DeBary', 'Lake Helen', 'Volusia County'] as $area): ?>
-          <span class="trm-area-chip"><i data-lucide="map-pin"></i> <?php echo e($area); ?></span>
+          <span class="trm-area-chip"><?php echo icon('map-pin'); ?> <?php echo e($area); ?></span>
           <?php endforeach; ?>
         </div>
       </div>
@@ -985,10 +985,10 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
 
     <div class="review-badge-strip" data-animate>
       <a class="review-badge" href="<?php echo e($integrations['gbp_url']); ?>" target="_blank" rel="noopener">
-        <i data-lucide="star"></i> Read Our Google Reviews
+        <?php echo icon('star'); ?> Read Our Google Reviews
       </a>
       <a class="review-badge" href="<?php echo e($integrations['bbb_url']); ?>" target="_blank" rel="noopener">
-        <i data-lucide="badge-check"></i> BBB Business Profile
+        <?php echo icon('badge-check'); ?> BBB Business Profile
       </a>
     </div>
   </div>
@@ -1006,7 +1006,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="faq-grid" data-p1-dynamic>
       <?php foreach ($faqs as $faq): ?>
       <div class="faq-item" data-animate>
-        <div class="faq-icon"><i data-lucide="help-circle"></i></div>
+        <div class="faq-icon"><?php echo icon('help-circle'); ?></div>
         <div>
           <h3><?php echo e($faq['q']); ?></h3>
           <p class="faq-answer"><?php echo e($faq['a']); ?></p>

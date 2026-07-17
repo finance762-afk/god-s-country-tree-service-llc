@@ -889,10 +889,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     </div>
 
     <div class="hero-trust">
-      <span class="hero-trust-item"><i data-lucide="clock"></i> Answered 24/7</span>
-      <span class="hero-trust-item"><i data-lucide="shield-check"></i> Licensed &amp; Insured</span>
-      <span class="hero-trust-item"><i data-lucide="map-pin"></i> Based in DeLand Since <?php echo e($yearEstablished); ?></span>
-      <span class="hero-trust-item"><i data-lucide="truck"></i> Grapple Loader &amp; Chipper On Call</span>
+      <span class="hero-trust-item"><?php echo icon('clock'); ?> Answered 24/7</span>
+      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
+      <span class="hero-trust-item"><?php echo icon('map-pin'); ?> Based in DeLand Since <?php echo e($yearEstablished); ?></span>
+      <span class="hero-trust-item"><?php echo icon('truck'); ?> Grapple Loader &amp; Chipper On Call</span>
     </div>
   </div>
 </section>
@@ -956,7 +956,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="emg-donts">
       <?php foreach ($stormDonts as $i => $dont): ?>
       <article class="emg-dont reveal-delay-<?php echo ($i % 3) + 1; ?>" data-animate>
-        <div class="emg-dont-icon"><i data-lucide="<?php echo e($dont['icon']); ?>"></i></div>
+        <div class="emg-dont-icon"><?php echo icon(($dont['icon'])); ?></div>
         <h3><?php echo e($dont['title']); ?></h3>
         <p><?php echo e($dont['text']); ?></p>
       </article>
@@ -984,15 +984,15 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <p data-animate>Hurricane season turns tree work into a different trade. The live oaks and slash pines that shade DeLand yards carry enormous canopies, and when sustained wind finds a weak root plate in sandy Central Florida soil, the failure is sudden &mdash; across a roof, a fence line, or a pool screen enclosure. The crew that handles that safely is the one that has spent years taking these same species apart on ropes, not a crew seeing Florida oaks for the first time.</p>
         <ul class="emg-points" data-p1-dynamic>
           <li data-animate>
-            <i data-lucide="check-circle"></i>
+            <?php echo icon('check-circle'); ?>
             <p><strong>One call covers the whole emergency.</strong> Climbing, rigging, skid-steer work, chipping, and haul-off come from the same company &mdash; no waiting on a second contractor while the tree sits on your house.</p>
           </li>
           <li data-animate>
-            <i data-lucide="check-circle"></i>
+            <?php echo icon('check-circle'); ?>
             <p><strong>Certified arborist judgment under pressure.</strong> We tell you which damaged trees are lost, which can be saved with crown work later, and which can safely wait until the emergency rates end.</p>
           </li>
           <li data-animate>
-            <i data-lucide="check-circle"></i>
+            <?php echo icon('check-circle'); ?>
             <p><strong>Insurance-ready documentation.</strong> Licensed and insured, with the photos, written scope, and itemized invoice your adjuster will ask for after the storm.</p>
           </li>
         </ul>
@@ -1027,7 +1027,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <p data-animate>If you're searching for emergency tree service near me in DeLand from a driveway buried in oak limbs, here's what that search should find: a crew whose shop, equipment, and climbers are already inside the county line. No staging area three counties away, no subcontracted strangers &mdash; the trucks in our photos are the trucks that pull up.</p>
         <div class="emg-area-chips" data-p1-dynamic>
           <?php foreach (['DeLand', 'Deltona', 'Orange City', 'DeBary', 'Lake Helen', 'Volusia County'] as $area): ?>
-          <span class="emg-area-chip"><i data-lucide="map-pin"></i> <?php echo e($area); ?></span>
+          <span class="emg-area-chip"><?php echo icon('map-pin'); ?> <?php echo e($area); ?></span>
           <?php endforeach; ?>
         </div>
       </div>
@@ -1092,10 +1092,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <div class="review-badge-strip" data-animate>
       <a class="review-badge" href="<?php echo e($integrations['gbp_url']); ?>" target="_blank" rel="noopener">
-        <i data-lucide="star"></i> Read Our Google Reviews
+        <?php echo icon('star'); ?> Read Our Google Reviews
       </a>
       <a class="review-badge" href="<?php echo e($integrations['bbb_url']); ?>" target="_blank" rel="noopener">
-        <i data-lucide="badge-check"></i> BBB Business Profile
+        <?php echo icon('badge-check'); ?> BBB Business Profile
       </a>
     </div>
   </div>
@@ -1115,7 +1115,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <h3>The trucks that follow the storm</h3>
         <ul>
           <?php foreach ($comparison as $row): ?>
-          <li><i data-lucide="x"></i> <?php echo e($row['them']); ?></li>
+          <li><?php echo icon('x'); ?> <?php echo e($row['them']); ?></li>
           <?php endforeach; ?>
         </ul>
       </div>
@@ -1123,7 +1123,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <h3>God's Country Tree Service</h3>
         <ul>
           <?php foreach ($comparison as $row): ?>
-          <li><i data-lucide="check"></i> <?php echo e($row['us']); ?></li>
+          <li><?php echo icon('check'); ?> <?php echo e($row['us']); ?></li>
           <?php endforeach; ?>
         </ul>
       </div>
@@ -1143,7 +1143,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="faq-grid" data-p1-dynamic>
       <?php foreach ($faqs as $faq): ?>
       <div class="faq-item" data-animate>
-        <div class="faq-icon"><i data-lucide="help-circle"></i></div>
+        <div class="faq-icon"><?php echo icon('help-circle'); ?></div>
         <div>
           <h3><?php echo e($faq['q']); ?></h3>
           <p class="faq-answer"><?php echo e($faq['a']); ?></p>

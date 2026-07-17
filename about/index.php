@@ -650,7 +650,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="values-grid">
       <?php foreach ($values as $i => $value): ?>
       <article class="value-card reveal-delay-<?php echo ($i % 3) + 1; ?>" data-animate>
-        <div class="value-icon"><i data-lucide="<?php echo e($value['icon']); ?>"></i></div>
+        <div class="value-icon"><?php echo icon(($value['icon'])); ?></div>
         <div>
           <h3><?php echo e($value['title']); ?></h3>
           <p><?php echo e($value['text']); ?></p>
@@ -717,7 +717,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="creds-grid">
       <?php foreach ($credentials as $i => $cred): ?>
       <article class="cred-card reveal-delay-<?php echo ($i % 3) + 1; ?>" data-animate>
-        <div class="cred-icon"><i data-lucide="<?php echo e($cred['icon']); ?>"></i></div>
+        <div class="cred-icon"><?php echo icon(($cred['icon'])); ?></div>
         <h3><?php echo e($cred['title']); ?></h3>
         <p><?php echo e($cred['text']); ?></p>
       </article>
@@ -739,10 +739,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <div class="creds-verify" data-animate>
       <a class="btn btn-secondary" href="<?php echo e($integrations['bbb_url']); ?>" target="_blank" rel="noopener">
-        <i data-lucide="badge-check"></i> View Our BBB Profile
+        <?php echo icon('badge-check'); ?> View Our BBB Profile
       </a>
       <a class="btn btn-secondary" href="<?php echo e($integrations['gbp_url']); ?>" target="_blank" rel="noopener">
-        <i data-lucide="star"></i> Read Google Reviews
+        <?php echo icon('star'); ?> Read Google Reviews
       </a>
     </div>
   </div>

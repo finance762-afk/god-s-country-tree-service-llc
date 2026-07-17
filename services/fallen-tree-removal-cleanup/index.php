@@ -816,10 +816,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     </div>
 
     <div class="hero-trust">
-      <span class="hero-trust-item"><i data-lucide="shield-check"></i> Licensed &amp; Insured</span>
-      <span class="hero-trust-item"><i data-lucide="award"></i> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
-      <span class="hero-trust-item"><i data-lucide="truck"></i> Grapple Loader &amp; Chipper On Every Job</span>
-      <span class="hero-trust-item"><i data-lucide="clock"></i> Estimates Within 24 Hours</span>
+      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
+      <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
+      <span class="hero-trust-item"><?php echo icon('truck'); ?> Grapple Loader &amp; Chipper On Every Job</span>
+      <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
     </div>
   </div>
 </section>
@@ -836,7 +836,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="fln-triage-grid">
       <?php foreach ($triageCards as $i => $card): ?>
       <article class="fln-triage-card reveal-delay-<?php echo ($i % 3) + 1; ?>" data-animate>
-        <div class="fln-triage-icon"><i data-lucide="<?php echo e($card['icon']); ?>"></i></div>
+        <div class="fln-triage-icon"><?php echo icon(($card['icon'])); ?></div>
         <span class="fln-triage-label"><?php echo e($card['label']); ?></span>
         <h3><?php echo e($card['title']); ?></h3>
         <p><?php echo e($card['text']); ?></p>
@@ -865,15 +865,15 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <p data-animate>The photo at the top of this page is a real DeLand blow-down: a mature live oak flat across a yard with our Kubota grapple track loader moving in. That pairing &mdash; tree crew and grapple machine under one roof &mdash; is the whole reason our fallen tree cleanup moves fast. Nobody waits on a subcontractor with a loader, and nobody hand-drags a 40-foot canopy across your grass one armload at a time.</p>
         <ul class="fln-grapple-points" data-p1-dynamic>
           <li data-animate>
-            <i data-lucide="check-circle"></i>
+            <?php echo icon('check-circle'); ?>
             <p><strong>Whole sections, not wheelbarrows.</strong> The grapple picks up log sections and root-ball chunks that would take a hand crew all afternoon &mdash; and carries them straight to the truck.</p>
           </li>
           <li data-animate>
-            <i data-lucide="check-circle"></i>
+            <?php echo icon('check-circle'); ?>
             <p><strong>Tracks, not tires.</strong> A compact track loader spreads its weight over soft, sandy Central Florida soil, and we lay mats on the travel path so the machine doesn't trade one mess for another.</p>
           </li>
           <li data-animate>
-            <i data-lucide="check-circle"></i>
+            <?php echo icon('check-circle'); ?>
             <p><strong>One crew, full restoration.</strong> Tree work and land clearing from the same company means the job ends with a raked, level, usable yard &mdash; not a pile by the curb and a wave goodbye.</p>
           </li>
         </ul>
@@ -915,7 +915,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
           <h3><?php echo e($step['title']); ?></h3>
           <p><?php echo e($step['text']); ?></p>
         </div>
-        <div class="fln-timeline-node" aria-hidden="true"><i data-lucide="<?php echo e($step['icon']); ?>"></i></div>
+        <div class="fln-timeline-node" aria-hidden="true"><?php echo icon(($step['icon'])); ?></div>
         <div class="fln-timeline-empty" aria-hidden="true"></div>
       </div>
       <?php endforeach; ?>
@@ -972,12 +972,12 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <div class="fln-pair-grid">
       <figure class="fln-pair-panel" data-animate="left">
-        <span class="fln-pair-tag"><i data-lucide="cloud-lightning"></i> The Blow-Down</span>
+        <span class="fln-pair-tag"><?php echo icon('cloud-lightning'); ?> The Blow-Down</span>
         <img src="<?php echo e($heroImage); ?>" alt="Kubota grapple loader clearing a huge fallen live oak in DeLand, FL" width="800" height="600" loading="lazy">
         <figcaption>A mature live oak down across a DeLand yard, snapped at the trunk &mdash; the grapple loader moves in to start clearing.</figcaption>
       </figure>
       <figure class="fln-pair-panel" data-animate="right">
-        <span class="fln-pair-tag"><i data-lucide="check-circle"></i> The Cleanup</span>
+        <span class="fln-pair-tag"><?php echo icon('check-circle'); ?> The Cleanup</span>
         <img src="<?php echo e($bodyPhotos['firewood']['src']); ?>" alt="<?php echo e($bodyPhotos['firewood']['alt']); ?>" width="800" height="600" loading="lazy">
         <figcaption>Where a blow-down can end up: bucked, split, and stacked as seasoned firewood &mdash; or hauled off entirely, your call.</figcaption>
       </figure>
@@ -987,10 +987,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <div class="review-badge-strip" data-animate>
       <a class="review-badge" href="<?php echo e($integrations['gbp_url']); ?>" target="_blank" rel="noopener">
-        <i data-lucide="star"></i> Read Our Google Reviews
+        <?php echo icon('star'); ?> Read Our Google Reviews
       </a>
       <a class="review-badge" href="<?php echo e($integrations['bbb_url']); ?>" target="_blank" rel="noopener">
-        <i data-lucide="badge-check"></i> BBB Business Profile
+        <?php echo icon('badge-check'); ?> BBB Business Profile
       </a>
     </div>
   </div>
@@ -1015,7 +1015,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <h3>Safe to handle yourself</h3>
         <ul>
           <?php foreach ($safeList as $item): ?>
-          <li><i data-lucide="check"></i> <?php echo e($item); ?></li>
+          <li><?php echo icon('check'); ?> <?php echo e($item); ?></li>
           <?php endforeach; ?>
         </ul>
       </div>
@@ -1023,7 +1023,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <h3>Leave for the crew</h3>
         <ul>
           <?php foreach ($unsafeList as $item): ?>
-          <li><i data-lucide="x"></i> <?php echo e($item); ?></li>
+          <li><?php echo icon('x'); ?> <?php echo e($item); ?></li>
           <?php endforeach; ?>
         </ul>
       </div>
@@ -1048,7 +1048,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="faq-grid" data-p1-dynamic>
       <?php foreach ($faqs as $faq): ?>
       <div class="faq-item" data-animate>
-        <div class="faq-icon"><i data-lucide="help-circle"></i></div>
+        <div class="faq-icon"><?php echo icon('help-circle'); ?></div>
         <div>
           <h3><?php echo e($faq['q']); ?></h3>
           <p class="faq-answer"><?php echo e($faq['a']); ?></p>

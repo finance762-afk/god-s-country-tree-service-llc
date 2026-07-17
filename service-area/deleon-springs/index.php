@@ -598,10 +598,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     </div>
 
     <div class="hero-trust">
-      <span class="hero-trust-item"><i data-lucide="shield-check"></i> Licensed &amp; Insured</span>
-      <span class="hero-trust-item"><i data-lucide="award"></i> <?php echo e($yearsInBusiness); ?>+ Years in Volusia County</span>
-      <span class="hero-trust-item"><i data-lucide="tractor"></i> Skid-Steer &amp; Grapple Service</span>
-      <span class="hero-trust-item"><i data-lucide="clock"></i> Estimates Within 24 Hours</span>
+      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
+      <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in Volusia County</span>
+      <span class="hero-trust-item"><?php echo icon('tractor'); ?> Skid-Steer &amp; Grapple Service</span>
+      <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
     </div>
   </div>
 </section>
@@ -654,7 +654,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <?php foreach ($zigRows as $i => $row): $p = $zigPhotos[$row['photo']]; ?>
       <div class="dls-zig-row" data-animate>
         <figure class="dls-zig-media">
-          <span class="dls-zig-badge"><i data-lucide="map-pin"></i> DeLeon Springs, FL</span>
+          <span class="dls-zig-badge"><?php echo icon('map-pin'); ?> DeLeon Springs, FL</span>
           <img src="<?php echo e($p['src']); ?>" alt="<?php echo e($p['alt']); ?>" width="800" height="600" loading="lazy">
         </figure>
         <div class="dls-zig-copy">
@@ -699,7 +699,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="dls-why-grid">
       <?php foreach ($whyCards as $i => $card): ?>
       <article class="dls-why-card card-tint-<?php echo ($i % 3) + 1; ?> reveal-delay-<?php echo ($i % 3) + 1; ?>" data-animate>
-        <div class="dls-why-icon"><i data-lucide="<?php echo e($card['icon']); ?>"></i></div>
+        <div class="dls-why-icon"><?php echo icon(($card['icon'])); ?></div>
         <h3><?php echo e($card['title']); ?></h3>
         <p><?php echo e($card['text']); ?></p>
       </article>
@@ -724,7 +724,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="dls-faq-list">
       <?php foreach ($faqs as $faq): ?>
       <div class="dls-faq-item" data-animate>
-        <h3><i data-lucide="help-circle"></i> <?php echo e($faq['q']); ?></h3>
+        <h3><?php echo icon('help-circle'); ?> <?php echo e($faq['q']); ?></h3>
         <p class="faq-answer dls-faq-answer"><?php echo e($faq['a']); ?></p>
       </div>
       <?php endforeach; ?>

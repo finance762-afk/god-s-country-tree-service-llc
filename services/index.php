@@ -533,10 +533,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     </div>
 
     <div class="hero-trust">
-      <span class="hero-trust-item"><i data-lucide="shield-check"></i> Licensed &amp; Insured</span>
-      <span class="hero-trust-item"><i data-lucide="award"></i> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
-      <span class="hero-trust-item"><i data-lucide="zap"></i> 24/7 Storm Response</span>
-      <span class="hero-trust-item"><i data-lucide="clock"></i> Estimates Within 24 Hours</span>
+      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
+      <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
+      <span class="hero-trust-item"><?php echo icon('zap'); ?> 24/7 Storm Response</span>
+      <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
     </div>
   </div>
 </section>
@@ -571,7 +571,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="svcx-paths" data-p1-dynamic>
       <?php foreach ($decisionPaths as $i => $path): ?>
       <article class="svcx-path reveal-delay-<?php echo ($i % 3) + 1; ?>" data-animate>
-        <div class="svcx-path-icon"><i data-lucide="<?php echo e($path['icon']); ?>"></i></div>
+        <div class="svcx-path-icon"><?php echo icon(($path['icon'])); ?></div>
         <h3><?php echo e($path['title']); ?></h3>
         <p><?php echo e($path['text']); ?></p>
         <ul class="svcx-path-links">
@@ -611,18 +611,18 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <p>That's the crew you get with every one of the twelve services on this page: climbing, rigging, skid-steer and grapple work, chipping, hauling, and stump grinding from one company, so the job is finished by the people who quoted it.</p>
         <div class="svcx-area-chips" data-p1-dynamic>
           <?php foreach (['DeLand', 'Deltona', 'Orange City', 'DeBary', 'Lake Helen', 'Volusia County'] as $area): ?>
-          <span class="svcx-area-chip"><i data-lucide="map-pin"></i> <?php echo e($area); ?></span>
+          <span class="svcx-area-chip"><?php echo icon('map-pin'); ?> <?php echo e($area); ?></span>
           <?php endforeach; ?>
         </div>
       </div>
 
       <aside class="svcx-local-facts" data-animate="right">
         <ul>
-          <li><i data-lucide="shield-check"></i> Licensed &amp; insured &mdash; proof on request before work starts</li>
-          <li><i data-lucide="award"></i> <?php echo e($yearsInBusiness); ?>+ years based in DeLand, since <?php echo e($yearEstablished); ?></li>
-          <li><i data-lucide="zap"></i> 24/7 emergency storm response, every hurricane season</li>
-          <li><i data-lucide="truck"></i> Tree crew and land clearing from one company</li>
-          <li><i data-lucide="clock"></i> Free written estimates within 24 hours</li>
+          <li><?php echo icon('shield-check'); ?> Licensed &amp; insured &mdash; proof on request before work starts</li>
+          <li><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ years based in DeLand, since <?php echo e($yearEstablished); ?></li>
+          <li><?php echo icon('zap'); ?> 24/7 emergency storm response, every hurricane season</li>
+          <li><?php echo icon('truck'); ?> Tree crew and land clearing from one company</li>
+          <li><?php echo icon('clock'); ?> Free written estimates within 24 hours</li>
         </ul>
       </aside>
     </div>

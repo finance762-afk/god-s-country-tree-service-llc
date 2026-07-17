@@ -750,10 +750,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     </div>
 
     <div class="hero-trust">
-      <span class="hero-trust-item"><i data-lucide="shield-check"></i> Licensed &amp; Insured</span>
-      <span class="hero-trust-item"><i data-lucide="award"></i> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
-      <span class="hero-trust-item"><i data-lucide="truck"></i> Debris Hauling Included</span>
-      <span class="hero-trust-item"><i data-lucide="clock"></i> Estimates Within 24 Hours</span>
+      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
+      <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
+      <span class="hero-trust-item"><?php echo icon('truck'); ?> Debris Hauling Included</span>
+      <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
     </div>
   </div>
 </section>
@@ -772,7 +772,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="signs-grid">
       <?php foreach ($removalSigns as $i => $sign): ?>
       <article class="sign-card reveal-delay-<?php echo ($i % 3) + 1; ?>" data-animate>
-        <div class="sign-icon"><i data-lucide="<?php echo e($sign['icon']); ?>"></i></div>
+        <div class="sign-icon"><?php echo icon(($sign['icon'])); ?></div>
         <h3><?php echo e($sign['title']); ?></h3>
         <p><?php echo e($sign['text']); ?></p>
       </article>
@@ -800,15 +800,15 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <p class="drop-cap" data-animate>Most of the removals we quote in DeLand are live oaks and slash pines standing closer to a structure than they are tall. That geometry is exactly why homeowners call a tree service instead of renting a chainsaw: the tree cannot fall whole, so it has to come down in pieces, in the right order, on ropes. Our crew has been making that call &mdash; and that cut &mdash; across Volusia County since <?php echo e($yearEstablished); ?>.</p>
         <ul class="expert-points" data-p1-dynamic>
           <li data-animate>
-            <i data-lucide="check-circle"></i>
+            <?php echo icon('check-circle'); ?>
             <p><strong>One crew, whole job.</strong> Tree work and land clearing from the same company &mdash; climbing, rigging, grapple loading, chipping, hauling, and stump grinding without a second contractor.</p>
           </li>
           <li data-animate>
-            <i data-lucide="check-circle"></i>
+            <?php echo icon('check-circle'); ?>
             <p><strong>Certified arborist judgment.</strong> If pruning or crown reduction can save the tree, we say so at the estimate. Removal is the answer when it's the honest answer.</p>
           </li>
           <li data-animate>
-            <i data-lucide="check-circle"></i>
+            <?php echo icon('check-circle'); ?>
             <p><strong>Insurance you can verify.</strong> Licensed and insured, with proof available before anyone starts a saw &mdash; the paperwork storm-chasers can't show you.</p>
           </li>
         </ul>
@@ -910,10 +910,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <div class="review-badge-strip" data-animate>
       <a class="review-badge" href="<?php echo e($integrations['gbp_url']); ?>" target="_blank" rel="noopener">
-        <i data-lucide="star"></i> Read Our Google Reviews
+        <?php echo icon('star'); ?> Read Our Google Reviews
       </a>
       <a class="review-badge" href="<?php echo e($integrations['bbb_url']); ?>" target="_blank" rel="noopener">
-        <i data-lucide="badge-check"></i> BBB Business Profile
+        <?php echo icon('badge-check'); ?> BBB Business Profile
       </a>
     </div>
   </div>
@@ -933,7 +933,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <h3>The out-of-town outfit</h3>
         <ul>
           <?php foreach ($comparison as $row): ?>
-          <li><i data-lucide="x"></i> <?php echo e($row['them']); ?></li>
+          <li><?php echo icon('x'); ?> <?php echo e($row['them']); ?></li>
           <?php endforeach; ?>
         </ul>
       </div>
@@ -941,7 +941,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <h3>God's Country Tree Service</h3>
         <ul>
           <?php foreach ($comparison as $row): ?>
-          <li><i data-lucide="check"></i> <?php echo e($row['us']); ?></li>
+          <li><?php echo icon('check'); ?> <?php echo e($row['us']); ?></li>
           <?php endforeach; ?>
         </ul>
       </div>
@@ -959,7 +959,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     </div>
     <div class="area-chips" data-p1-dynamic>
       <?php foreach (['DeLand', 'Deltona', 'Orange City', 'DeBary', 'Lake Helen', 'Volusia County'] as $area): ?>
-      <span class="area-chip"><i data-lucide="map-pin"></i> <?php echo e($area); ?></span>
+      <span class="area-chip"><?php echo icon('map-pin'); ?> <?php echo e($area); ?></span>
       <?php endforeach; ?>
     </div>
   </div>
@@ -977,7 +977,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="faq-grid" data-p1-dynamic>
       <?php foreach ($faqs as $faq): ?>
       <div class="faq-item" data-animate>
-        <div class="faq-icon"><i data-lucide="help-circle"></i></div>
+        <div class="faq-icon"><?php echo icon('help-circle'); ?></div>
         <div>
           <h3><?php echo e($faq['q']); ?></h3>
           <p class="faq-answer"><?php echo e($faq['a']); ?></p>

@@ -516,9 +516,9 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     </div>
 
     <div class="hero-trust">
-      <span class="hero-trust-item"><i data-lucide="shield-check"></i> Licensed &amp; Insured</span>
-      <span class="hero-trust-item"><i data-lucide="map-pin"></i> ~50-Mile Radius</span>
-      <span class="hero-trust-item"><i data-lucide="award"></i> <?php echo e($yearsInBusiness); ?>+ Years in Volusia County</span>
+      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
+      <span class="hero-trust-item"><?php echo icon('map-pin'); ?> ~50-Mile Radius</span>
+      <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in Volusia County</span>
     </div>
   </div>
 </section>
@@ -537,9 +537,9 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <h2 style="text-wrap:balance; margin-bottom: var(--space-4);">What areas does God's Country Tree Service cover around DeLand?</h2>
         <p class="answer-block drop-cap">God's Country Tree Service covers DeLand and the surrounding west-Volusia communities within about a 50-mile radius, including Deltona, Orange City, DeBary, Lake Helen, and DeLeon Springs. From our DeLand base we bring the same climbers, grapple loader, and skid steer to every job &mdash; residential, commercial, or HOA &mdash; with free written estimates in 24 hours.</p>
         <ul class="sa-coverage-points" data-p1-dynamic>
-          <li data-animate><i data-lucide="map-pin"></i><p><strong>Based in DeLand since <?php echo e($yearEstablished); ?>.</strong> We are your neighbors, not storm-chasers who leave when the hurricane season ends.</p></li>
-          <li data-animate><i data-lucide="truck"></i><p><strong>Full equipment travels with us.</strong> Climbing gear, boom lift, grapple loader, chipper, and skid steer reach every town on this page.</p></li>
-          <li data-animate><i data-lucide="clock"></i><p><strong>24-hour emergency response.</strong> When a storm drops a tree anywhere in west Volusia, we answer around the clock.</p></li>
+          <li data-animate><?php echo icon('map-pin'); ?><p><strong>Based in DeLand since <?php echo e($yearEstablished); ?>.</strong> We are your neighbors, not storm-chasers who leave when the hurricane season ends.</p></li>
+          <li data-animate><?php echo icon('truck'); ?><p><strong>Full equipment travels with us.</strong> Climbing gear, boom lift, grapple loader, chipper, and skid steer reach every town on this page.</p></li>
+          <li data-animate><?php echo icon('clock'); ?><p><strong>24-hour emergency response.</strong> When a storm drops a tree anywhere in west Volusia, we answer around the clock.</p></li>
         </ul>
       </div>
       <div>
@@ -579,17 +579,17 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <article class="<?php echo $cardClass; ?> reveal-up reveal-delay-<?php echo $delay; ?>" data-animate>
         <div class="sa-area-media">
           <img src="<?php echo e($area['img']); ?>" alt="Tree work by God's Country Tree Service in <?php echo e($area['city']); ?>, <?php echo e($area['state']); ?>" width="600" height="375" loading="lazy">
-          <span class="sa-area-badge<?php echo $isPrimary ? ' sa-area-badge--home' : ''; ?>"><i data-lucide="<?php echo $isPrimary ? 'house' : 'map-pin'; ?>"></i> <?php echo $isPrimary ? 'Home Base' : e($area['distance']); ?></span>
+          <span class="sa-area-badge<?php echo $isPrimary ? ' sa-area-badge--home' : ''; ?>"><?php echo icon(($isPrimary ? 'house' : 'map-pin')); ?> <?php echo $isPrimary ? 'Home Base' : e($area['distance']); ?></span>
         </div>
         <div class="sa-area-body">
-          <div class="sa-area-icon"><i data-lucide="<?php echo e($area['icon']); ?>"></i></div>
+          <div class="sa-area-icon"><?php echo icon(($area['icon'])); ?></div>
           <?php if (!$isPrimary): ?><span class="sa-area-dist"><?php echo e(ucfirst($area['direction'])); ?></span><?php endif; ?>
           <h3><?php echo e($area['city']); ?>, <?php echo e($area['state']); ?></h3>
           <p><?php echo e($area['blurb']); ?></p>
           <ul class="sa-area-marks">
             <?php foreach ($area['landmarks'] as $mark): ?><li><?php echo e($mark); ?></li><?php endforeach; ?>
           </ul>
-          <span class="sa-area-cta"><?php echo $isPrimary ? 'Visit our DeLand homepage' : 'Explore ' . e($area['city']) . ' tree service'; ?> <i data-lucide="arrow-right"></i></span>
+          <span class="sa-area-cta"><?php echo $isPrimary ? 'Visit our DeLand homepage' : 'Explore ' . e($area['city']) . ' tree service'; ?> <?php echo icon('arrow-right'); ?></span>
         </div>
         <a class="sa-area-stretch" href="<?php echo e($href); ?>" aria-label="<?php echo $isPrimary ? 'God\'s Country Tree Service in DeLand' : 'Tree service in ' . e($area['city']) . ', ' . e($area['state']); ?>"></a>
       </article>
@@ -609,9 +609,9 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     </div>
     <div class="sa-chip-row" data-p1-dynamic>
       <?php foreach ($serviceAreas as $area): ?>
-      <span class="sa-chip"><i data-lucide="map-pin"></i> <?php echo e($area['city']); ?></span>
+      <span class="sa-chip"><?php echo icon('map-pin'); ?> <?php echo e($area['city']); ?></span>
       <?php endforeach; ?>
-      <span class="sa-chip"><i data-lucide="map-pin"></i> All of Volusia County</span>
+      <span class="sa-chip"><?php echo icon('map-pin'); ?> All of Volusia County</span>
     </div>
   </div>
 </section>
@@ -632,17 +632,17 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <div class="sa-why-grid" data-p1-dynamic>
       <div class="sa-why-card reveal-up reveal-delay-1" data-animate>
-        <div class="sa-why-icon"><i data-lucide="map-pinned"></i></div>
+        <div class="sa-why-icon"><?php echo icon('map-pinned'); ?></div>
         <h3>We know these soils and species</h3>
         <p>From Deltona's sand-pine lots to Lake Helen's heritage oaks and DeLand's downtown canopy, we tailor pruning and removal to how each local tree actually fails.</p>
       </div>
       <div class="sa-why-card reveal-up reveal-delay-2" data-animate>
-        <div class="sa-why-icon"><i data-lucide="cloud-lightning"></i></div>
+        <div class="sa-why-icon"><?php echo icon('cloud-lightning'); ?></div>
         <h3>Built for Florida storm season</h3>
         <p>Hurricanes hit all of Volusia County. Our 24-hour crew clears fallen and hazardous trees across every town on this page, then helps you prune the survivors before the next system.</p>
       </div>
       <div class="sa-why-card reveal-up reveal-delay-3" data-animate>
-        <div class="sa-why-icon"><i data-lucide="badge-check"></i></div>
+        <div class="sa-why-icon"><?php echo icon('badge-check'); ?></div>
         <h3>Accountable, not passing through</h3>
         <p>Storm-chasers vanish by month's end. We have been based in DeLand since <?php echo e($yearEstablished); ?>, with insurance proof on request and the same phone number every season.</p>
       </div>

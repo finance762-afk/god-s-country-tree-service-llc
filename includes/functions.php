@@ -163,8 +163,9 @@ function generateMetaTags($title, $description, $canonical) {
 }
 
 /**
- * Inline SVG icon from lucide-icons reference directory.
- * Replaces runtime data-lucide injection per performance-2026.md Part C.
+ * Inline SVG icon from the repo-local assets/svg/icons set.
+ * Icons are server-rendered per performance-2026.md Part C — no runtime
+ * icon-injection scripts.
  * Usage: <?php echo icon('check'); ?> or <?php echo icon($iconVar); ?>
  */
 function icon($name, $class = '') {
@@ -173,7 +174,8 @@ function icon($name, $class = '') {
     if (isset($cache[$name])) {
         $svg = $cache[$name];
     } else {
-        $iconPath = '/home/calvin/crm/references/lucide-icons/' . $name . '.svg';
+        // Icons ship with the repo — a VPS-absolute path would 404 on Hostinger
+        $iconPath = $_SERVER['DOCUMENT_ROOT'] . '/assets/svg/icons/' . basename($name) . '.svg';
         if (!file_exists($iconPath)) {
             return '<!-- icon not found: ' . e($name) . ' -->';
         }
@@ -184,6 +186,8 @@ function icon($name, $class = '') {
         $cache[$name] = $svg;
     }
 
+    // Decorative icons: hide from the accessibility tree (v6.2 standard)
+    $svg = str_replace('<svg', '<svg aria-hidden="true"', $svg);
     // If a custom class is provided, inject it into the SVG tag
     if ($class) {
         $svg = str_replace('<svg', '<svg class="' . e($class) . '"', $svg);

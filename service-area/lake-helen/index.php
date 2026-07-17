@@ -626,7 +626,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <span aria-current="page">Lake Helen</span>
     </nav>
 
-    <span class="lh-eyebrow"><i data-lucide="gem"></i> Lake Helen &middot; The Gem of Florida</span>
+    <span class="lh-eyebrow"><?php echo icon('gem'); ?> Lake Helen &middot; The Gem of Florida</span>
 
     <h1>Tree Service in Lake Helen, FL &mdash; <span class="lh-accent">Gentle on the Gem&rsquo;s Heritage Oaks</span></h1>
 
@@ -638,10 +638,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     </div>
 
     <div class="lh-hero-trust">
-      <span><i data-lucide="shield-check"></i> Licensed &amp; Insured</span>
-      <span><i data-lucide="award"></i> <?php echo e($yearsInBusiness); ?>+ Years in Volusia County</span>
-      <span><i data-lucide="tree-deciduous"></i> Certified Arborist Care</span>
-      <span><i data-lucide="map-pin"></i> ~6 Miles from Our DeLand Yard</span>
+      <span><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
+      <span><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in Volusia County</span>
+      <span><?php echo icon('tree-deciduous'); ?> Certified Arborist Care</span>
+      <span><?php echo icon('map-pin'); ?> ~6 Miles from Our DeLand Yard</span>
     </div>
   </div>
 </section>
@@ -698,7 +698,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       </figure>
 
       <div class="lh-bento-ethos reveal-delay-1" data-animate>
-        <div class="lh-ethos-icon"><i data-lucide="scissors"></i></div>
+        <div class="lh-ethos-icon"><?php echo icon('scissors'); ?></div>
         <h3>Arborist cuts, not butcher cuts</h3>
         <p>Branch-collar pruning and measured crown reduction keep heritage oaks structurally sound &mdash; never topping, never lion-tailing.</p>
       </div>
@@ -714,7 +714,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       </div>
 
       <div class="lh-bento-ethos reveal-delay-2" data-animate>
-        <div class="lh-ethos-icon"><i data-lucide="shield-check"></i></div>
+        <div class="lh-ethos-icon"><?php echo icon('shield-check'); ?></div>
         <h3>Remove only when it&rsquo;s truly a hazard</h3>
         <p>Decay, a failing root plate, or a limb over the roof earns removal. A tree that can be saved with pruning gets saved &mdash; we tell you straight at the estimate.</p>
       </div>
@@ -722,7 +722,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <!-- Cassadaga historic-district note block -->
     <aside class="lh-cassadaga" data-animate aria-label="Cassadaga historic district note">
-      <div class="lh-cass-badge"><i data-lucide="landmark"></i></div>
+      <div class="lh-cass-badge"><?php echo icon('landmark'); ?></div>
       <div>
         <h3>A note on the Cassadaga historic district</h3>
         <p>The oaks lining the Southern Cassadaga Spiritualist Camp &mdash; a National Historic District since its 1894 founding &mdash; are part of Lake Helen&rsquo;s identity. Work near them calls for extra restraint: light pruning, documented decisions, and a clear read on any permit questions before a saw touches a protected tree. That is the preservation-minded standard we bring to every heritage tree in Lake Helen.</p>
@@ -764,19 +764,19 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <div class="lh-why-grid">
       <article class="lh-why-card card-tint-1 reveal-delay-1" data-animate>
-        <div class="lh-why-icon"><i data-lucide="clipboard-check"></i></div>
+        <div class="lh-why-icon"><?php echo icon('clipboard-check'); ?></div>
         <h3>Certified-arborist judgment</h3>
         <p>In a town built around its canopy, the save-or-remove call matters. Our certified-arborist approach favors preserving Lake Helen&rsquo;s heritage oaks whenever the tree can be made safe &mdash; and says so plainly.</p>
       </article>
 
       <article class="lh-why-card card-tint-2 reveal-delay-2" data-animate>
-        <div class="lh-why-icon"><i data-lucide="map-pin"></i></div>
+        <div class="lh-why-icon"><?php echo icon('map-pin'); ?></div>
         <h3>Local, not passing through</h3>
         <p>Our DeLand yard is about six miles from Lake Helen, just off I-4. We are the crew that&rsquo;s here in February for scheduled pruning &mdash; not only the week after a hurricane, then gone.</p>
       </article>
 
       <article class="lh-why-card card-tint-3 reveal-delay-3" data-animate>
-        <div class="lh-why-icon"><i data-lucide="file-check"></i></div>
+        <div class="lh-why-icon"><?php echo icon('file-check'); ?></div>
         <h3>Licensed, insured, in writing</h3>
         <p>Every Lake Helen job comes with proof of insurance on request and a free written estimate within 24 hours &mdash; permit questions on protected trees flagged before any work begins.</p>
       </article>
@@ -795,7 +795,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="lh-faq-list">
       <?php foreach ($faqs as $faq): ?>
       <div class="lh-faq-item" data-animate>
-        <div class="lh-faq-icon"><i data-lucide="help-circle"></i></div>
+        <div class="lh-faq-icon"><?php echo icon('help-circle'); ?></div>
         <div>
           <h3><?php echo e($faq['q']); ?></h3>
           <p class="faq-answer"><?php echo e($faq['a']); ?></p>

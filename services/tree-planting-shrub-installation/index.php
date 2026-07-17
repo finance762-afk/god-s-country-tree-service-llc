@@ -848,10 +848,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     </div>
 
     <div class="hero-trust">
-      <span class="hero-trust-item"><i data-lucide="shield-check"></i> Licensed &amp; Insured</span>
-      <span class="hero-trust-item"><i data-lucide="award"></i> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
-      <span class="hero-trust-item"><i data-lucide="sprout"></i> Florida-Native Species</span>
-      <span class="hero-trust-item"><i data-lucide="clock"></i> Estimates Within 24 Hours</span>
+      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
+      <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
+      <span class="hero-trust-item"><?php echo icon('sprout'); ?> Florida-Native Species</span>
+      <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
     </div>
   </div>
 </section>
@@ -868,7 +868,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="plt-mistakes">
       <?php foreach ($plantingMistakes as $i => $mistake): ?>
       <article class="plt-mistake-card reveal-delay-<?php echo ($i % 3) + 1; ?>" data-animate>
-        <div class="plt-mistake-icon"><i data-lucide="<?php echo e($mistake['icon']); ?>"></i></div>
+        <div class="plt-mistake-icon"><?php echo icon(($mistake['icon'])); ?></div>
         <h3><?php echo e($mistake['title']); ?></h3>
         <p><?php echo e($mistake['text']); ?></p>
       </article>
@@ -895,7 +895,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <?php foreach ($speciesCards as $i => $species): ?>
       <article class="plt-species-card reveal-delay-<?php echo ($i % 3) + 1; ?>" data-animate>
         <div class="plt-species-head">
-          <div class="plt-species-icon"><i data-lucide="<?php echo e($species['icon']); ?>"></i></div>
+          <div class="plt-species-icon"><?php echo icon(($species['icon'])); ?></div>
           <h3><?php echo e($species['name']); ?></h3>
         </div>
         <span class="plt-species-tag"><?php echo e($species['tag']); ?></span>
@@ -934,7 +934,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <p><?php echo e($step['text']); ?></p>
         <ul class="plt-includes">
           <?php foreach ($step['includes'] as $item): ?>
-          <li><i data-lucide="check-circle"></i> <?php echo e($item); ?></li>
+          <li><?php echo icon('check-circle'); ?> <?php echo e($item); ?></li>
           <?php endforeach; ?>
         </ul>
       </div>
@@ -993,15 +993,15 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <p class="plt-drop-cap" data-animate>Planting at scale is where having one crew with both tree and land-clearing equipment pays off. Entrance beds, streetscape trees, buffer hedges, and common-area shade can go in as one coordinated job instead of a parade of subcontractors &mdash; the same combination that has handled tree work across Volusia County since <?php echo e($yearEstablished); ?>. And because we also remove, trim, and prune, we plant with the next twenty years in mind, not just the ribbon-cutting photo.</p>
         <ul class="plt-biz-points" data-p1-dynamic>
           <li data-animate>
-            <i data-lucide="check-circle"></i>
+            <?php echo icon('check-circle'); ?>
             <p><strong>One crew, whole install.</strong> Design input, sourcing, bed prep, skid-steer grading, planting, and mulch from a single company &mdash; one schedule, one point of contact.</p>
           </li>
           <li data-animate>
-            <i data-lucide="check-circle"></i>
+            <?php echo icon('check-circle'); ?>
             <p><strong>Paperwork boards can approve.</strong> Licensed and insured, with documentation available before the first shovel &mdash; what HOA boards and property managers need on file.</p>
           </li>
           <li data-animate>
-            <i data-lucide="check-circle"></i>
+            <?php echo icon('check-circle'); ?>
             <p><strong>Species that survive the budget cycle.</strong> We spec natives and proven performers that won't need replacing in two years, and we say so in writing.</p>
           </li>
         </ul>
@@ -1029,7 +1029,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <h3>The weekend big-box run</h3>
         <ul>
           <?php foreach ($comparison as $row): ?>
-          <li><i data-lucide="x"></i> <?php echo e($row['them']); ?></li>
+          <li><?php echo icon('x'); ?> <?php echo e($row['them']); ?></li>
           <?php endforeach; ?>
         </ul>
       </div>
@@ -1037,7 +1037,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <h3>God's Country Tree Service</h3>
         <ul>
           <?php foreach ($comparison as $row): ?>
-          <li><i data-lucide="check"></i> <?php echo e($row['us']); ?></li>
+          <li><?php echo icon('check'); ?> <?php echo e($row['us']); ?></li>
           <?php endforeach; ?>
         </ul>
       </div>
@@ -1067,16 +1067,16 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <div class="plt-review-strip" data-animate>
       <a class="review-badge" href="<?php echo e($integrations['gbp_url']); ?>" target="_blank" rel="noopener">
-        <i data-lucide="star"></i> Read Our Google Reviews
+        <?php echo icon('star'); ?> Read Our Google Reviews
       </a>
       <a class="review-badge" href="<?php echo e($integrations['bbb_url']); ?>" target="_blank" rel="noopener">
-        <i data-lucide="badge-check"></i> BBB Business Profile
+        <?php echo icon('badge-check'); ?> BBB Business Profile
       </a>
     </div>
 
     <div class="plt-area-chips" data-p1-dynamic>
       <?php foreach (['DeLand', 'Deltona', 'Orange City', 'DeBary', 'Lake Helen', 'Volusia County'] as $area): ?>
-      <span class="plt-area-chip"><i data-lucide="map-pin"></i> <?php echo e($area); ?></span>
+      <span class="plt-area-chip"><?php echo icon('map-pin'); ?> <?php echo e($area); ?></span>
       <?php endforeach; ?>
     </div>
   </div>
@@ -1094,7 +1094,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="faq-grid" data-p1-dynamic>
       <?php foreach ($faqs as $faq): ?>
       <div class="faq-item" data-animate>
-        <div class="faq-icon"><i data-lucide="help-circle"></i></div>
+        <div class="faq-icon"><?php echo icon('help-circle'); ?></div>
         <div>
           <h3><?php echo e($faq['q']); ?></h3>
           <p class="faq-answer"><?php echo e($faq['a']); ?></p>

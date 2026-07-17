@@ -617,7 +617,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
       <span aria-current="page">Deltona</span>
     </nav>
 
-    <span class="dlt-eyebrow"><i data-lucide="map-pin"></i> Deltona &middot; Volusia County, FL</span>
+    <span class="dlt-eyebrow"><?php echo icon('map-pin'); ?> Deltona &middot; Volusia County, FL</span>
 
     <h1>Tree Service in Deltona, FL &mdash; <span class="text-accent">Storm-Ready Crews for the City of Lakes</span></h1>
 
@@ -629,10 +629,10 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     </div>
 
     <div class="hero-trust">
-      <span class="hero-trust-item"><i data-lucide="shield-check"></i> Licensed &amp; Insured</span>
-      <span class="hero-trust-item"><i data-lucide="award"></i> <?php echo e($yearsInBusiness); ?>+ Years in Volusia County</span>
-      <span class="hero-trust-item"><i data-lucide="zap"></i> 24-Hour Storm Response</span>
-      <span class="hero-trust-item"><i data-lucide="clock"></i> Estimates Within 24 Hours</span>
+      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
+      <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in Volusia County</span>
+      <span class="hero-trust-item"><?php echo icon('zap'); ?> 24-Hour Storm Response</span>
+      <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
     </div>
   </div>
 </section>
@@ -695,7 +695,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="dlt-scorecard-grid">
       <?php foreach ($dltScorecard as $i => $s): ?>
       <div class="dlt-score reveal-up reveal-delay-<?php echo ($i % 4) + 1; ?>" data-animate>
-        <div class="dlt-score-icon"><i data-lucide="<?php echo e($s['icon']); ?>"></i></div>
+        <div class="dlt-score-icon"><?php echo icon(($s['icon'])); ?></div>
         <div class="dlt-score-num"><?php echo $s['num']; ?></div>
         <p class="dlt-score-label"><?php echo $s['label']; ?></p>
       </div>
@@ -716,7 +716,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="dlt-bento">
       <?php foreach ($dltBento as $i => $b): ?>
       <article class="dlt-bento-card reveal-up reveal-delay-<?php echo ($i % 3) + 1; ?>" data-animate>
-        <div class="dlt-bento-icon"><i data-lucide="<?php echo e($b['icon']); ?>"></i></div>
+        <div class="dlt-bento-icon"><?php echo icon(($b['icon'])); ?></div>
         <h3><?php echo $b['title']; ?></h3>
         <p><?php echo $b['text']; ?></p>
       </article>
@@ -759,17 +759,17 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
 
     <div class="dlt-why-grid">
       <article class="dlt-why-card reveal-up reveal-delay-1" data-animate>
-        <div class="dlt-why-icon"><i data-lucide="map-pin"></i></div>
+        <div class="dlt-why-icon"><?php echo icon('map-pin'); ?></div>
         <h3>Ten minutes up the road</h3>
         <p>Our DeLand base sits about ten miles from Deltona, right off the Interstate 4 corridor. That means fast estimates, faster storm response, and a crew that is here in February &mdash; not just the week after landfall.</p>
       </article>
       <article class="dlt-why-card reveal-up reveal-delay-2" data-animate>
-        <div class="dlt-why-icon"><i data-lucide="trees"></i></div>
+        <div class="dlt-why-icon"><?php echo icon('trees'); ?></div>
         <h3>We know the sand-pine problem</h3>
         <p>Top-heavy pines and hollowing laurel oaks on sandy Deltona lots behave differently than trees on clay. We read the lean, the root plate, and the target, and we tell you honestly what to remove, reduce, or leave standing.</p>
       </article>
       <article class="dlt-why-card reveal-up reveal-delay-3" data-animate>
-        <div class="dlt-why-icon"><i data-lucide="clipboard-check"></i></div>
+        <div class="dlt-why-icon"><?php echo icon('clipboard-check'); ?></div>
         <h3>Licensed, insured, accountable</h3>
         <p>We carry insurance and can show proof before a saw starts &mdash; the paperwork storm-chasers can't produce. Every Deltona quote is written, itemized, and includes the debris hauling in most cases, so the price you approve is the price you pay.</p>
       </article>
@@ -794,7 +794,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="faq-grid" data-p1-dynamic>
       <?php foreach ($faqs as $faq): ?>
       <div class="faq-item" data-animate>
-        <div class="faq-icon"><i data-lucide="help-circle"></i></div>
+        <div class="faq-icon"><?php echo icon('help-circle'); ?></div>
         <div>
           <h3><?php echo e($faq['q']); ?></h3>
           <p class="faq-answer"><?php echo e($faq['a']); ?></p>

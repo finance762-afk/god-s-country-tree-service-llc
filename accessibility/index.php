@@ -59,7 +59,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 <!-- ============ HERO ============ -->
 <section class="hero hero--legal" aria-label="Accessibility Statement">
   <div class="container">
-    <span class="hero-eyebrow-badge"><i data-lucide="accessibility"></i> Legal</span>
+    <span class="hero-eyebrow-badge"><?php echo icon('accessibility'); ?> Legal</span>
     <h1>Accessibility Statement</h1>
     <span class="section-subtitle">a site for everyone</span>
     <p class="legal-updated">Last Updated: <?php echo e($lastUpdated); ?></p>

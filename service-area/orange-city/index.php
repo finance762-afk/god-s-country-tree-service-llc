@@ -560,10 +560,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     </div>
 
     <div class="hero-trust">
-      <span class="hero-trust-item"><i data-lucide="shield-check"></i> Licensed &amp; Insured</span>
-      <span class="hero-trust-item"><i data-lucide="award"></i> <?php echo e($yearsInBusiness); ?>+ Years in Volusia County</span>
-      <span class="hero-trust-item"><i data-lucide="tree-deciduous"></i> Certified Arborist Care</span>
-      <span class="hero-trust-item"><i data-lucide="clock"></i> Estimates Within 24 Hours</span>
+      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
+      <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in Volusia County</span>
+      <span class="hero-trust-item"><?php echo icon('tree-deciduous'); ?> Certified Arborist Care</span>
+      <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
     </div>
   </div>
 </section>
@@ -658,9 +658,9 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <p data-animate>Orange City lives at the water&rsquo;s edge. Blue Spring State Park pushes crystal water toward the St. Johns River, and every winter its run fills with manatees seeking the warm flow. The live oaks, sabal palms, and laurel oaks that hold this landscape together are more than scenery &mdash; they are the native canopy that shades the springs, steadies the sandy banks, and cools the historic streets.</p>
         <p data-animate>God&rsquo;s Country Tree Service treats that canopy as worth keeping. We favor selective pruning and honest save-or-remove calls over clear-cutting, so the trees that make Orange City feel like springs country stay standing and healthy for the next generation.</p>
         <ul class="oc-canopy-list">
-          <li data-animate><i data-lucide="leaf"></i><span><strong>Native-first judgment.</strong> Live oaks, sabal palms, and laurel oaks pruned to keep the canopy that defines Orange City.</span></li>
-          <li data-animate><i data-lucide="wind"></i><span><strong>Storm-load reduction.</strong> Thinning and crown reduction that let hurricane gusts pass through instead of toppling old trees.</span></li>
-          <li data-animate><i data-lucide="droplets"></i><span><strong>Careful near water.</strong> Clean rigging and full debris haul-off protect Orange City&rsquo;s lakes, springs, and sandy banks.</span></li>
+          <li data-animate><?php echo icon('leaf'); ?><span><strong>Native-first judgment.</strong> Live oaks, sabal palms, and laurel oaks pruned to keep the canopy that defines Orange City.</span></li>
+          <li data-animate><?php echo icon('wind'); ?><span><strong>Storm-load reduction.</strong> Thinning and crown reduction that let hurricane gusts pass through instead of toppling old trees.</span></li>
+          <li data-animate><?php echo icon('droplets'); ?><span><strong>Careful near water.</strong> Clean rigging and full debris haul-off protect Orange City&rsquo;s lakes, springs, and sandy banks.</span></li>
         </ul>
       </div>
     </div>
@@ -678,7 +678,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="oc-why-grid">
       <?php foreach ($ocWhy as $i => $card): ?>
       <article class="oc-why-card oc-tint-<?php echo ($i % 3) + 1; ?> reveal-delay-<?php echo ($i % 3) + 1; ?>" data-animate>
-        <div class="oc-why-icon"><i data-lucide="<?php echo e($card['icon']); ?>"></i></div>
+        <div class="oc-why-icon"><?php echo icon(($card['icon'])); ?></div>
         <h3><?php echo $card['title']; ?></h3>
         <p><?php echo $card['text']; ?></p>
       </article>
@@ -698,7 +698,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="faq-grid" data-p1-dynamic>
       <?php foreach ($faqs as $faq): ?>
       <div class="faq-item" data-animate>
-        <div class="faq-icon"><i data-lucide="help-circle"></i></div>
+        <div class="faq-icon"><?php echo icon('help-circle'); ?></div>
         <div>
           <h3><?php echo $faq['q']; ?></h3>
           <p class="faq-answer"><?php echo $faq['a']; ?></p>

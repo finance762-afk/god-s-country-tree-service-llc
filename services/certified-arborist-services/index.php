@@ -908,10 +908,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     </div>
 
     <div class="hero-trust">
-      <span class="hero-trust-item"><i data-lucide="shield-check"></i> Licensed &amp; Insured</span>
-      <span class="hero-trust-item"><i data-lucide="award"></i> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
-      <span class="hero-trust-item"><i data-lucide="clipboard-check"></i> Honest Save-or-Remove Calls</span>
-      <span class="hero-trust-item"><i data-lucide="clock"></i> Estimates Within 24 Hours</span>
+      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
+      <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
+      <span class="hero-trust-item"><?php echo icon('clipboard-check'); ?> Honest Save-or-Remove Calls</span>
+      <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
     </div>
   </div>
 </section>
@@ -937,7 +937,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="arb-symptoms">
       <?php foreach ($treeSymptoms as $i => $symptom): ?>
       <article class="arb-symptom reveal-delay-<?php echo ($i % 3) + 1; ?>" data-animate>
-        <div class="arb-symptom-icon"><i data-lucide="<?php echo e($symptom['icon']); ?>"></i></div>
+        <div class="arb-symptom-icon"><?php echo icon(($symptom['icon'])); ?></div>
         <h3><?php echo e($symptom['title']); ?></h3>
         <p><?php echo e($symptom['text']); ?></p>
       </article>
@@ -965,15 +965,15 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
         <ul class="arb-cred-rows" data-p1-dynamic>
           <li data-animate>
-            <i data-lucide="badge-check"></i>
+            <?php echo icon('badge-check'); ?>
             <p><strong>Certified arborist expertise on every job.</strong> Diagnosis, treatment plans, and species-specific care &mdash; not a one-size-fits-all &ldquo;it&rsquo;s gotta come down.&rdquo;</p>
           </li>
           <li data-animate>
-            <i data-lucide="shield-check"></i>
+            <?php echo icon('shield-check'); ?>
             <p><strong>Licensed and insured, with proof on request.</strong> Liability and workers&rsquo; compensation coverage you can verify before anyone climbs your oak.</p>
           </li>
           <li data-animate>
-            <i data-lucide="wrench"></i>
+            <?php echo icon('wrench'); ?>
             <p><strong>One local crew carries out the plan.</strong> The same DeLand tree service that diagnoses your tree does the pruning, crown reduction, or removal &mdash; tree work and land clearing included.</p>
           </li>
         </ul>
@@ -999,7 +999,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="arb-services-grid">
       <?php foreach ($arbServices as $i => $item): ?>
       <article class="arb-svc-item reveal-delay-<?php echo ($i % 3) + 1; ?>" data-animate>
-        <div class="arb-svc-icon"><i data-lucide="<?php echo e($item['icon']); ?>"></i></div>
+        <div class="arb-svc-icon"><?php echo icon(($item['icon'])); ?></div>
         <h3><?php echo e($item['title']); ?></h3>
         <p><?php echo e($item['text']); ?></p>
       </article>
@@ -1066,10 +1066,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <div class="review-badge-strip" data-animate>
       <a class="review-badge" href="<?php echo e($integrations['gbp_url']); ?>" target="_blank" rel="noopener">
-        <i data-lucide="star"></i> Read Our Google Reviews
+        <?php echo icon('star'); ?> Read Our Google Reviews
       </a>
       <a class="review-badge" href="<?php echo e($integrations['bbb_url']); ?>" target="_blank" rel="noopener">
-        <i data-lucide="badge-check"></i> BBB Business Profile
+        <?php echo icon('badge-check'); ?> BBB Business Profile
       </a>
     </div>
   </div>
@@ -1089,7 +1089,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <h3>Usually worth saving</h3>
         <ul>
           <?php foreach ($verdictSave as $point): ?>
-          <li><i data-lucide="heart-pulse"></i> <?php echo e($point); ?></li>
+          <li><?php echo icon('heart-pulse'); ?> <?php echo e($point); ?></li>
           <?php endforeach; ?>
         </ul>
       </div>
@@ -1097,7 +1097,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <h3>Time to plan a removal</h3>
         <ul>
           <?php foreach ($verdictRemove as $point): ?>
-          <li><i data-lucide="triangle-alert"></i> <?php echo e($point); ?></li>
+          <li><?php echo icon('triangle-alert'); ?> <?php echo e($point); ?></li>
           <?php endforeach; ?>
         </ul>
       </div>
@@ -1119,7 +1119,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="faq-grid" data-p1-dynamic>
       <?php foreach ($faqs as $faq): ?>
       <div class="faq-item" data-animate>
-        <div class="faq-icon"><i data-lucide="help-circle"></i></div>
+        <div class="faq-icon"><?php echo icon('help-circle'); ?></div>
         <div>
           <h3><?php echo e($faq['q']); ?></h3>
           <p class="faq-answer"><?php echo e($faq['a']); ?></p>

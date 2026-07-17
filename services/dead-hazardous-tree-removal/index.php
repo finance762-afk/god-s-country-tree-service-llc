@@ -752,10 +752,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     </div>
 
     <div class="hero-trust">
-      <span class="hero-trust-item"><i data-lucide="shield-check"></i> Licensed &amp; Insured</span>
-      <span class="hero-trust-item"><i data-lucide="award"></i> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
-      <span class="hero-trust-item"><i data-lucide="camera"></i> Photo Documentation Included</span>
-      <span class="hero-trust-item"><i data-lucide="clock"></i> Estimates Within 24 Hours</span>
+      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
+      <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
+      <span class="hero-trust-item"><?php echo icon('camera'); ?> Photo Documentation Included</span>
+      <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
     </div>
   </div>
 </section>
@@ -772,7 +772,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="dhz-bento">
       <?php foreach ($warningSigns as $i => $sign): ?>
       <article class="dhz-sign reveal-delay-<?php echo ($i % 3) + 1; ?>" data-num="0<?php echo $i + 1; ?>" data-animate>
-        <div class="dhz-sign-icon"><i data-lucide="<?php echo e($sign['icon']); ?>"></i></div>
+        <div class="dhz-sign-icon"><?php echo icon(($sign['icon'])); ?></div>
         <h3><?php echo e($sign['title']); ?></h3>
         <p><?php echo e($sign['text']); ?></p>
       </article>
@@ -797,15 +797,15 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <p data-animate>On a healthy oak, the wood itself is part of the safety system: it hinges, it holds rigging points, it behaves. On the dead pines and declining live oaks we're called to in DeLand, Deltona, Orange City, and DeBary, none of that can be assumed. So the crew sounds the trunk, tests every tie-in, and moves the load onto the boom lift and grapple loader whenever the tree can't be trusted to carry it.</p>
         <ul class="dhz-expert-points" data-p1-dynamic>
           <li data-animate>
-            <i data-lucide="check-circle"></i>
+            <?php echo icon('check-circle'); ?>
             <p><strong>Machines carry the risk.</strong> When a trunk is too far gone to climb, our boom lift and compact grapple loader do the reaching and the lifting &mdash; the same one-crew tree-and-land-clearing setup, no subcontractors.</p>
           </li>
           <li data-animate>
-            <i data-lucide="check-circle"></i>
+            <?php echo icon('check-circle'); ?>
             <p><strong>Certified arborist judgment.</strong> Declining isn't always dead. If a scratch test and a look at the crown say the tree can be saved with pruning or care, that's the answer you get at the estimate.</p>
           </li>
           <li data-animate>
-            <i data-lucide="check-circle"></i>
+            <?php echo icon('check-circle'); ?>
             <p><strong>Insurance you can verify.</strong> Licensed and insured, with proof available before a saw starts &mdash; exactly the paperwork that matters most when the job is the risky kind.</p>
           </li>
         </ul>
@@ -843,7 +843,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <?php foreach ($includedItems as $i => $item): ?>
       <article class="dhz-glass-card reveal-delay-<?php echo ($i % 3) + 1; ?>" data-animate>
         <span class="dhz-glass-num">0<?php echo $i + 1; ?></span>
-        <div class="dhz-glass-icon"><i data-lucide="<?php echo e($item['icon']); ?>"></i></div>
+        <div class="dhz-glass-icon"><?php echo icon(($item['icon'])); ?></div>
         <h3><?php echo e($item['title']); ?></h3>
         <p><?php echo e($item['text']); ?></p>
       </article>
@@ -904,10 +904,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <div class="review-badge-strip" data-animate>
       <a class="review-badge" href="<?php echo e($integrations['gbp_url']); ?>" target="_blank" rel="noopener">
-        <i data-lucide="star"></i> Read Our Google Reviews
+        <?php echo icon('star'); ?> Read Our Google Reviews
       </a>
       <a class="review-badge" href="<?php echo e($integrations['bbb_url']); ?>" target="_blank" rel="noopener">
-        <i data-lucide="badge-check"></i> BBB Business Profile
+        <?php echo icon('badge-check'); ?> BBB Business Profile
       </a>
     </div>
   </div>
@@ -927,7 +927,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <h3>Waiting it out</h3>
         <ul>
           <?php foreach ($comparison as $row): ?>
-          <li><i data-lucide="x"></i> <?php echo e($row['wait']); ?></li>
+          <li><?php echo icon('x'); ?> <?php echo e($row['wait']); ?></li>
           <?php endforeach; ?>
         </ul>
       </div>
@@ -935,7 +935,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <h3>Removing it on your schedule</h3>
         <ul>
           <?php foreach ($comparison as $row): ?>
-          <li><i data-lucide="check"></i> <?php echo e($row['now']); ?></li>
+          <li><?php echo icon('check'); ?> <?php echo e($row['now']); ?></li>
           <?php endforeach; ?>
         </ul>
       </div>
@@ -955,7 +955,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="faq-grid" data-p1-dynamic>
       <?php foreach ($faqs as $faq): ?>
       <div class="faq-item" data-animate>
-        <div class="faq-icon"><i data-lucide="help-circle"></i></div>
+        <div class="faq-icon"><?php echo icon('help-circle'); ?></div>
         <div>
           <h3><?php echo e($faq['q']); ?></h3>
           <p class="faq-answer"><?php echo e($faq['a']); ?></p>

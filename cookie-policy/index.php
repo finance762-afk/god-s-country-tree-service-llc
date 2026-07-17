@@ -59,7 +59,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 <!-- ============ HERO ============ -->
 <section class="hero hero--legal" aria-label="Cookie Policy">
   <div class="container">
-    <span class="hero-eyebrow-badge"><i data-lucide="cookie"></i> Legal</span>
+    <span class="hero-eyebrow-badge"><?php echo icon('cookie'); ?> Legal</span>
     <h1>Cookie Policy</h1>
     <span class="section-subtitle">what we store, and why</span>
     <p class="legal-updated">Last Updated: <?php echo e($lastUpdated); ?></p>

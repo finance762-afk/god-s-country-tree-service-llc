@@ -335,7 +335,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   <div class="container">
     <ul>
       <?php foreach ($faqCategories as $key => $cat): ?>
-      <li><a href="#faq-<?php echo e($key); ?>"><i data-lucide="<?php echo e($cat['icon']); ?>"></i> <?php echo e($cat['label']); ?></a></li>
+      <li><a href="#faq-<?php echo e($key); ?>"><?php echo icon(($cat['icon'])); ?> <?php echo e($cat['label']); ?></a></li>
       <?php endforeach; ?>
     </ul>
   </div>
@@ -347,7 +347,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <?php foreach ($faqCategories as $key => $cat): ?>
     <div class="faq-category" id="faq-<?php echo e($key); ?>">
       <div class="faq-cat-head" data-animate>
-        <span class="cat-ico"><i data-lucide="<?php echo e($cat['icon']); ?>"></i></span>
+        <span class="cat-ico"><?php echo icon(($cat['icon'])); ?></span>
         <div>
           <h2><?php echo e($cat['label']); ?></h2>
           <span class="cat-count"><?php echo count($cat['faqs']); ?> common questions</span>
@@ -359,7 +359,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <details class="faq-q"<?php echo ($key === 'general' && $i === 0) ? ' open' : ''; ?> data-animate>
           <summary>
             <span><?php echo e($faq['q']); ?></span>
-            <span class="marker" aria-hidden="true"><i data-lucide="plus"></i></span>
+            <span class="marker" aria-hidden="true"><?php echo icon('plus'); ?></span>
           </summary>
           <div class="faq-a">
             <p class="faq-answer"><?php echo e($faq['a']); ?></p>

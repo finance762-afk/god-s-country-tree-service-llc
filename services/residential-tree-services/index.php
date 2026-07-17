@@ -811,10 +811,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     </div>
 
     <div class="hero-trust">
-      <span class="hero-trust-item"><i data-lucide="shield-check"></i> Licensed &amp; Insured</span>
-      <span class="hero-trust-item"><i data-lucide="award"></i> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
-      <span class="hero-trust-item"><i data-lucide="wrench"></i> Tree + Land Clearing, One Crew</span>
-      <span class="hero-trust-item"><i data-lucide="clock"></i> Estimates Within 24 Hours</span>
+      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
+      <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
+      <span class="hero-trust-item"><?php echo icon('wrench'); ?> Tree + Land Clearing, One Crew</span>
+      <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
     </div>
   </div>
 </section>
@@ -832,14 +832,14 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <div class="res-scenarios-grid">
       <article class="res-scenario-featured" data-animate>
-        <div class="res-featured-icon"><i data-lucide="house"></i></div>
+        <div class="res-featured-icon"><?php echo icon('house'); ?></div>
         <h3>Every yard job, one crew</h3>
         <p>DeLand lots collect tree work the way garages collect projects: the oak that needs shaping, the palm full of brown fronds, the stump from three summers ago. Instead of booking three companies, you book one walk-through.</p>
         <p>We climb, rig, chip, grind, and haul with our own equipment &mdash; tree service and land clearing under the same name since <?php echo e($yearEstablished); ?> &mdash; so nothing on the list waits for a subcontractor.</p>
       </article>
       <?php foreach ($scenarios as $i => $sc): ?>
       <article class="res-scenario-card reveal-delay-<?php echo ($i % 3) + 1; ?>" data-animate>
-        <div class="res-scenario-icon"><i data-lucide="<?php echo e($sc['icon']); ?>"></i></div>
+        <div class="res-scenario-icon"><?php echo icon(($sc['icon'])); ?></div>
         <h3><?php echo e($sc['title']); ?></h3>
         <p><?php echo e($sc['text']); ?></p>
       </article>
@@ -898,7 +898,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="res-cost-rows" data-p1-dynamic>
       <?php foreach ($costFactors as $i => $factor): ?>
       <div class="res-cost-row reveal-delay-<?php echo ($i % 3) + 1; ?>" data-animate>
-        <div class="res-cost-icon"><i data-lucide="<?php echo e($factor['icon']); ?>"></i></div>
+        <div class="res-cost-icon"><?php echo icon(($factor['icon'])); ?></div>
         <div>
           <h3><?php echo e($factor['title']); ?></h3>
           <p><?php echo e($factor['text']); ?></p>
@@ -961,10 +961,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <div class="res-badge-strip" data-animate>
       <a class="res-review-badge" href="<?php echo e($integrations['gbp_url']); ?>" target="_blank" rel="noopener">
-        <i data-lucide="star"></i> Read Our Google Reviews
+        <?php echo icon('star'); ?> Read Our Google Reviews
       </a>
       <a class="res-review-badge" href="<?php echo e($integrations['bbb_url']); ?>" target="_blank" rel="noopener">
-        <i data-lucide="badge-check"></i> BBB Business Profile
+        <?php echo icon('badge-check'); ?> BBB Business Profile
       </a>
     </div>
   </div>
@@ -989,7 +989,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <h3>The contractor juggle</h3>
         <ul>
           <?php foreach ($comparison as $row): ?>
-          <li><i data-lucide="x"></i> <?php echo e($row['them']); ?></li>
+          <li><?php echo icon('x'); ?> <?php echo e($row['them']); ?></li>
           <?php endforeach; ?>
         </ul>
       </div>
@@ -997,7 +997,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <h3>God's Country Tree Service</h3>
         <ul>
           <?php foreach ($comparison as $row): ?>
-          <li><i data-lucide="check"></i> <?php echo e($row['us']); ?></li>
+          <li><?php echo icon('check'); ?> <?php echo e($row['us']); ?></li>
           <?php endforeach; ?>
         </ul>
       </div>
@@ -1022,7 +1022,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="faq-grid" data-p1-dynamic>
       <?php foreach ($faqs as $faq): ?>
       <div class="faq-item" data-animate>
-        <div class="faq-icon"><i data-lucide="help-circle"></i></div>
+        <div class="faq-icon"><?php echo icon('help-circle'); ?></div>
         <div>
           <h3><?php echo e($faq['q']); ?></h3>
           <p class="faq-answer"><?php echo e($faq['a']); ?></p>

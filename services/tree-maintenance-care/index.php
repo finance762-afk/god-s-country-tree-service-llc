@@ -820,10 +820,10 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     </div>
 
     <div class="hero-trust">
-      <span class="hero-trust-item"><i data-lucide="shield-check"></i> Licensed &amp; Insured</span>
-      <span class="hero-trust-item"><i data-lucide="calendar-check"></i> Scheduled Care Plans</span>
-      <span class="hero-trust-item"><i data-lucide="award"></i> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
-      <span class="hero-trust-item"><i data-lucide="clock"></i> Estimates Within 24 Hours</span>
+      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
+      <span class="hero-trust-item"><?php echo icon('calendar-check'); ?> Scheduled Care Plans</span>
+      <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
+      <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
     </div>
   </div>
 </section>
@@ -839,20 +839,20 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
 
     <div class="mnt-econ-grid">
       <div class="mnt-plan-card mnt-plan-card--us" data-animate>
-        <h3><i data-lucide="calendar-check"></i> The maintenance visit</h3>
+        <h3><?php echo icon('calendar-check'); ?> The maintenance visit</h3>
         <span class="mnt-plan-tag">Planned &middot; Predictable &middot; The tree survives</span>
         <ul>
           <?php foreach ($planPoints as $point): ?>
-          <li><i data-lucide="check"></i> <?php echo e($point); ?></li>
+          <li><?php echo icon('check'); ?> <?php echo e($point); ?></li>
           <?php endforeach; ?>
         </ul>
       </div>
       <div class="mnt-plan-card mnt-plan-card--them" data-animate="right">
-        <h3><i data-lucide="siren"></i> The emergency call</h3>
+        <h3><?php echo icon('siren'); ?> The emergency call</h3>
         <span class="mnt-plan-tag">Unplanned &middot; Expensive &middot; The tree is gone</span>
         <ul>
           <?php foreach ($emergencyPoints as $point): ?>
-          <li><i data-lucide="x"></i> <?php echo e($point); ?></li>
+          <li><?php echo icon('x'); ?> <?php echo e($point); ?></li>
           <?php endforeach; ?>
         </ul>
       </div>
@@ -890,7 +890,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
           <h3><?php echo e($step['title']); ?></h3>
           <p><?php echo e($step['text']); ?></p>
         </div>
-        <div class="mnt-tl-node"><i data-lucide="<?php echo e($step['icon']); ?>"></i></div>
+        <div class="mnt-tl-node"><?php echo icon(($step['icon'])); ?></div>
         <div class="mnt-tl-empty" aria-hidden="true"></div>
       </div>
       <?php endforeach; ?>
@@ -915,12 +915,12 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="mnt-quarters">
       <?php foreach ($quarters as $i => $q): ?>
       <article class="mnt-quarter<?php echo $q['accent'] ? ' mnt-quarter--accent' : ''; ?> reveal-delay-<?php echo $i + 1; ?>" data-q="<?php echo e($q['label']); ?>" data-animate>
-        <div class="mnt-quarter-icon"><i data-lucide="<?php echo e($q['icon']); ?>"></i></div>
+        <div class="mnt-quarter-icon"><?php echo icon(($q['icon'])); ?></div>
         <span class="mnt-quarter-months"><?php echo e($q['months']); ?></span>
         <h3><?php echo e($q['title']); ?></h3>
         <ul>
           <?php foreach ($q['tasks'] as $task): ?>
-          <li><i data-lucide="chevron-right"></i> <?php echo e($task); ?></li>
+          <li><?php echo icon('chevron-right'); ?> <?php echo e($task); ?></li>
           <?php endforeach; ?>
         </ul>
       </article>
@@ -987,10 +987,10 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
 
     <div class="review-badge-strip" data-animate>
       <a class="review-badge" href="<?php echo e($integrations['gbp_url']); ?>" target="_blank" rel="noopener">
-        <i data-lucide="star"></i> Read Our Google Reviews
+        <?php echo icon('star'); ?> Read Our Google Reviews
       </a>
       <a class="review-badge" href="<?php echo e($integrations['bbb_url']); ?>" target="_blank" rel="noopener">
-        <i data-lucide="badge-check"></i> BBB Business Profile
+        <?php echo icon('badge-check'); ?> BBB Business Profile
       </a>
     </div>
   </div>
@@ -1008,7 +1008,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="faq-grid" data-p1-dynamic>
       <?php foreach ($faqs as $faq): ?>
       <div class="faq-item" data-animate>
-        <div class="faq-icon"><i data-lucide="help-circle"></i></div>
+        <div class="faq-icon"><?php echo icon('help-circle'); ?></div>
         <div>
           <h3><?php echo e($faq['q']); ?></h3>
           <p class="faq-answer"><?php echo e($faq['a']); ?></p>

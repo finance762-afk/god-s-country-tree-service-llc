@@ -21,7 +21,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 
 $currentPage = $currentPage ?? 'home';
-$logoUrl     = $siteUrl . '/assets/images/Gods-Country-Newest-Logo.png';
+$logoUrl     = $siteUrl . '/assets/images/Gods-Country-Logo-og.jpg';
 
 // V2.1 trade-noun default title + V2.2 CTR-engineered default description
 $pageTitle = $pageTitle
@@ -60,12 +60,12 @@ $ogImage = $ogImage ?? $logoUrl;
 <meta property="og:site_name" content="<?php echo e($siteName); ?>">
 <meta property="og:locale" content="en_US">
 
-<!-- Fonts: 3-font system — Fjalla One (headings) + Open Sans (body) + Caveat (accent) -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Fonts: 3-font system — Fjalla One (headings) + Open Sans (body) + Caveat (accent).
+     Self-hosted woff2 (performance-2026.md Part D) — no Google Fonts CDN. -->
 <link rel="dns-prefetch" href="https://db.pageone.cloud">
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:wght@300;400;500;600;700&family=Caveat:wght@400;500;600;700&display=swap" as="style">
-<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:wght@300;400;500;600;700&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="/assets/fonts/fjalla-one-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/open-sans-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/fonts/fonts.css">
 
 <!-- Styles -->
 <link rel="stylesheet" href="/assets/css/framework.css?v=<?php echo e($cssVersion ?? '1'); ?>">

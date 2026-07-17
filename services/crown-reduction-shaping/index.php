@@ -873,10 +873,10 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     </div>
 
     <div class="hero-trust">
-      <span class="hero-trust-item"><i data-lucide="shield-check"></i> Licensed &amp; Insured</span>
-      <span class="hero-trust-item"><i data-lucide="award"></i> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
-      <span class="hero-trust-item"><i data-lucide="ban"></i> We Never Top Trees</span>
-      <span class="hero-trust-item"><i data-lucide="clock"></i> Estimates Within 24 Hours</span>
+      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
+      <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
+      <span class="hero-trust-item"><?php echo icon('ban'); ?> We Never Top Trees</span>
+      <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
     </div>
   </div>
 </section>
@@ -895,7 +895,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="crn-signs-grid">
       <?php foreach ($shapeSigns as $i => $sign): ?>
       <article class="crn-sign-card reveal-delay-<?php echo ($i % 3) + 1; ?>" data-animate>
-        <div class="crn-sign-icon"><i data-lucide="<?php echo e($sign['icon']); ?>"></i></div>
+        <div class="crn-sign-icon"><?php echo icon(($sign['icon'])); ?></div>
         <h3><?php echo e($sign['title']); ?></h3>
         <p><?php echo e($sign['text']); ?></p>
       </article>
@@ -924,11 +924,11 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
 
     <div class="crn-vs-grid">
       <div class="crn-vs-col crn-vs-col--topping" data-animate>
-        <span class="crn-vs-tag"><i data-lucide="thumbs-down"></i> Topping &mdash; the shortcut</span>
+        <span class="crn-vs-tag"><?php echo icon('thumbs-down'); ?> Topping &mdash; the shortcut</span>
         <h3>What the wrong crew does</h3>
         <ul>
           <?php foreach ($vsTopping as $point): ?>
-          <li><i data-lucide="x"></i> <?php echo e($point); ?></li>
+          <li><?php echo icon('x'); ?> <?php echo e($point); ?></li>
           <?php endforeach; ?>
         </ul>
       </div>
@@ -936,18 +936,18 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
       <div class="crn-vs-badge" aria-hidden="true">VS</div>
 
       <div class="crn-vs-col crn-vs-col--reduction" data-animate="right">
-        <span class="crn-vs-tag"><i data-lucide="thumbs-up"></i> Reduction &mdash; the right way</span>
+        <span class="crn-vs-tag"><?php echo icon('thumbs-up'); ?> Reduction &mdash; the right way</span>
         <h3>How God's Country shapes a crown</h3>
         <ul>
           <?php foreach ($vsReduction as $point): ?>
-          <li><i data-lucide="check"></i> <?php echo e($point); ?></li>
+          <li><?php echo icon('check'); ?> <?php echo e($point); ?></li>
           <?php endforeach; ?>
         </ul>
       </div>
     </div>
 
     <div class="crn-refusal" data-animate>
-      <i data-lucide="ban"></i>
+      <?php echo icon('ban'); ?>
       <p><strong>We turn down topping jobs &mdash; even when a customer asks for one.</strong> Topping kills DeLand&rsquo;s live oaks slowly and makes them more dangerous in the meantime. On your walkthrough we&rsquo;ll show you what a proper reduction takes off, and why the tree is safer and better-looking for it.</p>
     </div>
   </div>
@@ -971,15 +971,15 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
         <p>Around DeLand, the trees that fail in storms are rarely the small ones. They&rsquo;re the broad, heavy live oaks and laurel oaks whose root plates sit in sandy Central Florida soil &mdash; soil that gives up its grip when a saturated canopy catches forty-mile-an-hour gusts. Reducing the crown before June does more for that tree than anything you can do to it in October.</p>
         <ul class="crn-points" data-p1-dynamic>
           <li data-animate>
-            <i data-lucide="check-circle"></i>
+            <?php echo icon('check-circle'); ?>
             <p><strong>Certified arborist judgment.</strong> Which limbs come back, which interior branches come out, and how much the tree can lose in one visit &mdash; decided by training, not by whatever the saw reaches.</p>
           </li>
           <li data-animate>
-            <i data-lucide="check-circle"></i>
+            <?php echo icon('check-circle'); ?>
             <p><strong>Reduction, not amputation.</strong> Every cut lands at a lateral the tree can grow from, so the canopy stays alive, sealed, and structurally sound after we leave.</p>
           </li>
           <li data-animate>
-            <i data-lucide="check-circle"></i>
+            <?php echo icon('check-circle'); ?>
             <p><strong>One crew, whole job.</strong> Climbing, shaping, chipping, and same-day hauling from the same Volusia County company &mdash; no second contractor for the cleanup.</p>
           </li>
         </ul>
@@ -1009,7 +1009,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
       <?php foreach ($canopyZones as $i => $zone): ?>
       <article class="crn-zone-card reveal-delay-<?php echo $i + 1; ?>" data-animate>
         <span class="crn-zone-tag"><?php echo e($zone['zone']); ?></span>
-        <h3><i data-lucide="<?php echo e($zone['icon']); ?>"></i> <?php echo e($zone['title']); ?></h3>
+        <h3><?php echo icon(($zone['icon'])); ?> <?php echo e($zone['title']); ?></h3>
         <p><?php echo e($zone['text']); ?></p>
       </article>
       <?php endforeach; ?>
@@ -1080,10 +1080,10 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
 
     <div class="review-badge-strip" data-animate>
       <a class="review-badge" href="<?php echo e($integrations['gbp_url']); ?>" target="_blank" rel="noopener">
-        <i data-lucide="star"></i> Read Our Google Reviews
+        <?php echo icon('star'); ?> Read Our Google Reviews
       </a>
       <a class="review-badge" href="<?php echo e($integrations['bbb_url']); ?>" target="_blank" rel="noopener">
-        <i data-lucide="badge-check"></i> BBB Business Profile
+        <?php echo icon('badge-check'); ?> BBB Business Profile
       </a>
     </div>
   </div>
@@ -1101,7 +1101,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="faq-grid" data-p1-dynamic>
       <?php foreach ($faqs as $faq): ?>
       <div class="faq-item" data-animate>
-        <div class="faq-icon"><i data-lucide="help-circle"></i></div>
+        <div class="faq-icon"><?php echo icon('help-circle'); ?></div>
         <div>
           <h3><?php echo e($faq['q']); ?></h3>
           <p class="faq-answer"><?php echo e($faq['a']); ?></p>

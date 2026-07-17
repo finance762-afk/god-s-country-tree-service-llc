@@ -858,10 +858,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     </div>
 
     <div class="hero-trust">
-      <span class="hero-trust-item"><i data-lucide="shield-check"></i> Licensed &amp; Insured</span>
-      <span class="hero-trust-item"><i data-lucide="award"></i> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
-      <span class="hero-trust-item"><i data-lucide="leaf"></i> Certified Arborist Expertise</span>
-      <span class="hero-trust-item"><i data-lucide="clock"></i> Estimates Within 24 Hours</span>
+      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
+      <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
+      <span class="hero-trust-item"><?php echo icon('leaf'); ?> Certified Arborist Expertise</span>
+      <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
     </div>
   </div>
 </section>
@@ -878,7 +878,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="prn-signs-grid">
       <?php foreach ($pruningSigns as $i => $sign): ?>
       <article class="prn-sign-card reveal-delay-<?php echo ($i % 3) + 1; ?>" data-animate>
-        <div class="prn-sign-icon"><i data-lucide="<?php echo e($sign['icon']); ?>"></i></div>
+        <div class="prn-sign-icon"><?php echo icon(($sign['icon'])); ?></div>
         <h3><?php echo e($sign['title']); ?></h3>
         <p><?php echo e($sign['text']); ?></p>
       </article>
@@ -909,15 +909,15 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <p class="prn-lede" data-animate>Anyone with a saw can shorten a branch. Knowing which branch, where the cut closes fastest, and how a live oak rooted in sandy Central Florida soil will respond two growing seasons from now is the actual trade. <?php echo e($siteName); ?> has pruned DeLand's oaks, pines, and palms since <?php echo e($yearEstablished); ?> &mdash; from the moss-draped canopies around historic downtown DeLand to newer yards in Deltona and Orange City &mdash; and certified arborist judgment decides every cut before a rope goes up.</p>
         <ul class="prn-expert-points" data-p1-dynamic>
           <li data-animate>
-            <i data-lucide="check-circle"></i>
+            <?php echo icon('check-circle'); ?>
             <p><strong>Cuts that close.</strong> Every pruning cut lands just outside the branch collar &mdash; the tissue that seals the wound &mdash; so the tree compartmentalizes instead of rotting from the stub inward.</p>
           </li>
           <li data-animate>
-            <i data-lucide="check-circle"></i>
+            <?php echo icon('check-circle'); ?>
             <p><strong>One crew, canopy to curb.</strong> Climbing, rigging, chipping, and cleanup from the same tree-and-land-clearing company &mdash; no second contractor to schedule, no brush pile left at the street.</p>
           </li>
           <li data-animate>
-            <i data-lucide="check-circle"></i>
+            <?php echo icon('check-circle'); ?>
             <p><strong>Honest scope.</strong> If your tree needs a light trim instead of corrective pruning &mdash; or removal instead of either &mdash; you'll hear it plainly at the free estimate, not after the invoice.</p>
           </li>
         </ul>
@@ -955,7 +955,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
           <h3><?php echo e($cut['name']); ?></h3>
           <p><?php echo e($cut['text']); ?></p>
         </div>
-        <div class="prn-timeline-node"><i data-lucide="<?php echo e($cut['icon']); ?>"></i></div>
+        <div class="prn-timeline-node"><?php echo icon(($cut['icon'])); ?></div>
         <div class="prn-timeline-spacer" aria-hidden="true"></div>
       </div>
       <?php endforeach; ?>
@@ -1020,10 +1020,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <div class="review-badge-strip" data-animate>
       <a class="review-badge" href="<?php echo e($integrations['gbp_url']); ?>" target="_blank" rel="noopener">
-        <i data-lucide="star"></i> Read Our Google Reviews
+        <?php echo icon('star'); ?> Read Our Google Reviews
       </a>
       <a class="review-badge" href="<?php echo e($integrations['bbb_url']); ?>" target="_blank" rel="noopener">
-        <i data-lucide="badge-check"></i> BBB Business Profile
+        <?php echo icon('badge-check'); ?> BBB Business Profile
       </a>
     </div>
   </div>
@@ -1043,7 +1043,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <h3>A cosmetic trim stops at</h3>
         <ul>
           <?php foreach ($comparison as $row): ?>
-          <li><i data-lucide="minus"></i> <?php echo e($row['them']); ?></li>
+          <li><?php echo icon('minus'); ?> <?php echo e($row['them']); ?></li>
           <?php endforeach; ?>
         </ul>
       </div>
@@ -1051,7 +1051,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <h3>Arborist-guided pruning adds</h3>
         <ul>
           <?php foreach ($comparison as $row): ?>
-          <li><i data-lucide="check"></i> <?php echo e($row['us']); ?></li>
+          <li><?php echo icon('check'); ?> <?php echo e($row['us']); ?></li>
           <?php endforeach; ?>
         </ul>
       </div>
@@ -1071,7 +1071,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="prn-cadence-grid">
       <?php foreach ($cadence as $i => $item): ?>
       <article class="prn-cadence-card reveal-delay-<?php echo ($i % 3) + 1; ?>" data-animate>
-        <div class="prn-cadence-icon"><i data-lucide="<?php echo e($item['icon']); ?>"></i></div>
+        <div class="prn-cadence-icon"><?php echo icon(($item['icon'])); ?></div>
         <h3><?php echo e($item['title']); ?></h3>
         <span class="prn-cadence-window"><?php echo e($item['window']); ?></span>
         <p><?php echo e($item['text']); ?></p>
@@ -1093,7 +1093,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="faq-grid" data-p1-dynamic>
       <?php foreach ($faqs as $faq): ?>
       <div class="faq-item" data-animate>
-        <div class="faq-icon"><i data-lucide="help-circle"></i></div>
+        <div class="faq-icon"><?php echo icon('help-circle'); ?></div>
         <div>
           <h3><?php echo e($faq['q']); ?></h3>
           <p class="faq-answer"><?php echo e($faq['a']); ?></p>
