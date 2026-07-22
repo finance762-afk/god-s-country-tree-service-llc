@@ -268,3 +268,4 @@ $integrations = [
     'gbp_map_embed'      => '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d539119.2522176659!2d-81.16336855!3d29.003812949999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e7171ecc120457%3A0x8a9d79e724621472!2sGod&#39;s%20Country%20Tree%20Service%20LLC!5e1!3m2!1sen!2sus!4v1784063712642!5m2!1sen!2sus" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>',
     'elfsight_embed'     => '<script src="https://static.elfsight.com/platform/platform.js" defer></script>' . "\n" . '<div class="elfsight-app-ce7307de-a7b0-43fc-abb6-a90dc521b26f" data-elfsight-app-lazy></div>',
 ];
+$leadsFormSecret = 'bac7714a8f41505ab12d75311ccbb11a6374e38b1a010d69111c84a652cfa0f3'; // spam-shield HMAC (matches leads fn LEADS_FORM_SECRET)
