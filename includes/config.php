@@ -254,7 +254,7 @@ $yearEstablished = 2014;
 $businessHours   = 'Monday 7 AM–10 PM, Tuesday 7 AM–10 PM, Wednesday 7 AM–10 PM, Thursday 7 AM–10 PM, Friday 7 AM–10 PM, Saturday 8 AM–9 PM, Sunday Closed';
 
 // ---- Forms -------------------------------------------------
-$formAction = 'https://formsubmit.co/godscountrytreeservice@gmail.com';
+$formAction = 'https://db.pageone.cloud/functions/v1/leads/god-s-country-tree-service-llc';
 
 // ---- Integrations (from build-plan.json) -------------------
 $integrations = [
