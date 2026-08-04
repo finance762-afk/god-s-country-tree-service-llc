@@ -26,15 +26,15 @@ $heroImagePreload = $heroImage;
 $ogImage          = $heroImage;
 
 $storyImage = [
-    'src' => 'https://i.imgur.com/bqd1CaU.jpeg',
+    'src' => '/assets/images/bqd1cau-480.webp',
     'alt' => 'Caleb, owner of God\'s Country Tree Service, positioned high in a pine tree during arborist work in DeLand, FL',
 ];
 $storyImage2 = [
-    'src' => 'https://i.imgur.com/Awf2Hm0.jpeg',
+    'src' => '/assets/images/awf2hm0-1600.webp',
     'alt' => 'Caleb, owner of God\'s Country Tree Service, positioned high in a pine tree during arborist work in DeLand, FL',
 ];
 $valuesImage = [
-    'src' => 'https://i.imgur.com/NSUVrpT.jpeg',
+    'src' => '/assets/images/nsuvrpt-480.webp',
     'alt' => "God's Country climber roped high in a live oak canopy over a DeLand, FL yard",
 ];
 
@@ -66,7 +66,7 @@ $credentials = [
 // ---- Certification Badges (actual credential images) ----
 $certificationBadges = [
     [
-        'src' => 'https://i.imgur.com/EpmXxaJ.jpeg',
+        'src' => '/assets/images/certified-arborist-examining-tree-health-in-dela-1600.webp',
         'alt' => 'Certified Arborist certification from International Society of Arboriculture',
         'title' => 'ISA Certified Arborist',
     ],
