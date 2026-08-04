@@ -173,5 +173,6 @@ $ogImage = $ogImage ?? $logoUrl;
 <script type="application/ld+json"><?php echo json_encode($localBusinessSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE); ?></script>
 <?php endif; ?>
 <?php if (!empty($pageSchema)) { echo $pageSchema . "\n"; } ?>
+<?php require_once __DIR__ . '/edit-mode.php'; ?>
 </head>
 <body class="<?php echo e(trim('page-' . $currentPage . ' ' . ($bodyClass ?? ''))); ?>">
