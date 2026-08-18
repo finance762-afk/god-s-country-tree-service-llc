@@ -1006,6 +1006,41 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 </section>
 
 <!-- ============ CLOSING CTA ============ -->
+<!-- ==================== FROM THE BLOG ==================== -->
+<?php
+  require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php';
+  $homeBlogPosts = array_slice($blogPosts, 0, 3);
+?>
+<?php if ($homeBlogPosts): ?>
+<section class="numbered-section home-blog" data-num="05" aria-label="Tree care advice from the blog">
+  <div class="container">
+    <div class="section-title" data-animate>
+      <span class="eyebrow-label">Tree Care Advice</span>
+      <h2>From the God's Country <span class="text-accent">Blog</span></h2>
+    </div>
+    <div class="blog-grid" data-p1-dynamic>
+      <?php foreach ($homeBlogPosts as $post): ?>
+      <article class="blog-card">
+        <a href="/blog/<?php echo e($post['slug']); ?>/" class="blog-card__image">
+          <img src="<?php echo e($post['image']); ?>" alt="<?php echo e($post['alt']); ?>" width="600" height="400" loading="lazy">
+        </a>
+        <div class="blog-card__content">
+          <span class="blog-category"><?php echo e($post['category']); ?></span>
+          <time datetime="<?php echo e($post['dateISO']); ?>"><?php echo e($post['date']); ?></time>
+          <h3><a href="/blog/<?php echo e($post['slug']); ?>/"><?php echo e($post['title']); ?></a></h3>
+          <p><?php echo e($post['excerpt']); ?></p>
+          <a href="/blog/<?php echo e($post['slug']); ?>/" class="blog-read-more">Read More &rarr;</a>
+        </div>
+      </article>
+      <?php endforeach; ?>
+    </div>
+    <div style="text-align: center; margin-top: var(--space-10);">
+      <a href="/blog/" class="btn btn-secondary">View All Articles</a>
+    </div>
+  </div>
+</section>
+<?php endif; ?>
+
 <section class="closing-cta" aria-label="Get a free estimate">
   <div class="container">
     <span class="eyebrow-label" style="color: var(--color-accent);">Residential &middot; Commercial &middot; HOA</span>

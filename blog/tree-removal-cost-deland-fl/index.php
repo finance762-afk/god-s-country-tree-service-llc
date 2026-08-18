@@ -81,7 +81,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <h2>Additional Tree Removal Costs in DeLand</h2>
 
         <h3>Stump Grinding</h3>
-        <p>Tree removal quotes typically don't include stump grinding. Grinding a 12-18 inch diameter stump costs $100-$200. Larger stumps (24-36 inches) run $200-$400. If you plan to replant, sod, or build where the tree stood, budget for <a href="/services/stump-grinding-removal/">stump grinding</a>. Leaving the stump invites termites, fungal growth, and re-sprouting on some species.</p>
+        <p>Tree removal quotes typically don't include stump grinding. Grinding a 12-18 inch diameter stump costs $100-$200. Larger stumps (24-36 inches) run $200-$400. If you plan to replant, sod, or build where the tree stood, budget for <a href="/services/tree-removal/">stump grinding</a>. Leaving the stump invites termites, fungal growth, and re-sprouting on some species.</p>
 
         <h3>Debris Hauling and Disposal</h3>
         <p>Most DeLand tree services include debris hauling in their removal quote, but confirm before signing. Some companies charge separately for hauling if the job produces excessive debris (multiple large trees, storm cleanup). Disposal fees depend on local rates at yard waste facilities — Volusia County residents can use the West Volusia Transfer Station, but commercial tree services pay tipping fees that get passed to the customer.</p>
@@ -99,7 +99,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <li><strong>Construction or landscaping requires it</strong> — if a tree blocks a planned addition, pool, or driveway, removal is unavoidable</li>
         </ul>
 
-        <p>If you're unsure whether removal is necessary, schedule a <a href="/services/tree-health-assessments/">tree health assessment</a>. A certified arborist can evaluate the tree's condition, estimate remaining lifespan, and recommend treatment or removal.</p>
+        <p>If you're unsure whether removal is necessary, schedule a <a href="/services/certified-arborist-services/">tree health assessment</a>. A certified arborist can evaluate the tree's condition, estimate remaining lifespan, and recommend treatment or removal.</p>
 
         <h2>How to Get Accurate Tree Removal Quotes in DeLand</h2>
         <p>Phone estimates based on a photo rarely match the final bill. Request an on-site inspection where the arborist can assess tree size, species, location, access, and nearby hazards. A written quote should specify:</p>
@@ -148,9 +148,9 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <ul>
             <li><a href="/services/tree-removal/">Tree Removal Services</a></li>
             <li><a href="/services/dead-hazardous-tree-removal/">Dead & Hazardous Tree Removal</a></li>
-            <li><a href="/services/stump-grinding-removal/">Stump Grinding & Removal</a></li>
+            <li><a href="/services/tree-removal/">Stump Grinding & Removal</a></li>
             <li><a href="/services/emergency-tree-service-storm-cleanup/">Emergency Tree Service & Storm Cleanup</a></li>
-            <li><a href="/services/tree-health-assessments/">Tree Health Assessments</a></li>
+            <li><a href="/services/certified-arborist-services/">Tree Health Assessments</a></li>
           </ul>
         </div>
 
