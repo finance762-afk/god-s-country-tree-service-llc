@@ -26,15 +26,15 @@ $heroImagePreload = $heroImage;
 $ogImage          = $heroImage;
 
 $storyImage = [
-    'src' => '/assets/images/bqd1cau-480.webp',
+    'src' => '/assets/images/bqd1cau-960.webp',
     'alt' => 'Caleb, owner of God\'s Country Tree Service, positioned high in a pine tree during arborist work in DeLand, FL',
 ];
 $storyImage2 = [
-    'src' => '/assets/images/awf2hm0-1600.webp',
+    'src' => '/assets/images/awf2hm0-960.webp',
     'alt' => 'Caleb, owner of God\'s Country Tree Service, positioned high in a pine tree during arborist work in DeLand, FL',
 ];
 $valuesImage = [
-    'src' => '/assets/images/nsuvrpt-480.webp',
+    'src' => '/assets/images/nsuvrpt-960.webp',
     'alt' => "God's Country climber roped high in a live oak canopy over a DeLand, FL yard",
 ];
 
@@ -66,7 +66,7 @@ $credentials = [
 // ---- Certification Badges (actual credential images) ----
 $certificationBadges = [
     [
-        'src' => '/assets/images/certified-arborist-examining-tree-health-in-dela-1600.webp',
+        'src' => '/assets/images/certified-arborist-examining-tree-health-in-dela-960.webp',
         'alt' => 'Certified Arborist certification from International Society of Arboriculture',
         'title' => 'ISA Certified Arborist',
     ],
@@ -730,7 +730,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <div class="badges-grid">
         <?php foreach ($certificationBadges as $badge): ?>
         <div class="cert-badge">
-          <img src="<?php echo e($badge['src']); ?>" alt="<?php echo e($badge['alt']); ?>" title="<?php echo e($badge['title']); ?>" loading="lazy">
+          <img src="<?php echo e($badge['src']); ?>" alt="<?php echo e($badge['alt']); ?>" title="<?php echo e($badge['title']); ?>" width="960" height="1280" loading="lazy">
         </div>
         <?php endforeach; ?>
       </div>

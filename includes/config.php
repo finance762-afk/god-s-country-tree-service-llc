@@ -143,7 +143,7 @@ $serviceAreas = [
         'direction' => 'home base',
         'distance'  => '',
         'icon'      => 'house',
-        'img'       => '/assets/images/awf2hm0-1600.webp',
+        'img'       => '/assets/images/awf2hm0-960.webp',
         'blurb'     => 'Our DeLand home base — the Athens of Florida, Stetson University, and a downtown canopy of live oaks we have cared for since 2014.',
         'landmarks' => ['Stetson University', 'Downtown Woodland Boulevard', 'Blue Spring State Park'],
     ],
@@ -246,7 +246,7 @@ $logoAnalysis = [
 ];
 
 // ---- Cache Busting -----------------------------------------
-$cssVersion = '7'; // increment on every framework.css change
+$cssVersion = '8'; // increment on every framework.css change
 
 // ---- Business Facts ----------------------------------------
 $yearsInBusiness = 12;

@@ -24,7 +24,7 @@ $imgBase = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-
 
 $heroImage        = $imgBase . '1784062762583-gyhtdt-489069018_1475682530496918_5987390642167918859_n.webp'; // fallen tree + grapple loader, landscape
 $statsImage       = $imgBase . '1784062729745-ekffah-31162327_2042462179307717_7701525571804594176_n.webp'; // land clearing, excavator
-$aboutImage       = '/assets/images/kwdolqt-1600.webp'; // owner Caleb in orange helmet with blue sky
+$aboutImage       = '/assets/images/kwdolqt-960.webp'; // owner Caleb in orange helmet with blue sky
 $ogImage          = $heroImage;
 $heroImagePreload = $heroImage;
 
@@ -53,7 +53,7 @@ $homeServiceCards = [
         'slug'    => 'tree-trimming-services',
         'name'    => 'Tree Trimming Services',
         'icon'    => 'scissors',
-        'img'     => '/assets/images/nsuvrpt-480.webp',
+        'img'     => '/assets/images/nsuvrpt-960.webp',
         'alt'     => 'Climber trimming limbs inside a live oak canopy during tree trimming in DeLand, FL',
         'desc'    => 'Seasonal and routine trimming for trees of every size.',
         'bullets' => ['Seasonal & routine schedules', 'All tree sizes handled', 'Health, looks & safety'],
@@ -192,6 +192,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 .home-hero {
   position: relative;
   min-height: 100vh;
+  min-height: 100svh; /* stable height under the mobile URL bar */
   display: flex;
   align-items: center;
   background-size: cover;

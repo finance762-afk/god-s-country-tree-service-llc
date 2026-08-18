@@ -2,14 +2,14 @@
 /**
  * edit-mode.php — Page One inline preview editor (runtime markers).
  *
- * Included by includes/head.php. Emits an in-browser editor ONLY when the page
+ * Pulled in by the head partial (head.php). Emits an in-browser editor ONLY when the page
  * is served on a preview host (preview-<slug>.pageone.cloud) AND ?edit=1 is set.
  * On the launch/production domain it emits NOTHING, so production output is
  * byte-identical. Edits are plain-text only and post a message to the parent
  * Design Portal window, which saves via PATCH /content (occurrence-indexed).
  *
- * Expects config.php scalars in scope (it is included from head.php, which runs
- * after config.php). All references are guarded so missing vars never fatal.
+ * Expects config.php scalars in scope (head.php pulls this file in after
+ * config.php has run). All references are guarded so missing vars never fatal.
  */
 
 $__p1_host = $_SERVER['HTTP_HOST'] ?? '';

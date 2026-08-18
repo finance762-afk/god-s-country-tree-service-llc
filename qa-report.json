@@ -1,28 +1,28 @@
 {
-  "tier": "premium",
+  "tier": "standard",
   "tier_config": {
-    "min_css_per_page": 400,
-    "min_techniques": 6,
-    "requires_blog": true
+    "min_css_per_page": 200,
+    "min_techniques": 4,
+    "requires_blog": false
   },
   "site": "god-s-country-tree-service-llc",
-  "expected_slug": "god-s-country-tree-service-llc",
-  "passed": false,
-  "grade": "F",
-  "score_pct": 95,
+  "expected_slug": null,
+  "passed": true,
+  "grade": "A",
+  "score_pct": 98,
   "summary": {
-    "total": 190,
-    "passed": 174,
-    "failed": 11,
-    "warn": 5,
-    "blockers_failed": 5,
-    "warnings_failed": 8
+    "total": 210,
+    "passed": 201,
+    "failed": 5,
+    "warn": 4,
+    "blockers_failed": 0,
+    "warnings_failed": 6
   },
   "techniques_detected": [
     {
       "name": "backdrop_filter",
       "description": "Glassmorphism / frosted glass effects",
-      "matches": 49
+      "matches": 51
     },
     {
       "name": "keyframe_animation",
@@ -42,12 +42,12 @@
     {
       "name": "complex_filter",
       "description": "CSS filter effects",
-      "matches": 52
+      "matches": 54
     },
     {
       "name": "text_wrap_balance",
       "description": "Modern text wrapping",
-      "matches": 162
+      "matches": 161
     }
   ],
   "checks": [
@@ -184,9 +184,9 @@
       "section": "FILE STRUCTURE"
     },
     {
-      "status": "warn",
+      "status": "pass",
       "check": "Directory: assets/svg/",
-      "detail": "No SVG directory \u2014 dividers may be inline",
+      "detail": "",
       "file": "",
       "severity": "warning",
       "expected": null,
@@ -230,11 +230,11 @@
     {
       "status": "pass",
       "check": "Inline <style> block",
-      "detail": "488 CSS lines in 1 block(s)",
+      "detail": "500 CSS lines in 2 block(s)",
       "file": "index.php",
       "severity": "blocker",
       "expected": null,
-      "actual": "488",
+      "actual": "500",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
@@ -296,11 +296,11 @@
     {
       "status": "pass",
       "check": "Inline <style> block",
-      "detail": "419 CSS lines in 1 block(s)",
+      "detail": "459 CSS lines in 1 block(s)",
       "file": "about/index.php",
       "severity": "blocker",
       "expected": null,
-      "actual": "419",
+      "actual": "459",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
@@ -351,11 +351,11 @@
     {
       "status": "pass",
       "check": "External stylesheet",
-      "detail": "Linked to 1 external CSS file(s), 850 lines total",
+      "detail": "Linked to 2 external CSS file(s), 1464 lines total",
       "file": "blog/index.php",
       "severity": "blocker",
       "expected": null,
-      "actual": "850",
+      "actual": "1464",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
@@ -504,12 +504,67 @@
     },
     {
       "status": "pass",
-      "check": "Inline <style> block",
-      "detail": "103 CSS lines in 1 block(s)",
+      "check": "External stylesheet",
+      "detail": "Linked to 2 external CSS file(s), 1464 lines total",
       "file": "blog/hurricane-prep-tree-trimming-deland/index.php",
       "severity": "blocker",
       "expected": null,
-      "actual": "103",
+      "actual": "1464",
+      "fix_hint": "",
+      "section": "PHP STANDARDS"
+    },
+    {
+      "status": "pass",
+      "check": "External stylesheet",
+      "detail": "Linked to 2 external CSS file(s), 1464 lines total",
+      "file": "blog/signs-dangerous-tree-deland/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": "1464",
+      "fix_hint": "",
+      "section": "PHP STANDARDS"
+    },
+    {
+      "status": "pass",
+      "check": "External stylesheet",
+      "detail": "Linked to 2 external CSS file(s), 1464 lines total",
+      "file": "blog/insurance-fallen-tree-removal-florida/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": "1464",
+      "fix_hint": "",
+      "section": "PHP STANDARDS"
+    },
+    {
+      "status": "pass",
+      "check": "External stylesheet",
+      "detail": "Linked to 2 external CSS file(s), 1464 lines total",
+      "file": "blog/tree-removal-permit-deland-fl/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": "1464",
+      "fix_hint": "",
+      "section": "PHP STANDARDS"
+    },
+    {
+      "status": "pass",
+      "check": "External stylesheet",
+      "detail": "Linked to 2 external CSS file(s), 1464 lines total",
+      "file": "blog/best-time-trim-trees-florida/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": "1464",
+      "fix_hint": "",
+      "section": "PHP STANDARDS"
+    },
+    {
+      "status": "pass",
+      "check": "External stylesheet",
+      "detail": "Linked to 2 external CSS file(s), 1464 lines total",
+      "file": "blog/tree-removal-cost-deland-fl/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": "1464",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
@@ -570,55 +625,55 @@
     },
     {
       "status": "pass",
-      "check": "Premium tier CSS bar",
-      "detail": "1338 lines (488 inline + 850 external, need \u2265400)",
+      "check": "Standard tier CSS bar",
+      "detail": "1964 lines (500 inline + 1464 external, need \u2265200)",
       "file": "index.php",
       "severity": "blocker",
-      "expected": "400",
-      "actual": "1338",
+      "expected": "200",
+      "actual": "1964",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
     {
       "status": "pass",
-      "check": "Premium tier CSS bar",
-      "detail": "1269 lines (419 inline + 850 external, need \u2265400)",
+      "check": "Standard tier CSS bar",
+      "detail": "1923 lines (459 inline + 1464 external, need \u2265200)",
       "file": "about/index.php",
       "severity": "blocker",
-      "expected": "400",
-      "actual": "1269",
+      "expected": "200",
+      "actual": "1923",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
     {
       "status": "pass",
-      "check": "Premium tier CSS bar",
-      "detail": "1235 lines (385 inline + 850 external, need \u2265400)",
+      "check": "Standard tier CSS bar",
+      "detail": "1849 lines (385 inline + 1464 external, need \u2265200)",
       "file": "services/index.php",
       "severity": "blocker",
-      "expected": "400",
-      "actual": "1235",
+      "expected": "200",
+      "actual": "1849",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
     {
       "status": "pass",
-      "check": "Premium tier CSS bar",
-      "detail": "1077 lines (227 inline + 850 external, need \u2265400)",
+      "check": "Standard tier CSS bar",
+      "detail": "1691 lines (227 inline + 1464 external, need \u2265200)",
       "file": "contact/index.php",
       "severity": "blocker",
-      "expected": "400",
-      "actual": "1077",
+      "expected": "200",
+      "actual": "1691",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
     {
       "status": "pass",
-      "check": "Premium tier techniques",
-      "detail": "6 distinct techniques detected (need \u22656)",
+      "check": "Standard tier techniques",
+      "detail": "6 distinct techniques detected (need \u22654)",
       "file": "",
       "severity": "blocker",
-      "expected": "6",
+      "expected": "4",
       "actual": "6",
       "fix_hint": "",
       "section": "PHP STANDARDS"
@@ -1419,6 +1474,171 @@
       "status": "pass",
       "check": "Single H1",
       "detail": "",
+      "file": "blog/signs-dangerous-tree-deland/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "JSON-LD schema",
+      "detail": "",
+      "file": "blog/signs-dangerous-tree-deland/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Canonical tag",
+      "detail": "",
+      "file": "blog/signs-dangerous-tree-deland/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Single H1",
+      "detail": "",
+      "file": "blog/insurance-fallen-tree-removal-florida/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "JSON-LD schema",
+      "detail": "",
+      "file": "blog/insurance-fallen-tree-removal-florida/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Canonical tag",
+      "detail": "",
+      "file": "blog/insurance-fallen-tree-removal-florida/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Single H1",
+      "detail": "",
+      "file": "blog/tree-removal-permit-deland-fl/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "JSON-LD schema",
+      "detail": "",
+      "file": "blog/tree-removal-permit-deland-fl/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Canonical tag",
+      "detail": "",
+      "file": "blog/tree-removal-permit-deland-fl/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Single H1",
+      "detail": "",
+      "file": "blog/best-time-trim-trees-florida/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "JSON-LD schema",
+      "detail": "",
+      "file": "blog/best-time-trim-trees-florida/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Canonical tag",
+      "detail": "",
+      "file": "blog/best-time-trim-trees-florida/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Single H1",
+      "detail": "",
+      "file": "blog/tree-removal-cost-deland-fl/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "JSON-LD schema",
+      "detail": "",
+      "file": "blog/tree-removal-cost-deland-fl/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Canonical tag",
+      "detail": "",
+      "file": "blog/tree-removal-cost-deland-fl/index.php",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "SEO COMPLIANCE"
+    },
+    {
+      "status": "pass",
+      "check": "Single H1",
+      "detail": "",
       "file": "service-area/orange-city/index.php",
       "severity": "blocker",
       "expected": null,
@@ -1768,6 +1988,17 @@
       "section": "IMAGES"
     },
     {
+      "status": "fail",
+      "check": "Image resolution",
+      "detail": "Gods-Country-Newest-Logo.webp is 800x450, recommend at least 800x500 for section",
+      "file": "assets/images/Gods-Country-Newest-Logo.webp",
+      "severity": "warning",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "Replace with higher-resolution version or remove from primary placement",
+      "section": "IMAGES"
+    },
+    {
       "status": "pass",
       "check": "Page One Insights dofollow link",
       "detail": "",
@@ -1791,8 +2022,8 @@
     },
     {
       "status": "pass",
-      "check": "Form action (Formsubmit.co)",
-      "detail": "",
+      "check": "Form action (lead endpoint)",
+      "detail": "Slug(s): god-s-country-tree-service-llc",
       "file": "",
       "severity": "blocker",
       "expected": null,
@@ -1813,19 +2044,30 @@
     },
     {
       "status": "pass",
-      "check": "Premium: blog posts",
-      "detail": "1 post(s)",
+      "check": "Undefined CSS tokens",
+      "detail": "",
       "file": "",
       "severity": "blocker",
       "expected": null,
       "actual": null,
       "fix_hint": "",
-      "section": "PREMIUM TIER EXTRAS"
+      "section": "CSS CONTRACT"
+    },
+    {
+      "status": "pass",
+      "check": "Chrome classes present in framework.css",
+      "detail": "",
+      "file": "",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "CSS CONTRACT"
     },
     {
       "status": "pass",
       "check": "Content H2 question ratio",
-      "detail": "151/180 content H2s are questions (84%; 9 CTA/label H2s exempt)",
+      "detail": "175/223 content H2s are questions (78%; 9 CTA/label H2s exempt)",
       "file": "",
       "severity": "blocker",
       "expected": null,
@@ -1836,7 +2078,7 @@
     {
       "status": "warn",
       "check": "Pages below 40% question-H2",
-      "detail": "2 page(s) under target: about/index.php, service-area/lake-helen/index.php",
+      "detail": "3 page(s) under target: blog/signs-dangerous-tree-deland/index.php, about/index.php, service-area/lake-helen/index.php",
       "file": "",
       "severity": "warning",
       "expected": null,
@@ -1878,6 +2120,17 @@
       "section": "AEO ENTITY"
     },
     {
+      "status": "pass",
+      "check": "No placeholder/scaffold data",
+      "detail": "",
+      "file": "",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "DATA INTEGRITY"
+    },
+    {
       "status": "fail",
       "check": "No carousel libraries",
       "detail": "Carousel JS found in: includes/footer.php, assets/js/main.js",
@@ -1902,7 +2155,7 @@
     {
       "status": "pass",
       "check": "Variable fonts loaded",
-      "detail": "",
+      "detail": "Self-hosted woff2 fonts (v6.2 standard)",
       "file": "",
       "severity": "warning",
       "expected": null,
@@ -1935,7 +2188,7 @@
     {
       "status": "pass",
       "check": "Hero answer word count",
-      "detail": "42 words",
+      "detail": "48 words",
       "file": "",
       "severity": "blocker",
       "expected": null,
@@ -1967,7 +2220,7 @@
     },
     {
       "status": "pass",
-      "check": "Fonts preconnect",
+      "check": "Fonts preload (self-hosted)",
       "detail": "",
       "file": "",
       "severity": "warning",
@@ -1975,6 +2228,17 @@
       "actual": null,
       "fix_hint": "",
       "section": "PERFORMANCE"
+    },
+    {
+      "status": "pass",
+      "check": "No remote-hotlinked images",
+      "detail": "",
+      "file": "",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "PERFORMANCE v6.2"
     },
     {
       "status": "pass",
@@ -1988,14 +2252,14 @@
       "section": "PERFORMANCE v6.2"
     },
     {
-      "status": "fail",
+      "status": "pass",
       "check": "No runtime icon injection",
-      "detail": "data-lucide/createIcons found in: index.php, 404.php, thank-you.php, privacy-policy/index.php, terms/index.php",
+      "detail": "",
       "file": "",
       "severity": "blocker",
       "expected": null,
       "actual": null,
-      "fix_hint": "Inline the SVGs at build time from references/lucide-icons/ per performance-2026.md Part C / aeo-crawlability.md",
+      "fix_hint": "",
       "section": "PERFORMANCE v6.2"
     },
     {
@@ -2010,36 +2274,36 @@
       "section": "PERFORMANCE v6.2"
     },
     {
-      "status": "fail",
+      "status": "pass",
       "check": "No Google Fonts CDN",
-      "detail": "Google Fonts CDN referenced in: includes/head.php",
+      "detail": "",
       "file": "",
       "severity": "blocker",
       "expected": null,
       "actual": null,
-      "fix_hint": "Self-host woff2 subsets in /assets/fonts/ with font-display: swap per performance-2026.md Part D",
+      "fix_hint": "",
       "section": "PERFORMANCE v6.2"
     },
     {
-      "status": "fail",
+      "status": "pass",
       "check": "svh fallback on full-height heroes",
-      "detail": "min-height: 100vh hero without 100svh in: index.php, assets/css/framework.css",
+      "detail": "",
       "file": "",
       "severity": "warning",
       "expected": null,
       "actual": null,
-      "fix_hint": "Pair min-height: 100vh with min-height: 100svh on the next line per design-system.md C1",
+      "fix_hint": "",
       "section": "PERFORMANCE v6.2"
     },
     {
-      "status": "fail",
+      "status": "pass",
       "check": "Form input font-size \u226516px",
-      "detail": "No explicit \u226516px font-size rule for input/select/textarea (browser default is smaller \u2014 iOS zooms on focus)",
+      "detail": "",
       "file": "",
       "severity": "warning",
       "expected": null,
       "actual": null,
-      "fix_hint": "input, select, textarea { font-size: 1rem; } per design-system.md Part E",
+      "fix_hint": "",
       "section": "PERFORMANCE v6.2"
     },
     {
@@ -2056,7 +2320,7 @@
     {
       "status": "pass",
       "check": "JS budget \u2264100KB",
-      "detail": "Total JS: 13KB",
+      "detail": "Total JS: 23KB",
       "file": "",
       "severity": "blocker",
       "expected": null,
@@ -2065,14 +2329,14 @@
       "section": "PERFORMANCE v6.2"
     },
     {
-      "status": "fail",
+      "status": "pass",
       "check": "Hero image \u2264150KB",
-      "detail": "logo-v2.png: 159KB (largest image (no hero-named file); budget 150KB)",
+      "detail": "kwdolqt-1600.webp: 146KB (largest image (no hero-named file))",
       "file": "",
       "severity": "blocker",
       "expected": null,
       "actual": null,
-      "fix_hint": "Re-encode as webp ~80 quality at 1600w max per performance-2026.md Parts A/B",
+      "fix_hint": "",
       "section": "PERFORMANCE v6.2"
     },
     {
@@ -2096,50 +2360,6 @@
       "actual": null,
       "fix_hint": "",
       "section": "PERFORMANCE v6.2"
-    },
-    {
-      "status": "fail",
-      "check": "keyword-map.json integrity",
-      "detail": "tree service deland fl: heading not found in index.php; tree removal: heading not found in services/tree-removal/index.php; tree removal deland fl: heading not found in services/tree-removal/index.php; tree trimming services: heading not found in services/tree-trimming-services/index.php; tree trimming deland fl: heading not found in services/tree-trimming-services/index.php (+18 more)",
-      "file": "",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "Every map entry needs an existing page and (if set) a heading string present in that page",
-      "section": "Pipeline v2 (GSC-driven)"
-    },
-    {
-      "status": "pass",
-      "check": "Keyword coverage vs build plan",
-      "detail": "All 63 planned keywords mapped",
-      "file": "",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "Pipeline v2 (GSC-driven)"
-    },
-    {
-      "status": "fail",
-      "check": "CTR meta formula (USP + CTA)",
-      "detail": "Metas missing a differentiator or CTA: 404.php, thank-you.php, index.php, index.php, index.php, index.php",
-      "file": "",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "Every meta description = [trade noun + city] + [USP: Licensed & Insured / Same-Day / \u2605rating] + [CTA verb phrase]",
-      "section": "Pipeline v2 (GSC-driven)"
-    },
-    {
-      "status": "pass",
-      "check": "AEO question H2 on service pages",
-      "detail": "12 service pages",
-      "file": "",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "Pipeline v2 (GSC-driven)"
     }
   ],
   "failures": [
@@ -2167,6 +2387,17 @@
     },
     {
       "status": "fail",
+      "check": "Image resolution",
+      "detail": "Gods-Country-Newest-Logo.webp is 800x450, recommend at least 800x500 for section",
+      "file": "assets/images/Gods-Country-Newest-Logo.webp",
+      "severity": "warning",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "Replace with higher-resolution version or remove from primary placement",
+      "section": "IMAGES"
+    },
+    {
+      "status": "fail",
       "check": "No carousel libraries",
       "detail": "Carousel JS found in: includes/footer.php, assets/js/main.js",
       "file": "",
@@ -2186,97 +2417,9 @@
       "actual": null,
       "fix_hint": "Add missing sections to llms.txt",
       "section": "AEO CONTENT"
-    },
-    {
-      "status": "fail",
-      "check": "No runtime icon injection",
-      "detail": "data-lucide/createIcons found in: index.php, 404.php, thank-you.php, privacy-policy/index.php, terms/index.php",
-      "file": "",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "Inline the SVGs at build time from references/lucide-icons/ per performance-2026.md Part C / aeo-crawlability.md",
-      "section": "PERFORMANCE v6.2"
-    },
-    {
-      "status": "fail",
-      "check": "No Google Fonts CDN",
-      "detail": "Google Fonts CDN referenced in: includes/head.php",
-      "file": "",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "Self-host woff2 subsets in /assets/fonts/ with font-display: swap per performance-2026.md Part D",
-      "section": "PERFORMANCE v6.2"
-    },
-    {
-      "status": "fail",
-      "check": "svh fallback on full-height heroes",
-      "detail": "min-height: 100vh hero without 100svh in: index.php, assets/css/framework.css",
-      "file": "",
-      "severity": "warning",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "Pair min-height: 100vh with min-height: 100svh on the next line per design-system.md C1",
-      "section": "PERFORMANCE v6.2"
-    },
-    {
-      "status": "fail",
-      "check": "Form input font-size \u226516px",
-      "detail": "No explicit \u226516px font-size rule for input/select/textarea (browser default is smaller \u2014 iOS zooms on focus)",
-      "file": "",
-      "severity": "warning",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "input, select, textarea { font-size: 1rem; } per design-system.md Part E",
-      "section": "PERFORMANCE v6.2"
-    },
-    {
-      "status": "fail",
-      "check": "Hero image \u2264150KB",
-      "detail": "logo-v2.png: 159KB (largest image (no hero-named file); budget 150KB)",
-      "file": "",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "Re-encode as webp ~80 quality at 1600w max per performance-2026.md Parts A/B",
-      "section": "PERFORMANCE v6.2"
-    },
-    {
-      "status": "fail",
-      "check": "keyword-map.json integrity",
-      "detail": "tree service deland fl: heading not found in index.php; tree removal: heading not found in services/tree-removal/index.php; tree removal deland fl: heading not found in services/tree-removal/index.php; tree trimming services: heading not found in services/tree-trimming-services/index.php; tree trimming deland fl: heading not found in services/tree-trimming-services/index.php (+18 more)",
-      "file": "",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "Every map entry needs an existing page and (if set) a heading string present in that page",
-      "section": "Pipeline v2 (GSC-driven)"
-    },
-    {
-      "status": "fail",
-      "check": "CTR meta formula (USP + CTA)",
-      "detail": "Metas missing a differentiator or CTA: 404.php, thank-you.php, index.php, index.php, index.php, index.php",
-      "file": "",
-      "severity": "blocker",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "Every meta description = [trade noun + city] + [USP: Licensed & Insured / Same-Day / \u2605rating] + [CTA verb phrase]",
-      "section": "Pipeline v2 (GSC-driven)"
     }
   ],
   "warnings": [
-    {
-      "status": "warn",
-      "check": "Directory: assets/svg/",
-      "detail": "No SVG directory \u2014 dividers may be inline",
-      "file": "",
-      "severity": "warning",
-      "expected": null,
-      "actual": null,
-      "fix_hint": "",
-      "section": "FILE STRUCTURE"
-    },
     {
       "status": "warn",
       "check": "Typography",
@@ -2291,7 +2434,7 @@
     {
       "status": "warn",
       "check": "Pages below 40% question-H2",
-      "detail": "2 page(s) under target: about/index.php, service-area/lake-helen/index.php",
+      "detail": "3 page(s) under target: blog/signs-dangerous-tree-deland/index.php, about/index.php, service-area/lake-helen/index.php",
       "file": "",
       "severity": "warning",
       "expected": null,
