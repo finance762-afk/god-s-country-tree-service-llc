@@ -72,7 +72,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <p>Both the City of DeLand and Volusia County typically exempt certain trees from permit requirements, but you may need to document the exemption. Common exemptions include:</p>
 
         <h3>Dead or Dying Trees</h3>
-        <p>A tree that is dead, dying, or in irreversible decline is usually exempt. However, the city or county may require an arborist report or site inspection to confirm the tree's condition before you cut it. <a href="/blog/signs-dangerous-tree-deland/">If you're unsure whether a tree is dead or just dormant</a>, schedule an inspection before cutting — removing a living protected tree without a permit can result in fines. <a href="/services/tree-health-assessments/">Professional tree health assessments</a> provide documentation that supports permit exemptions.</p>
+        <p>A tree that is dead, dying, or in irreversible decline is usually exempt. However, the city or county may require an arborist report or site inspection to confirm the tree's condition before you cut it. <a href="/blog/signs-dangerous-tree-deland/">If you're unsure whether a tree is dead or just dormant</a>, schedule an inspection before cutting — removing a living protected tree without a permit can result in fines. <a href="/services/certified-arborist-services/">Professional tree health assessments</a> provide documentation that supports permit exemptions.</p>
 
         <h3>Hazardous Trees</h3>
         <p>Trees that pose an immediate threat to structures, utilities, or public safety are typically exempt. Hazard examples include trees with severe trunk cracks, co-dominant stem splits, significant lean toward a building, or extensive root damage. Document the hazard with photos and, if possible, an arborist's written assessment. If the tree falls into the <a href="/blog/tree-removal-cost-deland-fl/">emergency removal category</a>, you may not have time to wait for permit approval, but notify the city or county afterward if required.</p>
@@ -150,7 +150,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <ul>
             <li><a href="/services/tree-removal/">Tree Removal Services</a></li>
             <li><a href="/services/dead-hazardous-tree-removal/">Dead & Hazardous Tree Removal</a></li>
-            <li><a href="/services/tree-health-assessments/">Tree Health Assessments</a></li>
+            <li><a href="/services/certified-arborist-services/">Tree Health Assessments</a></li>
             <li><a href="/services/certified-arborist-services/">Certified Arborist Services</a></li>
           </ul>
         </div>

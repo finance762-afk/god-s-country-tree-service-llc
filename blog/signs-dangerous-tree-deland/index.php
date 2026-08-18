@@ -91,7 +91,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <li><strong>Chicken of the woods</strong> — bright orange/yellow shelf fungi (causes brown cubical rot)</li>
         </ul>
 
-        <p>Not all fungi kill trees immediately, but their presence means the tree's structural integrity is compromised. A tree with extensive fungal decay may look healthy in the canopy but lack the internal strength to withstand wind loads. If you see mushrooms, schedule a <a href="/services/tree-health-assessments/">tree risk assessment</a> — an arborist can use a resistograph or sonic tomograph to measure the extent of internal decay. Regular <a href="/services/tree-maintenance-care/">tree maintenance and care</a> can help catch these issues early.</p>
+        <p>Not all fungi kill trees immediately, but their presence means the tree's structural integrity is compromised. A tree with extensive fungal decay may look healthy in the canopy but lack the internal strength to withstand wind loads. If you see mushrooms, schedule a <a href="/services/certified-arborist-services/">tree risk assessment</a> — an arborist can use a resistograph or sonic tomograph to measure the extent of internal decay. Regular <a href="/services/tree-maintenance-care/">tree maintenance and care</a> can help catch these issues early.</p>
 
         <h2>4. Cavities and Hollow Areas</h2>
         <p>A cavity is a hollow area inside the trunk or a major branch, usually caused by decay following an injury or pruning wound. Small cavities (less than 1/3 of the trunk's diameter) may not significantly weaken the tree. Large cavities (more than half the trunk's diameter) drastically reduce strength.</p>
@@ -200,7 +200,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <h3>Related Tree Services</h3>
           <ul>
             <li><a href="/services/dead-hazardous-tree-removal/">Dead & Hazardous Tree Removal</a></li>
-            <li><a href="/services/tree-health-assessments/">Tree Health Assessments</a></li>
+            <li><a href="/services/certified-arborist-services/">Tree Health Assessments</a></li>
             <li><a href="/services/tree-removal/">Tree Removal Services</a></li>
             <li><a href="/services/emergency-tree-service-storm-cleanup/">Emergency Tree Service & Storm Cleanup</a></li>
             <li><a href="/services/tree-trimming-services/">Tree Trimming Services</a></li>

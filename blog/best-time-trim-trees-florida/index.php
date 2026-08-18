@@ -193,7 +193,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             <li><a href="/services/tree-trimming-services/">Tree Trimming & Pruning Services</a></li>
             <li><a href="/services/tree-pruning-services/">Tree Pruning Services</a></li>
             <li><a href="/services/tree-maintenance-care/">Tree Maintenance & Care</a></li>
-            <li><a href="/services/tree-health-assessments/">Tree Health Assessments</a></li>
+            <li><a href="/services/certified-arborist-services/">Tree Health Assessments</a></li>
             <li><a href="/services/dead-hazardous-tree-removal/">Dead & Hazardous Tree Removal</a></li>
           </ul>
         </div>
