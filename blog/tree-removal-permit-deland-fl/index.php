@@ -3,7 +3,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php';
 
-$pageTitle = 'Do You Need a Permit to Remove a Tree in DeLand, Florida? | ' . $siteName;
+$pageTitle = 'Tree Removal Permits in DeLand, FL: 2026 Rules';
 $pageDescription = 'DeLand and Volusia County tree removal permit rules differ by location, tree size, and species. Learn when permits are required, protected trees, exemptions, and how to avoid $500+ fines.';
 $canonicalUrl = $siteUrl . '/blog/tree-removal-permit-deland-fl/';
 $currentPage = 'blog';

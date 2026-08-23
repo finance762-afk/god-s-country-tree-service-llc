@@ -3,7 +3,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php';
 
-$pageTitle = 'Florida Tree-Trimming Calendar: When to Prune Oaks, Palms, Pines, and Magnolias in DeLand | ' . $siteName;
+$pageTitle = 'When to Trim Trees in Florida: Month-by-Month Guide';
 $pageDescription = 'Best months to trim live oaks, palms, pines, and magnolias in DeLand, FL. Avoid oak wilt season, palm over-pruning, and storm-season trimming mistakes. Month-by-month pruning guide from certified arborists.';
 $canonicalUrl = $siteUrl . '/blog/best-time-trim-trees-florida/';
 $currentPage = 'blog';
