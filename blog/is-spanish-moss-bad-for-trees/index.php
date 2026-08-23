@@ -3,7 +3,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php';
 
-$pageTitle = 'Is Spanish Moss Bad for Your Trees? A Florida Answer | ' . $siteName;
+$pageTitle = 'Is Spanish Moss Bad for Trees? An Arborist Answers';
 $pageDescription = 'Spanish moss is an epiphyte, not a parasite — it doesn\'t harm healthy trees. Learn when heavy moss signals decline and when to call a DeLand arborist.';
 $canonicalUrl = $siteUrl . '/blog/is-spanish-moss-bad-for-trees/';
 $currentPage = 'blog';

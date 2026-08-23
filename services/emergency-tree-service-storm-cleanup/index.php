@@ -22,7 +22,7 @@ $serviceSlug = 'emergency-tree-service-storm-cleanup';
 
 // V2.1 trade-noun title (57 chars) + V2.2 CTR meta (156 chars)
 $pageTitle       = "24/7 Emergency Tree Service in DeLand, FL | God's Country";
-$pageDescription = '24/7 emergency tree service in DeLand, FL — storm cleanup, fallen tree hazards & same-day response from a licensed & insured local crew. Request help now.';
+$pageDescription = '24/7 emergency tree removal & storm cleanup in DeLand, FL — tree on the house, split trunks, road blockages. Licensed, insured, same-day. Call now.';
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 
 // ---- Images (content/image-manifest.md allocation) ----
@@ -90,6 +90,10 @@ $comparison = [
 
 // ---- FAQs (conversational, 40-80 word answers) ----
 $faqs = [
+    [
+        'q' => 'Do you do emergency tree removal in DeLand, FL — not just cleanup?',
+        'a' => "Yes. Emergency tree removal is most of what the storm line rings for: a tree on the roof, split down the trunk, or hung up over the driveway that has to come out now, not next week. The same crew that answers the call runs the rigging and hauls the wood — one number, from the first tarp to the last load of debris.",
+    ],
     [
         'q' => 'Do you really answer emergency tree calls at night and on weekends?',
         'a' => "Yes — emergency tree service is answered 24/7, which matters most between June and November when Central Florida storms don't check the clock. Send your address and photos through the estimate form or contact page any hour; genuine hazards like a tree on a roof get same-day response, and everything else gets an honest window instead of a guess.",

@@ -20,7 +20,7 @@ $serviceSlug = 'tree-pruning-services';
 
 // V2.1 trade-noun title (56 chars) + V2.2 CTR meta (~155 chars)
 $pageTitle       = "Tree Pruning in DeLand, FL | God's Country Tree Service";
-$pageDescription = 'Tree pruning in DeLand, FL with certified arborist expertise — structural, deadwood & thinning cuts, licensed & insured. Get a free pruning estimate today.';
+$pageDescription = 'Certified arborist tree pruning in DeLand, FL — prescription pruning, HOA & insurance mitigation, structural and deadwood cuts. Free 24-hour estimates.';
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 
 // ---- Images (content/image-manifest.md allocation) ----
@@ -121,6 +121,14 @@ $faqs = [
     [
         'q' => 'What happens to the branches and debris?',
         'a' => "Everything we cut gets chipped or loaded the same day. Brush goes through the chipper, larger wood rides out on the truck, and we rake the lawn and beds before we leave. If you'd like the chips kept for mulch, say the word and we'll leave the pile wherever you want it.",
+    ],
+    [
+        'q' => 'What is prescription pruning and how is it different from a regular trim?',
+        'a' => "A regular trim addresses what's visibly overgrown. Prescription pruning starts with a written plan from a certified arborist — the tree's species, defects, what's underneath it, and storm exposure — and the crew makes only the cuts on that plan. DeLand homeowners use it for signature oaks worth protecting and for trees an HOA or insurer has flagged.",
+    ],
+    [
+        'q' => 'Can you handle tree mitigation my insurance company or HOA is asking for?',
+        'a' => "Yes. Mitigation notices usually want specific things — weight off the roofline, hazard deadwood out, clearance from the structure. We prune to what the notice requires, photograph the finished work, and give you the documentation to close it out. If the tree genuinely can't be made safe by pruning, we'll tell you that before you spend the money.",
     ],
     [
         'q' => 'Do I need to be home during the pruning visit?',
@@ -678,6 +686,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 .prn-compare-col--prune li svg, .prn-compare-col--prune li i { color: var(--color-accent); }
 
 /* ---- Cadence: how often to prune ---- */
+.prn-prescription-section { background: var(--color-white); }
 .prn-cadence-section { background: var(--color-cream); }
 .prn-cadence-grid {
   display: grid;
@@ -1056,6 +1065,33 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         </ul>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ============ PRESCRIPTION PRUNING & MITIGATION — 06 ============ -->
+<section class="numbered-section prn-prescription-section" data-num="06" aria-label="Prescription pruning and tree mitigation">
+  <div class="container">
+    <div class="section-title" data-animate>
+      <span class="eyebrow-label">Pruning With a Plan</span>
+      <h2>What is prescription pruning &mdash; and do DeLand trees need it?</h2>
+      <p class="answer-block">Prescription pruning in DeLand means the work starts with a written plan for your specific tree &mdash; species, defects, targets underneath, and storm exposure &mdash; instead of a one-size-fits-all trim. Our certified arborist writes the prescription, the crew makes only those cuts, and you keep the documentation.</p>
+    </div>
+
+    <p class="prn-lede" data-animate>Volusia County homeowners usually meet the term two ways: an HOA or insurance carrier asks for <strong>tree mitigation</strong> on a tree flagged as a risk, or a longtime customer wants one plan that keeps a signature oak healthy for the next decade instead of paying for guesswork every few years. Both start the same way &mdash; a DeLand tree pruning expert on your property, on a ladder or with a resistograph if the tree warrants it, writing down exactly what the tree needs and why.</p>
+    <ul class="prn-expert-points" data-p1-dynamic>
+      <li data-animate>
+        <?php echo icon('badge-check'); ?>
+        <p><strong>A written prescription.</strong> Which limbs come off, which cuts we're making (thinning, reduction, raising, deadwood), the percentage of live canopy affected, and the season the work should happen &mdash; documented before a saw starts.</p>
+      </li>
+      <li data-animate>
+        <?php echo icon('shield-check'); ?>
+        <p><strong>Mitigation pruning that satisfies the paperwork.</strong> When an insurer, HOA, or the City of DeLand flags a tree, we prune to the standard the notice actually requires &mdash; clearance, weight reduction over the roof, hazard deadwood &mdash; and document the finished work so you can close the file.</p>
+      </li>
+      <li data-animate>
+        <?php echo icon('check-circle'); ?>
+        <p><strong>An honest verdict.</strong> Some flagged trees don't need mitigation &mdash; and some can't be saved by it. If the right answer is monitoring, or removal, the prescription says so and you decide with real information.</p>
+      </li>
+    </ul>
   </div>
 </section>
 
