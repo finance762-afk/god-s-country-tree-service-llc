@@ -807,13 +807,13 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <div class="p1-consent">
           <label class="p1-consent-line">
             <input type="checkbox" name="terms_accepted" value="yes" required>
-            <span>I agree to the <a href="/terms/">Terms of Service</a> and <a href="/privacy-policy/">Privacy Policy</a> and consent to be contacted about my request. *</span>
+            <span>I agree to the <a href="/terms/" target="_blank" rel="noopener">Terms of Service</a> and <a href="/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a> and consent to be contacted about my request. *</span>
           </label>
         </div>
         <input type="hidden" name="_consent_version" value="v2.1">
         <input type="hidden" name="_consent_page" value="<?php echo htmlspecialchars($_SERVER['REQUEST_URI'] ?? ''); ?>">
         <button type="submit" class="btn btn-accent btn-block btn-lg">Get My Free Estimate</button>
-        <p class="form-footnote">By submitting, you agree to our <a href="/terms/">Terms</a> and <a href="/privacy-policy/">Privacy Policy</a>.</p>
+        <p class="form-footnote">By submitting, you agree to our <a href="/terms/" target="_blank" rel="noopener">Terms</a> and <a href="/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a>.</p>
       </form>
     </aside>
 
