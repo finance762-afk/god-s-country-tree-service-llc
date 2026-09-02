@@ -11,8 +11,8 @@
   "grade": "A",
   "score_pct": 99,
   "summary": {
-    "total": 230,
-    "passed": 221,
+    "total": 236,
+    "passed": 227,
     "failed": 5,
     "warn": 4,
     "blockers_failed": 0,
@@ -483,11 +483,11 @@
     {
       "status": "pass",
       "check": "Inline <style> block",
-      "detail": "656 CSS lines in 1 block(s)",
+      "detail": "657 CSS lines in 1 block(s)",
       "file": "services/tree-pruning-services/index.php",
       "severity": "blocker",
       "expected": null,
-      "actual": "656",
+      "actual": "657",
       "fix_hint": "",
       "section": "PHP STANDARDS"
     },
@@ -2264,6 +2264,72 @@
     },
     {
       "status": "pass",
+      "check": "Legal page: /privacy-policy/",
+      "detail": "",
+      "file": "",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "COMPLIANCE & TRUST"
+    },
+    {
+      "status": "pass",
+      "check": "Legal page: /terms/",
+      "detail": "",
+      "file": "",
+      "severity": "blocker",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "COMPLIANCE & TRUST"
+    },
+    {
+      "status": "pass",
+      "check": "Footer legal links",
+      "detail": "",
+      "file": "",
+      "severity": "warning",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "COMPLIANCE & TRUST"
+    },
+    {
+      "status": "pass",
+      "check": "Cookie banner",
+      "detail": "",
+      "file": "",
+      "severity": "warning",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "COMPLIANCE & TRUST"
+    },
+    {
+      "status": "pass",
+      "check": "Form consent checkbox",
+      "detail": "",
+      "file": "index.php",
+      "severity": "warning",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "COMPLIANCE & TRUST"
+    },
+    {
+      "status": "pass",
+      "check": "Form consent checkbox",
+      "detail": "",
+      "file": "contact/index.php",
+      "severity": "warning",
+      "expected": null,
+      "actual": null,
+      "fix_hint": "",
+      "section": "COMPLIANCE & TRUST"
+    },
+    {
+      "status": "pass",
       "check": "Undefined CSS tokens",
       "detail": "",
       "file": "",
@@ -2287,7 +2353,7 @@
     {
       "status": "pass",
       "check": "Content H2 question ratio",
-      "detail": "208/267 content H2s are questions (78%; 9 CTA/label H2s exempt)",
+      "detail": "209/268 content H2s are questions (78%; 9 CTA/label H2s exempt)",
       "file": "",
       "severity": "blocker",
       "expected": null,
