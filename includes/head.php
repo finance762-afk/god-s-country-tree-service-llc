@@ -108,7 +108,7 @@ $ogImage = $ogImage ?? $logoUrl;
     }
     $localBusinessSchema = [
         '@context'    => 'https://schema.org',
-        '@type'       => 'Landscaper',
+        '@type'       => 'LocalBusiness',
         '@id'         => $siteUrl . '/#organization',
         'name'        => $siteName,
         'url'         => $siteUrl . '/',
