@@ -28,11 +28,11 @@ $pageDescription = 'Tree planting in DeLand, FL — Florida native trees & shrub
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 
 // ---- Images (content/image-manifest.md allocation) ----
-$imgBase = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/';
+$imgBase = '/assets/images/'; // v6.3 2026-09-04: photos localized (were hotlinked Supabase-storage originals)
 
 $heroImage        = $imgBase . '1784062735583-73serd-36040189_2078205155733419_6294256146878300160_n.webp'; // fan palm + shrub beds, fresh red mulch, paver walk
 $heroImagePreload = $heroImage;
-$ogImage          = $heroImage;
+$ogImage          = $siteUrl . p1_best_src($heroImage);
 
 $bodyPhotos = [
     'entrywalk' => [
@@ -826,7 +826,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 </style>
 
 <!-- ============ HERO (C1.4) ============ -->
-<section class="plt-hero" style="background-image:url('<?php echo e($heroImage); ?>');" aria-label="Tree planting and shrub installation in DeLand, Florida">
+<section class="plt-hero has-hero-bg" aria-label="Tree planting and shrub installation in DeLand, Florida">
+  <?php echo p1_hero_picture($heroImage); ?>
   <div class="container">
     <nav class="plt-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
@@ -1056,11 +1057,11 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <div class="plt-proof-pair">
       <figure class="plt-polaroid" data-animate>
-        <img src="<?php echo e($heroImage); ?>" alt="Fan palm and shrub beds in fresh red mulch along a paver walk, DeLand, FL" width="800" height="600" loading="lazy">
+        <?php echo p1_picture($heroImage, 'Fan palm and shrub beds in fresh red mulch along a paver walk, DeLand, FL', 800, 600, '(max-width: 768px) 100vw, 800px'); ?>
         <figcaption>Fan palm &amp; shrub beds along a DeLand paver walk</figcaption>
       </figure>
       <figure class="plt-polaroid reveal-delay-1" data-animate>
-        <img src="<?php echo e($bodyPhotos['mulchbeds']['src']); ?>" alt="<?php echo e($bodyPhotos['mulchbeds']['alt']); ?>" width="800" height="600" loading="lazy">
+        <?php echo p1_picture($bodyPhotos['mulchbeds']['src'], $bodyPhotos['mulchbeds']['alt'], 800, 600, '(max-width: 768px) 100vw, 800px'); ?>
         <figcaption>Finished beds, shaped shrubs &amp; palms &mdash; DeLand, FL</figcaption>
       </figure>
     </div>

@@ -15,7 +15,7 @@
  * ============================================================
  */
 
-$imgBase = $imgBase ?? 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/';
+$imgBase = $imgBase ?? '/assets/images/';
 
 $serviceCardData = [
     'tree-planting-shrub-installation' => [
@@ -131,7 +131,7 @@ function renderServiceCards(array $slugs, array $serviceCardData) {
         ?>
       <article class="service-card-with-image card-tint-<?php echo $tint; ?> reveal-up reveal-delay-<?php echo $tint; ?>" data-animate>
         <div class="service-card__image">
-          <img src="<?php echo e($card['img']); ?>" alt="<?php echo e($card['alt']); ?>" width="600" height="360" loading="lazy">
+          <?php echo p1_picture($card['img'], $card['alt'], 600, 360, '(max-width: 768px) 100vw, 600px'); ?>
         </div>
         <div class="service-card__body">
           <div class="service-card__icon"><?php echo icon(($card['icon'])); ?></div>

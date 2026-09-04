@@ -20,12 +20,12 @@ $pageDescription = "DeLand, FL tree service with 12+ years local experience — 
 $canonicalUrl    = $siteUrl . '/';
 
 // ---- Image allocation (curated from client photo library) ----
-$imgBase = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/';
+$imgBase = '/assets/images/'; // v6.3 2026-09-04: photos localized (were hotlinked Supabase-storage originals)
 
 $heroImage        = $imgBase . '1784062762583-gyhtdt-489069018_1475682530496918_5987390642167918859_n.webp'; // fallen tree + grapple loader, landscape
 $statsImage       = $imgBase . '1784062729745-ekffah-31162327_2042462179307717_7701525571804594176_n.webp'; // land clearing, excavator
 $aboutImage       = '/assets/images/kwdolqt-960.webp'; // owner Caleb in orange helmet with blue sky
-$ogImage          = $heroImage;
+$ogImage          = $siteUrl . p1_best_src($heroImage);
 $heroImagePreload = $heroImage;
 
 // ---- Homepage service cards: first 8 services + curated photos ----
@@ -262,7 +262,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   color: var(--color-white);
   text-wrap: balance;
   margin-bottom: var(--space-5);
-  animation: heroFadeUp 0.65s ease 0.12s both;
+  /* v6.3: no entrance fade on the LCP text (title/subtitle) — it delayed LCP by the full delay+duration */
 }
 .hero-title .gradient-text {
   background: linear-gradient(135deg, var(--color-white) 0%, var(--color-accent) 100%);
@@ -278,7 +278,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   font-weight: 500;
   max-width: 56ch;
   margin: 0 0 var(--space-8);
-  animation: heroFadeUp 0.65s ease 0.25s both;
+  /* v6.3: no entrance fade on the LCP text (title/subtitle) — it delayed LCP by the full delay+duration */
 }
 .hero-actions {
   display: flex;
@@ -693,7 +693,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 </style>
 
 <!-- ============ HERO — split layout, photo bg, lead form ============ -->
-<section class="hero home-hero" style="background-image:url('<?php echo e($heroImage); ?>');" aria-label="Tree service in DeLand, Florida">
+<section class="hero home-hero has-hero-bg" aria-label="Tree service in DeLand, Florida">
+  <?php echo p1_hero_picture($heroImage); ?>
   <div class="hero-inner container">
 
     <div class="hero-text">
@@ -759,6 +760,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <input type="text" name="_honey" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
         <!-- Tracking -->
         <input type="hidden" name="form_location" value="hero">
+              <?php echo p1_attribution_fields('hero'); ?>
         <input type="hidden" name="consent_version" value="v2.1">
         <input type="hidden" name="consent_page" value="<?php echo e($_SERVER['REQUEST_URI'] ?? '/'); ?>">
 
@@ -849,7 +851,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       ?>
       <article class="service-card-with-image card-tint-<?php echo $tint; ?><?php echo $featured; ?> reveal-up reveal-delay-<?php echo $delay; ?>" data-animate>
         <div class="service-card__image">
-          <img src="<?php echo e($card['img']); ?>" alt="<?php echo e($card['alt']); ?>" width="600" height="360" loading="lazy">
+          <?php echo p1_picture($card['img'], $card['alt'], 600, 360, '(max-width: 768px) 100vw, 600px'); ?>
         </div>
         <div class="service-card__body">
           <div class="service-card__icon"><?php echo icon($card['icon']); ?></div>
@@ -879,7 +881,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 </div>
 
 <!-- ============ STATS — signature full-bleed photo + counters ============ -->
-<section class="stats-signature" style="background-image:url('<?php echo e($statsImage); ?>');" aria-label="Company statistics">
+<section class="stats-signature" style="background-image:url('<?php echo e(p1_best_src($statsImage)); ?>');<?php $__sa = p1_variants($statsImage, 'avif'); $__sw = p1_variants($statsImage, 'webp'); if ($__sa && $__sw) echo "background-image:image-set(url('" . e(end($__sa)) . "') type('image/avif'), url('" . e(end($__sw)) . "') type('image/webp'));"; ?>" aria-label="Company statistics">
   <div class="container">
     <div class="section-title" data-animate>
       <span class="eyebrow-label" style="color: var(--color-accent);">The Track Record</span>
@@ -941,7 +943,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       </div>
 
       <div class="about-image about-image--framed" data-animate="right">
-        <img src="<?php echo e($aboutImage); ?>" alt="Caleb, owner of God's Country Tree Service, in orange arborist helmet on a DeLand, FL job site" width="600" height="750" loading="lazy">
+        <?php echo p1_picture($aboutImage, 'Caleb, owner of God\'s Country Tree Service, in orange arborist helmet on a DeLand, FL job site', 600, 750, '(max-width: 768px) 100vw, 600px'); ?>
         <div class="stat-overlay">
           <div class="big-number"><?php echo e($yearsInBusiness); ?>+</div>
           <div class="label">Years in DeLand</div>
@@ -1022,7 +1024,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <?php foreach ($homeBlogPosts as $post): ?>
       <article class="blog-card">
         <a href="/blog/<?php echo e($post['slug']); ?>/" class="blog-card__image">
-          <img src="<?php echo e($post['image']); ?>" alt="<?php echo e($post['alt']); ?>" width="600" height="400" loading="lazy">
+          <?php echo p1_picture($post['image'], $post['alt'], 600, 400, '(max-width: 768px) 100vw, 600px'); ?>
         </a>
         <div class="blog-card__content">
           <span class="blog-category"><?php echo e($post['category']); ?></span>

@@ -22,11 +22,11 @@ $pageDescription = 'Certified arborist services in DeLand, FL — tree health di
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 
 // ---- Images (content/image-manifest.md allocation) ----
-$imgBase = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/';
+$imgBase = '/assets/images/'; // v6.3 2026-09-04: photos localized (were hotlinked Supabase-storage originals)
 
 $heroImage        = $imgBase . '1784062752583-t43g8b-75442896_2456228011264463_6144757071268020224_n.webp'; // harnessed climber rigging on an oak limb (portrait — center crop)
 $heroImagePreload = $heroImage;
-$ogImage          = $heroImage;
+$ogImage          = $siteUrl . p1_best_src($heroImage);
 
 $bodyPhotos = [
     'rigged' => [
@@ -886,7 +886,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 </style>
 
 <!-- ============ HERO (C1.4) ============ -->
-<section class="arb-hero" style="background-image:url('<?php echo e($heroImage); ?>');" aria-label="Certified arborist services in DeLand, Florida">
+<section class="arb-hero has-hero-bg" aria-label="Certified arborist services in DeLand, Florida">
+  <?php echo p1_hero_picture($heroImage); ?>
   <div class="container">
     <nav class="arb-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
@@ -1022,7 +1023,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <h2>How does a tree expert diagnose a sick oak or palm?</h2>
         <p class="answer-block">A tree expert diagnoses from the ground up: site and soil first, then root flare and trunk, then the canopy&rsquo;s dieback pattern. For DeLand oaks that means checking for decay, cavities, and construction root damage; for palms, reading the fronds for nutrient deficiencies and the base for ganoderma.</p>
         <figure data-animate>
-          <img src="<?php echo e($bodyPhotos['rigged']['src']); ?>" alt="<?php echo e($bodyPhotos['rigged']['alt']); ?>" width="800" height="1067" loading="lazy">
+          <?php echo p1_picture($bodyPhotos['rigged']['src'], $bodyPhotos['rigged']['alt'], 800, 1067, '(max-width: 768px) 100vw, 800px'); ?>
           <figcaption>Rigged for close canopy inspection &mdash; some diagnoses can&rsquo;t be made from the ground.</figcaption>
         </figure>
       </div>
@@ -1055,11 +1056,11 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <div class="arb-proof-gallery">
       <figure data-animate>
-        <img src="<?php echo e($bodyPhotos['canopy']['src']); ?>" alt="<?php echo e($bodyPhotos['canopy']['alt']); ?>" width="800" height="800" loading="lazy">
+        <?php echo p1_picture($bodyPhotos['canopy']['src'], $bodyPhotos['canopy']['alt'], 800, 800, '(max-width: 768px) 100vw, 800px'); ?>
         <figcaption>Inside an oak canopy above a DeLand lake</figcaption>
       </figure>
       <figure class="reveal-delay-1" data-animate>
-        <img src="<?php echo e($heroImage); ?>" alt="Harnessed climber rigging ropes on an oak limb in DeLand, FL" width="800" height="1067" loading="lazy">
+        <?php echo p1_picture($heroImage, 'Harnessed climber rigging ropes on an oak limb in DeLand, FL', 800, 1067, '(max-width: 768px) 100vw, 800px'); ?>
         <figcaption>Harnessed and rigged for careful limb work</figcaption>
       </figure>
     </div>

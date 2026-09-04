@@ -26,11 +26,11 @@ $pageDescription = 'Tree service in DeLeon Springs, FL for big-acreage lots, lan
 $canonicalUrl    = $siteUrl . '/service-area/deleon-springs/';
 
 // ---- Images (image-manifest.md allocation) ----
-$imgBase = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/';
+$imgBase = '/assets/images/'; // v6.3 2026-09-04: photos localized (were hotlinked Supabase-storage originals)
 
 $heroImage        = $imgBase . '1784062731501-oi9ekh-35294961_2071235779763690_210454243612557312_n.webp';
 $heroImagePreload = $heroImage;
-$ogImage          = $heroImage;
+$ogImage          = $siteUrl . p1_best_src($heroImage);
 
 $zigPhotos = [
     'slab' => [
@@ -576,7 +576,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 </style>
 
 <!-- ============ HERO (C1.4 layered) ============ -->
-<section class="dls-hero" style="background-image:url('<?php echo e($heroImage); ?>');" aria-label="Tree service in DeLeon Springs, Florida">
+<section class="dls-hero has-hero-bg" aria-label="Tree service in DeLeon Springs, Florida">
+  <?php echo p1_hero_picture($heroImage); ?>
   <div class="container">
     <nav class="dls-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
@@ -655,7 +656,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <div class="dls-zig-row" data-animate>
         <figure class="dls-zig-media">
           <span class="dls-zig-badge"><?php echo icon('map-pin'); ?> DeLeon Springs, FL</span>
-          <img src="<?php echo e($p['src']); ?>" alt="<?php echo e($p['alt']); ?>" width="800" height="600" loading="lazy">
+          <?php echo p1_picture($p['src'], $p['alt'], 800, 600, '(max-width: 768px) 100vw, 800px'); ?>
         </figure>
         <div class="dls-zig-copy">
           <span class="dls-zig-num">0<?php echo $i + 1; ?> &mdash; of 03</span>

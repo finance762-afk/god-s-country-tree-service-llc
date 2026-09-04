@@ -26,11 +26,11 @@ $pageDescription = '24/7 emergency tree removal & storm cleanup in DeLand, FL â€
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 
 // ---- Images (content/image-manifest.md allocation) ----
-$imgBase = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/';
+$imgBase = '/assets/images/'; // v6.3 2026-09-04: photos localized (were hotlinked Supabase-storage originals)
 
 $heroImage        = $imgBase . '1784062729745-ekffah-31162327_2042462179307717_7701525571804594176_n.webp'; // grapple loader among uprooted stumps
 $heroImagePreload = $heroImage;
-$ogImage          = $heroImage;
+$ogImage          = $siteUrl . p1_best_src($heroImage);
 
 $bodyPhotos = [
     'spar' => [
@@ -871,7 +871,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 </style>
 
 <!-- ============ HERO (C1.4 dark urgent variant) ============ -->
-<section class="emg-hero" style="background-image:url('<?php echo e($heroImage); ?>');" aria-label="Emergency tree service in DeLand, Florida">
+<section class="emg-hero has-hero-bg" aria-label="Emergency tree service in DeLand, Florida">
+  <?php echo p1_hero_picture($heroImage); ?>
   <div class="container">
     <nav class="emg-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
@@ -951,7 +952,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
       <div class="emg-triage-photo" data-animate="right">
         <figure>
-          <img src="<?php echo e($bodyPhotos['spar']['src']); ?>" alt="<?php echo e($bodyPhotos['spar']['alt']); ?>" width="600" height="800" loading="lazy">
+          <?php echo p1_picture($bodyPhotos['spar']['src'], $bodyPhotos['spar']['alt'], 600, 800, '(max-width: 768px) 100vw, 600px'); ?>
           <figcaption>Storm-damaged spar coming down in controlled sections &mdash; DeLand, FL</figcaption>
         </figure>
       </div>
@@ -1020,7 +1021,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="emg-speed-split">
       <figure data-animate>
-        <img src="<?php echo e($bodyPhotos['kubota']['src']); ?>" alt="<?php echo e($bodyPhotos['kubota']['alt']); ?>" width="600" height="750" loading="lazy">
+        <?php echo p1_picture($bodyPhotos['kubota']['src'], $bodyPhotos['kubota']['alt'], 600, 750, '(max-width: 768px) 100vw, 600px'); ?>
         <figcaption>Loader staged while the climber works &mdash; the whole job from one crew.</figcaption>
       </figure>
 
@@ -1081,15 +1082,15 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <div class="emg-proof-gallery">
       <figure data-animate>
-        <img src="<?php echo e($bodyPhotos['spar']['src']); ?>" alt="<?php echo e($bodyPhotos['spar']['alt']); ?>" width="800" height="1000" loading="lazy">
+        <?php echo p1_picture($bodyPhotos['spar']['src'], $bodyPhotos['spar']['alt'], 800, 1000, '(max-width: 768px) 100vw, 800px'); ?>
         <figcaption>Topping a storm-damaged spar, one roped cut at a time</figcaption>
       </figure>
       <figure class="reveal-delay-1" data-animate>
-        <img src="<?php echo e($heroImage); ?>" alt="Grapple track loader moving uprooted stumps during land clearing near DeLand, FL" width="800" height="600" loading="lazy">
+        <?php echo p1_picture($heroImage, 'Grapple track loader moving uprooted stumps during land clearing near DeLand, FL', 800, 600, '(max-width: 768px) 100vw, 800px'); ?>
         <figcaption>Grapple loader clearing uprooted stumps near DeLand</figcaption>
       </figure>
       <figure class="reveal-delay-2" data-animate>
-        <img src="<?php echo e($bodyPhotos['chipper']['src']); ?>" alt="<?php echo e($bodyPhotos['chipper']['alt']); ?>" width="800" height="800" loading="lazy">
+        <?php echo p1_picture($bodyPhotos['chipper']['src'], $bodyPhotos['chipper']['alt'], 800, 800, '(max-width: 768px) 100vw, 800px'); ?>
         <figcaption>Storm brush through the chipper &mdash; debris leaves the same day</figcaption>
       </figure>
     </div>

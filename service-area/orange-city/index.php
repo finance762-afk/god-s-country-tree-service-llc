@@ -23,12 +23,12 @@ $pageDescription = 'Tree service in Orange City, FL by licensed & insured certif
 $canonicalUrl    = $siteUrl . '/service-area/orange-city/';
 
 // ---- Images (content/image-manifest.md allocation) --------
-$heroImage        = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/1784062763583-cvnei3-503812193_4046117498942165_6962620168915463637_n.webp';
+$heroImage        = '/assets/images/1784062763583-cvnei3-503812193_4046117498942165_6962620168915463637_n.webp';
 $heroImagePreload = $heroImage;
-$ogImage          = $heroImage;
+$ogImage          = $siteUrl . p1_best_src($heroImage);
 
 $imgClimber = '/assets/images/nsuvrpt-960.webp';
-$imgLakeOak = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/1784062731501-oi9ekh-35294961_2071235779763690_210454243612557312_n.webp';
+$imgLakeOak = '/assets/images/1784062731501-oi9ekh-35294961_2071235779763690_210454243612557312_n.webp';
 
 // ---- Heritage-oak preservation timeline (SIGNATURE) -------
 $ocOakSteps = [
@@ -538,7 +538,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 </style>
 
 <!-- ============ HERO (C1.4) ============ -->
-<section class="oc-hero" style="background-image:url('<?php echo e($heroImage); ?>');" aria-label="Tree service in Orange City, Florida">
+<section class="oc-hero has-hero-bg" aria-label="Tree service in Orange City, Florida">
+  <?php echo p1_hero_picture($heroImage); ?>
   <div class="container">
     <nav class="oc-crumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
@@ -597,7 +598,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <p data-animate>As part of the DeBary&ndash;Deltona&ndash;Orange City corridor, Orange City is a short run from our DeLand shop, so the same crew and equipment reach it daily. Whether it&rsquo;s a single heritage oak over a historic-district porch or a full lot of overgrown laurel oaks in a newer subdivision, Orange City homeowners get the same certified arborist judgment and the same free 24-hour estimate.</p>
       </div>
       <figure class="oc-figure" data-animate="right">
-        <img src="<?php echo e($imgClimber); ?>" alt="God&rsquo;s Country climber roped high inside a live oak canopy, trimming limbs near Orange City, FL" width="600" height="750" loading="lazy">
+        <?php echo p1_picture($imgClimber, 'God&rsquo;s Country climber roped high inside a live oak canopy, trimming limbs near Orange City, FL', 600, 750, '(max-width: 768px) 100vw, 600px'); ?>
         <figcaption>Roped canopy pruning &mdash; the careful work Orange City&rsquo;s old oaks reward.</figcaption>
       </figure>
     </div>
@@ -650,7 +651,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="oc-springs-grid">
       <figure class="oc-springs-figure" data-animate>
-        <img src="<?php echo e($imgLakeOak); ?>" alt="Helmeted God&rsquo;s Country arborist working in an oak canopy above a lake near Orange City, FL" width="640" height="512" loading="lazy">
+        <?php echo p1_picture($imgLakeOak, 'Helmeted God&rsquo;s Country arborist working in an oak canopy above a lake near Orange City, FL', 640, 512, '(max-width: 768px) 100vw, 600px'); ?>
       </figure>
       <div>
         <span class="eyebrow-label">Blue Spring &amp; the Native Canopy</span>

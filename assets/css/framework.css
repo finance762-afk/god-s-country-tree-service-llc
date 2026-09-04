@@ -1504,3 +1504,10 @@ html.js-anim [data-animate].animated { transform: none; }
 .answer-block p:last-child {
   margin-bottom: 0;
 }
+
+/* v6.3 (2026-09-04): full-bleed hero photo as <picture> instead of CSS background-image
+   (srcset + AVIF + fetchpriority; a background gets none). isolation keeps z-index:-1
+   above the section's own background but below the ::before/::after overlays. */
+.has-hero-bg { position: relative; isolation: isolate; }
+.has-hero-bg > .hero-bg { position: absolute; inset: 0; z-index: -1; }
+.has-hero-bg > .hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }

@@ -19,10 +19,10 @@ $pageDescription = "Contact God's Country Tree Service in DeLand, FL — license
 $canonicalUrl    = $siteUrl . '/contact/';
 
 // ---- Images ----
-$imgBase = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/';
+$imgBase = '/assets/images/'; // v6.3 2026-09-04: photos localized (were hotlinked Supabase-storage originals)
 $heroImage        = $imgBase . '1784062761586-95i7hi-487384453_1464923548239483_3259835514318021231_n.webp'; // climber against sky
 $heroImagePreload = $heroImage;
-$ogImage          = $heroImage;
+$ogImage          = $siteUrl . p1_best_src($heroImage);
 
 // ---- Hours rows (from config $businessHours) ----
 $hoursRows = [
@@ -289,7 +289,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 </style>
 
 <!-- ============ HERO ============ -->
-<section class="contact-hero" style="background-image:url('<?php echo e($heroImage); ?>');" aria-label="Contact God's Country Tree Service in DeLand, Florida">
+<section class="contact-hero has-hero-bg" aria-label="Contact God's Country Tree Service in DeLand, Florida">
+  <?php echo p1_hero_picture($heroImage); ?>
   <div class="container">
     <span class="hero-eyebrow">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -336,6 +337,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <input type="hidden" name="consent_version" value="v2.1">
           <input type="hidden" name="consent_page" value="<?php echo e($_SERVER['REQUEST_URI'] ?? '/contact/'); ?>">
           <input type="hidden" name="form_location" value="contact-page">
+              <?php echo p1_attribution_fields('contact-page'); ?>
 
           <div class="form-grid-2">
             <div class="form-field">

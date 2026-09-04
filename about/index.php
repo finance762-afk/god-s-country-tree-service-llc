@@ -19,11 +19,11 @@ $pageDescription = "Meet Caleb, owner of God's Country Tree Service — a traine
 $canonicalUrl    = $siteUrl . '/about/';
 
 // ---- Images (content/image-manifest.md allocation) ----
-$imgBase = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/';
+$imgBase = '/assets/images/'; // v6.3 2026-09-04: photos localized (were hotlinked Supabase-storage originals)
 
 $heroImage        = $imgBase . '1784062729745-ekffah-31162327_2042462179307717_7701525571804594176_n.webp'; // land clearing panorama
 $heroImagePreload = $heroImage;
-$ogImage          = $heroImage;
+$ogImage          = $siteUrl . p1_best_src($heroImage);
 
 $storyImage = [
     'src' => '/assets/images/bqd1cau-960.webp',
@@ -578,7 +578,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 </style>
 
 <!-- ============ HERO ============ -->
-<section class="about-hero" style="background-image:url('<?php echo e($heroImage); ?>');" aria-label="About God's Country Tree Service in DeLand, Florida">
+<section class="about-hero has-hero-bg" aria-label="About God's Country Tree Service in DeLand, Florida">
+  <?php echo p1_hero_picture($heroImage); ?>
   <div class="container">
     <span class="hero-eyebrow">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
@@ -612,7 +613,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <p data-animate>For more than 21 years, I owned and operated a successful tree service in the Pacific Northwest. During that time, I helped thousands of homeowners and businesses safely maintain their trees, remove hazardous trees, improve the health of mature landscapes, and protect their properties. Every job reinforced something I have always believed &mdash; doing the work the right way is more important than doing it the fastest.</p>
       </div>
       <div class="story-image" data-animate="right">
-        <img src="<?php echo e($storyImage['src']); ?>" alt="<?php echo e($storyImage['alt']); ?>" width="600" height="750" loading="lazy">
+        <?php echo p1_picture($storyImage['src'], $storyImage['alt'], 600, 750, '(max-width: 768px) 100vw, 600px'); ?>
         <div class="story-badge">
           <div class="big">21+</div>
           <div class="small">Years of Tree Work</div>

@@ -25,10 +25,10 @@ $pageDescription = 'Tree service in DeBary, FL — licensed & insured, 12+ years
 $canonicalUrl    = $siteUrl . '/service-area/debary/';
 
 // ---- Images ----
-$imgBase          = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/';
+$imgBase          = '/assets/images/';
 $heroImage        = $imgBase . '1784062745583-ri3d15-51248376_2242050436015556_1895589103194341376_n.webp';
 $heroImagePreload = $heroImage;
-$ogImage          = $heroImage;
+$ogImage          = $siteUrl . p1_best_src($heroImage);
 
 $photoBeds = [
     'src' => $imgBase . '1784062733583-jhvosk-35788256_2078205079066760_5169623066409435136_n.webp',
@@ -554,7 +554,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 </style>
 
 <!-- ============ HERO ============ -->
-<section class="dby-hero" style="background-image:url('<?php echo e($heroImage); ?>');" aria-label="Tree service in DeBary, Florida">
+<section class="dby-hero has-hero-bg" aria-label="Tree service in DeBary, Florida">
+  <?php echo p1_hero_picture($heroImage); ?>
   <div class="container">
     <nav class="dby-crumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
@@ -615,7 +616,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <p data-animate>Bordered by Lake Monroe and the St. Johns River, with Gemini Springs Park and the DeBary SunRail station at its edge, this is a commuter city that grew up around its trees. If you&rsquo;ve been searching for a tree service near me in DeBary, our DeLand crew is a short drive south &mdash; about 12 miles &mdash; and works DeBary every week.</p>
       </div>
       <figure class="dby-figure" data-animate="right">
-        <img src="<?php echo e($photoBeds['src']); ?>" alt="<?php echo e($photoBeds['alt']); ?>" width="600" height="450" loading="lazy">
+        <?php echo p1_picture($photoBeds['src'], $photoBeds['alt'], 600, 450, '(max-width: 768px) 100vw, 600px'); ?>
         <figcaption>Fresh beds and young palms at a DeBary subdivision home</figcaption>
       </figure>
     </div>
@@ -671,7 +672,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="dby-schedule" data-animate>
       <div class="dby-schedule__media">
-        <img src="<?php echo e($photoAcreage['src']); ?>" alt="<?php echo e($photoAcreage['alt']); ?>" width="600" height="480" loading="lazy">
+        <?php echo p1_picture($photoAcreage['src'], $photoAcreage['alt'], 600, 480, '(max-width: 768px) 100vw, 600px'); ?>
       </div>
       <div class="dby-schedule__body">
         <span class="eyebrow-label">Built Around Your Commute</span>

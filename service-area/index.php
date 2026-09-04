@@ -22,10 +22,10 @@ $pageTitle       = "Tree Service Areas Near DeLand, FL | God's Country Tree Serv
 $pageDescription = "Tree service across DeLand, Deltona, Orange City, DeBary, Lake Helen & DeLeon Springs, FL — licensed, insured, 12+ years. Free 24-hour estimates. Call today.";
 $canonicalUrl    = $siteUrl . '/service-area/';
 
-$imgBase          = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/';
+$imgBase          = '/assets/images/';
 $heroImage        = $imgBase . '1784062750583-pr9hsn-57170747_2285599344993998_4063638806954246144_n.webp';
 $heroImagePreload = $heroImage;
-$ogImage          = $heroImage;
+$ogImage          = $siteUrl . p1_best_src($heroImage);
 
 // Map embed — add a title for accessibility (CLAUDE.md GBP embed rule)
 $mapEmbed = str_replace('<iframe ', '<iframe title="Map of God\'s Country Tree Service in DeLand, FL and its Volusia County service area" ', $integrations['gbp_map_embed']);
@@ -496,7 +496,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 </style>
 
 <!-- ============ HERO ============ -->
-<section class="sa-hero" style="background-image:url('<?php echo e($heroImage); ?>');" aria-label="Tree service across DeLand and Volusia County, Florida">
+<section class="sa-hero has-hero-bg" aria-label="Tree service across DeLand and Volusia County, Florida">
+  <?php echo p1_hero_picture($heroImage); ?>
   <div class="container">
     <nav class="sa-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>

@@ -131,7 +131,7 @@ $services = [
 // surrounding communities are real western-Volusia cities within the
 // 50-mile service radius; each gets a dedicated /service-area/{slug}/
 // page with genuine, non-swappable local specifics.
-$imgAreaBase = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/';
+$imgAreaBase = '/assets/images/'; // v6.3 2026-09-04: localized
 $serviceAreas = [
     [
         'slug'      => 'deland',
@@ -246,7 +246,7 @@ $logoAnalysis = [
 ];
 
 // ---- Cache Busting -----------------------------------------
-$cssVersion = '8'; // increment on every framework.css change
+$cssVersion = '9'; // increment on every framework.css change
 
 // ---- Business Facts ----------------------------------------
 $yearsInBusiness = 12;
@@ -266,6 +266,7 @@ $integrations = [
     'bbb_url'            => 'https://www.bbb.org/us/fl/deland/profile/tree-service/gods-country-tree-bobcat-0733-90646461',
     'geo'                => ['lat' => 29.003812949999997, 'lng' => -81.16336855],
     'gbp_map_embed'      => '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d539119.2522176659!2d-81.16336855!3d29.003812949999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e7171ecc120457%3A0x8a9d79e724621472!2sGod&#39;s%20Country%20Tree%20Service%20LLC!5e1!3m2!1sen!2sus!4v1784063712642!5m2!1sen!2sus" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>',
-    'elfsight_embed'     => '<script src="https://static.elfsight.com/platform/platform.js" defer></script>' . "\n" . '<div class="elfsight-app-ce7307de-a7b0-43fc-abb6-a90dc521b26f" data-elfsight-app-lazy></div>',
+    'elfsight_embed'     => '<script>(function(){var s=document.currentScript,f=function(){var t=document.createElement("script");t.src="https://static.elfsight.com/platform/platform.js";t.defer=true;document.head.appendChild(t)};if(!("IntersectionObserver" in window)){f();return}var o=new IntersectionObserver(function(e){if(e[0].isIntersecting){o.disconnect();f()}},{rootMargin:"600px"});o.observe(s.parentElement)})();</script>' . "\n" . '<div class="elfsight-app-ce7307de-a7b0-43fc-abb6-a90dc521b26f" data-elfsight-app-lazy></div>',
 ];
+require_once __DIR__ . '/attribution.php'; // v6.3 lead attribution (first-touch cookie + hidden fields)
 $leadsFormSecret = 'bac7714a8f41505ab12d75311ccbb11a6374e38b1a010d69111c84a652cfa0f3'; // spam-shield HMAC (matches leads fn LEADS_FORM_SECRET)

@@ -23,10 +23,10 @@ $pageDescription = 'Tree service in Lake Helen, FL from certified arborists who 
 $canonicalUrl    = $siteUrl . '/service-area/lake-helen/';
 
 // ---- Images (config $serviceAreas + intake allocation) -----
-$imgBase          = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/';
+$imgBase          = '/assets/images/';
 $heroImage        = $imgBase . '1784062767583-96o2mm-650224392_1767273321337836_3694986581662424202_n.webp'; // roped arborist pruning inside a live oak canopy
 $heroImagePreload = $heroImage;
-$ogImage          = $heroImage;
+$ogImage          = $siteUrl . p1_best_src($heroImage);
 
 $photoCanopy = [
     'src' => $imgBase . '1784062761586-95i7hi-487384453_1464923548239483_3259835514318021231_n.webp',
@@ -616,7 +616,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 </style>
 
 <!-- ============ HERO (C1.4 layered) ============ -->
-<section class="lh-hero" style="background-image:url('<?php echo e($heroImage); ?>');" aria-label="Tree service in Lake Helen, Florida">
+<section class="lh-hero has-hero-bg" aria-label="Tree service in Lake Helen, Florida">
+  <?php echo p1_hero_picture($heroImage); ?>
   <div class="container">
     <nav class="lh-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
@@ -693,7 +694,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <div class="lh-heritage-bento">
       <figure class="lh-bento-cell lh-bento-photo-a" data-animate>
-        <img src="<?php echo e($photoOak['src']); ?>" alt="<?php echo e($photoOak['alt']); ?>" width="800" height="640" loading="lazy">
+        <?php echo p1_picture($photoOak['src'], $photoOak['alt'], 800, 640, '(max-width: 768px) 100vw, 800px'); ?>
         <figcaption>Careful in-canopy pruning of a mature live oak near Lake Helen, FL</figcaption>
       </figure>
 
@@ -704,7 +705,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       </div>
 
       <figure class="lh-bento-cell lh-bento-photo-b reveal-delay-2" data-animate>
-        <img src="<?php echo e($photoCanopy['src']); ?>" alt="<?php echo e($photoCanopy['alt']); ?>" width="500" height="640" loading="lazy">
+        <?php echo p1_picture($photoCanopy['src'], $photoCanopy['alt'], 500, 640, '(max-width: 768px) 100vw, 600px'); ?>
         <figcaption>Reducing a storm-stressed spar safely, section by section</figcaption>
       </figure>
 

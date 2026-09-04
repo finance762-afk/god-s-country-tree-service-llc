@@ -62,22 +62,28 @@ $ogImage = $ogImage ?? $logoUrl;
 
 <!-- Fonts: 3-font system — Fjalla One (headings) + Open Sans (body) + Caveat (accent).
      Self-hosted woff2 (performance-2026.md Part D) — no Google Fonts CDN. -->
-<link rel="dns-prefetch" href="https://db.pageone.cloud">
 <link rel="preload" href="/assets/fonts/fjalla-one-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/open-sans-var-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/fonts/fonts.css">
+<link rel="preload" href="/assets/fonts/caveat-var-latin.woff2" as="font" type="font/woff2" crossorigin><!-- v6.3: the hero subtitle renders in Caveat — it is the mobile LCP element, so the face must not wait for the swap -->
 
-<!-- Styles -->
-<link rel="stylesheet" href="/assets/css/framework.css?v=<?php echo e($cssVersion ?? '1'); ?>">
+<!-- Styles (v6.3, 2026-09-04): @font-face + above-the-fold CSS inline; framework.css loads non-blocking -->
+<style><?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/critical.css'; ?></style>
+<link rel="preload" href="/assets/css/framework.css?v=<?php echo e($cssVersion ?? '1'); ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/assets/css/framework.css?v=<?php echo e($cssVersion ?? '1'); ?>"></noscript>
 
 <!-- Favicons -->
 <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
 <link rel="icon" type="image/png" href="/assets/images/favicon.png">
 <link rel="apple-touch-icon" href="/assets/images/favicon.png">
 
-<?php if (!empty($heroImagePreload)): ?>
+<?php // v6.3: responsive LCP preload — AVIF candidates when the variants exist, else the single file
+if (!empty($heroImagePreload)):
+  $__pa = function_exists('p1_variants') ? p1_variants($heroImagePreload, 'avif') : [];
+  if ($__pa): ?>
+<link rel="preload" as="image" type="image/avif" imagesrcset="<?php echo e(p1_srcset($__pa)); ?>" imagesizes="100vw" fetchpriority="high">
+<?php else: ?>
 <link rel="preload" as="image" href="<?php echo e($heroImagePreload); ?>" fetchpriority="high">
-<?php endif; ?>
+<?php endif; endif; ?>
 
 <!-- Google Analytics — to be activated post-launch with client's GA4 property ID
 <script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo e($googleAnalyticsId); ?>"></script>
@@ -108,7 +114,7 @@ $ogImage = $ogImage ?? $logoUrl;
     }
     $localBusinessSchema = [
         '@context'    => 'https://schema.org',
-        '@type'       => 'Landscaper',
+        '@type'       => 'LocalBusiness',
         '@id'         => $siteUrl . '/#organization',
         'name'        => $siteName,
         'url'         => $siteUrl . '/',
