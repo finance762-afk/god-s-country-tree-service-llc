@@ -24,7 +24,7 @@ $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 // ---- Images (content/image-manifest.md allocation) ----
 $imgBase = '/assets/images/'; // v6.3 2026-09-04: photos localized (were hotlinked Supabase-storage originals)
 
-$heroImage        = $imgBase . '1784062752583-t43g8b-75442896_2456228011264463_6144757071268020224_n.webp'; // harnessed climber rigging on an oak limb (portrait — center crop)
+$heroImage        = $imgBase . '1784062733583-jhvosk-35788256_2078205079066760_5169623066409435136_n.webp'; // harnessed climber rigging on an oak limb (portrait — center crop)
 $heroImagePreload = $heroImage;
 $ogImage          = $siteUrl . p1_best_src($heroImage);
 
