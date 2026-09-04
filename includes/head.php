@@ -64,6 +64,7 @@ $ogImage = $ogImage ?? $logoUrl;
      Self-hosted woff2 (performance-2026.md Part D) — no Google Fonts CDN. -->
 <link rel="preload" href="/assets/fonts/fjalla-one-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/open-sans-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/caveat-var-latin.woff2" as="font" type="font/woff2" crossorigin><!-- v6.3: the hero subtitle renders in Caveat — it is the mobile LCP element, so the face must not wait for the swap -->
 
 <!-- Styles (v6.3, 2026-09-04): @font-face + above-the-fold CSS inline; framework.css loads non-blocking -->
 <style><?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/critical.css'; ?></style>
