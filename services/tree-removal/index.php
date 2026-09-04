@@ -22,11 +22,11 @@ $pageDescription = 'Tree removal in DeLand, FL by a licensed & insured local tre
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 
 // ---- Images (content/image-manifest.md allocation) ----
-$imgBase = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/';
+$imgBase = '/assets/images/'; // v6.3 2026-09-04: photos localized (were hotlinked Supabase-storage originals)
 
 $heroImage        = $imgBase . '1784062730640-gzvyp4-31206267_2042462085974393_6334697554642468864_n.webp'; // pines marked red X, chipper crew behind
 $heroImagePreload = $heroImage;
-$ogImage          = $heroImage;
+$ogImage          = $siteUrl . p1_best_src($heroImage);
 
 $bodyPhotos = [
     'grapple' => [
@@ -728,7 +728,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 </style>
 
 <!-- ============ HERO (C1.4) ============ -->
-<section class="svc-hero" style="background-image:url('<?php echo e($heroImage); ?>');" aria-label="Tree removal in DeLand, Florida">
+<section class="svc-hero has-hero-bg" aria-label="Tree removal in DeLand, Florida">
+  <?php echo p1_hero_picture($heroImage); ?>
   <div class="container">
     <nav class="svc-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
@@ -836,7 +837,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <h2>What does professional tree removal include at God's Country?</h2>
         <p class="answer-block">Every professional tree removal we quote in DeLand includes the assessment, a written 24-hour estimate, roped section takedown, chipping, and site cleanup &mdash; and most quotes fold in debris hauling and stump grinding. The five steps below are the same whether it's one backyard oak or a whole lot.</p>
         <figure>
-          <img src="<?php echo e($bodyPhotos['boomlift']['src']); ?>" alt="<?php echo e($bodyPhotos['boomlift']['alt']); ?>" width="600" height="800" loading="lazy">
+          <?php echo p1_picture($bodyPhotos['boomlift']['src'], $bodyPhotos['boomlift']['alt'], 600, 800, '(max-width: 768px) 100vw, 600px'); ?>
           <figcaption>Boom lift takedown of a slash pine over a DeLand home.</figcaption>
         </figure>
       </div>
@@ -895,15 +896,15 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <div class="proof-gallery">
       <figure data-animate>
-        <img src="<?php echo e($bodyPhotos['grapple']['src']); ?>" alt="<?php echo e($bodyPhotos['grapple']['alt']); ?>" width="800" height="1000" loading="lazy">
+        <?php echo p1_picture($bodyPhotos['grapple']['src'], $bodyPhotos['grapple']['alt'], 800, 1000, '(max-width: 768px) 100vw, 800px'); ?>
         <figcaption>Grapple loader moving an oak log section &mdash; DeLand, FL</figcaption>
       </figure>
       <figure class="reveal-delay-1" data-animate>
-        <img src="<?php echo e($heroImage); ?>" alt="Pines marked with red X for removal, chipper and crew working behind, DeLand, FL" width="800" height="500" loading="lazy">
+        <?php echo p1_picture($heroImage, 'Pines marked with red X for removal, chipper and crew working behind, DeLand, FL', 800, 500, '(max-width: 768px) 100vw, 800px'); ?>
         <figcaption>Marked pines and chipper crew on a DeLand removal</figcaption>
       </figure>
       <figure class="reveal-delay-2" data-animate>
-        <img src="<?php echo e($bodyPhotos['slab']['src']); ?>" alt="<?php echo e($bodyPhotos['slab']['alt']); ?>" width="800" height="1000" loading="lazy">
+        <?php echo p1_picture($bodyPhotos['slab']['src'], $bodyPhotos['slab']['alt'], 800, 1000, '(max-width: 768px) 100vw, 800px'); ?>
         <figcaption>One trunk slab from a big DeLand takedown</figcaption>
       </figure>
     </div>

@@ -25,11 +25,11 @@ $pageDescription = 'Fallen tree removal in DeLand, FL — rapid cleanup, debris 
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 
 // ---- Images (content/image-manifest.md allocation) ----
-$imgBase = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/';
+$imgBase = '/assets/images/'; // v6.3 2026-09-04: photos localized (were hotlinked Supabase-storage originals)
 
 $heroImage        = $imgBase . '1784062762583-gyhtdt-489069018_1475682530496918_5987390642167918859_n.webp'; // fallen live oak + Kubota grapple loader
 $heroImagePreload = $heroImage;
-$ogImage          = $heroImage;
+$ogImage          = $siteUrl . p1_best_src($heroImage);
 
 $bodyPhotos = [
     'chiptruck' => [
@@ -794,7 +794,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 </style>
 
 <!-- ============ HERO (C1.4) ============ -->
-<section class="fln-hero" style="background-image:url('<?php echo e($heroImage); ?>');" aria-label="Fallen tree removal in DeLand, Florida">
+<section class="fln-hero has-hero-bg" aria-label="Fallen tree removal in DeLand, Florida">
+  <?php echo p1_hero_picture($heroImage); ?>
   <div class="container">
     <nav class="fln-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
@@ -881,7 +882,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
       <div class="fln-grapple-media" data-animate="right">
         <figure>
-          <img src="<?php echo e($bodyPhotos['chiptruck']['src']); ?>" alt="<?php echo e($bodyPhotos['chiptruck']['alt']); ?>" width="600" height="800" loading="lazy">
+          <?php echo p1_picture($bodyPhotos['chiptruck']['src'], $bodyPhotos['chiptruck']['alt'], 600, 800, '(max-width: 768px) 100vw, 600px'); ?>
           <figcaption>The chip truck heading out after a DeLand cleanup &mdash; debris rides with us, not to your curb.</figcaption>
         </figure>
         <div class="fln-grapple-stat">
@@ -973,12 +974,12 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="fln-pair-grid">
       <figure class="fln-pair-panel" data-animate="left">
         <span class="fln-pair-tag"><?php echo icon('cloud-lightning'); ?> The Blow-Down</span>
-        <img src="<?php echo e($heroImage); ?>" alt="Kubota grapple loader clearing a huge fallen live oak in DeLand, FL" width="800" height="600" loading="lazy">
+        <?php echo p1_picture($heroImage, 'Kubota grapple loader clearing a huge fallen live oak in DeLand, FL', 800, 600, '(max-width: 768px) 100vw, 800px'); ?>
         <figcaption>A mature live oak down across a DeLand yard, snapped at the trunk &mdash; the grapple loader moves in to start clearing.</figcaption>
       </figure>
       <figure class="fln-pair-panel" data-animate="right">
         <span class="fln-pair-tag"><?php echo icon('check-circle'); ?> The Cleanup</span>
-        <img src="<?php echo e($bodyPhotos['firewood']['src']); ?>" alt="<?php echo e($bodyPhotos['firewood']['alt']); ?>" width="800" height="600" loading="lazy">
+        <?php echo p1_picture($bodyPhotos['firewood']['src'], $bodyPhotos['firewood']['alt'], 800, 600, '(max-width: 768px) 100vw, 800px'); ?>
         <figcaption>Where a blow-down can end up: bucked, split, and stacked as seasoned firewood &mdash; or hauled off entirely, your call.</figcaption>
       </figure>
     </div>

@@ -121,7 +121,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                 ?>
                 <article class="blog-card">
                   <a href="/blog/<?php echo e($post['slug']); ?>/" class="blog-card__image">
-                    <img src="<?php echo e($post['image']); ?>" alt="<?php echo e($post['alt']); ?>" width="600" height="400" loading="lazy">
+                    <?php echo p1_picture($post['image'], $post['alt'], 600, 400, '(max-width: 768px) 100vw, 600px'); ?>
                   </a>
                   <div class="blog-card__content">
                     <span class="blog-category"><?php echo e($post['category']); ?></span>

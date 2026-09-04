@@ -131,7 +131,7 @@ $services = [
 // surrounding communities are real western-Volusia cities within the
 // 50-mile service radius; each gets a dedicated /service-area/{slug}/
 // page with genuine, non-swappable local specifics.
-$imgAreaBase = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/';
+$imgAreaBase = '/assets/images/'; // v6.3 2026-09-04: localized
 $serviceAreas = [
     [
         'slug'      => 'deland',
@@ -246,7 +246,7 @@ $logoAnalysis = [
 ];
 
 // ---- Cache Busting -----------------------------------------
-$cssVersion = '8'; // increment on every framework.css change
+$cssVersion = '9'; // increment on every framework.css change
 
 // ---- Business Facts ----------------------------------------
 $yearsInBusiness = 12;

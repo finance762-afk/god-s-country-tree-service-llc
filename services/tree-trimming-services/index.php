@@ -24,11 +24,11 @@ $pageDescription = 'Tree trimming in DeLand, FL from a licensed & insured tree s
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 
 // ---- Images (content/image-manifest.md allocation) ----
-$imgBase = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/';
+$imgBase = '/assets/images/'; // v6.3 2026-09-04: photos localized (were hotlinked Supabase-storage originals)
 
 $heroImage        = $imgBase . '1784062742583-otgffb-45452609_2184264671794133_32420904231239680_n.webp'; // bucket up in a moss-draped live oak (square — cropped via CSS)
 $heroImagePreload = $heroImage;
-$ogImage          = $heroImage;
+$ogImage          = $siteUrl . p1_best_src($heroImage);
 
 $bodyPhotos = [
     'buckettruck' => [
@@ -777,7 +777,8 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
 </style>
 
 <!-- ============ HERO (C1.4) ============ -->
-<section class="trm-hero" style="background-image:url('<?php echo e($heroImage); ?>');" aria-label="Tree trimming in DeLand, Florida">
+<section class="trm-hero has-hero-bg" aria-label="Tree trimming in DeLand, Florida">
+  <?php echo p1_hero_picture($heroImage); ?>
   <div class="container">
     <nav class="trm-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
@@ -968,7 +969,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
   <div class="container">
     <div class="trm-proof-layout">
       <figure class="trm-framed" data-animate>
-        <img src="<?php echo e($heroImage); ?>" alt="Bucket crew trimming a moss-draped live oak in DeLand, FL" width="800" height="800" loading="lazy">
+        <?php echo p1_picture($heroImage, 'Bucket crew trimming a moss-draped live oak in DeLand, FL', 800, 800, '(max-width: 768px) 100vw, 800px'); ?>
         <figcaption>Our bucket crew working a moss-draped live oak &mdash; DeLand, FL</figcaption>
       </figure>
       <div data-animate="right">

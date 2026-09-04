@@ -23,11 +23,11 @@ $pageDescription = 'Crown reduction in DeLand, FL by a licensed tree service —
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 
 // ---- Images (content/image-manifest.md allocation) ----
-$imgBase = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/';
+$imgBase = '/assets/images/'; // v6.3 2026-09-04: photos localized (were hotlinked Supabase-storage originals)
 
 $heroImage        = $imgBase . '1784062751583-ixwxr0-57210655_2285599351660664_7235797249714814976_n.webp'; // vase-shaped lifted canopy over a street (portrait — crop)
 $heroImagePreload = $heroImage;
-$ogImage          = $heroImage;
+$ogImage          = $siteUrl . p1_best_src($heroImage);
 
 $bodyPhotos = [
     'corner-oak' => [
@@ -851,7 +851,8 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
 </style>
 
 <!-- ============ HERO (C1.4) ============ -->
-<section class="crn-hero" style="background-image:url('<?php echo e($heroImage); ?>');" aria-label="Crown reduction and shaping in DeLand, Florida">
+<section class="crn-hero has-hero-bg" aria-label="Crown reduction and shaping in DeLand, Florida">
+  <?php echo p1_hero_picture($heroImage); ?>
   <div class="container">
     <nav class="crn-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>

@@ -24,11 +24,11 @@ $pageDescription = "Tree service in Deltona, FL from a licensed & insured local 
 $canonicalUrl    = $siteUrl . '/service-area/deltona/';
 
 // ---- Images (content/image-manifest.md allocation) ----------
-$imgBase = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/';
+$imgBase = '/assets/images/'; // v6.3 2026-09-04: photos localized (were hotlinked Supabase-storage originals)
 
 $heroImage        = $imgBase . '1784062730640-gzvyp4-31206267_2042462085974393_6334697554642468864_n.webp'; // pines marked red X, chipper crew behind
 $heroImagePreload = $heroImage;
-$ogImage          = $heroImage;
+$ogImage          = $siteUrl . p1_best_src($heroImage);
 
 $storyPhoto = [
     'src' => $imgBase . '1784062731804-lsu1hl-35521317_2074717906082144_948088325212733440_n.webp',
@@ -607,7 +607,8 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
 </style>
 
 <!-- ============ HERO (C1.4 layered) ============ -->
-<section class="dlt-hero" style="background-image:url('<?php echo e($heroImage); ?>');" aria-label="Tree service in Deltona, Florida">
+<section class="dlt-hero has-hero-bg" aria-label="Tree service in Deltona, Florida">
+  <?php echo p1_hero_picture($heroImage); ?>
   <div class="container">
     <nav class="dlt-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
@@ -671,7 +672,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
       </div>
 
       <figure class="dlt-figure" data-animate="right">
-        <img src="<?php echo e($storyPhoto['src']); ?>" alt="<?php echo e($storyPhoto['alt']); ?>" width="600" height="800" loading="lazy">
+        <?php echo p1_picture($storyPhoto['src'], $storyPhoto['alt'], 600, 800, '(max-width: 768px) 100vw, 600px'); ?>
         <figcaption>Roped, sectioned takedown of a tall pine over a home &mdash; the everyday job in Deltona's tight lots.</figcaption>
       </figure>
     </div>

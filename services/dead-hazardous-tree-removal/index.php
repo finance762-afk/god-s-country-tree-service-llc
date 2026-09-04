@@ -25,11 +25,11 @@ $pageDescription = 'Dead tree removal in DeLand, FL — licensed & insured hazar
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 
 // ---- Images (content/image-manifest.md allocation) ----
-$imgBase = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/';
+$imgBase = '/assets/images/'; // v6.3 2026-09-04: photos localized (were hotlinked Supabase-storage originals)
 
 $heroImage        = $imgBase . '1784062731238-fsqor4-33943943_2062224527331482_6590160731939799040_n.webp'; // pines looming over home, storm sky
 $heroImagePreload = $heroImage;
-$ogImage          = $heroImage;
+$ogImage          = $siteUrl . p1_best_src($heroImage);
 
 $bodyPhotos = [
     'doubletrunk' => [
@@ -730,7 +730,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 </style>
 
 <!-- ============ HERO (C1.4) ============ -->
-<section class="dhz-hero" style="background-image:url('<?php echo e($heroImage); ?>');" aria-label="Dead and hazardous tree removal in DeLand, Florida">
+<section class="dhz-hero has-hero-bg" aria-label="Dead and hazardous tree removal in DeLand, Florida">
+  <?php echo p1_hero_picture($heroImage); ?>
   <div class="container">
     <nav class="dhz-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
@@ -813,7 +814,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
       <div class="dhz-expert-media" data-animate="right">
         <figure>
-          <img src="<?php echo e($bodyPhotos['doubletrunk']['src']); ?>" alt="<?php echo e($bodyPhotos['doubletrunk']['alt']); ?>" width="600" height="800" loading="lazy">
+          <?php echo p1_picture($bodyPhotos['doubletrunk']['src'], $bodyPhotos['doubletrunk']['alt'], 600, 800, '(max-width: 768px) 100vw, 600px'); ?>
           <figcaption>Boom lift and chip truck on a dead double-trunk removal over a DeLand home.</figcaption>
         </figure>
         <div class="dhz-big-stat">
@@ -893,11 +894,11 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <div class="dhz-proof-grid">
       <figure data-animate>
-        <img src="<?php echo e($bodyPhotos['dawnoak']['src']); ?>" alt="<?php echo e($bodyPhotos['dawnoak']['alt']); ?>" width="600" height="800" loading="lazy">
+        <?php echo p1_picture($bodyPhotos['dawnoak']['src'], $bodyPhotos['dawnoak']['alt'], 600, 800, '(max-width: 768px) 100vw, 600px'); ?>
         <figcaption>Dawn start on a declining oak &mdash; down before the afternoon heat</figcaption>
       </figure>
       <figure class="reveal-delay-1" data-animate>
-        <img src="<?php echo e($bodyPhotos['poolscreen']['src']); ?>" alt="<?php echo e($bodyPhotos['poolscreen']['alt']); ?>" width="600" height="800" loading="lazy">
+        <?php echo p1_picture($bodyPhotos['poolscreen']['src'], $bodyPhotos['poolscreen']['alt'], 600, 800, '(max-width: 768px) 100vw, 600px'); ?>
         <figcaption>Sizing up a tall leaner over a pool screen enclosure</figcaption>
       </figure>
     </div>

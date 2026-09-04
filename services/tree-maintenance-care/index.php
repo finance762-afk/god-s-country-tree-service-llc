@@ -23,11 +23,11 @@ $pageDescription = 'Tree maintenance in DeLand, FL — inspections, preventative
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 
 // ---- Images (content/image-manifest.md allocation) ----
-$imgBase = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/';
+$imgBase = '/assets/images/'; // v6.3 2026-09-04: photos localized (were hotlinked Supabase-storage originals)
 
 $heroImage        = $imgBase . '1784062763583-cvnei3-503812193_4046117498942165_6962620168915463637_n.webp'; // oak over pool enclosure, portrait — center crop
 $heroImagePreload = $heroImage;
-$ogImage          = $heroImage;
+$ogImage          = $siteUrl . p1_best_src($heroImage);
 
 $bodyPhotos = [
     'canopy' => [
@@ -798,7 +798,8 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
 </style>
 
 <!-- ============ HERO (C1.4) ============ -->
-<section class="mnt-hero" style="background-image:url('<?php echo e($heroImage); ?>');" aria-label="Tree maintenance and care in DeLand, Florida">
+<section class="mnt-hero has-hero-bg" aria-label="Tree maintenance and care in DeLand, Florida">
+  <?php echo p1_hero_picture($heroImage); ?>
   <div class="container">
     <nav class="mnt-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
@@ -972,15 +973,15 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
 
     <div class="mnt-proof-gallery">
       <figure data-animate>
-        <img src="<?php echo e($bodyPhotos['canopy']['src']); ?>" alt="<?php echo e($bodyPhotos['canopy']['alt']); ?>" width="800" height="1000" loading="lazy">
+        <?php echo p1_picture($bodyPhotos['canopy']['src'], $bodyPhotos['canopy']['alt'], 800, 1000, '(max-width: 768px) 100vw, 800px'); ?>
         <figcaption>A maintained canopy: lifted, thinned, and balanced</figcaption>
       </figure>
       <figure class="reveal-delay-1" data-animate>
-        <img src="<?php echo e($bodyPhotos['backyard']['src']); ?>" alt="<?php echo e($bodyPhotos['backyard']['alt']); ?>" width="800" height="600" loading="lazy">
+        <?php echo p1_picture($bodyPhotos['backyard']['src'], $bodyPhotos['backyard']['alt'], 800, 600, '(max-width: 768px) 100vw, 800px'); ?>
         <figcaption>How we leave a yard after a maintenance visit</figcaption>
       </figure>
       <figure class="reveal-delay-2" data-animate>
-        <img src="<?php echo e($bodyPhotos['stump']['src']); ?>" alt="<?php echo e($bodyPhotos['stump']['alt']); ?>" width="800" height="1000" loading="lazy">
+        <?php echo p1_picture($bodyPhotos['stump']['src'], $bodyPhotos['stump']['alt'], 800, 1000, '(max-width: 768px) 100vw, 800px'); ?>
         <figcaption>The alternative: a tree that ran out of chances</figcaption>
       </figure>
     </div>

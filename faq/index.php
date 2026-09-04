@@ -19,10 +19,10 @@ $pageDescription = "Answers on tree removal cost, permits, storm response & more
 $canonicalUrl    = $siteUrl . '/faq/';
 
 // ---- Images ----
-$imgBase = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/';
+$imgBase = '/assets/images/'; // v6.3 2026-09-04: photos localized (were hotlinked Supabase-storage originals)
 $heroImage        = $imgBase . '1784062745583-ri3d15-51248376_2242050436015556_1895589103194341376_n.webp'; // shaped oak against sky
 $heroImagePreload = $heroImage;
-$ogImage          = $heroImage;
+$ogImage          = $siteUrl . p1_best_src($heroImage);
 
 // ---- FAQ categories ----
 $faqCategories = [
@@ -308,7 +308,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 </style>
 
 <!-- ============ HERO ============ -->
-<section class="faq-hero" style="background-image:url('<?php echo e($heroImage); ?>');" aria-label="Frequently asked questions">
+<section class="faq-hero has-hero-bg" aria-label="Frequently asked questions">
+  <?php echo p1_hero_picture($heroImage); ?>
   <div class="container">
     <span class="hero-eyebrow">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>

@@ -26,11 +26,11 @@ $pageDescription = 'Residential tree service in DeLand, FL — trimming, removal
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 
 // ---- Images (content/image-manifest.md allocation) ----
-$imgBase = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/';
+$imgBase = '/assets/images/'; // v6.3 2026-09-04: photos localized (were hotlinked Supabase-storage originals)
 
 $heroImage        = $imgBase . '1784062748583-jkbp6v-56461057_2279726332247966_3162728189227171840_n.webp'; // clean oak-framed backyard after tree work
 $heroImagePreload = $heroImage;
-$ogImage          = $heroImage;
+$ogImage          = $siteUrl . p1_best_src($heroImage);
 
 $bodyPhotos = [
     'cornerlot' => [
@@ -789,7 +789,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 </style>
 
 <!-- ============ HERO (C1.4) ============ -->
-<section class="res-hero" style="background-image:url('<?php echo e($heroImage); ?>');" aria-label="Residential tree services in DeLand, Florida">
+<section class="res-hero has-hero-bg" aria-label="Residential tree services in DeLand, Florida">
+  <?php echo p1_hero_picture($heroImage); ?>
   <div class="container">
     <nav class="res-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
@@ -862,7 +863,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <h2>What does a residential tree service visit look like?</h2>
         <p class="answer-block">A residential tree service visit in DeLand starts with a walk-through of every tree on the lot, not just the one you called about. You get a free written estimate within 24 hours; on work day the crew trims, removes, chips, and hauls in one planned sequence, then walks the yard with you.</p>
         <figure class="res-visit-figure" data-animate>
-          <img src="<?php echo e($bodyPhotos['cornerlot']['src']); ?>" alt="<?php echo e($bodyPhotos['cornerlot']['alt']); ?>" width="800" height="1000" loading="lazy">
+          <?php echo p1_picture($bodyPhotos['cornerlot']['src'], $bodyPhotos['cornerlot']['alt'], 800, 1000, '(max-width: 768px) 100vw, 800px'); ?>
           <figcaption>Sizing up a mature oak over a corner-lot home in DeLand.</figcaption>
         </figure>
       </div>
@@ -950,11 +951,11 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <div class="res-proof-duo">
       <figure data-animate>
-        <img src="<?php echo e($bodyPhotos['frontyard']['src']); ?>" alt="<?php echo e($bodyPhotos['frontyard']['alt']); ?>" width="800" height="1000" loading="lazy">
+        <?php echo p1_picture($bodyPhotos['frontyard']['src'], $bodyPhotos['frontyard']['alt'], 800, 1000, '(max-width: 768px) 100vw, 800px'); ?>
         <figcaption>A full-crowned shade tree after shaping &mdash; DeLand front yard</figcaption>
       </figure>
       <figure class="reveal-delay-1" data-animate>
-        <img src="<?php echo e($heroImage); ?>" alt="Clean oak-framed backyard after tree work at a DeLand, FL home" width="800" height="600" loading="lazy">
+        <?php echo p1_picture($heroImage, 'Clean oak-framed backyard after tree work at a DeLand, FL home', 800, 600, '(max-width: 768px) 100vw, 800px'); ?>
         <figcaption>Backyard left clean and mow-ready after a whole-yard visit</figcaption>
       </figure>
     </div>

@@ -23,7 +23,7 @@ $canonicalUrl    = $siteUrl . '/services/';
 // ---- Images (content/image-manifest.md allocation) ----
 $heroImage        = $imgBase . '1784062729442-t1gqhh-31144196_2042462182641050_2975434522398556160_n.webp'; // lot-clearing panorama
 $heroImagePreload = $heroImage;
-$ogImage          = $heroImage;
+$ogImage          = $siteUrl . p1_best_src($heroImage);
 
 // ---- Decision guide paths ----
 $decisionPaths = [
@@ -513,7 +513,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 </style>
 
 <!-- ============ HERO (C1.4) ============ -->
-<section class="svcx-hero" style="background-image:url('<?php echo e($heroImage); ?>');" aria-label="Tree services in DeLand, Florida">
+<section class="svcx-hero has-hero-bg" aria-label="Tree services in DeLand, Florida">
+  <?php echo p1_hero_picture($heroImage); ?>
   <div class="container">
     <nav class="svcx-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>

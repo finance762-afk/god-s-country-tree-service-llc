@@ -26,11 +26,11 @@ $pageDescription = 'Commercial & HOA tree service in DeLand, FL — scheduled ma
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 
 // ---- Images (content/image-manifest.md allocation) ----
-$imgBase = 'https://db.pageone.cloud/storage/v1/object/public/client-assets/god-s-country-tree-service-llc/processed/';
+$imgBase = '/assets/images/'; // v6.3 2026-09-04: photos localized (were hotlinked Supabase-storage originals)
 
 $heroImage        = $imgBase . '1784062730039-tm1j7f-31172143_2042462125974389_3563289646844608512_n.webp'; // skid steer + truck behind tree-protection fencing
 $heroImagePreload = $heroImage;
-$ogImage          = $heroImage;
+$ogImage          = $siteUrl . p1_best_src($heroImage);
 
 $bodyPhotos = [
     'accessdrive' => [
@@ -755,7 +755,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 </style>
 
 <!-- ============ HERO (C1.4) ============ -->
-<section class="com-hero" style="background-image:url('<?php echo e($heroImage); ?>');" aria-label="Commercial and HOA tree services in DeLand, Florida">
+<section class="com-hero has-hero-bg" aria-label="Commercial and HOA tree services in DeLand, Florida">
+  <?php echo p1_hero_picture($heroImage); ?>
   <div class="container">
     <nav class="com-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
@@ -878,7 +879,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       </div>
 
       <figure class="com-hoa-figure" data-animate="right">
-        <img src="<?php echo e($bodyPhotos['accessdrive']['src']); ?>" alt="<?php echo e($bodyPhotos['accessdrive']['alt']); ?>" width="800" height="520" loading="lazy">
+        <?php echo p1_picture($bodyPhotos['accessdrive']['src'], $bodyPhotos['accessdrive']['alt'], 800, 520, '(max-width: 768px) 100vw, 800px'); ?>
         <figcaption>Access route planned between safety fencing on a clearing job near DeLand &mdash; the same site discipline we bring to contract properties.</figcaption>
       </figure>
     </div>
@@ -939,11 +940,11 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <div class="com-proof-gallery">
       <figure data-animate>
-        <img src="<?php echo e($heroImage); ?>" alt="Skid steer and service truck staged behind tree-protection fencing on a DeLand, FL jobsite" width="800" height="500" loading="lazy">
+        <?php echo p1_picture($heroImage, 'Skid steer and service truck staged behind tree-protection fencing on a DeLand, FL jobsite', 800, 500, '(max-width: 768px) 100vw, 800px'); ?>
         <figcaption>Tree-protection fencing and staged equipment on a DeLand clearing job</figcaption>
       </figure>
       <figure class="reveal-delay-1" data-animate>
-        <img src="<?php echo e($bodyPhotos['acreage']['src']); ?>" alt="<?php echo e($bodyPhotos['acreage']['alt']); ?>" width="800" height="800" loading="lazy">
+        <?php echo p1_picture($bodyPhotos['acreage']['src'], $bodyPhotos['acreage']['alt'], 800, 800, '(max-width: 768px) 100vw, 800px'); ?>
         <figcaption>Acreage mowed and cleared near DeLand &mdash; skid-steer work from the same crew</figcaption>
       </figure>
     </div>
