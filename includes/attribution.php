@@ -91,3 +91,5 @@ if (!function_exists('p1_attribution_fields')) {
     return $out;
   }
 }
+// Set the cookie NOW — this file is included before any output (forms render too late for setcookie).
+p1_first_touch();
