@@ -262,7 +262,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   color: var(--color-white);
   text-wrap: balance;
   margin-bottom: var(--space-5);
-  animation: heroFadeUp 0.65s ease 0.12s both;
+  /* v6.3: no entrance fade on the LCP text (title/subtitle) — it delayed LCP by the full delay+duration */
 }
 .hero-title .gradient-text {
   background: linear-gradient(135deg, var(--color-white) 0%, var(--color-accent) 100%);
@@ -278,7 +278,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   font-weight: 500;
   max-width: 56ch;
   margin: 0 0 var(--space-8);
-  animation: heroFadeUp 0.65s ease 0.25s both;
+  /* v6.3: no entrance fade on the LCP text (title/subtitle) — it delayed LCP by the full delay+duration */
 }
 .hero-actions {
   display: flex;
@@ -760,6 +760,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <input type="text" name="_honey" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
         <!-- Tracking -->
         <input type="hidden" name="form_location" value="hero">
+              <?php echo p1_attribution_fields('hero'); ?>
         <input type="hidden" name="consent_version" value="v2.1">
         <input type="hidden" name="consent_page" value="<?php echo e($_SERVER['REQUEST_URI'] ?? '/'); ?>">
 

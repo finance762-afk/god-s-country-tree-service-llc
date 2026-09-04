@@ -337,6 +337,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <input type="hidden" name="consent_version" value="v2.1">
           <input type="hidden" name="consent_page" value="<?php echo e($_SERVER['REQUEST_URI'] ?? '/contact/'); ?>">
           <input type="hidden" name="form_location" value="contact-page">
+              <?php echo p1_attribution_fields('contact-page'); ?>
 
           <div class="form-grid-2">
             <div class="form-field">
