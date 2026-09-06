@@ -108,7 +108,7 @@
 
       <div class="footer-bottom-bar">
         <p>&copy; <?php echo date('Y'); ?> <?php echo e($siteName); ?>. All rights reserved.</p>
-        <p class="footer-credit"><a href="https://pageoneinsights.com" rel="dofollow" target="_blank">Web Design &amp; Hosting by Page One Insights, LLC</a></p>
+        <p class="footer-credit"><a href="https://pageoneinsights.com" rel="dofollow" target="_blank">Web Design &amp; Hosting by Page One Insights, LLC</a> <span class="poi-partner-sep" aria-hidden="true">&middot;</span> <a class="poi-partner-badge" href="https://pageonepartner.com/god-s-country-tree-service-llc-deland-fl/" rel="noopener" target="_blank" title="Recommended on Page One Partner — the free local business directory">&#10003; Recommended on Page One Partner</a></p>
       </div>
 
     </div>
