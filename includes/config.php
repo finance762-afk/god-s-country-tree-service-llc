@@ -224,7 +224,7 @@ $serviceAreas = [
 $socialLinks = [];
 
 // ---- Analytics ---------------------------------------------
-$googleAnalyticsId = 'G-PENDING'; // to be configured post-launch with client's GA4 property (a 'PENDING' value is skipped by head.php)
+$googleAnalyticsId = 'G-8XGGYC3W6Y'; // GA4 property created 2026-09-15 alongside the Ads campaign; head.php renders gtag('config') for it on the shared tag
 // Google Ads tag — client request via Zoom SMS 2026-09-15 for his ads campaign.
 // Google tag ID GT-TNGXVKZR carries this Ads destination; loading the AW- id is equivalent.
 $googleAdsId = 'AW-18420265541';
