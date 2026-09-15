@@ -9,7 +9,7 @@
  *   - "Phone Click - Website": any click on a tel:/sms: anchor, sitewide,
  *     including anchors added after load. Never preventDefault — the dialer
  *     opens immediately and the ping is fire-and-forget.
- *   - "Contact": a SUCCESSFUL estimate/contact form submission. Both forms
+ *   - "Contact" (Ads) + GA4 `estimate_request`: a SUCCESSFUL form submission. Both forms
  *     POST to the leads edge function, which only 303s to /thank-you after it
  *     accepts the lead, so the conversion fires on the thank-you page
  *     (footer.php marks this script with data-form-conversion="1" there) —
@@ -47,6 +47,12 @@
     if (!already) {
       try { sessionStorage.setItem(key, '1'); } catch (err) { /* private mode */ }
       report(SEND_FORM);
+      // GA4 key event — same success signal as the Ads conversion, so the two
+      // systems count identical leads (unlike enhanced-measurement form_submit,
+      // which fires on the click and can be lost during navigation).
+      if (typeof gtag === 'function') {
+        gtag('event', 'estimate_request', { form_location: 'thank-you', method: 'form' });
+      }
     }
   }
 })();
