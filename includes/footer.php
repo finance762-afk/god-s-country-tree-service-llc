@@ -149,6 +149,13 @@
 <script src="/assets/js/main.js" defer></script>
 <script src="/assets/js/animations.js" defer></script>
 <script src="/assets/js/effects.js" defer></script>
+<?php
+// Google Ads conversion events (phone/SMS clicks sitewide; form success on the
+// thank-you page). Only ships when a real Ads id is configured — the tag itself
+// is rendered by head.php.
+if (!empty($googleAdsId) && is_string($googleAdsId) && stripos($googleAdsId, 'PENDING') === false): ?>
+<script src="/assets/js/gads-conversions.js" defer<?php echo ($currentPage ?? '') === 'thank-you' ? ' data-form-conversion="1"' : ''; ?>></script>
+<?php endif; ?>
 
 </body>
 </html>
