@@ -85,15 +85,25 @@ if (!empty($heroImagePreload)):
 <link rel="preload" as="image" href="<?php echo e($heroImagePreload); ?>" fetchpriority="high">
 <?php endif; endif; ?>
 
-<!-- Google Analytics — to be activated post-launch with client's GA4 property ID
-<script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo e($googleAnalyticsId); ?>"></script>
+<?php
+// Google tag: fires for every configured destination (Google Ads AW-…, GA4 G-…).
+// Placeholder ids containing 'PENDING' are ignored so a bogus tag never loads.
+$gtagIds = array_values(array_filter([
+    $googleAdsId ?? null,
+    $googleAnalyticsId ?? null,
+], fn($id) => is_string($id) && $id !== '' && stripos($id, 'PENDING') === false));
+if ($gtagIds): ?>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo e($gtagIds[0]); ?>"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', '<?php echo e($googleAnalyticsId); ?>');
+<?php foreach ($gtagIds as $gid): ?>
+  gtag('config', '<?php echo e($gid); ?>');
+<?php endforeach; ?>
 </script>
--->
+<?php endif; ?>
 
 <?php if ($currentPage === 'home'):
     // LocalBusiness (Landscaper subtype) — homepage only. Inner pages

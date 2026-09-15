@@ -224,7 +224,10 @@ $serviceAreas = [
 $socialLinks = [];
 
 // ---- Analytics ---------------------------------------------
-$googleAnalyticsId = 'G-PENDING'; // to be configured post-launch with client's GA4 property
+$googleAnalyticsId = 'G-PENDING'; // to be configured post-launch with client's GA4 property (a 'PENDING' value is skipped by head.php)
+// Google Ads tag — client request via Zoom SMS 2026-09-15 for his ads campaign.
+// Google tag ID GT-TNGXVKZR carries this Ads destination; loading the AW- id is equivalent.
+$googleAdsId = 'AW-18420265541';
 
 // ---- Brand Colors ------------------------------------------
 // Phase 2 logo analysis (Logo_Updated.png, 1723x913, ~1.9:1
