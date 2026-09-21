@@ -796,7 +796,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 <!-- ============ HERO (C1.4) ============ -->
 <section class="fln-hero has-hero-bg" aria-label="Fallen tree removal in DeLand, Florida">
   <?php echo p1_hero_picture($heroImage); ?>
-  <div class="container">
+  <div class="container hero-with-form">
+    <div class="hero-copy">
     <nav class="fln-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span class="sep" aria-hidden="true">/</span>
@@ -812,7 +813,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving Volusia County since <?php echo e($yearEstablished); ?>. When a tree comes down, our crew cuts it free, grapple-loads the debris, hauls it off, and restores the site &mdash; with free written estimates within 24 hours.</p>
 
     <div class="hero-actions">
-      <a href="/#estimate-form" class="btn btn-accent btn-lg">Get a Free Cleanup Estimate</a>
+      <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Cleanup Estimate</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact the Crew</a>
     </div>
 
@@ -822,6 +823,13 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <span class="hero-trust-item"><?php echo icon('truck'); ?> Grapple Loader &amp; Chipper On Every Job</span>
       <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
     </div>
+    </div>
+
+    <?php
+    $heroFormLocation = 'hero-fallen-tree-removal-cleanup';
+    $heroFormService  = 'Fallen Tree Removal & Cleanup';
+    include $_SERVER['DOCUMENT_ROOT'] . '/includes/hero-form.php';
+    ?>
   </div>
 </section>
 
@@ -956,7 +964,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <h2>Need that fallen tree gone before the next storm line rolls through?</h2>
     <p class="answer-block">Central Florida rarely sends one storm at a time in hurricane season. Getting the downed tree and its debris off your property before the next front means the wind has nothing loose left to throw. Send photos through the estimate form and <?php echo e($siteName); ?> returns a written price within 24 hours.</p>
     <div class="hero-actions">
-      <a href="/#estimate-form" class="btn btn-accent btn-lg">Send Photos, Get a Price</a>
+      <a href="#estimate-form" class="btn btn-accent btn-lg">Send Photos, Get a Price</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact Us</a>
     </div>
   </div>
@@ -1080,7 +1088,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <h2>Ready to get the tree off the lawn and your yard back to normal?</h2>
     <p class="answer-block">Send a few photos of the downed tree through the estimate form and <?php echo e($siteName); ?> will walk the site and put a straight, all-in cleanup price in writing &mdash; usually within 24 hours. No pressure, no drive-by guesswork, and no debris left behind when we're done.</p>
     <div class="hero-actions">
-      <a href="/#estimate-form" class="btn btn-accent btn-lg">Get a Free Cleanup Estimate</a>
+      <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Cleanup Estimate</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact Us</a>
     </div>
   </div>

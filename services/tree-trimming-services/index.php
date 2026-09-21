@@ -779,7 +779,8 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
 <!-- ============ HERO (C1.4) ============ -->
 <section class="trm-hero has-hero-bg" aria-label="Tree trimming in DeLand, Florida">
   <?php echo p1_hero_picture($heroImage); ?>
-  <div class="container">
+  <div class="container hero-with-form">
+    <div class="hero-copy">
     <nav class="trm-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span class="sep" aria-hidden="true">/</span>
@@ -795,7 +796,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving homeowners and businesses across Volusia County since <?php echo e($yearEstablished); ?>. We trim live oaks, slash pines, and palms of every size on seasonal or one-time schedules &mdash; free written estimates within 24 hours, cleanup and hauling included.</p>
 
     <div class="hero-actions">
-      <a href="/#estimate-form" class="btn btn-accent btn-lg">Get a Free Trimming Estimate</a>
+      <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Trimming Estimate</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact the Crew</a>
     </div>
 
@@ -805,6 +806,14 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
       <span class="hero-trust-item"><?php echo icon('scissors'); ?> All Tree Sizes</span>
       <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
     </div>
+    </div>
+
+    <?php
+    $heroFormLocation = 'hero-tree-trimming-services';
+    $heroFormService  = 'Tree Trimming Services';
+    $heroFormHeading  = 'Get a Free Trimming Estimate';
+    include $_SERVER['DOCUMENT_ROOT'] . '/includes/hero-form.php';
+    ?>
   </div>
 </section>
 
@@ -1038,7 +1047,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <h2>Ready to Get Your Trees Trimmed Before the Next Storm Season Tests Them?</h2>
     <p class="answer-block">Tell us which trees have gotten ahead of you &mdash; the oak over the roof, the palms at the driveway, the whole shaded-out backyard. <?php echo e($siteName); ?> will walk the property, recommend only the trimming it actually needs, and put the price in writing within 24 hours.</p>
     <div class="hero-actions">
-      <a href="/#estimate-form" class="btn btn-accent btn-lg">Get a Free Trimming Estimate</a>
+      <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Trimming Estimate</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact Us</a>
     </div>
   </div>

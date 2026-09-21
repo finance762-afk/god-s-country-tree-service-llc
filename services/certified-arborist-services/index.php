@@ -888,7 +888,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 <!-- ============ HERO (C1.4) ============ -->
 <section class="arb-hero has-hero-bg" aria-label="Certified arborist services in DeLand, Florida">
   <?php echo p1_hero_picture($heroImage); ?>
-  <div class="container">
+  <div class="container hero-with-form">
+    <div class="hero-copy">
     <nav class="arb-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span class="sep" aria-hidden="true">/</span>
@@ -904,7 +905,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving Volusia County since <?php echo e($yearEstablished); ?> &mdash; with certified arborist expertise behind every estimate. We diagnose sick oaks and palms, write real treatment plans, and tell you honestly which trees can be saved and which can&rsquo;t.</p>
 
     <div class="hero-actions">
-      <a href="/#estimate-form" class="btn btn-accent btn-lg">Book a Free Consultation</a>
+      <a href="#estimate-form" class="btn btn-accent btn-lg">Book a Free Consultation</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Ask About a Tree</a>
     </div>
 
@@ -914,6 +915,13 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <span class="hero-trust-item"><?php echo icon('clipboard-check'); ?> Honest Save-or-Remove Calls</span>
       <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
     </div>
+    </div>
+
+    <?php
+    $heroFormLocation = 'hero-certified-arborist-services';
+    $heroFormService  = 'Certified Arborist Services';
+    include $_SERVER['DOCUMENT_ROOT'] . '/includes/hero-form.php';
+    ?>
   </div>
 </section>
 
@@ -1151,7 +1159,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <h2>Worried About an Oak or Palm That Doesn&rsquo;t Look Right?</h2>
     <p class="answer-block">Describe the tree &mdash; the thinning crown, the yellowing fronds, the mushrooms at the base &mdash; and <?php echo e($siteName); ?> will walk the property, diagnose what&rsquo;s actually happening, and put an honest verdict in writing, usually within 24 hours. No fee to find out the truth.</p>
     <div class="hero-actions">
-      <a href="/#estimate-form" class="btn btn-accent btn-lg">Book a Free Consultation</a>
+      <a href="#estimate-form" class="btn btn-accent btn-lg">Book a Free Consultation</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact Us</a>
     </div>
   </div>

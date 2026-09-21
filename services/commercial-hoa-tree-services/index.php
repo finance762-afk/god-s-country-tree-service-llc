@@ -757,7 +757,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 <!-- ============ HERO (C1.4) ============ -->
 <section class="com-hero has-hero-bg" aria-label="Commercial and HOA tree services in DeLand, Florida">
   <?php echo p1_hero_picture($heroImage); ?>
-  <div class="container">
+  <div class="container hero-with-form">
+    <div class="hero-copy">
     <nav class="com-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span class="sep" aria-hidden="true">/</span>
@@ -773,7 +774,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving commercial properties and HOA communities across Volusia County since <?php echo e($yearEstablished); ?>. Scheduled maintenance contracts, insurance documented before the first cut, and one crew for trees, cleanup, and land clearing &mdash; with written assessments within 24 hours.</p>
 
     <div class="hero-actions">
-      <a href="/#estimate-form" class="btn btn-accent btn-lg">Request a Property Assessment</a>
+      <a href="#estimate-form" class="btn btn-accent btn-lg">Request a Property Assessment</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact the Crew</a>
     </div>
 
@@ -783,6 +784,13 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <span class="hero-trust-item"><?php echo icon('calendar-check'); ?> Scheduled Contract Work</span>
       <span class="hero-trust-item"><?php echo icon('clock'); ?> Assessments Within 24 Hours</span>
     </div>
+    </div>
+
+    <?php
+    $heroFormLocation = 'hero-commercial-hoa-tree-services';
+    $heroFormService  = 'Commercial & HOA Tree Services';
+    include $_SERVER['DOCUMENT_ROOT'] . '/includes/hero-form.php';
+    ?>
   </div>
 </section>
 
@@ -1003,7 +1011,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <h2>Ready to Get Your Property on the Maintenance Calendar Before Hurricane Season?</h2>
     <p class="answer-block">Tell us about the property &mdash; office park, retail strip, HOA common areas, or raw acreage. <?php echo e($siteName); ?> will walk it with you, flag what actually needs work, and put a schedule and a straight price in writing, usually within 24 hours.</p>
     <div class="hero-actions">
-      <a href="/#estimate-form" class="btn btn-accent btn-lg">Request a Property Assessment</a>
+      <a href="#estimate-form" class="btn btn-accent btn-lg">Request a Property Assessment</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact Us</a>
     </div>
   </div>

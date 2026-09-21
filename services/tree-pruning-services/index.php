@@ -847,7 +847,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 <!-- ============ HERO (C1.4) ============ -->
 <section class="prn-hero has-hero-bg" aria-label="Tree pruning in DeLand, Florida">
   <?php echo p1_hero_picture($heroImage); ?>
-  <div class="container">
+  <div class="container hero-with-form">
+    <div class="hero-copy">
     <nav class="prn-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span class="sep" aria-hidden="true">/</span>
@@ -863,7 +864,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving Volusia County since <?php echo e($yearEstablished); ?>. Our pruning is certified-arborist guided &mdash; structural cuts, deadwood removal, and crown thinning that keep live oaks healthy and storm-ready &mdash; with free written estimates within 24 hours.</p>
 
     <div class="hero-actions">
-      <a href="/#estimate-form" class="btn btn-accent btn-lg">Get a Free Pruning Estimate</a>
+      <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Pruning Estimate</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact the Crew</a>
     </div>
 
@@ -873,6 +874,13 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <span class="hero-trust-item"><?php echo icon('leaf'); ?> Certified Arborist Expertise</span>
       <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
     </div>
+    </div>
+
+    <?php
+    $heroFormLocation = 'hero-tree-pruning-services';
+    $heroFormService  = 'Tree Pruning Services';
+    include $_SERVER['DOCUMENT_ROOT'] . '/includes/hero-form.php';
+    ?>
   </div>
 </section>
 
@@ -1161,7 +1169,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <h2>Ready to Put the Right Cuts on Your Trees Before Storm Season?</h2>
     <p class="answer-block">Tell us about the oak with two leaders, the limbs creeping over the pool enclosure, or the canopy nobody has touched in a decade. <?php echo e($siteName); ?> will walk the property, explain every recommended cut, and put an honest price in writing &mdash; usually within 24 hours.</p>
     <div class="hero-actions">
-      <a href="/#estimate-form" class="btn btn-accent btn-lg">Get a Free Pruning Estimate</a>
+      <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Pruning Estimate</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact Us</a>
     </div>
   </div>

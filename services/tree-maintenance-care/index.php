@@ -800,7 +800,8 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
 <!-- ============ HERO (C1.4) ============ -->
 <section class="mnt-hero has-hero-bg" aria-label="Tree maintenance and care in DeLand, Florida">
   <?php echo p1_hero_picture($heroImage); ?>
-  <div class="container">
+  <div class="container hero-with-form">
+    <div class="hero-copy">
     <nav class="mnt-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span class="sep" aria-hidden="true">/</span>
@@ -816,7 +817,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving Volusia County since <?php echo e($yearEstablished); ?>. Our maintenance plans put your trees on a calendar &mdash; inspections, preventative pruning, and storm-readiness thinning &mdash; so problems get fixed while they're still small, scheduled cuts instead of midnight emergencies.</p>
 
     <div class="hero-actions">
-      <a href="/#estimate-form" class="btn btn-accent btn-lg">Get a Free Maintenance Assessment</a>
+      <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Maintenance Assessment</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact the Crew</a>
     </div>
 
@@ -826,6 +827,13 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
       <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
       <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
     </div>
+    </div>
+
+    <?php
+    $heroFormLocation = 'hero-tree-maintenance-care';
+    $heroFormService  = 'Tree Maintenance & Care';
+    include $_SERVER['DOCUMENT_ROOT'] . '/includes/hero-form.php';
+    ?>
   </div>
 </section>
 
@@ -1040,7 +1048,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <h2>Ready to Put Your Trees on a Schedule Before the Next Hurricane Season?</h2>
     <p class="answer-block">Tell <?php echo e($siteName); ?> which trees worry you &mdash; the moss-draped live oak, the tall slash pines, the palms by the pool screen enclosure &mdash; and we'll walk the property, build a maintenance calendar around them, and put the price in writing within 24 hours.</p>
     <div class="hero-actions">
-      <a href="/#estimate-form" class="btn btn-accent btn-lg">Get a Free Maintenance Assessment</a>
+      <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Maintenance Assessment</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact Us</a>
     </div>
   </div>

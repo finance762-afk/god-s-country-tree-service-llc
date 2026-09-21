@@ -873,7 +873,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 <!-- ============ HERO (C1.4 dark urgent variant) ============ -->
 <section class="emg-hero has-hero-bg" aria-label="Emergency tree service in DeLand, Florida">
   <?php echo p1_hero_picture($heroImage); ?>
-  <div class="container">
+  <div class="container hero-with-form">
+    <div class="hero-copy">
     <nav class="emg-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span class="sep" aria-hidden="true">/</span>
@@ -889,7 +890,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <p class="hero-answer">When a storm drops a live oak on your roof at 2 AM, you need a crew that's already in town. <?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving all of Volusia County &mdash; answering emergency calls and storm cleanup requests 24/7, every day of hurricane season.</p>
 
     <div class="hero-actions">
-      <a href="/#estimate-form" class="btn btn-accent btn-lg">Request Emergency Help</a>
+      <a href="#estimate-form" class="btn btn-accent btn-lg">Request Emergency Help</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Send Photos of the Damage</a>
     </div>
 
@@ -899,6 +900,14 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <span class="hero-trust-item"><?php echo icon('map-pin'); ?> Based in DeLand Since <?php echo e($yearEstablished); ?></span>
       <span class="hero-trust-item"><?php echo icon('truck'); ?> Grapple Loader &amp; Chipper On Call</span>
     </div>
+    </div>
+
+    <?php
+    $heroFormLocation = 'hero-emergency-tree-service-storm-cleanup';
+    $heroFormService  = 'Emergency Tree Service & Storm Cleanup';
+    $heroFormHeading  = 'Request Emergency Help';
+    include $_SERVER['DOCUMENT_ROOT'] . '/includes/hero-form.php';
+    ?>
   </div>
 </section>
 
@@ -1179,7 +1188,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <h2>Is a Tree on Your Roof or Leaning Over Your Home Right Now?</h2>
     <p class="answer-block">Don't wait it out. Send your address, photos, and what happened &mdash; <?php echo e($siteName); ?> will triage the hazard, give you a straight answer on timing, and put the price in writing before the saws start. Stay clear of the tree until we get there.</p>
     <div class="hero-actions">
-      <a href="/#estimate-form" class="btn btn-accent btn-lg">Request Emergency Help Now</a>
+      <a href="#estimate-form" class="btn btn-accent btn-lg">Request Emergency Help Now</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Send Damage Photos</a>
     </div>
   </div>

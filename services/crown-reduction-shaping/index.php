@@ -853,7 +853,8 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
 <!-- ============ HERO (C1.4) ============ -->
 <section class="crn-hero has-hero-bg" aria-label="Crown reduction and shaping in DeLand, Florida">
   <?php echo p1_hero_picture($heroImage); ?>
-  <div class="container">
+  <div class="container hero-with-form">
+    <div class="hero-copy">
     <nav class="crn-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span class="sep" aria-hidden="true">/</span>
@@ -869,7 +870,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving Volusia County since <?php echo e($yearEstablished); ?>. We take height and weight off storm-loaded canopies with proper reduction cuts &mdash; never topping &mdash; so your oaks keep their strength, their balance, and their shade.</p>
 
     <div class="hero-actions">
-      <a href="/#estimate-form" class="btn btn-accent btn-lg">Get a Free Shaping Estimate</a>
+      <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Shaping Estimate</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact the Crew</a>
     </div>
 
@@ -879,6 +880,13 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
       <span class="hero-trust-item"><?php echo icon('ban'); ?> We Never Top Trees</span>
       <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
     </div>
+    </div>
+
+    <?php
+    $heroFormLocation = 'hero-crown-reduction-shaping';
+    $heroFormService  = 'Crown Reduction & Shaping';
+    include $_SERVER['DOCUMENT_ROOT'] . '/includes/hero-form.php';
+    ?>
   </div>
 </section>
 
@@ -1133,7 +1141,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <h2>Ready to Take the Weight Off That Canopy Before Hurricane Season?</h2>
     <p class="answer-block">Tell us about the overgrown oak, the lopsided camphor, or the limbs creeping over the pool screen. <?php echo e($siteName); ?> will walk the property, show you exactly what a proper reduction takes off, and put a straight price in writing &mdash; usually within 24 hours.</p>
     <div class="hero-actions">
-      <a href="/#estimate-form" class="btn btn-accent btn-lg">Get a Free Shaping Estimate</a>
+      <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Shaping Estimate</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact Us</a>
     </div>
   </div>

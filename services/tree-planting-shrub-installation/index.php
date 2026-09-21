@@ -828,7 +828,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 <!-- ============ HERO (C1.4) ============ -->
 <section class="plt-hero has-hero-bg" aria-label="Tree planting and shrub installation in DeLand, Florida">
   <?php echo p1_hero_picture($heroImage); ?>
-  <div class="container">
+  <div class="container hero-with-form">
+    <div class="hero-copy">
     <nav class="plt-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span class="sep" aria-hidden="true">/</span>
@@ -844,7 +845,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving Volusia County since <?php echo e($yearEstablished); ?> &mdash; and we plant trees as carefully as we take them down. Florida-native trees and shrubs, matched to your sandy soil and sun, installed at the right depth with a real establishment watering plan.</p>
 
     <div class="hero-actions">
-      <a href="/#estimate-form" class="btn btn-accent btn-lg">Plan Your Planting &mdash; Free Estimate</a>
+      <a href="#estimate-form" class="btn btn-accent btn-lg">Plan Your Planting &mdash; Free Estimate</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact the Crew</a>
     </div>
 
@@ -854,6 +855,13 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <span class="hero-trust-item"><?php echo icon('sprout'); ?> Florida-Native Species</span>
       <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
     </div>
+    </div>
+
+    <?php
+    $heroFormLocation = 'hero-tree-planting-shrub-installation';
+    $heroFormService  = 'Tree Planting & Shrub Installation';
+    include $_SERVER['DOCUMENT_ROOT'] . '/includes/hero-form.php';
+    ?>
   </div>
 </section>
 
@@ -1126,7 +1134,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <h2>Ready to Put the Right Tree in the Right Place?</h2>
     <p class="answer-block">Tell us about the bare corner, the hedge you want, or the shade tree your yard is missing. <?php echo e($siteName); ?> will walk the property, match species to your soil and sun, and put a straight, written planting price in your hands &mdash; usually within 24 hours.</p>
     <div class="hero-actions">
-      <a href="/#estimate-form" class="btn btn-accent btn-lg">Plan Your Planting &mdash; Free Estimate</a>
+      <a href="#estimate-form" class="btn btn-accent btn-lg">Plan Your Planting &mdash; Free Estimate</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact Us</a>
     </div>
   </div>

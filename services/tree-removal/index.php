@@ -730,7 +730,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 <!-- ============ HERO (C1.4) ============ -->
 <section class="svc-hero has-hero-bg" aria-label="Tree removal in DeLand, Florida">
   <?php echo p1_hero_picture($heroImage); ?>
-  <div class="container">
+  <div class="container hero-with-form">
+    <div class="hero-copy">
     <nav class="svc-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span class="sep" aria-hidden="true">/</span>
@@ -746,7 +747,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, removing trees of every size across Volusia County since <?php echo e($yearEstablished); ?>. Controlled section takedowns, grapple-loader cleanup, and free written estimates within 24 hours &mdash; with debris hauling included in most quotes.</p>
 
     <div class="hero-actions">
-      <a href="/#estimate-form" class="btn btn-accent btn-lg">Get a Free Removal Estimate</a>
+      <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Removal Estimate</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact the Crew</a>
     </div>
 
@@ -756,6 +757,14 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <span class="hero-trust-item"><?php echo icon('truck'); ?> Debris Hauling Included</span>
       <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
     </div>
+    </div>
+
+    <?php
+    $heroFormLocation = 'hero-tree-removal';
+    $heroFormService  = 'Tree Removal';
+    $heroFormHeading  = 'Get a Free Removal Estimate';
+    include $_SERVER['DOCUMENT_ROOT'] . '/includes/hero-form.php';
+    ?>
   </div>
 </section>
 
@@ -1009,7 +1018,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <h2>Ready to Get That Tree Off Your Worry List Before Storm Season?</h2>
     <p class="answer-block">Tell us about the leaning oak, the dead pine, or the whole overgrown lot. <?php echo e($siteName); ?> will walk the property, give you an honest read, and put a straight, all-in price in writing &mdash; usually within 24 hours.</p>
     <div class="hero-actions">
-      <a href="/#estimate-form" class="btn btn-accent btn-lg">Get a Free Removal Estimate</a>
+      <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Removal Estimate</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact Us</a>
     </div>
   </div>
