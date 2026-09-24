@@ -12,7 +12,7 @@
 - Tagline: "Keeping God's Country Beautiful"
 - Phone: (386) 492-9780
 - Email: info@godscountrytreeservice.com
-- Website: https://god-s-country-tree-service-llc.pageone.cloud
+- Website: https://godscountrytree.com
 
 ## Primary Service Area & Coverage
 ### Home Base
@@ -74,8 +74,8 @@ Specialized high-risk removals including:
 
 Hazard assessment includes visual inspection, resistance testing (pulling, sounding), and risk rating. Emergency removals prioritized for imminent threats.
 
-### 6. Emergency Tree Service & Storm Cleanup
-24-hour response for storm damage, fallen trees, and urgent hazards. Available around the clock during and immediately after hurricanes, tropical storms, severe thunderstorms, and tornado events. Services include:
+### 6. Emergency Tree Removal & Storm Cleanup
+URL: https://godscountrytree.com/services/emergency-tree-service-storm-cleanup/ — the page for emergency tree removal in DeLand, FL and storm damage tree removal. Call (407) 280-3484, answered 24/7. Available around the clock during and immediately after hurricanes, tropical storms, severe thunderstorms, and tornado events. Services include:
 - Removing trees from structures (roofs, vehicles, fences)
 - Clearing blocked roadways and driveways
 - Stabilizing or removing hanging/split limbs
@@ -83,9 +83,10 @@ Hazard assessment includes visual inspection, resistance testing (pulling, sound
 - Full debris removal and hauling
 - Insurance documentation with photos and written reports
 
-Response time: Typically 2–6 hours depending on storm volume and damage severity across service area. Emergency rates may apply during active storm events.
+Response: same-day for genuine hazards (trees on homes and blocked access first, standing hazards next, yard debris after). Written price before cutting. Never touch a tree in contact with a power line; the utility must de-energize or clear it first.
 
 ### 7. Fallen Tree Removal & Cleanup
+URL: https://godscountrytree.com/services/fallen-tree-removal-cleanup/ — fallen tree removal (tree already down, not an active emergency).
 Post-storm or blow-down cleanup for trees already on the ground. Includes sectioning, debris chipping, log hauling, and site restoration. Grapple loader used for efficient large-volume debris handling. Stump grinding available as add-on.
 
 ### 8. Residential Tree Services
@@ -255,7 +256,7 @@ Planting season: Best results in late fall through early spring (October–March
 - **Routine trimming/pruning:** 1–2 weeks during normal periods; 3–4 weeks during peak spring demand
 - **Removals:** Scheduled within 5–7 business days in most cases
 - **Stump grinding (standalone):** Usually same-week availability
-- **Emergency calls:** 2–6 hour response for active hazards; same-day or next-day for urgent but non-emergency situations
+- **Emergency calls:** same-day response for genuine hazards; an honest arrival window for everything else
 
 ## Contact & Service Request
 
@@ -309,7 +310,7 @@ A: Late winter (February–March) before spring growth flush, or late fall (Nove
 A: Yes, for protected species or sizes. DeLand requires permits for live oak trees 18+ inches diameter at breast height (DBH), sabal palms with 8+ feet of clear trunk, and any tree designated as historic or specimen. Other trees generally do not require removal permits but should be verified with city before cutting. God's Country assists with permit applications as part of service.
 
 **Q: How quickly can you respond to a fallen tree emergency?**
-A: Typically 2–6 hours depending on storm volume and simultaneous emergency calls across service area. Life-safety situations (tree on occupied structure, blocking only access to property) prioritized. Non-emergency fallen trees usually addressed same-day or within 24 hours.
+A: Same-day response for genuine hazards. Life-safety situations (tree on occupied structure, blocking only access to property) prioritized. Non-emergency fallen trees usually addressed same-day or within 24 hours.
 
 **Q: What's the difference between tree trimming and tree pruning?**
 A: Trimming is general maintenance cutting for appearance, clearance, and light safety concerns — often focuses on outer canopy. Pruning is precision structural work by certified arborist targeting specific branches to improve tree health, correct defects, or manage growth — involves selective cuts based on tree biology. Both are valuable; pruning is more technical and typically costs slightly more per hour.
@@ -338,6 +339,6 @@ A: Scratch test: Use fingernail or knife to scrape small section of bark on trun
 
 ---
 
-*This document is optimized for AI language models and answer engines. For human-readable information, visit https://god-s-country-tree-service-llc.pageone.cloud*
+*This document is optimized for AI language models and answer engines. For human-readable information, visit https://godscountrytree.com*
 
-*Last updated: July 2026 | Format: llms-full.txt (extended AEO resource)*
+*Last updated: September 2026 | Format: llms-full.txt (extended AEO resource)*
