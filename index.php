@@ -32,22 +32,24 @@ $heroImagePreload = $heroImage;
 // Icons are Lucide names; every adjacent card differs. Exactly 3 bullets each.
 $homeServiceCards = [
     [
-        'slug'    => 'commercial-hoa-tree-services',
-        'name'    => 'Commercial & HOA Tree Services',
-        'icon'    => 'building-2',
-        'img'     => $imgBase . '1784062730039-tm1j7f-31172143_2042462125974389_3563289646844608512_n.webp',
-        'alt'     => 'Skid steer and truck behind tree-protection fencing on commercial tree service job in DeLand, FL',
-        'desc'    => 'Scheduled maintenance contracts for businesses, HOAs, and property managers.',
-        'bullets' => ['Contract pricing & scheduling', 'Insurance documented up front', 'One crew for trees & land clearing'],
+        'slug'    => 'emergency-tree-service-storm-cleanup',
+        'name'    => 'Emergency Tree Removal & Storm Cleanup',
+        'icon'    => 'zap',
+        'img'     => $imgBase . '1784062761586-95i7hi-487384453_1464923548239483_3259835514318021231_n.webp',
+        'alt'     => 'Climber topping a storm-damaged tree spar against the sky during emergency tree service near DeLand, FL',
+        'desc'    => '24/7 response for storm damage, trees on roofs, and urgent hazards.',
+        'anchor'  => '24/7 emergency tree removal',
+        'bullets' => ['24-hour storm response', 'Same-day hazard assessment', 'Homes & businesses covered'],
     ],
     [
-        'slug'    => 'tree-planting-shrub-installation',
-        'name'    => 'Tree Planting & Shrub Installation',
-        'icon'    => 'sprout',
-        'img'     => $imgBase . '1784062733583-jhvosk-35788256_2078205079066760_5169623066409435136_n.webp',
-        'alt'     => 'Freshly planted and mulched landscape beds with palms and shrubs installed in DeLand, FL',
-        'desc'    => 'Tree and shrub planting for DeLand homes and commercial properties.',
-        'bullets' => ['Florida native species guidance', 'Homes, businesses & HOAs', 'Planted for healthy growth'],
+        'slug'    => 'tree-removal',
+        'name'    => 'Tree Removal',
+        'icon'    => 'axe',
+        'img'     => $imgBase . '1784062730346-5nqz2k-31180126_2042462089307726_2780749710774763520_n.webp',
+        'alt'     => 'Roped climber sectioning a large live oak during tree removal in DeLand, FL',
+        'desc'    => 'Safe, controlled removal for trees of all sizes.',
+        'anchor'  => 'Tree removal in DeLand',
+        'bullets' => ['Trees of all sizes', 'Controlled section takedowns', 'Debris hauled away'],
     ],
     [
         'slug'    => 'tree-trimming-services',
@@ -56,6 +58,7 @@ $homeServiceCards = [
         'img'     => '/assets/images/nsuvrpt-960.webp',
         'alt'     => 'Climber trimming limbs inside a live oak canopy during tree trimming in DeLand, FL',
         'desc'    => 'Seasonal and routine trimming for trees of every size.',
+        'anchor'  => 'Tree trimming in DeLand',
         'bullets' => ['Seasonal & routine schedules', 'All tree sizes handled', 'Health, looks & safety'],
     ],
     [
@@ -65,25 +68,8 @@ $homeServiceCards = [
         'img'     => $imgBase . '1784062767583-96o2mm-650224392_1767273321337836_3694986581662424202_n.webp',
         'alt'     => 'Roped arborist pruning branches inside an oak canopy in DeLand, FL',
         'desc'    => 'Precision pruning that improves structure, health, and appearance.',
+        'anchor'  => 'Tree pruning in DeLand',
         'bullets' => ['Certified arborist techniques', 'Stronger branch structure', 'Healthier long-term growth'],
-    ],
-    [
-        'slug'    => 'crown-reduction-shaping',
-        'name'    => 'Crown Reduction & Shaping',
-        'icon'    => 'tree-deciduous',
-        'img'     => $imgBase . '1784062745583-ri3d15-51248376_2242050436015556_1895589103194341376_n.webp',
-        'alt'     => 'Cleanly reduced and shaped mature oak crown against blue sky after crown reduction in DeLand, FL',
-        'desc'    => 'Reduce weight and reshape overgrown or storm-stressed canopies.',
-        'bullets' => ['Reduces storm-load weight', 'Better light penetration', 'Reshapes overgrown canopies'],
-    ],
-    [
-        'slug'    => 'tree-removal',
-        'name'    => 'Tree Removal',
-        'icon'    => 'axe',
-        'img'     => $imgBase . '1784062730346-5nqz2k-31180126_2042462089307726_2780749710774763520_n.webp',
-        'alt'     => 'Roped climber sectioning a large live oak during tree removal in DeLand, FL',
-        'desc'    => 'Safe, controlled removal for trees of all sizes.',
-        'bullets' => ['Trees of all sizes', 'Controlled section takedowns', 'Debris hauled away'],
     ],
     [
         'slug'    => 'dead-hazardous-tree-removal',
@@ -92,16 +78,8 @@ $homeServiceCards = [
         'img'     => $imgBase . '1784062737583-f7n0kp-37107879_2101564903397444_7138537925750292480_n.webp',
         'alt'     => 'Chip truck and boom lift set up at a dead double-trunk tree leaning over a DeLand home',
         'desc'    => 'Specialized removal of dead and diseased trees threatening your property.',
+        'anchor'  => 'Dead &amp; hazardous tree removal',
         'bullets' => ['Dead & diseased specialists', 'Safe extraction & disposal', 'Protects roofs & fences'],
-    ],
-    [
-        'slug'    => 'emergency-tree-service-storm-cleanup',
-        'name'    => 'Emergency Tree Service & Storm Cleanup',
-        'icon'    => 'zap',
-        'img'     => $imgBase . '1784062761586-95i7hi-487384453_1464923548239483_3259835514318021231_n.webp',
-        'alt'     => 'Climber topping a storm-damaged tree spar against the sky during emergency tree service near DeLand, FL',
-        'desc'    => '24-hour response for storm damage and urgent hazards.',
-        'bullets' => ['24-hour storm response', 'Same-day hazard assessment', 'Homes & businesses covered'],
     ],
     [
         'slug'    => 'fallen-tree-removal-cleanup',
@@ -110,7 +88,38 @@ $homeServiceCards = [
         'img'     => $imgBase . '1784062753583-2wp304-76756943_2456228011264463_6144757071268020224_n.webp',
         'alt'     => 'Grapple loader carrying a massive fresh-cut log section during fallen tree cleanup in DeLand, FL',
         'desc'    => 'Rapid removal of downed trees plus full site cleanup.',
+        'anchor'  => 'Fallen tree removal',
         'bullets' => ['Rapid response cleanup', 'Full debris removal', 'Site restoration included'],
+    ],
+    [
+        'slug'    => 'crown-reduction-shaping',
+        'name'    => 'Crown Reduction & Shaping',
+        'icon'    => 'tree-deciduous',
+        'img'     => $imgBase . '1784062745583-ri3d15-51248376_2242050436015556_1895589103194341376_n.webp',
+        'alt'     => 'Cleanly reduced and shaped mature oak crown against blue sky after crown reduction in DeLand, FL',
+        'desc'    => 'Reduce weight and reshape overgrown or storm-stressed canopies.',
+        'anchor'  => 'Crown reduction in DeLand',
+        'bullets' => ['Reduces storm-load weight', 'Better light penetration', 'Reshapes overgrown canopies'],
+    ],
+    [
+        'slug'    => 'commercial-hoa-tree-services',
+        'name'    => 'Commercial & HOA Tree Services',
+        'icon'    => 'building-2',
+        'img'     => $imgBase . '1784062730039-tm1j7f-31172143_2042462125974389_3563289646844608512_n.webp',
+        'alt'     => 'Skid steer and truck behind tree-protection fencing on commercial tree service job in DeLand, FL',
+        'desc'    => 'Scheduled maintenance contracts for businesses, HOAs, and property managers.',
+        'anchor'  => 'Commercial &amp; HOA tree service',
+        'bullets' => ['Contract pricing & scheduling', 'Insurance documented up front', 'One crew for trees & land clearing'],
+    ],
+    [
+        'slug'    => 'tree-planting-shrub-installation',
+        'name'    => 'Tree Planting & Shrub Installation',
+        'icon'    => 'sprout',
+        'img'     => $imgBase . '1784062733583-jhvosk-35788256_2078205079066760_5169623066409435136_n.webp',
+        'alt'     => 'Freshly planted and mulched landscape beds with palms and shrubs installed in DeLand, FL',
+        'desc'    => 'Tree and shrub planting for DeLand homes and commercial properties.',
+        'anchor'  => 'Tree planting in DeLand',
+        'bullets' => ['Florida native species guidance', 'Homes, businesses & HOAs', 'Planted for healthy growth'],
     ],
 ];
 
@@ -667,6 +676,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   max-width: 58ch;
   margin: 0 auto var(--space-8);
 }
+.hero-storm-cta { text-wrap: balance; }
 .closing-cta .hero-actions { justify-content: center; margin-bottom: 0; animation: none; }
 
 /* ---- Responsive ---- */
@@ -705,17 +715,13 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
       <h1 class="hero-title">Tree Service in DeLand, FL &mdash; <span class="gradient-text text-accent">Year-Round Care</span></h1>
 
-      <p class="hero-subtitle"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving residential, commercial, and HOA properties across Volusia County since <?php echo e($yearEstablished); ?>. Scheduled maintenance contracts for businesses, 24-hour emergency response, and certified arborist expertise &mdash; from the local crew who's here year-round.</p>
+      <p class="hero-subtitle"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving homes, businesses, and HOA communities across Volusia County since <?php echo e($yearEstablished); ?>. Tree removal, trimming, 24/7 emergency storm response, and certified arborist care &mdash; from the local crew who's here year-round.</p>
 
       <div class="hero-actions">
         <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Estimate</a>
+        <a href="/services/emergency-tree-service-storm-cleanup/" class="btn btn-outline-white btn-lg hero-storm-cta">Storm damage? 24/7 emergency tree removal</a>
         <?php if (!empty($phone)): ?>
         <a href="<?php echo e(phoneHref($phone)); ?>" class="btn btn-outline-white btn-lg">Call Now <?php echo e(formatPhone($phone)); ?></a>
-        <?php if (!empty($integrations['accepts_sms'])): ?>
-        <a href="sms:<?php echo e(preg_replace('/^tel:/', '', phoneHref($phone))); ?>" class="btn btn-outline-white btn-lg">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true" style="display:inline-block;vertical-align:middle;margin-right:0.35rem"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Text Us
-        </a>
-        <?php endif; ?>
         <?php else: ?>
         <a href="/services/" class="btn btn-outline-white btn-lg">Explore Our Services</a>
         <?php endif; ?>
@@ -838,7 +844,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">What We Do</span>
       <h2>What Tree Services Does God's Country Tree Service Offer in <span class="text-accent">DeLand</span>?</h2>
-      <p class="hero-answer"><?php echo e($siteName); ?> provides twelve tree services in DeLand, FL &mdash; commercial contracts, residential care, tree removal, trimming, pruning, crown reduction, dead and hazardous tree removal, 24-hour emergency storm cleanup, fallen tree cleanup, tree planting, and certified arborist care &mdash; for property managers, HOA communities, businesses, and homeowners across Volusia County.</p>
+      <p class="hero-answer"><?php echo e($siteName); ?> provides twelve tree services in DeLand, FL: <a href="/services/tree-removal/">tree removal in DeLand</a>, <a href="/services/tree-trimming-services/">tree trimming in DeLand</a>, <a href="/services/tree-pruning-services/">tree pruning</a>, <a href="/services/crown-reduction-shaping/">crown reduction</a>, <a href="/services/dead-hazardous-tree-removal/">dead and hazardous tree removal</a>, <a href="/services/emergency-tree-service-storm-cleanup/">emergency tree removal</a> and storm cleanup, <a href="/services/fallen-tree-removal-cleanup/">fallen tree removal</a>, <a href="/services/tree-maintenance-care/">tree maintenance</a>, <a href="/services/tree-planting-shrub-installation/">tree planting</a>, <a href="/services/certified-arborist-services/">certified arborist services</a>, <a href="/services/residential-tree-services/">residential tree care</a>, and <a href="/services/commercial-hoa-tree-services/">commercial &amp; HOA tree service</a> &mdash; for homeowners, businesses, and HOA communities across Volusia County.</p>
       <span class="section-subtitle"><?php echo e($tagline); ?></span>
       <p class="prose">One local crew handles the whole job &mdash; climbing, rigging, skid-steer work, debris hauling, and stump grinding &mdash; so businesses and property managers never juggle multiple contractors or uncoordinated schedules.</p>
     </div>
@@ -862,7 +868,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
             <li><?php echo e($bullet); ?></li>
             <?php endforeach; ?>
           </ul>
-          <a href="/services/<?php echo e($card['slug']); ?>/" class="service-card__cta">Learn more</a>
+          <a href="/services/<?php echo e($card['slug']); ?>/" class="service-card__cta"><?php echo $card['anchor']; ?></a>
         </div>
       </article>
       <?php endforeach; ?>
@@ -912,8 +918,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <span class="eyebrow-label" style="color: var(--color-accent);">Commercial Tree Contracts</span>
     <h2>Scheduled Maintenance Keeps Commercial Properties Safe &amp; Compliant Year-Round</h2>
-    <p>Property managers, HOAs, and businesses trust <?php echo e($siteName); ?> for contract-based tree care — scheduled visits, written documentation for liability protection, and emergency storm response when you need it. One licensed crew handles trimming, removal, land clearing, and debris hauling, so you never coordinate multiple vendors.</p>
-    <a href="/services/commercial-hoa-tree-services/" class="btn btn-accent btn-lg">Commercial Tree Services</a>
+    <p>Property managers, HOAs, and businesses use <?php echo e($siteName); ?> for scheduled, documented tree care &mdash; details on the commercial page.</p>
+    <a href="/services/commercial-hoa-tree-services/" class="btn btn-accent btn-lg">Commercial &amp; HOA Tree Service</a>
     <a href="#estimate-form" class="btn btn-outline-white btn-lg">Request a Property Assessment</a>
   </div>
 </section>
@@ -960,7 +966,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Reviews</span>
       <h2>What DeLand Neighbors Say About Our <span class="text-accent">Tree Work</span></h2>
-      <p class="prose">Real reviews from real jobs around Volusia County &mdash; pulled live from our Google Business Profile.</p>
+      <p class="prose"><?php echo e($siteName); ?> is rated <?php echo e($gbpRating); ?>&#9733; from <?php echo (int) $gbpReviewCount; ?> Google reviews. Real reviews from real jobs around Volusia County &mdash; pulled live from our Google Business Profile.</p>
     </div>
 
     <!-- Elfsight reviews widget (intake-provided embed, pasted verbatim) -->

@@ -47,6 +47,7 @@
           <ul>
             <li><a href="/services/">View All Services &rarr;</a></li>
             <li><a href="/service-area/">View All Areas &rarr;</a></li>
+            <li><a href="/faq/">Tree Service FAQ &rarr;</a></li>
           </ul>
         </div>
 

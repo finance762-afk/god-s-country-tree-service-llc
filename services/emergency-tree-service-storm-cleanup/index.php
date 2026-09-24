@@ -860,6 +860,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   .emg-proof-gallery figure:first-child { grid-column: auto; }
   .emg-hero .hero-actions, .emg-cta .hero-actions { flex-direction: column; align-items: stretch; }
 }
+.emg-hero .hero-answer a { color: var(--color-accent); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
 .emg-powerline {
   display: flex;
   gap: var(--space-md);
