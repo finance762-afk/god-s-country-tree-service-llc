@@ -70,9 +70,9 @@ $vsReduction = [
 
 // ---- Canopy zones (layered reveal cards) ----
 $canopyZones = [
-    ['zone' => 'Zone 1 — The Top',      'icon' => 'arrow-down-to-line', 'title' => 'Height reduction',    'text' => 'The highest leaders come down to strong laterals, lowering the canopy\'s center of gravity and the leverage wind gets on the trunk. This is where storm risk lives — and where topping does its worst damage when the wrong crew does it.'],
+    ['zone' => 'Zone 1 — The Top',      'icon' => 'arrow-down-to-line', 'title' => 'Height reduction',    'text' => 'The highest leaders come down to strong laterals, lowering the canopy\'s center of gravity and the leverage wind gets on the trunk.'],
     ['zone' => 'Zone 2 — The Edges',    'icon' => 'move-horizontal',    'title' => 'Lateral shortening',  'text' => 'Overextended limbs get pulled back from rooflines, driveways, and property lines with reduction cuts, not stub cuts. The spread shrinks while every remaining limb keeps a live growing tip.'],
-    ['zone' => 'Zone 3 — The Interior', 'icon' => 'wind',               'title' => 'Selective thinning',  'text' => 'We remove select interior branches so wind and light pass through the crown instead of pushing against it. The living structure stays; the sail effect goes.'],
+    ['zone' => 'Zone 3 — The Interior', 'icon' => 'wind',               'title' => 'Selective thinning',  'text' => 'Select interior branches come out so wind and light pass through the crown. The living structure stays; the sail effect goes.'],
     ['zone' => 'Zone 4 — The Base',     'icon' => 'arrow-up-from-line', 'title' => 'Canopy lift',         'text' => 'The lowest limbs are raised for clearance over pool screen enclosures, walkways, and sightlines — the finished tree looks lifted and intentional, like the vase-shaped canopies in our photos.'],
 ];
 
@@ -81,10 +81,6 @@ $faqs = [
     [
         'q' => 'Will crown reduction harm my live oak?',
         'a' => "Not when it's done with proper reduction cuts. Every limb is shortened back to a living lateral branch that takes over growth, so the oak seals its wounds and keeps a full working canopy. What harms live oaks is topping — indiscriminate cuts that leave decaying stubs. That's the practice we refuse, and the reason DeLand homeowners call us to fix other crews' work.",
-    ],
-    [
-        'q' => 'How much of the canopy can you remove at one time?',
-        'a' => "Less than most people expect — a modest fraction of the live canopy per visit, because a tree feeds itself through its leaves. If a canopy is badly overgrown, we'd rather shape it in stages a season or two apart than stress it with one aggressive cut. Your estimate spells out exactly what comes off and why.",
     ],
     [
         'q' => 'When is the best time of year for crown reduction in DeLand?',
@@ -97,10 +93,6 @@ $faqs = [
     [
         'q' => 'My tree was topped years ago — can you fix it?',
         'a' => "Often, yes. Restoration shaping selects the strongest of the sprouts a topping cut produced, trains them into new leaders, and removes the weak, crowded regrowth around them. It usually takes more than one visit spread over a couple of seasons, but many topped trees can be brought back to a safe, natural structure instead of being removed.",
-    ],
-    [
-        'q' => 'Do you haul away all the branches?',
-        'a' => "Yes — cleanup is part of the job, not an add-on. Brush goes through the chipper, wood goes on the truck, and the lawn gets raked before we leave. Most of our shaping quotes include chipping and hauling so the price you approve in writing is the price you pay.",
     ],
     [
         'q' => 'Can you shape a tree hanging over my pool enclosure?',
@@ -989,7 +981,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
           </li>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
-            <p><strong>One crew, whole job.</strong> Climbing, shaping, chipping, and same-day hauling from the same Volusia County company &mdash; no second contractor for the cleanup.</p>
+            <p><strong>One crew, whole job.</strong> Climbing, shaping, chipping, and same-day hauling from the same Volusia County crew.</p>
           </li>
         </ul>
       </div>
@@ -1104,7 +1096,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Good Questions</span>
       <h2>What do DeLand homeowners ask about crown reduction and shaping?</h2>
-      <p class="answer-block">Almost always the same things: whether reduction hurts the tree, how much can come off, the best season, how long the shape lasts, and what happens to the brush. Straight answers below &mdash; and if yours isn't here, put it in the estimate form and we'll answer within 24 hours.</p>
+      <p class="answer-block">Whether reduction hurts the tree, the best season, how long the shape lasts, fixing a topped tree, and working over a pool enclosure. If yours isn't here, put it in the estimate form and we'll answer within 24 hours.</p>
     </div>
 
     <div class="faq-grid" data-p1-dynamic>
@@ -1127,7 +1119,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Round Out the Canopy Work</span>
       <h2>What other tree services do DeLand property owners pair with crown reduction?</h2>
-      <p class="answer-block">Shaping one tree usually surfaces work on its neighbors: routine trimming to hold the new silhouette, arborist pruning for structure and health, and removal for the tree a reduction can no longer save. All three come from the same God's Country crew, usually quoted in the same free estimate.</p>
+      <p class="answer-block">Shaping one tree usually surfaces work on its neighbors: routine <a href="/services/tree-trimming-services/">tree trimming</a> to hold the new silhouette, arborist <a href="/services/tree-pruning-services/">tree pruning</a> for structure and health, and <a href="/services/tree-removal/">tree removal</a> for the tree a reduction can no longer save. All three come from the same God's Country crew, usually quoted in the same free estimate.</p>
     </div>
 
     <?php renderServiceCards(['tree-trimming-services', 'tree-pruning-services', 'dead-hazardous-tree-removal'], $serviceCardData); ?>

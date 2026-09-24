@@ -117,16 +117,8 @@ $faqs = [
         'a' => 'No — and over-trimming is the most common palm mistake we fix. Palms need dead and dying fronds removed, not the aggressive "hurricane cut" that strips them to a feather duster and actually weakens them. Nutrient problems in sandy soil show up in palm fronds first, so our inspections catch deficiencies early.',
     ],
     [
-        'q' => 'Can maintenance really prevent storm damage?',
-        'a' => 'It dramatically reduces it — no honest tree service will promise more than that. A thinned canopy lets wind pass through instead of catching it like a sail, and deadwood that would have become airborne is already gone. Most of the storm damage we clean up across Volusia County traces back to trees nobody had touched in years.',
-    ],
-    [
         'q' => 'What happens if you find a serious problem during a visit?',
         'a' => 'We show it to you, explain the options, and put a price on each one in writing. Sometimes cabling or reduction pruning saves the tree; sometimes removal is the honest answer. Either way you decide on your schedule — that is the entire point of finding problems during an inspection instead of after a storm.',
-    ],
-    [
-        'q' => 'Do you offer maintenance plans in Deltona and Orange City?',
-        'a' => 'Yes. From our DeLand home base the crew runs maintenance routes through Deltona, Orange City, DeBary, Lake Helen, and communities within roughly 50 miles across Volusia County. Same crew, same equipment, same written plan — the calendar just gets built around your address.',
     ],
     [
         'q' => 'Is fertilization included in tree maintenance?',
@@ -868,7 +860,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     </div>
 
     <div class="mnt-econ-footer">
-      <p data-animate>Most of the emergency work we run across Volusia County traces back to the same story: <strong>a tree nobody had looked at in five years</strong>. The deadwood that lands on a roof in August was visible &mdash; and removable for a modest price &mdash; back in April. Maintenance is simply choosing to pay the small bill instead of the big one, and keeping the tree in the bargain.</p>
+      <p data-animate>Most of the emergency work we run across Volusia County traces back to the same story: <strong>a tree nobody had looked at in five years</strong>. The deadwood that lands on a roof in August was visible &mdash; and removable for a modest price &mdash; back in April.</p>
       <div class="mnt-stat-card" data-animate="right">
         <div class="mnt-big-number"><?php echo e($yearsInBusiness); ?><span>+</span></div>
         <div class="mnt-big-label">Years Maintaining DeLand Trees</div>
@@ -1011,7 +1003,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Good Questions</span>
       <h2>What do DeLand property owners ask about tree maintenance?</h2>
-      <p class="answer-block">Usually the practical things: how often to inspect, when to schedule around hurricane season, whether older oaks and palms need different care, and what happens when we find a problem. The answers below come from twelve years of maintaining trees across DeLand, Deltona, Orange City, DeBary, and Lake Helen.</p>
+      <p class="answer-block">How often to inspect, when to schedule around hurricane season, how palms differ from oaks, and what happens when we find a problem. The answers below come from twelve years of maintaining trees across DeLand, Deltona, Orange City, DeBary, and Lake Helen.</p>
     </div>
 
     <div class="faq-grid" data-p1-dynamic>
@@ -1034,7 +1026,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">One Crew, One Calendar</span>
       <h2>What other tree services do DeLand property owners pair with tree maintenance?</h2>
-      <p class="answer-block">Maintenance plans work alongside the rest of the crew's skills: trimming visits between inspections, arborist-grade pruning where structure needs correcting, and a certified eye on any tree that looks like it's declining. Same God's Country crew, one schedule, and one free estimate that covers all of it.</p>
+      <p class="answer-block">Maintenance plans work alongside the rest of the crew's skills: <a href="/services/tree-trimming-services/">tree trimming</a> visits between inspections, arborist-grade <a href="/services/tree-pruning-services/">tree pruning</a> where structure needs correcting, and a <a href="/services/certified-arborist-services/">certified arborist</a> eye on any tree that looks like it's declining. Same God's Country crew, one schedule, and one free estimate that covers all of it.</p>
     </div>
 
     <?php renderServiceCards(['tree-trimming-services', 'tree-pruning-services', 'certified-arborist-services'], $serviceCardData); ?>

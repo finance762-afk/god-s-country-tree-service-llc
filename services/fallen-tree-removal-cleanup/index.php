@@ -44,18 +44,18 @@ $bodyPhotos = [
 
 // ---- Triage cards: emergency vs schedule ----
 $triageCards = [
-    ['icon' => 'siren',          'label' => 'Call it in now',      'title' => 'On the house, wires, or a car',   'text' => 'Anything resting on a structure or within reach of a power line is an emergency. Keep everyone out from under it and get a crew — and the utility, if lines are involved — moving immediately.'],
-    ['icon' => 'car',            'label' => 'Same-day priority',   'title' => 'Blocking the driveway or road',   'text' => 'A trunk across your only way out gets bumped to the front of the schedule. We cut an access lane first, then come back through for the full cleanup and haul-off.'],
-    ['icon' => 'clock',          'label' => 'Days, not minutes',   'title' => 'Flat on open lawn',               'text' => 'A tree lying in the open is stable — the dangerous part already happened. Keep kids off the trunk and root plate, and a scheduled cleanup within a day or two costs less than a panic call.'],
-    ['icon' => 'triangle-alert', 'label' => 'Do not walk under',   'title' => 'Hung up in another tree',         'text' => 'A blow-down caught in a neighboring canopy is the one that hurts people. It can drop without warning, so stay out from under it and let a roped crew bring it down on their terms.'],
+    ['icon' => 'siren',          'label' => 'Call it in now',      'title' => 'On the house, wires, or a car',   'text' => 'Anything resting on a structure or within reach of a power line is an emergency. Keep everyone clear and call the utility first if lines are involved.'],
+    ['icon' => 'car',            'label' => 'Same-day priority',   'title' => 'Blocking the driveway or road',   'text' => 'A trunk across your only way out gets bumped to the front of the schedule. We cut an access lane first, then finish the cleanup and haul-off.'],
+    ['icon' => 'clock',          'label' => 'Days, not minutes',   'title' => 'Flat on open lawn',               'text' => 'A tree lying in the open is stable — the dangerous part already happened. Keep kids off the trunk and root plate; a scheduled cleanup within a day or two costs less than a panic call.'],
+    ['icon' => 'triangle-alert', 'label' => 'Do not walk under',   'title' => 'Hung up in another tree',         'text' => 'A blow-down caught in a neighboring canopy can drop without warning. Stay out from under it and let a roped crew bring it down.'],
 ];
 
 // ---- Response timeline (C7.1 variant) ----
 $responseSteps = [
-    ['icon' => 'camera',      'label' => 'Step 01 · Photos & triage',     'title' => 'Send photos, get a straight read',  'text' => 'A few phone photos through the estimate form tell us most of what we need: what fell, what it hit, and whether this is an emergency or a scheduled cleanup. You get a free written estimate within 24 hours.'],
+    ['icon' => 'camera',      'label' => 'Step 01 · Photos & triage',     'title' => 'Send photos, get a straight read',  'text' => 'A few phone photos through the estimate form show what fell and what it hit. You get a free written estimate within 24 hours.'],
     ['icon' => 'search',      'label' => 'Step 02 · Hazard check',        'title' => 'Walk the site before any cutting',  'text' => 'Fallen trees store energy. We check for limbs under tension, a root plate that could stand back up, and anything the trunk is pinning — fence, shed, pool screen enclosure — before a saw starts.'],
     ['icon' => 'axe',         'label' => 'Step 03 · Cutting it free',     'title' => 'Relieve the tension, then section', 'text' => 'Tension cuts come first so nothing springs loose, then the trunk is bucked into grapple-sized sections. Whatever the tree landed on gets cut free carefully instead of dragged out from underneath.'],
-    ['icon' => 'truck',       'label' => 'Step 04 · Grapple, chip & haul','title' => 'The loader does the heavy lifting', 'text' => 'Our compact grapple track loader carries whole log sections to the truck while the chipper turns brush into chips. No armload-by-armload dragging across your lawn — the debris leaves on our trucks.'],
+    ['icon' => 'truck',       'label' => 'Step 04 · Grapple, chip & haul','title' => 'The loader does the heavy lifting', 'text' => 'Our compact grapple track loader carries whole log sections to the truck while the chipper turns brush into chips. The debris leaves on our trucks.'],
     ['icon' => 'sprout',      'label' => 'Step 05 · Site restoration',    'title' => 'Leave the yard usable again',       'text' => 'We rake the debris field, level the hole where the root plate tipped out of the sandy soil, and walk the yard with you. Stump grinding and firewood bucking are quoted as options, never surprises.'],
 ];
 
@@ -71,7 +71,6 @@ $safeList = [
     'Drag small, loose branches that are already free on the ground',
     'Photograph the tree and everything it hit — your insurance adjuster will want it',
     'Rope off the trunk and root plate so kids and pets keep clear',
-    'Send us photos through the estimate form for a same-week plan',
 ];
 $unsafeList = [
     'Anything within reach of a power line — call the utility before anyone else',
@@ -85,15 +84,11 @@ $unsafeList = [
 $faqs = [
     [
         'q' => 'Will homeowner\'s insurance pay for fallen tree removal?',
-        'a' => "Usually, if the tree hit a covered structure — house, fence, shed, pool enclosure. A tree that fell harmlessly on the lawn is often on you. We can't speak for your carrier, but we provide the written estimate, photos, and documentation adjusters ask for, the same paperwork DeLand homeowners have used in claims for years.",
+        'a' => "Usually, if the tree hit a covered structure — house, fence, shed, pool enclosure. A tree that fell harmlessly on the lawn is often on you. We can't speak for your carrier, but we provide the written estimate, photos, and documentation adjusters ask for.",
     ],
     [
         'q' => 'The tree fell on my fence and pool screen — can you get it off without more damage?',
         'a' => "Yes — that's the careful part of this work. We relieve the tension in the trunk and limbs first, then lift sections clear with the grapple loader instead of dragging them across what's left of the fence. The goal is that the only damage on site is what the tree did on the way down.",
-    ],
-    [
-        'q' => 'How fast can you get to a fallen tree in DeLand?',
-        'a' => 'Trees on structures or blocking access get emergency priority — our sister emergency tree service answers around the clock during storm season. For a stable blow-down on open ground, you get a free written estimate within 24 hours and a scheduled cleanup shortly after, usually within days.',
     ],
     [
         'q' => 'Do you haul everything away, or can I keep the firewood?',
@@ -101,7 +96,7 @@ $faqs = [
     ],
     [
         'q' => 'Will the grapple loader tear up my lawn?',
-        'a' => "It's a compact track loader, not a wrecking ball — tracks spread the weight, and we lay mats on the travel path when the ground is soft. Between that and raking the debris field afterward, most yards look better when we leave than they did with a tree across them.",
+        'a' => "It's a compact track loader, not a wrecking ball — tracks spread the weight, and we lay mats on the travel path when the ground is soft. Then we rake the debris field before we leave.",
     ],
     [
         'q' => 'My tree fell into the neighbor\'s yard. Whose problem is it?',
@@ -839,7 +834,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">First, Take a Breath</span>
       <h2>Is a fallen tree an emergency or can it wait?</h2>
-      <p class="answer-block">A fallen tree is an emergency when it's touching your house, a power line, or blocking your only way out &mdash; call for emergency service immediately. A tree flat on open lawn is urgent but stable, and a scheduled fallen tree removal within a day or two is usually the smarter, cheaper call.</p>
+      <p class="answer-block">A fallen tree is an emergency when it's touching your house, a power line, or blocking your only way out &mdash; that's <a href="/services/emergency-tree-service-storm-cleanup/">emergency tree removal in DeLand</a>, so call right away. A tree flat on open lawn is stable, and a scheduled fallen tree removal within a day or two is usually the smarter, cheaper call.</p>
     </div>
 
     <div class="fln-triage-grid">
@@ -871,11 +866,11 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <div class="fln-grapple-split">
       <div>
-        <p data-animate>The photo at the top of this page is a real DeLand blow-down: a mature live oak flat across a yard with our Kubota grapple track loader moving in. That pairing &mdash; tree crew and grapple machine under one roof &mdash; is the whole reason our fallen tree cleanup moves fast. Nobody waits on a subcontractor with a loader, and nobody hand-drags a 40-foot canopy across your grass one armload at a time.</p>
+        <p data-animate>The photo at the top of this page is a real DeLand blow-down: a mature live oak flat across a yard with our Kubota grapple track loader moving in. Tree crew and grapple machine under one roof means nobody waits on a subcontractor with a loader.</p>
         <ul class="fln-grapple-points" data-p1-dynamic>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
-            <p><strong>Whole sections, not wheelbarrows.</strong> The grapple picks up log sections and root-ball chunks that would take a hand crew all afternoon &mdash; and carries them straight to the truck.</p>
+            <p><strong>Whole sections, not wheelbarrows.</strong> The grapple carries log sections and root-ball chunks straight to the truck.</p>
           </li>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
@@ -883,7 +878,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
           </li>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
-            <p><strong>One crew, full restoration.</strong> Tree work and land clearing from the same company means the job ends with a raked, level, usable yard &mdash; not a pile by the curb and a wave goodbye.</p>
+            <p><strong>One crew, full restoration.</strong> Tree work and land clearing from the same company means the job ends with a raked, level, usable yard &mdash; not a pile by the curb.</p>
           </li>
         </ul>
       </div>
@@ -962,7 +957,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <span class="eyebrow-label">Before the Next Front</span>
     <h2>Need that fallen tree gone before the next storm line rolls through?</h2>
-    <p class="answer-block">Central Florida rarely sends one storm at a time in hurricane season. Getting the downed tree and its debris off your property before the next front means the wind has nothing loose left to throw. Send photos through the estimate form and <?php echo e($siteName); ?> returns a written price within 24 hours.</p>
+    <p class="answer-block">Central Florida rarely sends one storm at a time in hurricane season, so clear the downed tree before the wind has something loose to throw. Send photos through the estimate form and <?php echo e($siteName); ?> returns a written price within 24 hours.</p>
     <div class="hero-actions">
       <a href="#estimate-form" class="btn btn-accent btn-lg">Send Photos, Get a Price</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact Us</a>
@@ -976,7 +971,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">The Job &amp; the Aftermath</span>
       <h2>How does tree debris removal work after a big blow-down?</h2>
-      <p class="answer-block">Tree debris removal after a big blow-down runs in one loop: chainsaws buck the trunk and free the limbs, the chipper turns brush into chips, and the grapple loader carries log sections straight to our trucks. Everything leaves the same visit &mdash; or gets bucked and stacked as firewood if you want it.</p>
+      <p class="answer-block">Tree debris removal after a big blow-down runs in one loop: chainsaws buck the trunk and free the limbs, the chipper turns brush into chips, and the grapple loader carries log sections straight to our trucks. Everything leaves the same visit.</p>
     </div>
 
     <div class="fln-pair-grid">
@@ -992,7 +987,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       </figure>
     </div>
 
-    <p class="fln-pair-note" data-animate>If you've been searching for fallen tree removal near me in DeLand, this pair of photos is the honest answer to what you're hiring: the crew that shows up with a grapple loader while the oak is still across the lawn, and the crew that decides with you where every pound of that tree ends up &mdash; chips, firewood, or gone on our trucks.</p>
+    <p class="fln-pair-note" data-animate>If you've been searching for fallen tree removal near me in DeLand, these photos show what you're hiring: a crew that arrives with a grapple loader and decides with you where the tree ends up &mdash; chips, firewood, or gone on our trucks.</p>
 
     <div class="review-badge-strip" data-animate>
       <a class="review-badge" href="<?php echo e($integrations['gbp_url']); ?>" target="_blank" rel="noopener">
@@ -1016,7 +1011,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Chainsaw Honesty</span>
       <h2>What's safe to touch on a fallen tree &mdash; and what should you leave alone?</h2>
-      <p class="answer-block">Small broken branches already loose on the ground are safe to drag clear. Anything under tension is not &mdash; limbs bent beneath the trunk, a root plate that can slam back upright, and anything near a power line. When in doubt, leave the saw in the garage and send us a photo instead.</p>
+      <p class="answer-block">Small broken branches already loose on the ground are safe to drag clear. Anything under tension is not &mdash; limbs bent beneath the trunk, a root plate that can slam back upright, and anything near a power line. When in doubt, send us a photo instead.</p>
     </div>
 
     <div class="fln-safe-grid">
@@ -1051,7 +1046,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Good Questions</span>
       <h2>What do DeLand property owners ask after a tree comes down?</h2>
-      <p class="answer-block">Mostly about insurance, timing, and the mess: who pays when a tree lands on a fence, how fast the crew can come, and where all that wood goes. Straight answers below &mdash; and if yours isn't covered, drop it in the estimate form and we'll answer within 24 hours.</p>
+      <p class="answer-block">Mostly about insurance and the mess: who pays when a tree lands on a fence and where all that wood goes. If your question isn't covered, drop it in the estimate form and we'll answer within 24 hours.</p>
     </div>
 
     <div class="faq-grid" data-p1-dynamic>
@@ -1074,7 +1069,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">After the Cleanup</span>
       <h2>What other tree services do DeLand property owners pair with fallen tree cleanup?</h2>
-      <p class="answer-block">Fallen tree cleanup usually uncovers the next job: storm cleanup across the rest of the property, standing trees that now lean, and dead wood the wind exposed. <?php echo e($siteName); ?> quotes all of it in one visit, so one crew and one written estimate cover the whole recovery.</p>
+      <p class="answer-block">Fallen tree cleanup usually uncovers the next job: storm cleanup across the rest of the property, standing trees that now lean, and dead wood the wind exposed &mdash; see <a href="/services/dead-hazardous-tree-removal/">dead and hazardous tree removal</a>. <?php echo e($siteName); ?> quotes all of it in one visit.</p>
     </div>
 
     <?php renderServiceCards(['emergency-tree-service-storm-cleanup', 'tree-removal', 'dead-hazardous-tree-removal'], $serviceCardData); ?>

@@ -48,22 +48,22 @@ $bodyPhotos = [
 
 // ---- Six warning signs (numbered bento, C5.1 watermark digits) ----
 $warningSigns = [
-    ['icon' => 'triangle-alert',  'title' => 'Fungus at the base',           'text' => 'Mushrooms, shelf conks, or soft bark ringing the trunk mean the roots or lower trunk are decaying. By the time fungus fruits on the outside, the rot inside is well ahead of it.'],
+    ['icon' => 'triangle-alert',  'title' => 'Fungus at the base',           'text' => 'Mushrooms, shelf conks, or soft bark ringing the trunk mean the roots or lower trunk are decaying. The rot inside is usually well ahead of what shows.'],
     ['icon' => 'trending-down',   'title' => 'Crown dieback up top',         'text' => 'Bare, leafless limbs at the very top while the lower canopy still leafs out is the classic decline signal in DeLand\'s live oaks — the tree is dying from the top down.'],
-    ['icon' => 'circle-dot',      'title' => 'Hollowing & cavities',         'text' => 'Woodpecker holes, carpenter ants, and cavities that swallow a fist mean the trunk is losing the solid wood that holds it up. Hollow trees fail without drama and without warning.'],
+    ['icon' => 'circle-dot',      'title' => 'Hollowing & cavities',         'text' => 'Woodpecker holes, carpenter ants, and cavities that swallow a fist mean the trunk is losing the solid wood that holds it up.'],
     ['icon' => 'move-diagonal',   'title' => 'A lean that\'s new — or growing', 'text' => 'In sandy Central Florida soil, a root plate can lose its grip fast. A lean that appeared after a storm, or creeps a little further each season, is the tree letting go.'],
     ['icon' => 'bug',             'title' => 'Bark loss & sawdust',          'text' => 'Slabs of bark sliding off and fine sawdust piling at the base point to borers and beetles — and in slash pines, beetle-kill can turn a green tree brittle within months.'],
-    ['icon' => 'cloud-lightning', 'title' => 'Storm cracks & hangers',       'text' => 'Cracked unions, split leaders, and limbs hanging by fiber after a named storm rarely heal. Every next blow works the crack wider until whatever hangs over your roof lets go.'],
+    ['icon' => 'cloud-lightning', 'title' => 'Storm cracks & hangers',       'text' => 'Cracked unions, split leaders, and limbs hanging by fiber after a named storm rarely heal. Every next blow works the crack wider.'],
 ];
 
 // ---- What's included (glass cards on dark, C6.4) ----
 $includedItems = [
     ['icon' => 'search-check',   'title' => 'Honest hazard assessment',   'text' => 'We look at the whole failure picture — decay, lean, targets, escape routes — and tell you plainly whether yours is a remove-now, a watch-it, or a tree worth saving.'],
-    ['icon' => 'file-text',      'title' => 'Written 24-hour estimate',   'text' => 'One all-in number in writing: takedown, chipping, hauling, and the stump option itemized before anyone starts a saw. No driveway guesswork, no add-ons after.'],
+    ['icon' => 'file-text',      'title' => 'Written 24-hour estimate',   'text' => 'One all-in number in writing: takedown, chipping, hauling, and the stump option itemized before anyone starts a saw.'],
     ['icon' => 'cable',          'title' => 'Rigging & lift plan',        'text' => 'Dead wood never gets climbed on faith. Boom lift positions, ropes, and lowering points are planned around what the trunk can actually still hold.'],
-    ['icon' => 'construction',   'title' => 'Controlled dismantle',       'text' => 'Sections come down roped and lowered over roofs, fences, and pool screen enclosures — never free-dropped over a target, no matter how far gone the tree is.'],
+    ['icon' => 'construction',   'title' => 'Controlled dismantle',       'text' => 'Sections come down roped and lowered over roofs, fences, and pool screen enclosures — never free-dropped over a target.'],
     ['icon' => 'truck',          'title' => 'Chip, haul & stump option',  'text' => 'Brush is chipped and debris hauled the same day on most jobs. Stump grinding is quoted up front with the removal if you want every trace of the hazard gone.'],
-    ['icon' => 'camera',         'title' => 'Photo documentation',        'text' => 'Condition photos and the written scope go in your file — the documentation DeLand homeowners and HOAs keep on hand for insurance and property records.'],
+    ['icon' => 'camera',         'title' => 'Photo documentation',        'text' => 'Condition photos and the written scope go in your file for insurance and property records.'],
 ];
 
 // ---- Cost factors ----
@@ -80,18 +80,13 @@ $comparison = [
     ['wait' => 'Wood grows more brittle — and pricier to rig — every season',      'now' => 'Roped dismantle while the trunk is still sound enough to work safely'],
     ['wait' => 'A known, documented hazard can complicate an insurance claim',     'now' => 'Condition photographed and documented before hurricane season'],
     ['wait' => 'Failure picks the timing: emergency rates, tarps, and adjusters',  'now' => 'Debris chipped and hauled the same day on most jobs'],
-    ['wait' => 'Neighbors and HOAs start sending letters instead of waves',        'now' => 'One written price you approved — no adjuster involved'],
 ];
 
 // ---- FAQs (conversational, 40-80 word answers) ----
 $faqs = [
     [
-        'q' => 'Is a dead tree in my yard an emergency?',
-        'a' => "It depends on what it can hit. A dead tree standing over the house, driveway, pool enclosure, or a service drop deserves fast scheduling — treat it as urgent. One standing in an open corner of the lot can usually wait for a normal appointment. Either way the assessment is free, and we'll tell you honestly which category yours falls into.",
-    ],
-    [
         'q' => 'Do I need a permit to remove a dead tree in DeLand?',
-        'a' => 'Possibly. DeLand and Volusia County protect certain trees, though dead and hazardous trees are handled differently from healthy ones. Requirements turn on species, size, and where the tree stands on the lot, so we flag permit questions during your free estimate — before any cutting is scheduled — so you know exactly what applies to your property.',
+        'a' => 'Possibly. DeLand and Volusia County protect certain trees, though dead and hazardous trees are handled differently from healthy ones. Requirements turn on species, size, and where the tree stands, so we flag permit questions during your free estimate, before any cutting is scheduled.',
     ],
     [
         'q' => "Will homeowner's insurance pay to remove a standing dead tree?",
@@ -107,7 +102,7 @@ $faqs = [
     ],
     [
         'q' => 'Why do dead pines need to come down faster than dead oaks?',
-        'a' => 'Slash pines lose structural strength quickly after they die — beetle-killed pines can become too brittle to climb within months, which forces more equipment and cost. Dead oaks decay more slowly but hollow out unpredictably. Either way, sooner is cheaper: the longer a dead tree stands in Central Florida weather, the harder it is to remove safely.',
+        'a' => 'Slash pines lose structural strength quickly after they die — beetle-killed pines can become too brittle to climb within months, which forces more equipment and cost. Dead oaks decay more slowly but hollow out unpredictably. Either way, sooner is cheaper.',
     ],
     [
         'q' => 'How fast can you remove a hazardous tree?',
@@ -803,7 +798,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <span class="eyebrow-label">Dead Wood Plays by Different Rules</span>
         <h2>What makes dangerous tree removal different from standard takedowns?</h2>
         <p class="answer-block">Dead trees are unpredictable in ways live ones aren't &mdash; brittle limbs snap without warning, hollow trunks won't hold a climber, and decayed wood tears instead of hinging on the cut. Dangerous tree removal means slower rigging, more machine work, and a crew that reads decay before trusting it with weight.</p>
-        <p data-animate>On a healthy oak, the wood itself is part of the safety system: it hinges, it holds rigging points, it behaves. On the dead pines and declining live oaks we're called to in DeLand, Deltona, Orange City, and DeBary, none of that can be assumed. So the crew sounds the trunk, tests every tie-in, and moves the load onto the boom lift and grapple loader whenever the tree can't be trusted to carry it.</p>
+        <p data-animate>On the dead pines and declining live oaks we're called to in DeLand, Deltona, Orange City, and DeBary, the wood can't be trusted to hinge or hold rigging. So the crew sounds the trunk, tests every tie-in, and moves the load onto the boom lift and grapple loader.</p>
         <ul class="dhz-expert-points" data-p1-dynamic>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
@@ -815,7 +810,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
           </li>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
-            <p><strong>Insurance you can verify.</strong> Licensed and insured, with proof available before a saw starts &mdash; exactly the paperwork that matters most when the job is the risky kind.</p>
+            <p><strong>Insurance you can verify.</strong> Licensed and insured, with proof available before a saw starts.</p>
           </li>
         </ul>
       </div>
@@ -897,7 +892,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Local Proof</span>
       <h2>Searching for dead tree removal near me in DeLand?</h2>
-      <p class="answer-block">If you're typing dead tree removal near me in DeLand, this is what the work looks like nearby: a declining oak dismantled from a bucket at first light, and a tall leaner assessed over a pool screen enclosure before a rope ever goes up. We work within about 50 miles of DeLand &mdash; this crew answers your call.</p>
+      <p class="answer-block">If you're typing dead tree removal near me in DeLand, this is what the work looks like nearby: a declining oak dismantled from a bucket at first light, and a tall leaner assessed over a pool screen enclosure before a rope ever goes up. We work within about 50 miles of DeLand.</p>
     </div>
 
     <div class="dhz-proof-grid">
@@ -958,7 +953,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Good Questions</span>
       <h2>What do DeLand homeowners ask about dead and dangerous trees?</h2>
-      <p class="answer-block">Mostly urgency, insurance, permits, and whether the tree is really dead. Straight answers below, from a crew that has been making the save-or-remove call across Volusia County since <?php echo e($yearEstablished); ?>. If your question isn't here, send it through the estimate form and you'll hear back within 24 hours.</p>
+      <p class="answer-block">Mostly insurance, permits, and whether the tree is really dead &mdash; answered by a crew making the save-or-remove call across Volusia County since <?php echo e($yearEstablished); ?>. If your question isn't here, send it through the estimate form and you'll hear back within 24 hours.</p>
     </div>
 
     <div class="faq-grid" data-p1-dynamic>
@@ -981,7 +976,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Same Crew, Next Job</span>
       <h2>What other tree services do DeLand property owners pair with dead tree removal?</h2>
-      <p class="answer-block">Three services pair naturally with a hazardous removal: standard tree removal for healthy trees coming down in the same visit, emergency response for the dead tree that stopped waiting, and certified arborist assessments for the borderline trees you're not sure about. One DeLand crew, one written estimate, all of it.</p>
+      <p class="answer-block">Three services pair naturally with a hazardous removal: <a href="/services/tree-removal/">tree removal in DeLand</a> for healthy trees coming down in the same visit, <a href="/services/emergency-tree-service-storm-cleanup/">emergency tree removal</a> for the dead tree that stopped waiting, and <a href="/services/certified-arborist-services/">certified arborist assessments</a> for the borderline trees you're not sure about. One DeLand crew, one written estimate.</p>
     </div>
 
     <?php renderServiceCards(['tree-removal', 'emergency-tree-service-storm-cleanup', 'certified-arborist-services'], $serviceCardData); ?>

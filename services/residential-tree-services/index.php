@@ -49,19 +49,19 @@ $bodyPhotos = [
 
 // ---- Homeowner scenarios (C6.1 supporting cards) ----
 $scenarios = [
-    ['icon' => 'home',           'title' => 'Oak limbs parked over the roof',    'text' => 'Live oak limbs creeping over shingles and gutters are the classic DeLand call. Crown clearance keeps leaves out of the valleys and heavy wood off the house before wind ever tests it.'],
-    ['icon' => 'waves',          'title' => 'The pine leaning at the pool',      'text' => 'A slash pine tilting toward a screen enclosure is a math problem, not a mystery. We assess the lean, the root plate in sandy Central Florida soil, and tell you honestly if it stays or goes.'],
-    ['icon' => 'cloud-lightning', 'title' => 'Hurricane-season prep',            'text' => 'June through November is when overloaded canopies fail. A pre-season pass takes off deadwood and thins wind-catching growth while it\'s still a routine visit, not an emergency.'],
-    ['icon' => 'sprout',         'title' => 'The overgrown corner of the yard',  'text' => 'Years of untouched growth, a stump nobody dealt with, palms full of dead fronds. One visit with the chipper and skid steer reclaims the corner — brush chipped, debris hauled, grade raked.'],
+    ['icon' => 'home',           'title' => 'Oak limbs parked over the roof',    'text' => 'Live oak limbs creeping over shingles and gutters are the classic DeLand call. Crown clearance keeps heavy wood off the house before wind tests it.'],
+    ['icon' => 'waves',          'title' => 'The pine leaning at the pool',      'text' => 'A slash pine tilting toward a screen enclosure is a math problem. We assess the lean and the root plate in sandy soil, and tell you honestly if it stays or goes.'],
+    ['icon' => 'cloud-lightning', 'title' => 'Hurricane-season prep',            'text' => 'June through November is when overloaded canopies fail. A pre-season pass takes off deadwood while it\'s still a routine visit.'],
+    ['icon' => 'sprout',         'title' => 'The overgrown corner of the yard',  'text' => 'Years of untouched growth, an old stump, palms full of dead fronds. One visit with the chipper and skid steer reclaims the corner.'],
 ];
 
 // ---- Visit steps (service breakdown) ----
 $visitSteps = [
-    ['title' => 'Walk the whole yard, not one tree',   'text' => 'We look at every tree on the lot — the oak you called about and the queen palm you didn\'t. You get a free written estimate within 24 hours covering exactly what each tree needs, and what it doesn\'t.'],
-    ['title' => 'Schedule and site prep',              'text' => 'We confirm gate access for the compact equipment, flag sprinkler heads, and stage mats where the loader will travel. Fences, screen rooms, and flower beds get planned around before a saw starts.'],
-    ['title' => 'One planned work sequence',           'text' => 'Trimming, pruning cuts, any removals, and stump work happen in a deliberate order so debris moves through the yard once. No second crew, no second mobilization, no waiting on a subcontractor.'],
+    ['title' => 'Walk the whole yard, not one tree',   'text' => 'We look at every tree on the lot — the oak you called about and the queen palm you didn\'t — and send a free written estimate within 24 hours.'],
+    ['title' => 'Schedule and site prep',              'text' => 'We confirm gate access, flag sprinkler heads, and plan around fences, screen rooms, and flower beds before a saw starts.'],
+    ['title' => 'One planned work sequence',           'text' => 'Trimming, pruning cuts, any removals, and stump work happen in a deliberate order so debris moves through the yard once.'],
     ['title' => 'Chip, haul, and rake out',            'text' => 'Brush goes through the chipper, logs ride the grapple loader, and the driveway gets blown off. Most quotes include hauling, so the yard is mow-ready when the trucks pull away.'],
-    ['title' => 'Final walkthrough with you',          'text' => 'Before we leave, we walk the property together and note anything to watch — a canopy to re-check next year, a tree worth flagging before hurricane season. You end the day with a plan, not just a receipt.'],
+    ['title' => 'Final walkthrough with you',          'text' => 'Before we leave, we walk the property together and note anything to watch — a canopy to re-check next year, a tree worth flagging before hurricane season.'],
 ];
 
 // ---- Cost factors ----
@@ -76,17 +76,11 @@ $costFactors = [
 $comparison = [
     ['them' => 'One company trims, another hauls, a third grinds the stump — three schedules, three invoices', 'us' => 'Tree work and land clearing from one DeLand crew: one schedule, one written quote'],
     ['them' => 'Each vendor blames the last one for the ruts in the lawn',                                      'us' => 'The crew that cuts is the crew that mats the turf and flags the irrigation'],
-    ['them' => 'Nobody owns a plan for the yard as a whole',                                                    'us' => 'One walk-through covers every tree — this visit and what to watch next season'],
-    ['them' => 'A mobilization fee baked into every separate trip',                                             'us' => 'Trimming, removal, and stump work bundled into a single visit when it saves you money'],
     ['them' => 'Storm week, the out-of-town number goes to voicemail',                                          'us' => 'Local and licensed in DeLand since 2014 — here before, during, and after the season'],
 ];
 
 // ---- FAQs (conversational, 40-80 word answers) ----
 $faqs = [
-    [
-        'q' => 'Can one visit cover trimming, a removal, and stump work together?',
-        'a' => "Yes — that's the point of hiring a crew that runs its own climbing gear, chipper, grapple loader, and skid steer. We quote the whole yard as one job, sequence the work so debris moves once, and finish in a single mobilization. Most DeLand homeowners save money bundling compared to booking each task separately.",
-    ],
     [
         'q' => 'Do I need to be home while the crew works?',
         'a' => "Not for most jobs. We confirm the scope at the estimate, so on work day the crew needs gate access and a clear driveway, not a supervisor. Plenty of DeLand homeowners leave for work and come home to a finished yard. If decisions might come up mid-job — like whether to keep firewood — we'll call.",
@@ -843,8 +837,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <article class="res-scenario-featured" data-animate>
         <div class="res-featured-icon"><?php echo icon('house'); ?></div>
         <h3>Every yard job, one crew</h3>
-        <p>DeLand lots collect tree work the way garages collect projects: the oak that needs shaping, the palm full of brown fronds, the stump from three summers ago. Instead of booking three companies, you book one walk-through.</p>
-        <p>We climb, rig, chip, grind, and haul with our own equipment &mdash; tree service and land clearing under the same name since <?php echo e($yearEstablished); ?> &mdash; so nothing on the list waits for a subcontractor.</p>
+        <p>The oak that needs shaping, the palm full of brown fronds, the stump from three summers ago &mdash; instead of booking three companies, you book one walk-through. We climb, rig, chip, grind, and haul with our own equipment, so nothing waits for a subcontractor.</p>
       </article>
       <?php foreach ($scenarios as $i => $sc): ?>
       <article class="res-scenario-card reveal-delay-<?php echo ($i % 3) + 1; ?>" data-animate>
@@ -1025,7 +1018,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Good Questions</span>
       <h2>What do DeLand homeowners ask about residential tree care?</h2>
-      <p class="answer-block">Mostly practical things: whether one visit can cover several jobs, how we protect lawns and irrigation, and when to schedule around hurricane season. The straight answers are below &mdash; and anything we missed, drop it in the estimate form and we'll answer it within 24 hours.</p>
+      <p class="answer-block">Mostly practical things: how we protect lawns and irrigation, what happens to the debris, and when to schedule around hurricane season. Straight answers below.</p>
     </div>
 
     <div class="faq-grid" data-p1-dynamic>
@@ -1048,7 +1041,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Round Out the Plan</span>
       <h2>What other tree services do DeLand property owners pair with residential tree care?</h2>
-      <p class="answer-block">Three services pair naturally with whole-yard care: tree trimming to keep canopies off the roof, tree removal when an oak is past saving, and scheduled maintenance so small problems stay small. Same crew, same equipment &mdash; and usually one combined estimate covering all of it.</p>
+      <p class="answer-block">Three services pair naturally with whole-yard care: tree trimming to keep canopies off the roof, tree removal when an oak is past saving, and <a href="/services/tree-maintenance-care/">scheduled tree maintenance</a> so small problems stay small &mdash; usually on one combined estimate.</p>
     </div>
 
     <?php renderServiceCards(['tree-trimming-services', 'tree-removal', 'tree-maintenance-care'], $serviceCardData); ?>

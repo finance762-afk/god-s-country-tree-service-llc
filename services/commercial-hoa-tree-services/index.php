@@ -81,12 +81,8 @@ $hoaPoints = [
 // ---- FAQs (conversational, 40-80 word answers) ----
 $faqs = [
     [
-        'q' => 'Do you work directly with HOA boards and property management companies?',
-        'a' => "Yes — that's the point of this service. Boards and managers get a written assessment they can circulate and vote on, one contact for scheduling, and consistent paperwork for every visit. Whether you manage a single office building in DeLand or common areas across an entire community, the crew and the process stay the same.",
-    ],
-    [
         'q' => 'Can you provide proof of insurance before work starts?',
-        'a' => "Yes. God's Country is licensed and insured, and documentation is available before anyone starts a saw. Most property managers ask for it during the bid — we'd rather you ask than assume. That paper trail protects the association or the business just as much as it protects us.",
+        'a' => "Yes. God's Country is licensed and insured, and documentation is available before anyone starts a saw. Most property managers ask for it during the bid — we'd rather you ask than assume.",
     ],
     [
         'q' => 'How does a scheduled maintenance contract actually work?',
@@ -102,7 +98,7 @@ $faqs = [
     ],
     [
         'q' => 'Do you also handle lot clearing and skid-steer work?',
-        'a' => "Tree service and land clearing come from the same company — the same crew that trims your trees clears your lots. Lot clearing, brush work, mowing overgrown acreage, and debris hauling can fold into the same contract, which is why property owners and developers around DeLand often hire us for the whole site rather than just the trees.",
+        'a' => "Yes — the same crew that trims your trees clears your lots. Lot clearing, brush work, mowing overgrown acreage, and debris hauling can fold into the same contract, so DeLand property owners and developers often hire us for the whole site.",
     ],
     [
         'q' => 'Do you cover commercial properties outside DeLand?',
@@ -875,7 +871,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <span class="eyebrow-label">Built for Boards &amp; Managers</span>
         <h2>How do HOA tree services keep communities compliant and safe?</h2>
         <p class="answer-block">For HOA communities around DeLand, tree work is as much paperwork as chainsaw: written assessments a board can vote on, certificates of insurance before a crew arrives, work windows residents hear about in advance, and steady care of the community&rsquo;s live oaks and palms so common areas stay safe and presentable.</p>
-        <p data-animate>From the mature oak canopy near historic downtown DeLand out to newer communities toward Deltona, Orange City, and DeBary, the pattern is the same: common-area trees nobody thinks about until a storm makes everyone think about them. A standing schedule gets deadwood out before hurricane season, keeps canopy off streetlights and rooflines, and gives the association a record that the trees were managed &mdash; not merely admired.</p>
+        <p data-animate>From the mature oak canopy near historic downtown DeLand out to newer communities toward Deltona, Orange City, and DeBary, common-area trees get ignored until a storm. A standing schedule gets deadwood out before hurricane season, keeps canopy off streetlights and rooflines, and gives the association a record that the trees were managed.</p>
         <ul class="com-hoa-points" data-p1-dynamic>
           <?php foreach ($hoaPoints as $point): ?>
           <li data-animate>
@@ -905,7 +901,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">The Cost of Waiting</span>
       <h2>Why put business tree care on a maintenance schedule?</h2>
-      <p class="answer-block">Because reactive tree work is the most expensive kind. A scheduled contract catches hazards at planned visits, locks pricing in writing before hurricane season, and keeps insurance and documentation current &mdash; while reactive care means emergency rates, scrambling after every summer storm, and the trees deciding the timing instead of you.</p>
+      <p class="answer-block">Because reactive tree work is the most expensive kind. A scheduled contract from God&rsquo;s Country Tree Service catches hazards at planned visits, locks pricing in writing before hurricane season, and keeps insurance and documentation current.</p>
     </div>
 
     <div class="com-ledger">
@@ -974,7 +970,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Before You Sign</span>
       <h2>What do DeLand property managers ask before signing a tree contract?</h2>
-      <p class="answer-block">The same things a good manager asks every vendor: who carries the insurance, how scheduling works, whether residents get notice, and what happens after a storm. Straight answers below &mdash; and if yours isn&rsquo;t covered, send it through the assessment form and we&rsquo;ll answer within 24 hours.</p>
+      <p class="answer-block">The same things a good manager asks every vendor: who carries the insurance, how scheduling works, whether residents get notice, and what happens after a storm.</p>
     </div>
 
     <div class="faq-grid" data-p1-dynamic>
@@ -997,7 +993,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Round Out the Contract</span>
       <h2>What other tree services do DeLand property owners pair with commercial &amp; HOA tree care?</h2>
-      <p class="answer-block">Most contract properties bundle three things: ongoing maintenance visits between big jobs, hazardous tree removals flagged during walk-throughs, and emergency storm response when hurricane season delivers. All of it comes from the same God&rsquo;s Country crew, usually written into one schedule and one assessment.</p>
+      <p class="answer-block">Most contract properties bundle three things: ongoing <a href="/services/tree-maintenance-care/">tree maintenance visits</a> between big jobs, <a href="/services/dead-hazardous-tree-removal/">hazardous tree removal</a> flagged during walk-throughs, and <a href="/services/emergency-tree-service-storm-cleanup/">emergency storm response</a> when hurricane season delivers &mdash; usually written into one schedule.</p>
     </div>
 
     <?php renderServiceCards(['tree-maintenance-care', 'dead-hazardous-tree-removal', 'emergency-tree-service-storm-cleanup'], $serviceCardData); ?>

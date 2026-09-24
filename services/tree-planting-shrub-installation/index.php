@@ -61,7 +61,7 @@ $plantingMistakes = [
 $speciesCards = [
     ['icon' => 'tree-deciduous', 'name' => 'Live Oak',          'tag' => 'Signature shade',   'text' => 'The tree DeLand is known for — long-lived, wind-firm through hurricane season, and generous with shade. It needs room: we place live oaks where their canopy and roots have decades of space.'],
     ['icon' => 'flower-2',       'name' => 'Southern Magnolia', 'tag' => 'Evergreen classic', 'text' => 'Glossy evergreen leaves and big white blooms on a tree that handles sandy Central Florida soil well. A strong front-yard anchor that keeps its looks all year.'],
-    ['icon' => 'flower',         'name' => 'Crape Myrtle',      'tag' => 'Summer color',      'text' => 'Months of summer bloom at a scale that fits smaller yards, drives, and bed corners. The right pick when you want color without committing to a giant.'],
+    ['icon' => 'flower',         'name' => 'Crape Myrtle',      'tag' => 'Summer color',      'text' => 'Months of summer bloom at a scale that fits smaller yards, drives, and bed corners.'],
     ['icon' => 'trees',          'name' => 'Sabal Palm',        'tag' => 'Florida native',    'text' => "Florida's state tree, and a natural in DeLand's sandy soil. Sabal palms shrug off wind and drought once established — a low-drama vertical accent near pools and patios."],
     ['icon' => 'leaf',           'name' => 'East Palatka Holly','tag' => 'Tidy evergreen',    'text' => 'A neat, pyramidal evergreen that takes our heat, feeds the birds with winter berries, and stays in scale beside entries and property lines.'],
     ['icon' => 'shrub',          'name' => 'Hedges & Shrub Beds','tag' => 'Privacy & beds',   'text' => 'Viburnum privacy screens, hibiscus, palmettos, sago palms, and foundation beds finished with fresh mulch — the shrub layer that ties the whole yard together.'],
@@ -95,9 +95,7 @@ $plantingSteps = [
 // ---- Comparison: big-box DIY vs professional install ----
 $comparison = [
     ['them' => "Whatever's on the rack that weekend, root-bound or not",   'us' => 'Species matched to your sun, soil, and space — inspected stock'],
-    ['them' => 'Shovel hole, root flare buried, potting soil backfill',    'us' => 'Wide, shallow planting at grade, done the way trees establish'],
     ['them' => '"Water it when you think of it" through a Florida summer', 'us' => 'A written establishment watering schedule for sandy soil'],
-    ['them' => 'One tree at a time, one aching weekend at a time',         'us' => 'One crew with tree and land-clearing equipment — beds done in a day'],
     ['them' => 'Nobody to call when it browns out by August',              'us' => 'A local DeLand tree service that answers the phone after planting day'],
 ];
 
@@ -113,7 +111,7 @@ $faqs = [
     ],
     [
         'q' => 'Do you supply the trees and shrubs, or do I buy them?',
-        'a' => "Either works. Most DeLand customers have us source everything — we pick healthy nursery stock and inspect root balls before planting. If you've already bought plants, we'll gladly install them, and we'll tell you honestly if one is root-bound or wrong for the spot before it goes in the ground.",
+        'a' => "Either works. Most DeLand customers have us source healthy, inspected nursery stock. If you've already bought plants, we'll install them and tell you honestly if one is root-bound or wrong for the spot first.",
     ],
     [
         'q' => 'Can you replace a tree you removed?',
@@ -121,15 +119,11 @@ $faqs = [
     ],
     [
         'q' => 'What size tree should I start with?',
-        'a' => "Smaller than your instinct says. A smaller container-grown tree usually establishes faster and often catches up to a large field-grown specimen within a few years, at a fraction of the cost. If you want instant shade we can absolutely plant big — we have the equipment — but we'll lay out the tradeoff honestly first.",
+        'a' => "Smaller than your instinct says. A container-grown tree usually establishes faster and often catches up to a large field-grown specimen within a few years, at a fraction of the cost. If you want instant shade we have the equipment to plant big.",
     ],
     [
         'q' => 'Will you plant near my pool, septic, or utility lines?',
         'a' => "Carefully, and sometimes the honest answer is \"not that species, not there.\" Roots and pool screen enclosures, septic drain fields, and service lines don't mix with aggressive rooters. We call in utility locates before digging and steer you toward palms and small-rooted species where space is tight.",
-    ],
-    [
-        'q' => 'Do you do shrub-only jobs, or just trees?',
-        'a' => "Shrub-only jobs are welcome. Hedge rows, foundation beds, privacy screens, and full bed refreshes with new mulch are regular work for us across DeLand and Volusia County — no tree required. If it grows in a bed and belongs in this climate, we plant it.",
     ],
 ];
 
@@ -871,7 +865,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Planted Wrong Is Money Buried</span>
       <h2>Why do so many new trees and shrubs fail in DeLand yards?</h2>
-      <p class="answer-block">Most new plantings in DeLand fail for one of four fixable reasons: the wrong species for the spot, a root flare buried too deep, no establishment watering through the first sandy-soil summer, or an impulse buy that was struggling before it left the store. Professional installation exists to remove all four.</p>
+      <p class="answer-block">Most new plantings in DeLand fail for one of four fixable reasons, and professional installation exists to remove all four.</p>
     </div>
 
     <div class="plt-mistakes">
@@ -926,7 +920,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">From Bare Spot to Established</span>
       <h2>What's included in professional shrub installation?</h2>
-      <p class="answer-block">Professional shrub installation at God's Country Tree Service covers the whole job: a site and soil assessment, a planting plan, healthy sourced stock, prepped and edged beds, correct-depth planting, fresh mulch, water-in, and a written establishment schedule. The same three-step process applies whether it's one hedge row or a full DeLand landscape.</p>
+      <p class="answer-block">Professional shrub installation at God's Country Tree Service covers the whole job: a site and soil assessment, a planting plan, healthy sourced stock, prepped beds, correct-depth planting, mulch, water-in, and a written establishment schedule &mdash; for one hedge row or a full DeLand landscape.</p>
     </div>
 
     <?php foreach ($plantingSteps as $i => $step): ?>
@@ -969,7 +963,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="plt-cost-grid">
       <div class="plt-cost-card reveal-delay-1" data-animate>
         <h3>Tree size &amp; sourcing</h3>
-        <p>A 7-gallon crape myrtle and a field-grown live oak are different purchases and different installs. Bigger stock means more machine time &mdash; and more instant impact. We quote both honestly.</p>
+        <p>A 7-gallon crape myrtle and a field-grown live oak are different purchases and different installs. Bigger stock means more machine time &mdash; and more instant impact.</p>
       </div>
       <div class="plt-cost-card reveal-delay-2" data-animate>
         <h3>Bed prep &amp; soil work</h3>
@@ -994,24 +988,24 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Beyond the Backyard</span>
       <h2>Do you handle landscape planting services for businesses and HOAs?</h2>
-      <p class="answer-block">Yes &mdash; landscape planting services for DeLand businesses, HOA communities, and commercial properties are regular work for our crew. We phase installs so entrances stay open, carry the documented insurance boards and property managers ask for, and bring our own skid steer for bed prep, grading, and large-stock placement.</p>
+      <p class="answer-block">Yes &mdash; God's Country Tree Service handles landscape planting for DeLand businesses, HOA communities, and commercial properties. We phase installs so entrances stay open and bring our own skid steer for bed prep, grading, and large-stock placement.</p>
     </div>
 
     <div class="plt-biz-split">
       <div>
-        <p class="plt-drop-cap" data-animate>Planting at scale is where having one crew with both tree and land-clearing equipment pays off. Entrance beds, streetscape trees, buffer hedges, and common-area shade can go in as one coordinated job instead of a parade of subcontractors &mdash; the same combination that has handled tree work across Volusia County since <?php echo e($yearEstablished); ?>. And because we also remove, trim, and prune, we plant with the next twenty years in mind, not just the ribbon-cutting photo.</p>
+        <p class="plt-drop-cap" data-animate>Entrance beds, streetscape trees, buffer hedges, and common-area shade go in as one coordinated job instead of a parade of subcontractors. Because we also remove, trim, and prune across Volusia County, we plant with the next twenty years in mind.</p>
         <ul class="plt-biz-points" data-p1-dynamic>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
-            <p><strong>One crew, whole install.</strong> Design input, sourcing, bed prep, skid-steer grading, planting, and mulch from a single company &mdash; one schedule, one point of contact.</p>
+            <p><strong>One crew, whole install.</strong> Sourcing, bed prep, grading, planting, and mulch &mdash; one schedule, one point of contact.</p>
           </li>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
-            <p><strong>Paperwork boards can approve.</strong> Licensed and insured, with documentation available before the first shovel &mdash; what HOA boards and property managers need on file.</p>
+            <p><strong>Paperwork boards can approve.</strong> Licensed and insured, with documentation available before the first shovel.</p>
           </li>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
-            <p><strong>Species that survive the budget cycle.</strong> We spec natives and proven performers that won't need replacing in two years, and we say so in writing.</p>
+            <p><strong>Species that survive the budget cycle.</strong> Natives and proven performers that won't need replacing in two years.</p>
           </li>
         </ul>
       </div>
@@ -1030,7 +1024,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label" style="color: var(--color-accent);">The Honest Math</span>
       <h2>Why hire a tree service to plant instead of doing it yourself?</h2>
-      <p class="answer-block">Because a tree planted wrong costs twice: once at the register and again when it fails &mdash; or worse, when it grows into the pool enclosure and needs a removal crew. A professional tree service gets the species, depth, and watering right the first time, which is the cheapest version of the next thirty years.</p>
+      <p class="answer-block">Because a tree planted wrong costs twice: once at the register and again when it fails or grows into the pool enclosure. God's Country Tree Service gets the species, depth, and watering right the first time.</p>
     </div>
 
     <div class="plt-compare-grid">
@@ -1097,7 +1091,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Good Questions</span>
       <h2>What do DeLand homeowners ask before planting trees and shrubs?</h2>
-      <p class="answer-block">Mostly the practical things: when to plant, how much to water, who supplies the plants, what size to start with, and what's safe near pools and septic lines. Straight answers below &mdash; and if yours isn't covered, put it in the estimate form and we'll answer within 24 hours.</p>
+      <p class="answer-block">When to plant, how much to water, who supplies the plants, what size to start with, and what's safe near pools and septic lines &mdash; answered below.</p>
     </div>
 
     <div class="faq-grid" data-p1-dynamic>
@@ -1120,7 +1114,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Help It Thrive</span>
       <h2>What other tree services do DeLand property owners pair with tree planting?</h2>
-      <p class="answer-block">Planting is the start, not the finish. DeLand property owners usually pair new plantings with ongoing maintenance visits, structural pruning while young trees are cheap to shape, and certified arborist advice when an established tree looks off. All three come from the same God's Country crew.</p>
+      <p class="answer-block">Planting is the start, not the finish. DeLand property owners usually pair new plantings with ongoing <a href="/services/tree-maintenance-care/">tree maintenance visits</a>, structural <a href="/services/tree-pruning-services/">tree pruning</a> while young trees are cheap to shape, and <a href="/services/certified-arborist-services/">certified arborist advice</a> when an established tree looks off.</p>
     </div>
 
     <?php renderServiceCards(['tree-maintenance-care', 'tree-pruning-services', 'certified-arborist-services'], $serviceCardData); ?>

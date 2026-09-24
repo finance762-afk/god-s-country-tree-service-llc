@@ -54,22 +54,22 @@ $pruningCuts = [
     [
         'icon'  => 'git-branch',
         'name'  => 'Structural pruning',
-        'text'  => 'The long game. On young and maturing trees we select one dominant leader, remove competing stems, and space the scaffold limbs that will carry the canopy for decades. A live oak structurally pruned early almost never needs emergency work later — it\'s the cheapest tree care there is.',
+        'text'  => 'On young and maturing trees we select one dominant leader, remove competing stems, and space the scaffold limbs that carry the canopy for decades. A live oak structurally pruned early almost never needs emergency work later.',
     ],
     [
         'icon'  => 'circle-off',
         'name'  => 'Deadwood removal',
-        'text'  => 'Gray, brittle limbs are the first thing hurricane wind takes. We work the canopy interior and strip deadwood back to live tissue, cutting at the branch collar so the wound can close. Anything hanging over a roof, driveway, or pool screen enclosure comes out first.',
+        'text'  => 'Gray, brittle limbs are the first thing hurricane wind takes. We strip deadwood back to live tissue at the branch collar, starting with anything over a roof, driveway, or pool screen enclosure.',
     ],
     [
         'icon'  => 'wind',
         'name'  => 'Crown thinning',
-        'text'  => 'Selective interior cuts that let wind pass through the canopy instead of shoving against it. Thinning is judgment work — take the crossing, rubbing, and redundant limbs, keep the structure. Over-thinned trees sprout back worse than before, so we stay deliberate about every cut.',
+        'text'  => 'Selective interior cuts that let wind pass through the canopy instead of shoving against it: crossing, rubbing, and redundant limbs go, the structure stays. Over-thinned trees sprout back worse, so every cut is deliberate.',
     ],
     [
         'icon'  => 'ruler',
         'name'  => 'Clearance pruning',
-        'text'  => 'The practical cuts: limbs backed off the roofline, the screen enclosure, the driveway, and service drops — with enough margin that next season\'s growth doesn\'t erase the work. Made at the right laterals, clearance cuts hold their distance for years instead of months.',
+        'text'  => 'Limbs backed off the roofline, screen enclosure, driveway, and service drops. Made at the right laterals, clearance cuts hold their distance for years instead of months.',
     ],
 ];
 
@@ -83,9 +83,7 @@ $costFactors = [
 // ---- Comparison: a cosmetic trim vs arborist pruning ----
 $comparison = [
     ['them' => 'Cuts wherever the canopy looks long',          'us' => 'Cuts placed at the branch collar so wounds close'],
-    ['them' => 'Same treatment for every species',             'us' => 'Live oaks, laurel oaks, pines, and palms each pruned to species'],
     ['them' => 'Interior deadwood usually stays put',          'us' => 'Brittle gray limbs come out before a storm drops them'],
-    ['them' => 'Looks tidier the day the crew leaves',         'us' => 'Grows stronger and safer every season after'],
     ['them' => 'No thought to June through November',          'us' => 'Canopy thinned so hurricane-season wind passes through'],
 ];
 
@@ -93,7 +91,7 @@ $comparison = [
 $cadence = [
     ['icon' => 'sprout',         'title' => 'Young shade trees',       'window' => 'Every 2–3 years', 'text' => 'Structural pruning while limbs are still small means small wounds, fast closure, and a tree that never grows its worst habits in the first place.'],
     ['icon' => 'tree-deciduous', 'title' => 'Mature oaks',             'window' => 'Every 3–5 years', 'text' => 'Established live oaks and laurel oaks mostly need maintenance: deadwood out, light thinning, clearance held. A steady cycle keeps each visit small.'],
-    ['icon' => 'cloud-rain',     'title' => 'Ahead of hurricane season','window' => 'Walk-through yearly', 'text' => 'A spring look at what winter left behind. Deadwood over a roof or driveway doesn\'t wait for its turn on the calendar — it comes out now.'],
+    ['icon' => 'cloud-rain',     'title' => 'Ahead of hurricane season','window' => 'Walk-through yearly', 'text' => 'A spring look at what winter left behind. Deadwood over a roof or driveway comes out now, not on the calendar.'],
 ];
 
 // ---- FAQs (conversational, 40-80 word answers) ----
@@ -115,24 +113,8 @@ $faqs = [
         'a' => "The working rule for mature trees is no more than about a quarter of the live canopy in one visit — and less for older oaks. Taking more stresses the tree and triggers exactly the weak sprout growth pruning is meant to prevent. When a canopy needs major reshaping, we stage the work across seasons instead of forcing it into one.",
     ],
     [
-        'q' => 'Do you prune palms as well as oaks?',
-        'a' => "Yes. Palms across DeLand collect brown fronds and seed pods that come down in every summer thunderstorm, and over-stripped palms weaken over time. We remove the dead fronds and pods and stop there, leaving the healthy green crown intact so the palm keeps feeding itself.",
-    ],
-    [
-        'q' => 'What happens to the branches and debris?',
-        'a' => "Everything we cut gets chipped or loaded the same day. Brush goes through the chipper, larger wood rides out on the truck, and we rake the lawn and beds before we leave. If you'd like the chips kept for mulch, say the word and we'll leave the pile wherever you want it.",
-    ],
-    [
-        'q' => 'What is prescription pruning and how is it different from a regular trim?',
-        'a' => "A regular trim addresses what's visibly overgrown. Prescription pruning starts with a written plan from a certified arborist — the tree's species, defects, what's underneath it, and storm exposure — and the crew makes only the cuts on that plan. DeLand homeowners use it for signature oaks worth protecting and for trees an HOA or insurer has flagged.",
-    ],
-    [
         'q' => 'Can you handle tree mitigation my insurance company or HOA is asking for?',
         'a' => "Yes. Mitigation notices usually want specific things — weight off the roofline, hazard deadwood out, clearance from the structure. We prune to what the notice requires, photograph the finished work, and give you the documentation to close it out. If the tree genuinely can't be made safe by pruning, we'll tell you that before you spend the money.",
-    ],
-    [
-        'q' => 'Do I need to be home during the pruning visit?',
-        'a' => "Not usually. As long as the crew can reach the trees and gates are open, most DeLand pruning jobs run fine without the homeowner there. We do like to walk the plan with you first — at the estimate or the morning of the job — so you know exactly which limbs are coming off before a saw starts.",
     ],
 ];
 
@@ -924,7 +906,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <div class="prn-expert-split">
       <div>
-        <p class="prn-lede" data-animate>Anyone with a saw can shorten a branch. Knowing which branch, where the cut closes fastest, and how a live oak rooted in sandy Central Florida soil will respond two growing seasons from now is the actual trade. <?php echo e($siteName); ?> has pruned DeLand's oaks, pines, and palms since <?php echo e($yearEstablished); ?> &mdash; from the moss-draped canopies around historic downtown DeLand to newer yards in Deltona and Orange City &mdash; and certified arborist judgment decides every cut before a rope goes up.</p>
+        <p class="prn-lede" data-animate><?php echo e($siteName); ?> has pruned DeLand's oaks, pines, and palms since <?php echo e($yearEstablished); ?> &mdash; from the moss-draped canopies around historic downtown DeLand to newer yards in Deltona and Orange City. The trade is knowing which branch to take, where the cut closes fastest, and how a live oak in sandy Central Florida soil will respond two seasons later.</p>
         <ul class="prn-expert-points" data-p1-dynamic>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
@@ -932,11 +914,11 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
           </li>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
-            <p><strong>One crew, canopy to curb.</strong> Climbing, rigging, chipping, and cleanup from the same tree-and-land-clearing company &mdash; no second contractor to schedule, no brush pile left at the street.</p>
+            <p><strong>One crew, canopy to curb.</strong> Climbing, rigging, chipping, and cleanup from the same crew &mdash; no brush pile left at the street.</p>
           </li>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
-            <p><strong>Honest scope.</strong> If your tree needs a light trim instead of corrective pruning &mdash; or removal instead of either &mdash; you'll hear it plainly at the free estimate, not after the invoice.</p>
+            <p><strong>Honest scope.</strong> If your tree needs a light <a href="/services/tree-trimming-services/">tree trimming</a> visit instead of corrective pruning &mdash; or removal &mdash; you'll hear it at the free estimate.</p>
           </li>
         </ul>
       </div>
@@ -1053,7 +1035,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label" style="color: var(--color-accent);">Know What You're Buying</span>
       <h2>What's the difference between professional pruning and tree trimming?</h2>
-      <p class="answer-block">Trimming maintains a tree's appearance and clearance on a schedule; pruning is corrective work aimed at structure and health &mdash; which limbs stay, which go, and where each cut lands. God's Country does both, and we'll tell you honestly at the estimate which one your tree actually needs.</p>
+      <p class="answer-block">Trimming maintains appearance and clearance on a schedule; pruning is corrective work aimed at structure and health &mdash; which limbs stay and where each cut lands. God's Country does both and will tell you at the estimate which your tree needs.</p>
     </div>
 
     <div class="prn-compare-grid">
@@ -1083,22 +1065,22 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Pruning With a Plan</span>
       <h2>What is prescription pruning &mdash; and do DeLand trees need it?</h2>
-      <p class="answer-block">Prescription pruning in DeLand means the work starts with a written plan for your specific tree &mdash; species, defects, targets underneath, and storm exposure &mdash; instead of a one-size-fits-all trim. Our certified arborist writes the prescription, the crew makes only those cuts, and you keep the documentation.</p>
+      <p class="answer-block">God's Country prescription pruning in DeLand starts with a written plan for your specific tree &mdash; species, defects, targets underneath, and storm exposure. Our certified arborist writes the prescription, the crew makes only those cuts, and you keep the documentation.</p>
     </div>
 
-    <p class="prn-lede" data-animate>Volusia County homeowners usually meet the term two ways: an HOA or insurance carrier asks for <strong>tree mitigation</strong> on a tree flagged as a risk, or a longtime customer wants one plan that keeps a signature oak healthy for the next decade instead of paying for guesswork every few years. Both start the same way &mdash; a DeLand tree pruning expert on your property, on a ladder or with a resistograph if the tree warrants it, writing down exactly what the tree needs and why.</p>
+    <p class="prn-lede" data-animate>Volusia County homeowners usually need it when an HOA or insurer asks for <strong>tree mitigation</strong> on a flagged tree, or when they want one plan that keeps a signature oak healthy for the next decade.</p>
     <ul class="prn-expert-points" data-p1-dynamic>
       <li data-animate>
         <?php echo icon('badge-check'); ?>
-        <p><strong>A written prescription.</strong> Which limbs come off, which cuts we're making (thinning, reduction, raising, deadwood), the percentage of live canopy affected, and the season the work should happen &mdash; documented before a saw starts.</p>
+        <p><strong>A written prescription.</strong> Which limbs come off, which cuts (thinning, reduction, raising, deadwood), the share of live canopy affected, and the season for the work.</p>
       </li>
       <li data-animate>
         <?php echo icon('shield-check'); ?>
-        <p><strong>Mitigation pruning that satisfies the paperwork.</strong> When an insurer, HOA, or the City of DeLand flags a tree, we prune to the standard the notice actually requires &mdash; clearance, weight reduction over the roof, hazard deadwood &mdash; and document the finished work so you can close the file.</p>
+        <p><strong>Mitigation that satisfies the paperwork.</strong> When an insurer, HOA, or the City of DeLand flags a tree, we prune to what the notice requires and document the finished work so you can close the file.</p>
       </li>
       <li data-animate>
         <?php echo icon('check-circle'); ?>
-        <p><strong>An honest verdict.</strong> Some flagged trees don't need mitigation &mdash; and some can't be saved by it. If the right answer is monitoring, or removal, the prescription says so and you decide with real information.</p>
+        <p><strong>An honest verdict.</strong> If the right answer is monitoring or removal, the prescription says so.</p>
       </li>
     </ul>
   </div>
@@ -1110,7 +1092,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">A Realistic Schedule</span>
       <h2>How often should DeLand trees be pruned?</h2>
-      <p class="answer-block">Most mature DeLand oaks do well on a three-to-five-year pruning cycle, young shade trees benefit from structural pruning every two to three years, and any tree holding deadwood over a roof or driveway shouldn't wait for a schedule. We'll recommend an honest cadence at your free estimate.</p>
+      <p class="answer-block">Most mature DeLand oaks do well on a three-to-five-year pruning cycle, young shade trees every two to three years, and deadwood over a roof or driveway shouldn't wait for a schedule.</p>
     </div>
 
     <div class="prn-cadence-grid">
@@ -1132,7 +1114,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Good Questions</span>
       <h2>What do DeLand homeowners ask before a pruning visit?</h2>
-      <p class="answer-block">Usually some version of the same seven questions: whether pruning can save a struggling tree, how much canopy can safely come off, timing around hurricane season, palms, topping, cleanup, and scheduling. Straight answers below &mdash; anything else goes in the estimate form and gets answered within 24 hours.</p>
+      <p class="answer-block">Whether pruning can save a struggling tree, how much canopy can safely come off, topping, timing around hurricane season, and HOA or insurance mitigation. Anything else goes in the estimate form and gets answered within 24 hours.</p>
     </div>
 
     <div class="faq-grid" data-p1-dynamic>
@@ -1155,7 +1137,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">The Rest of the Canopy Work</span>
       <h2>What other tree services do DeLand property owners pair with tree pruning?</h2>
-      <p class="answer-block">Pruning usually rides along with related canopy work: trimming to hold the shape between pruning cycles, a certified arborist assessment when a tree's health is in question, and crown reduction when a canopy has simply outgrown its spot. One God's Country crew handles all of it.</p>
+      <p class="answer-block">Pruning usually rides along with related canopy work: <a href="/services/tree-trimming-services/">tree trimming</a> to hold the shape between pruning cycles, a <a href="/services/certified-arborist-services/">certified arborist assessment</a> when a tree's health is in question, and <a href="/services/crown-reduction-shaping/">crown reduction</a> when a canopy has simply outgrown its spot. One God's Country crew handles all of it.</p>
     </div>
 
     <?php renderServiceCards(['tree-trimming-services', 'certified-arborist-services', 'crown-reduction-shaping'], $serviceCardData); ?>

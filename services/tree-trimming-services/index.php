@@ -58,7 +58,7 @@ $trimTypes = [
     [
         'num'     => '01',
         'title'   => 'Clearance trimming',
-        'text'    => "Roofs, gutters, driveways, and pool screen enclosures are where an untrimmed oak does its damage first. Clearance trimming lifts and shortens the limbs over your structures — roped, cut in sections, and lowered, never dropped. Our bucket truck reaches canopies a ladder shouldn't, and we clear enough growth to keep shingles and screens out of reach for years, not one season.",
+        'text'    => "Roofs, gutters, driveways, and pool screen enclosures are where an untrimmed oak does its damage first. Clearance trimming lifts and shortens the limbs over your structures — roped, cut in sections, and lowered, never dropped — with enough growth cleared to keep shingles and screens out of reach for years, not one season.",
         'bullets' => ['Roof & gutter clearance', 'Pool enclosure protection', 'Driveway & walkway lift'],
         'photo'   => 'buckettruck',
         'w'       => 800, 'h' => 800,
@@ -66,7 +66,7 @@ $trimTypes = [
     [
         'num'     => '02',
         'title'   => 'Canopy health trimming',
-        'text'    => "Live oaks around DeLand carry heavy interior deadwood, crossing limbs, and enough Spanish moss to hide both. Health trimming opens the canopy so wind moves through it instead of pushing on it, removes the dead limbs that drop in summer storms, and leaves the strong structure standing. It's the single best pre-hurricane-season job a mature oak can get.",
+        'text'    => "Live oaks around DeLand carry heavy interior deadwood, crossing limbs, and enough Spanish moss to hide both. Health trimming opens the canopy so wind moves through it, removes the dead limbs that drop in summer storms, and leaves the strong structure standing.",
         'bullets' => ['Interior deadwood removed', 'Less wind sail in storms', 'Stronger remaining structure'],
         'photo'   => 'climber',
         'w'       => 800, 'h' => 1000,
@@ -74,7 +74,7 @@ $trimTypes = [
     [
         'num'     => '03',
         'title'   => 'Palm & appearance trimming',
-        'text'    => "Palms, crape myrtles, and street-facing trees carry the curb appeal on DeLand lots, from the historic downtown blocks out to the Stetson University area. Appearance trimming removes browning fronds and seed pods, shapes a canopy without butchering it, and keeps sightlines open at the end of the drive. The yard reads cared-for from the street — because it is.",
+        'text'    => "Palms, crape myrtles, and street-facing trees carry the curb appeal on DeLand lots, from the historic downtown blocks out to the Stetson University area. Appearance trimming removes browning fronds and seed pods, shapes a canopy without butchering it, and keeps sightlines open at the end of the drive.",
         'bullets' => ['Fronds & seed pods removed', 'Natural shape preserved', 'Clear drive sightlines'],
         'photo'   => 'loader',
         'w'       => 800, 'h' => 1000,
@@ -101,10 +101,6 @@ $faqs = [
     [
         'q' => 'How often should trees be trimmed in DeLand?',
         'a' => "Most DeLand hardwoods do well on a two-to-three-year trimming cycle, while palms and fast growers usually want yearly attention. Anything hanging over a roof, driveway, or pool enclosure deserves an annual look regardless of species. If you're not sure, we'll tell you honestly at the free estimate — some trees we look at simply don't need work yet.",
-    ],
-    [
-        'q' => 'Can you trim limbs hanging over my roof or pool enclosure?',
-        'a' => "Yes — roofline and pool-screen clearance is some of the most common trimming we do in DeLand. Limbs are roped and lowered in sections so nothing free-falls onto shingles or screen. We typically clear branches well off the structure so you get years of relief from the scraping and debris, not one season's worth.",
     ],
     [
         'q' => 'Do you trim palms too, or just oaks and pines?',
@@ -858,11 +854,11 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
 
     <div class="trm-diy-split">
       <div>
-        <p class="trm-diy-lede" data-animate>Anyone can shorten a branch. What <?php echo e($yearsInBusiness); ?> years of trimming DeLand trees buys you is knowing <strong>which branch, where to cut it, and what the tree will do about it next season</strong>. Topped oaks, lion-tailed limbs, and hurricane-cut palms all grow back weaker &mdash; and cost more to fix than trimming right the first time.</p>
+        <p class="trm-diy-lede" data-animate>Topped oaks, lion-tailed limbs, and hurricane-cut palms all grow back weaker &mdash; and cost more to fix than trimming right the first time.</p>
         <ul class="trm-points" data-p1-dynamic>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
-            <p><strong>Collar cuts that heal.</strong> Every limb comes off at the branch collar so the wound closes naturally &mdash; no stubs, no flush cuts, no rot pockets for Florida humidity to work on.</p>
+            <p><strong>Collar cuts that heal.</strong> Every limb comes off at the branch collar &mdash; no stubs, no flush cuts, no rot pockets for Florida humidity.</p>
           </li>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
@@ -870,7 +866,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
           </li>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
-            <p><strong>Rope, saddle, and bucket truck.</strong> Trimming from proper rigging instead of a leaning ladder is why the crew goes home healthy and your fence stays in one piece.</p>
+            <p><strong>Rope, saddle, and bucket truck.</strong> Proper rigging instead of a leaning ladder keeps the crew safe and your fence in one piece.</p>
           </li>
         </ul>
       </div>
@@ -1010,7 +1006,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Good Questions</span>
       <h2>What do DeLand homeowners ask before booking tree trimming?</h2>
-      <p class="answer-block">The same handful of questions, almost every visit: how often, how much comes off, palms versus oaks, debris, power lines, and timing around hurricane season. Straight answers are below &mdash; and anything we missed goes in the estimate form and gets answered within 24 hours.</p>
+      <p class="answer-block">How often, palms versus oaks, tree stress, debris, power lines, and timing around hurricane season. Anything we missed goes in the estimate form and gets answered within 24 hours.</p>
     </div>
 
     <div class="faq-grid" data-p1-dynamic>
@@ -1033,7 +1029,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Beyond the Trim</span>
       <h2>What other tree services do DeLand property owners pair with tree trimming?</h2>
-      <p class="answer-block">Trimming keeps a healthy canopy in shape; three services pick up where it stops. Structural pruning corrects a tree's long-term form, crown reduction takes real weight off storm-loaded oaks, and a maintenance plan puts the whole DeLand yard on a schedule &mdash; all quoted by the same God's Country crew.</p>
+      <p class="answer-block">Trimming keeps a healthy canopy in shape; three services pick up where it stops. Structural <a href="/services/tree-pruning-services/">tree pruning</a> corrects a tree's long-term form, <a href="/services/crown-reduction-shaping/">crown reduction</a> takes real weight off storm-loaded oaks, and a <a href="/services/tree-maintenance-care/">tree maintenance plan</a> puts the whole DeLand yard on a schedule &mdash; all quoted by the same God's Country crew.</p>
     </div>
 
     <?php renderServiceCards(['tree-pruning-services', 'crown-reduction-shaping', 'tree-maintenance-care'], $serviceCardData); ?>

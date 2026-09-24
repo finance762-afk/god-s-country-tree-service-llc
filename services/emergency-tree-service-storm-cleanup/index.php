@@ -20,7 +20,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-cards.php';
 $currentPage = 'services';
 $serviceSlug = 'emergency-tree-service-storm-cleanup';
 
-// V2.1 trade-noun title (57 chars) + V2.2 CTR meta (156 chars)
+// Title/meta: GC SEO pass 2026-09-24 (rating from config $gbpRating)
 $pageTitle       = "Emergency Tree Removal DeLand FL | 24/7 Storm Cleanup | {$gbpRating}★";
 $pageDescription = "Emergency tree removal in DeLand, FL 24/7. Storm damage, trees on roofs, blocked drives. Rated {$gbpRating}★ from {$gbpReviewCount} Google reviews, licensed & insured: (407) 280-3484.";
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
@@ -51,23 +51,23 @@ $bodyPhotos = [
 $stormSteps = [
     [
         'title' => 'Get people clear and stay clear',
-        'text'  => "Move everyone — kids, pets, curious neighbors — away from the tree, and treat every downed wire as live until the utility says otherwise. If a trunk is resting on the house, stay out of the rooms beneath it. Nothing about a storm-damaged tree is worth standing under.",
+        'text'  => "Move everyone — kids, pets, neighbors — away from the tree, and treat every downed wire as live until the utility says otherwise. If a trunk is resting on the house, stay out of the rooms beneath it.",
     ],
     [
         'title' => 'Photograph everything before it moves',
-        'text'  => 'From a safe distance, shoot wide photos of the tree, the structure it hit, and the yard around it. Insurance adjusters want to see the scene as the storm left it — those pictures are worth real money, and they take two minutes.',
+        'text'  => 'From a safe distance, shoot wide photos of the tree, the structure it hit, and the yard around it, plus close-ups of the impact. Adjusters want the scene as the storm left it.',
     ],
     [
         'title' => 'Send us the address and the photos',
-        'text'  => 'Use the estimate form or the contact page and tell us three things: where you are, what the tree is on, and whether anyone can\'t safely get in or out. Photos let us size the crew and equipment before the truck leaves DeLand.',
+        'text'  => 'Call, or use the estimate form, and tell us three things: where you are, what the tree is on, and whether anyone can\'t safely get in or out. Photos let us size the crew before the truck leaves DeLand.',
     ],
     [
         'title' => 'We triage and give you an honest window',
-        'text'  => 'Trees on roofs, trees blocking the only way out, and trunks pinning pool screen enclosures jump the line. Yard debris waits its turn. Either way you get a straight answer about when the crew arrives — not a promise invented to win the job.',
+        'text'  => 'Trees on roofs, trees blocking the only way out, and trunks pinning pool screen enclosures jump the line. Yard debris waits its turn. Either way you get a straight answer about when the crew arrives.',
     ],
     [
         'title' => 'Stabilize, cut, clear, and haul',
-        'text'  => 'A climber relieves the tension in storm-loaded wood before anything is cut free, the grapple loader carries the trunk out without dragging it across the lawn, and the chipper turns the canopy into a clean yard. Debris leaves on our trucks.',
+        'text'  => 'A climber relieves the tension in storm-loaded wood before anything is cut free, the grapple loader carries the trunk out, and the chipper clears the canopy. Debris leaves on our trucks.',
     ],
 ];
 
@@ -92,7 +92,7 @@ $comparison = [
 $faqs = [
     [
         'q' => 'Do you do emergency tree removal in DeLand, FL — not just cleanup?',
-        'a' => "Yes. Emergency tree removal is most of what the storm line rings for: a tree on the roof, split down the trunk, or hung up over the driveway that has to come out now, not next week. The same crew that answers the call runs the rigging and hauls the wood — one number, from the first tarp to the last load of debris.",
+        'a' => "Yes. Emergency tree removal is most of what the storm line rings for: a tree on the roof, split down the trunk, or hung up over the driveway that has to come out now. The same crew that answers the call runs the rigging and hauls the wood.",
     ],
     [
         'q' => 'Do you really answer emergency tree calls at night and on weekends?',
@@ -108,19 +108,11 @@ $faqs = [
     ],
     [
         'q' => 'Will homeowner\'s insurance cover storm cleanup?',
-        'a' => "When a tree lands on a covered structure — house, garage, fence, pool enclosure — policies usually help with removal from the structure. We can't speak for your carrier, but we supply what adjusters ask for: photos, a written scope, and an itemized invoice. Volusia County homeowners have filed our paperwork with their claims for years.",
-    ],
-    [
-        'q' => 'What should I do while I wait for the crew?',
-        'a' => "Keep people and pets away from the tree, photograph the damage from a safe distance, and close off any rooms under the impact. Don't start cutting, don't pull limbs off the roof, and don't let a door-knocking crew start work you haven't priced. If anything shifts or you smell gas, call 911 before anyone else.",
-    ],
-    [
-        'q' => 'Do you handle storm emergencies in Deltona, Orange City, and DeBary?',
-        'a' => "Yes. From our DeLand base we run emergency calls across Volusia County — Deltona, Orange City, DeBary, Lake Helen, and communities within roughly 50 miles. After a widespread storm we triage the whole area the same way: structures and blocked access first, standing hazards next, yard debris after that.",
+        'a' => "When a tree lands on a covered structure — house, garage, fence, pool enclosure — policies usually help with removal from the structure. We can't speak for your carrier, but we supply what adjusters ask for: photos, a written scope, and an itemized invoice.",
     ],
     [
         'q' => 'How is emergency work priced compared to a scheduled removal?',
-        'a' => "Emergency pricing reflects the hazard, the access, and the equipment the job demands — a trunk balanced on a ridgeline takes more rigging than the same tree standing in the open. What doesn't change is how you get the number: in writing, before we cut, even at 2 AM. No driveway cash prices, no surprise add-ons after.",
+        'a' => "Emergency pricing reflects the hazard, the access, and the equipment the job demands — a trunk balanced on a ridgeline takes more rigging than the same tree in the open. What doesn't change: the number is in writing before we cut, even at 2 AM.",
     ],
 ];
 
@@ -148,7 +140,7 @@ $pageSchema = generateServiceSchema($svc)
     . generateBreadcrumbSchema([
         ['name' => 'Home',     'url' => '/'],
         ['name' => 'Services', 'url' => '/services/'],
-        ['name' => 'Emergency Tree Service & Storm Cleanup'],
+        ['name' => 'Emergency Tree Removal & Storm Cleanup'],
     ])
     . '<script type="application/ld+json">' . json_encode($speakableSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>';
 
@@ -868,10 +860,26 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   .emg-proof-gallery figure:first-child { grid-column: auto; }
   .emg-hero .hero-actions, .emg-cta .hero-actions { flex-direction: column; align-items: stretch; }
 }
+.emg-powerline {
+  display: flex;
+  gap: var(--space-md);
+  align-items: flex-start;
+  margin: 0 auto var(--space-xl);
+  max-width: 820px;
+  padding: var(--space-lg);
+  border-left: 5px solid var(--color-accent);
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--color-accent) 10%, var(--color-white));
+  box-shadow: var(--shadow-md);
+}
+.emg-powerline-icon { flex: 0 0 auto; color: var(--color-accent); }
+.emg-powerline-icon svg { width: 36px; height: 36px; }
+.emg-powerline h3 { text-wrap: balance; margin-bottom: var(--space-xs); color: var(--color-dark); }
+.emg-powerline p { max-width: 65ch; }
 </style>
 
 <!-- ============ HERO (C1.4 dark urgent variant) ============ -->
-<section class="emg-hero has-hero-bg" aria-label="Emergency tree service in DeLand, Florida">
+<section class="emg-hero has-hero-bg" aria-label="Emergency tree removal in DeLand, Florida">
   <?php echo p1_hero_picture($heroImage); ?>
   <div class="container hero-with-form">
     <div class="hero-copy">
@@ -880,18 +888,18 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <span class="sep" aria-hidden="true">/</span>
       <a href="/services/">Services</a>
       <span class="sep" aria-hidden="true">/</span>
-      <span aria-current="page">Emergency Tree Service &amp; Storm Cleanup</span>
+      <span aria-current="page">Emergency Tree Removal &amp; Storm Cleanup</span>
     </nav>
 
     <span class="emg-badge"><span class="emg-beacon" aria-hidden="true"></span> 24/7 Storm Response &middot; DeLand, FL</span>
 
-    <h1>Emergency Tree Service &amp; Storm Cleanup in DeLand, FL &mdash; <span class="text-accent">Answered 24/7</span></h1>
+    <h1>Emergency Tree Removal in DeLand, FL &mdash; <span class="text-accent">24/7 Storm Cleanup</span></h1>
 
-    <p class="hero-answer">When a storm drops a live oak on your roof at 2 AM, you need a crew that's already in town. <?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving all of Volusia County &mdash; answering emergency calls and storm cleanup requests 24/7, every day of hurricane season.</p>
+    <p class="hero-answer">Call <?php echo e($siteName); ?> at <a href="<?php echo e(phoneHref($phone)); ?>"><?php echo e(formatPhone($phone)); ?></a> &mdash; emergency tree removal and storm damage calls in DeLand are answered 24/7. Send your address and photos, genuine hazards like a tree on your roof get same-day response, and you get the price in writing before a saw starts. We're a licensed and insured tree service based in DeLand, serving all of Volusia County.</p>
 
     <div class="hero-actions">
-      <a href="#estimate-form" class="btn btn-accent btn-lg">Request Emergency Help</a>
-      <a href="/contact/" class="btn btn-outline-white btn-lg">Send Photos of the Damage</a>
+      <a href="<?php echo e(phoneHref($phone)); ?>" class="btn btn-accent btn-lg">Call 24/7: <?php echo e(formatPhone($phone)); ?></a>
+      <a href="#estimate-form" class="btn btn-outline-white btn-lg">Send Photos of the Damage</a>
     </div>
 
     <div class="hero-trust">
@@ -941,12 +949,20 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 </div>
 
 <!-- ============ TRIAGE — 01 ============ -->
-<section class="numbered-section emg-triage" data-num="01" aria-label="What to do after storm damage">
+<section class="numbered-section emg-triage" id="hurricane-season" data-num="01" aria-label="Hurricane season storm damage: the first hour">
   <div class="container">
     <div class="section-title" data-animate>
-      <span class="eyebrow-label">The First Hour</span>
-      <h2>What should you do right after storm damage to a tree?</h2>
-      <p class="answer-block">Stay away from the tree, assume any downed line is live, and get everyone out from under damaged limbs. Photograph the damage from a safe distance for your insurance claim, then send us your address and photos. Don't start cutting &mdash; storm-loaded wood is under tension and moves without warning.</p>
+      <span class="eyebrow-label">Hurricane Season &middot; Peak September&ndash;November</span>
+      <h2>What should you do in the first hour after a hurricane damages a tree?</h2>
+      <p class="answer-block">Stay away from the tree, assume any downed line is live, and get everyone out from under damaged limbs. Photograph the damage from a safe distance for your insurance claim, then call <?php echo e($siteName); ?> or send your address and photos. Don't start cutting &mdash; storm-loaded wood is under tension and moves without warning.</p>
+    </div>
+
+    <div class="emg-powerline" data-animate>
+      <div class="emg-powerline-icon"><?php echo icon('zap-off'); ?></div>
+      <div>
+        <h3>When should you NOT touch a tree after a storm?</h3>
+        <p>Never touch a tree, limb, or fence that is touching or tangled in a power line &mdash; and don't let a tree crew touch it either. Treat the line and everything in contact with it as live, keep people and pets well back, and report it to your electric utility (or 911 if it's sparking or on fire). <?php echo e($siteName); ?> starts cutting only after the utility has de-energized or cleared the line.</p>
+      </div>
     </div>
 
     <div class="emg-triage-layout">
@@ -995,15 +1011,15 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <div class="emg-who-split">
       <div class="emg-who-copy">
-        <p data-animate>Hurricane season turns tree work into a different trade. The live oaks and slash pines that shade DeLand yards carry enormous canopies, and when sustained wind finds a weak root plate in sandy Central Florida soil, the failure is sudden &mdash; across a roof, a fence line, or a pool screen enclosure. The crew that handles that safely is the one that has spent years taking these same species apart on ropes, not a crew seeing Florida oaks for the first time.</p>
+        <p data-animate>The live oaks and slash pines that shade DeLand yards carry enormous canopies, and when hurricane wind finds a weak root plate in sandy Central Florida soil, the failure is sudden &mdash; across a roof, a fence line, or a pool screen enclosure. Taking that apart safely takes a crew that has spent years roping down these same species. For the insurance side, see <a href="/blog/insurance-fallen-tree-removal-florida/">what Florida homeowners insurance covers after a tree falls</a>.</p>
         <ul class="emg-points" data-p1-dynamic>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
-            <p><strong>One call covers the whole emergency.</strong> Climbing, rigging, skid-steer work, chipping, and haul-off come from the same company &mdash; no waiting on a second contractor while the tree sits on your house.</p>
+            <p><strong>One call covers the whole emergency.</strong> Climbing, rigging, skid-steer work, chipping, and haul-off come from the same company.</p>
           </li>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
-            <p><strong>Certified arborist judgment under pressure.</strong> We tell you which damaged trees are lost, which can be saved with crown work later, and which can safely wait until the emergency rates end.</p>
+            <p><strong>Certified arborist judgment under pressure.</strong> We tell you which damaged trees are lost, which can be saved, and which can safely wait.</p>
           </li>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
@@ -1038,7 +1054,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <span class="eyebrow-label">Minutes Matter</span>
         <h2>How fast can your emergency tree service get to me?</h2>
         <p class="answer-block">Same-day response for genuine hazards is the standard. We're based in DeLand, so most of Volusia County is a short drive &mdash; not a regional dispatch queue. After a widespread hurricane we triage honestly: trees on homes and blocked driveways first, standing hazards next, yard debris after that.</p>
-        <p data-animate>If you're searching for emergency tree service near me in DeLand from a driveway buried in oak limbs, here's what that search should find: a crew whose shop, equipment, and climbers are already inside the county line. No staging area three counties away, no subcontracted strangers &mdash; the trucks in our photos are the trucks that pull up.</p>
+        <p data-animate>Searching for emergency tree removal near me in DeLand? Our shop, equipment, and climbers are already inside the county line &mdash; no staging area three counties away, no subcontracted strangers. The trucks in our photos are the trucks that pull up.</p>
         <div class="emg-area-chips" data-p1-dynamic>
           <?php foreach (['DeLand', 'Deltona', 'Orange City', 'DeBary', 'Lake Helen', 'Volusia County'] as $area): ?>
           <span class="emg-area-chip"><?php echo icon('map-pin'); ?> <?php echo e($area); ?></span>
@@ -1066,15 +1082,15 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="emg-cost-factors">
       <div class="emg-cost-factor reveal-delay-1" data-animate>
         <h3>What the tree is on</h3>
-        <p>A trunk across open lawn is a loader job. The same trunk balanced on a ridgeline or a pool screen enclosure needs rigging, roped sections, and a slower, more careful crew.</p>
+        <p>A trunk across open lawn is a loader job. The same trunk on a ridgeline or pool screen enclosure needs rigging and roped sections.</p>
       </div>
       <div class="emg-cost-factor reveal-delay-2" data-animate>
         <h3>Access after the storm</h3>
-        <p>Flooded yards, blocked streets, and tight gates decide which machines reach the tree. When the grapple loader can work, cleanup is faster and the bill reflects it.</p>
+        <p>Flooded yards, blocked streets, and tight gates decide which machines reach the tree. When the grapple loader can work, the bill reflects it.</p>
       </div>
       <div class="emg-cost-factor reveal-delay-3" data-animate>
         <h3>Stabilize now, finish later</h3>
-        <p>Sometimes the smart move is a two-visit plan: remove the immediate hazard tonight, then finish the takedown and haul-off at standard rates. We quote it both ways when it saves you money.</p>
+        <p>Sometimes the smart move is two visits: remove the immediate hazard tonight, then finish the takedown and haul-off at standard rates.</p>
       </div>
     </div>
   </div>
@@ -1086,7 +1102,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Our Crew, Real Storm Work</span>
       <h2>What does storm cleanup look like when the crew is local?</h2>
-      <p class="answer-block">It looks like the same branded equipment DeLand sees all year: a climber topping the broken spar, the grapple loader carrying out the trunk, and the chipper turning storm brush into a clean yard. These photos are our crew on real Volusia County jobs &mdash; not stock imagery.</p>
+      <p class="answer-block">It looks like the same equipment DeLand sees all year: a climber topping the broken spar, the grapple loader carrying out the trunk, and the chipper clearing the brush. These photos are our crew on real Volusia County jobs.</p>
     </div>
 
     <div class="emg-proof-gallery">
@@ -1121,7 +1137,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label" style="color: var(--color-accent);">After Every Hurricane</span>
       <h2>How do you spot a storm-chaser before you sign anything?</h2>
-      <p class="answer-block">Watch for cash-only prices shouted from a truck window, out-of-state plates, pressure to sign on the spot, and insurance claims with no paperwork behind them. A legitimate local tree service gives you a written price, verifiable coverage, and a DeLand address that still exists when hurricane season ends.</p>
+      <p class="answer-block">Watch for cash-only prices, out-of-state plates, pressure to sign on the spot, and insurance claims with no paperwork. A legitimate local tree service gives you a written price, verifiable coverage, and a DeLand address that still exists after hurricane season.</p>
     </div>
 
     <div class="emg-compare-grid">
@@ -1151,7 +1167,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Asked at 2 AM</span>
       <h2>What do DeLand homeowners ask during a tree emergency?</h2>
-      <p class="answer-block">Mostly the same seven things: whether anyone answers at night, whether the house is safe, power lines, insurance, what to do while waiting, how far we travel, and how emergency pricing works. Straight answers below &mdash; and if your situation is urgent, skip ahead and send photos through the form now.</p>
+      <p class="answer-block">DeLand homeowners in a tree emergency ask <?php echo e($siteName); ?> the same six things: removal versus cleanup, night and weekend calls, whether the house is safe, power lines, insurance, and emergency pricing. Straight answers below &mdash; and if it's urgent, call now.</p>
     </div>
 
     <div class="faq-grid" data-p1-dynamic>
@@ -1174,7 +1190,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">After the Emergency</span>
       <h2>What other tree services do DeLand property owners pair with storm cleanup?</h2>
-      <p class="answer-block">Storm work rarely ends with the emergency visit. DeLand property owners usually pair storm cleanup with fallen tree removal for what's already on the ground, hazardous tree removal for the leaners the wind exposed, and standard tree removal for the trees the storm finished off.</p>
+      <p class="answer-block">DeLand property owners usually pair storm cleanup with <a href="/services/fallen-tree-removal-cleanup/">fallen tree removal</a> for what's already on the ground, hazardous tree removal for the leaners the wind exposed, and standard tree removal for the trees the storm finished off.</p>
     </div>
 
     <?php renderServiceCards(['fallen-tree-removal-cleanup', 'dead-hazardous-tree-removal', 'tree-removal'], $serviceCardData); ?>
@@ -1188,8 +1204,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <h2>Is a Tree on Your Roof or Leaning Over Your Home Right Now?</h2>
     <p class="answer-block">Don't wait it out. Send your address, photos, and what happened &mdash; <?php echo e($siteName); ?> will triage the hazard, give you a straight answer on timing, and put the price in writing before the saws start. Stay clear of the tree until we get there.</p>
     <div class="hero-actions">
-      <a href="#estimate-form" class="btn btn-accent btn-lg">Request Emergency Help Now</a>
-      <a href="/contact/" class="btn btn-outline-white btn-lg">Send Damage Photos</a>
+      <a href="<?php echo e(phoneHref($phone)); ?>" class="btn btn-accent btn-lg">Call 24/7: <?php echo e(formatPhone($phone)); ?></a>
+      <a href="#estimate-form" class="btn btn-outline-white btn-lg">Send Damage Photos</a>
     </div>
   </div>
 </section>

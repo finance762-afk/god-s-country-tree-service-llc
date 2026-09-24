@@ -56,7 +56,7 @@ $removalSteps = [
     ['title' => 'Walk-through & straight answer', 'text' => 'We look at the tree, the targets around it — house, pool screen, fence, lines — and tell you honestly whether it needs to come down or can be saved with pruning or crown reduction. You get a free written estimate within 24 hours.'],
     ['title' => 'Rigging plan & site protection', 'text' => 'Big DeLand oaks rarely have room to fall whole. We plan drop zones, set rigging lines, and stage plywood or mats where the loader will travel so your lawn and irrigation survive the job.'],
     ['title' => 'Controlled section takedown',    'text' => 'A climber or boom lift takes the canopy apart piece by piece. Every heavy section is roped and lowered — not dropped — which is how removals over roofs and screen enclosures stay boring.'],
-    ['title' => 'Grapple, chip & haul',           'text' => 'Our grapple loader and chipper turn the canopy into a clean pile fast. Logs, brush, and debris leave on our trucks the same day — most quotes include hauling so there\'s no surprise add-on.'],
+    ['title' => 'Grapple, chip & haul',           'text' => 'Logs, brush, and debris leave on our trucks the same day — most quotes include hauling so there\'s no surprise add-on.'],
     ['title' => 'Stump & final walkthrough',      'text' => 'If stump grinding is in the quote, we grind below grade and rake the site. Then we walk the yard with you before we call it done.'],
 ];
 
@@ -85,15 +85,15 @@ $faqs = [
     ],
     [
         'q' => 'Can you remove a tree that\'s right next to my house or pool enclosure?',
-        'a' => "Yes — that's most of what we do. Tight-quarters removals over roofs, pool screens, fences, and driveways are handled with roped, controlled lowering rather than free-falling sections. Between climbers, a boom lift, and a compact grapple loader, we can work yards where a crane won't fit.",
+        'a' => "Yes — that's most of what we do. Tight-quarters removals over roofs, pool screens, fences, and driveways are handled with roped, controlled lowering rather than free-falling sections. A boom lift and compact grapple loader work yards where a crane won't fit.",
     ],
     [
         'q' => 'What happens to the wood and debris?',
-        'a' => 'Brush goes through the chipper, logs go on the grapple truck, and everything leaves the same day when hauling is in your quote. Want to keep firewood rounds or milling slabs? Tell us at the estimate and we\'ll buck the trunk to length and stack it where you want it — no charge for asking.',
+        'a' => 'Brush goes through the chipper, logs go on the grapple truck, and everything leaves the same day when hauling is in your quote. Want to keep firewood rounds or milling slabs? Tell us at the estimate and we\'ll buck the trunk to length and stack it.',
     ],
     [
         'q' => 'Will my homeowner\'s insurance pay for tree removal?',
-        'a' => "If a tree fell on a covered structure, your policy usually helps; a standing tree removed as prevention usually isn't covered. We can't promise what your carrier will do, but we provide the written estimate, photos, and documentation adjusters ask for — DeLand homeowners have used our paperwork in claims for years.",
+        'a' => "If a tree fell on a covered structure, your policy usually helps; a standing tree removed as prevention usually isn't covered. We can't promise what your carrier will do, but we provide the written estimate, photos, and documentation adjusters ask for.",
     ],
 ];
 
@@ -807,7 +807,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <div class="expert-split">
       <div>
-        <p class="drop-cap" data-animate>Most of the removals we quote in DeLand are live oaks and slash pines standing closer to a structure than they are tall. That geometry is exactly why homeowners call a tree service instead of renting a chainsaw: the tree cannot fall whole, so it has to come down in pieces, in the right order, on ropes. Our crew has been making that call &mdash; and that cut &mdash; across Volusia County since <?php echo e($yearEstablished); ?>.</p>
+        <p class="drop-cap" data-animate>Most of the removals we quote in DeLand are live oaks and slash pines standing closer to a structure than they are tall. The tree cannot fall whole, so it has to come down in pieces, in the right order, on ropes. Our crew has been making that call &mdash; and that cut &mdash; across Volusia County since <?php echo e($yearEstablished); ?>.</p>
         <ul class="expert-points" data-p1-dynamic>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
@@ -888,7 +888,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       </div>
       <div class="cost-factor reveal-delay-3" data-animate>
         <h3>Condition &amp; access</h3>
-        <p>Dead and decayed trees need slower, more careful climbing. Tight gate access changes which machines fit. Both show up honestly in the written quote, never as a surprise after.</p>
+        <p>Dead and decayed trees need slower, more careful climbing. Tight gate access changes which machines fit. Both show up in the written quote.</p>
       </div>
     </div>
   </div>
@@ -935,7 +935,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label" style="color: var(--color-accent);">Know Who You're Hiring</span>
       <h2>Why hire a local DeLand crew instead of a storm-chaser?</h2>
-      <p class="answer-block">Because the crew that lives here answers the phone after the job, too. Storm-chasing outfits roll into Volusia County behind every hurricane, quote cash prices, and vanish. A local, licensed tree service is accountable for its work &mdash; and it's here in February, not just the week after landfall.</p>
+      <p class="answer-block">Because the crew that lives here answers the phone after the job, too. Storm-chasing outfits roll into Volusia County behind every hurricane, quote cash prices, and vanish. A local, licensed tree service is here in February, not just the week after landfall.</p>
     </div>
 
     <div class="compare-grid">
@@ -981,7 +981,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Good Questions</span>
       <h2>What do DeLand homeowners ask before a tree removal?</h2>
-      <p class="answer-block">The same six things, almost every time: permits, timing, stumps, tight access, where the wood goes, and insurance. Straight answers below &mdash; and if yours isn't here, put it in the estimate form and we'll answer it within 24 hours, no obligation attached.</p>
+      <p class="answer-block">The same six things, almost every time: permits, timing, stumps, tight access, where the wood goes, and insurance. If yours isn't here, put it in the estimate form and we'll answer within 24 hours.</p>
     </div>
 
     <div class="faq-grid" data-p1-dynamic>
@@ -1004,7 +1004,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Keep the Rest Standing</span>
       <h2>What other tree services do DeLand property owners pair with tree removal?</h2>
-      <p class="answer-block">Most removals come with follow-up work: hazardous trees flagged during the same walk-through, storm cleanup when weather forced the decision, and trimming to keep the survivors healthy. All three come from the same God's Country crew, usually quoted in the same free estimate.</p>
+      <p class="answer-block">Most removals come with follow-up work: <a href="/services/dead-hazardous-tree-removal/">dead and hazardous tree removal</a> for trees flagged during the same walk-through, <a href="/services/emergency-tree-service-storm-cleanup/">emergency tree removal</a> when a storm forced the decision, and <a href="/services/tree-trimming-services/">tree trimming in DeLand</a> to keep the survivors healthy. All three come from the same God's Country crew, usually quoted in the same free estimate.</p>
     </div>
 
     <?php renderServiceCards(['dead-hazardous-tree-removal', 'emergency-tree-service-storm-cleanup', 'tree-trimming-services'], $serviceCardData); ?>

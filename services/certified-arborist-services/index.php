@@ -89,10 +89,6 @@ $faqs = [
         'a' => "Our team holds Florida arborist certifications and maintains full liability and workers' compensation insurance — and we'll show proof of coverage before any work starts. That combination matters in DeLand, where storm season brings out plenty of crews whose paperwork doesn't survive a second look. Ask for documentation at the estimate; we expect you to.",
     ],
     [
-        'q' => 'Can a palm with ganoderma butt rot be saved?',
-        'a' => "Honestly, no. Once ganoderma conks appear at the base, the decay inside the trunk is already extensive and there is no effective treatment. The responsible move is removal before the palm fails on its own — and we'll advise against replanting another palm in the same spot, since the fungus persists in the soil.",
-    ],
-    [
         'q' => 'My oak is thinning — does it have to come down?',
         'a' => "Not necessarily. A thinning crown is a symptom, not a verdict. Drought stress, root damage from construction, soil compaction, and disease all produce similar-looking canopies but call for completely different responses. We assess the root flare, trunk, and dieback pattern first — many DeLand oaks recover with corrective pruning and root-zone care instead of removal.",
     ],
@@ -103,10 +99,6 @@ $faqs = [
     [
         'q' => 'Do you treat trees, or just recommend removals?',
         'a' => "We do the work, not just the diagnosis. Corrective pruning, crown reduction, deadwood removal, and ongoing maintenance plans all come from the same crew that assessed the tree — and when removal is the honest answer, we handle that too. One local company, one written quote, no hand-off to a subcontractor you've never met.",
-    ],
-    [
-        'q' => 'When should I have my trees assessed before hurricane season?',
-        'a' => "Spring — ideally before June 1, when the season officially starts. That leaves time to prune, reduce, or remove flagged trees while schedules are open and prices are calm. Waiting until a storm is named means competing with every other property in Volusia County for the same crews at the same time.",
     ],
     [
         'q' => 'Can you check my trees after a pool or addition was built?',
@@ -940,7 +932,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     </div>
 
     <div class="arb-lede" data-animate>
-      <p class="drop-cap">Most tree problems in DeLand don&rsquo;t announce themselves until they&rsquo;re expensive. The live oak shading your driveway thins a little more each spring. The queen palm by the pool screen enclosure pushes out yellow, ragged fronds. Sandy Central Florida soil drains fast, hides root damage, and lets decay work quietly for years. Arborist work is catching those stories early &mdash; and knowing which chapter the tree is actually in.</p>
+      <p class="drop-cap">Most tree problems in DeLand don&rsquo;t announce themselves until they&rsquo;re expensive. Sandy Central Florida soil drains fast, hides root damage, and lets decay work quietly for years &mdash; arborist work is catching those stories early.</p>
     </div>
 
     <div class="arb-symptoms">
@@ -1122,7 +1114,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Good Questions</span>
       <h2>What do DeLand property owners ask a certified arborist?</h2>
-      <p class="answer-block">The questions cluster around the same worries: credentials, sick palms, thinning oaks, cost, and timing before hurricane season. Straight answers below &mdash; and if your tree&rsquo;s situation isn&rsquo;t covered, describe it in the estimate form and you&rsquo;ll have an answer within 24 hours.</p>
+      <p class="answer-block">The questions cluster around credentials, thinning oaks, cost, and construction damage. If your tree&rsquo;s situation isn&rsquo;t covered, describe it in the estimate form and you&rsquo;ll have an answer within 24 hours.</p>
     </div>
 
     <div class="faq-grid" data-p1-dynamic>
@@ -1145,7 +1137,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">After the Diagnosis</span>
       <h2>What other tree services do DeLand property owners pair with arborist services?</h2>
-      <p class="answer-block">An assessment usually leads somewhere: corrective pruning for the trees worth saving, ongoing maintenance to keep them that way, and removal when a hazard can&rsquo;t be treated. All three come from the same God&rsquo;s Country crew in DeLand, usually quoted in the same free estimate.</p>
+      <p class="answer-block">An assessment usually leads somewhere: <a href="/services/tree-pruning-services/">corrective tree pruning</a> for the trees worth saving, ongoing <a href="/services/tree-maintenance-care/">tree maintenance</a> to keep them that way, and <a href="/services/dead-hazardous-tree-removal/">hazardous tree removal</a> when a hazard can&rsquo;t be treated. All three come from the same God&rsquo;s Country crew in DeLand, usually quoted in the same free estimate.</p>
     </div>
 
     <?php renderServiceCards(['tree-pruning-services', 'tree-maintenance-care', 'dead-hazardous-tree-removal'], $serviceCardData); ?>
