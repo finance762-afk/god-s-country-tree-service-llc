@@ -23,8 +23,8 @@ $currentPage = 'services';
 $serviceSlug = 'tree-planting-shrub-installation';
 
 // V2.1 trade-noun title (57 chars) + V2.2 CTR meta (152 chars)
-$pageTitle       = "Tree Planting in DeLand, FL | God's Country Tree Service";
-$pageDescription = 'Tree planting in DeLand, FL — Florida native trees & shrubs installed by a licensed local tree service, 12+ years. Plan your planting with a free estimate.';
+$pageTitle       = "Tree Planting DeLand FL | {$gbpRating}★ ({$gbpReviewCount} Google Reviews)";
+$pageDescription = "Tree planting in DeLand, FL rated {$gbpRating}★ from {$gbpReviewCount} Google reviews. Florida-native trees & shrubs, licensed & insured, free estimate in 24 hours: (407) 280-3484.";
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 
 // ---- Images (content/image-manifest.md allocation) ----

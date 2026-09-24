@@ -19,8 +19,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-cards.php';
 $currentPage = 'service-area';
 
 // ---- SEO (V2.1 trade noun + V2.2 CTR meta) -----------------
-$pageTitle       = "Tree Service in Deltona, FL | God's Country Tree Service";
-$pageDescription = "Tree service in Deltona, FL from a licensed & insured local crew — 24-hour storm response, controlled removals, debris hauled. Free estimates in 24 hours.";
+$pageTitle       = "Tree Service Deltona FL | {$gbpRating}★ ({$gbpReviewCount} Google Reviews)";
+$pageDescription = "Tree service in Deltona, FL from a DeLand crew rated {$gbpRating}★ from {$gbpReviewCount} Google reviews. Licensed & insured, 24/7 storm help, free 24-hour estimate: (407) 280-3484.";
 $canonicalUrl    = $siteUrl . '/service-area/deltona/';
 
 // ---- Images (content/image-manifest.md allocation) ----------

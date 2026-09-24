@@ -21,8 +21,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-cards.php';
 $currentPage = 'service-area';
 
 // ---- SEO (V2.1 trade noun + V2.2 CTR meta) ----
-$pageTitle       = "Tree Service in DeLeon Springs, FL | God's Country Tree";
-$pageDescription = 'Tree service in DeLeon Springs, FL for big-acreage lots, land clearing & skid-steer/grapple work. Licensed & insured, 12+ years. Get your free estimate in 24 hours.';
+$pageTitle       = "Tree Service DeLeon Springs FL | {$gbpRating}★ {$gbpReviewCount} Google Reviews";
+$pageDescription = "Tree service in DeLeon Springs, FL rated {$gbpRating}★ from {$gbpReviewCount} Google reviews. Big-acreage & land clearing, licensed & insured, free 24-hour estimate: (407) 280-3484.";
 $canonicalUrl    = $siteUrl . '/service-area/deleon-springs/';
 
 // ---- Images (image-manifest.md allocation) ----

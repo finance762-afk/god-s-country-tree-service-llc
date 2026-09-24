@@ -14,8 +14,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 $currentPage = 'contact';
 
 // V2.2 CTR meta (trade noun + city + differentiator + CTA)
-$pageTitle       = "Contact God's Country Tree Service | DeLand, FL Tree Service";
-$pageDescription = "Contact God's Country Tree Service in DeLand, FL — licensed & insured tree service with 24/7 storm response. Request your free estimate within 24 hours today.";
+$pageTitle       = "Contact Tree Service DeLand FL | {$gbpRating}★ | (407) 280-3484";
+$pageDescription = "Contact our DeLand, FL tree service, rated {$gbpRating}★ from {$gbpReviewCount} Google reviews. Licensed & insured, 24/7 storm help, free estimate in 24 hours: (407) 280-3484.";
 $canonicalUrl    = $siteUrl . '/contact/';
 
 // ---- Images ----

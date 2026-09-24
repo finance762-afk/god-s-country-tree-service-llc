@@ -16,8 +16,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-cards.php';
 $currentPage = 'services';
 
 // V2.1 trade-noun title (56 chars) + V2.2 CTR meta (156 chars)
-$pageTitle       = "Tree Services in DeLand, FL | God's Country Tree Service";
-$pageDescription = 'Twelve tree services in DeLand, FL — removal, trimming, pruning & 24/7 storm cleanup from one licensed & insured local crew. Free estimates within 24 hours.';
+$pageTitle       = "Tree Services DeLand FL | {$gbpRating}★ ({$gbpReviewCount} Google Reviews)";
+$pageDescription = "Tree services in DeLand, FL: removal, trimming, pruning & 24/7 storm cleanup. Rated {$gbpRating}★ on Google, licensed & insured. Free 24-hour estimates: (407) 280-3484.";
 $canonicalUrl    = $siteUrl . '/services/';
 
 // ---- Images (content/image-manifest.md allocation) ----

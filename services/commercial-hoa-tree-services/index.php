@@ -21,8 +21,8 @@ $currentPage = 'services';
 $serviceSlug = 'commercial-hoa-tree-services';
 
 // V2.1 trade-noun title (59 chars) + V2.2 CTR meta (154 chars)
-$pageTitle       = "Commercial & HOA Tree Service in DeLand, FL | God's Country";
-$pageDescription = 'Commercial & HOA tree service in DeLand, FL — scheduled maintenance, liability-conscious crews, licensed & insured. Request a property assessment today.';
+$pageTitle       = "Commercial & HOA Tree Service DeLand FL | {$gbpRating}★ Rated";
+$pageDescription = "Commercial & HOA tree service in DeLand, FL rated {$gbpRating}★ from {$gbpReviewCount} Google reviews. Scheduled crews, licensed & insured, free 24-hour estimate: (407) 280-3484.";
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 
 // ---- Images (content/image-manifest.md allocation) ----

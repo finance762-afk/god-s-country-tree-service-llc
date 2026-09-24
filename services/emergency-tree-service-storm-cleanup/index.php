@@ -21,8 +21,8 @@ $currentPage = 'services';
 $serviceSlug = 'emergency-tree-service-storm-cleanup';
 
 // V2.1 trade-noun title (57 chars) + V2.2 CTR meta (156 chars)
-$pageTitle       = "24/7 Emergency Tree Service in DeLand, FL | God's Country";
-$pageDescription = '24/7 emergency tree removal & storm cleanup in DeLand, FL — tree on the house, split trunks, road blockages. Licensed, insured, same-day. Call now.';
+$pageTitle       = "Emergency Tree Removal DeLand FL | 24/7 Storm Cleanup | {$gbpRating}★";
+$pageDescription = "Emergency tree removal in DeLand, FL 24/7. Storm damage, trees on roofs, blocked drives. Rated {$gbpRating}★ from {$gbpReviewCount} Google reviews, licensed & insured: (407) 280-3484.";
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 
 // ---- Images (content/image-manifest.md allocation) ----

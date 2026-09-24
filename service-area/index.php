@@ -18,8 +18,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 $currentPage = 'service-area';
 
 // V2.1 trade-noun title + V2.2 CTR meta (155 chars)
-$pageTitle       = "Tree Service Areas Near DeLand, FL | God's Country Tree Service";
-$pageDescription = "Tree service across DeLand, Deltona, Orange City, DeBary, Lake Helen & DeLeon Springs, FL — licensed, insured, 12+ years. Free 24-hour estimates. Call today.";
+$pageTitle       = "Tree Service Areas Near DeLand FL | {$gbpRating}★ {$gbpReviewCount} Reviews";
+$pageDescription = "Tree service near DeLand, FL: Deltona, Orange City, DeBary, Lake Helen & DeLeon Springs. Rated {$gbpRating}★ on Google, licensed & insured. Call (407) 280-3484.";
 $canonicalUrl    = $siteUrl . '/service-area/';
 
 $imgBase          = '/assets/images/';

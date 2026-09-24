@@ -20,8 +20,8 @@ $currentPage = 'services';
 $serviceSlug = 'dead-hazardous-tree-removal';
 
 // V2.1 trade-noun title (58 chars) + V2.2 CTR meta (149 chars)
-$pageTitle       = "Dead Tree Removal DeLand, FL | God's Country Tree Service";
-$pageDescription = 'Dead tree removal in DeLand, FL — licensed & insured hazardous tree specialists, safe extraction near homes & lines. Free estimates within 24 hours.';
+$pageTitle       = "Dead Tree Removal DeLand FL | {$gbpRating}★ ({$gbpReviewCount} Google Reviews)";
+$pageDescription = "Dead & hazardous tree removal in DeLand, FL rated {$gbpRating}★ from {$gbpReviewCount} Google reviews. Licensed & insured, near homes, free estimate in 24 hours: (407) 280-3484.";
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 
 // ---- Images (content/image-manifest.md allocation) ----

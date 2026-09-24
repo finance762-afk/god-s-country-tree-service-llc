@@ -20,8 +20,8 @@ $currentPage = 'services';
 $serviceSlug = 'fallen-tree-removal-cleanup';
 
 // V2.1 trade-noun title (59 chars) + V2.2 CTR meta (spec verbatim)
-$pageTitle       = "Fallen Tree Removal DeLand, FL | God's Country Tree Service";
-$pageDescription = 'Fallen tree removal in DeLand, FL — rapid cleanup, debris hauling & site restoration by a licensed & insured tree service. Free estimates within 24 hours.';
+$pageTitle       = "Fallen Tree Removal DeLand FL | {$gbpRating}★ ({$gbpReviewCount} Google Reviews)";
+$pageDescription = "Fallen tree removal in DeLand, FL rated {$gbpRating}★ from {$gbpReviewCount} Google reviews. Cut-up, haul-off & yard cleanup, licensed & insured, free 24-hour estimate: (407) 280-3484.";
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 
 // ---- Images (content/image-manifest.md allocation) ----

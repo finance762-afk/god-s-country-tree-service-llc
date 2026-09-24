@@ -18,8 +18,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-cards.php';
 $currentPage = 'service-area';
 
 // ---- SEO ---------------------------------------------------
-$pageTitle       = "Tree Service in Orange City, FL | God's Country Tree Service";
-$pageDescription = 'Tree service in Orange City, FL by licensed & insured certified arborists — 12+ years caring for historic moss-draped oaks. Free estimates in 24 hours.';
+$pageTitle       = "Tree Service Orange City FL | {$gbpRating}★ ({$gbpReviewCount} Google Reviews)";
+$pageDescription = "Tree service in Orange City, FL from a DeLand crew rated {$gbpRating}★ from {$gbpReviewCount} Google reviews. Licensed & insured, free estimate within 24 hours. Call (407) 280-3484.";
 $canonicalUrl    = $siteUrl . '/service-area/orange-city/';
 
 // ---- Images (content/image-manifest.md allocation) --------

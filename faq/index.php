@@ -14,8 +14,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 $currentPage = 'faq';
 
 // V2.2 CTR meta
-$pageTitle       = "Tree Service FAQ | God's Country Tree Service, DeLand FL";
-$pageDescription = "Answers on tree removal cost, permits, storm response & more from God's Country Tree Service — licensed & insured DeLand, FL tree service. Free estimates in 24 hours.";
+$pageTitle       = "Tree Service FAQ DeLand FL | {$gbpRating}★ ({$gbpReviewCount} Google Reviews)";
+$pageDescription = "Tree service FAQ for DeLand, FL: cost, permits & storm response from a crew rated {$gbpRating}★ on Google. Licensed & insured, free 24-hour estimates: (407) 280-3484.";
 $canonicalUrl    = $siteUrl . '/faq/';
 
 // ---- Images ----
@@ -315,7 +315,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
       FAQ &middot; DeLand, FL
     </span>
-    <h1>Tree Service Questions, <span class="text-accent">Answered Straight</span></h1>
+    <h1>DeLand Tree Service Questions, <span class="text-accent">Answered Straight</span></h1>
     <p class="hero-answer">The questions DeLand homeowners actually ask <?php echo e($siteName); ?> about cost, permits, storm response, and how the work gets done &mdash; with honest answers from a licensed, local crew.</p>
   </div>
 </section>

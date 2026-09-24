@@ -18,8 +18,8 @@ $currentPage = 'services';
 $serviceSlug = 'crown-reduction-shaping';
 
 // V2.1 trade-noun title (57 chars) + V2.2 CTR meta (155 chars)
-$pageTitle       = "Crown Reduction in DeLand, FL | God's Country Tree Service";
-$pageDescription = 'Crown reduction in DeLand, FL by a licensed tree service — safe weight reduction and shaping, never topping. 12+ years local. Book your free estimate today.';
+$pageTitle       = "Crown Reduction DeLand FL | {$gbpRating}★ ({$gbpReviewCount} Google Reviews)";
+$pageDescription = "Crown reduction in DeLand, FL rated {$gbpRating}★ from {$gbpReviewCount} Google reviews. Storm-smart shaping, never topping. Licensed & insured, free 24-hour estimate: (407) 280-3484.";
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 
 // ---- Images (content/image-manifest.md allocation) ----

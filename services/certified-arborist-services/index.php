@@ -17,8 +17,8 @@ $currentPage = 'services';
 $serviceSlug = 'certified-arborist-services';
 
 // V2.1 trade-noun title (58 chars) + V2.2 CTR meta
-$pageTitle       = "Certified Arborist DeLand, FL | God's Country Tree Service";
-$pageDescription = 'Certified arborist services in DeLand, FL — tree health diagnosis & expert care from a licensed & insured local tree service. Book a free consultation today.';
+$pageTitle       = "Certified Arborist DeLand FL | {$gbpRating}★ ({$gbpReviewCount} Google Reviews)";
+$pageDescription = "Certified arborist in DeLand, FL rated {$gbpRating}★ from {$gbpReviewCount} Google reviews. Tree health diagnosis & care, licensed & insured, free 24-hour estimate: (407) 280-3484.";
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 
 // ---- Images (content/image-manifest.md allocation) ----

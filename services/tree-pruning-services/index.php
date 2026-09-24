@@ -19,8 +19,8 @@ $currentPage = 'services';
 $serviceSlug = 'tree-pruning-services';
 
 // V2.1 trade-noun title (56 chars) + V2.2 CTR meta (~155 chars)
-$pageTitle       = "Tree Pruning in DeLand, FL | God's Country Tree Service";
-$pageDescription = 'Certified arborist tree pruning in DeLand, FL — prescription pruning, HOA & insurance mitigation, structural and deadwood cuts. Free 24-hour estimates.';
+$pageTitle       = "Tree Pruning DeLand FL | {$gbpRating}★ ({$gbpReviewCount} Google Reviews)";
+$pageDescription = "Tree pruning in DeLand, FL rated {$gbpRating}★ from {$gbpReviewCount} Google reviews. Certified arborist cuts, licensed & insured, free estimate in 24 hours. Call (407) 280-3484.";
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 
 // ---- Images (content/image-manifest.md allocation) ----

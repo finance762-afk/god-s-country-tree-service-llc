@@ -14,8 +14,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 $currentPage = 'about';
 
 // V2.2 CTR meta (trade noun + city + differentiator + CTA)
-$pageTitle       = "About God's Country Tree Service | Owner-Operated, DeLand FL";
-$pageDescription = "Meet Caleb, owner of God's Country Tree Service — a trained arborist with 21+ years of hands-on tree care, now serving Central & North Central Florida. Free estimates.";
+$pageTitle       = "About God's Country Tree Service DeLand FL | {$gbpRating}★ Rated";
+$pageDescription = "Meet the owner-operated tree service in DeLand, FL rated {$gbpRating}★ from {$gbpReviewCount} Google reviews. Licensed & insured, 12+ years, free 24-hour estimates: (407) 280-3484.";
 $canonicalUrl    = $siteUrl . '/about/';
 
 // ---- Images (content/image-manifest.md allocation) ----
@@ -585,7 +585,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
       About Us &middot; DeLand, FL
     </span>
-    <h1>Meet the Owner Behind <span class="text-accent">God's Country</span></h1>
+    <h1>Meet the Owner Behind <span class="text-accent">God's Country</span>, DeLand's Tree Service</h1>
     <p class="hero-answer"><?php echo e($siteName); ?> is owner-operated by Caleb, a trained arborist with more than 21 years of hands-on tree care. Raised in the timber industry and now rooted in Florida, he keeps Central and North Central Florida's oaks, pines, and palms healthy, safe, and cared for the right way.</p>
   </div>
 </section>

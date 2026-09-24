@@ -17,8 +17,8 @@ $currentPage = 'services';
 $serviceSlug = 'tree-removal';
 
 // V2.1 trade-noun title (55 chars) + V2.2 CTR meta (155 chars)
-$pageTitle       = "Tree Removal in DeLand, FL | God's Country Tree Service";
-$pageDescription = 'Tree removal in DeLand, FL by a licensed & insured local tree service — 12+ years, controlled takedowns, debris hauled. Get your free estimate in 24 hours.';
+$pageTitle       = "Tree Removal DeLand FL | {$gbpRating}★ Rated | Free 24-Hr Estimates";
+$pageDescription = "Tree removal in DeLand, FL rated {$gbpRating}★ from {$gbpReviewCount} Google reviews. Licensed & insured takedowns, debris hauled, free estimate in 24 hours. Call (407) 280-3484.";
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 
 // ---- Images (content/image-manifest.md allocation) ----

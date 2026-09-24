@@ -21,8 +21,8 @@ $currentPage = 'services';
 $serviceSlug = 'residential-tree-services';
 
 // V2.1 trade-noun title (54 chars) + V2.2 CTR meta (156 chars)
-$pageTitle       = "Residential Tree Service in DeLand, FL | God's Country";
-$pageDescription = 'Residential tree service in DeLand, FL — trimming, removal & year-round care for homeowners from one licensed & insured local crew. Get a free estimate today.';
+$pageTitle       = "Residential Tree Service DeLand FL | {$gbpRating}★ {$gbpReviewCount} Reviews";
+$pageDescription = "Residential tree service in DeLand, FL rated {$gbpRating}★ from {$gbpReviewCount} Google reviews. Trimming, removal & care, licensed & insured, free 24-hour estimate: (407) 280-3484.";
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 
 // ---- Images (content/image-manifest.md allocation) ----

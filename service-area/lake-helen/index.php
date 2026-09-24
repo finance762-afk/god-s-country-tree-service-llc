@@ -18,8 +18,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-cards.php';
 $currentPage = 'service-area';
 
 // ---- SEO ---------------------------------------------------
-$pageTitle       = "Tree Service in Lake Helen, FL | God's Country Tree Service";
-$pageDescription = 'Tree service in Lake Helen, FL from certified arborists who preserve heritage oaks, not just cut them. Licensed & insured. Free estimates in 24 hours.';
+$pageTitle       = "Tree Service Lake Helen FL | {$gbpRating}★ ({$gbpReviewCount} Google Reviews)";
+$pageDescription = "Tree service in Lake Helen, FL by a DeLand crew rated {$gbpRating}★ from {$gbpReviewCount} Google reviews. Heritage oak care, licensed & insured, free 24-hour estimate: (407) 280-3484.";
 $canonicalUrl    = $siteUrl . '/service-area/lake-helen/';
 
 // ---- Images (config $serviceAreas + intake allocation) -----

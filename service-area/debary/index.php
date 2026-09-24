@@ -20,8 +20,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-cards.php';
 $currentPage = 'service-area';
 
 // ---- SEO (V2.1 trade-noun title + V2.2 CTR meta) ----
-$pageTitle       = "Tree Service in DeBary, FL | God's Country Tree Service";
-$pageDescription = 'Tree service in DeBary, FL — licensed & insured, 12+ years, HOA & residential crews for new subdivisions and heritage estate oaks. Free estimates in 24 hours.';
+$pageTitle       = "Tree Service DeBary FL | {$gbpRating}★ ({$gbpReviewCount} Google Reviews)";
+$pageDescription = "Tree service in DeBary, FL from a DeLand crew rated {$gbpRating}★ from {$gbpReviewCount} Google reviews. Licensed & insured, 24/7 storm help, free 24-hour estimate: (407) 280-3484.";
 $canonicalUrl    = $siteUrl . '/service-area/debary/';
 
 // ---- Images ----

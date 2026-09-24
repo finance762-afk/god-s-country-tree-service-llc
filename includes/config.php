@@ -254,6 +254,11 @@ $cssVersion = '9'; // increment on every framework.css change
 // ---- Business Facts ----------------------------------------
 $yearsInBusiness = 12;
 $yearEstablished = 2014;
+
+// ---- Google Business Profile proof (titles/descriptions) ----
+// from GBP, update monthly (last checked 2026-09-24)
+$gbpRating      = '4.8';
+$gbpReviewCount = 86;
 $businessHours   = 'Monday 7 AM–10 PM, Tuesday 7 AM–10 PM, Wednesday 7 AM–10 PM, Thursday 7 AM–10 PM, Friday 7 AM–10 PM, Saturday 8 AM–9 PM, Sunday Closed';
 
 // ---- Forms -------------------------------------------------

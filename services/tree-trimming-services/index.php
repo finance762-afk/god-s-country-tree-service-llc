@@ -19,8 +19,8 @@ $currentPage = 'services';
 $serviceSlug = 'tree-trimming-services';
 
 // V2.1 trade-noun title (56 chars) + V2.2 CTR meta (156 chars)
-$pageTitle       = "Tree Trimming in DeLand, FL | God's Country Tree Service";
-$pageDescription = 'Tree trimming in DeLand, FL from a licensed & insured tree service crew — seasonal schedules, all tree sizes, 12+ years local. Request a free estimate today.';
+$pageTitle       = "Tree Trimming DeLand FL | {$gbpRating}★ Rated | Free 24-Hr Estimates";
+$pageDescription = "Tree trimming in DeLand, FL rated {$gbpRating}★ from {$gbpReviewCount} Google reviews. Licensed & insured crew, all tree sizes, free estimate in 24 hours. Call (407) 280-3484.";
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 
 // ---- Images (content/image-manifest.md allocation) ----

@@ -18,8 +18,8 @@ $currentPage = 'services';
 $serviceSlug = 'tree-maintenance-care';
 
 // V2.1 trade-noun title (60 chars) + V2.2 CTR meta (152 chars)
-$pageTitle       = "Tree Maintenance in DeLand, FL | God's Country Tree Service";
-$pageDescription = 'Tree maintenance in DeLand, FL — inspections, preventative care & storm-readiness from a licensed & insured tree service. Schedule a free assessment today.';
+$pageTitle       = "Tree Maintenance DeLand FL | {$gbpRating}★ ({$gbpReviewCount} Google Reviews)";
+$pageDescription = "Tree maintenance in DeLand, FL rated {$gbpRating}★ from {$gbpReviewCount} Google reviews. Inspections & storm-ready care, licensed & insured, free estimate in 24 hours: (407) 280-3484.";
 $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 
 // ---- Images (content/image-manifest.md allocation) ----

@@ -15,8 +15,8 @@ $currentPage = 'home';
 
 // V2.1 trade-noun title (59 chars) + V2.2 CTR meta (trade noun + city,
 // differentiators, CTA — 152 chars)
-$pageTitle       = "Tree Service in DeLand, FL | God's Country Tree Service LLC";
-$pageDescription = "DeLand, FL tree service with 12+ years local experience — licensed & insured, 24/7 storm cleanup, free estimates within 24 hours. Request yours today.";
+$pageTitle       = "Tree Service DeLand FL | {$gbpRating}★ {$gbpReviewCount} Google Reviews | Free Quote";
+$pageDescription = "Tree service in DeLand, FL rated {$gbpRating}★ from {$gbpReviewCount} Google reviews. Licensed & insured, 12+ years, free estimates within 24 hours. Call (407) 280-3484 today.";
 $canonicalUrl    = $siteUrl . '/';
 
 // ---- Image allocation (curated from client photo library) ----
