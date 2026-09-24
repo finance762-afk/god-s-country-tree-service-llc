@@ -3,11 +3,17 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php';
 
-$pageTitle = 'When to Trim Trees Before Hurricane Season in DeLand, FL | ' . $siteName;
-$pageDescription = 'Hurricane season starts June 1st in Florida. Learn when and how to trim trees to reduce storm damage risk in DeLand and Central Florida. Expert arborist advice.';
+$pageTitle = 'When to Trim Trees Before Hurricanes in DeLand: March–May';
+$pageDescription = 'Trim trees March through May, before hurricane season starts June 1. See what to cut, why topping backfires, typical DeLand costs, and a storm-prep checklist.';
 $canonicalUrl = $siteUrl . '/blog/hurricane-prep-tree-trimming-deland/';
 $currentPage = 'blog';
-$pageSchema = blogPostSchema('hurricane-prep-tree-trimming-deland', 'hurricane tree trimming DeLand FL, storm prep tree service Florida, hurricane season tree preparation, wind damage tree trimming, tree trimming before hurricane season, Volusia County storm cleanup', $pageDescription);
+$postFaqs = [
+    ['q' => 'When should I trim trees before hurricane season in DeLand?', 'a' => 'Trim in March, April, or May. Hurricane season runs June 1 to November 30 in Florida, and spring cuts heal fast while trees are actively growing, before hurricane formation ramps up.'],
+    ['q' => 'Can you trim trees during hurricane season?', 'a' => 'Only for immediate hazards, such as a cracked, dead, or leaning limb over your roof. If you missed the spring window, routine trimming should wait until after November 30.'],
+    ['q' => 'Should I top a tree before a hurricane?', 'a' => 'No. Topping cuts the canopy back to stubs and creates weak sprouts that are more likely to fail than properly pruned branches. Certified arborists use selective thinning and crown reduction instead.'],
+    ['q' => 'How much does hurricane prep tree trimming cost in DeLand?', 'a' => 'Expect $300-$800 for a single large oak, $150-$400 for a mid-sized crape myrtle, and $800-$2,000 for multiple trees on a residential lot. Emergency trimming after a storm warning can cost 2-3× normal rates.'],
+];
+$pageSchema = blogPostSchema('hurricane-prep-tree-trimming-deland', 'hurricane tree trimming DeLand FL, storm prep tree service Florida, hurricane season tree preparation, wind damage tree trimming, tree trimming before hurricane season, Volusia County storm cleanup', $pageDescription) . generateFAQSchema($postFaqs);
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
@@ -24,7 +30,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <span aria-current="page">Hurricane Prep Tree Trimming</span>
         </nav>
         <span class="blog-category">Storm Preparation</span>
-        <h1>When to Trim Trees Before Hurricane Season in DeLand, FL</h1>
+        <h1><?php echo e($pageTitle); ?></h1>
         <div class="blog-meta">
           <time datetime="2026-06-01">June 1, 2026</time>
           <span class="blog-meta-sep">•</span>
@@ -65,7 +71,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <p>Any tree over 15 feet tall, any limb within 10 feet of power lines, any cut requiring a chainsaw while standing on a ladder — these are arborist calls, not weekend projects. Hurricane prep trimming involves structural decisions (which limbs to keep, which to remove) that affect the tree's ability to survive the storm. A bad cut can do more harm than no cut.</p>
 
         <h2>What happens if you don't trim before hurricane season?</h2>
-        <p>Untrimmed trees are more likely to drop limbs, lose major sections of canopy, or uproot entirely in hurricane-force winds. Falling branches damage roofs, vehicles, fences, and power lines. In Volusia County, most post-storm tree failures happen in trees that hadn't been maintained in 3+ years. If you do experience storm damage, <a href="/blog/insurance-fallen-tree-removal-florida/">understand what your homeowners insurance covers for fallen trees</a> before filing a claim.</p>
+        <p>Untrimmed trees are more likely to drop limbs, lose major sections of canopy, or uproot entirely in hurricane-force winds. Falling branches damage roofs, vehicles, fences, and power lines. In Volusia County, most post-storm tree failures happen in trees that hadn't been maintained in 3+ years. If a storm does drop a tree or limb on your property, call for <a href="/services/emergency-tree-service-storm-cleanup/">24/7 storm damage tree removal</a>, then <a href="/blog/insurance-fallen-tree-removal-florida/">understand what your homeowners insurance covers for fallen trees</a> before filing a claim.</p>
 
         <h2>Can tree trimming prevent all storm damage?</h2>
         <p>No. A Category 4 or 5 hurricane can topple even well-maintained trees. But proper trimming reduces the odds of catastrophic failure, limits the size of debris if limbs do break, and often means the difference between a tree that recovers and one that has to be removed after the storm.</p>
@@ -79,7 +85,16 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <li>If you miss the spring window, wait until after November 30 unless there's an immediate hazard</li>
         </ul>
 
-        <p>God's Country Tree Service has been trimming storm-country trees in DeLand and Volusia County since 2014. We know which cuts protect your property and which ones just make a tree look smaller. Call <a href="tel:+13864900703">(386) 490-0703</a> to schedule a pre-season assessment.</p>
+        <p>God's Country Tree Service has been trimming storm-country trees in DeLand and Volusia County since 2014. We know which cuts protect your property and which ones just make a tree look smaller. Call <a href="tel:4072803484">(407) 280-3484</a> to schedule a pre-season assessment.</p>
+
+        <h2>Hurricane Tree Trimming FAQs</h2>
+
+<?php foreach ($postFaqs as $faq): ?>
+        <div class="answer-block">
+          <h3><?php echo e($faq['q']); ?></h3>
+          <p><?php echo e($faq['a']); ?></p>
+        </div>
+<?php endforeach; ?>
 
         <div class="blog-cta">
           <h3>Need tree trimming before hurricane season?</h3>

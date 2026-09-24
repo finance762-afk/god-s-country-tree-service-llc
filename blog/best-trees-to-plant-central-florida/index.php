@@ -3,11 +3,17 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php';
 
-$pageTitle = 'Best Trees to Plant in Central Florida Yards | ' . $siteName;
-$pageDescription = 'Live oak, sabal palm, and bald cypress top the best trees to plant in Central Florida. Get hurricane-smart picks for DeLand yards — call (407) 280-3484.';
+$pageTitle = 'Best Trees to Plant in Central Florida Yards (2026)';
+$pageDescription = 'Live oak, sabal palm, and bald cypress top the list for Central Florida yards. See hurricane-tested shade, small, and wildlife picks plus trees to never plant.';
 $canonicalUrl = $siteUrl . '/blog/best-trees-to-plant-central-florida/';
 $currentPage = 'blog';
-$pageSchema = blogPostSchema('best-trees-to-plant-central-florida', 'best trees to plant in central florida, shade trees Florida, hurricane resistant trees Florida, best trees DeLand, live oak DeLand, sabal palm Florida, tree planting DeLand FL', $pageDescription);
+$postFaqs = [
+    ['q' => 'What is the most hurricane-resistant tree in Florida?', 'a' => 'Live oak and sabal (cabbage) palm are the two standouts, with bald cypress close behind. All three consistently rank at the top in Florida post-hurricane wind studies. Slow-growing, dense-wooded natives survive storms; fast-growing species like laurel oak and queen palm fail most often.'],
+    ['q' => 'What is the fastest-growing shade tree that is still safe to plant?', 'a' => 'Winged elm and bald cypress grow at a respectable pace with good wind resistance. Be wary of anything sold primarily as "fast-growing" — in Florida that usually means weak wood. A live oak grows faster than most people expect with proper establishment watering, and it will outlast every quick alternative.'],
+    ['q' => 'When should you plant trees in Central Florida?', 'a' => 'Late fall through winter is ideal. Roots establish in cool weather before summer heat, and the June rainy season then fuels the first big growth push. Year-round planting works in zone 9b as long as you commit to deep, regular establishment watering in our fast-draining sand.'],
+    ['q' => 'How far from the house should I plant a live oak?', 'a' => 'Keep a live oak at least 20 feet from your house — 30 or more is better. A mature live oak canopy can spread 60 to 80 feet, and its roots need corresponding room. For smaller yards, sand live oak delivers the same wind resistance in a much more compact tree.'],
+];
+$pageSchema = blogPostSchema('best-trees-to-plant-central-florida', 'best trees to plant in central florida, shade trees Florida, hurricane resistant trees Florida, best trees DeLand, live oak DeLand, sabal palm Florida, tree planting DeLand FL', $pageDescription) . generateFAQSchema($postFaqs);
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
@@ -24,7 +30,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <span aria-current="page">Best Trees Central Florida</span>
         </nav>
         <span class="blog-category">Planting</span>
-        <h1>Best Trees to Plant in Central Florida Yards</h1>
+        <h1><?php echo e($pageTitle); ?></h1>
         <div class="blog-meta">
           <time datetime="2026-08-18">August 18, 2026</time>
           <span class="blog-meta-sep">•</span>
@@ -90,25 +96,12 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
         <h2>Central Florida Tree Planting FAQs</h2>
 
+<?php foreach ($postFaqs as $faq): ?>
         <div class="answer-block">
-          <h3>What is the most hurricane-resistant tree in Florida?</h3>
-          <p>Live oak and sabal (cabbage) palm are the two standouts, with bald cypress close behind. All three consistently rank at the top in Florida post-hurricane wind studies. Slow-growing, dense-wooded natives survive storms; fast-growing species like laurel oak and queen palm fail most often.</p>
+          <h3><?php echo e($faq['q']); ?></h3>
+          <p><?php echo e($faq['a']); ?></p>
         </div>
-
-        <div class="answer-block">
-          <h3>What is the fastest-growing shade tree that is still safe to plant?</h3>
-          <p>Winged elm and bald cypress grow at a respectable pace with good wind resistance. Be wary of anything sold primarily as "fast-growing" — in Florida that usually means weak wood. A live oak grows faster than most people expect with proper establishment watering, and it will outlast every quick alternative.</p>
-        </div>
-
-        <div class="answer-block">
-          <h3>When should you plant trees in Central Florida?</h3>
-          <p>Late fall through winter is ideal. Roots establish in cool weather before summer heat, and the June rainy season then fuels the first big growth push. Year-round planting works in zone 9b as long as you commit to deep, regular establishment watering in our fast-draining sand.</p>
-        </div>
-
-        <div class="answer-block">
-          <h3>How far from the house should I plant a live oak?</h3>
-          <p>Keep a live oak at least 20 feet from your house — 30 or more is better. A mature live oak canopy can spread 60 to 80 feet, and its roots need corresponding room. For smaller yards, sand live oak delivers the same wind resistance in a much more compact tree.</p>
-        </div>
+<?php endforeach; ?>
 
         <div class="blog-related-articles">
           <h3>Related Articles</h3>
@@ -137,47 +130,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             ?>
           </div>
         </div>
-
-        <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "What is the most hurricane-resistant tree in Florida?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Live oak and sabal (cabbage) palm are the two standouts, with bald cypress close behind. All three consistently rank at the top in Florida post-hurricane wind studies. Slow-growing, dense-wooded natives survive storms; fast-growing species like laurel oak and queen palm fail most often."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What is the fastest-growing shade tree that is still safe to plant?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Winged elm and bald cypress grow at a respectable pace with good wind resistance. Be wary of anything sold primarily as 'fast-growing' — in Florida that usually means weak wood. A live oak grows faster than most people expect with proper establishment watering, and it will outlast every quick alternative."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "When should you plant trees in Central Florida?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Late fall through winter is ideal. Roots establish in cool weather before summer heat, and the June rainy season then fuels the first big growth push. Year-round planting works in zone 9b as long as you commit to deep, regular establishment watering in our fast-draining sand."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How far from the house should I plant a live oak?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Keep a live oak at least 20 feet from your house — 30 or more is better. A mature live oak canopy can spread 60 to 80 feet, and its roots need corresponding room. For smaller yards, sand live oak delivers the same wind resistance in a much more compact tree."
-              }
-            }
-          ]
-        }
-        </script>
 
       </div>
     </div>

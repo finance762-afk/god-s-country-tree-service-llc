@@ -3,11 +3,17 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php';
 
-$pageTitle = 'Is Spanish Moss Bad for Trees? An Arborist Answers';
-$pageDescription = 'Spanish moss is an epiphyte, not a parasite — it doesn\'t harm healthy trees. Learn when heavy moss signals decline and when to call a DeLand arborist.';
+$pageTitle = 'Is Spanish Moss Bad for Trees? No — But Watch for This';
+$pageDescription = 'No, Spanish moss does not harm healthy trees. It is an air plant, not a parasite. See the 3 cases where heavy moss matters and when to call a DeLand arborist.';
 $canonicalUrl = $siteUrl . '/blog/is-spanish-moss-bad-for-trees/';
 $currentPage = 'blog';
-$pageSchema = blogPostSchema('is-spanish-moss-bad-for-trees', 'is spanish moss bad for trees, does spanish moss kill trees, remove spanish moss from oak, ball moss florida, spanish moss live oak DeLand, epiphyte tree health Florida', $pageDescription);
+$postFaqs = [
+    ['q' => 'Does Spanish moss kill oak trees?', 'a' => 'No. Spanish moss is an epiphytic air plant that takes no water or nutrients from the oak — it uses branches only for support. When a moss-covered oak declines, another problem thinned the canopy first, and the extra sunlight let the moss thicken. Heavy moss is a symptom of stress, not the cause.'],
+    ['q' => 'Should I remove Spanish moss from my trees?', 'a' => 'Usually not. On a healthy tree, removal is purely cosmetic. Selective hand removal makes sense when moss is weighing down weak or dead limbs, adding wind resistance before storm season, or shading a tree that\'s already struggling. Avoid copper sprays — they damage the tree\'s new growth and surrounding plants.'],
+    ['q' => 'Is ball moss the same as Spanish moss?', 'a' => 'They\'re close relatives. Ball moss is another epiphytic bromeliad that grows in dense softball-sized tufts instead of long strands, and it favors shaded interior branches. Like Spanish moss, it is not parasitic — bare interior twigs covered in ball moss were shaded out by the tree\'s own canopy, not smothered by the moss.'],
+    ['q' => 'Why does my dying tree have so much moss on it?', 'a' => 'Because decline came first. As a stressed tree loses leaves, more sunlight reaches its interior branches, and light-loving Spanish moss thickens rapidly in response. A sudden moss increase is a signal to have a certified arborist check for root damage, disease, soil compaction, or structural problems — the moss is the messenger, not the culprit.'],
+];
+$pageSchema = blogPostSchema('is-spanish-moss-bad-for-trees', 'is spanish moss bad for trees, does spanish moss kill trees, remove spanish moss from oak, ball moss florida, spanish moss live oak DeLand, epiphyte tree health Florida', $pageDescription) . generateFAQSchema($postFaqs);
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
@@ -24,7 +30,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <span aria-current="page">Is Spanish Moss Bad for Trees</span>
         </nav>
         <span class="blog-category">Tree Health</span>
-        <h1>Is Spanish Moss Bad for Your Trees? A Florida Answer</h1>
+        <h1><?php echo e($pageTitle); ?></h1>
         <div class="blog-meta">
           <time datetime="2026-08-18">August 18, 2026</time>
           <span class="blog-meta-sep">•</span>
@@ -90,25 +96,12 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
         <h2>Spanish Moss FAQs</h2>
 
+<?php foreach ($postFaqs as $faq): ?>
         <div class="answer-block">
-          <h3>Does Spanish moss kill oak trees?</h3>
-          <p>No. Spanish moss is an epiphytic air plant that takes no water or nutrients from the oak — it uses branches only for support. When a moss-covered oak declines, another problem thinned the canopy first, and the extra sunlight let the moss thicken. Heavy moss is a symptom of stress, not the cause.</p>
+          <h3><?php echo e($faq['q']); ?></h3>
+          <p><?php echo e($faq['a']); ?></p>
         </div>
-
-        <div class="answer-block">
-          <h3>Should I remove Spanish moss from my trees?</h3>
-          <p>Usually not. On a healthy tree, removal is purely cosmetic. Selective hand removal makes sense when moss is weighing down weak or dead limbs, adding wind resistance before storm season, or shading a tree that's already struggling. Avoid copper sprays — they damage the tree's new growth and surrounding plants.</p>
-        </div>
-
-        <div class="answer-block">
-          <h3>Is ball moss the same as Spanish moss?</h3>
-          <p>They're close relatives. Ball moss is another epiphytic bromeliad that grows in dense softball-sized tufts instead of long strands, and it favors shaded interior branches. Like Spanish moss, it is not parasitic — bare interior twigs covered in ball moss were shaded out by the tree's own canopy, not smothered by the moss.</p>
-        </div>
-
-        <div class="answer-block">
-          <h3>Why does my dying tree have so much moss on it?</h3>
-          <p>Because decline came first. As a stressed tree loses leaves, more sunlight reaches its interior branches, and light-loving Spanish moss thickens rapidly in response. A sudden moss increase is a signal to have a certified arborist check for root damage, disease, soil compaction, or structural problems — the moss is the messenger, not the culprit.</p>
-        </div>
+<?php endforeach; ?>
 
         <div class="blog-related-articles">
           <h3>Related Articles</h3>
@@ -137,47 +130,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             ?>
           </div>
         </div>
-
-        <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Does Spanish moss kill oak trees?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "No. Spanish moss is an epiphytic air plant that takes no water or nutrients from the oak — it uses branches only for support. When a moss-covered oak declines, another problem thinned the canopy first, and the extra sunlight let the moss thicken. Heavy moss is a symptom of stress, not the cause."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Should I remove Spanish moss from my trees?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Usually not. On a healthy tree, removal is purely cosmetic. Selective hand removal makes sense when moss is weighing down weak or dead limbs, adding wind resistance before storm season, or shading a tree that's already struggling. Avoid copper sprays — they damage the tree's new growth and surrounding plants."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Is ball moss the same as Spanish moss?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "They're close relatives. Ball moss is another epiphytic bromeliad that grows in dense softball-sized tufts instead of long strands, and it favors shaded interior branches. Like Spanish moss, it is not parasitic — bare interior twigs covered in ball moss were shaded out by the tree's own canopy, not smothered by the moss."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Why does my dying tree have so much moss on it?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Because decline came first. As a stressed tree loses leaves, more sunlight reaches its interior branches, and light-loving Spanish moss thickens rapidly in response. A sudden moss increase is a signal to have a certified arborist check for root damage, disease, soil compaction, or structural problems — the moss is the messenger, not the culprit."
-              }
-            }
-          ]
-        }
-        </script>
 
       </div>
     </div>

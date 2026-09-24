@@ -3,11 +3,17 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php';
 
-$pageTitle = 'What Does a Certified Arborist Do? When to Hire One | ' . $siteName;
-$pageDescription = 'A certified arborist is an ISA-credentialed expert in tree assessment, pruning, and diagnosis. See what they do in DeLand — and get a free estimate.';
+$pageTitle = 'What Does a Certified Arborist Do? When You Need One';
+$pageDescription = 'A certified arborist is an ISA-credentialed tree expert who assesses health, prunes to standard, and diagnoses disease. See when to hire one and crew red flags.';
 $canonicalUrl = $siteUrl . '/blog/what-does-certified-arborist-do/';
 $currentPage = 'blog';
-$pageSchema = blogPostSchema('what-does-certified-arborist-do', 'certified arborist DeLand FL, what does an arborist do, ISA certified arborist, tree doctor DeLand, arborist consultation Volusia County, certified arborist near me, tree health diagnosis Florida', $pageDescription);
+$postFaqs = [
+    ['q' => 'Is a certified arborist the same as a tree service company?', 'a' => 'No. Certification belongs to a person, not a company. A tree service can employ certified arborists — God\'s Country Tree Service does — but the phrase "professional tree service" alone doesn\'t guarantee anyone on the crew holds an ISA credential. Ask who is certified and who will actually assess your tree.'],
+    ['q' => 'What is a "tree doctor"?', 'a' => '"Tree doctor" is the everyday name for a certified arborist. If you\'re searching for a tree doctor in DeLand, you\'re looking for someone who can diagnose problems like laurel wilt or palm nutrient deficiencies, treat what\'s treatable, and tell you honestly when removal is the safer choice.'],
+    ['q' => 'How much does an arborist consultation cost in DeLand?', 'a' => 'God\'s Country Tree Service provides free on-site estimates that include an arborist\'s assessment of the tree in question. Formal written reports for insurance companies, HOAs, or permit applications are scoped separately depending on the number of trees and the documentation required.'],
+    ['q' => 'Can a certified arborist save a sick tree?', 'a' => 'Often, if the problem is caught early. Nutrient deficiencies, minor pest activity, and soil compaction usually respond to treatment. Advanced decay, severe storm damage, and diseases like lethal bronzing cannot be reversed — in those cases the arborist\'s job is to confirm the diagnosis and manage safe removal before the tree fails.'],
+];
+$pageSchema = blogPostSchema('what-does-certified-arborist-do', 'certified arborist DeLand FL, what does an arborist do, ISA certified arborist, tree doctor DeLand, arborist consultation Volusia County, certified arborist near me, tree health diagnosis Florida', $pageDescription) . generateFAQSchema($postFaqs);
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
@@ -24,7 +30,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <span aria-current="page">What Does a Certified Arborist Do</span>
         </nav>
         <span class="blog-category">Tree Health</span>
-        <h1>What Does a Certified Arborist Do? When to Hire One</h1>
+        <h1><?php echo e($pageTitle); ?></h1>
         <div class="blog-meta">
           <time datetime="2026-08-18">August 18, 2026</time>
           <span class="blog-meta-sep">•</span>
@@ -74,25 +80,12 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
         <h2>Certified Arborist FAQs</h2>
 
+<?php foreach ($postFaqs as $faq): ?>
         <div class="answer-block">
-          <h3>Is a certified arborist the same as a tree service company?</h3>
-          <p>No. Certification belongs to a person, not a company. A tree service can employ certified arborists — God's Country Tree Service does — but the phrase "professional tree service" alone doesn't guarantee anyone on the crew holds an ISA credential. Ask who is certified and who will actually assess your tree.</p>
+          <h3><?php echo e($faq['q']); ?></h3>
+          <p><?php echo e($faq['a']); ?></p>
         </div>
-
-        <div class="answer-block">
-          <h3>What is a "tree doctor"?</h3>
-          <p>"Tree doctor" is the everyday name for a certified arborist. If you're searching for a tree doctor in DeLand, you're looking for someone who can diagnose problems like laurel wilt or palm nutrient deficiencies, treat what's treatable, and tell you honestly when removal is the safer choice.</p>
-        </div>
-
-        <div class="answer-block">
-          <h3>How much does an arborist consultation cost in DeLand?</h3>
-          <p>God's Country Tree Service provides free on-site estimates that include an arborist's assessment of the tree in question. Formal written reports for insurance companies, HOAs, or permit applications are scoped separately depending on the number of trees and the documentation required.</p>
-        </div>
-
-        <div class="answer-block">
-          <h3>Can a certified arborist save a sick tree?</h3>
-          <p>Often, if the problem is caught early. Nutrient deficiencies, minor pest activity, and soil compaction usually respond to treatment. Advanced decay, severe storm damage, and diseases like lethal bronzing cannot be reversed — in those cases the arborist's job is to confirm the diagnosis and manage safe removal before the tree fails.</p>
-        </div>
+<?php endforeach; ?>
 
         <div class="blog-cta">
           <h3>Want a certified arborist's eyes on your tree?</h3>
@@ -137,47 +130,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             ?>
           </div>
         </div>
-
-        <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Is a certified arborist the same as a tree service company?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "No. Certification belongs to a person, not a company. A tree service can employ certified arborists — God's Country Tree Service does — but the phrase \"professional tree service\" alone doesn't guarantee anyone on the crew holds an ISA credential. Ask who is certified and who will actually assess your tree."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What is a \"tree doctor\"?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "\"Tree doctor\" is the everyday name for a certified arborist. If you're searching for a tree doctor in DeLand, you're looking for someone who can diagnose problems like laurel wilt or palm nutrient deficiencies, treat what's treatable, and tell you honestly when removal is the safer choice."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How much does an arborist consultation cost in DeLand?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "God's Country Tree Service provides free on-site estimates that include an arborist's assessment of the tree in question. Formal written reports for insurance companies, HOAs, or permit applications are scoped separately depending on the number of trees and the documentation required."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Can a certified arborist save a sick tree?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Often, if the problem is caught early. Nutrient deficiencies, minor pest activity, and soil compaction usually respond to treatment. Advanced decay, severe storm damage, and diseases like lethal bronzing cannot be reversed — in those cases the arborist's job is to confirm the diagnosis and manage safe removal before the tree fails."
-              }
-            }
-          ]
-        }
-        </script>
 
       </div>
     </div>

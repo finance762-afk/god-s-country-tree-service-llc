@@ -3,11 +3,17 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php';
 
-$pageTitle = 'Why Tree Topping Is a Mistake — Do This Instead | ' . $siteName;
-$pageDescription = 'Tree topping starves trees, invites decay, and raises storm risk. Crown reduction is the right way to shorten a tree in DeLand, FL. Call (407) 280-3484.';
+$pageTitle = 'Tree Topping vs Crown Reduction: Why Topping Fails';
+$pageDescription = 'Topping starves trees, invites decay, and grows weak sprouts that fail in storms. Learn how crown reduction shortens a tree and when removal is the answer.';
 $canonicalUrl = $siteUrl . '/blog/tree-topping-vs-crown-reduction/';
 $currentPage = 'blog';
-$pageSchema = blogPostSchema('tree-topping-vs-crown-reduction', 'tree topping, is topping a tree bad, crown reduction vs topping, make tree shorter Florida, tree topping DeLand FL, crown reduction DeLand FL, storm prep pruning Volusia County', $pageDescription);
+$postFaqs = [
+    ['q' => 'Is topping a tree bad for it?', 'a' => 'Yes. Topping removes most of the leaf-bearing canopy at once, starving the tree, and the stub cuts cannot seal, so decay spreads into the limbs and trunk. The tree responds with fast, weakly attached water sprouts that are more likely to fail in a storm than the original branches were.'],
+    ['q' => 'Will a topped tree grow back?', 'a' => 'Yes, and that is the problem. A topped tree pushes out dense water sprouts that can restore its height within a few years, but the new growth is anchored in the outer wood at each cut rather than structurally attached. The tree ends up as tall as before with a weaker, more storm-prone canopy on top of decaying stubs.'],
+    ['q' => 'How much can crown reduction shorten a tree?', 'a' => 'A proper crown reduction is modest — arborists generally limit it to roughly a quarter of the canopy or less in a single pruning, cutting each branch back to a healthy lateral that takes over as the new tip. If a tree needs to lose half its height to fit its spot, that is a removal-and-replant conversation, not a pruning job.'],
+    ['q' => 'Can a topped tree be fixed?', 'a' => 'Sometimes. Restoration pruning over several years can select the strongest sprouts, thin out the rest, and rebuild a more natural structure, though the internal decay from the original cuts never disappears. A certified arborist should assess the tree; badly decayed or repeatedly topped trees are often safer to remove.'],
+];
+$pageSchema = blogPostSchema('tree-topping-vs-crown-reduction', 'tree topping, is topping a tree bad, crown reduction vs topping, make tree shorter Florida, tree topping DeLand FL, crown reduction DeLand FL, storm prep pruning Volusia County', $pageDescription) . generateFAQSchema($postFaqs);
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
@@ -24,7 +30,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <span aria-current="page">Tree Topping vs Crown Reduction</span>
         </nav>
         <span class="blog-category">Tree Care</span>
-        <h1>Why Tree Topping Is a Mistake — Do This Instead</h1>
+        <h1><?php echo e($pageTitle); ?></h1>
         <div class="blog-meta">
           <time datetime="2026-08-18">August 18, 2026</time>
           <span class="blog-meta-sep">•</span>
@@ -73,25 +79,12 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
         <h2>Tree Topping FAQ</h2>
 
+<?php foreach ($postFaqs as $faq): ?>
         <div class="answer-block">
-          <h3>Is topping a tree bad for it?</h3>
-          <p>Yes. Topping removes most of the leaf-bearing canopy at once, starving the tree, and the stub cuts cannot seal, so decay spreads into the limbs and trunk. The tree responds with fast, weakly attached water sprouts that are more likely to fail in a storm than the original branches were.</p>
+          <h3><?php echo e($faq['q']); ?></h3>
+          <p><?php echo e($faq['a']); ?></p>
         </div>
-
-        <div class="answer-block">
-          <h3>Will a topped tree grow back?</h3>
-          <p>Yes, and that is the problem. A topped tree pushes out dense water sprouts that can restore its height within a few years, but the new growth is anchored in the outer wood at each cut rather than structurally attached. The tree ends up as tall as before with a weaker, more storm-prone canopy on top of decaying stubs.</p>
-        </div>
-
-        <div class="answer-block">
-          <h3>How much can crown reduction shorten a tree?</h3>
-          <p>A proper crown reduction is modest — arborists generally limit it to roughly a quarter of the canopy or less in a single pruning, cutting each branch back to a healthy lateral that takes over as the new tip. If a tree needs to lose half its height to fit its spot, that is a removal-and-replant conversation, not a pruning job.</p>
-        </div>
-
-        <div class="answer-block">
-          <h3>Can a topped tree be fixed?</h3>
-          <p>Sometimes. Restoration pruning over several years can select the strongest sprouts, thin out the rest, and rebuild a more natural structure, though the internal decay from the original cuts never disappears. A certified arborist should assess the tree; badly decayed or repeatedly topped trees are often safer to remove.</p>
-        </div>
+<?php endforeach; ?>
 
         <div class="blog-related-services">
           <h3>Related Tree Services</h3>
@@ -130,47 +123,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             ?>
           </div>
         </div>
-
-        <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Is topping a tree bad for it?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes. Topping removes most of the leaf-bearing canopy at once, starving the tree, and the stub cuts cannot seal, so decay spreads into the limbs and trunk. The tree responds with fast, weakly attached water sprouts that are more likely to fail in a storm than the original branches were."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Will a topped tree grow back?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, and that is the problem. A topped tree pushes out dense water sprouts that can restore its height within a few years, but the new growth is anchored in the outer wood at each cut rather than structurally attached. The tree ends up as tall as before with a weaker, more storm-prone canopy on top of decaying stubs."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How much can crown reduction shorten a tree?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "A proper crown reduction is modest — arborists generally limit it to roughly a quarter of the canopy or less in a single pruning, cutting each branch back to a healthy lateral that takes over as the new tip. If a tree needs to lose half its height to fit its spot, that is a removal-and-replant conversation, not a pruning job."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Can a topped tree be fixed?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Sometimes. Restoration pruning over several years can select the strongest sprouts, thin out the rest, and rebuild a more natural structure, though the internal decay from the original cuts never disappears. A certified arborist should assess the tree; badly decayed or repeatedly topped trees are often safer to remove."
-              }
-            }
-          ]
-        }
-        </script>
 
       </div>
     </div>

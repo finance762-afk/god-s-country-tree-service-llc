@@ -3,11 +3,17 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php';
 
-$pageTitle = 'Is My Tree Dangerous? 9 Warning Signs DeLand Homeowners Should Not Ignore | ' . $siteName;
-$pageDescription = 'Dead branches, trunk cracks, fungal growth, and sudden lean signal tree failure risk in DeLand, FL. Recognize hazard signs before a storm drops a tree on your home. Expert arborist guide.';
+$pageTitle = 'Is My Tree Dangerous? 9 Warning Signs in DeLand, FL';
+$pageDescription = 'Dead limbs, trunk cracks, mushrooms at the base, and new lean are top signs a tree may fail. Use the 9-sign checklist for DeLand yards before the next storm.';
 $canonicalUrl = $siteUrl . '/blog/signs-dangerous-tree-deland/';
 $currentPage = 'blog';
-$pageSchema = blogPostSchema('signs-dangerous-tree-deland', 'dangerous tree warning signs, hazardous tree removal DeLand FL, dead tree removal Florida, leaning tree risk, tree trunk cracks, tree fungus Florida, tree risk assessment Volusia County', $pageDescription);
+$postFaqs = [
+    ['q' => 'What are the signs a tree is about to fall?', 'a' => 'The most urgent signs are a trunk crack wider than 1 inch, a lean of more than 15 degrees toward a structure, roots heaving out of the ground on the lean side, dead branches over 4 inches in diameter above a roof or driveway, and a canopy that suddenly wilts or turns brown.'],
+    ['q' => 'Do mushrooms at the base mean my tree is dangerous?', 'a' => 'Mushrooms on the trunk, root flare, or soil near the base signal internal decay. The visible mushroom is only the fruiting body; by the time it appears, the fungus has been digesting the wood for months or years. Schedule a tree risk assessment.'],
+    ['q' => 'Is a leaning tree dangerous?', 'a' => 'Not always. A tree that has leaned the same direction for years with no soil cracking or root exposure is usually normal. A lean that appeared suddenly or worsened after a storm signals root failure, and any tree leaning more than 15 degrees toward a house, driveway, or power lines should be evaluated immediately.'],
+    ['q' => 'What should I do if I think my tree is dangerous?', 'a' => 'Photograph the defects, keep people and vehicles out of the area the tree could hit, and schedule a tree risk assessment with an ISA-certified arborist. Act before the next storm, because emergency removal rates run 2-3× normal pricing.'],
+];
+$pageSchema = blogPostSchema('signs-dangerous-tree-deland', 'dangerous tree warning signs, hazardous tree removal DeLand FL, dead tree removal Florida, leaning tree risk, tree trunk cracks, tree fungus Florida, tree risk assessment Volusia County', $pageDescription) . generateFAQSchema($postFaqs);
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
@@ -24,7 +30,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <span aria-current="page">Dangerous Tree Warning Signs</span>
         </nav>
         <span class="blog-category">Tree Health</span>
-        <h1>Is My Tree Dangerous? 9 Warning Signs DeLand Homeowners Should Not Ignore</h1>
+        <h1><?php echo e($pageTitle); ?></h1>
         <div class="blog-meta">
           <time datetime="2026-07-08">July 8, 2026</time>
           <span class="blog-meta-sep">•</span>
@@ -189,6 +195,15 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <p>Hurricane season runs June 1 to November 30 in Florida. A tree that's marginally stable in calm weather can fail catastrophically in 75+ mph winds. Don't wait until a hurricane is 48 hours out to call a tree service — by then, crews are booked solid and <a href="/blog/tree-removal-cost-deland-fl/">emergency removal rates</a> are 2-3× normal pricing.</p>
 
         <p>If an arborist identifies a tree as high risk, schedule removal or mitigation work during the off-season (December through May) when crews have availability and pricing is more competitive. <a href="/blog/hurricane-prep-tree-trimming-deland/">Learn when to trim trees before hurricane season</a> to reduce storm damage risk.</p>
+
+        <h2>Dangerous Tree FAQs</h2>
+
+<?php foreach ($postFaqs as $faq): ?>
+        <div class="answer-block">
+          <h3><?php echo e($faq['q']); ?></h3>
+          <p><?php echo e($faq['a']); ?></p>
+        </div>
+<?php endforeach; ?>
 
         <div class="blog-cta">
           <h3>Worried about a dangerous tree in DeLand?</h3>

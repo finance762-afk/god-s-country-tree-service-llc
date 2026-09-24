@@ -3,11 +3,18 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php';
 
-$pageTitle = 'Tree Removal Permits in DeLand, FL: 2026 Rules';
-$pageDescription = 'DeLand and Volusia County tree removal permit rules differ by location, tree size, and species. Learn when permits are required, protected trees, exemptions, and how to avoid $500+ fines.';
+$pageTitle = 'Do You Need a Tree Removal Permit in DeLand? (2026)';
+$pageDescription = 'Maybe. DeLand and Volusia County rules differ by tree size, species, and location. See who to call, which trees are exempt, permit fees, and fines to avoid.';
 $canonicalUrl = $siteUrl . '/blog/tree-removal-permit-deland-fl/';
 $currentPage = 'blog';
-$pageSchema = blogPostSchema('tree-removal-permit-deland-fl', 'tree removal permit DeLand FL, Volusia County tree ordinance, protected tree species Florida, historic tree permit DeLand, tree removal rules Florida, tree service DeLand FL', $pageDescription);
+$postFaqs = [
+    ['q' => 'Do I need a permit to remove a tree in DeLand?', 'a' => 'It depends on where your property is, the tree\'s size and species, and whether it is classified as protected or historic. Inside DeLand city limits, check with the City of DeLand Development Services Department. In unincorporated Volusia County, contact Volusia County Growth and Resource Management.'],
+    ['q' => 'Which trees are exempt from permit requirements?', 'a' => 'Dead, dying, hazardous, diseased, and invasive exotic trees such as Brazilian pepper, melaleuca, and Australian pine are often exempt, as are small trees below the local size threshold. The city or county may still require an arborist report or inspection to confirm the exemption.'],
+    ['q' => 'How much does a tree removal permit cost in DeLand?', 'a' => 'City of DeLand permit fees typically run $50-$150 depending on tree size and complexity, and review can take 1-3 weeks depending on workload and whether a site inspection is required.'],
+    ['q' => 'What happens if I remove a protected tree without a permit?', 'a' => 'Fines run $500 to $5,000 or more depending on tree size, species, and jurisdiction, and you may have to plant replacement trees. Construction projects can be hit with stop-work orders. The fine falls on the property owner, not the contractor.'],
+    ['q' => 'Can I remove my neighbor\'s tree if it looks dangerous?', 'a' => 'Generally no. Florida law treats the tree as part of your neighbor\'s property, so you need their permission. Document the hazard with photos and written communication, and if the tree leans over a street or sidewalk, contact the city or county.'],
+];
+$pageSchema = blogPostSchema('tree-removal-permit-deland-fl', 'tree removal permit DeLand FL, Volusia County tree ordinance, protected tree species Florida, historic tree permit DeLand, tree removal rules Florida, tree service DeLand FL', $pageDescription) . generateFAQSchema($postFaqs);
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
@@ -24,7 +31,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <span aria-current="page">Tree Removal Permit DeLand</span>
         </nav>
         <span class="blog-category">Tree Law</span>
-        <h1>Do You Need a Permit to Remove a Tree in DeLand, Florida?</h1>
+        <h1><?php echo e($pageTitle); ?></h1>
         <div class="blog-meta">
           <time datetime="2026-07-10">July 10, 2026</time>
           <span class="blog-meta-sep">•</span>
@@ -138,6 +145,15 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <p>Even if a permit isn't required, tree removal is dangerous work. Any tree over 15 feet tall, within 10 feet of power lines, or requiring a chainsaw while on a ladder should be handled by a <a href="/services/tree-removal/">licensed, insured tree service</a>. Homeowner chainsaw accidents and power line contacts send people to the hospital every year in Central Florida.</p>
 
         <p>A professional tree service like God's Country Tree Service can assess whether a permit is needed, obtain it if required, and perform the removal safely. We've been removing trees in DeLand and Volusia County since 2014 — we know the local regulations and can navigate the permit process efficiently. <a href="/blog/tree-removal-cost-deland-fl/">Understand what tree removal costs</a> so you can budget appropriately for permitted removals.</p>
+
+        <h2>Tree Removal Permit FAQs</h2>
+
+<?php foreach ($postFaqs as $faq): ?>
+        <div class="answer-block">
+          <h3><?php echo e($faq['q']); ?></h3>
+          <p><?php echo e($faq['a']); ?></p>
+        </div>
+<?php endforeach; ?>
 
         <div class="blog-cta">
           <h3>Not sure if your tree needs a permit?</h3>

@@ -3,11 +3,17 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php';
 
-$pageTitle = 'Tree Fell on Your House in DeLand? 5 Steps to Take | ' . $siteName;
-$pageDescription = 'Tree on your house in DeLand? Get everyone out, document for insurance, tarp fast, and call a licensed crew. 24/7 storm response — call (407) 280-3484.';
+$pageTitle = 'Tree Fell on Your House in DeLand? 5 Steps to Take Now';
+$pageDescription = 'Tree on your house in DeLand? Get everyone out, photograph the damage, tarp the roof, then call a licensed crew. The 5 steps in order, plus who pays for it.';
 $canonicalUrl = $siteUrl . '/blog/tree-fell-on-house-deland-fl/';
 $currentPage = 'blog';
-$pageSchema = blogPostSchema('tree-fell-on-house-deland-fl', 'tree fell on house DeLand, emergency tree removal DeLand FL, tree on roof removal, hazardous tree removal DeLand, storm damage tree service Volusia County', $pageDescription);
+$postFaqs = [
+    ['q' => 'Who pays when a neighbor\'s tree falls on my house?', 'a' => 'In most cases, your own homeowner\'s insurance covers damage to your house — even when the tree came from a neighbor\'s yard. Liability generally shifts to the neighbor only in specific situations, such as a documented pre-existing hazard they ignored. File under your own policy and keep thorough photos and invoices.'],
+    ['q' => 'Should I call my insurance company or a tree service first?', 'a' => 'Handle safety first, then document the damage, then make both calls. If water is actively entering the house, get the emergency tarping and tree removal moving right away — insurers expect you to prevent further damage. Just make sure everything is photographed before any cutting starts.'],
+    ['q' => 'Can a tree be removed from a roof without causing more damage?', 'a' => 'Yes, when it\'s done with rigging or a crane. The tree is dismantled in sections and each piece is lifted straight up off the structure rather than dragged or dropped. That\'s why a tree on a house is a job for a licensed, insured crew with rigging experience — not a ground-level chainsaw operation.'],
+    ['q' => 'How fast can God\'s Country Tree Service respond after a storm in DeLand?', 'a' => 'We run 24/7 storm response across DeLand, Deltona, Orange City, DeBary, Lake Helen, DeLeon Springs, and the rest of Volusia County. Call (407) 280-3484 any hour — trees on structures and active water intrusion go to the front of the line.'],
+];
+$pageSchema = blogPostSchema('tree-fell-on-house-deland-fl', 'tree fell on house DeLand, emergency tree removal DeLand FL, tree on roof removal, hazardous tree removal DeLand, storm damage tree service Volusia County', $pageDescription) . generateFAQSchema($postFaqs);
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
@@ -24,7 +30,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <span aria-current="page">Tree Fell on House DeLand</span>
         </nav>
         <span class="blog-category">Storm Damage</span>
-        <h1>Tree Fell on Your House in DeLand? 5 Steps to Take</h1>
+        <h1><?php echo e($pageTitle); ?></h1>
         <div class="blog-meta">
           <time datetime="2026-08-18">August 18, 2026</time>
           <span class="blog-meta-sep">•</span>
@@ -60,7 +66,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
         <h2>Step 4: Who Should Actually Take the Tree Off Your Roof?</h2>
         <p>God's Country Tree Service has been removing storm-fallen trees in DeLand since 2014, and this is the step where homeowners get hurt and houses get wrecked a second time. A tree on a structure cannot simply be chainsawed where it lies. The trunk is under load — cut it in the wrong place and the released tension can kick the saw back, roll the log through the roof, or drop thousands of pounds onto whatever is left holding the ceiling up. Getting a tree off a house safely means rigging, controlled lifts, and often a crane that picks each section straight up off the structure instead of dragging it across shingles and gutters.</p>
-        <p>That's why the crew you call matters more here than on any routine job. Our <a href="/services/emergency-tree-service-storm-cleanup/">24/7 emergency tree service and storm cleanup</a> crews arrive with the rigging gear and certified arborists to dismantle the tree piece by piece over your roofline, and our <a href="/services/fallen-tree-removal-cleanup/">fallen tree removal and cleanup</a> work is backed by full licensing and insurance. Never let an uninsured chainsaw crew onto your roof — if a worker gets hurt or the removal caves in more of the structure, an uninsured operator's mistake can become your financial problem. Ask for proof of liability insurance and workers' compensation before anyone climbs, no matter how convincing the door-knock pitch sounds after a storm.</p>
+        <p>That's why the crew you call matters more here than on any routine job. Our <a href="/services/emergency-tree-service-storm-cleanup/">24/7 storm damage tree removal</a> crews arrive with the rigging gear and certified arborists to dismantle the tree piece by piece over your roofline, and our <a href="/services/fallen-tree-removal-cleanup/">fallen tree removal and cleanup</a> work is backed by full licensing and insurance. Never let an uninsured chainsaw crew onto your roof — if a worker gets hurt or the removal caves in more of the structure, an uninsured operator's mistake can become your financial problem. Ask for proof of liability insurance and workers' compensation before anyone climbs, no matter how convincing the door-knock pitch sounds after a storm.</p>
 
         <h2>Step 5: What Happens After the Tree Comes Off?</h2>
         <p>God's Country Tree Service doesn't consider a tree strike finished when the trunk hits the ground — a storm-damaged property still holds a full canopy's worth of debris and, more importantly, the trees that are still standing. Full cleanup means bucking and hauling off the trunk and limbs, raking out the small debris, and leaving the yard usable again, whether that's the same visit or a scheduled follow-up through our <a href="/services/tree-removal/">tree removal service</a>.</p>
@@ -69,25 +75,12 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <h2>Tree on the House: Frequently Asked Questions</h2>
         <p>God's Country Tree Service answers these four questions on almost every storm-damage call in DeLand and Volusia County.</p>
 
+<?php foreach ($postFaqs as $faq): ?>
         <div class="answer-block">
-          <h3>Who pays when a neighbor's tree falls on my house?</h3>
-          <p>In most cases, your own homeowner's insurance covers damage to your house — even when the tree came from a neighbor's yard. Liability generally shifts to the neighbor only in specific situations, such as a documented pre-existing hazard they ignored. File under your own policy and keep thorough photos and invoices.</p>
+          <h3><?php echo e($faq['q']); ?></h3>
+          <p><?php echo e($faq['a']); ?></p>
         </div>
-
-        <div class="answer-block">
-          <h3>Should I call my insurance company or a tree service first?</h3>
-          <p>Handle safety first, then document the damage, then make both calls. If water is actively entering the house, get the emergency tarping and tree removal moving right away — insurers expect you to prevent further damage. Just make sure everything is photographed before any cutting starts.</p>
-        </div>
-
-        <div class="answer-block">
-          <h3>Can a tree be removed from a roof without causing more damage?</h3>
-          <p>Yes, when it's done with rigging or a crane. The tree is dismantled in sections and each piece is lifted straight up off the structure rather than dragged or dropped. That's why a tree on a house is a job for a licensed, insured crew with rigging experience — not a ground-level chainsaw operation.</p>
-        </div>
-
-        <div class="answer-block">
-          <h3>How fast can God's Country Tree Service respond after a storm in DeLand?</h3>
-          <p>We run 24/7 storm response across DeLand, Deltona, Orange City, DeBary, Lake Helen, DeLeon Springs, and the rest of Volusia County. Call (407) 280-3484 any hour — trees on structures and active water intrusion go to the front of the line.</p>
-        </div>
+<?php endforeach; ?>
 
         <div class="blog-cta">
           <h3>Tree on your house right now?</h3>
@@ -132,47 +125,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             ?>
           </div>
         </div>
-
-        <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Who pays when a neighbor's tree falls on my house?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "In most cases, your own homeowner's insurance covers damage to your house — even when the tree came from a neighbor's yard. Liability generally shifts to the neighbor only in specific situations, such as a documented pre-existing hazard they ignored. File under your own policy and keep thorough photos and invoices."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Should I call my insurance company or a tree service first?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Handle safety first, then document the damage, then make both calls. If water is actively entering the house, get the emergency tarping and tree removal moving right away — insurers expect you to prevent further damage. Just make sure everything is photographed before any cutting starts."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Can a tree be removed from a roof without causing more damage?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, when it's done with rigging or a crane. The tree is dismantled in sections and each piece is lifted straight up off the structure rather than dragged or dropped. That's why a tree on a house is a job for a licensed, insured crew with rigging experience — not a ground-level chainsaw operation."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How fast can God's Country Tree Service respond after a storm in DeLand?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "We run 24/7 storm response across DeLand, Deltona, Orange City, DeBary, Lake Helen, DeLeon Springs, and the rest of Volusia County. Call (407) 280-3484 any hour — trees on structures and active water intrusion go to the front of the line."
-              }
-            }
-          ]
-        }
-        </script>
 
       </div>
     </div>
