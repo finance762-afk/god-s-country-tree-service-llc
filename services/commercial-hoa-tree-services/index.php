@@ -53,56 +53,56 @@ $riskCards = [
 
 // ---- What's included (glass cards on dark section) ----
 $includedCards = [
-    ['icon' => 'scissors',     'title' => 'Scheduled trimming & lifting', 'text' => 'Canopy raised over drives, parking, and walkways on a planned cycle — clearance stays legal and predictable instead of overgrown and urgent.'],
+    ['icon' => 'scissors',     'title' => 'Scheduled trimming & lifting', 'text' => 'Canopy raised over drives, parking rows, and walkways on a planned cycle, so clearance for delivery trucks and sightlines is handled before it turns urgent.'],
     ['icon' => 'shield-alert', 'title' => 'Hazard & dead tree removal',   'text' => 'Declining pines and hollowing oaks flagged at walk-throughs come down in controlled sections before they choose their own timing.'],
-    ['icon' => 'zap',          'title' => 'Storm response & cleanup',     'text' => 'When weather hits Volusia County, contract properties get the first calls — downed trees and hangers cleared, drives reopened.'],
-    ['icon' => 'shovel',       'title' => 'Lot clearing & skid-steer work',   'text' => 'Tree service and land clearing from one company: clearing, brush work, and overgrown acreage mowed as part of the same contract.'],
-    ['icon' => 'truck',        'title' => 'Chipping & debris hauling',    'text' => 'Our own chipper, grapple loader, and trucks — brush and logs leave the property the same day, never stacked at the curb for weeks.'],
-    ['icon' => 'file-check',   'title' => 'Assessment & documentation',   'text' => 'Every visit ends in writing: what was inspected, what was done, what to watch. Paper your board, manager, or carrier can actually use.'],
+    ['icon' => 'zap',          'title' => 'Storm response & cleanup',     'text' => 'Emergency storm response runs 24 hours a day in Volusia County, with same-day response for genuine hazards such as a tree on a building or across an entrance.'],
+    ['icon' => 'shovel',       'title' => 'Lot clearing & skid-steer work',   'text' => 'Brush clearing, lot clearing, and overgrown acreage mowed with our own skid steer, quoted on the same estimate as the tree work.'],
+    ['icon' => 'truck',        'title' => 'Chipping & debris hauling',    'text' => 'Our own chipper, grapple loader, and trucks. Brush is chipped on site and logs are loaded out, not stacked at the curb for weeks.'],
+    ['icon' => 'file-check',   'title' => 'Written estimate & records',   'text' => 'The written estimate lists each tree and the work proposed for it. It is a dated document your board, manager, or insurance carrier can keep on file.'],
 ];
 
 // ---- Signature comparison: reactive vs scheduled maintenance ----
 $comparison = [
     ['reactive' => 'Trees get attention after a limb is already on a car or roof',   'scheduled' => 'Hazards flagged and handled at planned walk-throughs'],
-    ['reactive' => 'Emergency rates every time an August storm forces the call',     'scheduled' => 'Contract pricing agreed in writing before storm season'],
-    ['reactive' => 'Scrambling for quotes and insurance paperwork per incident',     'scheduled' => 'One insured contractor with documentation already on file'],
-    ['reactive' => 'Residents and tenants surprised by chainsaws at 8 AM',           'scheduled' => 'Work windows scheduled and communicated in advance'],
-    ['reactive' => 'Liability question marks hanging into hurricane season',         'scheduled' => 'Dated pre-season inspections that show reasonable care'],
+    ['reactive' => 'Scope and price decided under pressure the week of a storm',     'scheduled' => 'Scope and price on a written estimate before storm season'],
+    ['reactive' => 'Scrambling for quotes and insurance paperwork per incident',     'scheduled' => 'One contractor whose proof of coverage is already on file'],
+    ['reactive' => 'Residents and tenants surprised by chainsaws at 8 AM',           'scheduled' => 'Work dates agreed with the manager ahead of time'],
+    ['reactive' => 'Liability question marks hanging into hurricane season',         'scheduled' => 'A dated pre-season walk-through and written scope on file'],
 ];
 
 // ---- HOA working points ----
 $hoaPoints = [
-    ['strong' => 'Board-ready paperwork.',   'text' => 'Written assessments and line-item quotes your board can circulate, question, and vote on — not a price shouted from a truck window.'],
-    ['strong' => 'Insurance before the saw.', 'text' => 'Licensed and insured, with documentation available before the crew arrives. Associations should never have to take coverage on faith.'],
+    ['strong' => 'Board-ready paperwork.',   'text' => 'A written estimate listing each tree and the work proposed, which your board can circulate, question, and vote on — not a price shouted from a truck window.'],
+    ['strong' => 'Coverage proof before the saw.', 'text' => 'Liability and workers\' compensation documentation is available on request before the crew arrives. Associations should never have to take coverage on faith.'],
     ['strong' => 'One point of contact.',     'text' => 'A single crew and a single number for the whole property — trimming, removals, storm calls, and skid-steer work, without chasing three vendors.'],
-    ['strong' => 'Scheduled around residents.', 'text' => 'Notice goes out before we do. Equipment stages where it will not pin in parking, and bigger communities are phased to keep common areas usable.'],
+    ['strong' => 'Scheduled around residents.', 'text' => 'Work dates are agreed with the board or manager ahead of time so residents can be told. Equipment is staged where it will not pin in parking, and a large community can be split across several work days.'],
 ];
 
 // ---- FAQs (conversational, 40-80 word answers) ----
 $faqs = [
     [
         'q' => 'Can you provide proof of insurance before work starts?',
-        'a' => "Yes. God's Country is licensed and insured, and documentation is available before anyone starts a saw. Most property managers ask for it during the bid — we'd rather you ask than assume.",
+        'a' => "Yes. God's Country Tree Service LLC provides proof of liability and workers' compensation coverage on request, before anyone starts a saw. Most property managers ask for it with the estimate, and we would rather you ask than assume. Keep a copy with the written estimate so the association's file is complete.",
     ],
     [
-        'q' => 'How does a scheduled maintenance contract actually work?',
-        'a' => "We walk the property, flag what needs attention now versus what can wait, and put a schedule and price in writing. Visits are planned — typically before hurricane season and again after it — and each one ends with the site clean and the work documented. The scope adjusts as the property's trees change.",
+        'q' => 'How does scheduled tree maintenance work for a commercial property?',
+        'a' => "We walk the property, flag what needs attention now versus what can wait, and put the scope and price on a written estimate. For most Volusia County properties the useful timing is one visit before hurricane season starts on June 1 and a check after it ends on November 30. The scope is revisited as the property's trees change.",
     ],
     [
         'q' => 'Can you work around tenants, residents, and business hours?',
-        'a' => 'Yes. Work windows are agreed in advance so residents get notice and businesses are not blocked at their busiest hours. We stage equipment where it will not trap cars, keep access drives open, and split larger properties into phases when that is less disruptive than one long mobilization.',
+        'a' => 'Yes. Work dates are agreed in advance so the manager can give residents notice and businesses are not blocked at their busiest hours. Our posted hours run Monday to Friday 7 AM to 10 PM and Saturday 8 AM to 9 PM, which leaves room to work a retail lot outside trading hours. Equipment is staged where it will not trap cars.',
     ],
     [
         'q' => 'Do you handle storm cleanup for commercial properties?',
-        'a' => 'We do — and contract clients get the first calls after a storm moves through Volusia County. Fallen trees on drives, hangers over walkways, and debris across common areas are cleared with our own grapple loader and chipper, then hauled off. It is the same crew you see at scheduled visits, not subcontractors.',
+        'a' => 'Yes. The emergency line covers commercial properties and HOA common areas after a storm moves through Volusia County. Fallen trees on drives, hangers over walkways, and debris across common areas are cleared with our own grapple loader and chipper, then hauled off. It is the same owner-operated crew you see at scheduled visits.',
     ],
     [
-        'q' => 'Do you also handle lot clearing and skid-steer work?',
-        'a' => "Yes — the same crew that trims your trees clears your lots. Lot clearing, brush work, mowing overgrown acreage, and debris hauling can fold into the same contract, so DeLand property owners and developers often hire us for the whole site.",
+        'q' => 'Do you also handle brush clearing and lot clearing?',
+        'a' => "Yes. The same crew that trims the trees clears the lot. Brush clearing, lot clearing, mowing overgrown acreage, and debris hauling are done with our own skid steer and grapple loader, so a DeLand property owner can put the tree work and the clearing on one written estimate.",
     ],
     [
         'q' => 'Do you cover commercial properties outside DeLand?',
-        'a' => 'Yes — from our DeLand base we serve Deltona, Orange City, DeBary, Lake Helen, and properties within roughly 50 miles across Volusia County. Same crew, same equipment, same written assessment within 24 hours wherever the property sits, and multi-site portfolios in the area can run on a single schedule.',
+        'a' => 'Yes. From our DeLand base we serve DeLeon Springs, Lake Helen, Orange City, Deltona, DeBary, and properties within roughly 50 miles across Volusia County. The same crew and equipment make the trip wherever the property sits, and a manager with several sites in the area can put them on one schedule.',
     ],
 ];
 
@@ -750,6 +750,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 }
 </style>
 
+<article class="service-article">
+
 <!-- ============ HERO (C1.4) ============ -->
 <section class="com-hero has-hero-bg" aria-label="Commercial and HOA tree services in DeLand, Florida">
   <?php echo p1_hero_picture($heroImage); ?>
@@ -767,7 +769,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <h1>Commercial &amp; HOA Tree Services in DeLand, FL &mdash; <span class="text-accent">Tree Service That Keeps Properties Covered</span></h1>
 
-    <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving commercial properties and HOA communities across Volusia County since <?php echo e($yearEstablished); ?>. Scheduled maintenance contracts, insurance documented before the first cut, and one crew for trees, cleanup, and land clearing &mdash; with written assessments within 24 hours.</p>
+    <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving commercial properties and HOA communities across Volusia County since <?php echo e($yearEstablished); ?>. One crew handles scheduled tree maintenance, storm cleanup, and lot clearing, and proof of liability and workers' compensation coverage is available on request. The written estimate is free and arrives within 24 hours of the site walk.</p>
 
     <div class="hero-actions">
       <a href="#estimate-form" class="btn btn-accent btn-lg">Request a Property Assessment</a>
@@ -775,10 +777,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     </div>
 
     <div class="hero-trust">
-      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
+      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Coverage Proof on Request</span>
       <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
-      <span class="hero-trust-item"><?php echo icon('calendar-check'); ?> Scheduled Contract Work</span>
-      <span class="hero-trust-item"><?php echo icon('clock'); ?> Assessments Within 24 Hours</span>
+      <span class="hero-trust-item"><?php echo icon('calendar-check'); ?> Scheduled Maintenance</span>
+      <span class="hero-trust-item"><?php echo icon('clock'); ?> Own Skid Steer + Grapple Loader</span>
     </div>
     </div>
 
@@ -793,12 +795,12 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 <!-- ============ PROBLEM: LIABILITY — 01 ============ -->
 <section class="numbered-section" data-num="01" aria-label="Tree liability on commercial properties">
   <div class="container">
-    <p class="com-lede" data-animate>When a limb drops on a parked car, the first question is never about the tree. It&rsquo;s <strong>who knew, and when</strong> &mdash; and a dated maintenance record is the difference between an incident and a lawsuit.</p>
+    <p class="com-lede" data-animate>When a limb drops on a parked car, the first question is never about the tree. It&rsquo;s <strong>who knew, and when</strong> &mdash; and a dated maintenance record is the answer a property manager wants to have on file.</p>
 
     <div class="section-title" data-animate>
       <span class="eyebrow-label">The Paper Trail Matters</span>
       <h2>How does property tree maintenance reduce liability?</h2>
-      <p class="answer-block">Documented, scheduled tree maintenance shows a property took reasonable care before anything failed. Hazard limbs get flagged and removed at planned visits instead of after an incident, insurance stays verifiable, and every assessment leaves a paper trail &mdash; exactly what boards, managers, and carriers ask about after a Volusia County storm.</p>
+      <p class="answer-block">Documented, scheduled tree maintenance shows a property took reasonable care before anything failed. Hazard limbs get flagged and removed at planned visits instead of after an incident, and each written estimate from God&rsquo;s Country Tree Service leaves a dated record &mdash; the first thing boards, managers, and carriers ask about after a Volusia County storm.</p>
     </div>
 
     <div class="com-risk-grid">
@@ -824,7 +826,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">One Crew, Whole Property</span>
       <h2>What does commercial tree service include for DeLand properties?</h2>
-      <p class="answer-block">Commercial tree service from God&rsquo;s Country covers scheduled trimming and canopy lifting, hazard and dead tree removal, storm response, lot clearing, and full debris hauling &mdash; one licensed and insured crew running its own skid steer, chipper, and grapple loader. Every visit ends with the site clean and the work documented in writing.</p>
+      <p class="answer-block">Commercial tree service from God&rsquo;s Country Tree Service includes scheduled trimming, canopy lifting, hazard tree removal, storm cleanup, brush and lot clearing, and debris hauling. One DeLand crew does all of it with its own skid steer, chipper, grapple loader, and boom lift, so the property deals with a single contractor.</p>
     </div>
 
     <div class="com-stats-row" data-p1-dynamic>
@@ -841,8 +843,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <div class="com-stat-label">Tree Services, One Crew</div>
       </div>
       <div class="com-stat-block reveal-delay-3" data-animate>
-        <div class="com-stat-number">24<span class="accent">hr</span></div>
-        <div class="com-stat-label">Written Assessments</div>
+        <div class="com-stat-number">50<span class="accent">mi</span></div>
+        <div class="com-stat-label">Radius Around DeLand</div>
       </div>
     </div>
 
@@ -870,8 +872,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <div>
         <span class="eyebrow-label">Built for Boards &amp; Managers</span>
         <h2>How do HOA tree services keep communities compliant and safe?</h2>
-        <p class="answer-block">For HOA communities around DeLand, tree work is as much paperwork as chainsaw: written assessments a board can vote on, certificates of insurance before a crew arrives, work windows residents hear about in advance, and steady care of the community&rsquo;s live oaks and palms so common areas stay safe and presentable.</p>
-        <p data-animate>From the mature oak canopy near historic downtown DeLand out to newer communities toward Deltona, Orange City, and DeBary, common-area trees get ignored until a storm. A standing schedule gets deadwood out before hurricane season, keeps canopy off streetlights and rooflines, and gives the association a record that the trees were managed.</p>
+        <p class="answer-block">HOA tree services keep communities safe by clearing deadwood and lifting canopy over streets, sidewalks, and rooflines before hurricane season. For boards around DeLand, God&rsquo;s Country Tree Service adds the paperwork: a written estimate the board can vote on, and proof of coverage before work starts.</p>
+        <p data-animate>From the mature oak canopy near historic downtown DeLand out to newer communities toward Deltona, Orange City, and DeBary, common-area trees get ignored until a storm. A standing schedule gets deadwood out before hurricane season, keeps canopy off streetlights and rooflines, and gives the association a record that the trees were managed. Before a common-area removal, confirm protected-tree rules with the City of DeLand or Volusia County.</p>
         <ul class="com-hoa-points" data-p1-dynamic>
           <?php foreach ($hoaPoints as $point): ?>
           <li data-animate>
@@ -884,7 +886,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
       <figure class="com-hoa-figure" data-animate="right">
         <?php echo p1_picture($bodyPhotos['accessdrive']['src'], $bodyPhotos['accessdrive']['alt'], 800, 520, '(max-width: 768px) 100vw, 800px'); ?>
-        <figcaption>Access route planned between safety fencing on a clearing job near DeLand &mdash; the same site discipline we bring to contract properties.</figcaption>
+        <figcaption>Access route planned between safety fencing on a clearing job near DeLand &mdash; the same site discipline we bring to commercial properties.</figcaption>
       </figure>
     </div>
   </div>
@@ -901,7 +903,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">The Cost of Waiting</span>
       <h2>Why put business tree care on a maintenance schedule?</h2>
-      <p class="answer-block">Because reactive tree work is the most expensive kind. A scheduled contract from God&rsquo;s Country Tree Service catches hazards at planned visits, locks pricing in writing before hurricane season, and keeps insurance and documentation current.</p>
+      <p class="answer-block">A maintenance schedule puts business tree care ahead of the storm instead of after the damage. God&rsquo;s Country Tree Service walks the property before hurricane season starts on June 1, flags the hazards, and puts scope and price on a written estimate, so the storm-week decisions are already made.</p>
     </div>
 
     <div class="com-ledger">
@@ -938,8 +940,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Our Equipment, Our Crew</span>
-      <h2>Searching for commercial tree service near me in DeLand?</h2>
-      <p class="answer-block">If you&rsquo;re searching for commercial tree service near me in DeLand, this is what our job sites look like: protection fencing up before the saws start, equipment staged clear of access routes, and acreage left mowed and clean. We handle commercial work within about 50 miles of DeLand across Volusia County.</p>
+      <h2>Who handles commercial tree service near me in DeLand?</h2>
+      <p class="answer-block">God&rsquo;s Country Tree Service LLC handles commercial tree service from DeLand, FL 32720, for properties within about 50 miles across Volusia County. The photos below are its own job sites: tree-protection fencing up before the saws start, equipment staged clear of the access drive, and acreage left mowed after a clearing job.</p>
     </div>
 
     <div class="com-proof-gallery">
@@ -969,8 +971,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Before You Sign</span>
-      <h2>What do DeLand property managers ask before signing a tree contract?</h2>
-      <p class="answer-block">The same things a good manager asks every vendor: who carries the insurance, how scheduling works, whether residents get notice, and what happens after a storm.</p>
+      <h2>Commercial &amp; HOA Tree Service FAQs for DeLand Property Managers</h2>
+      <p class="answer-block">These are the questions property managers and HOA boards ask before work is approved: proof of coverage, how scheduling works, notice for residents, and what happens after a storm.</p>
     </div>
 
     <div class="faq-grid" data-p1-dynamic>
@@ -991,9 +993,9 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 <section class="com-related-section" aria-label="Related tree services">
   <div class="container">
     <div class="section-title" data-animate>
-      <span class="eyebrow-label">Round Out the Contract</span>
+      <span class="eyebrow-label">Round Out the Schedule</span>
       <h2>What other tree services do DeLand property owners pair with commercial &amp; HOA tree care?</h2>
-      <p class="answer-block">Most contract properties bundle three things: ongoing <a href="/services/tree-maintenance-care/">tree maintenance visits</a> between big jobs, <a href="/services/dead-hazardous-tree-removal/">hazardous tree removal</a> flagged during walk-throughs, and <a href="/services/emergency-tree-service-storm-cleanup/">emergency storm response</a> when hurricane season delivers &mdash; usually written into one schedule.</p>
+      <p class="answer-block">DeLand property owners most often pair commercial and HOA tree care with three other services. Those are <a href="/services/tree-maintenance-care/">seasonal tree maintenance visits</a> between big jobs, <a href="/services/dead-hazardous-tree-removal/">removal of dead and hazardous trees</a> flagged on a walk-through, and <a href="/services/emergency-tree-service-storm-cleanup/">emergency storm cleanup</a>. All of them are on <a href="/services/">the full list of God&rsquo;s Country tree services</a>.</p>
     </div>
 
     <?php renderServiceCards(['tree-maintenance-care', 'dead-hazardous-tree-removal', 'emergency-tree-service-storm-cleanup'], $serviceCardData); ?>
@@ -1003,9 +1005,9 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 <!-- ============ CLOSING CTA (C9.2) ============ -->
 <section class="com-closing-cta" aria-label="Request a commercial property assessment">
   <div class="container">
-    <span class="eyebrow-label" style="color: var(--color-accent);">Free &middot; Written &middot; Within 24 Hours</span>
+    <span class="eyebrow-label" style="color: var(--color-accent);">Site Walk &middot; Written Estimate</span>
     <h2>Ready to Get Your Property on the Maintenance Calendar Before Hurricane Season?</h2>
-    <p class="answer-block">Tell us about the property &mdash; office park, retail strip, HOA common areas, or raw acreage. <?php echo e($siteName); ?> will walk it with you, flag what actually needs work, and put a schedule and a straight price in writing, usually within 24 hours.</p>
+    <p class="answer-block">Tell us about the property &mdash; office park, retail strip, HOA common areas, or raw acreage. <?php echo e($siteName); ?> will walk it with you, flag what actually needs work, and put a schedule and a straight price in writing.</p>
     <div class="hero-actions">
       <a href="#estimate-form" class="btn btn-accent btn-lg">Request a Property Assessment</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact Us</a>
@@ -1014,5 +1016,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 </section>
 
 <p class="last-updated">Last Updated: <?php echo date('F Y'); ?></p>
+
+</article>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

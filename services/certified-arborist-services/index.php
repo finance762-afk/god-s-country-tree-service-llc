@@ -24,18 +24,18 @@ $canonicalUrl    = $siteUrl . '/services/' . $serviceSlug . '/';
 // ---- Images (content/image-manifest.md allocation) ----
 $imgBase = '/assets/images/'; // v6.3 2026-09-04: photos localized (were hotlinked Supabase-storage originals)
 
-$heroImage        = $imgBase . '1784062733583-jhvosk-35788256_2078205079066760_5169623066409435136_n.webp'; // harnessed climber rigging on an oak limb (portrait — center crop)
+$heroImage        = '/assets/images/certified-arborist-examining-tree-health-in-dela-960.webp'; // climber roped into a moss-draped live oak (v8: was the shrub-bed photo)
 $heroImagePreload = $heroImage;
 $ogImage          = $siteUrl . p1_best_src($heroImage);
 
 $bodyPhotos = [
     'rigged' => [
-        'src' => $imgBase . '1784062740583-2dtirn-42754196_2163954730491794_5374692911386460160_n.webp',
-        'alt' => 'Climbing arborist rigged with rope and carabiners in an oak over a DeLand, FL lake',
+        'src' => $imgBase . '1784062763583-cvnei3-503812193_4046117498942165_6962620168915463637_n.webp',
+        'alt' => 'Crew member looking up at a tall oak that overhangs a pool enclosure',
     ],
     'canopy' => [
         'src' => $imgBase . '1784062745583-ri3d15-51248376_2242050436015556_1895589103194341376_n.webp',
-        'alt' => 'Helmeted arborist working in an oak canopy above a DeLand, FL lake',
+        'alt' => 'Cleanly shaped mature oak against blue sky at a DeLand, FL home',
     ],
 ];
 
@@ -53,7 +53,7 @@ $arbServices = [
     ['icon' => 'search',          'title' => 'Disease & pest diagnosis',     'text' => 'Identifying what\'s actually attacking the tree — fungal decay, borers, root rot, or plain old drought stress — before anyone recommends a cut.'],
     ['icon' => 'clipboard-list',  'title' => 'Treatment & care plans',       'text' => 'Species-specific plans: corrective pruning, crown reduction, watering and nutrition changes, and a follow-up schedule the same crew can carry out.'],
     ['icon' => 'wind',            'title' => 'Hurricane-season risk checks', 'text' => 'Pre-season evaluations of the oaks and pines standing over your roof, pool screen enclosure, or driveway — ranked by what actually needs work first.'],
-    ['icon' => 'scale',           'title' => 'Save-or-remove verdicts',      'text' => 'The honest call: which trees pruning can fix, and which ones are structural losses. Both answers come in writing with a free estimate within 24 hours.'],
+    ['icon' => 'scale',           'title' => 'Save-or-remove verdicts',      'text' => 'The honest call: which trees pruning can fix, and which ones are structural losses. Both answers come in writing, with the reasons behind them.'],
     ['icon' => 'sprout',          'title' => 'Species & planting guidance',  'text' => 'What to plant where in DeLand — matching species to sandy soil, sun, and distance from structures so today\'s sapling isn\'t a removal in twenty years.'],
 ];
 
@@ -63,7 +63,7 @@ $diagSteps = [
     ['title' => 'Read the root flare and trunk',     'text' => 'We check for buried root flares, girdling roots, cavities, cracks, and fungal conks — the structural evidence. A mushroom at the base of an oak means something very different than one in the mulch.'],
     ['title' => 'Read the canopy',                   'text' => 'Dieback pattern, leaf color and size, deadwood distribution, and how the tree responded to past pruning. Where a canopy is failing tells us why it\'s failing.'],
     ['title' => 'Give the verdict in plain English', 'text' => 'Save, treat, monitor, or remove — and why. If it\'s treatable you get a plan with real steps. If it isn\'t, we say so instead of selling you fertilizer for a dead tree.'],
-    ['title' => 'Put it in writing within 24 hours', 'text' => 'The written estimate covers whatever the verdict calls for — pruning, crown reduction, or removal — priced by the same local crew that will do the work, not a subcontractor.'],
+    ['title' => 'Put it in writing within 24 hours', 'text' => 'The written estimate covers whatever the verdict calls for — pruning, crown reduction, or removal — priced by the same owner-operated crew that will do the work.'],
 ];
 
 // ---- Save vs remove (honest verdict columns) ----
@@ -86,23 +86,23 @@ $verdictRemove = [
 $faqs = [
     [
         'q' => 'What certifications and insurance does God\'s Country carry?',
-        'a' => "Our team holds Florida arborist certifications and maintains full liability and workers' compensation insurance — and we'll show proof of coverage before any work starts. That combination matters in DeLand, where storm season brings out plenty of crews whose paperwork doesn't survive a second look. Ask for documentation at the estimate; we expect you to.",
+        'a' => "The arborist on our staff holds an arborist certification, and the company carries liability and workers' compensation insurance. We show proof of coverage before any work starts. That matters in DeLand, where storm season brings out plenty of crews whose paperwork doesn't survive a second look. Ask for documentation at the estimate; we expect you to.",
     ],
     [
         'q' => 'My oak is thinning — does it have to come down?',
-        'a' => "Not necessarily. A thinning crown is a symptom, not a verdict. Drought stress, root damage from construction, soil compaction, and disease all produce similar-looking canopies but call for completely different responses. We assess the root flare, trunk, and dieback pattern first — many DeLand oaks recover with corrective pruning and root-zone care instead of removal.",
+        'a' => "A thinning oak does not have to come down by default. A thinning crown is a symptom, not a verdict. Drought stress, root damage from construction, soil compaction, and disease all produce similar-looking canopies but call for completely different responses. We assess the root flare, trunk, and dieback pattern first — many DeLand oaks recover with corrective pruning and root-zone care instead of removal.",
     ],
     [
         'q' => 'How much does an arborist assessment cost in DeLand?',
-        'a' => "The estimate itself is free — we walk the property, give you a verbal read on the spot, and follow with a written quote within 24 hours for whatever the tree actually needs. There's no fee just to find out whether that oak over your roof is a hazard or merely ugly this season.",
+        'a' => "The estimate itself is free — we walk the property, give you a verbal read on the spot, and follow with a written quote for whatever the tree actually needs. There's no fee just to find out whether that oak over your roof is a hazard or merely ugly this season.",
     ],
     [
         'q' => 'Do you treat trees, or just recommend removals?',
-        'a' => "We do the work, not just the diagnosis. Corrective pruning, crown reduction, deadwood removal, and ongoing maintenance plans all come from the same crew that assessed the tree — and when removal is the honest answer, we handle that too. One local company, one written quote, no hand-off to a subcontractor you've never met.",
+        'a' => "We do the work, not just the diagnosis. Corrective pruning, crown reduction, deadwood removal, and ongoing maintenance plans all come from the same crew that assessed the tree — and when removal is the honest answer, we handle that too. One local company, one written quote.",
     ],
     [
         'q' => 'Can you check my trees after a pool or addition was built?',
-        'a' => "Yes, and you should. Construction that trenches through a root zone can take one to three years to show up as canopy dieback, especially in sandy soil that drains fast. An assessment after the build — and again a year later — catches root damage while corrective care can still make a difference.",
+        'a' => "Yes, we check trees after construction, and it is worth asking. Construction that trenches through a root zone can take one to three years to show up as canopy dieback, especially in sandy soil that drains fast. An assessment after the build — and again a year later — catches root damage while corrective care can still make a difference.",
     ],
 ];
 
@@ -877,6 +877,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 }
 </style>
 
+<article class="service-article">
+
 <!-- ============ HERO (C1.4) ============ -->
 <section class="arb-hero has-hero-bg" aria-label="Certified arborist services in DeLand, Florida">
   <?php echo p1_hero_picture($heroImage); ?>
@@ -890,11 +892,11 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <span aria-current="page">Certified Arborist Services</span>
     </nav>
 
-    <span class="hero-eyebrow">Certified Arborist Services &middot; DeLand, FL</span>
+    <span class="hero-eyebrow">Arborist Services &middot; DeLand, FL</span>
 
     <h1>Certified Arborist Services in DeLand, FL &mdash; <span class="text-accent">Expert Diagnosis from a Local Tree Service</span></h1>
 
-    <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving Volusia County since <?php echo e($yearEstablished); ?> &mdash; with certified arborist expertise behind every estimate. We diagnose sick oaks and palms, write real treatment plans, and tell you honestly which trees can be saved and which can&rsquo;t.</p>
+    <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving Volusia County since <?php echo e($yearEstablished); ?>, with a certified arborist on staff. We diagnose sick oaks and palms, write real treatment plans, and tell you honestly which trees can be saved and which can&rsquo;t.</p>
 
     <div class="hero-actions">
       <a href="#estimate-form" class="btn btn-accent btn-lg">Book a Free Consultation</a>
@@ -902,10 +904,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     </div>
 
     <div class="hero-trust">
-      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
-      <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
+      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Proof of Coverage on Request</span>
+      <span class="hero-trust-item"><?php echo icon('award'); ?> Owner-Operated</span>
       <span class="hero-trust-item"><?php echo icon('clipboard-check'); ?> Honest Save-or-Remove Calls</span>
-      <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
+      <span class="hero-trust-item"><?php echo icon('clock'); ?> Written Care Plans</span>
     </div>
     </div>
 
@@ -928,11 +930,11 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Diagnosis Before Saws</span>
       <h2>What does a certified arborist in DeLand, FL actually do?</h2>
-      <p class="answer-block">A certified arborist reads a tree the way an inspector reads a house: root flare, trunk, canopy, and site. In DeLand that means diagnosing declining live oaks, spotting ganoderma conks at a palm&rsquo;s base, catching nutrient deficiencies in the fronds, and writing a treatment &mdash; or removal &mdash; plan you can act on.</p>
+      <p class="answer-block">An arborist reads a tree the way an inspector reads a house: root flare, trunk, canopy, and site. In DeLand that means diagnosing declining live oaks, spotting ganoderma conks at a palm&rsquo;s base, catching nutrient deficiencies in the fronds, and writing a treatment &mdash; or removal &mdash; plan you can act on.</p>
     </div>
 
     <div class="arb-lede" data-animate>
-      <p class="drop-cap">Most tree problems in DeLand don&rsquo;t announce themselves until they&rsquo;re expensive. Sandy Central Florida soil drains fast, hides root damage, and lets decay work quietly for years &mdash; arborist work is catching those stories early.</p>
+      <p class="drop-cap">Most tree problems in DeLand don&rsquo;t announce themselves until they&rsquo;re expensive. Sandy Central Florida soil drains fast, hides root damage, and lets decay work quietly for years &mdash; arborist work is catching those stories early. Our guide to <a href="/blog/what-does-certified-arborist-do/">what an arborist does on a DeLand property</a> goes deeper.</p>
     </div>
 
     <div class="arb-symptoms">
@@ -960,14 +962,14 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <span class="eyebrow-label">Judgment First, Equipment Second</span>
         <h2>When should you call an arborist instead of a general tree service?</h2>
         <figure style="margin: 0 0 var(--space-6); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md);" data-animate>
-          <img src="/assets/images/certified-arborist-examining-tree-health-in-dela-960.webp" srcset="/assets/images/certified-arborist-examining-tree-health-in-dela-960.webp 960w" sizes="(max-width: 768px) 100vw, 800px" alt="Certified arborist examining tree health in DeLand, Florida" width="800" height="600" loading="lazy" style="width: 100%; height: auto; display: block;">
+          <?php echo p1_picture('/assets/images/1784062767583-96o2mm-650224392_1767273321337836_3694986581662424202_n.webp', 'Arborist roped into an oak canopy making pruning cuts', 800, 600, '(max-width: 768px) 100vw, 800px'); ?>
         </figure>
-        <p class="answer-block">Call an arborist when the question is &ldquo;what&rsquo;s wrong with this tree?&rdquo; rather than &ldquo;how fast can it come down?&rdquo; A professional tree service with certified arborist expertise diagnoses before it cuts &mdash; so a treatable oak gets a care plan, and only genuine hazards get the saw.</p>
+        <p class="answer-block">Call an arborist instead of a general tree service when the question is what is wrong with the tree, not how fast it can come down. An arborist diagnoses before anyone cuts, so a treatable oak gets a care plan and only a genuine hazard gets the saw. God&rsquo;s Country does both jobs with one crew.</p>
 
         <ul class="arb-cred-rows" data-p1-dynamic>
           <li data-animate>
             <?php echo icon('badge-check'); ?>
-            <p><strong>Certified arborist expertise on every job.</strong> Diagnosis, treatment plans, and species-specific care &mdash; not a one-size-fits-all &ldquo;it&rsquo;s gotta come down.&rdquo;</p>
+            <p><strong>The arborist&rsquo;s read comes first.</strong> Diagnosis, treatment plans, and species-specific care &mdash; not a one-size-fits-all &ldquo;it&rsquo;s gotta come down.&rdquo;</p>
           </li>
           <li data-animate>
             <?php echo icon('shield-check'); ?>
@@ -975,7 +977,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
           </li>
           <li data-animate>
             <?php echo icon('wrench'); ?>
-            <p><strong>One local crew carries out the plan.</strong> The same DeLand tree service that diagnoses your tree does the pruning, crown reduction, or removal &mdash; tree work and land clearing included.</p>
+            <p><strong>One local crew carries out the plan.</strong> The same DeLand tree service that diagnoses your tree does the pruning, crown reduction, or removal, and brings the chipper and grapple loader to haul the debris.</p>
           </li>
         </ul>
       </div>
@@ -994,7 +996,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">The Arborist&rsquo;s Job List</span>
       <h2>What arborist services does God's Country provide?</h2>
-      <p class="answer-block">God&rsquo;s Country Tree Service provides tree health assessments, disease and pest diagnosis, treatment and care plans, hurricane-season risk evaluations, honest save-or-remove verdicts, and planting guidance across DeLand and Volusia County &mdash; all from one licensed and insured local crew, with free written estimates within 24 hours.</p>
+      <p class="answer-block">God&rsquo;s Country Tree Service provides six arborist services in DeLand, from tree health assessments to save-or-remove verdicts. The others are disease and pest diagnosis, treatment plans, hurricane-season risk checks and planting guidance. One owner-operated crew carries out the plan it writes. Arborist work sits alongside the other <a href="/services/">tree services we offer across Volusia County</a>.</p>
     </div>
 
     <div class="arb-services-grid">
@@ -1024,7 +1026,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <p class="answer-block">A tree expert diagnoses from the ground up: site and soil first, then root flare and trunk, then the canopy&rsquo;s dieback pattern. For DeLand oaks that means checking for decay, cavities, and construction root damage; for palms, reading the fronds for nutrient deficiencies and the base for ganoderma.</p>
         <figure data-animate>
           <?php echo p1_picture($bodyPhotos['rigged']['src'], $bodyPhotos['rigged']['alt'], 800, 1067, '(max-width: 768px) 100vw, 800px'); ?>
-          <figcaption>Rigged for close canopy inspection &mdash; some diagnoses can&rsquo;t be made from the ground.</figcaption>
+          <figcaption>Reading the canopy of an oak that overhangs a pool enclosure</figcaption>
         </figure>
       </div>
 
@@ -1050,18 +1052,18 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Up in the Canopy</span>
-      <h2>Searching for a certified arborist near me in DeLand?</h2>
-      <p class="answer-block">If you&rsquo;re searching for a certified arborist near me in DeLand, this is what the work looks like: roped climbers inside live oak canopies, reading limbs up close instead of guessing from the lawn. We work within about 50 miles of DeLand &mdash; Deltona, Orange City, DeBary, and Lake Helen included.</p>
+      <h2>Who is a certified arborist near me in DeLand, FL?</h2>
+      <p class="answer-block">God&rsquo;s Country Tree Service has an arborist on staff near you in DeLand, FL, and works within about 50 miles of it. That covers DeLeon Springs, Lake Helen, Orange City, Deltona and DeBary. When a diagnosis cannot be made from the lawn, a roped climber goes into the canopy to read the limbs up close.</p>
     </div>
 
     <div class="arb-proof-gallery">
       <figure data-animate>
         <?php echo p1_picture($bodyPhotos['canopy']['src'], $bodyPhotos['canopy']['alt'], 800, 800, '(max-width: 768px) 100vw, 800px'); ?>
-        <figcaption>Inside an oak canopy above a DeLand lake</figcaption>
+        <figcaption>A mature oak after shaping at a DeLand home</figcaption>
       </figure>
       <figure class="reveal-delay-1" data-animate>
-        <?php echo p1_picture($heroImage, 'Harnessed climber rigging ropes on an oak limb in DeLand, FL', 800, 1067, '(max-width: 768px) 100vw, 800px'); ?>
-        <figcaption>Harnessed and rigged for careful limb work</figcaption>
+        <?php echo p1_picture($heroImage, 'Climber with rigging ropes on a moss-draped live oak limb', 800, 1067, '(max-width: 768px) 100vw, 800px'); ?>
+        <figcaption>Roped in on a moss-draped live oak</figcaption>
       </figure>
     </div>
 
@@ -1104,7 +1106,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       </div>
     </div>
 
-    <p class="arb-verdict-note" data-animate>Either verdict comes with a free written estimate within 24 hours &mdash; a care plan if the tree is treatable, a controlled-removal quote if it isn&rsquo;t. Nobody at God&rsquo;s Country gets paid more for recommending the saw.</p>
+    <p class="arb-verdict-note" data-animate>Either verdict comes in writing: a care plan if the tree is treatable, a quote for a roped, controlled removal if it isn&rsquo;t. Our post on the <a href="/blog/signs-dangerous-tree-deland/">signs a DeLand tree has become dangerous</a> lists what to look for before you call.</p>
   </div>
 </section>
 
@@ -1113,8 +1115,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Good Questions</span>
-      <h2>What do DeLand property owners ask a certified arborist?</h2>
-      <p class="answer-block">The questions cluster around credentials, thinning oaks, cost, and construction damage. If your tree&rsquo;s situation isn&rsquo;t covered, describe it in the estimate form and you&rsquo;ll have an answer within 24 hours.</p>
+      <h2>What do DeLand property owners ask an arborist?</h2>
+      <p class="answer-block">DeLand property owners ask an arborist mostly about credentials and insurance, whether a thinning oak has to come down, and what an assessment costs. They also ask whether we treat trees or only remove them, and how to check roots after a pool or addition is built. The five answers follow.</p>
     </div>
 
     <div class="faq-grid" data-p1-dynamic>
@@ -1137,7 +1139,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">After the Diagnosis</span>
       <h2>What other tree services do DeLand property owners pair with arborist services?</h2>
-      <p class="answer-block">An assessment usually leads somewhere: <a href="/services/tree-pruning-services/">corrective tree pruning</a> for the trees worth saving, ongoing <a href="/services/tree-maintenance-care/">tree maintenance</a> to keep them that way, and <a href="/services/dead-hazardous-tree-removal/">hazardous tree removal</a> when a hazard can&rsquo;t be treated. All three come from the same God&rsquo;s Country crew in DeLand, usually quoted in the same free estimate.</p>
+      <p class="answer-block">DeLand property owners most often follow an arborist assessment with pruning, maintenance or hazard removal. <a href="/services/tree-pruning-services/">Corrective tree pruning</a> handles the trees worth saving, an <a href="/services/tree-maintenance-care/">ongoing tree maintenance plan</a> keeps them that way, and <a href="/services/dead-hazardous-tree-removal/">dead and hazardous tree removal</a> covers the hazard that cannot be treated. The crew that diagnosed the tree quotes all three.</p>
     </div>
 
     <?php renderServiceCards(['tree-pruning-services', 'tree-maintenance-care', 'dead-hazardous-tree-removal'], $serviceCardData); ?>
@@ -1147,9 +1149,9 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 <!-- ============ CLOSING CTA ============ -->
 <section class="arb-closing" aria-label="Book an arborist consultation">
   <div class="container">
-    <span class="eyebrow-label" style="color: var(--color-accent);">Free &middot; Written &middot; Within 24 Hours</span>
+    <span class="eyebrow-label" style="color: var(--color-accent);">Free Visit &middot; Written Verdict</span>
     <h2>Worried About an Oak or Palm That Doesn&rsquo;t Look Right?</h2>
-    <p class="answer-block">Describe the tree &mdash; the thinning crown, the yellowing fronds, the mushrooms at the base &mdash; and <?php echo e($siteName); ?> will walk the property, diagnose what&rsquo;s actually happening, and put an honest verdict in writing, usually within 24 hours. No fee to find out the truth.</p>
+    <p class="answer-block">Describe the tree &mdash; the thinning crown, the yellowing fronds, the mushrooms at the base &mdash; and <?php echo e($siteName); ?> will walk the property, diagnose what&rsquo;s actually happening, and put the verdict in writing. The visit and the written quote are free.</p>
     <div class="hero-actions">
       <a href="#estimate-form" class="btn btn-accent btn-lg">Book a Free Consultation</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact Us</a>
@@ -1158,5 +1160,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 </section>
 
 <p class="last-updated">Last Updated: <?php echo date('F Y'); ?></p>
+
+</article>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

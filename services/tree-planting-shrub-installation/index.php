@@ -74,7 +74,7 @@ $plantingSteps = [
         'caption'  => 'Beds laid out along a DeLand entry walk',
         'title'    => 'Site walk, soil check & plant plan',
         'text'     => "We walk the property with you, look at sun, drainage, irrigation, and what the sandy soil is actually doing, and map where each tree and shrub belongs — the right-tree-right-place call that decides whether a planting thrives or becomes a future removal.",
-        'includes' => ['Sun, spacing & drainage assessment', 'Species matched to your soil and site', 'Written plan and free estimate in 24 hours'],
+        'includes' => ['Sun, spacing & drainage assessment', 'Species matched to your soil and site', 'Written estimate listing plants and bed work'],
     ],
     [
         'photo'    => 'sagobed',
@@ -87,15 +87,15 @@ $plantingSteps = [
         'photo'    => 'mulchbeds',
         'caption'  => 'Shaped shrubs and palms, mulched and watered in',
         'title'    => 'Mulch, water-in & establishment plan',
-        'text'     => "Every planting is watered in, ringed with mulch to slow the sand from drinking your irrigation, and staked only if it truly needs it. You get a written establishment watering schedule for the first months — the part DIY plantings almost always skip.",
-        'includes' => ['Fresh mulch ring on every planting', 'Written establishment watering schedule', 'Straight answers on fertilizer and staking'],
+        'text'     => "Every planting is watered in, ringed with mulch to slow the sand from drinking your irrigation, and staked only if it truly needs it. Before we leave we go through the establishment watering routine for the first months, the part DIY plantings almost always skip.",
+        'includes' => ['Fresh mulch ring on every planting', 'Establishment watering routine explained', 'Straight answers on fertilizer and staking'],
     ],
 ];
 
 // ---- Comparison: big-box DIY vs professional install ----
 $comparison = [
     ['them' => "Whatever's on the rack that weekend, root-bound or not",   'us' => 'Species matched to your sun, soil, and space — inspected stock'],
-    ['them' => '"Water it when you think of it" through a Florida summer', 'us' => 'A written establishment watering schedule for sandy soil'],
+    ['them' => '"Water it when you think of it" through a Florida summer', 'us' => 'A watering routine for sandy soil, explained before we leave'],
     ['them' => 'Nobody to call when it browns out by August',              'us' => 'A local DeLand tree service that answers the phone after planting day'],
 ];
 
@@ -103,11 +103,11 @@ $comparison = [
 $faqs = [
     [
         'q' => 'When is the best time to plant trees in DeLand?',
-        'a' => "Fall through early spring is the sweet spot in Central Florida — mild temperatures let roots establish before summer heat arrives, and the June-through-September rains then do some of the watering for you. That said, we plant year-round in DeLand; a summer planting just gets a more careful establishment watering schedule to match.",
+        'a' => "Fall through early spring is the sweet spot in Central Florida — mild temperatures let roots establish before summer heat arrives, and the June-through-September rains then do some of the watering for you. That said, we plant year-round in DeLand; a summer planting just needs closer attention to watering in its first weeks.",
     ],
     [
         'q' => 'How often do I need to water a newly planted tree?',
-        'a' => "More often than you'd think, because sandy soil drains fast. A new tree typically needs water daily for the first couple of weeks, then a tapering schedule over the following months as roots reach outward. We leave every planting with a written watering schedule sized to the tree and the season, so there's no guessing.",
+        'a' => "More often than you'd think, because sandy soil drains fast. A new tree typically needs water daily for the first couple of weeks, then a tapering schedule over the following months as roots reach outward. Before we leave we go through a watering routine sized to the tree and the season, so there's no guessing.",
     ],
     [
         'q' => 'Do you supply the trees and shrubs, or do I buy them?',
@@ -123,7 +123,7 @@ $faqs = [
     ],
     [
         'q' => 'Will you plant near my pool, septic, or utility lines?',
-        'a' => "Carefully, and sometimes the honest answer is \"not that species, not there.\" Roots and pool screen enclosures, septic drain fields, and service lines don't mix with aggressive rooters. We call in utility locates before digging and steer you toward palms and small-rooted species where space is tight.",
+        'a' => "Carefully, and sometimes the honest answer is \"not that species, not there.\" Roots and pool screen enclosures, septic drain fields, and service lines don't mix with aggressive rooters. Buried lines are marked through Sunshine 811 before anyone digs, and we steer you toward palms and small-rooted species where space is tight.",
     ],
 ];
 
@@ -435,6 +435,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
 /* ---- C7.4 Staggered planting steps + §2.7.5 polaroid frames ---- */
 .plt-steps-section { background: var(--color-white); }
+.plt-steps-list { list-style: none; }
 .plt-stagger-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -819,6 +820,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 }
 </style>
 
+<article class="service-article">
+
 <!-- ============ HERO (C1.4) ============ -->
 <section class="plt-hero has-hero-bg" aria-label="Tree planting and shrub installation in DeLand, Florida">
   <?php echo p1_hero_picture($heroImage); ?>
@@ -836,7 +839,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <h1>Tree Planting &amp; Shrub Installation in DeLand, FL &mdash; <span class="text-accent">Planted Right by a Local Tree Service</span></h1>
 
-    <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving Volusia County since <?php echo e($yearEstablished); ?> &mdash; and we plant trees as carefully as we take them down. Florida-native trees and shrubs, matched to your sandy soil and sun, installed at the right depth with a real establishment watering plan.</p>
+    <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving Volusia County since <?php echo e($yearEstablished); ?>, and it plants trees as carefully as it takes them down. Florida-native trees and shrubs are matched to your sandy soil and sun and set at the right depth. The on-site visit and written estimate are free, and the estimate arrives within 24 hours.</p>
 
     <div class="hero-actions">
       <a href="#estimate-form" class="btn btn-accent btn-lg">Plan Your Planting &mdash; Free Estimate</a>
@@ -844,10 +847,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     </div>
 
     <div class="hero-trust">
-      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
+      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Root Flare Set at Grade</span>
       <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
       <span class="hero-trust-item"><?php echo icon('sprout'); ?> Florida-Native Species</span>
-      <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
+      <span class="hero-trust-item"><?php echo icon('clock'); ?> Skid Steer for Large Stock</span>
     </div>
     </div>
 
@@ -865,7 +868,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Planted Wrong Is Money Buried</span>
       <h2>Why do so many new trees and shrubs fail in DeLand yards?</h2>
-      <p class="answer-block">Most new plantings in DeLand fail for one of four fixable reasons, and professional installation exists to remove all four.</p>
+      <p class="answer-block">Most new trees and shrubs in DeLand yards fail because of species choice, planting depth, watering, or poor nursery stock. The sandy soil here drains fast, so a root ball buried too deep or left dry through its first summer declines quickly. The four mistakes below are the ones God's Country Tree Service is called to fix.</p>
     </div>
 
     <div class="plt-mistakes">
@@ -891,7 +894,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Right Tree, Right Place</span>
       <h2>Which trees grow best in DeLand's sandy Central Florida soil?</h2>
-      <p class="answer-block">For residential tree planting in DeLand, the proven performers are Florida natives and long-adapted classics: live oak, southern magnolia, crape myrtle, sabal palm, and East Palatka holly, backed by shrub beds of viburnum, palmettos, and hibiscus. They handle fast-draining sandy soil, full Central Florida sun, and hurricane-season wind better than imported impulse picks.</p>
+      <p class="answer-block">Live oak, southern magnolia, sabal palm, crape myrtle, and East Palatka holly are the trees that grow best in DeLand's sandy Central Florida soil. For residential tree planting, each one tolerates fast drainage, full sun, and hurricane-season wind once established. Shrub beds of viburnum, palmetto, and hibiscus fill in underneath, and each plant is placed for its mature size.</p>
     </div>
 
     <div class="plt-species-grid">
@@ -920,14 +923,15 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">From Bare Spot to Established</span>
       <h2>What's included in professional shrub installation?</h2>
-      <p class="answer-block">Professional shrub installation at God's Country Tree Service covers the whole job: a site and soil assessment, a planting plan, healthy sourced stock, prepped beds, correct-depth planting, mulch, water-in, and a written establishment schedule &mdash; for one hedge row or a full DeLand landscape.</p>
+      <p class="answer-block">Professional shrub installation from God's Country Tree Service includes a site and soil check, nursery stock, bed preparation, planting at the correct depth, mulch, and watering in. The three steps below apply to one hedge row or a full DeLand landscape, and the written estimate lists the plants and the bed work.</p>
     </div>
 
+    <ol class="plt-steps-list">
     <?php foreach ($plantingSteps as $i => $step): ?>
-    <div class="plt-stagger-row">
+    <li class="plt-stagger-row">
       <div class="plt-stagger-media" data-animate>
         <figure class="plt-polaroid">
-          <img src="<?php echo e($bodyPhotos[$step['photo']]['src']); ?>" alt="<?php echo e($bodyPhotos[$step['photo']]['alt']); ?>" width="800" height="600" loading="lazy">
+          <?php echo p1_picture($bodyPhotos[$step['photo']]['src'], $bodyPhotos[$step['photo']]['alt'], 800, 600, '(max-width: 768px) 100vw, 800px'); ?>
           <figcaption><?php echo e($step['caption']); ?></figcaption>
         </figure>
       </div>
@@ -941,8 +945,9 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
           <?php endforeach; ?>
         </ul>
       </div>
-    </div>
+    </li>
     <?php endforeach; ?>
+    </ol>
   </div>
 </section>
 
@@ -957,7 +962,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Straight Pricing</span>
       <h2>How much does tree planting cost in DeLand, FL?</h2>
-      <p class="answer-block">Tree planting cost in DeLand depends on the tree's size, how many you're planting, and how much bed preparation the site needs &mdash; a single container-grown tree costs far less than a field-grown specimen placed by machine. Instead of guessing, we walk the yard and put a free written estimate in your hands within 24 hours.</p>
+      <p class="answer-block">Tree planting cost in DeLand depends on tree size, the number of plants, and how much bed preparation the site needs. A container-grown tree costs less to buy and install than a field-grown specimen set by machine. God's Country Tree Service walks the yard first, and the written estimate lists the plants, the bed work, and the mulch.</p>
     </div>
 
     <div class="plt-cost-grid">
@@ -967,7 +972,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       </div>
       <div class="plt-cost-card reveal-delay-2" data-animate>
         <h3>Bed prep &amp; soil work</h3>
-        <p>Edging new beds, removing old roots or sod, and grading with our skid steer all shape the price. Sandy soil rarely needs heavy amendment &mdash; it needs correct depth and mulch, which every quote includes.</p>
+        <p>Edging new beds, removing old roots or sod, and grading with our skid steer all shape the price. Sandy soil rarely needs heavy amendment &mdash; it needs correct depth and mulch, and both are part of the install.</p>
       </div>
       <div class="plt-cost-card reveal-delay-3" data-animate>
         <h3>Quantity &amp; access</h3>
@@ -988,12 +993,12 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Beyond the Backyard</span>
       <h2>Do you handle landscape planting services for businesses and HOAs?</h2>
-      <p class="answer-block">Yes &mdash; God's Country Tree Service handles landscape planting for DeLand businesses, HOA communities, and commercial properties. We phase installs so entrances stay open and bring our own skid steer for bed prep, grading, and large-stock placement.</p>
+      <p class="answer-block">God's Country Tree Service handles landscape planting services for businesses, HOA communities, and commercial properties around DeLand. Entrance beds and common-area shade trees are installed by one crew, using its own skid steer for bed prep, grading, and placing large stock. Work days are arranged with the manager so entrances stay open.</p>
     </div>
 
     <div class="plt-biz-split">
       <div>
-        <p class="plt-drop-cap" data-animate>Entrance beds, streetscape trees, buffer hedges, and common-area shade go in as one coordinated job instead of a parade of subcontractors. Because we also remove, trim, and prune across Volusia County, we plant with the next twenty years in mind.</p>
+        <p class="plt-drop-cap" data-animate>Streetscape trees, buffer hedges, and entry plantings go in as one coordinated job instead of a parade of subcontractors. Because we also remove, trim, and prune across Volusia County, we plant with the next twenty years in mind.</p>
         <ul class="plt-biz-points" data-p1-dynamic>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
@@ -1001,11 +1006,11 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
           </li>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
-            <p><strong>Paperwork boards can approve.</strong> Licensed and insured, with documentation available before the first shovel.</p>
+            <p><strong>Paperwork boards can approve.</strong> A written estimate listing the plants and the bed work, with proof of liability and workers' compensation coverage on request.</p>
           </li>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
-            <p><strong>Species that survive the budget cycle.</strong> Natives and proven performers that won't need replacing in two years.</p>
+            <p><strong>Species that survive the budget cycle.</strong> Natives and proven performers, chosen so the board is not paying to replant the same bed two years later.</p>
           </li>
         </ul>
       </div>
@@ -1024,7 +1029,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label" style="color: var(--color-accent);">The Honest Math</span>
       <h2>Why hire a tree service to plant instead of doing it yourself?</h2>
-      <p class="answer-block">Because a tree planted wrong costs twice: once at the register and again when it fails or grows into the pool enclosure. God's Country Tree Service gets the species, depth, and watering right the first time.</p>
+      <p class="answer-block">Hiring a tree service to plant gets the species, the depth, and the placement right the first time. A tree planted wrong costs twice: once at the register and again when it fails or grows into the pool enclosure. God's Country Tree Service also removes and prunes trees, so it knows which plantings become problems.</p>
     </div>
 
     <div class="plt-compare-grid">
@@ -1053,8 +1058,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Local Proof</span>
-      <h2>Searching for tree planting near me in DeLand?</h2>
-      <p class="answer-block">If you're searching for tree planting near me in DeLand, these beds are what nearby jobs look like: palms, shaped shrubs, and fresh mulch installed at real homes in the area. We plant across DeLand, Deltona, Orange City, DeBary, and Lake Helen &mdash; the same local crew, wherever your yard is.</p>
+      <h2>Who does tree planting near me in DeLand?</h2>
+      <p class="answer-block">God's Country Tree Service LLC does tree planting and shrub installation from DeLand, FL 32720, for yards within about 50 miles. That includes DeLeon Springs, Lake Helen, Orange City, Deltona, and DeBary. The beds pictured below are finished jobs at homes in the area: palms, shaped shrubs, and fresh mulch.</p>
     </div>
 
     <div class="plt-proof-pair">
@@ -1078,7 +1083,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     </div>
 
     <div class="plt-area-chips" data-p1-dynamic>
-      <?php foreach (['DeLand', 'Deltona', 'Orange City', 'DeBary', 'Lake Helen', 'Volusia County'] as $area): ?>
+      <?php foreach (['DeLand', 'DeLeon Springs', 'Lake Helen', 'Orange City', 'Deltona', 'DeBary', 'Volusia County'] as $area): ?>
       <span class="plt-area-chip"><?php echo icon('map-pin'); ?> <?php echo e($area); ?></span>
       <?php endforeach; ?>
     </div>
@@ -1090,7 +1095,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Good Questions</span>
-      <h2>What do DeLand homeowners ask before planting trees and shrubs?</h2>
+      <h2>Tree Planting and Shrub Installation FAQs for DeLand Homeowners</h2>
       <p class="answer-block">When to plant, how much to water, who supplies the plants, what size to start with, and what's safe near pools and septic lines &mdash; answered below.</p>
     </div>
 
@@ -1114,7 +1119,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Help It Thrive</span>
       <h2>What other tree services do DeLand property owners pair with tree planting?</h2>
-      <p class="answer-block">Planting is the start, not the finish. DeLand property owners usually pair new plantings with ongoing <a href="/services/tree-maintenance-care/">tree maintenance visits</a>, structural <a href="/services/tree-pruning-services/">tree pruning</a> while young trees are cheap to shape, and <a href="/services/certified-arborist-services/">certified arborist advice</a> when an established tree looks off.</p>
+      <p class="answer-block">DeLand property owners most often pair tree planting with maintenance, structural pruning, and arborist advice. New trees do best with <a href="/services/tree-maintenance-care/">seasonal tree maintenance visits</a>, <a href="/services/tree-pruning-services/">structural pruning while a young tree is easy to shape</a>, and <a href="/services/certified-arborist-services/">a certified arborist's opinion on an established tree</a>. See <a href="/services/">every tree service God's Country offers</a>.</p>
     </div>
 
     <?php renderServiceCards(['tree-maintenance-care', 'tree-pruning-services', 'certified-arborist-services'], $serviceCardData); ?>
@@ -1124,16 +1129,18 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 <!-- ============ CLOSING CTA (C4.2 gradient + noise) ============ -->
 <section class="plt-closing-cta" aria-label="Get a tree planting estimate">
   <div class="container">
-    <span class="eyebrow-label" style="color: var(--color-accent);">Free &middot; Written &middot; Within 24 Hours</span>
+    <span class="eyebrow-label" style="color: var(--color-accent);">Site Walk &middot; Plant Plan &middot; Written Estimate</span>
     <h2>Ready to Put the Right Tree in the Right Place?</h2>
-    <p class="answer-block">Tell us about the bare corner, the hedge you want, or the shade tree your yard is missing. <?php echo e($siteName); ?> will walk the property, match species to your soil and sun, and put a straight, written planting price in your hands &mdash; usually within 24 hours.</p>
+    <p class="answer-block">Tell us about the bare corner, the hedge you want, or the shade tree your yard is missing. <?php echo e($siteName); ?> will walk the property, match species to your soil and sun, and put a straight, written planting price in your hands.</p>
     <div class="hero-actions">
-      <a href="#estimate-form" class="btn btn-accent btn-lg">Plan Your Planting &mdash; Free Estimate</a>
+      <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Written Planting Estimate</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact Us</a>
     </div>
   </div>
 </section>
 
 <p class="last-updated">Last Updated: <?php echo date('F Y'); ?></p>
+
+</article>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

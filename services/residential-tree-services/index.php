@@ -57,7 +57,7 @@ $scenarios = [
 
 // ---- Visit steps (service breakdown) ----
 $visitSteps = [
-    ['title' => 'Walk the whole yard, not one tree',   'text' => 'We look at every tree on the lot — the oak you called about and the queen palm you didn\'t — and send a free written estimate within 24 hours.'],
+    ['title' => 'Walk the whole yard, not one tree',   'text' => 'We look at every tree on the lot — the oak you called about and the queen palm you didn\'t — and the written estimate lists the work tree by tree, so you can approve all of it or part of it.'],
     ['title' => 'Schedule and site prep',              'text' => 'We confirm gate access, flag sprinkler heads, and plan around fences, screen rooms, and flower beds before a saw starts.'],
     ['title' => 'One planned work sequence',           'text' => 'Trimming, pruning cuts, any removals, and stump work happen in a deliberate order so debris moves through the yard once.'],
     ['title' => 'Chip, haul, and rake out',            'text' => 'Brush goes through the chipper, logs ride the grapple loader, and the driveway gets blown off. Most quotes include hauling, so the yard is mow-ready when the trucks pull away.'],
@@ -74,9 +74,9 @@ $costFactors = [
 
 // ---- Comparison: juggling contractors vs one crew ----
 $comparison = [
-    ['them' => 'One company trims, another hauls, a third grinds the stump — three schedules, three invoices', 'us' => 'Tree work and land clearing from one DeLand crew: one schedule, one written quote'],
-    ['them' => 'Each vendor blames the last one for the ruts in the lawn',                                      'us' => 'The crew that cuts is the crew that mats the turf and flags the irrigation'],
-    ['them' => 'Storm week, the out-of-town number goes to voicemail',                                          'us' => 'Local and licensed in DeLand since 2014 — here before, during, and after the season'],
+    ['them' => 'One company trims, another hauls, a third grinds the stump — three schedules, three invoices', 'us' => 'Trimming, removal, stump grinding and hauling from one DeLand crew: one schedule, one written quote'],
+    ['them' => 'Each vendor blames the last one for the ruts in the lawn',                                      'us' => 'The crew that cuts is the crew that flagged the sprinkler heads and rakes out the lawn'],
+    ['them' => 'Storm week, the out-of-town number goes to voicemail',                                          'us' => 'Based in DeLand since 2014, on the same streets before, during, and after hurricane season'],
 ];
 
 // ---- FAQs (conversational, 40-80 word answers) ----
@@ -87,7 +87,7 @@ $faqs = [
     ],
     [
         'q' => 'How do you protect my lawn, sprinklers, and driveway?',
-        'a' => 'We flag sprinkler heads during prep, run compact tracked equipment instead of heavy trucks across turf, and lay mats where the loader travels. Sections over the house come down on ropes, not gravity. Sandy Central Florida lawns rut easily when wet, so we also plan machine routes around soft ground.',
+        'a' => 'The crew flags sprinkler heads during prep and keeps the heavy trucks on the driveway or the street. Sections over the house, the pool screen, or the fence come down on ropes, not gravity. Sandy Central Florida lawns rut easily when wet, so the skid steer route is planned around soft ground before work starts.',
     ],
     [
         'q' => 'How often should a DeLand yard get professional tree work?',
@@ -99,11 +99,11 @@ $faqs = [
     ],
     [
         'q' => 'Can you get equipment into a small, fenced backyard?',
-        'a' => "Usually, yes. The compact track loader fits through most standard gates, and when it can't, our climbers work the tree on ropes and we move the wood out by hand and wheelbarrow paths. Tight-access backyards behind DeLand's older homes are routine work — access just gets planned into the quote up front.",
+        'a' => "Usually, yes. When the gate is too narrow for the skid steer, our climbers work the tree on ropes and the wood is carried out by hand to the chipper at the street. Tight-access backyards behind DeLand's older homes are routine work — access just gets planned into the quote up front.",
     ],
     [
         'q' => 'Do you take on yards outside DeLand?',
-        'a' => 'Yes. From our DeLand home base the crew covers Deltona, Orange City, DeBary, Lake Helen, and homes within roughly 50 miles across Volusia County. Same equipment, same free written estimate within 24 hours — distance inside that radius doesn\'t change how the job is quoted or done.',
+        'a' => 'Yes. From our DeLand home base the crew covers DeLeon Springs, Lake Helen, Orange City, Deltona, DeBary, and homes within roughly 50 miles across Volusia County. The same equipment makes the trip, and the quote is built the same way: a walk of the yard, then a written scope. Distance inside that radius doesn\'t change how the job is done.',
     ],
 ];
 
@@ -782,6 +782,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 }
 </style>
 
+<article class="service-article">
+
 <!-- ============ HERO (C1.4) ============ -->
 <section class="res-hero has-hero-bg" aria-label="Residential tree services in DeLand, Florida">
   <?php echo p1_hero_picture($heroImage); ?>
@@ -799,7 +801,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <h1>Residential Tree Services in DeLand, FL &mdash; <span class="text-accent">One Tree Service Crew for Your Whole Yard</span></h1>
 
-    <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, caring for homeowners' yards across Volusia County since <?php echo e($yearEstablished); ?>. Trimming, pruning, removal, and cleanup handled by one residential crew &mdash; with a free written estimate for the whole yard within 24 hours.</p>
+    <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, caring for homeowners' yards across Volusia County since <?php echo e($yearEstablished); ?>. One residential crew handles trimming, pruning, removal, and cleanup, and the written estimate for the whole yard is free and reaches you within 24 hours of the visit.</p>
 
     <div class="res-hero-actions">
       <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Yard Estimate</a>
@@ -807,10 +809,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     </div>
 
     <div class="hero-trust">
-      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
+      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Arborist on Staff</span>
       <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
-      <span class="hero-trust-item"><?php echo icon('wrench'); ?> Tree + Land Clearing, One Crew</span>
-      <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
+      <span class="hero-trust-item"><?php echo icon('wrench'); ?> Our Own Chipper + Grapple Loader</span>
+      <span class="hero-trust-item"><?php echo icon('clock'); ?> Stump Grinding in Most Quotes</span>
     </div>
     </div>
 
@@ -831,7 +833,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <p class="answer-block">Yes &mdash; trimming, pruning, and full residential tree removal all come from the same God's Country crew. Because we run our own skid steer, chipper, and grapple equipment, a job that starts as a trim can fold in a takedown and stump work in the same visit, under one written DeLand quote.</p>
     </div>
 
-    <p class="res-lede" data-animate>This page is the homeowner's front door to everything we do. Most yards need a mix: <a href="/services/tree-trimming-services/">tree trimming</a> to get live oak limbs off the roofline, structural <a href="/services/tree-pruning-services/">tree pruning</a> to keep young canopies growing strong, and sometimes a full <a href="/services/tree-removal/">tree removal</a> when a pine is past saving. Whatever combination your lot needs, it's one crew, one plan, and one price.</p>
+    <p class="res-lede" data-animate>This page is the homeowner's front door to <a href="/services/">the full list of tree services we run out of DeLand</a>. Most yards need a mix: <a href="/services/tree-trimming-services/">tree trimming</a> to get live oak limbs off the roofline, structural <a href="/services/tree-pruning-services/">tree pruning</a> to keep young canopies growing strong, and sometimes a full <a href="/services/tree-removal/">tree removal</a> when a pine is past saving. Whatever combination your lot needs, it goes on one written quote and one work day.</p>
 
     <div class="res-scenarios-grid">
       <article class="res-scenario-featured" data-animate>
@@ -862,7 +864,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <div class="res-visit-intro">
         <span class="eyebrow-label">House Calls, Done Right</span>
         <h2>What does a residential tree service visit look like?</h2>
-        <p class="answer-block">A residential tree service visit in DeLand starts with a walk-through of every tree on the lot, not just the one you called about. You get a free written estimate within 24 hours; on work day the crew trims, removes, chips, and hauls in one planned sequence, then walks the yard with you.</p>
+        <p class="answer-block">A residential tree service visit in DeLand starts with a walk-through of every tree on the lot, not just the one you called about. The written estimate follows that walk. On work day the crew trims, removes, chips, and hauls in one planned sequence, then walks the yard with you before the trucks leave.</p>
         <figure class="res-visit-figure" data-animate>
           <?php echo p1_picture($bodyPhotos['cornerlot']['src'], $bodyPhotos['cornerlot']['alt'], 800, 1000, '(max-width: 768px) 100vw, 800px'); ?>
           <figcaption>Sizing up a mature oak over a corner-lot home in DeLand.</figcaption>
@@ -894,7 +896,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Straight Pricing</span>
       <h2>How much does home tree care cost in DeLand, FL?</h2>
-      <p class="answer-block">Home tree care cost in DeLand depends on how many trees need attention, whether the work is trimming or removal, and what sits underneath &mdash; pool screens, fences, play sets. Bundling the whole yard into one visit usually beats piecemeal calls, and every price arrives as a free written estimate within 24 hours.</p>
+      <p class="answer-block">Home tree care cost in DeLand is set by tree count, canopy size, the type of work, and what sits under the tree. God's Country Tree Service prices each yard after walking it. The written estimate lists the work tree by tree and says whether stump grinding and debris hauling are included, which they are in most quotes.</p>
     </div>
 
     <div class="res-cost-rows" data-p1-dynamic>
@@ -917,7 +919,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Prevention Pays</span>
       <h2>How does year-round property maintenance protect your trees?</h2>
-      <p class="answer-block">Year-round property maintenance catches problems while they're still cheap: dead limbs come off before hurricane season loads them, canopies get thinned before August wind, and a declining oak is flagged years before it threatens the roof. A DeLand yard on a maintenance rhythm almost never needs a panicked emergency call.</p>
+      <p class="answer-block">Year-round property maintenance protects trees by removing deadwood and overloaded limbs before hurricane season puts wind on them. Laurel oaks in DeLand yards shed large limbs as they age, and sand pines lose their grip in saturated sandy soil. A yearly walk catches both while the fix is a trim and not a removal.</p>
     </div>
 
     <div class="res-stats-grid" data-p1-dynamic>
@@ -927,11 +929,11 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       </div>
       <div class="res-stat reveal-delay-1" data-animate>
         <div class="res-stat-number"><?php echo e($yearEstablished); ?></div>
-        <div class="res-stat-label">Local &amp; Licensed Since</div>
+        <div class="res-stat-label">Based in DeLand Since</div>
       </div>
       <div class="res-stat reveal-delay-2" data-animate>
-        <div class="res-stat-number">24<span>hr</span></div>
-        <div class="res-stat-label">Written Estimate Turnaround</div>
+        <div class="res-stat-number">6</div>
+        <div class="res-stat-label">West Volusia Cities Served</div>
       </div>
       <div class="res-stat reveal-delay-3" data-animate>
         <div class="res-stat-number">50<span>mi</span></div>
@@ -946,8 +948,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Local Proof</span>
-      <h2>Searching for residential tree service near me in DeLand?</h2>
-      <p class="answer-block">If you're searching for residential tree service near me in DeLand, these photos are what our house calls look like &mdash; mature oaks shaped over corner-lot homes and front yards left clean enough to mow. The crew works within about 50 miles of DeLand, so we've likely already worked on a street near yours.</p>
+      <h2>Who does residential tree service near me in DeLand?</h2>
+      <p class="answer-block">God's Country Tree Service LLC does residential tree service from its base in DeLand, FL 32720, for homes within about 50 miles. That covers the oak-lined streets around Stetson University and downtown Woodland Boulevard, plus DeLeon Springs, Lake Helen, Orange City, Deltona, and DeBary. The photos below are from yards in that area.</p>
     </div>
 
     <div class="res-proof-duo">
@@ -983,7 +985,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Do the Yard Math</span>
       <h2>Why hire one DeLand crew instead of juggling separate contractors?</h2>
-      <p class="answer-block">Because a yard split between a trimming company, a hauling guy, and a stump grinder costs more and coordinates worse. God's Country Tree Service runs tree work and land clearing as one DeLand crew &mdash; one schedule, one written quote, and one company accountable for how the yard looks after.</p>
+      <p class="answer-block">One DeLand crew means one schedule, one written quote, and one company answerable for how the yard looks afterward. God's Country Tree Service owns the chipper, grapple loader, boom lift, and stump grinder it works with, so the trim, the takedown, the stump, and the haul-off do not wait on separate contractors.</p>
     </div>
 
     <div class="res-compare-grid">
@@ -1017,8 +1019,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Good Questions</span>
-      <h2>What do DeLand homeowners ask about residential tree care?</h2>
-      <p class="answer-block">Mostly practical things: how we protect lawns and irrigation, what happens to the debris, and when to schedule around hurricane season. Straight answers below.</p>
+      <h2>Residential Tree Care FAQs for DeLand Homeowners</h2>
+      <p class="answer-block">The questions below come up on most estimate visits: lawn and sprinkler protection, where the debris goes, gate access, and how to time the work around hurricane season.</p>
     </div>
 
     <div class="faq-grid" data-p1-dynamic>
@@ -1041,7 +1043,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Round Out the Plan</span>
       <h2>What other tree services do DeLand property owners pair with residential tree care?</h2>
-      <p class="answer-block">Three services pair naturally with whole-yard care: tree trimming to keep canopies off the roof, tree removal when an oak is past saving, and <a href="/services/tree-maintenance-care/">scheduled tree maintenance</a> so small problems stay small &mdash; usually on one combined estimate.</p>
+      <p class="answer-block">DeLand property owners most often pair residential tree care with trimming, removal, and a maintenance schedule. Trimming keeps live oak canopies off the roof, removal handles the pine or laurel oak that is past saving, and <a href="/services/tree-maintenance-care/">a seasonal tree maintenance plan</a> keeps the same yard from needing a rescue visit later.</p>
     </div>
 
     <?php renderServiceCards(['tree-trimming-services', 'tree-removal', 'tree-maintenance-care'], $serviceCardData); ?>
@@ -1051,9 +1053,9 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 <!-- ============ CLOSING CTA (C4.1 radial glow) ============ -->
 <section class="res-closing" aria-label="Get a residential tree service estimate">
   <div class="container">
-    <span class="eyebrow-label">Free &middot; Written &middot; Within 24 Hours</span>
+    <span class="eyebrow-label">One Walk-Through &middot; One Written Quote</span>
     <h2>Ready for One Crew to Take the Whole Yard Off Your List?</h2>
-    <p class="answer-block">Tell us what the yard needs &mdash; a trim, a takedown, or an honest opinion on all of it. <?php echo e($siteName); ?> will walk the property, quote the whole job in writing within 24 hours, and handle it with one crew from first cut to final rake.</p>
+    <p class="answer-block">Tell us what the yard needs &mdash; a trim, a takedown, or an honest opinion on all of it. <?php echo e($siteName); ?> will walk the property, put the whole job on one written quote, and handle it with one crew from first cut to final rake.</p>
     <div class="res-hero-actions">
       <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Yard Estimate</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact Us</a>
@@ -1062,5 +1064,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 </section>
 
 <p class="res-last-updated">Last Updated: <?php echo date('F Y'); ?></p>
+
+</article>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

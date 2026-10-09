@@ -38,8 +38,8 @@ $bodyPhotos = [
         'alt' => 'Climber topping a storm-damaged tree spar against the sky in DeLand, FL',
     ],
     'chipper' => [
-        'src' => $imgBase . '1784062757583-5u2i8m-242857131_3010226559197936_3280584255290869722_n.1.webp',
-        'alt' => "God's Country crew feeding storm brush into a wood chipper in DeLand, FL",
+        'src' => $imgBase . '1784062762583-gyhtdt-489069018_1475682530496918_5987390642167918859_n.webp', // v8: the chipper photo this slot named was never on disk
+        'alt' => "Loader working at the root end of a large storm-fallen live oak",
     ],
     'kubota' => [
         'src' => $imgBase . '1784062764583-5ppnr0-504117245_4046117545608827_1977518947574848401_n.webp',
@@ -58,8 +58,8 @@ $stormSteps = [
         'text'  => 'From a safe distance, shoot wide photos of the tree, the structure it hit, and the yard around it, plus close-ups of the impact. Adjusters want the scene as the storm left it.',
     ],
     [
-        'title' => 'Send us the address and the photos',
-        'text'  => 'Call, or use the estimate form, and tell us three things: where you are, what the tree is on, and whether anyone can\'t safely get in or out. Photos let us size the crew before the truck leaves DeLand.',
+        'title' => 'Call with the address and what the tree is on',
+        'text'  => 'Call, or use the estimate form, and tell us three things: where you are, what the tree is on, and whether anyone can\'t safely get in or out. Those details let us size the crew before the truck leaves DeLand. Keep your photos ready for the crew and your adjuster.',
     ],
     [
         'title' => 'We triage and give you an honest window',
@@ -81,7 +81,7 @@ $stormDonts = [
 
 // ---- Storm-chaser red flags vs local crew ----
 $comparison = [
-    ['them' => 'Out-of-state plates that appear the day after landfall',      'us' => 'Based in DeLand year-round — the same crew since 2014'],
+    ['them' => 'Out-of-state plates that appear the day after landfall',      'us' => 'Based in DeLand year-round, the same company since 2014'],
     ['them' => 'Cash-only price shouted from the truck window',               'us' => 'Written price for the emergency scope before a saw starts'],
     ['them' => '"Sign now or we move to the next street" pressure',           'us' => 'Honest triage — hazards first, and a real arrival window'],
     ['them' => 'Insurance claims they can\'t back up with paperwork',         'us' => 'Licensed and insured, proof shown before work begins'],
@@ -92,11 +92,11 @@ $comparison = [
 $faqs = [
     [
         'q' => 'Do you do emergency tree removal in DeLand, FL — not just cleanup?',
-        'a' => "Yes. Emergency tree removal is most of what the storm line rings for: a tree on the roof, split down the trunk, or hung up over the driveway that has to come out now. The same crew that answers the call runs the rigging and hauls the wood.",
+        'a' => "Yes. Emergency tree removal covers a tree on the roof, a trunk split down the middle, or a tree hung up over the driveway that has to come out now, not just the debris afterward. The same crew that answers the call runs the rigging and hauls the wood.",
     ],
     [
         'q' => 'Do you really answer emergency tree calls at night and on weekends?',
-        'a' => "Yes — emergency tree service is answered 24/7, which matters most between June and November when Central Florida storms don't check the clock. Send your address and photos through the estimate form or contact page any hour; genuine hazards like a tree on a roof get same-day response, and everything else gets an honest window instead of a guess.",
+        'a' => "Yes. The emergency line is answered around the clock, nights and weekends included, which matters most between June 1 and November 30 when Central Florida storms don't check the time. Tell us the address and what the tree is on. A tree on a roof or across the only way out goes to the front of the line, and everything else gets an honest window instead of a guess.",
     ],
     [
         'q' => "A tree came through my roof — is it safe to stay in the house?",
@@ -112,7 +112,7 @@ $faqs = [
     ],
     [
         'q' => 'How is emergency work priced compared to a scheduled removal?',
-        'a' => "Emergency pricing reflects the hazard, the access, and the equipment the job demands — a trunk balanced on a ridgeline takes more rigging than the same tree in the open. What doesn't change: the number is in writing before we cut, even at 2 AM.",
+        'a' => "Emergency pricing reflects the hazard, the access, and the equipment the job demands — a trunk balanced on a ridgeline takes more rigging than the same tree in the open. What doesn't change: the number is in writing before we cut, whatever the hour.",
     ],
 ];
 
@@ -381,6 +381,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
   align-items: start;
 }
 .emg-steps {
+  list-style: none;
+  padding: 0;
   display: flex;
   flex-direction: column;
   gap: var(--space-4);
@@ -879,6 +881,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 .emg-powerline p { max-width: 65ch; }
 </style>
 
+<article class="service-article">
+
 <!-- ============ HERO (C1.4 dark urgent variant) ============ -->
 <section class="emg-hero has-hero-bg" aria-label="Emergency tree removal in DeLand, Florida">
   <?php echo p1_hero_picture($heroImage); ?>
@@ -892,20 +896,20 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <span aria-current="page">Emergency Tree Removal &amp; Storm Cleanup</span>
     </nav>
 
-    <span class="emg-badge"><span class="emg-beacon" aria-hidden="true"></span> 24/7 Storm Response &middot; DeLand, FL</span>
+    <span class="emg-badge"><span class="emg-beacon" aria-hidden="true"></span> Storm Response Line &middot; DeLand, FL</span>
 
     <h1>Emergency Tree Removal in DeLand, FL &mdash; <span class="text-accent">24/7 Storm Cleanup</span></h1>
 
-    <p class="hero-answer">Call <?php echo e($siteName); ?> at <a href="<?php echo e(phoneHref($phone)); ?>"><?php echo e(formatPhone($phone)); ?></a> &mdash; emergency tree removal and storm damage calls in DeLand are answered 24/7. Send your address and photos, genuine hazards like a tree on your roof get same-day response, and you get the price in writing before a saw starts. We're a licensed and insured tree service based in DeLand, serving all of Volusia County.</p>
+    <p class="hero-answer">Call <?php echo e($siteName); ?> at <a href="<?php echo e(phoneHref($phone)); ?>"><?php echo e(formatPhone($phone)); ?></a> &mdash; emergency tree removal and storm damage calls in DeLand are answered 24/7. Tell us the address and what the tree is on. Genuine hazards like a tree on your roof get same-day response, and you get the price in writing before a saw starts. We're a licensed and insured tree service based in DeLand, serving all of Volusia County.</p>
 
     <div class="hero-actions">
-      <a href="<?php echo e(phoneHref($phone)); ?>" class="btn btn-accent btn-lg">Call 24/7: <?php echo e(formatPhone($phone)); ?></a>
-      <a href="#estimate-form" class="btn btn-outline-white btn-lg">Send Photos of the Damage</a>
+      <a href="<?php echo e(phoneHref($phone)); ?>" class="btn btn-accent btn-lg">Call Now: <?php echo e(formatPhone($phone)); ?></a>
+      <a href="#estimate-form" class="btn btn-outline-white btn-lg">Request Emergency Help</a>
     </div>
 
     <div class="hero-trust">
-      <span class="hero-trust-item"><?php echo icon('clock'); ?> Answered 24/7</span>
-      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
+      <span class="hero-trust-item"><?php echo icon('clock'); ?> Nights &amp; Weekends Answered</span>
+      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Owner-Operated</span>
       <span class="hero-trust-item"><?php echo icon('map-pin'); ?> Based in DeLand Since <?php echo e($yearEstablished); ?></span>
       <span class="hero-trust-item"><?php echo icon('truck'); ?> Grapple Loader &amp; Chipper On Call</span>
     </div>
@@ -925,8 +929,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="emg-stats-row">
       <div class="emg-stat">
-        <div class="emg-stat-number">24<span class="accent">/7</span></div>
-        <div class="emg-stat-label">Storm Calls Answered</div>
+        <div class="emg-stat-number"><span class="accent">6</span></div>
+        <div class="emg-stat-label">Volusia Communities Served From DeLand</div>
       </div>
       <div class="emg-stat">
         <div class="emg-stat-number"><?php echo e($yearsInBusiness); ?><span class="accent">+</span></div>
@@ -953,9 +957,9 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 <section class="numbered-section emg-triage" id="hurricane-season" data-num="01" aria-label="Hurricane season storm damage: the first hour">
   <div class="container">
     <div class="section-title" data-animate>
-      <span class="eyebrow-label">Hurricane Season &middot; Peak September&ndash;November</span>
+      <span class="eyebrow-label">Hurricane Season &middot; June 1&ndash;November 30</span>
       <h2>What should you do in the first hour after a hurricane damages a tree?</h2>
-      <p class="answer-block">Stay away from the tree, assume any downed line is live, and get everyone out from under damaged limbs. Photograph the damage from a safe distance for your insurance claim, then call <?php echo e($siteName); ?> or send your address and photos. Don't start cutting &mdash; storm-loaded wood is under tension and moves without warning.</p>
+      <p class="answer-block">Stay away from the tree, assume any downed line is live, and get everyone out from under damaged limbs. Photograph the damage from a safe distance for your insurance claim, then call <?php echo e($siteName); ?> with your address. Don't start cutting &mdash; storm-loaded wood is under tension and moves without warning.</p>
     </div>
 
     <div class="emg-powerline" data-animate>
@@ -967,14 +971,16 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     </div>
 
     <div class="emg-triage-layout">
-      <div class="emg-steps" data-p1-dynamic>
+      <ol class="emg-steps" data-p1-dynamic>
         <?php foreach ($stormSteps as $i => $step): ?>
+        <li>
         <details class="emg-step"<?php echo $i === 0 ? ' open' : ''; ?>>
           <summary><?php echo e($step['title']); ?></summary>
           <p><?php echo e($step['text']); ?></p>
         </details>
+        </li>
         <?php endforeach; ?>
-      </div>
+      </ol>
 
       <div class="emg-triage-photo" data-animate="right">
         <figure>
@@ -1006,8 +1012,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="section-title" data-animate>
       <span class="eyebrow-label">A Crew, Not a Call Center</span>
-      <h2>Who answers a 24-hour tree service call in DeLand?</h2>
-      <p class="answer-block">A local crew, not a dispatch desk. <?php echo e($siteName); ?> has answered 24-hour tree service calls from its home base in DeLand since <?php echo e($yearEstablished); ?> &mdash; the same climbers, grapple loader, and chipper working Volusia County yards all year are the ones that roll out when a storm hits.</p>
+      <h2>Who answers a 24-hour tree service call near me in DeLand?</h2>
+      <p class="answer-block">A 24-hour tree service call in DeLand is answered by God's Country Tree Service LLC, a local crew rather than a dispatch desk. The company has worked from its DeLand base since <?php echo e($yearEstablished); ?>. The climbers, grapple loader, and chipper seen in Volusia County yards all year are the ones that roll out after a storm.</p>
     </div>
 
     <div class="emg-who-split">
@@ -1024,14 +1030,14 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
           </li>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
-            <p><strong>Insurance-ready documentation.</strong> Licensed and insured, with the photos, written scope, and itemized invoice your adjuster will ask for after the storm.</p>
+            <p><strong>Insurance-ready documentation.</strong> You get the photos, written scope, and itemized invoice your adjuster will ask for after the storm.</p>
           </li>
         </ul>
       </div>
 
       <div class="emg-bigstat" data-animate="right">
-        <div class="big-number">24<span>/7</span></div>
-        <div class="big-label">Emergency Calls Answered, In Season and Out</div>
+        <div class="big-number"><?php echo e($yearEstablished); ?></div>
+        <div class="big-label">Storm Calls Answered From DeLand Since</div>
       </div>
     </div>
   </div>
@@ -1052,12 +1058,12 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       </figure>
 
       <div class="emg-speed-copy">
-        <span class="eyebrow-label">Minutes Matter</span>
+        <span class="eyebrow-label">Already Inside the County</span>
         <h2>How fast can your emergency tree service get to me?</h2>
-        <p class="answer-block">Same-day response for genuine hazards is the standard. We're based in DeLand, so most of Volusia County is a short drive &mdash; not a regional dispatch queue. After a widespread hurricane we triage honestly: trees on homes and blocked driveways first, standing hazards next, yard debris after that.</p>
-        <p data-animate>Searching for emergency tree removal near me in DeLand? Our shop, equipment, and climbers are already inside the county line &mdash; no staging area three counties away, no subcontracted strangers. The trucks in our photos are the trucks that pull up.</p>
+        <p class="answer-block">God's Country Tree Service LLC gives emergency tree service calls with a genuine hazard a same-day response. The crew is based in DeLand, so Deltona, Orange City, DeBary, Lake Helen, and DeLeon Springs are all within about 12 miles. After a hurricane, trees on homes and blocked driveways come first, standing hazards next, yard debris last.</p>
+        <p data-animate>For emergency tree removal near you in DeLand, FL, the equipment and climbers are already inside the county line, not staged three counties away. The trucks in these photos are the trucks that pull up.</p>
         <div class="emg-area-chips" data-p1-dynamic>
-          <?php foreach (['DeLand', 'Deltona', 'Orange City', 'DeBary', 'Lake Helen', 'Volusia County'] as $area): ?>
+          <?php foreach (['DeLand', 'Deltona', 'Orange City', 'DeBary', 'Lake Helen', 'DeLeon Springs', 'Volusia County'] as $area): ?>
           <span class="emg-area-chip"><?php echo icon('map-pin'); ?> <?php echo e($area); ?></span>
           <?php endforeach; ?>
         </div>
@@ -1077,7 +1083,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Priced Before We Cut</span>
       <h2>How much does storm cleanup cost in DeLand, FL?</h2>
-      <p class="answer-block">Storm cleanup in DeLand runs from a few hundred dollars for downed limbs and debris hauling to considerably more when a tree is on a structure. Emergency work is priced by hazard, access, and the equipment the job demands &mdash; and you get the number in writing before we cut, even at night.</p>
+      <p class="answer-block">Storm cleanup cost in DeLand, FL depends on what the tree is on, how the crew can reach it, and the equipment the job needs. Downed limbs on open lawn are a loader-and-chipper job; a trunk on a roof needs rigging first. God's Country puts the price in writing before cutting, at any hour.</p>
     </div>
 
     <div class="emg-cost-factors">
@@ -1091,7 +1097,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       </div>
       <div class="emg-cost-factor reveal-delay-3" data-animate>
         <h3>Stabilize now, finish later</h3>
-        <p>Sometimes the smart move is two visits: remove the immediate hazard tonight, then finish the takedown and haul-off at standard rates.</p>
+        <p>Sometimes the smart move is two visits: remove the immediate hazard tonight, then schedule the rest of the takedown and the haul-off in daylight.</p>
       </div>
     </div>
   </div>
@@ -1101,9 +1107,9 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 <section class="numbered-section emg-proof" data-num="05" aria-label="Storm cleanup work in DeLand">
   <div class="container">
     <div class="section-title" data-animate>
-      <span class="eyebrow-label">Our Crew, Real Storm Work</span>
+      <span class="eyebrow-label">Our Crew, Our Machines</span>
       <h2>What does storm cleanup look like when the crew is local?</h2>
-      <p class="answer-block">It looks like the same equipment DeLand sees all year: a climber topping the broken spar, the grapple loader carrying out the trunk, and the chipper clearing the brush. These photos are our crew on real Volusia County jobs.</p>
+      <p class="answer-block">Storm cleanup by a local crew uses the same equipment DeLand sees all year. A climber tops the broken spar, the grapple loader carries out the trunk, and the chipper clears the brush. The three photos below show the God's Country crew and machines on Volusia County jobs.</p>
     </div>
 
     <div class="emg-proof-gallery">
@@ -1117,7 +1123,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       </figure>
       <figure class="reveal-delay-2" data-animate>
         <?php echo p1_picture($bodyPhotos['chipper']['src'], $bodyPhotos['chipper']['alt'], 800, 800, '(max-width: 768px) 100vw, 800px'); ?>
-        <figcaption>Storm brush through the chipper &mdash; debris leaves the same day</figcaption>
+        <figcaption>A storm-fallen live oak being cleared with the loader</figcaption>
       </figure>
     </div>
 
@@ -1166,9 +1172,9 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 <section class="numbered-section emg-faq" data-num="06" aria-label="Emergency tree service questions">
   <div class="container">
     <div class="section-title" data-animate>
-      <span class="eyebrow-label">Asked at 2 AM</span>
+      <span class="eyebrow-label">Asked Mid-Storm</span>
       <h2>What do DeLand homeowners ask during a tree emergency?</h2>
-      <p class="answer-block">DeLand homeowners in a tree emergency ask <?php echo e($siteName); ?> the same six things: removal versus cleanup, night and weekend calls, whether the house is safe, power lines, insurance, and emergency pricing. Straight answers below &mdash; and if it's urgent, call now.</p>
+      <p class="answer-block">DeLand homeowners in a tree emergency ask six things: removal versus cleanup, night and weekend calls, whether the house is safe, power lines, insurance, and pricing. The answers below are how God's Country Tree Service LLC handles each one. If a tree is on the house right now, call instead of reading.</p>
     </div>
 
     <div class="faq-grid" data-p1-dynamic>
@@ -1191,7 +1197,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">After the Emergency</span>
       <h2>What other tree services do DeLand property owners pair with storm cleanup?</h2>
-      <p class="answer-block">DeLand property owners usually pair storm cleanup with <a href="/services/fallen-tree-removal-cleanup/">fallen tree removal</a> for what's already on the ground, hazardous tree removal for the leaners the wind exposed, and standard tree removal for the trees the storm finished off.</p>
+      <p class="answer-block">DeLand property owners pair storm cleanup with three other tree services once the emergency is over. <a href="/services/fallen-tree-removal-cleanup/">Fallen tree removal and cleanup</a> clears what is already on the ground, <a href="/services/dead-hazardous-tree-removal/">hazardous tree removal</a> deals with the leaners the wind exposed, and the <a href="/services/">full list of tree services</a> covers trimming and replanting afterward.</p>
     </div>
 
     <?php renderServiceCards(['fallen-tree-removal-cleanup', 'dead-hazardous-tree-removal', 'tree-removal'], $serviceCardData); ?>
@@ -1201,16 +1207,18 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 <!-- ============ CLOSING CTA (C9.2 radial glow) ============ -->
 <section class="emg-cta" aria-label="Request emergency tree help">
   <div class="container">
-    <span class="eyebrow-label" style="color: var(--color-accent);">Answered 24/7 &middot; DeLand &amp; Volusia County</span>
+    <span class="eyebrow-label" style="color: var(--color-accent);">Storm Line &middot; DeLand &amp; Volusia County</span>
     <h2>Is a Tree on Your Roof or Leaning Over Your Home Right Now?</h2>
-    <p class="answer-block">Don't wait it out. Send your address, photos, and what happened &mdash; <?php echo e($siteName); ?> will triage the hazard, give you a straight answer on timing, and put the price in writing before the saws start. Stay clear of the tree until we get there.</p>
+    <p class="answer-block">Don't wait it out. Call with your address and what happened. <?php echo e($siteName); ?> will triage the hazard, give you a straight answer on timing, and put the price in writing before the saws start. Stay clear of the tree until we get there.</p>
     <div class="hero-actions">
-      <a href="<?php echo e(phoneHref($phone)); ?>" class="btn btn-accent btn-lg">Call 24/7: <?php echo e(formatPhone($phone)); ?></a>
-      <a href="#estimate-form" class="btn btn-outline-white btn-lg">Send Damage Photos</a>
+      <a href="<?php echo e(phoneHref($phone)); ?>" class="btn btn-accent btn-lg">Call Now: <?php echo e(formatPhone($phone)); ?></a>
+      <a href="#estimate-form" class="btn btn-outline-white btn-lg">Request Emergency Help</a>
     </div>
   </div>
 </section>
 
 <p class="last-updated">Last Updated: <?php echo date('F Y'); ?></p>
+
+</article>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

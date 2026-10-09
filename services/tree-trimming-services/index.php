@@ -32,12 +32,12 @@ $ogImage          = $siteUrl . p1_best_src($heroImage);
 
 $bodyPhotos = [
     'buckettruck' => [
-        'src' => $imgBase . '1784062736583-06l0z2-36766518_2093778660842735_1092164506395607040_n.1.webp',
-        'alt' => "God's Country bucket truck extended into an oak canopy in DeLand, FL",
+        'src' => '/assets/images/nsuvrpt-960.webp', // v8: the file this slot named was never on disk
+        'alt' => "God's Country bucket truck parked curbside with its boom raised into an oak canopy in DeLand, FL",
     ],
     'climber' => [
-        'src' => '/assets/images/nsuvrpt-960.webp',
-        'alt' => "God's Country climber trimming limbs inside a live oak canopy in DeLand, FL",
+        'src' => $imgBase . '1784062767583-96o2mm-650224392_1767273321337836_3694986581662424202_n.webp',
+        'alt' => "Arborist roped into an oak canopy making trimming cuts",
     ],
     'loader' => [
         'src' => $imgBase . '1784062765583-t90qfe-504464588_4046117555608826_3413761751549071197_n.webp',
@@ -91,7 +91,7 @@ $trimSeasons = [
 
 // ---- Cost factors ----
 $costFactors = [
-    ['title' => 'Size & how many',      'text' => 'One queen palm is a quick visit; six mature live oaks are a day with the bucket truck. Height, spread, and the length of the list drive most of the price.'],
+    ['title' => 'Size & how many',      'text' => 'One queen palm is a small job; six mature live oaks worked from the bucket truck are a much bigger one. Height, spread, and the length of the list drive most of the price.'],
     ['title' => 'How much comes out',   'text' => 'A light clearance lift costs less than a full deadwood-and-thinning pass through a moss-loaded canopy. The estimate states exactly what comes off each tree.'],
     ['title' => 'Access & targets',     'text' => 'Trimming over a roof, fence, or pool screen means roping and lowering every piece. Open-lawn trees go faster — and the written quote reflects the difference honestly.'],
 ];
@@ -100,7 +100,7 @@ $costFactors = [
 $faqs = [
     [
         'q' => 'How often should trees be trimmed in DeLand?',
-        'a' => "Most DeLand hardwoods do well on a two-to-three-year trimming cycle, while palms and fast growers usually want yearly attention. Anything hanging over a roof, driveway, or pool enclosure deserves an annual look regardless of species. If you're not sure, we'll tell you honestly at the free estimate — some trees we look at simply don't need work yet.",
+        'a' => "Most DeLand hardwoods do well on a two-to-three-year trimming cycle, while palms and fast growers usually want yearly attention. Anything hanging over a roof, driveway, or pool enclosure deserves an annual look regardless of species. If you're not sure, we'll tell you at the estimate visit — some trees we look at simply don't need work yet.",
     ],
     [
         'q' => 'Do you trim palms too, or just oaks and pines?',
@@ -120,7 +120,7 @@ $faqs = [
     ],
     [
         'q' => 'Is it too late to trim once hurricane season starts?',
-        'a' => "No — a June or July trim still takes weight and wind sail out of a canopy before the busiest storm months of August and September. The ideal time is earlier in the year, but the second-best time is before the next named storm. We keep estimate turnaround at 24 hours through the season for exactly that reason.",
+        'a' => "No — a June or July trim still takes weight and wind sail out of a canopy before the busiest storm months of August and September. The ideal time is earlier in the year, but the second-best time is before the next named storm. If the season has already started, ask for clearance over the roof and pool screen first; that is the work that matters most in a storm.",
     ],
 ];
 
@@ -772,6 +772,8 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
 }
 </style>
 
+<article class="service-article">
+
 <!-- ============ HERO (C1.4) ============ -->
 <section class="trm-hero has-hero-bg" aria-label="Tree trimming in DeLand, Florida">
   <?php echo p1_hero_picture($heroImage); ?>
@@ -797,10 +799,10 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     </div>
 
     <div class="hero-trust">
-      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
-      <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
+      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Roped Lowering Over Roofs</span>
+      <span class="hero-trust-item"><?php echo icon('award'); ?> Owner-Operated in DeLand</span>
       <span class="hero-trust-item"><?php echo icon('scissors'); ?> All Tree Sizes</span>
-      <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
+      <span class="hero-trust-item"><?php echo icon('clock'); ?> Chipper &amp; Haul-Off On Site</span>
     </div>
     </div>
 
@@ -821,7 +823,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Read Your Canopy</span>
       <h2>How do you know your DeLand trees are overdue for a trim?</h2>
-      <p class="answer-block">An overdue tree tells on itself: limbs resting on the roof or pool screen enclosure, deadwood and Spanish moss thickening inside the canopy, palm fronds browning at the crown, or a lawn shaded down to bare Central Florida sand. One sign means a trim will help &mdash; several mean book it before hurricane season.</p>
+      <p class="answer-block">DeLand trees are overdue for a trim when limbs rest on the roof or pool screen, or deadwood and Spanish moss thicken inside the canopy. Browning palm crowns and a lawn shaded down to bare sand are the other two signs. One sign means a trim will help; several mean book it before hurricane season.</p>
     </div>
 
     <div class="trm-signs" data-p1-dynamic>
@@ -849,7 +851,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="section-title">
       <span class="eyebrow-label">More Than a Chainsaw</span>
       <h2>What makes professional tree trimming different from DIY cutting?</h2>
-      <p class="answer-block">Professional tree trimming means cuts at the branch collar that close cleanly, a balanced canopy instead of stripped interior limbs, and roped work from a bucket truck rather than a ladder. DIY cutting saves a fee today and usually costs a weakened, storm-prone tree &mdash; or an ER visit &mdash; later.</p>
+      <p class="answer-block">Professional tree trimming differs from DIY cutting in where the cut lands and how the limb comes down. God's Country cuts at the branch collar so wounds close, keeps interior growth instead of stripping it, and ropes limbs down from a bucket truck. DIY cuts from a ladder tend to leave stubs and a storm-prone tree.</p>
     </div>
 
     <div class="trm-diy-split">
@@ -890,14 +892,14 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">The Work Itself</span>
       <h2>Which kinds of tree trimming do DeLand yards actually need?</h2>
-      <p class="answer-block">Three kinds of trimming cover most DeLand yards: clearance trimming that lifts limbs off roofs, driveways, and pool screen enclosures; canopy health trimming that clears deadwood and thins storm sail; and appearance trimming that keeps palms and street-facing trees sharp. God's Country Tree Service handles all three with one crew and one written estimate.</p>
+      <p class="answer-block">DeLand yards need three kinds of tree trimming: clearance, canopy health and appearance trimming. Clearance lifts limbs off roofs, driveways and pool screen enclosures. Health trimming clears deadwood and thins storm sail in live oaks. Appearance trimming keeps palms and street-facing trees tidy. God's Country Tree Service quotes all three on one written estimate after walking the yard.</p>
     </div>
 
     <div class="trm-stagger" data-p1-dynamic>
       <?php foreach ($trimTypes as $type): ?>
       <div class="trm-row">
         <figure class="trm-framed trm-row-image" data-animate>
-          <img src="<?php echo e($bodyPhotos[$type['photo']]['src']); ?>" alt="<?php echo e($bodyPhotos[$type['photo']]['alt']); ?>" width="<?php echo e($type['w']); ?>" height="<?php echo e($type['h']); ?>" loading="lazy">
+          <?php echo p1_picture($bodyPhotos[$type['photo']]['src'], $bodyPhotos[$type['photo']]['alt'], (int) $type['w'], (int) $type['h'], '(max-width: 768px) 100vw, 800px'); ?>
         </figure>
         <div class="trm-row-text" data-animate>
           <span class="trm-row-num"><?php echo e($type['num']); ?></span>
@@ -955,7 +957,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Straight Pricing</span>
       <h2>How much does tree trimming cost in DeLand, FL?</h2>
-      <p class="answer-block">Tree trimming cost in DeLand depends on the tree's size, how much canopy comes out, and how many trees are on the list &mdash; one palm is a far smaller job than a yard of mature live oaks. You get a free written estimate within 24 hours, with chipping, cleanup, and hauling spelled out.</p>
+      <p class="answer-block">Tree trimming cost in DeLand depends on tree size, how much canopy comes out, and how many trees are on the list. God's Country Tree Service prices each job after an on-site visit, and the written estimate names every tree, what comes off it, and the chipping and hauling. The visit and the quote are free.</p>
     </div>
 
     <div class="trm-cost-grid" data-p1-dynamic>
@@ -979,10 +981,10 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
       </figure>
       <div data-animate="right">
         <span class="eyebrow-label">Local Proof</span>
-        <h2>Searching for tree trimming near me in DeLand?</h2>
-        <p class="answer-block">If you're searching for tree trimming near me in DeLand, the crew in this photo is the one that shows up. God's Country Tree Service works from DeLand across roughly 50 miles of Volusia County &mdash; Deltona, Orange City, DeBary, and Lake Helen included &mdash; with the same bucket truck, climbers, and 24-hour estimates.</p>
+        <h2>Who does tree trimming near me in DeLand, FL?</h2>
+        <p class="answer-block">God's Country Tree Service does tree trimming near you from its base in DeLand, FL. The same crew, bucket truck and chipper cover roughly 50 miles of Volusia County, including DeLeon Springs, Lake Helen, Orange City, Deltona and DeBary. Trimming is one of the <a href="/services/">tree services we run from DeLand</a>, so one visit covers palms, oaks and pines.</p>
         <div class="trm-area-chips" data-p1-dynamic>
-          <?php foreach (['DeLand', 'Deltona', 'Orange City', 'DeBary', 'Lake Helen', 'Volusia County'] as $area): ?>
+          <?php foreach (['DeLand', 'DeLeon Springs', 'Lake Helen', 'Orange City', 'Deltona', 'DeBary'] as $area): ?>
           <span class="trm-area-chip"><?php echo icon('map-pin'); ?> <?php echo e($area); ?></span>
           <?php endforeach; ?>
         </div>
@@ -1006,7 +1008,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Good Questions</span>
       <h2>What do DeLand homeowners ask before booking tree trimming?</h2>
-      <p class="answer-block">How often, palms versus oaks, tree stress, debris, power lines, and timing around hurricane season. Anything we missed goes in the estimate form and gets answered within 24 hours.</p>
+      <p class="answer-block">DeLand homeowners ask before booking tree trimming how often trees need it, whether palms are included, and what happens to the brush. They also ask about limbs near power lines, stress on the tree, and whether a trim still helps once hurricane season has started. Each answer below is specific to Volusia County trees.</p>
     </div>
 
     <div class="faq-grid" data-p1-dynamic>
@@ -1039,9 +1041,9 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
 <!-- ============ CLOSING CTA (C9.2) ============ -->
 <section class="trm-closing-cta" aria-label="Get a tree trimming estimate">
   <div class="container">
-    <span class="eyebrow-label" style="color: var(--color-accent);">Free &middot; Written &middot; Within 24 Hours</span>
+    <span class="eyebrow-label" style="color: var(--color-accent);">Free Visit &middot; Written Quote</span>
     <h2>Ready to Get Your Trees Trimmed Before the Next Storm Season Tests Them?</h2>
-    <p class="answer-block">Tell us which trees have gotten ahead of you &mdash; the oak over the roof, the palms at the driveway, the whole shaded-out backyard. <?php echo e($siteName); ?> will walk the property, recommend only the trimming it actually needs, and put the price in writing within 24 hours.</p>
+    <p class="answer-block">Tell us which trees have gotten ahead of you &mdash; the oak over the roof, the palms at the driveway, the whole shaded-out backyard. <?php echo e($siteName); ?> will walk the property, recommend only the trimming it actually needs, and put the price in writing, tree by tree.</p>
     <div class="hero-actions">
       <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Trimming Estimate</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact Us</a>
@@ -1050,5 +1052,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
 </section>
 
 <p class="last-updated">Last Updated: <?php echo date('F Y'); ?></p>
+
+</article>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

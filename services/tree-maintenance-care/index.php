@@ -53,9 +53,9 @@ $planPoints = [
 ];
 $emergencyPoints = [
     'The weather sets the schedule, usually at 2 a.m. in the rain',
-    'Emergency rates, plus whatever the roof, fence, or pool screen costs',
+    'Emergency work, plus whatever the roof, fence, or pool screen repair costs',
     'Insurance paperwork instead of a maintenance invoice',
-    'The tree is gone entirely — decades of shade, removed in an afternoon',
+    'The tree is gone entirely, and decades of shade go with it',
 ];
 
 // ---- What a maintenance visit includes (C7.1 alternating timeline) ----
@@ -64,7 +64,7 @@ $careSteps = [
     ['icon' => 'scissors',      'title' => 'Preventative pruning & deadwood', 'text' => 'We take out the dead and structurally weak wood — the pieces that come down on their own during the first tropical system — while they are still small, cheap cuts.'],
     ['icon' => 'wind',          'title' => 'Canopy thinning & clearance',     'text' => 'Selective thinning lets wind pass through a live oak instead of pushing on it like a sail, and keeps limbs clear of rooflines, screen enclosures, and driveways.'],
     ['icon' => 'sprout',        'title' => 'Root zone & soil care',           'text' => 'DeLand\'s sandy Central Florida soil drains fast and holds few nutrients. We check mulch depth, root-zone health, and flag trees that would benefit from fertilization — only when they actually need it.'],
-    ['icon' => 'clipboard-list','title' => 'Written report & watch list',     'text' => 'You get a plain-language summary: what we did, what we are watching, and when the crew should come back. No mystery, no upsell — just a calendar you approve.'],
+    ['icon' => 'clipboard-list','title' => 'Watch list & written estimate',   'text' => 'Before the crew leaves you hear, in plain language, what was done, what we are watching, and when that tree should be looked at again. Any follow-up work goes on a written estimate you approve first.'],
 ];
 
 // ---- Seasonal care calendar (signature 4-quarter grid) ----
@@ -84,13 +84,13 @@ $quarters = [
     [
         'label'  => 'Q3', 'months' => 'July – September', 'title' => 'Peak-season watch',
         'icon'   => 'cloud-lightning',
-        'tasks'  => ['Post-storm inspections after named systems', 'Hangers & cracked limbs removed fast', 'Priority response for plan customers'],
+        'tasks'  => ['Post-storm inspections after named systems', 'Hangers & cracked limbs removed fast', 'Emergency line open around the clock'],
         'accent' => false,
     ],
     [
         'label'  => 'Q4', 'months' => 'October – December', 'title' => 'Recovery & renewal',
         'icon'   => 'leaf',
-        'tasks'  => ['Repair pruning once the season closes', 'Mulch refresh for the dry months', 'Best planting window of the year'],
+        'tasks'  => ['Repair pruning once the season closes', 'Mulch depth checked for the dry months', 'Cooler months suit new plantings'],
         'accent' => false,
     ],
 ];
@@ -98,15 +98,15 @@ $quarters = [
 // ---- Cost factors ----
 $costFactors = [
     ['title' => 'How many trees, how big',   'text' => 'A yard with three young palms and a yard with eight mature live oaks are different plans. Tree count, size, and condition set the crew time each visit needs.'],
-    ['title' => 'Scope of each visit',        'text' => 'Inspection-only check-ins cost less than visits that include pruning, thinning, and haul-off. Your written plan spells out exactly what each stop covers.'],
-    ['title' => 'How often we come',          'text' => 'Once a year keeps most DeLand yards honest; twice a year suits older oaks and storm-battered lots. You set the rhythm, and you can change it any time.'],
+    ['title' => 'Scope of each visit',        'text' => 'Inspection-only check-ins cost less than visits that include pruning, thinning, and haul-off. The written estimate spells out exactly what each visit covers.'],
+    ['title' => 'How often we come',          'text' => 'Once a year keeps most DeLand yards honest; twice a year suits older oaks and storm-battered lots. You set the rhythm when you approve the estimate.'],
 ];
 
 // ---- FAQs (conversational, 40-80 word answers) ----
 $faqs = [
     [
         'q' => 'How often should trees in DeLand be inspected?',
-        'a' => 'At least once a year for most yards, ideally in spring so anything we find can be corrected before hurricane season opens June 1. Older live oaks, trees that took storm damage last season, and anything leaning over a house or pool enclosure deserve a second look in the fall. Plan customers get those check-ins on a set calendar automatically.',
+        'a' => 'At least once a year for most yards, ideally in spring so anything we find can be corrected before hurricane season opens June 1. Older live oaks, trees that took storm damage last season, and anything leaning over a house or pool enclosure deserve a second look in the fall. Ask for both visits to go on the calendar when you approve the estimate.',
     ],
     [
         'q' => 'When is the best time of year for maintenance pruning?',
@@ -118,7 +118,7 @@ $faqs = [
     ],
     [
         'q' => 'What happens if you find a serious problem during a visit?',
-        'a' => 'We show it to you, explain the options, and put a price on each one in writing. Sometimes cabling or reduction pruning saves the tree; sometimes removal is the honest answer. Either way you decide on your schedule — that is the entire point of finding problems during an inspection instead of after a storm.',
+        'a' => 'We show it to you, explain the options, and put a price on each one in writing. Sometimes reduction pruning saves the tree; sometimes removal is the honest answer. Either way you decide on your schedule — that is the entire point of finding problems during an inspection instead of after a storm.',
     ],
     [
         'q' => 'Is fertilization included in tree maintenance?',
@@ -425,6 +425,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 /* ---- C7.1 Alternating timeline: what a visit includes ---- */
 .mnt-included-section { background: var(--color-cream); }
 .mnt-timeline {
+  list-style: none;
   position: relative;
   max-width: 920px;
   margin: 0 auto;
@@ -789,6 +790,8 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
 }
 </style>
 
+<article class="service-article">
+
 <!-- ============ HERO (C1.4) ============ -->
 <section class="mnt-hero has-hero-bg" aria-label="Tree maintenance and care in DeLand, Florida">
   <?php echo p1_hero_picture($heroImage); ?>
@@ -806,7 +809,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
 
     <h1>Tree Maintenance &amp; Care in DeLand, FL &mdash; <span class="text-accent">Year-Round Tree Service Plans</span></h1>
 
-    <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving Volusia County since <?php echo e($yearEstablished); ?>. Our maintenance plans put your trees on a calendar &mdash; inspections, preventative pruning, and storm-readiness thinning &mdash; so problems get fixed while they're still small, scheduled cuts instead of midnight emergencies.</p>
+    <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving Volusia County since <?php echo e($yearEstablished); ?>. Its tree maintenance puts your trees on a calendar: inspections, preventative pruning, fertilization where a tree needs it, and canopy thinning before hurricane season. The written estimate is free and arrives within 24 hours of the walk-through.</p>
 
     <div class="hero-actions">
       <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Maintenance Assessment</a>
@@ -814,10 +817,10 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     </div>
 
     <div class="hero-trust">
-      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
+      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Certified Arborist on Staff</span>
       <span class="hero-trust-item"><?php echo icon('calendar-check'); ?> Scheduled Care Plans</span>
       <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
-      <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
+      <span class="hero-trust-item"><?php echo icon('clock'); ?> Storm-Ready Before June 1</span>
     </div>
     </div>
 
@@ -835,7 +838,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">The Math of Prevention</span>
       <h2>How does preventative tree health care avoid emergency removals?</h2>
-      <p class="answer-block">Preventative tree health care catches failure early &mdash; deadwood, cavities, weak unions, root stress &mdash; and corrects it with small scheduled cuts instead of an emergency crew call. A maintained live oak sheds far less in a storm; a neglected one becomes the midnight removal over your pool screen enclosure. Routine visits cost a fraction of that night.</p>
+      <p class="answer-block">Preventative tree health care catches failure early &mdash; deadwood, cavities, weak unions, root stress &mdash; and corrects it with small scheduled cuts instead of an emergency crew call. A maintained live oak sheds far less in a storm; a neglected one becomes the midnight removal over your pool screen enclosure.</p>
     </div>
 
     <div class="mnt-econ-grid">
@@ -860,7 +863,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     </div>
 
     <div class="mnt-econ-footer">
-      <p data-animate>Most of the emergency work we run across Volusia County traces back to the same story: <strong>a tree nobody had looked at in five years</strong>. The deadwood that lands on a roof in August was visible &mdash; and removable for a modest price &mdash; back in April.</p>
+      <p data-animate>Most of the emergency work we run across Volusia County traces back to the same story: <strong>a tree nobody had looked at in years</strong>. The deadwood that lands on a roof in August was visible, and removable on a routine visit, back in April.</p>
       <div class="mnt-stat-card" data-animate="right">
         <div class="mnt-big-number"><?php echo e($yearsInBusiness); ?><span>+</span></div>
         <div class="mnt-big-label">Years Maintaining DeLand Trees</div>
@@ -880,12 +883,12 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Every Visit, Start to Finish</span>
       <h2>What do ongoing tree care services include?</h2>
-      <p class="answer-block">Ongoing tree care at God's Country includes a walk-through inspection of every tree, preventative pruning and deadwood removal, canopy thinning before hurricane season, mulch and root-zone checks suited to DeLand's sandy soil, and a written report of anything worth watching. One licensed crew handles all of it, on a schedule you approve.</p>
+      <p class="answer-block">Ongoing tree care services from God's Country Tree Service include inspections, preventative pruning, deadwood removal, canopy thinning, and root-zone checks. Each visit runs in the five steps below. Fertilization is recommended only where DeLand's fast-draining sandy soil has left a tree short of nutrients, and follow-up work is quoted in writing before it is scheduled.</p>
     </div>
 
-    <div class="mnt-timeline" data-p1-dynamic>
+    <ol class="mnt-timeline" data-p1-dynamic>
       <?php foreach ($careSteps as $i => $step): ?>
-      <div class="mnt-tl-item" data-animate>
+      <li class="mnt-tl-item" data-animate>
         <div class="mnt-tl-card">
           <span class="mnt-tl-step">Step <?php echo str_pad((string)($i + 1), 2, '0', STR_PAD_LEFT); ?></span>
           <h3><?php echo e($step['title']); ?></h3>
@@ -893,9 +896,9 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
         </div>
         <div class="mnt-tl-node"><?php echo icon(($step['icon'])); ?></div>
         <div class="mnt-tl-empty" aria-hidden="true"></div>
-      </div>
+      </li>
       <?php endforeach; ?>
-    </div>
+    </ol>
   </div>
 </section>
 
@@ -910,7 +913,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Built Around the Storms</span>
       <h2>What does a seasonal maintenance year look like for DeLand trees?</h2>
-      <p class="answer-block">A DeLand maintenance year follows the weather: structural pruning through the dormant winter, canopy thinning and clearance in spring before hurricane season opens June 1, watch-and-respond checks through the peak months, then recovery, mulching, and planting once the season closes November 30. The four quarters below are how we run that calendar.</p>
+      <p class="answer-block">A seasonal maintenance year for DeLand trees is built around hurricane season, June 1 through November 30. Structural pruning happens in the slow-growth winter, canopy thinning and roof clearance in spring, storm checks through the peak months, and repair pruning once the season closes. The four quarters below show the calendar.</p>
     </div>
 
     <div class="mnt-quarters">
@@ -943,7 +946,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Straight Pricing</span>
       <h2>How much does tree maintenance cost in DeLand, FL?</h2>
-      <p class="answer-block">Tree maintenance cost in DeLand depends on how many trees you have, their size and condition, and how often the crew visits. Most homeowners spend far less per year on scheduled care than one emergency removal costs after a storm. Every plan starts with a free written estimate delivered within 24 hours.</p>
+      <p class="answer-block">Tree maintenance cost in DeLand depends on how many trees you have, their size and condition, and how often the crew visits. God's Country Tree Service does not charge for the walk-through or the quote. The written estimate lists what each visit covers and whether debris hauling is included, which it is in most quotes.</p>
     </div>
 
     <div class="mnt-cost-factors">
@@ -967,8 +970,8 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
   <div class="container">
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Local Proof</span>
-      <h2>Looking for tree maintenance near me in DeLand?</h2>
-      <p class="answer-block">If you've been searching for tree maintenance near me in DeLand, this is what routine care looks like nearby: lifted, balanced canopies, yards left clean after every visit, and hazard trees assessed before they choose their own timing. We run maintenance routes within about 50 miles of DeLand, across Volusia County.</p>
+      <h2>Who provides tree maintenance near me in DeLand?</h2>
+      <p class="answer-block">God's Country Tree Service LLC provides tree maintenance from DeLand, FL 32720, for properties within about 50 miles across Volusia County. The photos below show what the work leaves behind: a canopy lifted and balanced over the street, a backyard raked clean under its live oaks, and the stump of a tree that was left too long.</p>
     </div>
 
     <div class="mnt-proof-gallery">
@@ -1002,8 +1005,8 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
   <div class="container">
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Good Questions</span>
-      <h2>What do DeLand property owners ask about tree maintenance?</h2>
-      <p class="answer-block">How often to inspect, when to schedule around hurricane season, how palms differ from oaks, and what happens when we find a problem. The answers below come from twelve years of maintaining trees across DeLand, Deltona, Orange City, DeBary, and Lake Helen.</p>
+      <h2>Tree Maintenance FAQs for DeLand Property Owners</h2>
+      <p class="answer-block">How often to inspect, when to schedule around hurricane season, how palms differ from oaks, and what happens when we find a problem. The answers below come from maintaining trees across DeLand, DeLeon Springs, Lake Helen, Orange City, Deltona, and DeBary since <?php echo e($yearEstablished); ?>.</p>
     </div>
 
     <div class="faq-grid" data-p1-dynamic>
@@ -1026,7 +1029,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">One Crew, One Calendar</span>
       <h2>What other tree services do DeLand property owners pair with tree maintenance?</h2>
-      <p class="answer-block">Maintenance plans work alongside the rest of the crew's skills: <a href="/services/tree-trimming-services/">tree trimming</a> visits between inspections, arborist-grade <a href="/services/tree-pruning-services/">tree pruning</a> where structure needs correcting, and a <a href="/services/certified-arborist-services/">certified arborist</a> eye on any tree that looks like it's declining. Same God's Country crew, one schedule, and one free estimate that covers all of it.</p>
+      <p class="answer-block">DeLand property owners most often pair tree maintenance with trimming, structural pruning, and an arborist's diagnosis. That means <a href="/services/tree-trimming-services/">routine tree trimming between inspections</a>, <a href="/services/tree-pruning-services/">structural pruning for young or lopsided canopies</a>, and <a href="/services/certified-arborist-services/">an arborist's assessment of a declining tree</a>. The rest are on <a href="/services/">the full God's Country service list</a>.</p>
     </div>
 
     <?php renderServiceCards(['tree-trimming-services', 'tree-pruning-services', 'certified-arborist-services'], $serviceCardData); ?>
@@ -1036,9 +1039,9 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
 <!-- ============ CLOSING CTA ============ -->
 <section class="mnt-closing-cta" aria-label="Start a tree maintenance plan">
   <div class="container">
-    <span class="eyebrow-label" style="color: var(--color-accent);">Free &middot; Written &middot; Within 24 Hours</span>
+    <span class="eyebrow-label" style="color: var(--color-accent);">Walk-Through &middot; Written Estimate</span>
     <h2>Ready to Put Your Trees on a Schedule Before the Next Hurricane Season?</h2>
-    <p class="answer-block">Tell <?php echo e($siteName); ?> which trees worry you &mdash; the moss-draped live oak, the tall slash pines, the palms by the pool screen enclosure &mdash; and we'll walk the property, build a maintenance calendar around them, and put the price in writing within 24 hours.</p>
+    <p class="answer-block">Tell <?php echo e($siteName); ?> which trees worry you &mdash; the moss-draped live oak, the tall slash pines, the palms by the pool screen enclosure &mdash; and we'll walk the property, build a maintenance calendar around them, and put the price in writing.</p>
     <div class="hero-actions">
       <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Maintenance Assessment</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact Us</a>
@@ -1047,5 +1050,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
 </section>
 
 <p class="last-updated">Last Updated: <?php echo date('F Y'); ?></p>
+
+</article>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

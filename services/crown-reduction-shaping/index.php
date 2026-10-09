@@ -80,7 +80,7 @@ $canopyZones = [
 $faqs = [
     [
         'q' => 'Will crown reduction harm my live oak?',
-        'a' => "Not when it's done with proper reduction cuts. Every limb is shortened back to a living lateral branch that takes over growth, so the oak seals its wounds and keeps a full working canopy. What harms live oaks is topping — indiscriminate cuts that leave decaying stubs. That's the practice we refuse, and the reason DeLand homeowners call us to fix other crews' work.",
+        'a' => "Crown reduction does not harm a live oak when it is done with proper reduction cuts. Every limb is shortened back to a living lateral branch that takes over growth, so the oak seals its wounds and keeps a full working canopy. What harms live oaks is topping — indiscriminate cuts that leave decaying stubs. That's the practice we refuse.",
     ],
     [
         'q' => 'When is the best time of year for crown reduction in DeLand?',
@@ -92,11 +92,11 @@ $faqs = [
     ],
     [
         'q' => 'My tree was topped years ago — can you fix it?',
-        'a' => "Often, yes. Restoration shaping selects the strongest of the sprouts a topping cut produced, trains them into new leaders, and removes the weak, crowded regrowth around them. It usually takes more than one visit spread over a couple of seasons, but many topped trees can be brought back to a safe, natural structure instead of being removed.",
+        'a' => "A topped tree can often be restored. Restoration shaping selects the strongest of the sprouts a topping cut produced, trains them into new leaders, and removes the weak, crowded regrowth around them. It usually takes more than one visit spread over a couple of seasons, but many topped trees can be brought back to a safe, natural structure instead of being removed.",
     ],
     [
         'q' => 'Can you shape a tree hanging over my pool enclosure?',
-        'a' => "That's one of the most common calls we get in DeLand. Limbs over a screen enclosure are roped and lowered in controlled sections, so nothing free-falls onto the screen. Between climbers and a compact loader, we can rebalance a canopy in a fenced backyard without damaging the enclosure, the deck, or the landscaping around the pool.",
+        'a' => "Yes, we shape trees that hang over pool enclosures. Limbs over a screen enclosure are roped and lowered in controlled sections, so nothing free-falls onto the screen. Climbers work from inside the canopy, which lets us rebalance a tree in a fenced backyard without driving equipment across the deck or the landscaping around the pool.",
     ],
 ];
 
@@ -842,6 +842,8 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
 }
 </style>
 
+<article class="service-article">
+
 <!-- ============ HERO (C1.4) ============ -->
 <section class="crn-hero has-hero-bg" aria-label="Crown reduction and shaping in DeLand, Florida">
   <?php echo p1_hero_picture($heroImage); ?>
@@ -867,10 +869,10 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     </div>
 
     <div class="hero-trust">
-      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
-      <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
+      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Cuts Back to Live Laterals</span>
+      <span class="hero-trust-item"><?php echo icon('award'); ?> Owner-Operated</span>
       <span class="hero-trust-item"><?php echo icon('ban'); ?> We Never Top Trees</span>
-      <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
+      <span class="hero-trust-item"><?php echo icon('clock'); ?> Chipping &amp; Hauling Included</span>
     </div>
     </div>
 
@@ -890,7 +892,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Read Your Canopy</span>
       <h2>Can tree shaping fix an overgrown or lopsided canopy?</h2>
-      <p class="answer-block">Yes &mdash; in most DeLand yards an overgrown or lopsided canopy can be rebalanced with selective reduction and shaping cuts over one or two visits. We shorten overextended limbs back to strong laterals, even out the silhouette, and restore clearance over roofs and pool screen enclosures without stripping the tree bare.</p>
+      <p class="answer-block">Tree shaping can fix most overgrown or lopsided canopies in DeLand yards with selective reduction cuts. We shorten overextended limbs back to strong laterals, even out the silhouette, and restore clearance over roofs and pool screen enclosures without stripping the tree bare. A badly lopsided crown is staged across seasons.</p>
     </div>
 
     <div class="crn-signs-grid">
@@ -949,7 +951,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
 
     <div class="crn-refusal" data-animate>
       <?php echo icon('ban'); ?>
-      <p><strong>We turn down topping jobs &mdash; even when a customer asks for one.</strong> Topping kills DeLand&rsquo;s live oaks slowly and makes them more dangerous in the meantime. On your walkthrough we&rsquo;ll show you what a proper reduction takes off, and why the tree is safer and better-looking for it.</p>
+      <p><strong>We turn down topping jobs &mdash; even when a customer asks for one.</strong> Topping kills DeLand&rsquo;s live oaks slowly and makes them more dangerous in the meantime. On your walkthrough we&rsquo;ll show you what a proper reduction takes off. Our article on <a href="/blog/tree-topping-vs-crown-reduction/">tree topping versus crown reduction</a> covers what each does to a Florida oak.</p>
     </div>
   </div>
 </section>
@@ -969,7 +971,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
         <span class="eyebrow-label">Built for Hurricane Season</span>
         <h2>How does crown thinning reduce storm risk in Florida?</h2>
         <p class="answer-block">Crown thinning removes select interior branches so hurricane-force wind passes through the canopy instead of pushing against it like a sail. Paired with reduction, it takes weight off long limbs and lowers the leverage on the trunk &mdash; often the difference between shedding twigs and losing the whole tree.</p>
-        <p>Around DeLand, the trees that fail in storms are rarely the small ones. They&rsquo;re the broad, heavy live oaks and laurel oaks whose root plates sit in sandy Central Florida soil &mdash; soil that gives up its grip when a saturated canopy catches forty-mile-an-hour gusts. Reducing the crown before June does more for that tree than anything you can do to it in October.</p>
+        <p>Around DeLand, the trees that fail in storms are rarely the small ones. They&rsquo;re the broad, heavy live oaks and laurel oaks whose root plates sit in sandy Central Florida soil &mdash; soil that gives up its grip when a rain-soaked canopy catches tropical-storm gusts. Reducing the crown before June does more for that tree than anything you can do to it in October.</p>
         <ul class="crn-points" data-p1-dynamic>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
@@ -987,10 +989,10 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
       </div>
 
       <figure class="crn-overlay-figure" data-animate="right">
-        <img src="<?php echo e($bodyPhotos['corner-oak']['src']); ?>" alt="<?php echo e($bodyPhotos['corner-oak']['alt']); ?>" width="800" height="1000" loading="lazy">
+        <?php echo p1_picture($bodyPhotos['corner-oak']['src'], $bodyPhotos['corner-oak']['alt'], 800, 1000, '(max-width: 768px) 100vw, 800px'); ?>
         <div class="crn-overlay-card">
           <div class="crn-overlay-num"><?php echo e($yearsInBusiness); ?><span>+</span></div>
-          <p>Years shaping Volusia County canopies &mdash; the same local crew since <?php echo e($yearEstablished); ?>.</p>
+          <p>Years shaping Volusia County canopies &mdash; owner-operated in DeLand since <?php echo e($yearEstablished); ?>.</p>
         </div>
       </figure>
     </div>
@@ -1003,7 +1005,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Zone by Zone</span>
       <h2>What does crown reduction and shaping include at God's Country?</h2>
-      <p class="answer-block">Every crown reduction we quote in DeLand starts with an assessment of the whole tree, then works the canopy zone by zone: height off the top, length off overextended laterals, thinning through the interior, and clearance lifted at the base. Chipping, hauling, and cleanup are built into the written estimate.</p>
+      <p class="answer-block">Crown reduction and shaping at God's Country includes a whole-tree assessment, then cuts in four canopy zones. Height comes off the top, length off overextended laterals, thinning through the interior, and clearance is lifted at the base. Chipping, hauling and cleanup are written into the estimate.</p>
     </div>
 
     <div class="crn-zone-stack" data-p1-dynamic>
@@ -1031,13 +1033,13 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Straight Pricing</span>
       <h2>How much does crown reduction cost in DeLand, FL?</h2>
-      <p class="answer-block">Crown reduction cost in DeLand depends on the tree's size, how much of the canopy needs work, and what sits underneath it &mdash; small ornamentals run a few hundred dollars, while large oaks over homes cost more. You get a free written estimate within 24 hours with the full scope spelled out.</p>
+      <p class="answer-block">Crown reduction cost in DeLand depends on the tree's size, how much canopy needs work, and what sits underneath it. A small ornamental is a far smaller job than a broad live oak over a roof. The on-site visit and written estimate are free, arrive within 24 hours, and spell out the full scope.</p>
     </div>
 
     <div class="crn-cost-factors">
       <div class="crn-cost-factor reveal-delay-1" data-animate>
         <h3>Canopy size &amp; scope</h3>
-        <p>A light rebalancing of an ornamental and a full four-zone reduction of an 80-foot oak are different jobs. Height, spread, and how far the shape has drifted drive the crew time.</p>
+        <p>A light rebalancing of an ornamental and a full four-zone reduction of a tall, broad live oak are different jobs. Height, spread, and how far the shape has drifted drive the crew time.</p>
       </div>
       <div class="crn-cost-factor reveal-delay-2" data-animate>
         <h3>What&rsquo;s underneath</h3>
@@ -1064,17 +1066,17 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
   <div class="container">
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Local Proof</span>
-      <h2>Searching for crown reduction near me in DeLand?</h2>
-      <p class="answer-block">If you're typing crown reduction near me in DeLand, these photos are the nearby answer: mature oaks brought back to clean, balanced silhouettes with the yard spotless afterward. We work within about 50 miles of DeLand &mdash; Deltona, Orange City, DeBary, and Lake Helen included &mdash; so this crew is your crew.</p>
+      <h2>Who does crown reduction near me in DeLand, FL?</h2>
+      <p class="answer-block">God's Country Tree Service does crown reduction near you from DeLand, FL, and within about 50 miles of it. That covers DeLeon Springs, Lake Helen, Orange City, Deltona and DeBary. The photos below are our own work: mature oaks with balanced, natural silhouettes. Reduction is one of the <a href="/services/">tree services our DeLand crew offers</a>.</p>
     </div>
 
     <div class="crn-proof-duo">
       <figure data-animate>
-        <img src="<?php echo e($bodyPhotos['full-crown']['src']); ?>" alt="<?php echo e($bodyPhotos['full-crown']['alt']); ?>" width="800" height="1000" loading="lazy">
-        <figcaption>A full crown rebalanced &mdash; shade kept, sail area gone</figcaption>
+        <?php echo p1_picture($bodyPhotos['full-crown']['src'], $bodyPhotos['full-crown']['alt'], 800, 1000, '(max-width: 768px) 100vw, 800px'); ?>
+        <figcaption>A full, balanced crown in a DeLand front yard</figcaption>
       </figure>
       <figure class="reveal-delay-1" data-animate>
-        <img src="<?php echo e($bodyPhotos['shaped-oak']['src']); ?>" alt="<?php echo e($bodyPhotos['shaped-oak']['alt']); ?>" width="800" height="1000" loading="lazy">
+        <?php echo p1_picture($bodyPhotos['shaped-oak']['src'], $bodyPhotos['shaped-oak']['alt'], 800, 1000, '(max-width: 768px) 100vw, 800px'); ?>
         <figcaption>Cleanly reduced mature oak, natural shape intact</figcaption>
       </figure>
     </div>
@@ -1096,7 +1098,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Good Questions</span>
       <h2>What do DeLand homeowners ask about crown reduction and shaping?</h2>
-      <p class="answer-block">Whether reduction hurts the tree, the best season, how long the shape lasts, fixing a topped tree, and working over a pool enclosure. If yours isn't here, put it in the estimate form and we'll answer within 24 hours.</p>
+      <p class="answer-block">DeLand homeowners ask about crown reduction and shaping mostly to learn whether it harms the tree and how long the shape lasts. They also ask about the best season, repairing a tree that was topped, and working over a pool enclosure. The five answers below take each in turn.</p>
     </div>
 
     <div class="faq-grid" data-p1-dynamic>
@@ -1119,7 +1121,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Round Out the Canopy Work</span>
       <h2>What other tree services do DeLand property owners pair with crown reduction?</h2>
-      <p class="answer-block">Shaping one tree usually surfaces work on its neighbors: routine <a href="/services/tree-trimming-services/">tree trimming</a> to hold the new silhouette, arborist <a href="/services/tree-pruning-services/">tree pruning</a> for structure and health, and <a href="/services/tree-removal/">tree removal</a> for the tree a reduction can no longer save. All three come from the same God's Country crew, usually quoted in the same free estimate.</p>
+      <p class="answer-block">DeLand property owners pair crown reduction most often with trimming, pruning and removal. <a href="/services/tree-trimming-services/">Routine tree trimming</a> holds the new silhouette, <a href="/services/tree-pruning-services/">structural tree pruning</a> works on form and health, and <a href="/services/tree-removal/">full tree removal</a> handles the tree a reduction can no longer save. The same God's Country crew quotes all three on one written estimate.</p>
     </div>
 
     <?php renderServiceCards(['tree-trimming-services', 'tree-pruning-services', 'dead-hazardous-tree-removal'], $serviceCardData); ?>
@@ -1129,9 +1131,9 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
 <!-- ============ CLOSING CTA ============ -->
 <section class="crn-closing-cta" aria-label="Get a crown reduction estimate">
   <div class="container">
-    <span class="eyebrow-label" style="color: var(--color-accent);">Free &middot; Written &middot; Within 24 Hours</span>
+    <span class="eyebrow-label" style="color: var(--color-accent);">Free Walkthrough &middot; Written Scope</span>
     <h2>Ready to Take the Weight Off That Canopy Before Hurricane Season?</h2>
-    <p class="answer-block">Tell us about the overgrown oak, the lopsided camphor, or the limbs creeping over the pool screen. <?php echo e($siteName); ?> will walk the property, show you exactly what a proper reduction takes off, and put a straight price in writing &mdash; usually within 24 hours.</p>
+    <p class="answer-block">Tell us about the overgrown oak, the lopsided camphor, or the limbs creeping over the pool screen. <?php echo e($siteName); ?> will walk the property, show you exactly what a proper reduction takes off, and put a straight price in writing, zone by zone.</p>
     <div class="hero-actions">
       <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Shaping Estimate</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact Us</a>
@@ -1140,5 +1142,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
 </section>
 
 <p class="last-updated">Last Updated: <?php echo date('F Y'); ?></p>
+
+</article>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

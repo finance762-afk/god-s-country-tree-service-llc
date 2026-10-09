@@ -46,24 +46,24 @@ $bodyPhotos = [
 // ---- Telltale signs (problem statement bento) ----
 $removalSigns = [
     ['icon' => 'triangle-alert', 'title' => 'A new or worsening lean',       'text' => 'A tree that started leaning after a storm — or leans a little more each season — is telling you its root plate is losing grip in DeLand\'s sandy soil.'],
-    ['icon' => 'home',           'title' => 'Deadwood over the roof',        'text' => 'Large dead limbs parked over a roof, driveway, or pool enclosure are the most common damage we get called to clean up after — and the cheapest to prevent.'],
+    ['icon' => 'home',           'title' => 'Deadwood over the roof',        'text' => 'Large dead limbs hanging over a roof, driveway, or pool enclosure tend to come down in the first strong summer thunderstorm. Taking them off on a calm day costs less than repairing what they land on.'],
     ['icon' => 'bug',            'title' => 'Fungus, cavities, or dieback',  'text' => 'Mushrooms at the base, hollow-sounding trunk sections, and a thinning crown all point to internal decay you can\'t judge from the ground.'],
     ['icon' => 'zap',            'title' => 'Too close to lines or walls',   'text' => 'Trunks pushing against foundations, fences, or service drops rarely improve. Controlled removal beats waiting for the tree to decide the timing.'],
 ];
 
 // ---- Sticky process timeline steps ----
 $removalSteps = [
-    ['title' => 'Walk-through & straight answer', 'text' => 'We look at the tree, the targets around it — house, pool screen, fence, lines — and tell you honestly whether it needs to come down or can be saved with pruning or crown reduction. You get a free written estimate within 24 hours.'],
+    ['title' => 'Walk-through & straight answer', 'text' => 'We look at the tree, the targets around it — house, pool screen, fence, lines — and tell you honestly whether it needs to come down or can be saved with pruning or crown reduction. The written estimate that follows lists the takedown, the hauling, and the stump grinding as separate lines.'],
     ['title' => 'Rigging plan & site protection', 'text' => 'Big DeLand oaks rarely have room to fall whole. We plan drop zones, set rigging lines, and stage plywood or mats where the loader will travel so your lawn and irrigation survive the job.'],
     ['title' => 'Controlled section takedown',    'text' => 'A climber or boom lift takes the canopy apart piece by piece. Every heavy section is roped and lowered — not dropped — which is how removals over roofs and screen enclosures stay boring.'],
-    ['title' => 'Grapple, chip & haul',           'text' => 'Logs, brush, and debris leave on our trucks the same day — most quotes include hauling so there\'s no surprise add-on.'],
+    ['title' => 'Grapple, chip & haul',           'text' => 'The grapple loader carries logs to the truck and brush goes through the chipper, so the debris leaves the same day. Most quotes include hauling.'],
     ['title' => 'Stump & final walkthrough',      'text' => 'If stump grinding is in the quote, we grind below grade and rake the site. Then we walk the yard with you before we call it done.'],
 ];
 
 // ---- Comparison: storm-chasers vs God's Country ----
 $comparison = [
     ['them' => 'Trucks appear the week after a hurricane, gone by month\'s end', 'us' => 'Based in DeLand since 2014 — same crew, same trucks, year-round'],
-    ['them' => 'Cash price shouted from the driveway',                            'us' => 'Free written estimate within 24 hours, debris and hauling spelled out'],
+    ['them' => 'Cash price shouted from the driveway',                            'us' => 'Written estimate with hauling and stump grinding listed separately'],
     ['them' => 'Insurance status you have to take on faith',                      'us' => 'Licensed and insured, proof on request before work starts'],
     ['them' => 'Drop-and-run: the tree is down, the mess is yours',               'us' => 'Grapple loader, chipper, and haul-off included in most quotes'],
     ['them' => 'Every tree is "gotta come down"',                                 'us' => 'Certified arborist expertise — we\'ll tell you when pruning saves the tree'],
@@ -73,23 +73,23 @@ $comparison = [
 $faqs = [
     [
         'q' => 'Do I need a permit to remove a tree in DeLand?',
-        'a' => "Possibly — DeLand and Volusia County protect certain trees, and larger hardwoods can require a permit before removal. It depends on the tree's species, size, and where it stands on the lot. We flag permit questions during your free estimate so you know what applies to your property before any cutting starts.",
+        'a' => "Possibly. The City of DeLand and Volusia County protect certain trees, and a larger hardwood can require a permit before removal. It depends on the species, the trunk size, and where the tree stands on the lot. We raise the permit question at the estimate visit; confirm the current rule with the City of DeLand or Volusia County before any cutting starts.",
     ],
     [
         'q' => 'How long does a typical tree removal take?',
-        'a' => 'Most single-tree removals in DeLand are done in half a day, including cleanup. A large live oak over a house, or multiple trees, can run a full day or two. Your written estimate includes a time window, and the crew stays until the debris is gone — not until the tree is merely on the ground.',
+        'a' => 'It depends on the tree and what is under it. A single pine in an open yard is a far shorter job than a large live oak that has to be roped down over a house, and several trees take longer again. Ask for the expected duration at the estimate visit. The crew stays until the debris is gone, not until the tree is merely on the ground.',
     ],
     [
         'q' => 'Is stump grinding included in tree removal?',
-        'a' => "Most of our removal quotes include stump grinding and debris hauling so the price you approve is the price you pay. If you'd rather keep the stump — or the firewood — we quote it both ways. Either way the estimate spells it out line by line before we start.",
+        'a' => "Most of our removal quotes include stump grinding and debris hauling, and the written estimate lists each one so you can see what you are approving. If you'd rather keep the stump, or the firewood, we quote it both ways before any work starts.",
     ],
     [
         'q' => 'Can you remove a tree that\'s right next to my house or pool enclosure?',
-        'a' => "Yes — that's most of what we do. Tight-quarters removals over roofs, pool screens, fences, and driveways are handled with roped, controlled lowering rather than free-falling sections. A boom lift and compact grapple loader work yards where a crane won't fit.",
+        'a' => "Yes. Tight-quarters removals over roofs, pool screens, fences, and driveways are handled with roped, controlled lowering rather than free-falling sections. A boom lift and a compact grapple loader work in yards where a crane won't fit. Before the first cut we plan where each section lands and protect the lawn where the loader travels.",
     ],
     [
         'q' => 'What happens to the wood and debris?',
-        'a' => 'Brush goes through the chipper, logs go on the grapple truck, and everything leaves the same day when hauling is in your quote. Want to keep firewood rounds or milling slabs? Tell us at the estimate and we\'ll buck the trunk to length and stack it.',
+        'a' => 'Brush goes through the chipper, logs go on the grapple truck, and both leave with the crew when hauling is in your quote. Want to keep firewood rounds or milling slabs? Tell us at the estimate and we\'ll buck the trunk to length and stack it.',
     ],
     [
         'q' => 'Will my homeowner\'s insurance pay for tree removal?',
@@ -727,6 +727,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 }
 </style>
 
+<article class="service-article">
+
 <!-- ============ HERO (C1.4) ============ -->
 <section class="svc-hero has-hero-bg" aria-label="Tree removal in DeLand, Florida">
   <?php echo p1_hero_picture($heroImage); ?>
@@ -752,10 +754,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     </div>
 
     <div class="hero-trust">
-      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
-      <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
-      <span class="hero-trust-item"><?php echo icon('truck'); ?> Debris Hauling Included</span>
-      <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
+      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Owner-Operated in DeLand</span>
+      <span class="hero-trust-item"><?php echo icon('award'); ?> Certified Arborist on Staff</span>
+      <span class="hero-trust-item"><?php echo icon('truck'); ?> Hauling in Most Quotes</span>
+      <span class="hero-trust-item"><?php echo icon('clock'); ?> Boom Lift &amp; Grapple Loader</span>
     </div>
     </div>
 
@@ -771,12 +773,12 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 <!-- ============ PROBLEM STATEMENT — 01 ============ -->
 <section class="numbered-section" data-num="01" aria-label="When a tree needs to come down">
   <div class="container">
-    <p class="pull-quote" data-animate>The most expensive tree removal in DeLand is the one that happens <strong>during</strong> the hurricane &mdash; on your schedule&rsquo;s worst day, at emergency rates, with your roof involved.</p>
+    <p class="pull-quote" data-animate>The hardest tree removal in DeLand is the one that happens <strong>during</strong> the hurricane: on the worst day of your year, with your roof already involved.</p>
 
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Read the Signs</span>
       <h2>How do you know a tree needs to come down in DeLand?</h2>
-      <p class="answer-block">A DeLand tree usually needs removal when it shows structural failure you can see: a worsening lean, large dead limbs over the house, fungus or cavities at the base, or a thinning crown. One warning sign deserves an assessment; two or more usually mean the tree is a hazard worth removing before storm season.</p>
+      <p class="answer-block">A DeLand tree needs to come down when it shows structural failure: a worsening lean, large dead limbs over the house, or fungus at the base. One sign deserves an assessment. Two or more usually mean the tree is a hazard worth removing before hurricane season opens on June 1.</p>
     </div>
 
     <div class="signs-grid">
@@ -807,19 +809,19 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <div class="expert-split">
       <div>
-        <p class="drop-cap" data-animate>Most of the removals we quote in DeLand are live oaks and slash pines standing closer to a structure than they are tall. The tree cannot fall whole, so it has to come down in pieces, in the right order, on ropes. Our crew has been making that call &mdash; and that cut &mdash; across Volusia County since <?php echo e($yearEstablished); ?>.</p>
+        <p class="drop-cap" data-animate>Many DeLand removals are live oaks, laurel oaks, and slash pines standing closer to a structure than they are tall. A tree like that cannot fall whole, so it comes down in pieces, in the right order, on ropes. <?php echo e($siteName); ?> has been making that call, and that cut, across Volusia County since <?php echo e($yearEstablished); ?>.</p>
         <ul class="expert-points" data-p1-dynamic>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
-            <p><strong>One crew, whole job.</strong> Tree work and land clearing from the same company &mdash; climbing, rigging, grapple loading, chipping, hauling, and stump grinding without a second contractor.</p>
+            <p><strong>One crew, whole job.</strong> Tree work, brush clearing, and land clearing from the same DeLand company: climbing, rigging, grapple loading, chipping, hauling, and stump grinding without a second contractor. The <a href="/services/">full list of God's Country tree services</a> shows what else that crew handles.</p>
           </li>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
-            <p><strong>Certified arborist judgment.</strong> If pruning or crown reduction can save the tree, we say so at the estimate. Removal is the answer when it's the honest answer.</p>
+            <p><strong>An arborist's read first.</strong> If <a href="/services/crown-reduction-shaping/">crown reduction to take weight off the canopy</a> or structural pruning can save the tree, we say so at the estimate. Removal is the answer when it's the honest answer.</p>
           </li>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
-            <p><strong>Insurance you can verify.</strong> Licensed and insured, with proof available before anyone starts a saw &mdash; the paperwork storm-chasers can't show you.</p>
+            <p><strong>Certificates before saws.</strong> Ask at the estimate for our liability and workers' compensation certificates. You should see both before any tree company starts cutting on your property.</p>
           </li>
         </ul>
       </div>
@@ -844,7 +846,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <div class="process-sticky">
         <span class="eyebrow-label">The Job, Step by Step</span>
         <h2>What does professional tree removal include at God's Country?</h2>
-        <p class="answer-block">Every professional tree removal we quote in DeLand includes the assessment, a written 24-hour estimate, roped section takedown, chipping, and site cleanup &mdash; and most quotes fold in debris hauling and stump grinding. The five steps below are the same whether it's one backyard oak or a whole lot.</p>
+        <p class="answer-block">Professional tree removal from <?php echo e($siteName); ?> includes the on-site assessment, a written estimate, roped section takedown, chipping, and site cleanup. Most quotes also include debris hauling and stump grinding. The five steps below run in the same order for one backyard oak or a whole lot of sand pines.</p>
         <figure>
           <?php echo p1_picture($bodyPhotos['boomlift']['src'], $bodyPhotos['boomlift']['alt'], 600, 800, '(max-width: 768px) 100vw, 600px'); ?>
           <figcaption>Boom lift takedown of a slash pine over a DeLand home.</figcaption>
@@ -874,7 +876,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Straight Pricing</span>
       <h2>How much does tree removal cost in DeLand, FL?</h2>
-      <p class="answer-block">Tree removal cost in DeLand depends on the tree's size, condition, and what's underneath it &mdash; small trees run a few hundred dollars while large oaks over structures cost considerably more. We don't price by phone guesswork: you get a free written estimate within 24 hours, with debris hauling and stump grinding spelled out.</p>
+      <p class="answer-block">Tree removal cost in DeLand depends on the tree's height, its condition, and what stands underneath it. A sabal palm in an open yard is a short job; a live oak over a roof needs rigging, a boom lift, and more crew time. God's Country prices each tree on site and puts hauling and stump grinding in writing.</p>
     </div>
 
     <div class="cost-factors">
@@ -899,8 +901,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Local Proof</span>
-      <h2>Searching for tree removal near me in DeLand?</h2>
-      <p class="answer-block">If you're searching for tree removal near me in DeLand, this is what nearby jobs look like: marked pines coming down section by section, a grapple loader hauling oak logs, and yards left clean. We work within about 50 miles of DeLand, so the crew in these photos is the crew that shows up.</p>
+      <h2>Who does tree removal near me in DeLand, FL?</h2>
+      <p class="answer-block"><?php echo e($siteName); ?> does tree removal near you anywhere in DeLand and within about 50 miles of it. The photos below are local jobs: marked pines coming down in sections, a grapple loader carrying a log, a trunk slab from a front-yard takedown. The crew pictured is the crew that arrives.</p>
     </div>
 
     <div class="proof-gallery">
@@ -935,7 +937,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label" style="color: var(--color-accent);">Know Who You're Hiring</span>
       <h2>Why hire a local DeLand crew instead of a storm-chaser?</h2>
-      <p class="answer-block">Because the crew that lives here answers the phone after the job, too. Storm-chasing outfits roll into Volusia County behind every hurricane, quote cash prices, and vanish. A local, licensed tree service is here in February, not just the week after landfall.</p>
+      <p class="answer-block">Because the crew that lives here answers the phone after the job, too. Storm-chasing outfits roll into Volusia County behind every hurricane, quote cash prices, and vanish. A DeLand company with a BBB business profile and a Google review history is still here in February, not just the week after landfall.</p>
     </div>
 
     <div class="compare-grid">
@@ -965,10 +967,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Beyond DeLand</span>
       <h2>Do you offer tree removal in Deltona, FL and nearby cities?</h2>
-      <p class="answer-block">Yes. From our DeLand home base we handle tree removal in Deltona, Orange City, DeBary, Lake Helen, and communities within roughly 50 miles across Volusia County. Same crew, same equipment, same free 24-hour written estimate &mdash; wherever in the area your tree is standing.</p>
+      <p class="answer-block"><?php echo e($siteName); ?> offers tree removal in Deltona, Orange City, DeBary, Lake Helen, and DeLeon Springs from its DeLand base. Deltona is about 10 miles southeast, where quarter-acre lots of sand pine and laurel oak leave little room to drop a tree. Each <a href="/service-area/">service area page</a> covers local conditions.</p>
     </div>
     <div class="area-chips" data-p1-dynamic>
-      <?php foreach (['DeLand', 'Deltona', 'Orange City', 'DeBary', 'Lake Helen', 'Volusia County'] as $area): ?>
+      <?php foreach (['DeLand', 'Deltona', 'Orange City', 'DeBary', 'Lake Helen', 'DeLeon Springs', 'Volusia County'] as $area): ?>
       <span class="area-chip"><?php echo icon('map-pin'); ?> <?php echo e($area); ?></span>
       <?php endforeach; ?>
     </div>
@@ -981,7 +983,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Good Questions</span>
       <h2>What do DeLand homeowners ask before a tree removal?</h2>
-      <p class="answer-block">The same six things, almost every time: permits, timing, stumps, tight access, where the wood goes, and insurance. If yours isn't here, put it in the estimate form and we'll answer within 24 hours.</p>
+      <p class="answer-block">DeLand homeowners ask about six things before a tree removal: permits, how long the job takes, stump grinding, tight access, where the wood goes, and insurance. The answers below are specific to <?php echo e($siteName); ?> and to DeLand's tree rules. Put any other question in the estimate form.</p>
     </div>
 
     <div class="faq-grid" data-p1-dynamic>
@@ -1004,7 +1006,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Keep the Rest Standing</span>
       <h2>What other tree services do DeLand property owners pair with tree removal?</h2>
-      <p class="answer-block">Most removals come with follow-up work: <a href="/services/dead-hazardous-tree-removal/">dead and hazardous tree removal</a> for trees flagged during the same walk-through, <a href="/services/emergency-tree-service-storm-cleanup/">emergency tree removal</a> when a storm forced the decision, and <a href="/services/tree-trimming-services/">tree trimming in DeLand</a> to keep the survivors healthy. All three come from the same God's Country crew, usually quoted in the same free estimate.</p>
+      <p class="answer-block">DeLand property owners commonly pair tree removal with three other tree services from the same crew. <a href="/services/dead-hazardous-tree-removal/">Dead and hazardous tree removal</a> covers trees flagged during the same walk-through, <a href="/services/emergency-tree-service-storm-cleanup/">emergency tree removal and storm cleanup</a> covers a tree the weather already brought down, and <a href="/services/tree-trimming-services/">tree trimming in DeLand</a> keeps the remaining canopy clear of the roof.</p>
     </div>
 
     <?php renderServiceCards(['dead-hazardous-tree-removal', 'emergency-tree-service-storm-cleanup', 'tree-trimming-services'], $serviceCardData); ?>
@@ -1016,7 +1018,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <span class="eyebrow-label" style="color: var(--color-accent);">Free &middot; Written &middot; Within 24 Hours</span>
     <h2>Ready to Get That Tree Off Your Worry List Before Storm Season?</h2>
-    <p class="answer-block">Tell us about the leaning oak, the dead pine, or the whole overgrown lot. <?php echo e($siteName); ?> will walk the property, give you an honest read, and put a straight, all-in price in writing &mdash; usually within 24 hours.</p>
+    <p class="answer-block">Tell us about the leaning oak, the dead pine, or the whole overgrown lot. <?php echo e($siteName); ?> will walk the property, give you an honest read, and put the price for the takedown, hauling, and stump grinding in writing.</p>
     <div class="hero-actions">
       <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Removal Estimate</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact Us</a>
@@ -1025,5 +1027,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 </section>
 
 <p class="last-updated">Last Updated: <?php echo date('F Y'); ?></p>
+
+</article>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
