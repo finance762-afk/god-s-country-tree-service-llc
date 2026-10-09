@@ -72,7 +72,7 @@ $comparison = [
 
 // ---- HOA working points ----
 $hoaPoints = [
-    ['strong' => 'Board-ready paperwork.',   'text' => 'A written estimate listing each tree and the work proposed, which your board can circulate, question, and vote on — not a price shouted from a truck window.'],
+    ['strong' => 'Board-ready paperwork.',   'text' => 'A written estimate listing each tree and the work proposed, which your board can circulate, question, and vote on, not a price shouted from a truck window.'],
     ['strong' => 'Coverage proof before the saw.', 'text' => 'Liability and workers\' compensation documentation is available on request before the crew arrives. Associations should never have to take coverage on faith.'],
     ['strong' => 'One point of contact.',     'text' => 'A single crew and a single number for the whole property — trimming, removals, storm calls, and skid-steer work, without chasing three vendors.'],
     ['strong' => 'Scheduled around residents.', 'text' => 'Work dates are agreed with the board or manager ahead of time so residents can be told. Equipment is staged where it will not pin in parking, and a large community can be split across several work days.'],
@@ -795,12 +795,12 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 <!-- ============ PROBLEM: LIABILITY — 01 ============ -->
 <section class="numbered-section" data-num="01" aria-label="Tree liability on commercial properties">
   <div class="container">
-    <p class="com-lede" data-animate>When a limb drops on a parked car, the first question is never about the tree. It&rsquo;s <strong>who knew, and when</strong> &mdash; and a dated maintenance record is the answer a property manager wants to have on file.</p>
+    <p class="com-lede" data-animate>When a limb drops on a parked car, the first question is never about the tree. It&rsquo;s <strong>who knew, and when</strong>, and a dated maintenance record is the answer a property manager wants to have on file.</p>
 
     <div class="section-title" data-animate>
       <span class="eyebrow-label">The Paper Trail Matters</span>
       <h2>How does property tree maintenance reduce liability?</h2>
-      <p class="answer-block">Documented, scheduled tree maintenance shows a property took reasonable care before anything failed. Hazard limbs get flagged and removed at planned visits instead of after an incident, and each written estimate from God&rsquo;s Country Tree Service leaves a dated record &mdash; the first thing boards, managers, and carriers ask about after a Volusia County storm.</p>
+      <p class="answer-block">Documented, scheduled tree maintenance shows a property took reasonable care before anything failed. Hazard limbs get flagged and removed at planned visits instead of after an incident, and each written estimate from God&rsquo;s Country Tree Service leaves a dated record, the first thing boards, managers, and carriers ask about after a Volusia County storm.</p>
     </div>
 
     <div class="com-risk-grid">
@@ -886,7 +886,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
       <figure class="com-hoa-figure" data-animate="right">
         <?php echo p1_picture($bodyPhotos['accessdrive']['src'], $bodyPhotos['accessdrive']['alt'], 800, 520, '(max-width: 768px) 100vw, 800px'); ?>
-        <figcaption>Access route planned between safety fencing on a clearing job near DeLand &mdash; the same site discipline we bring to commercial properties.</figcaption>
+        <figcaption>Access route planned between safety fencing on a clearing job near DeLand, the same site discipline we bring to commercial properties.</figcaption>
       </figure>
     </div>
   </div>
@@ -1007,7 +1007,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <span class="eyebrow-label" style="color: var(--color-accent);">Site Walk &middot; Written Estimate</span>
     <h2>Ready to Get Your Property on the Maintenance Calendar Before Hurricane Season?</h2>
-    <p class="answer-block">Tell us about the property &mdash; office park, retail strip, HOA common areas, or raw acreage. <?php echo e($siteName); ?> will walk it with you, flag what actually needs work, and put a schedule and a straight price in writing.</p>
+    <p class="answer-block">Tell us about the property: office park, retail strip, HOA common areas, or raw acreage. <?php echo e($siteName); ?> will walk it with you, flag what actually needs work, and put a schedule and a straight price in writing.</p>
     <div class="hero-actions">
       <a href="#estimate-form" class="btn btn-accent btn-lg">Request a Property Assessment</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact Us</a>

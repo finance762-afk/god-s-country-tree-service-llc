@@ -46,7 +46,7 @@ $bodyPhotos = [
 $triageCards = [
     ['icon' => 'siren',          'label' => 'Call it in now',      'title' => 'On the house, wires, or a car',   'text' => 'Anything resting on a structure or within reach of a power line is an emergency. Keep everyone clear and call the utility first if lines are involved.'],
     ['icon' => 'car',            'label' => 'Front of the schedule',   'title' => 'Blocking the driveway or road',   'text' => 'A trunk across your only way out gets bumped to the front of the schedule. We cut an access lane first, then finish the cleanup and haul-off.'],
-    ['icon' => 'clock',          'label' => 'Can be scheduled',   'title' => 'Flat on open lawn',               'text' => 'A tree lying in the open is stable — the dangerous part already happened. Keep kids off the trunk and root plate, and book a scheduled cleanup instead of an emergency call.'],
+    ['icon' => 'clock',          'label' => 'Can be scheduled',   'title' => 'Flat on open lawn',               'text' => 'A tree lying in the open is stable: the dangerous part already happened. Keep kids off the trunk and root plate, and book a scheduled cleanup instead of an emergency call.'],
     ['icon' => 'triangle-alert', 'label' => 'Do not walk under',   'title' => 'Hung up in another tree',         'text' => 'A blow-down caught in a neighboring canopy can drop without warning. Stay out from under it and let a roped crew bring it down.'],
 ];
 
@@ -805,7 +805,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <span class="hero-eyebrow">Fallen Tree Cleanup &middot; DeLand, FL</span>
 
-    <h1>Fallen Tree Removal &amp; Cleanup in DeLand, FL &mdash; <span class="text-accent">Cut Up, Hauled Off, Yard Restored</span></h1>
+    <h1>Fallen Tree Removal &amp; Cleanup in DeLand, FL: <span class="text-accent">Cut Up, Hauled Off, Yard Restored</span></h1>
 
     <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving Volusia County since <?php echo e($yearEstablished); ?>. When a tree comes down, our crew cuts it free, grapple-loads the debris, hauls it off, and restores the site &mdash; with free written estimates within 24 hours.</p>
 
@@ -1013,7 +1013,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Chainsaw Honesty</span>
       <h2>What's safe to touch on a fallen tree &mdash; and what should you leave alone?</h2>
-      <p class="answer-block">Small broken branches already loose on the ground are safe to drag clear. Anything under tension is not &mdash; limbs bent beneath the trunk, a root plate that can slam back upright, and anything near a power line. When in doubt, leave it alone and call <?php echo e(formatPhone($phone)); ?>.</p>
+      <p class="answer-block">Small broken branches already loose on the ground are safe to drag clear. Anything under tension is not: limbs bent beneath the trunk, a root plate that can slam back upright, and anything near a power line. When in doubt, leave it alone and call <?php echo e(formatPhone($phone)); ?>.</p>
     </div>
 
     <div class="fln-safe-grid">

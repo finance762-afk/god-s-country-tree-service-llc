@@ -100,7 +100,7 @@ $costFactors = [
 $faqs = [
     [
         'q' => 'How often should trees be trimmed in DeLand?',
-        'a' => "Most DeLand hardwoods do well on a two-to-three-year trimming cycle, while palms and fast growers usually want yearly attention. Anything hanging over a roof, driveway, or pool enclosure deserves an annual look regardless of species. If you're not sure, we'll tell you at the estimate visit — some trees we look at simply don't need work yet.",
+        'a' => "Most DeLand hardwoods do well on a two-to-three-year trimming cycle, while palms and fast growers usually want yearly attention. Anything hanging over a roof, driveway, or pool enclosure deserves an annual look regardless of species. If you're not sure, we'll tell you at the estimate visit. Some trees we look at simply don't need work yet.",
     ],
     [
         'q' => 'Do you trim palms too, or just oaks and pines?',
@@ -120,7 +120,7 @@ $faqs = [
     ],
     [
         'q' => 'Is it too late to trim once hurricane season starts?',
-        'a' => "No — a June or July trim still takes weight and wind sail out of a canopy before the busiest storm months of August and September. The ideal time is earlier in the year, but the second-best time is before the next named storm. If the season has already started, ask for clearance over the roof and pool screen first; that is the work that matters most in a storm.",
+        'a' => "No, a June or July trim still takes weight and wind sail out of a canopy before the busiest storm months of August and September. The ideal time is earlier in the year, but the second-best time is before the next named storm. If the season has already started, ask for clearance over the roof and pool screen first; that is the work that matters most in a storm.",
     ],
 ];
 
@@ -1043,7 +1043,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
   <div class="container">
     <span class="eyebrow-label" style="color: var(--color-accent);">Free Visit &middot; Written Quote</span>
     <h2>Ready to Get Your Trees Trimmed Before the Next Storm Season Tests Them?</h2>
-    <p class="answer-block">Tell us which trees have gotten ahead of you &mdash; the oak over the roof, the palms at the driveway, the whole shaded-out backyard. <?php echo e($siteName); ?> will walk the property, recommend only the trimming it actually needs, and put the price in writing, tree by tree.</p>
+    <p class="answer-block">Tell us which trees have gotten ahead of you: the oak over the roof, the palms at the driveway, the whole shaded-out backyard. <?php echo e($siteName); ?> will walk the property, recommend only the trimming it actually needs, and put the price in writing, tree by tree.</p>
     <div class="hero-actions">
       <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Trimming Estimate</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact Us</a>

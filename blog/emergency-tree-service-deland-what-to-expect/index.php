@@ -67,6 +67,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <p>A tree that came down in an open part of the yard, a large limb on the lawn, or a leaning tree that is not over anything can usually be handled as a scheduled <a href="/services/fallen-tree-removal-cleanup/">fallen tree removal and cleanup</a>. You still get a fast response, but the crew works it with full daylight and the right equipment rather than in the dark. If you are not sure which category you are in, call anyway. We would rather tell you it can wait than have you guess wrong.</p>
 
         <h2>What Should You Do Before the Crew Arrives?</h2>
+        <p>Before the crew arrives, keep everyone clear of the tree and any downed wire, and leave the cutting to the crew. Then use the wait to photograph the damage and protect what you safely can indoors. The five steps below are in the order that matters.</p>
         <ol>
           <li><strong>Stay away from downed lines.</strong> Keep at least a house-length back. Wet grass and metal fences carry current farther than people expect.</li>
           <li><strong>Do not start cutting.</strong> A tree on a structure is spring-loaded. Removing one limb changes where the weight goes, and that is how homeowners get pinned or push a trunk through the roof.</li>
@@ -90,10 +91,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <p>You receive a free written estimate before the work and an itemized invoice after. Both describe where the tree was and what it damaged, which is the language adjusters need.</p>
 
         <h2>How Does Insurance Work for Emergency Tree Removal?</h2>
-        <p>In Florida, a homeowner policy generally covers tree removal when the tree damaged a covered structure. The house, an attached garage, a fence, and sometimes a shed or pool screen qualify. A tree that fell in the yard and hit nothing is often excluded or capped at a small amount. The deductible applies either way, so for a small cleanup it may not be worth filing. Our guide to <a href="/blog/insurance-fallen-tree-removal-florida/">insurance and fallen tree removal in Florida</a> walks through the claim step by step, and the <a href="/blog/tree-fell-on-house-deland-fl/">tree-on-house checklist</a> covers the first hours in more detail.</p>
+        <p>Insurance generally pays for emergency tree removal in Florida when the tree damaged a covered structure. The house, an attached garage, a fence, and sometimes a shed or pool screen qualify. A tree that fell in the yard and hit nothing is often excluded or capped, and the deductible applies either way.</p>
+        <p>For a small cleanup it may not be worth filing a claim. Our guide to <a href="/blog/insurance-fallen-tree-removal-florida/">insurance and fallen tree removal in Florida</a> walks through the claim step by step, and the <a href="/blog/tree-fell-on-house-deland-fl/">tree-on-house checklist</a> covers the first hours in more detail.</p>
 
         <h2>How Is Work Prioritized After a Hurricane?</h2>
-        <p>After a storm like the ones that have crossed Volusia County in recent seasons, every call is an emergency to the person making it. The crew works a triage order so the highest risks are handled first:</p>
+        <p>After a hurricane, work is prioritized by risk to people first and property second. Trees on occupied homes come before blocked roads, lines the utility has cleared, and hangers over structures, and trees down in open yards come last. The crew works the triage order below so the highest risks are handled first:</p>
         <ol>
           <li>Trees on occupied homes, especially where the roof is open</li>
           <li>Trees blocking roads, driveways, and access for first responders</li>

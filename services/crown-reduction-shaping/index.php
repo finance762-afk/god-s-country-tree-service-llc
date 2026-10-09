@@ -80,7 +80,7 @@ $canopyZones = [
 $faqs = [
     [
         'q' => 'Will crown reduction harm my live oak?',
-        'a' => "Crown reduction does not harm a live oak when it is done with proper reduction cuts. Every limb is shortened back to a living lateral branch that takes over growth, so the oak seals its wounds and keeps a full working canopy. What harms live oaks is topping — indiscriminate cuts that leave decaying stubs. That's the practice we refuse.",
+        'a' => "Crown reduction does not harm a live oak when it is done with proper reduction cuts. Every limb is shortened back to a living lateral branch that takes over growth, so the oak seals its wounds and keeps a full working canopy. What harms live oaks is topping: indiscriminate cuts that leave decaying stubs. That's the practice we refuse.",
     ],
     [
         'q' => 'When is the best time of year for crown reduction in DeLand?',
@@ -951,7 +951,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
 
     <div class="crn-refusal" data-animate>
       <?php echo icon('ban'); ?>
-      <p><strong>We turn down topping jobs &mdash; even when a customer asks for one.</strong> Topping kills DeLand&rsquo;s live oaks slowly and makes them more dangerous in the meantime. On your walkthrough we&rsquo;ll show you what a proper reduction takes off. Our article on <a href="/blog/tree-topping-vs-crown-reduction/">tree topping versus crown reduction</a> covers what each does to a Florida oak.</p>
+      <p><strong>We turn down topping jobs, even when a customer asks for one.</strong> Topping kills DeLand&rsquo;s live oaks slowly and makes them more dangerous in the meantime. On your walkthrough we&rsquo;ll show you what a proper reduction takes off. Our article on <a href="/blog/tree-topping-vs-crown-reduction/">tree topping versus crown reduction</a> covers what each does to a Florida oak.</p>
     </div>
   </div>
 </section>
@@ -971,7 +971,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
         <span class="eyebrow-label">Built for Hurricane Season</span>
         <h2>How does crown thinning reduce storm risk in Florida?</h2>
         <p class="answer-block">Crown thinning removes select interior branches so hurricane-force wind passes through the canopy instead of pushing against it like a sail. Paired with reduction, it takes weight off long limbs and lowers the leverage on the trunk &mdash; often the difference between shedding twigs and losing the whole tree.</p>
-        <p>Around DeLand, the trees that fail in storms are rarely the small ones. They&rsquo;re the broad, heavy live oaks and laurel oaks whose root plates sit in sandy Central Florida soil &mdash; soil that gives up its grip when a rain-soaked canopy catches tropical-storm gusts. Reducing the crown before June does more for that tree than anything you can do to it in October.</p>
+        <p>Around DeLand, the trees that fail in storms are rarely the small ones. They&rsquo;re the broad, heavy live oaks and laurel oaks whose root plates sit in sandy Central Florida soil, soil that gives up its grip when a rain-soaked canopy catches tropical-storm gusts. Reducing the crown before June does more for that tree than anything you can do to it in October.</p>
         <ul class="crn-points" data-p1-dynamic>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
@@ -992,7 +992,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
         <?php echo p1_picture($bodyPhotos['corner-oak']['src'], $bodyPhotos['corner-oak']['alt'], 800, 1000, '(max-width: 768px) 100vw, 800px'); ?>
         <div class="crn-overlay-card">
           <div class="crn-overlay-num"><?php echo e($yearsInBusiness); ?><span>+</span></div>
-          <p>Years shaping Volusia County canopies &mdash; owner-operated in DeLand since <?php echo e($yearEstablished); ?>.</p>
+          <p>Years shaping Volusia County canopies. Owner-operated in DeLand since <?php echo e($yearEstablished); ?>.</p>
         </div>
       </figure>
     </div>

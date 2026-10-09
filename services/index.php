@@ -526,7 +526,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <h1>Tree Services in DeLand, FL &mdash; <span class="text-accent">One Local Crew, Twelve Specialties</span></h1>
 
-    <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, offering twelve specialized services &mdash; from tree removal and trimming to 24-hour storm cleanup and certified arborist care &mdash; for homes, businesses, and HOA communities across Volusia County since <?php echo e($yearEstablished); ?>.</p>
+    <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, offering twelve specialized services, from tree removal and trimming to 24-hour storm cleanup and certified arborist care, for homes, businesses, and HOA communities across Volusia County since <?php echo e($yearEstablished); ?>.</p>
 
     <div class="hero-actions">
       <a href="/#estimate-form" class="btn btn-accent btn-lg">Get a Free Estimate</a>
@@ -590,7 +590,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <span class="eyebrow-label" style="color: var(--color-accent);">Not Sure? Ask the Crew</span>
     <h2>Can't Tell Whether That Oak Needs Trimming or Removal?</h2>
-    <p class="answer-block">You don't have to diagnose it yourself. Request a free estimate and <?php echo e($siteName); ?> walks the property with you, tells you honestly which service fits &mdash; trimming, reduction, or removal &mdash; and puts the price in writing. No obligation either way.</p>
+    <p class="answer-block">You don't have to diagnose it yourself. Request a free estimate and <?php echo e($siteName); ?> walks the property with you, tells you honestly which service fits (trimming, reduction, or removal) and puts the price in writing. No obligation either way.</p>
     <a href="/#estimate-form" class="btn btn-accent btn-lg">Request a Free Walk-Through</a>
     <a href="/services/certified-arborist-services/" class="btn btn-outline-white btn-lg">Ask a Certified Arborist</a>
   </div>
@@ -643,7 +643,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <span class="eyebrow-label" style="color: var(--color-accent);">Free &middot; Written &middot; No Obligation</span>
     <h2>Which of Your Trees Should We Look at First?</h2>
-    <p class="answer-block">Tell us what's going on &mdash; a leaning pine, an overgrown canopy, storm debris, or a whole property that needs a plan. <?php echo e($siteName); ?> comes back with an honest read and a straight, all-in written quote for whichever of the twelve services fits.</p>
+    <p class="answer-block">Tell us what's going on: a leaning pine, an overgrown canopy, storm debris, or a whole property that needs a plan. <?php echo e($siteName); ?> comes back with an honest read and a straight, all-in written quote for whichever of the twelve services fits.</p>
     <div class="hero-actions">
       <a href="/#estimate-form" class="btn btn-accent btn-lg">Get a Free Estimate</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact Us</a>

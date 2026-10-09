@@ -112,7 +112,7 @@ $faqs = [
     ],
     [
         'q' => 'How is emergency work priced compared to a scheduled removal?',
-        'a' => "Emergency pricing reflects the hazard, the access, and the equipment the job demands — a trunk balanced on a ridgeline takes more rigging than the same tree in the open. What doesn't change: the number is in writing before we cut, whatever the hour.",
+        'a' => "Emergency pricing reflects the hazard, the access, and the equipment the job demands: a trunk balanced on a ridgeline takes more rigging than the same tree in the open. What doesn't change: the number is in writing before we cut, whatever the hour.",
     ],
 ];
 
@@ -900,7 +900,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <h1>Emergency Tree Removal in DeLand, FL &mdash; <span class="text-accent">24/7 Storm Cleanup</span></h1>
 
-    <p class="hero-answer">Call <?php echo e($siteName); ?> at <a href="<?php echo e(phoneHref($phone)); ?>"><?php echo e(formatPhone($phone)); ?></a> &mdash; emergency tree removal and storm damage calls in DeLand are answered 24/7. Tell us the address and what the tree is on. Genuine hazards like a tree on your roof get same-day response, and you get the price in writing before a saw starts. We're a licensed and insured tree service based in DeLand, serving all of Volusia County.</p>
+    <p class="hero-answer">Call <?php echo e($siteName); ?> at <a href="<?php echo e(phoneHref($phone)); ?>"><?php echo e(formatPhone($phone)); ?></a>. Emergency tree removal and storm damage calls in DeLand are answered 24/7. Tell us the address and what the tree is on. Genuine hazards like a tree on your roof get same-day response, and you get the price in writing before a saw starts. We're a licensed and insured tree service based in DeLand, serving all of Volusia County.</p>
 
     <div class="hero-actions">
       <a href="<?php echo e(phoneHref($phone)); ?>" class="btn btn-accent btn-lg">Call Now: <?php echo e(formatPhone($phone)); ?></a>
@@ -959,7 +959,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Hurricane Season &middot; June 1&ndash;November 30</span>
       <h2>What should you do in the first hour after a hurricane damages a tree?</h2>
-      <p class="answer-block">Stay away from the tree, assume any downed line is live, and get everyone out from under damaged limbs. Photograph the damage from a safe distance for your insurance claim, then call <?php echo e($siteName); ?> with your address. Don't start cutting &mdash; storm-loaded wood is under tension and moves without warning.</p>
+      <p class="answer-block">Stay away from the tree, assume any downed line is live, and get everyone out from under damaged limbs. Photograph the damage from a safe distance for your insurance claim, then call <?php echo e($siteName); ?> with your address. Don't start cutting: storm-loaded wood is under tension and moves without warning.</p>
     </div>
 
     <div class="emg-powerline" data-animate>

@@ -30,11 +30,11 @@ $faqCategories = [
         'label' => 'General',
         'icon'  => 'info',
         'faqs'  => [
-            ['q' => 'Where is God\'s Country Tree Service located and what areas do you serve?', 'a' => "God's Country Tree Service is based in DeLand, Florida (32720) and works within roughly 50 miles across Volusia County — including Deltona, Orange City, DeBary, Lake Helen, and DeLeon Springs. We serve homeowners, businesses, and HOA communities throughout the area."],
+            ['q' => 'Where is God\'s Country Tree Service located and what areas do you serve?', 'a' => "God's Country Tree Service is based in DeLand, Florida (32720) and works within roughly 50 miles across Volusia County, including Deltona, Orange City, DeBary, Lake Helen, and DeLeon Springs. We serve homeowners, businesses, and HOA communities throughout the area."],
             ['q' => 'Are you licensed and insured?', 'a' => "Yes. God's Country Tree Service is licensed and carries full liability and workers' compensation insurance, and we'll provide proof on request before any work begins. Ask any crew that knocks on your door after a storm for the same two documents."],
             ['q' => 'How long have you been in business?', 'a' => "We've been serving DeLand and Volusia County since " . $yearEstablished . " — that's " . $yearsInBusiness . "+ years of climbing, cutting, and cleaning up Central Florida's oaks, pines, and palms, through every hurricane season in between."],
             ['q' => 'Do you offer 24/7 emergency tree service?', 'a' => "Yes. God's Country Tree Service provides around-the-clock emergency response for storm damage, fallen trees, and urgent hazards throughout the DeLand area. Call right after severe weather: trees on roofs, blocked driveways, and split trunks over structures are assessed first and removed as soon as it is safe to work."],
-            ['q' => 'What makes you different from the crews that show up after a hurricane?', 'a' => "We live and work here year-round. Our branded trucks and skid steers are on DeLand streets every season, not just the week after a storm — so we're accountable for our work, reachable at the same DeLand number afterwards, and listed on a public BBB profile you can check."],
+            ['q' => 'What makes you different from the crews that show up after a hurricane?', 'a' => "We live and work here year-round. Our branded trucks and skid steers are on DeLand streets every season, not just the week after a storm, so we're accountable for our work, reachable at the same DeLand number afterwards, and listed on a public BBB profile you can check."],
         ],
     ],
     'services' => [
@@ -42,7 +42,7 @@ $faqCategories = [
         'icon'  => 'trees',
         'faqs'  => [
             ['q' => 'What tree services do you provide?', 'a' => "God's Country Tree Service offers twelve specialized services: tree removal, tree trimming, tree pruning, crown reduction and shaping, dead and hazardous tree removal, emergency and storm cleanup, fallen tree removal, tree planting and shrub installation, residential tree services, commercial and HOA tree services, tree maintenance and care, and certified arborist services — plus land clearing and debris work."],
-            ['q' => 'What types of trees do you work on?', 'a' => "We specialize in Florida native species — live oaks, slash pines, and palms — as well as common ornamental and shade trees. A certified arborist on staff assesses each tree's health and recommends the right care, whether that's pruning, crown reduction, removal, or a maintenance plan."],
+            ['q' => 'What types of trees do you work on?', 'a' => "We specialize in Florida native species (live oaks, slash pines, and palms) as well as common ornamental and shade trees. A certified arborist on staff assesses each tree's health and recommends the right care, whether that's pruning, crown reduction, removal, or a maintenance plan."],
             ['q' => 'Can you remove a tree that\'s right next to my house or pool enclosure?', 'a' => "Yes — tight-quarters removals are most of what we do in DeLand. Big trees rarely have room to fall whole, so climbers and a boom lift take the canopy apart in roped, controlled sections that are lowered rather than dropped. A compact grapple loader then clears the yard where a crane won't fit."],
             ['q' => 'Do you handle both residential and commercial properties?', 'a' => "We do. God's Country Tree Service works with homeowners, businesses, office parks, and HOA communities across Volusia County — from a single backyard oak to scheduled maintenance for an entire community's tree canopy."],
             ['q' => 'Do you offer stump grinding and debris removal?', 'a' => "Yes, and most of our quotes include both. Our grapple loader and chipper turn a canopy into a clean pile fast, logs and brush leave on our trucks, and stump grinding is folded into the estimate so the price you approve is the price you pay."],
@@ -52,7 +52,7 @@ $faqCategories = [
         'label' => 'Pricing & Estimates',
         'icon'  => 'badge-dollar-sign',
         'faqs'  => [
-            ['q' => 'How much does tree removal cost in DeLand, FL?', 'a' => "Tree removal cost depends on the tree's size, condition, and what's underneath it — a short palm in an open yard and a large live oak over a roof are very different jobs. We don't price by phone guesswork: someone looks at the tree, and you get a written estimate with debris hauling and stump grinding spelled out line by line."],
+            ['q' => 'How much does tree removal cost in DeLand, FL?', 'a' => "Tree removal cost depends on the tree's size, condition, and what's underneath it: a short palm in an open yard and a large live oak over a roof are very different jobs. We don't price by phone guesswork: someone looks at the tree, and you get a written estimate with debris hauling and stump grinding spelled out line by line."],
             ['q' => 'Are your estimates really free?', 'a' => "Yes. The on-site visit and the written quote are both free and carry no obligation. We walk your property, look at every tree in question, and put an honest, all-in price in writing within 24 hours. If pruning can save a tree instead of removing it, we'll tell you that too."],
             ['q' => 'Will my homeowner\'s insurance pay for tree work?', 'a' => "If a tree fell on a covered structure, your policy usually helps; a standing tree removed as prevention typically isn't covered. We can't promise what your carrier will do, but we provide the written estimate, photos, and documentation adjusters ask for."],
             ['q' => 'What forms of payment do you accept?', 'a' => "Payment terms are spelled out in your written estimate before any work starts, so there are no surprises. Ask during the estimate visit or through the contact form and we'll go over the options that fit your project."],
@@ -316,7 +316,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       FAQ &middot; DeLand, FL
     </span>
     <h1>DeLand Tree Service Questions, <span class="text-accent">Answered Straight</span></h1>
-    <p class="hero-answer">The questions DeLand homeowners actually ask <?php echo e($siteName); ?> about cost, permits, storm response, and how the work gets done &mdash; with honest answers from the DeLand crew that does the work.</p>
+    <p class="hero-answer">The questions DeLand homeowners actually ask <?php echo e($siteName); ?> about cost, permits, storm response, and how the work gets done, with honest answers from the DeLand crew that does the work.</p>
   </div>
 </section>
 

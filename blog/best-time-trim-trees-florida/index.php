@@ -4,17 +4,17 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php';
 
 $pageTitle = 'Best Time to Trim Trees in Florida: Month by Month (2026)';
-$pageDescription = 'Trim most Florida trees December to March, oaks July to January, and storm prep March to May. See the month-by-month DeLand calendar for oaks, palms, and pines.';
+$pageDescription = 'Trim most Florida trees December to February, finish storm prep by May, and keep hurricane season for hazards. A DeLand calendar for oaks, palms, and pines.';
 $canonicalUrl = $siteUrl . '/blog/best-time-trim-trees-florida/';
 $currentPage = 'blog';
 $postFaqs = [
-    ['q' => 'When is the best time to trim trees in DeLand, Florida?', 'a' => 'Late winter through early spring (December through March) for most trees. Live oaks should be trimmed July through January to avoid oak wilt season, palms can be trimmed year-round, and dead or hazardous branches should come down immediately in any season.'],
-    ['q' => 'When should you trim oak trees in Florida?', 'a' => 'Trim oaks between July 1 and January 31. Sap beetles that spread oak wilt are most active February through June and are attracted to fresh pruning wounds. If an oak must be pruned in that window, seal the cut immediately.'],
+    ['q' => 'When is the best time to trim trees in DeLand, Florida?', 'a' => 'The best time to trim most trees in DeLand is December through February, with storm-prep thinning finished by the end of May. Live oaks are best pruned in the cooler months, before their spring leaf change. Palms can be trimmed year-round, and dead or hazardous branches should come down in any season.'],
+    ['q' => 'When should you trim oak trees in Florida?', 'a' => 'Trim oaks in Florida during the cooler months, roughly December through February, and finish any storm-prep work by the end of May. Avoid heavy pruning while a live oak is dropping old leaves and pushing new ones in spring, and in late summer. Oak wilt, the reason for strict oak pruning calendars in other states, does not occur in Florida according to UF/IFAS.'],
     ['q' => 'Should I trim trees during hurricane season?', 'a' => 'Avoid routine trimming from June through November, because fresh wounds haven\'t healed before storms arrive and tree crews are busiest then. Dead, cracked, or leaning branches that pose an immediate threat should be removed regardless of season. Storm-prep trimming belongs in March through May.'],
     ['q' => 'Is it okay to cut green fronds off a palm tree?', 'a' => 'No. Remove only dead, broken, or damaged fronds and messy seed pods. Stripping green fronds stresses the palm and makes it more vulnerable to wind damage. The University of Florida IFAS recommends removing only fronds that hang below a 9 o\'clock to 3 o\'clock horizontal line.'],
     ['q' => 'How much does tree trimming cost in DeLand?', 'a' => 'Across the Central Florida market, professional trimming typically runs from about $150 for a small tree to $800 or more for a large one, depending on size, access, and scope. Those are market ranges, not a quote. Emergency and storm-season work usually costs more, so book December through March when crews have more availability.'],
 ];
-$pageSchema = blogPostSchema('best-time-trim-trees-florida', 'best time to trim trees Florida, when to prune oak trees DeLand, palm tree trimming schedule, oak wilt season Florida, tree trimming DeLand FL, pruning calendar Central Florida', $pageDescription) . generateFAQSchema($postFaqs);
+$pageSchema = blogPostSchema('best-time-trim-trees-florida', 'best time to trim trees Florida, when to prune oak trees DeLand, palm tree trimming schedule, live oak pruning Florida, tree trimming DeLand FL, pruning calendar Central Florida', $pageDescription) . generateFAQSchema($postFaqs);
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
@@ -42,11 +42,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
     <div class="blog-post__content">
       <div class="container">
-        <p class="lead">The best time to trim most trees in DeLand, Florida is late winter through early spring (December through March) when trees are dormant or just beginning active growth. However, timing varies by species: live oaks should be trimmed July through January to avoid oak wilt season, palms can be trimmed year-round but need careful frond selection, and dead or hazardous branches should be removed immediately regardless of season.</p>
+        <p class="lead">The best time to trim most trees in DeLand, Florida is the cool season, December through February, when growth is slowest. Timing still varies by species: live oaks do best with cool-season pruning before their spring leaf change, palms can be trimmed year-round but need careful frond selection, and dead or hazardous branches should be removed immediately regardless of season. Hurricane season (June through November) and the spring and summer bird nesting season shape the rest of the calendar.</p>
 
         <div class="answer-block">
           <h3>Quick Answer: When Should I Trim Trees in DeLand, FL?</h3>
-          <p><strong>Live oaks and laurel oaks:</strong> July 1 – January 31 (avoid February–June oak wilt season)<br>
+          <p><strong>Live oaks and laurel oaks:</strong> December–February for structural work; storm-prep thinning done by the end of May; no heavy pruning in late summer<br>
           <strong>Palms (cabbage, sabal, queen):</strong> Year-round (remove only dead/damaged fronds)<br>
           <strong>Pines, magnolias, crape myrtles:</strong> Late winter (December–February)<br>
           <strong>Dead or hazardous branches:</strong> Remove immediately, any time of year<br>
@@ -54,20 +54,20 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         </div>
 
         <h2>Why Does Tree-Trimming Timing Matter in Florida?</h2>
-        <p>Tree-trimming timing matters in Florida because a cut made in the wrong month can stress the tree, invite pests and disease, or trigger weak regrowth. Central Florida trees rarely go fully dormant, so the right month depends on the species, on when its pests are active, and on how close hurricane season is.</p>
+        <p>Tree-trimming timing matters in Florida because a cut made in the wrong month can stress the tree, invite pests and disease, or trigger weak regrowth. Central Florida trees rarely go fully dormant, so the right month depends on the species, on where it is in its growth cycle, and on how close hurricane season is.</p>
 
-        <p>Florida's subtropical climate means trees don't follow the same dormancy patterns as northern trees. Many species grow year-round with seasonal slowdowns rather than a full rest. Timing cuts around growth cycles, pest activity, and storm season improves tree health and reduces risk. That is why <a href="/services/tree-pruning-services/">the pruning work we do on DeLand oaks, pines, and magnolias</a> is planned species by species, and why a <a href="/blog/prescription-pruning-deland/">written pruning prescription for each tree</a> beats a blanket "trim everything" visit.</p>
+        <p>Florida's subtropical climate means trees don't follow the same dormancy patterns as northern trees. Many species grow year-round with seasonal slowdowns rather than a full rest. Timing cuts around growth cycles, nesting birds, and storm season improves tree health and reduces risk. That is why <a href="/services/tree-pruning-services/">the pruning work we do on DeLand oaks, pines, and magnolias</a> is planned species by species, and why a <a href="/blog/prescription-pruning-deland/">written pruning prescription for each tree</a> beats a blanket "trim everything" visit.</p>
 
         <h2>What Does a Month-by-Month Tree-Trimming Calendar Look Like in DeLand, FL?</h2>
-        <p>A DeLand tree-trimming calendar has four working windows. December through February suits structural pruning of pines, magnolias, and crape myrtles. March through May is for storm-prep thinning. June through November is for hazards and storm damage only. July through January is the safer season for live oaks and laurel oaks.</p>
+        <p>A DeLand tree-trimming calendar has four working windows. December through February suits structural pruning of pines, magnolias, and crape myrtles. March through May is for storm-prep thinning. June through November is for hazards and storm damage only. Late summer is the stretch where UF/IFAS guidance advises against heavy pruning.</p>
 
         <h3>January – February: Dormant Season Pruning</h3>
-        <p><strong>Best for:</strong> Pines, magnolias, crape myrtles, maples, and most hardwoods (except oaks)<br>
+        <p><strong>Best for:</strong> Pines, magnolias, crape myrtles, maples, oaks, and most hardwoods<br>
         <strong>Why now:</strong> Trees are dormant or minimally active, wounds close slowly but pest pressure is lowest, structural pruning is easier to see without foliage</p>
 
         <p>Late winter is the ideal window for most deciduous and evergreen trees in Central Florida. Cuts made in dormancy heal before spring growth flushes, and the tree has maximum energy reserves to compartmentalize wounds. This is the time to make structural pruning cuts — removing crossing branches, correcting co-dominant stems, and thinning dense canopies.</p>
 
-        <p><strong>Avoid pruning oaks</strong> in February — oak wilt disease vectors (sap beetles) become active as temperatures warm, and fresh pruning wounds attract them. If you must prune an oak in February, seal cuts immediately with pruning paint (though this is the only scenario where wound dressing is recommended).</p>
+        <p><strong>Live oaks belong in this window too.</strong> A live oak keeps its leaves through winter, then sheds them and pushes a new set within a few weeks in late winter or early spring. Structural pruning is easier on the tree when it is finished before that change begins, while the canopy is still settled.</p>
 
         <h3>March – May: Pre-Hurricane Trimming Window</h3>
         <p><strong>Best for:</strong> Storm preparation trimming on all species, removing dead/weak branches, canopy thinning<br>
@@ -94,13 +94,15 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
         <p>After a storm passes, inspect trees for broken limbs, stripped bark, and hanging branches. Remove damaged material promptly to prevent further tearing and decay, but understand that post-storm rates across the market usually run well above normal because demand overwhelms supply. For limbs on a roof, driveway, or fence, see <a href="/services/emergency-tree-service-storm-cleanup/">how our emergency storm cleanup works</a>; God's Country Tree Service LLC runs 24-hour emergency storm response from DeLand.</p>
 
-        <h3>July – January: Oak Trimming Season</h3>
-        <p><strong>Best for:</strong> Live oaks, laurel oaks, water oaks, and other oak species<br>
-        <strong>Why now:</strong> Oak wilt disease vectors are inactive, reduced risk of pathogen transmission through fresh wounds</p>
+        <h3>Spring and Summer: Check for Nests, Then Go Light</h3>
+        <p><strong>Best for:</strong> Deadwood, clearance over roofs and driveways, small corrective cuts<br>
+        <strong>Why go light:</strong> Birds nest in Florida canopies through spring and summer, and trees are carrying a full load of new leaves</p>
 
-        <p>Oak wilt is a fatal vascular disease spread by sap beetles that are attracted to fresh pruning wounds. The beetles are most active February through June in Florida when temperatures are warm and oaks are producing spring growth flushes. Pruning oaks between July 1 and January 31 minimizes the risk of beetle contact with fresh cuts.</p>
+        <p>Before any limb comes off in spring or summer, the canopy gets a look for active nests. Most native birds and their active nests are protected by federal and state law, so a limb holding one waits until the young have left, unless it is a hazard. When in doubt, the Florida Fish and Wildlife Conservation Commission is the agency to ask.</p>
 
-        <p>If you must prune an oak during the February–June high-risk window (for example, a broken limb after a storm), seal the wound immediately with pruning paint or shellac-based wound dressing. This is the ONLY scenario where wound dressing is recommended — for all other trees and seasons, leave cuts unsealed so the tree can form natural callus tissue.</p>
+        <p>Late summer is the other reason to keep cuts small. UF/IFAS guidance advises against heavy pruning late in the summer, and in DeLand that stretch is also the peak of hurricane season. Save large reduction and structural work for the cooler months.</p>
+
+        <p>One thing this calendar does not include is an oak wilt season. Pruning calendars written for Texas or the Midwest tell owners to avoid cutting oaks in spring because of oak wilt. According to UF/IFAS (EDIS publication FOR274), oak wilt does not occur in Florida, so that rule does not drive oak timing here. Wound paint is not needed on Florida oaks either; a clean cut just outside the branch collar seals on its own.</p>
 
         <h3>December – February: Dormant Structural Pruning</h3>
         <p><strong>Best for:</strong> Young tree training, structural pruning, crown reduction, thinning<br>
@@ -109,11 +111,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <p>This is the best window for major structural work — removing large limbs, correcting form in young trees, and reducing the height or spread of overgrown trees. Pruning in dormancy allows the tree to allocate energy to wound closure without simultaneously supporting active foliage growth.</p>
 
         <h2>When Should Each Tree Species in DeLand Be Trimmed?</h2>
-        <p>Each common DeLand tree species has its own trimming months. Live oaks and laurel oaks are cut July through January. Pines, magnolias, and crape myrtles are cut December through February. Sabal, cabbage, and queen palms can be trimmed in any month, as long as only dead or broken fronds come off.</p>
+        <p>Each common DeLand tree species has its own trimming months. Live oaks and laurel oaks get structural pruning December through February and storm-prep thinning by May. Pines, magnolias, and crape myrtles are cut December through February. Sabal, cabbage, and queen palms can be trimmed in any month, as long as only dead or broken fronds come off.</p>
 
         <h3>Live Oaks and Laurel Oaks</h3>
-        <p><strong>Best trimming months:</strong> July – January<br>
-        <strong>Avoid:</strong> February – June (oak wilt season)<br>
+        <p><strong>Best trimming months:</strong> December – February for structural pruning; March – May for storm-prep thinning<br>
+        <strong>Avoid:</strong> Heavy pruning during the spring leaf change and in late summer; routine work during hurricane season<br>
         <strong>Frequency:</strong> On a 3-5 year cycle for mature trees, annually for young trees in training</p>
 
         <p>Oaks are the backbone of DeLand's urban forest. Proper pruning maintains their iconic spreading form while reducing storm damage risk. Focus on:</p>

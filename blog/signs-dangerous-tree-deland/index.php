@@ -152,10 +152,13 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <h2>8. Sudden Leaf Loss, Canopy Dieback, or Off-Season Color Change</h2>
         <p>A tree that suddenly drops leaves in summer, develops large areas of dead canopy, or turns brown/yellow out of season is stressed or diseased. Possible causes include:</p>
         <ul>
-          <li><strong>Drought stress</strong> — extended dry periods kill fine roots and trigger leaf drop</li>
-          <li><strong>Root damage</strong> — construction, trenching, or soil compaction</li>
-          <li><strong>Vascular diseases</strong> — oak wilt, laurel wilt, verticillium wilt block water and nutrient transport</li>
-          <li><strong>Insect infestation</strong> — bark beetles, borers, or defoliators</li>
+          <li><strong>Drought stress</strong>: extended dry periods kill fine roots and trigger leaf drop</li>
+          <li><strong>Construction root damage</strong>: trenching, grade changes, or soil compaction over the root zone</li>
+          <li><strong>Laurel wilt</strong>: a vascular disease that kills redbay, swamp bay, and avocado trees in Central Florida</li>
+          <li><strong>Oak decline</strong>: gradual dieback in stressed or aging oaks, laurel oaks especially</li>
+          <li><strong>Root rot</strong>: fungal decay of the root system, often with mushrooms or conks at the base</li>
+          <li><strong>Lightning</strong>: a strike can kill a tree outright or leave it to fail months later</li>
+          <li><strong>Insect infestation</strong>: bark beetles, borers, or defoliators</li>
         </ul>
 
         <p>If more than 25% of the canopy is dead or dying, the tree is in severe decline. A tree losing 50%+ of its canopy in one season is unlikely to recover and poses an increasing hazard as dead branches accumulate. Monitor for a few weeks — if the tree doesn't refoliate or continues to decline, schedule an arborist inspection to determine whether treatment is possible or removal is necessary.</p>

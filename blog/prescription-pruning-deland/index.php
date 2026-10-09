@@ -68,6 +68,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <p>Magnolias are pruned lightly and at the right time to avoid losing the next season's flowers. Young trees of any species get structural pruning, which is the most valuable prescription of all because it decides the tree's shape for the next fifty years.</p>
 
         <h2>What Are the Common Pruning Prescriptions?</h2>
+        <p>The common pruning prescriptions are structural pruning, crown cleaning, crown thinning, crown raising, and crown reduction. Each one names a different objective, so the arborist picks the prescription from what the tree needs and what it is growing over. One tree can carry two prescriptions in the same visit.</p>
         <ul>
           <li><strong>Structural pruning (young trees).</strong> Select one dominant leader, remove or shorten competing stems, and space the main branches. Done every few years while the tree is small, it prevents the co-dominant splits that bring mature oaks down.</li>
           <li><strong>Crown cleaning.</strong> Remove dead, dying, broken, and rubbing branches. The default prescription for a mature tree that is basically healthy.</li>
@@ -77,10 +78,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         </ul>
 
         <h2>When Should Rx Pruning Be Done in Central Florida?</h2>
-        <p>Timing is part of the prescription because the right window changes with the objective. Structural and clearance pruning is usually scheduled in the cooler dormant months. Hurricane thinning is finished before June. Oaks are generally not pruned during peak spring growth, and magnolias are pruned after they flower. Our guide to the <a href="/blog/best-time-trim-trees-florida/">best time to trim trees in Florida</a> goes species by species. Dead and hazardous limbs are the exception and come off whenever they are found.</p>
+        <p>Rx pruning in Central Florida is timed by objective: structural and clearance work in the cooler months, hurricane thinning finished before June. Heavy pruning of oaks is generally avoided during the spring growth flush, and magnolias are pruned after they flower. Dead and hazardous limbs are the exception and come off whenever they are found.</p>
+        <p>Timing is part of the prescription because the right window changes with the objective. Our guide to the <a href="/blog/best-time-trim-trees-florida/">best time to trim trees in Florida</a> goes species by species.</p>
 
         <h2>What Does a Bad Prescription Look Like?</h2>
-        <p>If you have had a tree pruned before and it looked wrong afterward, one of these is usually the reason:</p>
+        <p>A bad prescription looks like lion-tailing, flush cuts, over-thinning, or topping. All four remove the wrong wood or too much of it, and the tree shows it later through weak sprouts, decay, or snapped limbs. If a tree looked wrong after earlier pruning, one of these is usually the reason:</p>
         <ul>
           <li><strong>Lion-tailing.</strong> Stripping the interior branches and leaving tufts of foliage at the ends. It looks tidy and it makes limbs more likely to snap in wind.</li>
           <li><strong>Flush cuts.</strong> Cutting into the branch collar instead of just outside it, which prevents the tree from sealing the wound and invites decay.</li>

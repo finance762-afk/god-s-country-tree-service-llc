@@ -103,7 +103,7 @@ $comparison = [
 $faqs = [
     [
         'q' => 'When is the best time to plant trees in DeLand?',
-        'a' => "Fall through early spring is the sweet spot in Central Florida — mild temperatures let roots establish before summer heat arrives, and the June-through-September rains then do some of the watering for you. That said, we plant year-round in DeLand; a summer planting just needs closer attention to watering in its first weeks.",
+        'a' => "Fall through early spring is the sweet spot in Central Florida: mild temperatures let roots establish before summer heat arrives, and the June-through-September rains then do some of the watering for you. That said, we plant year-round in DeLand; a summer planting just needs closer attention to watering in its first weeks.",
     ],
     [
         'q' => 'How often do I need to water a newly planted tree?',
@@ -972,7 +972,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       </div>
       <div class="plt-cost-card reveal-delay-2" data-animate>
         <h3>Bed prep &amp; soil work</h3>
-        <p>Edging new beds, removing old roots or sod, and grading with our skid steer all shape the price. Sandy soil rarely needs heavy amendment &mdash; it needs correct depth and mulch, and both are part of the install.</p>
+        <p>Edging new beds, removing old roots or sod, and grading with our skid steer all shape the price. Sandy soil rarely needs heavy amendment. It needs correct depth and mulch, and both are part of the install.</p>
       </div>
       <div class="plt-cost-card reveal-delay-3" data-animate>
         <h3>Quantity &amp; access</h3>

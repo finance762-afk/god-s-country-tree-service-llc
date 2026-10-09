@@ -53,7 +53,7 @@ $removalSigns = [
 
 // ---- Sticky process timeline steps ----
 $removalSteps = [
-    ['title' => 'Walk-through & straight answer', 'text' => 'We look at the tree, the targets around it — house, pool screen, fence, lines — and tell you honestly whether it needs to come down or can be saved with pruning or crown reduction. The written estimate that follows lists the takedown, the hauling, and the stump grinding as separate lines.'],
+    ['title' => 'Walk-through & straight answer', 'text' => 'We look at the tree, the targets around it (house, pool screen, fence, lines) and tell you honestly whether it needs to come down or can be saved with pruning or crown reduction. The written estimate that follows lists the takedown, the hauling, and the stump grinding as separate lines.'],
     ['title' => 'Rigging plan & site protection', 'text' => 'Big DeLand oaks rarely have room to fall whole. We plan drop zones, set rigging lines, and stage plywood or mats where the loader will travel so your lawn and irrigation survive the job.'],
     ['title' => 'Controlled section takedown',    'text' => 'A climber or boom lift takes the canopy apart piece by piece. Every heavy section is roped and lowered — not dropped — which is how removals over roofs and screen enclosures stay boring.'],
     ['title' => 'Grapple, chip & haul',           'text' => 'The grapple loader carries logs to the truck and brush goes through the chipper, so the debris leaves the same day. Most quotes include hauling.'],

@@ -98,7 +98,7 @@ $cadence = [
 $faqs = [
     [
         'q' => 'Can pruning save a tree I was told needs to come down?',
-        'a' => "Pruning can sometimes save a tree that looks like a removal. Storm damage, deadwood, and an overloaded canopy often look worse than they are, and targeted pruning or crown reduction can keep a structurally sound tree standing. Decay at the base or a failing root plate is a different story. We assess the tree at the estimate visit — if pruning will genuinely fix it, pruning is what we quote.",
+        'a' => "Pruning can sometimes save a tree that looks like a removal. Storm damage, deadwood, and an overloaded canopy often look worse than they are, and targeted pruning or crown reduction can keep a structurally sound tree standing. Decay at the base or a failing root plate is a different story. We assess the tree at the estimate visit. If pruning will genuinely fix it, pruning is what we quote.",
     ],
     [
         'q' => 'Will you top my tree to make it shorter?',
@@ -114,7 +114,7 @@ $faqs = [
     ],
     [
         'q' => 'Can you handle tree mitigation my insurance company or HOA is asking for?',
-        'a' => "Yes, we prune to tree mitigation notices from insurers and HOAs. Those notices usually want specific things — weight off the roofline, hazard deadwood out, clearance from the structure. We prune to what the notice requires, photograph the finished work, and give you the documentation to close it out. If the tree genuinely can't be made safe by pruning, we'll tell you that before you spend the money.",
+        'a' => "Yes, we prune to tree mitigation notices from insurers and HOAs. Those notices usually want specific things: weight off the roofline, hazard deadwood out, clearance from the structure. We prune to what the notice requires, photograph the finished work, and give you the documentation to close it out. If the tree genuinely can't be made safe by pruning, we'll tell you that before you spend the money.",
     ],
 ];
 
@@ -920,7 +920,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
           </li>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
-            <p><strong>Honest scope.</strong> If your tree needs a light <a href="/services/tree-trimming-services/">tree trimming</a> visit instead of corrective pruning &mdash; or removal &mdash; you'll hear it at the estimate visit.</p>
+            <p><strong>Honest scope.</strong> If your tree needs a light <a href="/services/tree-trimming-services/">tree trimming</a> visit instead of corrective pruning (or removal), you'll hear it at the estimate visit.</p>
           </li>
         </ul>
       </div>

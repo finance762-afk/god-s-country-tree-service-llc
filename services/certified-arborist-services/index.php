@@ -63,7 +63,7 @@ $diagSteps = [
     ['title' => 'Read the root flare and trunk',     'text' => 'We check for buried root flares, girdling roots, cavities, cracks, and fungal conks — the structural evidence. A mushroom at the base of an oak means something very different than one in the mulch.'],
     ['title' => 'Read the canopy',                   'text' => 'Dieback pattern, leaf color and size, deadwood distribution, and how the tree responded to past pruning. Where a canopy is failing tells us why it\'s failing.'],
     ['title' => 'Give the verdict in plain English', 'text' => 'Save, treat, monitor, or remove — and why. If it\'s treatable you get a plan with real steps. If it isn\'t, we say so instead of selling you fertilizer for a dead tree.'],
-    ['title' => 'Put it in writing within 24 hours', 'text' => 'The written estimate covers whatever the verdict calls for — pruning, crown reduction, or removal — priced by the same owner-operated crew that will do the work.'],
+    ['title' => 'Put it in writing within 24 hours', 'text' => 'The written estimate covers whatever the verdict calls for (pruning, crown reduction, or removal), priced by the same owner-operated crew that will do the work.'],
 ];
 
 // ---- Save vs remove (honest verdict columns) ----
@@ -90,19 +90,19 @@ $faqs = [
     ],
     [
         'q' => 'My oak is thinning — does it have to come down?',
-        'a' => "A thinning oak does not have to come down by default. A thinning crown is a symptom, not a verdict. Drought stress, root damage from construction, soil compaction, and disease all produce similar-looking canopies but call for completely different responses. We assess the root flare, trunk, and dieback pattern first — many DeLand oaks recover with corrective pruning and root-zone care instead of removal.",
+        'a' => "A thinning oak does not have to come down by default. A thinning crown is a symptom, not a verdict. Drought stress, root damage from construction, soil compaction, and disease all produce similar-looking canopies but call for completely different responses. We assess the root flare, trunk, and dieback pattern first. Many DeLand oaks recover with corrective pruning and root-zone care instead of removal.",
     ],
     [
         'q' => 'How much does an arborist assessment cost in DeLand?',
-        'a' => "The estimate itself is free — we walk the property, give you a verbal read on the spot, and follow with a written quote for whatever the tree actually needs. There's no fee just to find out whether that oak over your roof is a hazard or merely ugly this season.",
+        'a' => "The estimate itself is free: we walk the property, give you a verbal read on the spot, and follow with a written quote for whatever the tree actually needs. There's no fee just to find out whether that oak over your roof is a hazard or merely ugly this season.",
     ],
     [
         'q' => 'Do you treat trees, or just recommend removals?',
-        'a' => "We do the work, not just the diagnosis. Corrective pruning, crown reduction, deadwood removal, and ongoing maintenance plans all come from the same crew that assessed the tree — and when removal is the honest answer, we handle that too. One local company, one written quote.",
+        'a' => "We do the work, not just the diagnosis. Corrective pruning, crown reduction, deadwood removal, and ongoing maintenance plans all come from the same crew that assessed the tree, and when removal is the honest answer, we handle that too. One local company, one written quote.",
     ],
     [
         'q' => 'Can you check my trees after a pool or addition was built?',
-        'a' => "Yes, we check trees after construction, and it is worth asking. Construction that trenches through a root zone can take one to three years to show up as canopy dieback, especially in sandy soil that drains fast. An assessment after the build — and again a year later — catches root damage while corrective care can still make a difference.",
+        'a' => "Yes, we check trees after construction, and it is worth asking. Construction that trenches through a root zone can take one to three years to show up as canopy dieback, especially in sandy soil that drains fast. An assessment after the build, and again a year later, catches root damage while corrective care can still make a difference.",
     ],
 ];
 
@@ -930,11 +930,11 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Diagnosis Before Saws</span>
       <h2>What does a certified arborist in DeLand, FL actually do?</h2>
-      <p class="answer-block">An arborist reads a tree the way an inspector reads a house: root flare, trunk, canopy, and site. In DeLand that means diagnosing declining live oaks, spotting ganoderma conks at a palm&rsquo;s base, catching nutrient deficiencies in the fronds, and writing a treatment &mdash; or removal &mdash; plan you can act on.</p>
+      <p class="answer-block">An arborist reads a tree the way an inspector reads a house: root flare, trunk, canopy, and site. In DeLand that means diagnosing declining live oaks, spotting ganoderma conks at a palm&rsquo;s base, catching nutrient deficiencies in the fronds, and writing a treatment (or removal) plan you can act on.</p>
     </div>
 
     <div class="arb-lede" data-animate>
-      <p class="drop-cap">Most tree problems in DeLand don&rsquo;t announce themselves until they&rsquo;re expensive. Sandy Central Florida soil drains fast, hides root damage, and lets decay work quietly for years &mdash; arborist work is catching those stories early. Our guide to <a href="/blog/what-does-certified-arborist-do/">what an arborist does on a DeLand property</a> goes deeper.</p>
+      <p class="drop-cap">Most tree problems in DeLand don&rsquo;t announce themselves until they&rsquo;re expensive. Sandy Central Florida soil drains fast, hides root damage, and lets decay work quietly for years. Arborist work is catching those stories early. Our guide to <a href="/blog/what-does-certified-arborist-do/">what an arborist does on a DeLand property</a> goes deeper.</p>
     </div>
 
     <div class="arb-symptoms">
@@ -969,7 +969,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <ul class="arb-cred-rows" data-p1-dynamic>
           <li data-animate>
             <?php echo icon('badge-check'); ?>
-            <p><strong>The arborist&rsquo;s read comes first.</strong> Diagnosis, treatment plans, and species-specific care &mdash; not a one-size-fits-all &ldquo;it&rsquo;s gotta come down.&rdquo;</p>
+            <p><strong>The arborist&rsquo;s read comes first.</strong> Diagnosis, treatment plans, and species-specific care, not a one-size-fits-all &ldquo;it&rsquo;s gotta come down.&rdquo;</p>
           </li>
           <li data-animate>
             <?php echo icon('shield-check'); ?>
@@ -1151,7 +1151,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <span class="eyebrow-label" style="color: var(--color-accent);">Free Visit &middot; Written Verdict</span>
     <h2>Worried About an Oak or Palm That Doesn&rsquo;t Look Right?</h2>
-    <p class="answer-block">Describe the tree &mdash; the thinning crown, the yellowing fronds, the mushrooms at the base &mdash; and <?php echo e($siteName); ?> will walk the property, diagnose what&rsquo;s actually happening, and put the verdict in writing. The visit and the written quote are free.</p>
+    <p class="answer-block">Describe the tree (the thinning crown, the yellowing fronds, the mushrooms at the base) and <?php echo e($siteName); ?> will walk the property, diagnose what&rsquo;s actually happening, and put the verdict in writing. The visit and the written quote are free.</p>
     <div class="hero-actions">
       <a href="#estimate-form" class="btn btn-accent btn-lg">Book a Free Consultation</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact Us</a>

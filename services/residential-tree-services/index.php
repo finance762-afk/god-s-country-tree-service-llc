@@ -57,7 +57,7 @@ $scenarios = [
 
 // ---- Visit steps (service breakdown) ----
 $visitSteps = [
-    ['title' => 'Walk the whole yard, not one tree',   'text' => 'We look at every tree on the lot — the oak you called about and the queen palm you didn\'t — and the written estimate lists the work tree by tree, so you can approve all of it or part of it.'],
+    ['title' => 'Walk the whole yard, not one tree',   'text' => 'We look at every tree on the lot (the oak you called about and the queen palm you didn\'t), and the written estimate lists the work tree by tree, so you can approve all of it or part of it.'],
     ['title' => 'Schedule and site prep',              'text' => 'We confirm gate access, flag sprinkler heads, and plan around fences, screen rooms, and flower beds before a saw starts.'],
     ['title' => 'One planned work sequence',           'text' => 'Trimming, pruning cuts, any removals, and stump work happen in a deliberate order so debris moves through the yard once.'],
     ['title' => 'Chip, haul, and rake out',            'text' => 'Brush goes through the chipper, logs ride the grapple loader, and the driveway gets blown off. Most quotes include hauling, so the yard is mow-ready when the trucks pull away.'],
@@ -74,7 +74,7 @@ $costFactors = [
 
 // ---- Comparison: juggling contractors vs one crew ----
 $comparison = [
-    ['them' => 'One company trims, another hauls, a third grinds the stump — three schedules, three invoices', 'us' => 'Trimming, removal, stump grinding and hauling from one DeLand crew: one schedule, one written quote'],
+    ['them' => 'One company trims, another hauls, a third grinds the stump: three schedules, three invoices', 'us' => 'Trimming, removal, stump grinding and hauling from one DeLand crew: one schedule, one written quote'],
     ['them' => 'Each vendor blames the last one for the ruts in the lawn',                                      'us' => 'The crew that cuts is the crew that flagged the sprinkler heads and rakes out the lawn'],
     ['them' => 'Storm week, the out-of-town number goes to voicemail',                                          'us' => 'Based in DeLand since 2014, on the same streets before, during, and after hurricane season'],
 ];
@@ -99,7 +99,7 @@ $faqs = [
     ],
     [
         'q' => 'Can you get equipment into a small, fenced backyard?',
-        'a' => "Usually, yes. When the gate is too narrow for the skid steer, our climbers work the tree on ropes and the wood is carried out by hand to the chipper at the street. Tight-access backyards behind DeLand's older homes are routine work — access just gets planned into the quote up front.",
+        'a' => "Usually, yes. When the gate is too narrow for the skid steer, our climbers work the tree on ropes and the wood is carried out by hand to the chipper at the street. Tight-access backyards behind DeLand's older homes are routine work. Access just gets planned into the quote up front.",
     ],
     [
         'q' => 'Do you take on yards outside DeLand?',
@@ -1055,7 +1055,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <span class="eyebrow-label">One Walk-Through &middot; One Written Quote</span>
     <h2>Ready for One Crew to Take the Whole Yard Off Your List?</h2>
-    <p class="answer-block">Tell us what the yard needs &mdash; a trim, a takedown, or an honest opinion on all of it. <?php echo e($siteName); ?> will walk the property, put the whole job on one written quote, and handle it with one crew from first cut to final rake.</p>
+    <p class="answer-block">Tell us what the yard needs: a trim, a takedown, or an honest opinion on all of it. <?php echo e($siteName); ?> will walk the property, put the whole job on one written quote, and handle it with one crew from first cut to final rake.</p>
     <div class="res-hero-actions">
       <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Yard Estimate</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact Us</a>

@@ -125,7 +125,7 @@ $homeServiceCards = [
 
 // ---- Ticker strip items: what we do and where (credentials are stated once, in the hero) ----
 $tickerItems = [
-    'DeLand, Florida &mdash; Since 2014',
+    'DeLand, Florida &middot; Since 2014',
     'Tree Removal',
     'Trimming &amp; Pruning',
     'Storm Cleanup',
@@ -930,7 +930,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
         <span class="eyebrow-label">Local Roots</span>
         <h2>Why Do DeLand Homeowners Call <span class="text-accent">God's Country</span> First?</h2>
         <p class="about-lede" data-animate>DeLand homeowners call <?php echo e($siteName); ?> first because the company is local and owner-operated. Caleb, the owner, is a trained arborist with more than two decades in tree work, the trucks stay in Volusia County between storms, and the estimate arrives in writing before any saw starts.</p>
-        <p data-animate>You'll see our trucks and skid steers on DeLand streets all year, not only the week after a hurricane. Tree work and land clearing from one provider means the job gets finished &mdash; cut, hauled, ground, and graded. For the longer story, read <a href="/about/">how God's Country started in DeLand</a>, or see <a href="/service-area/">every west Volusia town we work in</a>.</p>
+        <p data-animate>You'll see our trucks and skid steers on DeLand streets all year, not only the week after a hurricane. Tree work and land clearing from one provider means the job gets finished: cut, hauled, ground, and graded. For the longer story, read <a href="/about/">how God's Country started in DeLand</a>, or see <a href="/service-area/">every west Volusia town we work in</a>.</p>
 
         <h3 style="margin-top: var(--space-8);">The God's Country 4-Step Process</h3>
         <ol class="process-steps" data-p1-dynamic>
@@ -987,7 +987,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   </div>
 </section>
 
-<!-- ============ RECENT WORK — live feed from the Google Business Profile (v8) ============ -->
+<!-- ============ RECENT WORK: live feed from the Google Business Profile (v8) ============ -->
 <?php
   require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/recent-work.php';
   $recentWork = p1_recent_work($slug, ['heading' => "Latest from God's Country Tree Service in DeLand", 'limit' => 8]);

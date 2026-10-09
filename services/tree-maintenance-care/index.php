@@ -118,7 +118,7 @@ $faqs = [
     ],
     [
         'q' => 'What happens if you find a serious problem during a visit?',
-        'a' => 'We show it to you, explain the options, and put a price on each one in writing. Sometimes reduction pruning saves the tree; sometimes removal is the honest answer. Either way you decide on your schedule — that is the entire point of finding problems during an inspection instead of after a storm.',
+        'a' => 'We show it to you, explain the options, and put a price on each one in writing. Sometimes reduction pruning saves the tree; sometimes removal is the honest answer. Either way you decide on your schedule. That is the entire point of finding problems during an inspection instead of after a storm.',
     ],
     [
         'q' => 'Is fertilization included in tree maintenance?',
@@ -838,7 +838,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">The Math of Prevention</span>
       <h2>How does preventative tree health care avoid emergency removals?</h2>
-      <p class="answer-block">Preventative tree health care catches failure early &mdash; deadwood, cavities, weak unions, root stress &mdash; and corrects it with small scheduled cuts instead of an emergency crew call. A maintained live oak sheds far less in a storm; a neglected one becomes the midnight removal over your pool screen enclosure.</p>
+      <p class="answer-block">Preventative tree health care catches failure early (deadwood, cavities, weak unions, root stress) and corrects it with small scheduled cuts instead of an emergency crew call. A maintained live oak sheds far less in a storm; a neglected one becomes the midnight removal over your pool screen enclosure.</p>
     </div>
 
     <div class="mnt-econ-grid">
@@ -1041,7 +1041,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
   <div class="container">
     <span class="eyebrow-label" style="color: var(--color-accent);">Walk-Through &middot; Written Estimate</span>
     <h2>Ready to Put Your Trees on a Schedule Before the Next Hurricane Season?</h2>
-    <p class="answer-block">Tell <?php echo e($siteName); ?> which trees worry you &mdash; the moss-draped live oak, the tall slash pines, the palms by the pool screen enclosure &mdash; and we'll walk the property, build a maintenance calendar around them, and put the price in writing.</p>
+    <p class="answer-block">Tell <?php echo e($siteName); ?> which trees worry you (the moss-draped live oak, the tall slash pines, the palms by the pool screen enclosure) and we'll walk the property, build a maintenance calendar around them, and put the price in writing.</p>
     <div class="hero-actions">
       <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Maintenance Assessment</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact Us</a>
