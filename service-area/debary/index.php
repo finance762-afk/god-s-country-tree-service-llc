@@ -21,7 +21,7 @@ $currentPage = 'service-area';
 
 // ---- SEO (V2.1 trade-noun title + V2.2 CTR meta) ----
 $pageTitle       = "Tree Service DeBary FL | {$gbpRating}★ ({$gbpReviewCount} Google Reviews)";
-$pageDescription = "Tree service in DeBary, FL from a DeLand crew rated {$gbpRating}★ from {$gbpReviewCount} Google reviews. Licensed & insured, 24/7 storm help, free 24-hour estimate: (407) 280-3484.";
+$pageDescription = "Tree service in DeBary, FL from a DeLand crew rated {$gbpRating}★ from {$gbpReviewCount} Google reviews. HOA and subdivision pruning, oak care, free written estimates: (407) 280-3484.";
 $canonicalUrl    = $siteUrl . '/service-area/debary/';
 
 // ---- Images ----
@@ -32,26 +32,26 @@ $ogImage          = $siteUrl . p1_best_src($heroImage);
 
 $photoBeds = [
     'src' => $imgBase . '1784062733583-jhvosk-35788256_2078205079066760_5169623066409435136_n.webp',
-    'alt' => 'Freshly mulched beds with shaped shrubs and young palms at a DeBary, FL subdivision home',
+    'alt' => 'Freshly mulched beds with shaped shrubs and young palms at a Volusia County home',
 ];
 $photoAcreage = [
     'src' => $imgBase . '1784062740583-2dtirn-42754196_2163954730491794_5374692911386460160_n.webp',
-    'alt' => 'God\'s Country skid steer clearing a mowed HOA common area near DeBary, FL',
+    'alt' => 'Skid steer on freshly mowed acreage with a farmhouse and pine tree line behind',
 ];
 
 // ---- FAQs (3 local) ----
 $faqs = [
     [
         'q' => 'Do you work in DeBary HOA communities like Riviera Bella and Glen Abbey?',
-        'a' => "Yes. God's Country Tree Service works in DeBary's gated and golf-course communities including Riviera Bella, Glen Abbey, and Springview. We coordinate with HOA managers on access, scheduling, and documented insurance, and we can handle a single backyard oak or a full common-area maintenance round on one written estimate.",
+        'a' => "God's Country Tree Service works in DeBary's gated and golf-course communities, including Riviera Bella, Glen Abbey and Springview. We coordinate access and scheduling with HOA managers and provide proof of insurance on request. A single backyard oak and a full common-area maintenance round can go on one written estimate.",
     ],
     [
         'q' => 'The trees around my new DeBary home are young — do they really need pruning yet?',
-        'a' => "Often, yes. The live oaks and sabal palms planted across DeBary's newer subdivisions are exactly the age when structural pruning pays off. Correcting co-dominant leaders and crossing limbs now, while the tree is small, prevents the storm breakage and expensive removals that older, never-trained trees face later.",
+        'a' => "Young live oaks and sabal palms in DeBary's newer subdivisions usually do need pruning now, because this is the age when structural cuts are small. Correcting co-dominant leaders and crossing limbs while the tree is young prevents the storm breakage and costly removals that older, never-trained trees face later.",
     ],
     [
         'q' => 'Can you preserve the big heritage oaks near DeBary Hall instead of removing them?',
-        'a' => "Preservation is usually the goal. Around DeBary Hall and the older streets, God's Country Tree Service favors crown reduction, deadwood removal, and careful thinning to keep century-old live oaks standing and sound. We only recommend removal when decay or structural failure makes a heritage tree a genuine hazard.",
+        'a' => "The big oaks near DeBary Hall can usually be preserved instead of removed. God's Country Tree Service uses crown reduction, deadwood removal and careful thinning to keep mature live oaks standing and sound, and recommends removal only when decay or structural failure makes a tree a genuine hazard.",
     ],
 ];
 
@@ -551,12 +551,17 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   .dby-actions { flex-direction: column; align-items: stretch; }
   .dby-compare-col { padding: var(--space-8) var(--space-6); }
 }
+/* ---- Inline body links (v8 content pass) ---- */
+.area-article p a { text-decoration: underline; }
 </style>
+
+<article class="area-article">
 
 <!-- ============ HERO ============ -->
 <section class="dby-hero has-hero-bg" aria-label="Tree service in DeBary, Florida">
   <?php echo p1_hero_picture($heroImage); ?>
-  <div class="container">
+  <div class="container hero-with-form">
+    <div class="hero-copy">
     <nav class="dby-crumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span class="sep" aria-hidden="true">/</span>
@@ -569,10 +574,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <h1>Tree Service in DeBary, FL &mdash; <span class="text-accent">From SunRail Subdivisions to Heritage Estates</span></h1>
 
-    <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving DeBary and the rest of Volusia County within about 50 miles since <?php echo e($yearEstablished); ?>. From the young live oaks of Riviera Bella and Glen Abbey to the century-old estate oaks near DeBary Hall, one local crew handles the trimming, pruning, planting, and removal.</p>
+    <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving DeBary and the rest of Volusia County within about 50 miles since <?php echo e($yearEstablished); ?>. One crew handles trimming, pruning, planting and removal here, from the young live oaks of Riviera Bella and Glen Abbey to the mature estate oaks near DeBary Hall.</p>
 
     <div class="dby-actions">
-      <a href="/contact/" class="btn btn-accent btn-lg">Get a Free Estimate in DeBary</a>
+      <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Estimate in DeBary</a>
       <a href="/services/" class="btn btn-outline-white btn-lg">Explore Our Services</a>
     </div>
 
@@ -580,8 +585,16 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
       <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in Volusia County</span>
       <span class="hero-trust-item"><?php echo icon('building-2'); ?> HOA &amp; Residential Crews</span>
-      <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
+      <span class="hero-trust-item"><?php echo icon('map-pin'); ?> About 12 Miles from DeLand</span>
     </div>
+    </div>
+
+    <?php
+    $heroFormLocation = 'hero-area-debary';
+    $heroFormService  = '';
+    $heroFormHeading  = 'Get a Free Estimate in DeBary';
+    include $_SERVER['DOCUMENT_ROOT'] . '/includes/hero-form.php';
+    ?>
   </div>
 </section>
 
@@ -591,7 +604,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="dby-shell" data-animate>
       <span class="eyebrow-label">DeBary, FL</span>
       <h2>Do you provide tree service for DeBary&rsquo;s new subdivisions and HOAs?</h2>
-      <p class="answer-block"><?php echo e($siteName); ?> provides full tree service across DeBary&rsquo;s newer subdivisions and HOA communities &mdash; Riviera Bella, Glen Abbey, and Springview included. We handle structural pruning on young live oaks and sabal palms, planting, crown work, and removals, coordinating access and insurance with property managers and homeowners alike.</p>
+      <p class="answer-block"><?php echo e($siteName); ?> provides tree service for DeBary&rsquo;s newer subdivisions and HOA communities, including Riviera Bella, Glen Abbey and Springview. The work covers structural pruning on young live oaks and sabal palms, planting, crown work and removals. DeBary sits about 12 miles south of DeLand on <a href="/service-area/">our list of Volusia County service areas</a>.</p>
     </div>
   </div>
 </section>
@@ -608,12 +621,13 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <div class="dby-prose">
         <div class="dby-shell dby-shell--left" style="margin-bottom: var(--space-6);">
           <span class="eyebrow-label">A Young City With Old Oaks</span>
-          <h2>Tree care built for how DeBary actually grew</h2>
+          <h2>What kind of tree care do DeBary&rsquo;s neighborhoods need?</h2>
         </div>
-        <p class="dby-dropcap" data-animate>DeBary is one of Volusia County&rsquo;s newest cities &mdash; it wasn&rsquo;t incorporated until 1993 &mdash; yet it carries one of the region&rsquo;s oldest stories. The city takes its name from Frederick deBary, a Belgian-born wine and champagne merchant whose 1871 winter estate, DeBary Hall, still stands as a restored historic site. That split personality is exactly what shapes tree work here: brand-new landscaping planted next to trees older than the town itself.</p>
-        <p data-animate>Along US-17/92 and Dirksen Drive, growth has filled in fast. Subdivisions like Riviera Bella on the St. Johns River, the Glen Abbey golf community, and Springview went in with young live oaks and sabal palms that need early structural pruning to grow strong &mdash; the kind of small, cheap cuts that prevent big, expensive storm failures a decade later.</p>
-        <p data-animate>Closer to DeBary Hall and the streets that predate the subdivisions, the trees tell the opposite story: mature live oaks with heavy, spreading canopies that deserve preservation, not a chainsaw. We handle both ends of that spectrum, plus everything between, and we know the difference matters to the people who live here.</p>
-        <p data-animate>Bordered by Lake Monroe and the St. Johns River, with Gemini Springs Park and the DeBary SunRail station at its edge, this is a commuter city that grew up around its trees. If you&rsquo;ve been searching for a tree service near me in DeBary, our DeLand crew is a short drive south &mdash; about 12 miles &mdash; and works DeBary every week.</p>
+        <p class="dby-dropcap" data-animate>DeBary&rsquo;s neighborhoods need two kinds of tree care: early structural pruning for young subdivision trees and preservation work for the mature oaks near DeBary Hall. Most new-landscape visits combine <a href="/services/tree-planting-shrub-installation/">tree and shrub planting for a new yard</a> with <a href="/services/tree-trimming-services/">a first trimming of the builder-planted oaks</a>.</p>
+        <p data-animate>DeBary is a young city with an old landmark. It takes its name from DeBary Hall, the estate that still stands as a restored historic site, so brand-new landscaping here is often planted a few streets from trees older than the neighborhoods around them.</p>
+        <p data-animate>Along US-17/92 and Dirksen Drive, growth has filled in fast. Riviera Bella on the St. Johns River, the Glen Abbey golf community and Springview went in with young live oaks and sabal palms. Those trees need a few small cuts now, while a limb is still thumb-thick, to avoid a split trunk in a storm once the canopy is heavy.</p>
+        <p data-animate>Closer to DeBary Hall and the streets that predate the subdivisions, the trees tell the opposite story: mature live oaks with heavy, spreading canopies. There the job is reduction and deadwood removal, with takedown as the last option.</p>
+        <p data-animate>Bordered by Lake Monroe and the St. Johns River, with Gemini Springs Park and the DeBary SunRail station at its edge, this is a commuter city that grew up around its trees. If you have been searching for a tree service near me in DeBary, our DeLand crew is about 12 miles north, and we also maintain trees for businesses along Enterprise Road.</p>
       </div>
       <figure class="dby-figure" data-animate="right">
         <?php echo p1_picture($photoBeds['src'], $photoBeds['alt'], 600, 450, '(max-width: 768px) 100vw, 600px'); ?>
@@ -633,8 +647,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="dby-shell" data-animate>
       <span class="eyebrow-label">Two DeBarys, Two Approaches</span>
-      <h2>New-growth pruning or heritage preservation &mdash; DeBary needs both</h2>
-      <p class="answer-block">DeBary&rsquo;s trees fall into two very different jobs. The young trees in its SunRail-era subdivisions need training and structure; the century-old estate oaks need preserving. <?php echo e($siteName); ?> reads which one is in front of us before a single cut.</p>
+      <h2>Does a DeBary tree need new-growth pruning or heritage preservation?</h2>
+      <p class="answer-block">A DeBary tree needs new-growth pruning if it was planted with a subdivision and heritage preservation if it is a mature estate oak. The two columns below set them side by side, so you can tell which visit your tree calls for before <?php echo e($siteName); ?> quotes it.</p>
     </div>
 
     <div class="dby-compare">
@@ -648,7 +662,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
           <li><?php echo icon('check'); ?> Structural pruning that corrects co-dominant leaders</li>
           <li><?php echo icon('check'); ?> Tree &amp; shrub planting matched to Florida natives</li>
           <li><?php echo icon('check'); ?> Early shaping so canopies clear roofs and drives</li>
-          <li><?php echo icon('check'); ?> HOA-friendly scheduling and documented insurance</li>
+          <li><?php echo icon('check'); ?> HOA scheduling, with proof of insurance on request</li>
         </ul>
       </article>
 
@@ -676,12 +690,12 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       </div>
       <div class="dby-schedule__body">
         <span class="eyebrow-label">Built Around Your Commute</span>
-        <h2>Scheduling that works for a SunRail commuter town</h2>
-        <p>DeBary&rsquo;s SunRail station sends a lot of the neighborhood toward Orlando every morning, so we don&rsquo;t need you standing in the driveway to get the work done. We assess, quote in writing within 24 hours, and coordinate the details by phone and email.</p>
+        <h2>How is tree work scheduled for DeBary commuters and HOAs?</h2>
+        <p>Tree work for DeBary commuters and HOAs is scheduled by phone and email, so nobody has to wait in the driveway. We walk the property, send the written quote within 24 hours, and plan gate access with the property manager. HOA boards can read more about <a href="/services/commercial-hoa-tree-services/">common-area tree maintenance for HOAs</a>.</p>
         <ul class="dby-schedule__points">
-          <li><?php echo icon('calendar-check'); ?> <span><strong>HOA &amp; property-manager scheduling.</strong> Common-area rounds and gated-community access planned ahead, with insurance on file.</span></li>
-          <li><?php echo icon('file-text'); ?> <span><strong>Free written estimates in 24 hours.</strong> Scope, cleanup, and hauling spelled out before any crew arrives.</span></li>
-          <li><?php echo icon('truck'); ?> <span><strong>One crew, whole job.</strong> Climbing, grapple loading, chipping, and haul-off from the same DeBary-serving team.</span></li>
+          <li><?php echo icon('calendar-check'); ?> <span><strong>HOA &amp; property-manager scheduling.</strong> Common-area rounds and gated-community access planned ahead, with proof of insurance sent on request.</span></li>
+          <li><?php echo icon('file-text'); ?> <span><strong>A written scope before the crew arrives.</strong> Trees, cuts, cleanup and hauling are listed in the quote, and the visit costs nothing.</span></li>
+          <li><?php echo icon('truck'); ?> <span><strong>One crew, whole job.</strong> Climbing, grapple loading, chipping and haul-off handled by the DeLand crew that quoted the work.</span></li>
         </ul>
       </div>
     </div>
@@ -699,7 +713,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="dby-shell" data-animate>
       <span class="eyebrow-label">What We Do</span>
       <h2>Which tree services are available in <span class="text-accent">DeBary</span>?</h2>
-      <p class="answer-block"><?php echo e($siteName); ?> brings its full DeLand service line to DeBary: planting and shrub installation for new landscaping, trimming and crown work for maturing canopies, residential and HOA-scaled care, and removal when a tree is beyond saving. Same crew, same equipment, same free 24-hour estimate.</p>
+      <p class="answer-block">The tree services available in DeBary are planting and shrub installation, trimming, crown reduction, residential care, HOA and commercial maintenance, and removal. <?php echo e($siteName); ?> sends the crew and equipment it runs from DeLand, so a new-yard planting and a large takedown can be quoted on one written estimate.</p>
     </div>
 
     <?php renderServiceCards(['tree-planting-shrub-installation', 'tree-trimming-services', 'residential-tree-services', 'commercial-hoa-tree-services', 'tree-removal', 'crown-reduction-shaping'], $serviceCardData); ?>
@@ -712,14 +726,14 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="dby-shell" data-animate>
       <span class="eyebrow-label">Why DeBary Calls Us</span>
       <h2>Why choose God&rsquo;s Country Tree Service in DeBary?</h2>
-      <p class="answer-block">Because DeBary&rsquo;s mix of new subdivisions and heritage oaks rewards a crew that knows the difference &mdash; and shows up year-round, not just after a storm.</p>
+      <p class="answer-block">DeBary homeowners and HOA managers choose God&rsquo;s Country Tree Service because the crew matches the cut to the tree&rsquo;s age. A builder-planted oak and an estate oak get different plans, and each plan is written down before work begins. The cards below explain how.</p>
     </div>
 
     <div class="dby-why-grid">
       <article class="dby-why-card card-tint-1 reveal-delay-1" data-animate>
         <div class="dby-why-card__icon"><?php echo icon('map-pin'); ?></div>
         <h3>Local &amp; Year-Round</h3>
-        <p>Based in DeLand since <?php echo e($yearEstablished); ?>, about 12 miles north of DeBary. The same crew works the city every week &mdash; not a storm-chasing outfit that disappears by month&rsquo;s end.</p>
+        <p>Based in DeLand since <?php echo e($yearEstablished); ?>, about 12 miles north of DeBary. The crew is here for routine pruning in the dry season as well as cleanup after a storm.</p>
       </article>
       <article class="dby-why-card card-tint-2 reveal-delay-2" data-animate>
         <div class="dby-why-card__icon"><?php echo icon('tree-deciduous'); ?></div>
@@ -728,8 +742,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       </article>
       <article class="dby-why-card card-tint-3 reveal-delay-3" data-animate>
         <div class="dby-why-card__icon"><?php echo icon('shield-check'); ?></div>
-        <h3>Licensed, Insured, In Writing</h3>
-        <p>Proof of insurance before we start, free written estimates within 24 hours, and debris hauling spelled out in the quote &mdash; the paperwork DeBary HOAs and homeowners can count on.</p>
+        <h3>Proof and Paperwork</h3>
+        <p>Proof of liability and workers&rsquo; compensation coverage is available before we start, and debris hauling is spelled out in the written quote, which is what DeBary HOA boards usually ask for first.</p>
       </article>
     </div>
   </div>
@@ -746,7 +760,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="dby-shell" data-animate>
       <span class="eyebrow-label">Good Questions</span>
       <h2>DeBary tree service questions, answered</h2>
-      <p class="answer-block">Three of the things DeBary homeowners and HOA managers ask us most &mdash; and if yours isn&rsquo;t here, send it through the estimate form and we&rsquo;ll answer within 24 hours.</p>
+      <p class="answer-block">These are the three questions DeBary homeowners and HOA managers bring up most. Send any other question through the estimate form and it will be answered along with your quote.</p>
     </div>
 
     <div class="dby-faq-grid">
@@ -766,16 +780,18 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 <!-- ============ CLOSING CTA ============ -->
 <section class="dby-cta" aria-label="Get a tree service estimate in DeBary">
   <div class="container">
-    <span class="eyebrow-label">Free &middot; Written &middot; Within 24 Hours</span>
+    <span class="eyebrow-label">Free Visit &middot; Written Scope &amp; Price</span>
     <h2>Get a Free Estimate in DeBary</h2>
-    <p>Whether it&rsquo;s a young oak in Riviera Bella that needs shaping or a heritage tree near DeBary Hall you want to save, <?php echo e($siteName); ?> will walk the property, give you a straight read, and put an all-in price in writing &mdash; usually within 24 hours.</p>
+    <p>Tell us about the young oak in Riviera Bella that needs shaping or the old tree near DeBary Hall you want to save. <?php echo e($siteName); ?> will walk the property, say which approach fits, and send the scope and price in writing.</p>
     <div class="dby-actions">
-      <a href="/contact/" class="btn btn-accent btn-lg">Get My Free Estimate</a>
+      <a href="/contact/" class="btn btn-accent btn-lg">Request My Written Estimate</a>
       <a href="/services/" class="btn btn-outline-white btn-lg">See All Tree Services</a>
     </div>
   </div>
 </section>
 
 <p class="dby-last-updated">Last Updated: <?php echo date('F Y'); ?></p>
+
+</article>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

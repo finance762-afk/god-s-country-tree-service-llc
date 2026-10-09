@@ -20,7 +20,7 @@ $currentPage = 'service-area';
 
 // ---- SEO (V2.1 trade noun + V2.2 CTR meta) -----------------
 $pageTitle       = "Tree Service Deltona FL | {$gbpRating}★ ({$gbpReviewCount} Google Reviews)";
-$pageDescription = "Tree service in Deltona, FL from a DeLand crew rated {$gbpRating}★ from {$gbpReviewCount} Google reviews. Licensed & insured, 24/7 storm help, free 24-hour estimate: (407) 280-3484.";
+$pageDescription = "Tree service in Deltona, FL from a DeLand crew rated {$gbpRating}★ from {$gbpReviewCount} Google reviews. Pine and oak removal, storm cleanup, free written estimates: (407) 280-3484.";
 $canonicalUrl    = $siteUrl . '/service-area/deltona/';
 
 // ---- Images (content/image-manifest.md allocation) ----------
@@ -32,19 +32,19 @@ $ogImage          = $siteUrl . p1_best_src($heroImage);
 
 $storyPhoto = [
     'src' => $imgBase . '1784062731804-lsu1hl-35521317_2074717906082144_948088325212733440_n.webp',
-    'alt' => 'Boom lift crew topping a tall pine over a home near Deltona, FL',
+    'alt' => 'Boom lift crew topping a tall pine over a home',
 ];
 $proofPhoto = [
     'src' => $imgBase . '1784062753583-2wp304-76756943_2456228011264463_6144757071268020224_n.webp',
-    'alt' => 'Grapple loader carrying a fresh-cut oak log section on a Deltona, FL removal',
+    'alt' => 'Grapple loader carrying a fresh-cut oak log section',
 ];
 
 // ---- Storm scorecard band (signature stats) -----------------
 $dltScorecard = [
-    ['num' => '90k+',  'label' => "Deltona residents — Volusia County's largest city", 'icon' => 'users'],
-    ['num' => '2',     'label' => 'Direct hurricane hits since 2004 (Charley &amp; Irma)', 'icon' => 'wind'],
-    ['num' => '24hr',  'label' => 'Storm-response window for downed and hanging trees', 'icon' => 'clock'],
-    ['num' => '50mi',  'label' => 'Service radius from our DeLand home base', 'icon' => 'map-pin'],
+    ['num' => 'June 1', 'label' => 'Atlantic hurricane season opens and runs through November 30', 'icon' => 'wind'],
+    ['num' => '10mi',   'label' => 'From our DeLand base southeast to Deltona', 'icon' => 'map-pin'],
+    ['num' => '50mi',   'label' => 'Service radius around DeLand, which takes in all of Deltona', 'icon' => 'navigation'],
+    ['num' => '4',      'label' => 'Machines we own for the work: grapple loader, chipper, boom lift, stump grinder', 'icon' => 'truck'],
 ];
 
 // ---- Sandy-soil / sand-pine failure explainer bento ---------
@@ -52,22 +52,22 @@ $dltBento = [
     [
         'icon'  => 'trees',
         'title' => 'Tall sand &amp; slash pines',
-        'text'  => "Deltona's lots were planted thick with fast-growing sand and slash pines. They shoot up 60–80 feet with a narrow, top-heavy crown — a shape that catches hurricane gusts like a sail while the trunk stays comparatively thin.",
+        'text'  => "Many Deltona lots carry fast-growing sand and slash pines. They grow tall with a narrow, top-heavy crown, a shape that catches hurricane gusts like a sail while the trunk stays comparatively thin. A pine like that near a roof is the tree we are asked about most here.",
     ],
     [
         'icon'  => 'layers',
         'title' => 'Sandy, well-drained soil',
-        'text'  => "The well-drained sand that makes Deltona a dry, buildable ridge also gives roots little to grip. Saturate that sand with a tropical downpour and the whole root plate loosens — which is why so many Deltona pines uproot whole instead of snapping.",
+        'text'  => "The well-drained sand that keeps Deltona lots dry also gives roots little to grip. Saturate that sand with a tropical downpour and the whole root plate loosens, which is why Deltona pines often uproot whole instead of snapping.",
     ],
     [
         'icon'  => 'home',
         'title' => 'Quarter-acre lots, close targets',
-        'text'  => "The Mackle Brothers laid Deltona out as compact quarter-acre homesites, so a leaning 70-foot pine is usually taller than the distance to your roof, the neighbor's fence, or the pool screen. There is rarely room to let one fall whole.",
+        'text'  => "Deltona was laid out in compact quarter-acre homesites, so a leaning pine is often taller than the distance to your roof, the neighbor's fence or the pool screen. There is rarely room to let one fall whole, so we lower it in roped sections.",
     ],
     [
         'icon'  => 'droplets',
         'title' => 'Laurel oaks past their prime',
-        'text'  => "Many older Deltona Lakes yards lean on laurel oaks — a fast oak that hollows and drops heavy limbs by middle age. Over a City of Lakes waterfront lot, a failing laurel oak is the limb most likely to land somewhere expensive.",
+        'text'  => "Many older Deltona Lakes yards rely on laurel oaks, a fast-growing oak that tends to hollow and drop heavy limbs as it ages. On a lakefront lot, a failing laurel oak limb usually has a screen room, a fence or a roof underneath it.",
     ],
 ];
 
@@ -75,15 +75,15 @@ $dltBento = [
 $faqs = [
     [
         'q' => 'Do you offer tree service and storm cleanup in Deltona, FL?',
-        'a' => "Yes. God's Country Tree Service LLC works throughout Deltona from our DeLand base, about ten miles northwest. We handle tree removal, trimming, crown reduction, dead and hazardous tree work, and 24-hour storm cleanup for homes and businesses across Deltona Lakes, Arbor Ridge, Saxon Woods, and the rest of the City of Lakes.",
+        'a' => "God's Country Tree Service LLC offers tree service and storm cleanup throughout Deltona from its DeLand base, about ten miles northwest. The crew handles tree removal, trimming, crown reduction, dead and hazardous tree work, and emergency cleanup for homes and businesses across Deltona Lakes, Arbor Ridge, Saxon Woods and the rest of the City of Lakes.",
     ],
     [
         'q' => 'How fast can you get to a fallen tree in Deltona after a storm?',
-        'a' => "We prioritize Deltona calls where a tree is on a house, blocking a driveway, or hanging over a target, usually reaching them within 24 hours of a storm passing. Because Deltona sits inside our roughly 50-mile radius, the same crew and equipment that serve DeLand handle Deltona — no waiting on an out-of-town outfit to arrive.",
+        'a' => "God's Country Tree Service LLC provides 24-hour emergency storm response in Deltona, with same-day response for genuine hazards. A tree on a house, across a driveway or hanging over a target goes to the front of the list. Deltona sits inside our roughly 50-mile radius, so the crew and equipment come from DeLand, about ten miles away.",
     ],
     [
         'q' => 'Why do so many Deltona pines come down in hurricanes?',
-        'a' => "Deltona's sandy, well-drained lots grow tall sand and slash pines with top-heavy crowns and shallow root plates. When Charley (2004) and Irma (2017) saturated that sand and then hit with sustained wind, the pines uprooted or snapped high. Proactive crown reduction and removing the weakest trees before the season is the cheapest way to cut that risk.",
+        'a' => "Deltona pines come down in hurricanes because sandy, well-drained lots grow tall sand and slash pines with top-heavy crowns and shallow root plates. When a storm saturates that sand and then brings sustained wind, the pines uproot or snap high. Reducing crowns and removing the weakest trees before the season opens on June 1 lowers that risk.",
     ],
 ];
 
@@ -604,12 +604,17 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
   .dlt-cta .dlt-actions { flex-direction: column; align-items: stretch; }
   .dlt-drop::first-letter { font-size: 3.4rem; }
 }
+/* ---- Inline body links (v8 content pass) ---- */
+.area-article p a { text-decoration: underline; }
 </style>
+
+<article class="area-article">
 
 <!-- ============ HERO (C1.4 layered) ============ -->
 <section class="dlt-hero has-hero-bg" aria-label="Tree service in Deltona, Florida">
   <?php echo p1_hero_picture($heroImage); ?>
-  <div class="container">
+  <div class="container hero-with-form">
+    <div class="hero-copy">
     <nav class="dlt-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span class="dlt-sep" aria-hidden="true">/</span>
@@ -622,19 +627,27 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
 
     <h1>Tree Service in Deltona, FL &mdash; <span class="text-accent">Storm-Ready Crews for the City of Lakes</span></h1>
 
-    <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving Deltona and the rest of Volusia County within about 50 miles since <?php echo e($yearEstablished); ?>. Controlled removals, crown reduction, and 24-hour storm cleanup &mdash; with free written estimates inside 24 hours and debris hauled away.</p>
+    <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving Deltona and the rest of Volusia County within about 50 miles since <?php echo e($yearEstablished); ?>. The crew handles controlled pine and oak removals, crown reduction and emergency storm cleanup in Deltona. The on-site visit and written estimate are free, and the estimate arrives within 24 hours.</p>
 
     <div class="dlt-actions">
-      <a href="/contact/" class="btn btn-accent btn-lg">Get a Free Estimate</a>
+      <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Estimate</a>
       <a href="/services/" class="btn btn-outline-white btn-lg">See Services</a>
     </div>
 
     <div class="hero-trust">
       <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
       <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in Volusia County</span>
-      <span class="hero-trust-item"><?php echo icon('zap'); ?> 24-Hour Storm Response</span>
-      <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
+      <span class="hero-trust-item"><?php echo icon('zap'); ?> Emergency Storm Response</span>
+      <span class="hero-trust-item"><?php echo icon('map-pin'); ?> About 10 Miles from DeLand</span>
     </div>
+    </div>
+
+    <?php
+    $heroFormLocation = 'hero-area-deltona';
+    $heroFormService  = '';
+    $heroFormHeading  = 'Get a Free Estimate in Deltona';
+    include $_SERVER['DOCUMENT_ROOT'] . '/includes/hero-form.php';
+    ?>
   </div>
 </section>
 
@@ -646,7 +659,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
       <h2>Do you offer tree service and storm cleanup in Deltona, FL?</h2>
     </div>
     <div class="dlt-lede">
-      <p class="answer-block dlt-drop" data-animate><?php echo e($siteName); ?> provides full tree service in Deltona, FL &mdash; removal, trimming, crown reduction, dead and hazardous tree work, and 24-hour storm cleanup. We run out of DeLand, roughly ten miles northwest, so the crew that cares for Volusia County's oaks is the same one that clears your Deltona lot after a hurricane, usually with a free written estimate inside 24 hours.</p>
+      <p class="answer-block dlt-drop" data-animate><?php echo e($siteName); ?> provides tree removal, trimming, crown reduction, dead and hazardous tree work and storm cleanup throughout Deltona, FL. The crew drives about 10 miles southeast from DeLand with its own grapple loader, chipper, boom lift and stump grinder. Deltona is one of six communities on our <a href="/service-area/">Volusia County service area map</a>.</p>
     </div>
   </div>
 </section>
@@ -661,14 +674,15 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
   <div class="container">
     <div class="dlt-title" data-animate>
       <span class="eyebrow-label">The City of Lakes</span>
-      <h2>Deltona trees, Deltona conditions &mdash; not a template</h2>
+      <h2>What kinds of trees grow on Deltona&rsquo;s quarter-acre lots?</h2>
     </div>
 
     <div class="dlt-story-grid">
       <div class="dlt-story-copy" data-animate="left">
-        <p><strong>Deltona is the largest city in Volusia County</strong>, home to more than 90,000 residents on ground the Mackle Brothers' General Development Corporation began carving out of the pine flatwoods in 1962. What sold as a quiet, affordable "City of Lakes" &mdash; dozens of named lakes, a southern edge fronting Lake Monroe and the St. Johns River &mdash; also planted tens of thousands of fast-growing pines on compact quarter-acre lots. Six decades later, those trees are big, and many stand close to houses that were built right up beside them.</p>
-        <p>Established neighborhoods like Deltona Lakes, Arbor Ridge, and Saxon Woods share the same story: sandy, well-drained soil, tall sand and slash pines, and aging laurel and live oaks. It is a beautiful canopy and a demanding one. When you go looking for <strong>tree service near me in Deltona</strong>, you want a crew that already knows how these particular trees behave &mdash; not one learning your soil on the clock.</p>
-        <p>We have worked this ground since <?php echo e($yearEstablished); ?>. Deltona straddles the Interstate 4 corridor between DeLand and Orlando, so we are on scene fast, and we have cleaned up after the storms that define tree work here &mdash; Hurricane Charley in 2004 and Hurricane Irma in 2017 both left Deltona with pines snapped high and root plates torn out of the sand.</p>
+        <p>Deltona&rsquo;s quarter-acre lots mostly carry tall sand and slash pines, laurel oaks and live oaks rooted in dry, sandy soil. That mix is why most of our Deltona calls are for <a href="/services/tree-removal/">roped tree removal close to a house</a> or for <a href="/services/crown-reduction-shaping/">crown reduction on a top-heavy canopy</a>.</p>
+        <p><strong>Deltona is the largest city in Volusia County</strong> and calls itself the City of Lakes. Its southern edge fronts Lake Monroe and the St. Johns River, and its homesites were laid out small, so mature pines and oaks now stand a short distance from roofs, fences and pool screens.</p>
+        <p>Established neighborhoods like Deltona Lakes, Arbor Ridge and Saxon Woods share the same conditions: well-drained sand, pines that have outgrown their lots, and aging laurel oaks. People who search for <strong>tree service near me in Deltona</strong> usually have one of three problems, and each has its own fix: removal for a leaning pine, reduction for an overextended oak, deadwood pruning for a tree worth keeping.</p>
+        <p>We have worked this ground since <?php echo e($yearEstablished); ?>. Deltona sits along the Interstate 4 corridor about 10 miles from our DeLand base, and the shopping plazas we maintain along Howland Boulevard get the same crew and machines as a backyard takedown.</p>
       </div>
 
       <figure class="dlt-figure" data-animate="right">
@@ -688,9 +702,9 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
 <section class="dlt-section dlt-section--dark dlt-numbered dlt-scorecard" data-num="03" aria-label="Deltona storm scorecard">
   <div class="container">
     <div class="dlt-title" data-animate>
-      <span class="eyebrow-label">Storm Scorecard</span>
-      <h2>What Deltona's storm history means for your trees</h2>
-      <p class="answer-block">Deltona sits squarely in Central Florida's hurricane path, and its sandy ridge grows exactly the kind of tall, top-heavy pine that fails in high wind. The numbers below are why proactive removal and crown reduction pay off before the season, not after.</p>
+      <span class="eyebrow-label">Storm Season Facts</span>
+      <h2>When should Deltona homeowners get trees ready for hurricane season?</h2>
+      <p class="answer-block">Deltona homeowners should have risky trees inspected and reduced before hurricane season opens on June 1. Atlantic hurricane season runs through November 30, and a pine that leans toward a roof is far simpler to take down on a dry spring day than after a storm has loosened its roots.</p>
     </div>
 
     <div class="dlt-scorecard-grid">
@@ -711,7 +725,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="dlt-title" data-animate>
       <span class="eyebrow-label">Sand, Pines &amp; Wind</span>
       <h2>Why do Deltona's trees fail when the hurricanes come?</h2>
-      <p class="answer-block">Deltona's trees fail for reasons written into the land itself: tall pines with narrow crowns, sandy soil that lets go under water, quarter-acre lots that put targets close, and oaks that hollow with age. Understanding those four forces is how we decide what to remove, reduce, or leave standing.</p>
+      <p class="answer-block">Deltona&rsquo;s trees fail in hurricanes because tall, top-heavy pines stand in sandy soil that loosens when it is saturated. Add small lots that put roofs inside the fall zone and laurel oaks that hollow with age, and the four conditions below decide what we remove, reduce or leave standing.</p>
     </div>
 
     <div class="dlt-bento">
@@ -736,8 +750,8 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
   <div class="container">
     <div class="dlt-title dlt-services-intro" data-animate>
       <span class="eyebrow-label">What We Do in Deltona</span>
-      <h2>Tree services available in Deltona, FL</h2>
-      <p class="answer-block"><?php echo e($siteName); ?> brings its full service list to Deltona: controlled tree removal, emergency storm response, fallen-tree cleanup, dead and hazardous tree work, trimming, and crown reduction. One licensed crew handles the climb, the rigging, the grapple loading, and the haul-off &mdash; no second contractor to chase.</p>
+      <h2>Which tree services are available in Deltona, FL?</h2>
+      <p class="answer-block">The tree services Deltona homeowners book most are controlled removal, storm cleanup, fallen-tree cleanup, hazardous-tree work, trimming and crown reduction. <?php echo e($siteName); ?> runs each one with a single crew that climbs, rigs, loads and hauls. When a storm puts a tree on a roof or driveway, start with our <a href="/services/emergency-tree-service-storm-cleanup/">emergency storm cleanup service</a>.</p>
     </div>
 
     <?php renderServiceCards(['tree-removal', 'emergency-tree-service-storm-cleanup', 'fallen-tree-removal-cleanup', 'dead-hazardous-tree-removal', 'tree-trimming-services', 'crown-reduction-shaping'], $serviceCardData); ?>
@@ -754,25 +768,25 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
   <div class="container">
     <div class="dlt-title" data-animate>
       <span class="eyebrow-label">Why God's Country</span>
-      <h2>Why Deltona homeowners call God's Country Tree Service</h2>
-      <p class="answer-block">Because a local, licensed crew that knows Deltona's sand-pine lots is worth more than a truck that appears only after a hurricane. Here is what sets us apart on the City of Lakes.</p>
+      <h2>Why do Deltona homeowners call God&rsquo;s Country Tree Service?</h2>
+      <p class="answer-block">Deltona homeowners call God&rsquo;s Country Tree Service because the crew is based about 10 miles away in DeLand and works here all year. The three reasons below cover the distance, what we know about sandy pine lots, and what the written estimate puts on paper before work starts.</p>
     </div>
 
     <div class="dlt-why-grid">
       <article class="dlt-why-card reveal-up reveal-delay-1" data-animate>
         <div class="dlt-why-icon"><?php echo icon('map-pin'); ?></div>
-        <h3>Ten minutes up the road</h3>
-        <p>Our DeLand base sits about ten miles from Deltona, right off the Interstate 4 corridor. That means fast estimates, faster storm response, and a crew that is here in February &mdash; not just the week after landfall.</p>
+        <h3>Ten miles up the road</h3>
+        <p>Our DeLand base sits about 10 miles northwest of Deltona, along the Interstate 4 corridor. The crew that answers a storm call in September is the same one that trims in February, so you are not explaining your yard to a new outfit each time.</p>
       </article>
       <article class="dlt-why-card reveal-up reveal-delay-2" data-animate>
         <div class="dlt-why-icon"><?php echo icon('trees'); ?></div>
         <h3>We know the sand-pine problem</h3>
-        <p>Top-heavy pines and hollowing laurel oaks on sandy Deltona lots behave differently than trees on clay. We read the lean, the root plate, and the target, and we tell you honestly what to remove, reduce, or leave standing.</p>
+        <p>Top-heavy pines and hollowing laurel oaks on sandy Deltona lots behave differently than trees on clay. We read the lean, the root plate and the target, then tell you plainly what to remove, reduce or leave standing.</p>
       </article>
       <article class="dlt-why-card reveal-up reveal-delay-3" data-animate>
         <div class="dlt-why-icon"><?php echo icon('clipboard-check'); ?></div>
-        <h3>Licensed, insured, accountable</h3>
-        <p>We carry insurance and can show proof before a saw starts &mdash; the paperwork storm-chasers can't produce. Every Deltona quote is written, itemized, and includes the debris hauling in most cases, so the price you approve is the price you pay.</p>
+        <h3>Proof and a written quote first</h3>
+        <p>Ask for proof of liability and workers&rsquo; compensation coverage and we will show it before a saw starts. Every Deltona quote is written after an on-site visit, and most include stump grinding and debris hauling, so the scope is settled up front.</p>
       </article>
     </div>
   </div>
@@ -789,7 +803,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
     <div class="dlt-title" data-animate>
       <span class="eyebrow-label">Deltona Questions</span>
       <h2>Common questions from Deltona homeowners</h2>
-      <p class="answer-block">Straight answers about serving Deltona, storm timing, and why the local pines come down. If yours isn't here, ask on the estimate form and we'll answer within 24 hours.</p>
+      <p class="answer-block">Straight answers about serving Deltona, storm timing and why the local pines come down. If yours is not here, ask it on the estimate form or call <?php echo e($phone); ?>.</p>
     </div>
 
     <div class="faq-grid" data-p1-dynamic>
@@ -809,16 +823,18 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
 <!-- ============ CLOSING CTA (radial glow) ============ -->
 <section class="dlt-cta" aria-label="Get a free tree service estimate in Deltona">
   <div class="container">
-    <span class="eyebrow-label">Free &middot; Written &middot; Within 24 Hours</span>
+    <span class="eyebrow-label">Free On-Site Visit &middot; Written Quote</span>
     <h2>Get a Free Estimate in Deltona</h2>
-    <p>Tell us about the leaning pine off the lake, the dead laurel oak over the driveway, or the whole overgrown Deltona lot. <?php echo e($siteName); ?> will walk the property, give you an honest read, and put a straight, all-in price in writing &mdash; usually within 24 hours.</p>
+    <p>Tell us about the leaning pine off the lake, the dead laurel oak over the driveway, or the whole overgrown Deltona lot. <?php echo e($siteName); ?> will walk the property, tell you what we would remove and what we would keep, and send the scope and price in writing.</p>
     <div class="dlt-actions">
-      <a href="/contact/" class="btn btn-accent btn-lg">Get a Free Estimate</a>
+      <a href="/contact/" class="btn btn-accent btn-lg">Request a Written Estimate</a>
       <a href="/services/" class="btn btn-outline-white btn-lg">See All Services</a>
     </div>
   </div>
 </section>
 
 <p class="dlt-updated">Last Updated: <?php echo date('F Y'); ?></p>
+
+</article>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

@@ -19,7 +19,7 @@ $currentPage = 'service-area';
 
 // ---- SEO ---------------------------------------------------
 $pageTitle       = "Tree Service Lake Helen FL | {$gbpRating}★ ({$gbpReviewCount} Google Reviews)";
-$pageDescription = "Tree service in Lake Helen, FL by a DeLand crew rated {$gbpRating}★ from {$gbpReviewCount} Google reviews. Heritage oak care, licensed & insured, free 24-hour estimate: (407) 280-3484.";
+$pageDescription = "Tree service in Lake Helen, FL by a DeLand crew rated {$gbpRating}★ from {$gbpReviewCount} Google reviews. Heritage oak pruning, crown reduction, free written estimate: (407) 280-3484.";
 $canonicalUrl    = $siteUrl . '/service-area/lake-helen/';
 
 // ---- Images (config $serviceAreas + intake allocation) -----
@@ -30,26 +30,26 @@ $ogImage          = $siteUrl . p1_best_src($heroImage);
 
 $photoCanopy = [
     'src' => $imgBase . '1784062761586-95i7hi-487384453_1464923548239483_3259835514318021231_n.webp',
-    'alt' => 'Climber topping a storm-stressed tree spar high against the sky near Lake Helen, FL',
+    'alt' => 'Climber topping a storm-stressed tree spar high against the sky',
 ];
 $photoOak = [
     'src' => $imgBase . '1784062730346-5nqz2k-31180126_2042462089307726_2780749710774763520_n.webp',
-    'alt' => 'Roped climber sectioning limbs deep in a mature live oak canopy near Lake Helen, FL',
+    'alt' => 'Roped climber sectioning limbs deep in a mature live oak canopy',
 ];
 
 // ---- FAQs (Lake Helen specific) ----------------------------
 $faqs = [
     [
         'q' => 'Do you prune heritage oaks in Lake Helen without harming them?',
-        'a' => "Yes. God's Country Tree Service prunes Lake Helen's heritage live oaks the arborist way — small, targeted cuts that respect the branch collar, never lion-tailing or topping. In the Victorian historic district we lean toward light structural pruning and crown reduction so the canopy that shades those streets stays intact for the next generation.",
+        'a' => "God's Country Tree Service prunes Lake Helen's heritage live oaks with small, targeted cuts that respect the branch collar, and never lion-tails or tops them. In the Victorian historic district we lean toward light structural pruning and crown reduction so the canopy that shades those streets stays intact.",
     ],
     [
         'q' => 'Do I need a permit to remove a tree in Lake Helen, FL?',
-        'a' => "Possibly. Lake Helen and Volusia County protect certain large hardwoods, and the historic district around Cassadaga watches its canopy closely, so a big live oak can require review before removal. We flag permit questions during your free estimate so you know what applies to your Lake Helen lot before any saw starts.",
+        'a' => "A tree removal in Lake Helen may need a permit or review, particularly for a large live oak. The rule depends on the tree and the lot, so confirm it with the City of Lake Helen or Volusia County before work is scheduled. We point out likely permit questions during the estimate visit, before any saw starts.",
     ],
     [
         'q' => 'How fast can you get to Lake Helen after a storm?',
-        'a' => "Lake Helen sits only about six miles from our DeLand yard, just off Interstate 4, so we are usually one of the first crews rolling in after a hurricane. God's Country Tree Service clears fallen limbs, opens driveways, and stabilizes hazard trees quickly, then schedules the careful heritage-tree work once the emergency is handled.",
+        'a' => "God's Country Tree Service responds the same day to genuine storm hazards in Lake Helen, such as a tree on a roof or across a driveway. Lake Helen is about six miles from our DeLand yard, just off Interstate 4. The crew clears fallen limbs and stabilizes hazard trees first, then schedules the careful heritage-tree work once the emergency is handled.",
     ],
 ];
 
@@ -59,7 +59,7 @@ $areaServiceSchema = [
     '@type'       => 'Service',
     '@id'         => $canonicalUrl . '#service',
     'name'        => 'Tree Service in Lake Helen, FL',
-    'description' => "Certified-arborist tree service in Lake Helen, Florida — heritage-oak pruning, crown reduction, hazardous tree removal, and storm cleanup from God's Country Tree Service, licensed and insured, based in DeLand.",
+    'description' => "Tree service in Lake Helen, Florida from God's Country Tree Service, based in DeLand: heritage-oak pruning, crown reduction, hazardous tree removal and storm cleanup.",
     'serviceType' => 'Tree Service',
     'url'         => $canonicalUrl,
     'provider'    => ['@id' => $siteUrl . '/#organization'],
@@ -613,12 +613,17 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   .lh-cta-actions { flex-direction: column; align-items: stretch; }
   .lh-prose p.lh-drop-cap::first-letter { font-size: 3.4rem; }
 }
+/* ---- Inline body links (v8 content pass) ---- */
+.area-article p a { text-decoration: underline; }
 </style>
+
+<article class="area-article">
 
 <!-- ============ HERO (C1.4 layered) ============ -->
 <section class="lh-hero has-hero-bg" aria-label="Tree service in Lake Helen, Florida">
   <?php echo p1_hero_picture($heroImage); ?>
-  <div class="container">
+  <div class="container hero-with-form">
+    <div class="hero-copy">
     <nav class="lh-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span class="lh-sep" aria-hidden="true">/</span>
@@ -631,19 +636,27 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <h1>Tree Service in Lake Helen, FL &mdash; <span class="lh-accent">Gentle on the Gem&rsquo;s Heritage Oaks</span></h1>
 
-    <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, caring for Lake Helen&rsquo;s canopy since <?php echo e($yearEstablished); ?>. We serve Lake Helen and the surrounding communities within about 50 miles across Volusia County &mdash; certified-arborist pruning, crown reduction, hazardous removals, and storm cleanup, with free written estimates within 24 hours.</p>
+    <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, caring for Lake Helen&rsquo;s canopy since <?php echo e($yearEstablished); ?>. Lake Helen is about 6 miles southeast of our base, well within the roughly 50 miles we cover across Volusia County. A certified arborist on staff guides the pruning, crown reduction and hazardous removals, and written estimates are free and sent within 24 hours.</p>
 
     <div class="lh-hero-actions">
-      <a href="/contact/" class="btn btn-accent btn-lg">Get a Free Estimate</a>
+      <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Estimate</a>
       <a href="/services/" class="btn btn-outline-white btn-lg">Explore Our Services</a>
     </div>
 
     <div class="lh-hero-trust">
       <span><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
       <span><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in Volusia County</span>
-      <span><?php echo icon('tree-deciduous'); ?> Certified Arborist Care</span>
+      <span><?php echo icon('tree-deciduous'); ?> Heritage Oak Pruning</span>
       <span><?php echo icon('map-pin'); ?> ~6 Miles from Our DeLand Yard</span>
     </div>
+    </div>
+
+    <?php
+    $heroFormLocation = 'hero-area-lake-helen';
+    $heroFormService  = '';
+    $heroFormHeading  = 'Get a Free Estimate in Lake Helen';
+    include $_SERVER['DOCUMENT_ROOT'] . '/includes/hero-form.php';
+    ?>
   </div>
 </section>
 
@@ -654,7 +667,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <span class="lh-eyebrow-label">The Short Answer</span>
       <h2>Who prunes heritage oaks in Lake Helen, FL without harming them?</h2>
     </div>
-    <p class="answer-block" data-animate><?php echo e($siteName); ?> prunes Lake Helen&rsquo;s heritage live oaks the way certified arborists are trained to &mdash; small, purposeful cuts at the branch collar, no topping and no lion-tailing. In a Victorian historic district where the canopy is the character of the town, we favor light structural pruning and crown reduction that keeps those old oaks strong and standing for decades.</p>
+    <p class="answer-block" data-animate><?php echo e($siteName); ?> prunes Lake Helen&rsquo;s heritage live oaks with small cuts at the branch collar, never topping and never lion-tailing. In the Victorian historic district the canopy is the character of the town, so we favor light structural pruning and crown reduction. Lake Helen is the closest stop on <a href="/service-area/">our Volusia County service area</a>.</p>
   </div>
 </section>
 
@@ -668,17 +681,19 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="lh-title" data-animate>
       <span class="lh-eyebrow-label">Why Lake Helen Is Different</span>
-      <h2>A canopied Victorian town that guards its oaks</h2>
+      <h2>What makes tree work in Lake Helen different?</h2>
     </div>
 
     <div class="lh-prose">
-      <p class="lh-drop-cap" data-animate>Incorporated in 1888 and nicknamed the &ldquo;Gem of Florida,&rdquo; Lake Helen is one of the quietest, most tree-shaded corners of western Volusia County. Its compact Victorian historic district is stitched together by big live oaks and longleaf pines that residents genuinely protect &mdash; the kind of trees that predate half the houses under them. Working here is less about clearing lots and more about keeping a canopy healthy, which is exactly the difference between a chainsaw crew and a certified-arborist crew.</p>
+      <p class="lh-drop-cap" data-animate>Tree work in Lake Helen is different because the town&rsquo;s Victorian historic district is defined by its live oaks and longleaf pines. Most visits here are <a href="/services/tree-pruning-services/">preservation pruning on mature oaks</a> or <a href="/services/crown-reduction-shaping/">crown reduction to lighten long limbs</a>, with removal kept for trees that cannot be made safe.</p>
+      
+      <p data-animate>Nicknamed the &ldquo;Gem of Florida,&rdquo; Lake Helen is one of the quietest, most tree-shaded corners of western Volusia County. Many of the oaks in its compact historic district are older than the houses under them, and residents watch what happens to them.</p>
 
-      <p data-animate>Lake Helen also adjoins the <strong>Southern Cassadaga Spiritualist Camp</strong>, founded in 1894 and listed as a National Historic District. The moss-draped oaks arching over Cassadaga&rsquo;s narrow lanes are part of what makes the place feel frozen in time, and they demand a careful, preservation-minded hand. A wrong topping cut on one of those trees isn&rsquo;t just bad arboriculture &mdash; in a district like this, it changes the streetscape.</p>
+      <p data-animate>Lake Helen also adjoins the <strong>Southern Cassadaga Spiritualist Camp</strong>. The moss-draped oaks arching over Cassadaga&rsquo;s narrow lanes are part of why the place feels unchanged, and a wrong topping cut on one of them alters the streetscape for everyone who lives there.</p>
 
-      <p data-animate>The town&rsquo;s low-density character comes from its lakes and farms. <strong>Lake Helen and Lake Macy</strong> anchor the residential streets, and the surrounding blueberry farms keep the edges rural and green. That mix of mature yard trees, lakefront hardwoods, and open agricultural land means we see everything here &mdash; from a single heritage oak that needs thoughtful crown reduction to a storm-snapped pine over a farm outbuilding.</p>
+      <p data-animate><strong>Lake Helen and Lake Macy</strong> anchor the residential streets, and the surrounding blueberry farms keep the edges rural. That mix of yard trees, lakefront hardwoods and open farmland brings every kind of call, from one old oak that needs crown reduction to a storm-snapped pine over a farm outbuilding.</p>
 
-      <p data-animate>Because Lake Helen sits right between DeLand and Deltona, just off <strong>Interstate 4</strong> and only about six miles from our yard, we can be on-site quickly &mdash; whether it&rsquo;s a scheduled pruning visit or a hazard tree after a summer storm. If you&rsquo;ve been searching for tree service near me in Lake Helen, you want a crew that already knows this canopy, not one passing through after a hurricane.</p>
+      <p data-animate>Lake Helen sits between DeLand and Deltona, just off <strong>Interstate 4</strong> and about six miles from our yard. If you have been searching for tree service near me in Lake Helen, ask whoever you call how they prune an old live oak. The answer should not include topping.</p>
     </div>
   </div>
 </section>
@@ -688,8 +703,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="lh-title" data-animate>
       <span class="lh-eyebrow-label">Preserve, Don&rsquo;t Just Cut</span>
-      <h2>Heritage-tree care for Lake Helen&rsquo;s historic district</h2>
-      <p class="answer-block"><?php echo e($siteName); ?> treats Lake Helen&rsquo;s big oaks as assets to protect, not obstacles to clear. The goal is a stronger, safer canopy that stays &mdash; removal only when a tree is genuinely a hazard.</p>
+      <h2>How do you care for heritage trees in Lake Helen&rsquo;s historic district?</h2>
+      <p class="answer-block"><?php echo e($siteName); ?> cares for heritage trees in Lake Helen&rsquo;s historic district by pruning first and removing only when a tree is a hazard. The photos and notes below show what that means on a real oak: collar cuts, measured crown reduction and a plain explanation at the estimate.</p>
     </div>
 
     <div class="lh-heritage-bento">
@@ -726,7 +741,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <div class="lh-cass-badge"><?php echo icon('landmark'); ?></div>
       <div>
         <h3>A note on the Cassadaga historic district</h3>
-        <p>The oaks lining the Southern Cassadaga Spiritualist Camp &mdash; a National Historic District since its 1894 founding &mdash; are part of Lake Helen&rsquo;s identity. Work near them calls for extra restraint: light pruning, documented decisions, and a clear read on any permit questions before a saw touches a protected tree. That is the preservation-minded standard we bring to every heritage tree in Lake Helen.</p>
+        <p>The oaks lining the Southern Cassadaga Spiritualist Camp are part of Lake Helen&rsquo;s identity. Work near them calls for extra restraint: light pruning, a record of what was cut and why, and a check with the City of Lake Helen or Volusia County on any permit question before a saw touches a protected tree.</p>
       </div>
     </aside>
   </div>
@@ -742,9 +757,9 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="lh-title" data-animate>
       <span class="lh-eyebrow-label">What We Do Here</span>
-      <h2>Tree services available in Lake Helen, FL</h2>
+      <h2>Which tree services are available in Lake Helen, FL?</h2>
     </div>
-    <p class="answer-block" data-animate><?php echo e($siteName); ?> brings the full range of arborist-led tree care to Lake Helen &mdash; from delicate heritage-oak pruning and crown reduction to hazardous tree removal and post-storm cleanup. Every job starts with an honest assessment and a free written estimate within 24 hours.</p>
+    <p class="answer-block" data-animate>The tree services available in Lake Helen are arborist consultation, pruning, crown reduction, maintenance, hazardous tree removal and trimming. <?php echo e($siteName); ?> starts each job with an on-site assessment and a written estimate. For a tree you are unsure about, begin with <a href="/services/certified-arborist-services/">an arborist assessment of the tree&rsquo;s health and structure</a>.</p>
 
     <?php renderServiceCards(['certified-arborist-services', 'tree-pruning-services', 'crown-reduction-shaping', 'tree-maintenance-care', 'dead-hazardous-tree-removal', 'tree-trimming-services'], $serviceCardData); ?>
   </div>
@@ -760,26 +775,27 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="lh-title" data-animate>
       <span class="lh-eyebrow-label">Why Lake Helen Calls Us</span>
-      <h2>Why homeowners choose God&rsquo;s Country in Lake Helen</h2>
+      <h2>Why do Lake Helen homeowners choose God&rsquo;s Country?</h2>
+      <p class="answer-block">Lake Helen homeowners choose God&rsquo;s Country because the crew treats an old oak as something to keep. The three points below cover how the save-or-remove call is made, how close the DeLand yard is, and what paperwork comes with the job.</p>
     </div>
 
     <div class="lh-why-grid">
       <article class="lh-why-card card-tint-1 reveal-delay-1" data-animate>
         <div class="lh-why-icon"><?php echo icon('clipboard-check'); ?></div>
-        <h3>Certified-arborist judgment</h3>
-        <p>In a town built around its canopy, the save-or-remove call matters. Our certified-arborist approach favors preserving Lake Helen&rsquo;s heritage oaks whenever the tree can be made safe &mdash; and says so plainly.</p>
+        <h3>A save-or-remove call you can follow</h3>
+        <p>In a town built around its canopy, the save-or-remove call matters. We preserve Lake Helen&rsquo;s heritage oaks whenever the tree can be made safe, and we explain the reasoning in plain terms when it cannot.</p>
       </article>
 
       <article class="lh-why-card card-tint-2 reveal-delay-2" data-animate>
         <div class="lh-why-icon"><?php echo icon('map-pin'); ?></div>
         <h3>Local, not passing through</h3>
-        <p>Our DeLand yard is about six miles from Lake Helen, just off I-4. We are the crew that&rsquo;s here in February for scheduled pruning &mdash; not only the week after a hurricane, then gone.</p>
+        <p>Our DeLand yard is about six miles from Lake Helen, just off I-4. We are here in February for scheduled pruning as well as in September when a storm has come through.</p>
       </article>
 
       <article class="lh-why-card card-tint-3 reveal-delay-3" data-animate>
         <div class="lh-why-icon"><?php echo icon('file-check'); ?></div>
-        <h3>Licensed, insured, in writing</h3>
-        <p>Every Lake Helen job comes with proof of insurance on request and a free written estimate within 24 hours &mdash; permit questions on protected trees flagged before any work begins.</p>
+        <h3>Insurance proof and a written scope</h3>
+        <p>Every Lake Helen job comes with proof of insurance on request and a written estimate after the site visit, with permit questions on protected trees raised before any work begins.</p>
       </article>
     </div>
   </div>
@@ -810,16 +826,18 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 <!-- ============ CLOSING CTA ============ -->
 <section class="lh-cta" aria-label="Get a free tree service estimate in Lake Helen">
   <div class="container">
-    <span class="lh-eyebrow-label">Free &middot; Written &middot; Within 24 Hours</span>
+    <span class="lh-eyebrow-label">No-Cost Visit &middot; Estimate in Writing</span>
     <h2>Get a Free Estimate in Lake Helen</h2>
-    <p>Whether it&rsquo;s a heritage oak that needs a careful hand, a hazard pine over the roof, or storm cleanup along the lake, <?php echo e($siteName); ?> will walk the property, give you an honest read, and put a straight price in writing &mdash; usually within 24 hours.</p>
+    <p>Tell us about the heritage oak that needs a careful hand, the hazard pine over the roof, or the storm debris along the lake. <?php echo e($siteName); ?> will walk the property, tell you what can be saved, and send a written price.</p>
     <div class="lh-cta-actions">
-      <a href="/contact/" class="btn btn-accent btn-lg">Get a Free Estimate</a>
+      <a href="/contact/" class="btn btn-accent btn-lg">Request a Written Estimate</a>
       <a href="/services/" class="btn btn-outline-white btn-lg">Explore Our Services</a>
     </div>
   </div>
 </section>
 
 <p class="lh-last-updated">Last Updated: <?php echo date('F Y'); ?></p>
+
+</article>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

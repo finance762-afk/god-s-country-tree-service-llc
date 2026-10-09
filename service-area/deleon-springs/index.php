@@ -22,7 +22,7 @@ $currentPage = 'service-area';
 
 // ---- SEO (V2.1 trade noun + V2.2 CTR meta) ----
 $pageTitle       = "Tree Service DeLeon Springs FL | {$gbpRating}★ {$gbpReviewCount} Google Reviews";
-$pageDescription = "Tree service in DeLeon Springs, FL rated {$gbpRating}★ from {$gbpReviewCount} Google reviews. Big-acreage & land clearing, licensed & insured, free 24-hour estimate: (407) 280-3484.";
+$pageDescription = "Tree service in DeLeon Springs, FL rated {$gbpRating}★ from {$gbpReviewCount} Google reviews. Big-tree removal, land and brush clearing, free written estimates: (407) 280-3484.";
 $canonicalUrl    = $siteUrl . '/service-area/deleon-springs/';
 
 // ---- Images (image-manifest.md allocation) ----
@@ -35,11 +35,11 @@ $ogImage          = $siteUrl . p1_best_src($heroImage);
 $zigPhotos = [
     'slab' => [
         'src' => $imgBase . '1784062755583-5oqzq0-161812504_2868738946680032_6599345448414427184_n.webp',
-        'alt' => 'God\'s Country crew member holding a huge cross-cut trunk slab after a large-tree removal near DeLeon Springs, FL',
+        'alt' => 'God\'s Country crew member holding a huge cross-cut trunk slab after a large-tree removal',
     ],
     'boomlift' => [
         'src' => $imgBase . '1784062737583-f7n0kp-37107879_2101564903397444_7138537925750292480_n.webp',
-        'alt' => 'Chip truck and boom lift removing a tall double-trunk tree on a rural DeLeon Springs, FL homestead',
+        'alt' => 'Chip truck and boom lift removing a tall double-trunk tree beside a home',
     ],
 ];
 
@@ -48,43 +48,43 @@ $zigRows = [
     [
         'photo'   => 'slab',
         'eyebrow' => 'Big-Tree Removal',
-        'title'   => 'Old-growth pines and live oaks on the homestead',
-        'body'    => 'The large-acreage lots around DeLeon Springs grow trees to match — 80-foot slash pines, spreading live oaks, and hardwood-hammock giants that a homeowner cannot safely tackle alone. We section them down on ropes, buck the trunks, and load the wood with a grapple so nothing free-falls near the barn, the well house, or the pasture fence.',
+        'title'   => 'Big pines and live oaks on the homestead',
+        'body'    => 'The large-acreage lots around DeLeon Springs grow trees to match: tall slash pines, spreading live oaks and hardwood-hammock trees that a landowner cannot safely tackle alone. We section them down on ropes, buck the trunks and load the wood with a grapple, so nothing free-falls near the barn, the well house or the pasture fence.',
     ],
     [
         'photo'   => 'boomlift',
-        'eyebrow' => 'Land & Lot Clearing',
-        'title'   => 'Clearing rural lots and building pads north of DeLand',
-        'body'    => 'Buying raw acreage off US-17 or expanding a homestead usually means clearing a tangle of scrub oak, pine, and palmetto before anything else happens. We drop the trees, chip the brush, and open up building pads, pasture, and access lanes — turning an overgrown DeLeon Springs lot into ground you can actually use.',
+        'eyebrow' => 'Land & Brush Clearing',
+        'title'   => 'Clearing rural lots and brush north of DeLand',
+        'body'    => 'Buying raw acreage off US-17 or expanding a homestead usually starts with a tangle of scrub oak, pine and palmetto. For land clearing and brush clearing we drop the trees, chip the brush and open up building pads, pasture and access lanes. The written estimate is based on a walk of the ground, because no two DeLeon Springs parcels are overgrown the same way.',
     ],
     [
         'photo'   => 'slab',
         'eyebrow' => 'Skid-Steer & Grapple Work',
-        'title'   => 'Machine muscle for large rural DeLeon Springs jobs',
-        'body'    => 'Big lots need big equipment. Our skid steer and grapple loader move fallen trunks, haul stacked debris out to the road, grind stumps below grade, and grade the churned-up ground behind them. It is the difference between a tree merely being down and a rural DeLeon Springs property left clean, level, and ready for the next thing.',
+        'title'   => 'Machines sized for rural DeLeon Springs jobs',
+        'body'    => 'Big lots need big equipment. Our skid steer and grapple loader move fallen trunks and carry stacked debris out to the road, and the stump grinder takes stumps below grade. That is the difference between a tree that is merely down and a rural DeLeon Springs property left clear enough to mow, fence or build on.',
     ],
 ];
 
 // ---- Why-choose cards ----
 $whyCards = [
-    ['icon' => 'ruler',        'title' => 'Built for acreage',       'text' => 'Skid steer, grapple loader, boom lift, and chipper on one truck — the equipment that big DeLeon Springs lots and land-clearing jobs actually require, not a pickup and a chainsaw.'],
-    ['icon' => 'shield-check', 'title' => 'Licensed & insured',      'text' => 'Proof of insurance available before a saw starts — the paperwork the storm-chasing crews that roll through Volusia County after every hurricane can never show a DeLeon Springs landowner.'],
-    ['icon' => 'sprout',       'title' => 'Land-management minded',  'text' => 'Fern farms, pastures, and hardwood hammock make DeLeon Springs different. We clear what needs clearing and leave the healthy canopy that shades the homestead standing.'],
+    ['icon' => 'ruler',        'title' => 'Built for acreage',       'text' => 'Skid steer, grapple loader, boom lift and chipper are the machines big DeLeon Springs lots and land-clearing jobs call for, and we own them. A pickup and a chainsaw will not move an old pine off a fence line.'],
+    ['icon' => 'shield-check', 'title' => 'Coverage you can see first', 'text' => 'Proof of liability and workers\' compensation coverage is available before a saw starts. On rural property, where a crew may work out of sight of the house, that paperwork matters more, so ask for it.'],
+    ['icon' => 'sprout',       'title' => 'Land-management minded',  'text' => 'Fern farms, pastures and hardwood hammock make DeLeon Springs different. We clear what needs clearing and leave the healthy canopy that shades the homestead standing.'],
 ];
 
 // ---- FAQs (local, 40-80 words) ----
 $faqs = [
     [
         'q' => 'Do you handle large-acreage tree removal and land clearing in DeLeon Springs?',
-        'a' => "Yes — big-acreage work is one of the main reasons DeLeon Springs landowners call God's Country Tree Service. From single old-growth pines to full lot and pasture clearing off US-17, we bring the skid steer, grapple loader, and chipper the job needs, drop and buck the trees, and haul every bit of debris out. You get a free written estimate within 24 hours.",
+        'a' => "God's Country Tree Service handles large-acreage tree removal and land clearing in DeLeon Springs, from a single old pine to lot and pasture clearing off US-17. The crew brings the skid steer, grapple loader and chipper, drops and bucks the trees, and hauls the debris out. The scope is set on a site walk and confirmed in a written estimate.",
     ],
     [
-        'q' => 'How far is DeLeon Springs from your DeLand base, and do you charge extra to come out?',
-        'a' => "DeLeon Springs sits about seven miles north of our DeLand home base along US-17 — well inside the roughly 50-mile radius we cover across Volusia County. It is a short run for our crew, so a DeLeon Springs address is treated the same as a DeLand one. Your free estimate spells out the all-in price with no surprise travel add-on.",
+        'q' => 'How far is DeLeon Springs from your DeLand base?',
+        'a' => "DeLeon Springs is about seven miles north of our DeLand home base along US-17, well inside the roughly 50-mile radius we cover across Volusia County. It is a short run for the crew, and the written estimate lists the full scope of work for your address before anything is scheduled.",
     ],
     [
         'q' => 'Do I need a permit to clear or remove trees on rural DeLeon Springs property?',
-        'a' => "It depends. Because DeLeon Springs is unincorporated, tree work falls under Volusia County rules, and certain protected species or larger clearings can require a permit — especially near the Lake Woodruff refuge or wetland edges. We flag permit questions during your free estimate so you know what applies to your acreage before any cutting starts.",
+        'a' => "Clearing or removing trees on rural DeLeon Springs property can require a permit. DeLeon Springs is unincorporated, so tree work falls under Volusia County rules, and protected species, larger clearings and land near wetland edges or the Lake Woodruff refuge are the usual triggers. Confirm the requirement with Volusia County; we point out likely permit questions during the estimate visit.",
     ],
 ];
 
@@ -573,12 +573,17 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   .dls-cta .hero-actions { flex-direction: column; align-items: stretch; }
   .dls-drop-cap::first-letter { font-size: 3.4rem; }
 }
+/* ---- Inline body links (v8 content pass) ---- */
+.area-article p a { text-decoration: underline; }
 </style>
+
+<article class="area-article">
 
 <!-- ============ HERO (C1.4 layered) ============ -->
 <section class="dls-hero has-hero-bg" aria-label="Tree service in DeLeon Springs, Florida">
   <?php echo p1_hero_picture($heroImage); ?>
-  <div class="container">
+  <div class="container hero-with-form">
+    <div class="hero-copy">
     <nav class="dls-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span class="dls-sep" aria-hidden="true">/</span>
@@ -591,10 +596,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <h1>Tree Service in DeLeon Springs, FL &mdash; <span class="text-accent">Big-Acreage &amp; Springs-Country Trees</span></h1>
 
-    <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving DeLeon Springs and the rural communities north along US-17 within about 50 miles across Volusia County since <?php echo e($yearEstablished); ?>. Big-tree removal, land and lot clearing, and skid-steer/grapple work &mdash; with free written estimates in 24 hours.</p>
+    <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving DeLeon Springs and the rural communities north along US-17 since <?php echo e($yearEstablished); ?>, within about 50 miles across Volusia County. The work here is big-tree removal, land and lot clearing, and skid-steer and grapple cleanup. Written estimates are free and follow the site visit within 24 hours.</p>
 
     <div class="hero-actions">
-      <a href="/contact/" class="btn btn-accent btn-lg">Get a Free Estimate</a>
+      <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Estimate</a>
       <a href="/services/" class="btn btn-outline-white btn-lg">See All Services</a>
     </div>
 
@@ -602,8 +607,16 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
       <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in Volusia County</span>
       <span class="hero-trust-item"><?php echo icon('tractor'); ?> Skid-Steer &amp; Grapple Service</span>
-      <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
+      <span class="hero-trust-item"><?php echo icon('map-pin'); ?> About 7 Miles North of DeLand</span>
     </div>
+    </div>
+
+    <?php
+    $heroFormLocation = 'hero-area-deleon-springs';
+    $heroFormService  = '';
+    $heroFormHeading  = 'Get a Free Estimate in DeLeon Springs';
+    include $_SERVER['DOCUMENT_ROOT'] . '/includes/hero-form.php';
+    ?>
   </div>
 </section>
 
@@ -614,7 +627,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <span class="dls-eyebrow">Straight Answer</span>
       <h2>Do you clear trees on large acreage and rural lots in DeLeon Springs, FL?</h2>
     </div>
-    <p class="answer-block" data-animate><?php echo e($siteName); ?> clears trees on large acreage and rural lots throughout DeLeon Springs every week. From single old-growth pines beside a homestead to full lot and pasture clearing off US-17, our crew brings the skid steer, grapple loader, and chipper the job needs, drops and bucks the trees, grinds stumps, and hauls the debris away &mdash; all quoted in a free written estimate within 24 hours.</p>
+    <p class="answer-block" data-animate><?php echo e($siteName); ?> clears trees on large acreage and rural lots throughout DeLeon Springs. The work runs from one old pine beside a homestead to lot and pasture clearing off US-17, using a skid steer, grapple loader and chipper. DeLeon Springs is the northern end of <a href="/service-area/">the area we cover from DeLand</a>.</p>
   </div>
 </section>
 
@@ -628,11 +641,12 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="dls-prose-wrap">
       <span class="dls-eyebrow">Springs Country</span>
-      <h2 data-animate>Tree work built for the DeLeon Springs way of living</h2>
-      <p class="dls-drop-cap" data-animate>DeLeon Springs is an unincorporated Volusia County community strung along US-17 just north of DeLand, and it does not look or grow like a subdivision. This is <strong>springs country</strong> &mdash; the natural spring at De Leon Springs State Park feeds the Old Spanish Sugar Mill Restaurant, where guests still griddle their own pancakes at the table. The land around it is rural and agricultural, and the trees follow suit: tall slash pines, spreading live oaks, and dense hardwood hammock on lots measured in acres, not feet.</p>
-      <p data-animate>That rural character shapes the tree work. Fern farms, cattle pastures, and large-acreage homesteads sit next to the Lake Woodruff National Wildlife Refuge, and Spring Garden Ranch &mdash; a premier Standardbred harness-racing winter training facility &mdash; keeps the area distinctly agricultural. Trees here are not decorative shade for a quarter-acre yard; they are old, big, and often standing over a barn, a well house, or a training track. Taking one down safely takes ropes, a boom lift, and machine muscle, not a homeowner with a rented saw.</p>
-      <p data-animate>It also means the jobs run bigger. A DeLeon Springs call is as likely to be clearing a raw lot for a building pad, opening pasture, or thinning a hammock along a wetland edge as it is removing one hazard tree. That is why our crew shows up with a skid steer and grapple loader as standard equipment &mdash; the same gear that clears acreage is what turns a downed tree into a clean, hauled-away pile the same day.</p>
-      <p data-animate>If you have been searching for <strong>tree service near me in DeLeon Springs</strong>, the short version is this: <?php echo e($siteName); ?> is only about seven miles up the road in DeLand, we have worked this stretch of Volusia County since <?php echo e($yearEstablished); ?>, and we bring the right machines the first time. DeLeon Springs land deserves a crew that respects both the big trees worth keeping and the ones that have to go.</p>
+      <h2 data-animate>What is tree work like on DeLeon Springs acreage?</h2>
+      <p class="dls-drop-cap" data-animate>Tree work on DeLeon Springs acreage means tall slash pines, spreading live oaks and dense hardwood hammock on lots measured in acres. Most calls are for <a href="/services/tree-removal/">removal of a large tree near a barn or fence line</a> or for <a href="/services/fallen-tree-removal-cleanup/">cleanup of trees already on the ground</a>.</p>
+      <p data-animate>DeLeon Springs is an unincorporated Volusia County community strung along US-17 just north of DeLand, and it does not look or grow like a subdivision. This is <strong>springs country</strong>: De Leon Springs State Park sits at its center, and the land around the park is rural and agricultural.</p>
+      <p data-animate>Fern farms, cattle pastures and large homesteads sit next to the Lake Woodruff National Wildlife Refuge, and Spring Garden Ranch, a harness-racing training center, keeps the area agricultural. Trees here often stand over a barn, a well house or a training track, so taking one down safely takes ropes, a boom lift and a loader.</p>
+      <p data-animate>The jobs also run bigger. A DeLeon Springs call is as likely to be clearing a raw lot for a building pad, opening pasture or thinning a hammock along a wetland edge as it is removing one hazard tree, which is why the skid steer and grapple loader come along.</p>
+      <p data-animate>If you have been searching for <strong>tree service near me in DeLeon Springs</strong>, <?php echo e($siteName); ?> is about seven miles down US-17 in DeLand and has worked this stretch of Volusia County since <?php echo e($yearEstablished); ?>.</p>
     </div>
   </div>
 </section>
@@ -647,15 +661,15 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="dls-title" data-animate>
       <span class="dls-eyebrow">Rural-Acreage Work</span>
-      <h2>What large-property tree work looks like in DeLeon Springs</h2>
-      <p class="answer-block"><?php echo e($siteName); ?> handles the three jobs DeLeon Springs acreage asks for most &mdash; taking down big old-growth trees, clearing rural lots and pasture, and running the skid-steer and grapple work that leaves the ground clean behind us.</p>
+      <h2>What does land clearing and large-property tree work involve in DeLeon Springs?</h2>
+      <p class="answer-block">Land clearing and large-property tree work in DeLeon Springs involves three jobs: taking down big trees, clearing brush and overgrown lots, and machine cleanup afterward. <?php echo e($siteName); ?> does all three with its own equipment, and each is described below with a photo from the crew&rsquo;s work.</p>
     </div>
 
     <div class="dls-zig-rows">
       <?php foreach ($zigRows as $i => $row): $p = $zigPhotos[$row['photo']]; ?>
       <div class="dls-zig-row" data-animate>
         <figure class="dls-zig-media">
-          <span class="dls-zig-badge"><?php echo icon('map-pin'); ?> DeLeon Springs, FL</span>
+          <span class="dls-zig-badge"><?php echo icon('map-pin'); ?> Volusia County, FL</span>
           <?php echo p1_picture($p['src'], $p['alt'], 800, 600, '(max-width: 768px) 100vw, 800px'); ?>
         </figure>
         <div class="dls-zig-copy">
@@ -681,7 +695,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="dls-title" data-animate>
       <span class="eyebrow-label">What We Do</span>
       <h2>Which tree services are available in <span class="text-accent">DeLeon Springs</span>?</h2>
-      <p class="answer-block"><?php echo e($siteName); ?> brings its full range of tree care to DeLeon Springs, from controlled removal of big pines and oaks to storm cleanup, ongoing maintenance, and commercial and HOA contracts &mdash; the same crew and equipment that works our DeLand home base, just up US-17.</p>
+      <p class="answer-block">The tree services available in DeLeon Springs are tree removal, fallen-tree cleanup, trimming, maintenance, commercial and HOA work, and emergency storm cleanup. <?php echo e($siteName); ?> runs them with the crew and equipment from its DeLand base, about seven miles south on US-17. Land and brush clearing is quoted alongside any of them on the same written estimate.</p>
     </div>
 
     <?php renderServiceCards(['tree-removal', 'fallen-tree-removal-cleanup', 'tree-trimming-services', 'tree-maintenance-care', 'commercial-hoa-tree-services', 'emergency-tree-service-storm-cleanup'], $serviceCardData); ?>
@@ -693,8 +707,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="dls-title" data-animate>
       <span class="dls-eyebrow">Why God's Country</span>
-      <h2>Why DeLeon Springs landowners call God's Country</h2>
-      <p class="answer-block">Big lots need more than a chainsaw and a promise. <?php echo e($siteName); ?> shows up with the equipment, the insurance, and the land-management judgment that rural DeLeon Springs property actually requires.</p>
+      <h2>Why do DeLeon Springs landowners call God&rsquo;s Country?</h2>
+      <p class="answer-block">DeLeon Springs landowners call God&rsquo;s Country because rural acreage needs machines, insurance paperwork and judgment about what to leave standing. <?php echo e($siteName); ?> brings all three, and the cards below say what each one means on a property with barns, fences and pasture.</p>
     </div>
 
     <div class="dls-why-grid">
@@ -736,16 +750,18 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 <!-- ============ CLOSING CTA (radial glow) ============ -->
 <section class="dls-cta" aria-label="Get a free tree service estimate in DeLeon Springs">
   <div class="container">
-    <span class="dls-eyebrow">Free &middot; Written &middot; Within 24 Hours</span>
+    <span class="dls-eyebrow">Free Site Walk &middot; Written Estimate</span>
     <h2>Get a Free Estimate in DeLeon Springs</h2>
-    <p>Tell us about the old-growth pine over the barn, the lot you need cleared, or the pasture that has grown up in scrub. <?php echo e($siteName); ?> will walk the property, bring the right machines, and put a straight, all-in price in writing &mdash; usually within 24 hours.</p>
+    <p>Tell us about the old pine over the barn, the lot you need cleared, or the pasture that has grown up in scrub. <?php echo e($siteName); ?> will walk the ground, bring the right machines, and put the scope and price in writing.</p>
     <div class="hero-actions">
-      <a href="/contact/" class="btn btn-accent btn-lg">Get a Free Estimate</a>
+      <a href="/contact/" class="btn btn-accent btn-lg">Request a Written Estimate</a>
       <a href="/services/" class="btn btn-outline-white btn-lg">Browse All Services</a>
     </div>
   </div>
 </section>
 
 <p class="dls-last-updated">Last Updated: <?php echo date('F Y'); ?></p>
+
+</article>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

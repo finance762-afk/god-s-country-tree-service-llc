@@ -19,7 +19,7 @@ $currentPage = 'service-area';
 
 // ---- SEO ---------------------------------------------------
 $pageTitle       = "Tree Service Orange City FL | {$gbpRating}★ ({$gbpReviewCount} Google Reviews)";
-$pageDescription = "Tree service in Orange City, FL from a DeLand crew rated {$gbpRating}★ from {$gbpReviewCount} Google reviews. Licensed & insured, free estimate within 24 hours. Call (407) 280-3484.";
+$pageDescription = "Tree service in Orange City, FL from a DeLand crew rated {$gbpRating}★ from {$gbpReviewCount} Google reviews. Live oak pruning, crown reduction, free written estimates: (407) 280-3484.";
 $canonicalUrl    = $siteUrl . '/service-area/orange-city/';
 
 // ---- Images (content/image-manifest.md allocation) --------
@@ -33,7 +33,7 @@ $imgLakeOak = '/assets/images/1784062731501-oi9ekh-35294961_2071235779763690_210
 // ---- Heritage-oak preservation timeline (SIGNATURE) -------
 $ocOakSteps = [
     ['title' => 'Walk the tree with an arborist',      'text' => 'We start at the base of the live oak, reading the root flare in Orange City&rsquo;s sandy soil, the moss load, and the branch unions before a single cut is planned. Old trees earn a slow look, not a fast quote.'],
-    ['title' => 'Map the deadwood and weak unions',     'text' => 'A century-old canopy hides brittle deadwood and included bark where two leaders meet. We flag what needs to go and what can safely stay, so pruning strengthens the oak instead of stripping it.'],
+    ['title' => 'Map the deadwood and weak unions',     'text' => 'An old canopy hides brittle deadwood and included bark where two leaders meet. We flag what needs to go and what can safely stay, so pruning strengthens the oak instead of stripping it.'],
     ['title' => 'Prune to structure, not to the truck', 'text' => 'Cuts follow the branch collar and the tree&rsquo;s natural form. We never lion-tail or top a heritage oak &mdash; heavy-handed cutting invites decay and storm failure a few seasons later in Volusia County&rsquo;s wind.'],
     ['title' => 'Lighten the storm load thoughtfully',   'text' => 'Selective crown reduction and thinning let hurricane gusts pass through instead of catching the sail of an overgrown canopy &mdash; the difference between a scarred limb and a lost tree after a summer storm.'],
     ['title' => 'Leave a care plan behind',              'text' => 'Before we roll out of Orange City we tell you when to look again, what to watch for, and which limbs to revisit next season. Preservation is a schedule, not a single visit.'],
@@ -41,24 +41,24 @@ $ocOakSteps = [
 
 // ---- Why-choose cards -------------------------------------
 $ocWhy = [
-    ['icon' => 'shield-check', 'title' => 'Licensed, insured, and local',   'text' => 'God&rsquo;s Country Tree Service is licensed and insured with proof available before any saw starts &mdash; not a storm-chasing crew that vanishes once the Orange City work is done.'],
-    ['icon' => 'tree-deciduous', 'title' => 'Certified arborist judgment',  'text' => 'We read Orange City&rsquo;s old oaks and sandy soils the way a certified arborist should: careful pruning and honest save-or-remove calls over heavy-handed cutting that shortens a tree&rsquo;s life.'],
-    ['icon' => 'truck', 'title' => 'Whole job, one crew',                    'text' => 'Climbing, rigging, grapple loading, chipping, hauling, and stump grinding come from the same DeLand crew &mdash; no subcontractors, and debris hauling folded into most Orange City quotes.'],
+    ['icon' => 'shield-check', 'title' => 'Paperwork before the first cut',   'text' => 'Ask for proof of liability and workers&rsquo; compensation coverage and God&rsquo;s Country Tree Service will show it before any saw starts. The written estimate lists the trees, the cuts and the cleanup for your Orange City address.'],
+    ['icon' => 'tree-deciduous', 'title' => 'Save-or-remove calls, explained',  'text' => 'We read Orange City&rsquo;s old oaks and sandy soils before recommending anything: careful pruning where the tree is sound, removal only where decay or a failing union makes it a hazard, and the reason given either way.'],
+    ['icon' => 'truck', 'title' => 'Whole job, one crew',                    'text' => 'Climbing, rigging, grapple loading, chipping, hauling and stump grinding come from the same DeLand crew, and debris hauling is part of most Orange City quotes.'],
 ];
 
 // ---- FAQs (local, 40-80 words) ----------------------------
 $faqs = [
     [
         'q' => 'Do I need a permit to remove a tree in Orange City, FL?',
-        'a' => 'Possibly. Orange City and Volusia County protect certain trees, and larger hardwoods &mdash; especially the historic live oaks that shade the older neighborhoods &mdash; can require a permit before removal. It depends on the species, size, and location on your lot. We flag permit questions during your free estimate so you know what applies before any cutting starts.',
+        'a' => 'A tree removal in Orange City can need a permit, depending on the species, the trunk size and where the tree stands on the lot. Larger hardwoods such as the live oaks in the older neighborhoods are the usual cases. We raise the question during the estimate visit, and you should confirm the current rule with the City of Orange City or Volusia County before any cutting starts.',
     ],
     [
         'q' => 'Can you care for the big old oaks in Orange City&rsquo;s historic district?',
-        'a' => 'Yes &mdash; heritage live oaks are our specialty. Around Orange City&rsquo;s historic district and the streets first platted for citrus, God&rsquo;s Country Tree Service prunes to structure, removes deadwood, and reduces storm load without topping or lion-tailing. Old moss-draped oaks reward patient, certified arborist care over heavy cutting, and that is exactly how we work.',
+        'a' => 'God&rsquo;s Country Tree Service prunes the big old live oaks around Orange City&rsquo;s historic district and the streets first platted for citrus. The work is structural pruning, deadwood removal and storm-load reduction, never topping or lion-tailing. Old moss-draped oaks respond to small, well-placed cuts, so a visit is planned limb by limb before anyone climbs.',
     ],
     [
         'q' => 'How far does God&rsquo;s Country travel to reach Orange City?',
-        'a' => 'Orange City sits about 8 miles south of our DeLand home base, well inside our roughly 50-mile service radius across Volusia County. The same crew and equipment that work DeLand handle Orange City daily, so you get a free written estimate within 24 hours and a familiar local team &mdash; not a truck routed in from out of town.',
+        'a' => 'God&rsquo;s Country Tree Service travels about 8 miles south from its DeLand home base to reach Orange City, well inside its roughly 50-mile service radius across Volusia County. The crew and equipment that work DeLand are the ones that come to Orange City, so you deal with one local team from the estimate visit to the cleanup.',
     ],
 ];
 
@@ -535,12 +535,17 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   .oc-cta .hero-actions { flex-direction: column; align-items: stretch; }
   .oc-story-copy p { max-width: none; }
 }
+/* ---- Inline body links (v8 content pass) ---- */
+.area-article p a { text-decoration: underline; }
 </style>
+
+<article class="area-article">
 
 <!-- ============ HERO (C1.4) ============ -->
 <section class="oc-hero has-hero-bg" aria-label="Tree service in Orange City, Florida">
   <?php echo p1_hero_picture($heroImage); ?>
-  <div class="container">
+  <div class="container hero-with-form">
+    <div class="hero-copy">
     <nav class="oc-crumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span class="oc-sep" aria-hidden="true">/</span>
@@ -553,19 +558,27 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <h1>Tree Service in Orange City, FL &mdash; <span class="oc-accent">Care for Historic Oaks &amp; Springs Country</span></h1>
 
-    <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, caring for Orange City&rsquo;s historic moss-draped oaks and springs-country canopy since <?php echo e($yearEstablished); ?>. We serve Orange City &mdash; about 8 miles south of our home base &mdash; and communities within roughly 50 miles across Volusia County, with free written estimates in 24 hours.</p>
+    <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, caring for Orange City&rsquo;s moss-draped live oaks and springs-country canopy since <?php echo e($yearEstablished); ?>. Orange City is about 8 miles south of our base, inside the roughly 50-mile area we cover across Volusia County. We visit the property at no charge and send a written estimate within 24 hours.</p>
 
     <div class="hero-actions">
-      <a href="/contact/" class="btn btn-accent btn-lg">Get a Free Estimate</a>
+      <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Estimate</a>
       <a href="/services/" class="btn btn-outline-white btn-lg">Explore Our Services</a>
     </div>
 
     <div class="hero-trust">
       <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
       <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in Volusia County</span>
-      <span class="hero-trust-item"><?php echo icon('tree-deciduous'); ?> Certified Arborist Care</span>
-      <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
+      <span class="hero-trust-item"><?php echo icon('tree-deciduous'); ?> Certified Arborist on Staff</span>
+      <span class="hero-trust-item"><?php echo icon('clock'); ?> About 8 Miles from DeLand</span>
     </div>
+    </div>
+
+    <?php
+    $heroFormLocation = 'hero-area-orange-city';
+    $heroFormService  = '';
+    $heroFormHeading  = 'Get a Free Estimate in Orange City';
+    include $_SERVER['DOCUMENT_ROOT'] . '/includes/hero-form.php';
+    ?>
   </div>
 </section>
 
@@ -576,7 +589,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <span class="eyebrow-label">The Short Answer</span>
       <h2>Who handles tree trimming and oak care in Orange City, FL?</h2>
     </div>
-    <p class="answer-block" data-animate><strong><?php echo e($siteName); ?></strong> handles tree trimming, pruning, removal, and certified arborist oak care in Orange City, FL. Based in DeLand about 8 miles north, our licensed and insured crew has cared for Orange City&rsquo;s historic live oaks and springs-country canopy since <?php echo e($yearEstablished); ?> &mdash; with free written estimates delivered within 24 hours.</p>
+    <p class="answer-block" data-animate><strong><?php echo e($siteName); ?></strong> handles tree trimming, pruning, removal and oak care in Orange City, FL, with a certified arborist on staff. The crew is based in DeLand, about 8 miles north, and has worked Orange City&rsquo;s live oaks since <?php echo e($yearEstablished); ?>. Orange City is one stop on <a href="/service-area/">the six-community area we serve around DeLand</a>.</p>
   </div>
 </section>
 
@@ -591,14 +604,15 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="oc-story-grid">
       <div class="oc-story-copy">
         <span class="eyebrow-label" style="color: var(--color-primary); font-family: var(--font-heading); font-size: var(--font-size-xs); font-weight: 700; text-transform: uppercase; letter-spacing: 2.5px; display:inline-block; margin-bottom: var(--space-3);">Rooted in Orange City</span>
-        <h2 style="text-wrap: balance; margin-bottom: var(--space-5);">A citrus town shaded by live oaks worth protecting</h2>
-        <p class="oc-dropcap" data-animate>Orange City was incorporated in 1882 and took its name from the orange and citrus groves that first drew settlers to this stretch of southwest Volusia County. More than a century later, the streets first platted for those groves are shaded by mature live oaks draped in Spanish moss &mdash; the kind of old-growth canopy that rewards careful pruning and certified arborist care over heavy-handed cutting. That is the tree stock God&rsquo;s Country Tree Service was built to look after.</p>
-        <p data-animate>The town is best known for Blue Spring State Park, a first-magnitude spring on the St. Johns River and the region&rsquo;s winter refuge for manatees. Around it, Orange City&rsquo;s housing runs the full range &mdash; historic &ldquo;Florida cracker&rdquo; homes tucked under heritage oaks near the historic district along US Highway 17-92, plus newer subdivisions still filling in their canopy. Each calls for a different hand: preservation pruning for the old giants, structural training for the young trees.</p>
-        <p data-animate>Landmarks like Valentine Park and Mill Lake sit within a canopy shaped by Orange City&rsquo;s sandy soils, which drain fast and let old oak roots range wide but shallow. That soil, plus Volusia County&rsquo;s hurricane-season winds, is exactly why we prune to reduce storm load rather than top a tree &mdash; and why searching &ldquo;tree service near me in Orange City&rdquo; should turn up a crew that knows the ground it stands on, not one passing through.</p>
-        <p data-animate>As part of the DeBary&ndash;Deltona&ndash;Orange City corridor, Orange City is a short run from our DeLand shop, so the same crew and equipment reach it daily. Whether it&rsquo;s a single heritage oak over a historic-district porch or a full lot of overgrown laurel oaks in a newer subdivision, Orange City homeowners get the same certified arborist judgment and the same free 24-hour estimate.</p>
+        <h2 style="text-wrap: balance; margin-bottom: var(--space-5);">Why do Orange City&rsquo;s old live oaks need careful pruning?</h2>
+        <p class="oc-dropcap" data-animate>Orange City&rsquo;s old live oaks need careful pruning because their roots spread wide and shallow in fast-draining sand and their canopies carry heavy moss. Hard cuts open those trees to decay, so we rely on <a href="/services/tree-pruning-services/">structural pruning that follows the branch collar</a> and on <a href="/services/tree-trimming-services/">lighter routine trimming</a> between visits.</p>
+        <p data-animate>The streets around the historic district were first platted for citrus in the 1880s, and the town still carries the name. Those streets are now shaded by mature live oaks draped in Spanish moss, a canopy that takes generations to grow and only one bad topping job to ruin.</p>
+        <p data-animate>The town is best known for Blue Spring State Park, a spring on the St. Johns River and a winter refuge for manatees. Around it, housing runs from older homes under big oaks near US Highway 17-92 to newer subdivisions still filling in their canopy. Each calls for a different hand: preservation pruning for the old trees, structural training for the young ones.</p>
+        <p data-animate>Valentine Park and Mill Lake sit inside the same canopy. If you are searching for &ldquo;tree service near me in Orange City,&rdquo; the useful question to put to any crew is how they reduce storm load without topping. Our answer is selective reduction cuts, laid out step by step in the next section.</p>
+        <p data-animate>Orange City sits in the DeBary&ndash;Deltona&ndash;Orange City corridor, a short run from our DeLand shop. The work ranges from a single oak over a historic-district porch to a lot of overgrown laurel oaks in a newer subdivision, and we also look after trees for plazas along Saxon Boulevard.</p>
       </div>
       <figure class="oc-figure" data-animate="right">
-        <?php echo p1_picture($imgClimber, 'God&rsquo;s Country climber roped high inside a live oak canopy, trimming limbs near Orange City, FL', 600, 750, '(max-width: 768px) 100vw, 600px'); ?>
+        <?php echo p1_picture($imgClimber, 'God&rsquo;s Country bucket truck with its boom raised into an oak canopy', 600, 750, '(max-width: 768px) 100vw, 600px'); ?>
         <figcaption>Roped canopy pruning &mdash; the careful work Orange City&rsquo;s old oaks reward.</figcaption>
       </figure>
     </div>
@@ -615,8 +629,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="oc-heading" data-animate>
       <span class="eyebrow-label">Heritage Oak Preservation</span>
-      <h2>How God&rsquo;s Country cares for Orange City&rsquo;s old moss-draped oaks</h2>
-      <p class="answer-block">God&rsquo;s Country Tree Service preserves Orange City&rsquo;s century-old live oaks with a deliberate, five-step arborist process &mdash; reading the tree before cutting, pruning to structure, and lightening storm load without ever topping. Here is how a heritage-oak visit actually goes.</p>
+      <h2>How does God&rsquo;s Country care for Orange City&rsquo;s old moss-draped oaks?</h2>
+      <p class="answer-block">God&rsquo;s Country Tree Service cares for Orange City&rsquo;s old live oaks in five steps, from reading the tree to leaving a care plan. Nothing is cut until the root flare, moss load and branch unions have been checked, and no oak is topped. Here is how a visit goes.</p>
     </div>
     <ol class="oc-timeline">
       <?php foreach ($ocOakSteps as $i => $step): ?>
@@ -635,7 +649,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="oc-heading" data-animate>
       <span class="eyebrow-label">What We Do</span>
       <h2>Which tree services are available in <span style="color: var(--color-accent);">Orange City</span>, FL?</h2>
-      <p class="answer-block">God&rsquo;s Country Tree Service brings its full range of tree care to Orange City &mdash; trimming, pruning, certified arborist consultation, crown reduction, ongoing maintenance, and dead or hazardous tree removal &mdash; all from one licensed, insured DeLand crew, with debris hauling folded into most quotes.</p>
+      <p class="answer-block">The tree services available in Orange City are trimming, pruning, arborist consultation, crown reduction, maintenance and dead or hazardous tree removal. One DeLand crew does all six with its own chipper, boom lift and grapple loader. Storm-prone canopies usually start with <a href="/services/crown-reduction-shaping/">a crown reduction plan for the heaviest limbs</a>.</p>
     </div>
     <?php renderServiceCards(['tree-trimming-services','tree-pruning-services','certified-arborist-services','crown-reduction-shaping','tree-maintenance-care','dead-hazardous-tree-removal'], $serviceCardData); ?>
   </div>
@@ -651,13 +665,13 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="oc-springs-grid">
       <figure class="oc-springs-figure" data-animate>
-        <?php echo p1_picture($imgLakeOak, 'Helmeted God&rsquo;s Country arborist working in an oak canopy above a lake near Orange City, FL', 640, 512, '(max-width: 768px) 100vw, 600px'); ?>
+        <?php echo p1_picture($imgLakeOak, 'God&rsquo;s Country skid steer parked below a full green oak beside a brick home', 640, 512, '(max-width: 768px) 100vw, 600px'); ?>
       </figure>
       <div>
         <span class="eyebrow-label">Blue Spring &amp; the Native Canopy</span>
-        <h2>Working in springs country, from the St. Johns to Blue Spring</h2>
-        <p data-animate>Orange City lives at the water&rsquo;s edge. Blue Spring State Park pushes crystal water toward the St. Johns River, and every winter its run fills with manatees seeking the warm flow. The live oaks, sabal palms, and laurel oaks that hold this landscape together are more than scenery &mdash; they are the native canopy that shades the springs, steadies the sandy banks, and cools the historic streets.</p>
-        <p data-animate>God&rsquo;s Country Tree Service treats that canopy as worth keeping. We favor selective pruning and honest save-or-remove calls over clear-cutting, so the trees that make Orange City feel like springs country stay standing and healthy for the next generation.</p>
+        <h2>How does tree work protect the native canopy near Blue Spring?</h2>
+        <p data-animate>Tree work protects the native canopy near Blue Spring when it removes only what is dead, weak or overextended. Live oaks, sabal palms and laurel oaks shade the historic streets and hold the sandy ground between Orange City and the St. Johns River, so we prune selectively and haul every limb off site.</p>
+        <p data-animate>God&rsquo;s Country Tree Service treats that canopy as worth keeping. We choose selective pruning over clear-cutting, so the trees that make Orange City feel like springs country stay standing.</p>
         <ul class="oc-canopy-list">
           <li data-animate><?php echo icon('leaf'); ?><span><strong>Native-first judgment.</strong> Live oaks, sabal palms, and laurel oaks pruned to keep the canopy that defines Orange City.</span></li>
           <li data-animate><?php echo icon('wind'); ?><span><strong>Storm-load reduction.</strong> Thinning and crown reduction that let hurricane gusts pass through instead of toppling old trees.</span></li>
@@ -674,7 +688,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="oc-heading" data-animate>
       <span class="eyebrow-label">Why Orange City Calls Us</span>
       <h2>Why choose God&rsquo;s Country Tree Service in Orange City?</h2>
-      <p class="answer-block">Because Orange City&rsquo;s heritage oaks deserve a licensed, local crew that prunes to preserve &mdash; not a storm-chaser that tops trees and disappears. Here is what sets God&rsquo;s Country apart.</p>
+      <p class="answer-block">Orange City homeowners choose God&rsquo;s Country Tree Service for old oaks because the crew prunes to keep a tree, and puts the plan in writing. The three points below cover insurance paperwork, how save-or-remove decisions are made, and which machines arrive on the job.</p>
     </div>
     <div class="oc-why-grid">
       <?php foreach ($ocWhy as $i => $card): ?>
@@ -694,7 +708,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="oc-heading" data-animate>
       <span class="eyebrow-label">Good Questions</span>
       <h2>Orange City tree service questions, answered</h2>
-      <p class="answer-block">Permits, heritage oaks, and how far we travel &mdash; the three things Orange City homeowners ask most, answered straight. If yours isn&rsquo;t here, ask in the estimate form and we&rsquo;ll reply within 24 hours.</p>
+      <p class="answer-block">Permits, old oaks and travel distance are the three things Orange City homeowners ask about most. If yours is not here, put it in the estimate form and we will answer it with your quote.</p>
     </div>
     <div class="faq-grid" data-p1-dynamic>
       <?php foreach ($faqs as $faq): ?>
@@ -713,16 +727,18 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 <!-- ============ CLOSING CTA ============ -->
 <section class="oc-cta" aria-label="Get a free tree service estimate in Orange City">
   <div class="container">
-    <span class="eyebrow-label">Free &middot; Written &middot; Within 24 Hours</span>
+    <span class="eyebrow-label">Free Site Visit &middot; Quote in Writing</span>
     <h2>Get a Free Estimate in Orange City</h2>
-    <p>Tell us about the heritage oak over the porch, the overgrown lot, or the leaning laurel oak near Blue Spring. <?php echo e($siteName); ?> will walk the property, give you an honest read, and put a straight, all-in price in writing &mdash; usually within 24 hours.</p>
+    <p>Tell us about the oak over the porch, the overgrown lot, or the leaning laurel oak near Blue Spring. <?php echo e($siteName); ?> will walk the property, explain which limbs we would take and why, and follow up with a written quote.</p>
     <div class="hero-actions">
-      <a href="/contact/" class="btn btn-accent btn-lg">Get a Free Estimate</a>
+      <a href="/contact/" class="btn btn-accent btn-lg">Request a Written Estimate</a>
       <a href="/services/" class="btn btn-outline-white btn-lg">Explore Our Services</a>
     </div>
   </div>
 </section>
 
 <p class="oc-updated">Last Updated: <?php echo date('F Y'); ?></p>
+
+</article>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
