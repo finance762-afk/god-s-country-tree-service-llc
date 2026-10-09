@@ -4,7 +4,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php';
 
 $pageTitle = 'Emergency Tree Service in DeLand: What to Expect';
-$pageDescription = 'Tree on your roof, car, or power line in DeLand? See what counts as an emergency, what to do first, and how the crew and insurance work. We answer 24/7.';
+$pageDescription = 'Tree on your roof, car, or power line in DeLand? See what counts as an emergency, what to do first, how the crew works, and how insurance handles it.';
 $canonicalUrl = $siteUrl . '/blog/emergency-tree-service-deland-what-to-expect/';
 $currentPage = 'blog';
 $postFaqs = [
@@ -52,7 +52,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         </div>
 
         <h2>What Counts as a Tree Emergency in DeLand?</h2>
-        <p>Not every fallen tree needs a crew at 2 a.m. The crew's first job on the phone is to sort a real hazard from a job that is better done safely in daylight. These situations get a same-day response:</p>
+        <p>Not every fallen tree needs a crew at 2 a.m. The crew's first job on the phone is to sort a real hazard from a job that is better done safely in daylight. These situations are treated as emergencies:</p>
 
         <h3>Emergency situations</h3>
         <ul>
@@ -72,7 +72,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <li><strong>Do not start cutting.</strong> A tree on a structure is spring-loaded. Removing one limb changes where the weight goes, and that is how homeowners get pinned or push a trunk through the roof.</li>
           <li><strong>Photograph everything.</strong> The tree, the point of impact, the damage inside if it is safe to look, and the base of the tree. Do this before any branches are moved.</li>
           <li><strong>Protect the interior if you can do it safely.</strong> A tarp over furniture or a bucket under a drip is fine. Climbing onto a damaged roof is not.</li>
-          <li><strong>Call your insurer after you call us.</strong> Most carriers want a claim opened the same day, and they want the removal estimate in writing.</li>
+          <li><strong>Call your insurer after you call us.</strong> Most carriers want a claim opened promptly, and they want the removal estimate in writing.</li>
         </ol>
 
         <h2>What Happens on the Call and When the Crew Arrives?</h2>
@@ -117,7 +117,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
         <div class="blog-cta">
           <h3>Tree on your house right now?</h3>
-          <p>Call (407) 280-3484. We answer 24 hours a day and send a crew the same day for genuine hazards anywhere in Volusia County.</p>
+          <p>Call (407) 280-3484 at any hour. We send a crew for genuine hazards anywhere in Volusia County.</p>
           <a href="tel:+14072803484" class="btn btn-primary">Call (407) 280-3484</a>
         </div>
 

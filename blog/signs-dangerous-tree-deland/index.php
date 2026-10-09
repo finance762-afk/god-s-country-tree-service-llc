@@ -11,7 +11,7 @@ $postFaqs = [
     ['q' => 'What are the signs a tree is about to fall?', 'a' => 'The most urgent signs are a trunk crack wider than 1 inch, a lean of more than 15 degrees toward a structure, roots heaving out of the ground on the lean side, dead branches over 4 inches in diameter above a roof or driveway, and a canopy that suddenly wilts or turns brown.'],
     ['q' => 'Do mushrooms at the base mean my tree is dangerous?', 'a' => 'Mushrooms on the trunk, root flare, or soil near the base signal internal decay. The visible mushroom is only the fruiting body; by the time it appears, the fungus has been digesting the wood for months or years. Schedule a tree risk assessment.'],
     ['q' => 'Is a leaning tree dangerous?', 'a' => 'Not always. A tree that has leaned the same direction for years with no soil cracking or root exposure is usually normal. A lean that appeared suddenly or worsened after a storm signals root failure, and any tree leaning more than 15 degrees toward a house, driveway, or power lines should be evaluated immediately.'],
-    ['q' => 'What should I do if I think my tree is dangerous?', 'a' => 'Photograph the defects, keep people and vehicles out of the area the tree could hit, and schedule a tree risk assessment with an ISA-certified arborist. Act before the next storm, because emergency removal rates run 2-3× normal pricing.'],
+    ['q' => 'What should I do if I think my tree is dangerous?', 'a' => 'Photograph the defects, keep people and vehicles out of the area the tree could hit, and schedule a tree risk assessment with a certified arborist. Act before the next storm, because emergency removal usually costs well above normal pricing.'],
 ];
 $pageSchema = blogPostSchema('signs-dangerous-tree-deland', 'dangerous tree warning signs, hazardous tree removal DeLand FL, dead tree removal Florida, leaning tree risk, tree trunk cracks, tree fungus Florida, tree risk assessment Volusia County', $pageDescription) . generateFAQSchema($postFaqs);
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php';
@@ -63,7 +63,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         </div>
 
         <h2>1. Large Dead or Hanging Branches</h2>
-        <p>Dead branches don't bend — they snap. A 4-inch diameter dead limb 30 feet up weighs 50-100+ pounds and can punch through a roof or windshield when it falls. In DeLand's storm country, dead branches become projectiles in 60+ mph winds.</p>
+        <p>Dead branches don't bend; they snap. A 4-inch diameter dead limb 30 feet up is heavy enough to punch through a roof or windshield when it falls. In DeLand's storm country, dead branches become projectiles in tropical-storm winds.</p>
 
         <p>Check for:</p>
         <ul>
@@ -72,7 +72,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <li><strong>Hanging or broken limbs</strong> — partially detached branches caught in the canopy</li>
         </ul>
 
-        <p>One or two small dead twigs are normal. Multiple large dead branches scattered through the canopy signal decline or disease. If dead branches are concentrated on one side of the tree, suspect root damage or trunk decay on that side. <a href="/blog/best-time-trim-trees-florida/">Schedule trimming</a> to remove deadwood before hurricane season — dead limbs are the first to fail in storms.</p>
+        <p>One or two small dead twigs are normal. Multiple large dead branches scattered through the canopy signal decline or disease. If dead branches are concentrated on one side of the tree, suspect root damage or trunk decay on that side. Have deadwood removed before hurricane season, because dead limbs are the first to fail in storms. Our calendar of <a href="/blog/best-time-trim-trees-florida/">the best months to trim each Florida species</a> shows when to book it.</p>
 
         <h2>2. Cracks or Seams in the Trunk</h2>
         <p>Vertical cracks, horizontal seams, or separating bark indicate internal structural failure. A crack running up the trunk can widen suddenly under wind load, splitting the tree in half. Frost cracks (vertical splits caused by winter temperature swings) are common in thin-barked trees like maples but less common in Central Florida — if you see a crack in a DeLand oak or pine, suspect decay or storm damage, not frost.</p>
@@ -97,7 +97,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <li><strong>Chicken of the woods</strong> — bright orange/yellow shelf fungi (causes brown cubical rot)</li>
         </ul>
 
-        <p>Not all fungi kill trees immediately, but their presence means the tree's structural integrity is compromised. A tree with extensive fungal decay may look healthy in the canopy but lack the internal strength to withstand wind loads. If you see mushrooms, schedule a <a href="/services/certified-arborist-services/">tree risk assessment</a> — an arborist can use a resistograph or sonic tomograph to measure the extent of internal decay. Regular <a href="/services/tree-maintenance-care/">tree maintenance and care</a> can help catch these issues early.</p>
+        <p>Not all fungi kill trees immediately, but their presence means the tree's structural integrity is compromised. A tree with extensive fungal decay may look healthy in the canopy but lack the internal strength to withstand wind loads. If you see mushrooms, schedule <a href="/services/certified-arborist-services/">a tree health and risk assessment with our arborist</a>. Where the extent of internal decay is in doubt, specialist tools such as resistance drilling or sonic tomography can measure it. Regular <a href="/services/tree-maintenance-care/">tree maintenance and care</a> can help catch these issues early.</p>
 
         <h2>4. Cavities and Hollow Areas</h2>
         <p>A cavity is a hollow area inside the trunk or a major branch, usually caused by decay following an injury or pruning wound. Small cavities (less than 1/3 of the trunk's diameter) may not significantly weaken the tree. Large cavities (more than half the trunk's diameter) drastically reduce strength.</p>
@@ -110,7 +110,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <li>Animals nesting inside the cavity (woodpeckers, squirrels, raccoons use hollow trees)</li>
         </ul>
 
-        <p>A hollow tree can stand for years if the remaining shell is thick enough and the tree isn't in a high-wind exposure area. But in DeLand's hurricane belt, a hollow oak or pine is a gamble. <a href="/blog/tree-removal-cost-deland-fl/">The cost of removing a hollow tree</a> is far less than the cost of repairing the roof it falls through.</p>
+        <p>A hollow tree can stand for years if the remaining shell is thick enough and the tree isn't in a high-wind exposure area. But in DeLand's hurricane belt, a hollow oak or pine is a gamble. Removing a hollow tree usually costs far less than repairing the roof it falls through; see <a href="/blog/tree-removal-cost-deland-fl/">what drives tree removal cost in DeLand</a>.</p>
 
         <h2>5. Raised Soil, Exposed Roots, or Root Damage</h2>
         <p>Roots anchor the tree and absorb water and nutrients. When you see roots heaving out of the ground, soil mounding on one side of the trunk, or exposed roots with broken ends, the tree's stability is compromised.</p>
@@ -147,7 +147,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <li>One trunk is significantly heavier or taller than the other (unbalanced load)</li>
         </ul>
 
-        <p>Some co-dominant stems can be cabled or braced to reduce failure risk, but if the union is already cracking or one trunk is leaning away from the other, removal is the safer option. Don't gamble on a <a href="/blog/best-time-trim-trees-florida/">poorly structured tree</a> above your home.</p>
+        <p>Some co-dominant stems can be cabled or braced to reduce failure risk, but if the union is already cracking or one trunk is leaning away from the other, removal is the safer option. Most weak unions can be prevented with <a href="/services/tree-pruning-services/">structural pruning while the tree is young</a>. Don't gamble on a poorly structured tree above your home.</p>
 
         <h2>8. Sudden Leaf Loss, Canopy Dieback, or Off-Season Color Change</h2>
         <p>A tree that suddenly drops leaves in summer, develops large areas of dead canopy, or turns brown/yellow out of season is stressed or diseased. Possible causes include:</p>
@@ -170,18 +170,26 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <li><strong>Soil cracks or root exposure</strong> — the tree began to uproot but didn't fall completely</li>
         </ul>
 
-        <p>A tree that survived a storm but shows significant damage is more likely to fail in the next storm. <a href="/blog/insurance-fallen-tree-removal-florida/">If storm damage is severe enough to threaten structures</a>, document it with photos and contact your homeowners insurance — some policies cover preventive removal of trees damaged by covered perils.</p>
+        <p>A tree that survived a storm but shows significant damage is more likely to fail in the next storm. If storm damage is severe enough to threaten structures, document it with photos and ask your homeowners insurer how your policy responds. Most policies do not pay for preventive removal; our guide to <a href="/blog/insurance-fallen-tree-removal-florida/">what Florida homeowners insurance covers for fallen trees</a> explains why.</p>
 
-        <h2>What to Do If Your Tree Is Dangerous</h2>
+        <h2>What Should You Do If Your Tree Is Dangerous?</h2>
+        <p>If your tree is dangerous, photograph the defects, keep people and vehicles out of the area it could hit, and book a tree risk assessment. Then act on the written recommendation before the next storm, because a tree that is marginal in calm weather can fail in hurricane-force wind.</p>
+
+        <ol>
+          <li>Document the hazard</li>
+          <li>Keep people and vehicles away</li>
+          <li>Schedule a professional tree risk assessment</li>
+          <li>Act before the next storm</li>
+        </ol>
 
         <h3>Step 1: Document the Hazard</h3>
         <p>Take photos of cracks, decay, lean, dead branches, and any visible defects. Photograph the tree from multiple angles and include reference objects (house, fence, driveway) to show proximity to targets. This documentation supports insurance claims if the tree later causes damage.</p>
 
         <h3>Step 2: Keep People and Vehicles Away</h3>
-        <p>If the tree poses an immediate threat, don't park under it, don't let children play near it, and avoid spending time in the target zone. If limbs are actively cracking or the tree is visibly unstable, cordon off the area and call an emergency tree service.</p>
+        <p>If the tree poses an immediate threat, don't park under it, don't let children play near it, and avoid spending time in the target zone. If limbs are actively cracking or the tree is visibly unstable, cordon off the area and call an emergency tree service. Here is <a href="/services/emergency-tree-service-storm-cleanup/">how our emergency tree service handles an unstable tree</a>.</p>
 
         <h3>Step 3: Schedule a Professional Tree Risk Assessment</h3>
-        <p>An ISA-certified arborist can perform a Level 2 or Level 3 tree risk assessment using visual inspection, resistance drilling, sonic tomography, or pull testing to measure structural integrity. The arborist will evaluate:</p>
+        <p>An arborist trained in tree risk assessment can perform a basic (Level 2) or advanced (Level 3) assessment, starting with a visual inspection and, where needed, resistance drilling, sonic tomography, or pull testing to measure structural integrity. The arborist will evaluate:</p>
         <ul>
           <li>Likelihood of failure (how soon the tree is likely to fail)</li>
           <li>Size of part likely to fail (whole tree, trunk, major limb, branch)</li>
@@ -189,12 +197,12 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <li>Consequences (property damage, injury, death)</li>
         </ul>
 
-        <p>Based on the assessment, the arborist will recommend monitoring, pruning, cabling, or removal. Get the recommendation in writing — if you later need to file an insurance claim or apply for a <a href="/blog/tree-removal-permit-deland-fl/">tree removal permit</a>, the arborist's report supports your case.</p>
+        <p>Based on the assessment, the arborist will recommend monitoring, pruning, cabling, or removal. Get the recommendation in writing. If you later need to file an insurance claim or apply for a permit, the arborist's report supports your case; see <a href="/blog/tree-removal-permit-deland-fl/">when a tree removal permit is needed in DeLand</a> and confirm the current rules with the City of DeLand or Volusia County.</p>
 
         <h3>Step 4: Act Before the Next Storm</h3>
-        <p>Hurricane season runs June 1 to November 30 in Florida. A tree that's marginally stable in calm weather can fail catastrophically in 75+ mph winds. Don't wait until a hurricane is 48 hours out to call a tree service — by then, crews are booked solid and <a href="/blog/tree-removal-cost-deland-fl/">emergency removal rates</a> are 2-3× normal pricing.</p>
+        <p>Hurricane season runs June 1 to November 30 in Florida. A tree that's marginally stable in calm weather can fail catastrophically in hurricane-force wind. Don't wait until a hurricane is 48 hours out to call a tree service. By then crews across the area are booked and emergency removal usually costs well above normal pricing.</p>
 
-        <p>If an arborist identifies a tree as high risk, schedule removal or mitigation work during the off-season (December through May) when crews have availability and pricing is more competitive. <a href="/blog/hurricane-prep-tree-trimming-deland/">Learn when to trim trees before hurricane season</a> to reduce storm damage risk.</p>
+        <p>If an arborist identifies a tree as high risk, schedule <a href="/services/dead-hazardous-tree-removal/">dead and hazardous tree removal</a> or mitigation work during the off-season (December through May), when crews have availability and pricing is more competitive. <a href="/blog/hurricane-prep-tree-trimming-deland/">Learn when to trim trees before hurricane season</a> to reduce storm damage risk.</p>
 
         <h2>Dangerous Tree FAQs</h2>
 
@@ -207,8 +215,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
         <div class="blog-cta">
           <h3>Worried about a dangerous tree in DeLand?</h3>
-          <p>God's Country Tree Service offers professional tree risk assessments. We'll inspect your tree, explain the hazards, and provide a written recommendation with no-pressure pricing.</p>
-          <a href="/contact/" class="btn btn-primary">Schedule a Free Tree Inspection</a>
+          <p>God's Country Tree Service LLC has a certified arborist on staff. The on-site visit and written estimate are free: we look at the tree, explain what we see, and put the recommendation in writing.</p>
+          <a href="/contact/" class="btn btn-primary">Schedule a Tree Assessment</a>
         </div>
 
         <div class="blog-related-services">

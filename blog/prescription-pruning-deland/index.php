@@ -4,11 +4,11 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php';
 
 $pageTitle = 'What Is Prescription Pruning? Rx Pruning in DeLand';
-$pageDescription = 'Prescription pruning is a certified arborist\'s written plan per tree: objective, cuts, dose, and timing. See how Rx pruning works for DeLand oaks and pines.';
+$pageDescription = 'Prescription pruning is an arborist\'s written plan for each tree: objective, cuts, dose, and timing. See how Rx pruning works for DeLand oaks and pines.';
 $canonicalUrl = $siteUrl . '/blog/prescription-pruning-deland/';
 $currentPage = 'blog';
 $postFaqs = [
-    ['q' => 'What is prescription pruning?', 'a' => 'Prescription pruning, often shortened to Rx pruning, is pruning done to a written plan prepared by a certified arborist for a specific tree. The prescription names the objective, the types of cuts, how much of the live crown may be removed, which parts of the tree to work, and when to do it. It follows ANSI A300 pruning principles rather than a one-size trim.'],
+    ['q' => 'What is prescription pruning?', 'a' => 'Prescription pruning, often shortened to Rx pruning, is pruning done to a written plan prepared by an arborist for a specific tree. The prescription names the objective, the types of cuts, how much of the live crown may be removed, which parts of the tree to work, and when to do it. It follows ANSI A300 pruning principles rather than a one-size trim.'],
     ['q' => 'How is prescription pruning different from regular tree trimming?', 'a' => 'Regular trimming is usually described by the result the customer wants, such as "clear it off the roof" or "thin it out." A prescription starts from the tree. The arborist looks at species, age, structure, defects, and site, then writes a plan that gets the customer the result without over-cutting or creating new problems. The crew prunes to the plan, not to a guess.'],
     ['q' => 'Does prescription pruning cost more than a standard trim?', 'a' => 'It includes an arborist assessment and a written plan, so there is more work before the first cut. In practice it often saves money over the life of the tree because the right cuts at the right time mean fewer emergency calls, fewer storm failures, and less corrective pruning later. God\'s Country Tree Service provides a free written estimate for the pruning itself.'],
     ['q' => 'Which DeLand trees benefit most from Rx pruning?', 'a' => 'Live oaks and laurel oaks over houses, sand pines and slash pines near structures, Southern magnolias, and any young shade tree that is still forming its branch structure. Trees with co-dominant stems, included bark, or a history of storm damage benefit the most because a prescription addresses the specific defect.'],
@@ -87,11 +87,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <li><strong>Over-thinning.</strong> Removing far more live crown than the tree can afford in one visit, which stresses the tree and triggers sprouting.</li>
           <li><strong>Topping.</strong> Cutting limbs back to stubs with no lateral branch. The regrowth is weakly attached and the tree is worse off every year after.</li>
         </ul>
-        <p>A written prescription prevents all four because the cut types and the dose are decided before the climber goes up. If you are worried a tree has already been damaged by poor pruning, a <a href="/services/certified-arborist-services/">certified arborist assessment</a> can tell you what can be corrected and how.</p>
+        <p>A written prescription prevents all four because the cut types and the dose are decided before the climber goes up. If you are worried a tree has already been damaged by poor pruning, a <a href="/services/certified-arborist-services/">arborist assessment</a> can tell you what can be corrected and how.</p>
 
         <h2>What Do You Receive with Prescription Pruning?</h2>
         <ol>
-          <li><strong>A site visit by a certified arborist</strong> who looks at each tree's species, structure, and surroundings.</li>
+          <li><strong>A site visit by the arborist</strong> who looks at each tree's species, structure, and surroundings.</li>
           <li><strong>A written prescription per tree</strong> with the objective, cut types, dose limit, canopy zones, and timing.</li>
           <li><strong>A free written estimate</strong> for the pruning work itself.</li>
           <li><strong>Pruning to the plan</strong> by a crew that works from the prescription, with the arborist available for questions on site.</li>
@@ -110,7 +110,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
         <div class="blog-cta">
           <h3>Want a pruning plan for your trees?</h3>
-          <p>Our certified arborist will walk your property, write a prescription for each tree, and give you a free written estimate for the work.</p>
+          <p>The arborist will walk your property, write a prescription for each tree, and give you a free written estimate for the work.</p>
           <a href="/contact/" class="btn btn-primary">Schedule an Arborist Visit</a>
         </div>
 
