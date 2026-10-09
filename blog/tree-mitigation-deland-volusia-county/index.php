@@ -4,7 +4,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php';
 
 $pageTitle = 'Tree Mitigation in DeLand: What It Means for Owners';
-$pageDescription = 'Tree mitigation is the replacement planting or fund payment tied to removing a protected tree in DeLand or Volusia County. See what triggers it and what is exempt.';
+$pageDescription = 'Tree mitigation is replacement planting or fund payment tied to removing a protected tree in DeLand or Volusia County. See what triggers it and what is exempt.';
 $canonicalUrl = $siteUrl . '/blog/tree-mitigation-deland-volusia-county/';
 $currentPage = 'blog';
 $postFaqs = [
