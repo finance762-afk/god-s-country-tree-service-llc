@@ -219,6 +219,9 @@ $serviceAreas = [
     ],
 ];
 
+// ZIP codes for the service-area checker (includes/zip-check.php) — one per city above, nothing added.
+$serviceZips = array_column($serviceAreas, 'zip');
+
 // ---- Social ------------------------------------------------
 // None provided in intake — populate only with real client profiles.
 $socialLinks = [];
