@@ -37,9 +37,9 @@ $homeServiceCards = [
         'icon'    => 'zap',
         'img'     => $imgBase . '1784062761586-95i7hi-487384453_1464923548239483_3259835514318021231_n.webp',
         'alt'     => 'Climber topping a storm-damaged tree spar against the sky during emergency tree service near DeLand, FL',
-        'desc'    => '24/7 response for storm damage, trees on roofs, and urgent hazards.',
-        'anchor'  => '24/7 emergency tree removal',
-        'bullets' => ['24-hour storm response', 'Same-day hazard assessment', 'Homes & businesses covered'],
+        'desc'    => 'Storm damage, trees on roofs, and blocked driveways handled first.',
+        'anchor'  => 'Emergency tree removal in DeLand',
+        'bullets' => ['Trees on roofs and driveways', 'Same-day response for hazards', 'Homes & businesses covered'],
     ],
     [
         'slug'    => 'tree-removal',
@@ -56,7 +56,7 @@ $homeServiceCards = [
         'name'    => 'Tree Trimming Services',
         'icon'    => 'scissors',
         'img'     => '/assets/images/nsuvrpt-960.webp',
-        'alt'     => 'Climber trimming limbs inside a live oak canopy during tree trimming in DeLand, FL',
+        'alt'     => "God's Country bucket truck with its boom raised into an oak canopy during tree trimming in DeLand, FL",
         'desc'    => 'Seasonal and routine trimming for trees of every size.',
         'anchor'  => 'Tree trimming in DeLand',
         'bullets' => ['Seasonal & routine schedules', 'All tree sizes handled', 'Health, looks & safety'],
@@ -107,9 +107,9 @@ $homeServiceCards = [
         'icon'    => 'building-2',
         'img'     => $imgBase . '1784062730039-tm1j7f-31172143_2042462125974389_3563289646844608512_n.webp',
         'alt'     => 'Skid steer and truck behind tree-protection fencing on commercial tree service job in DeLand, FL',
-        'desc'    => 'Scheduled maintenance contracts for businesses, HOAs, and property managers.',
+        'desc'    => 'Scheduled tree maintenance for businesses, HOAs, and property managers.',
         'anchor'  => 'Commercial &amp; HOA tree service',
-        'bullets' => ['Contract pricing & scheduling', 'Insurance documented up front', 'One crew for trees & land clearing'],
+        'bullets' => ['Scheduled maintenance visits', 'Proof of insurance on request', 'One crew for trees & land clearing'],
     ],
     [
         'slug'    => 'tree-planting-shrub-installation',
@@ -123,20 +123,21 @@ $homeServiceCards = [
     ],
 ];
 
-// ---- Ticker strip items (all grounded in intake data) ----
+// ---- Ticker strip items: what we do and where (credentials are stated once, in the hero) ----
 $tickerItems = [
-    'Licensed &amp; Insured',
-    '12+ Years in Business',
-    'Commercial Contracts Available',
-    '24/7 Storm Response',
-    'Free Estimates in 24 Hours',
-    'Certified Arborists',
-    'HOA &amp; Property Management',
-    'Residential &amp; Commercial',
+    'DeLand, Florida &mdash; Since 2014',
+    'Tree Removal',
+    'Trimming &amp; Pruning',
+    'Storm Cleanup',
+    'Crown Reduction',
+    'Stump Grinding',
     'Tree &amp; Land Clearing',
-    'Serving Volusia County',
-    'DeLand, Florida — Since 2014',
-    'Scheduled Maintenance Programs',
+    'Residential &middot; Commercial &middot; HOA',
+    'Deltona',
+    'Orange City',
+    'DeBary',
+    'Lake Helen',
+    'DeLeon Springs',
 ];
 
 // ---- Stats (grounded: years, service count, radius, 24/7) ----
@@ -150,16 +151,16 @@ $homeStats = [
 // ---- Named numbered process ----
 $processSteps = [
     ['title' => 'Walk & Assess',  'text' => 'We walk your property with you, look at every tree in question, and give you an honest read on what needs work — and what doesn\'t.'],
-    ['title' => 'Straight Quote', 'text' => 'You get a free, no-obligation estimate within 24 hours. Most quotes include debris removal and stump grinding, so there are no surprise add-ons.'],
-    ['title' => 'Safe Work',      'text' => 'A licensed, insured crew with certified arborist expertise handles the rigging, cutting, and lowering — protecting your roof, fences, and landscaping.'],
-    ['title' => 'Clean Sweep',    'text' => 'We haul the debris, grind the stump when quoted, and do a final walkthrough with you before we call the job done.'],
+    ['title' => 'Straight Quote', 'text' => 'The visit costs nothing and the written estimate follows within 24 hours. It lists the trees, the method, debris hauling, and stump grinding line by line, so the number you approve is the number you pay.'],
+    ['title' => 'Safe Work',      'text' => 'A climber or the boom lift takes the canopy apart in roped sections that are lowered, not dropped, which is how removals over roofs, pool screens, and fences stay uneventful.'],
+    ['title' => 'Clean Sweep',    'text' => 'Brush goes through the chipper, logs leave on the grapple loader, the stump is ground when it is in the quote, and we walk the yard with you before we call the job done.'],
 ];
 
 // ---- FAQs (research brief + service-area question) ----
 $faqs = [
     [
         'q' => 'Do you offer emergency tree removal after storms?',
-        'a' => "Yes. God's Country Tree Service provides 24/7 emergency response for storm damage throughout the DeLand area. Call us immediately after severe weather — we'll assess hazards and schedule removal same-day when it's safe to do so.",
+        'a' => "Yes. God's Country Tree Service answers storm-damage calls around the clock throughout the DeLand area. Call right after severe weather: a tree on a roof, a blocked driveway, or a split trunk over a structure is assessed first and removed the same day when it is safe to do so.",
     ],
     [
         'q' => 'Are you licensed and insured?',
@@ -167,7 +168,7 @@ $faqs = [
     ],
     [
         'q' => 'How much does tree removal cost in DeLand?',
-        'a' => 'Pricing depends on tree size, location, health, and removal complexity. We offer free estimates within 24 hours — no obligation. Most estimates include debris removal and stump grinding.',
+        'a' => 'Tree removal in DeLand is priced per job from four things: the size of the tree, where it stands, its health, and how complex the takedown is. We look at the tree in person at no charge and put the price in writing; most estimates include debris removal and stump grinding.',
     ],
     [
         'q' => 'What types of trees do you service?',
@@ -179,7 +180,7 @@ $faqs = [
     ],
     [
         'q' => 'What areas do you serve around DeLand?',
-        'a' => "We're based in DeLand (32720) and work within roughly 50 miles across Volusia County — including Deltona, Orange City, DeBary, and Lake Helen — for homeowners, businesses, and HOA communities.",
+        'a' => "We're based in DeLand (32720) and work within roughly 50 miles across Volusia County, including Deltona, Orange City, DeBary, Lake Helen, and DeLeon Springs, for homeowners, businesses, and HOA communities.",
     ],
 ];
 
@@ -715,11 +716,11 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
       <h1 class="hero-title">Tree Service in DeLand, FL &mdash; <span class="gradient-text text-accent">Year-Round Care</span></h1>
 
-      <p class="hero-subtitle"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving homes, businesses, and HOA communities across Volusia County since <?php echo e($yearEstablished); ?>. Tree removal, trimming, 24/7 emergency storm response, and certified arborist care &mdash; from the local crew who's here year-round.</p>
+      <p class="hero-subtitle"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, serving homes, businesses, and HOA communities across Volusia County since <?php echo e($yearEstablished); ?>. Tree removal, trimming, 24-hour emergency storm response, and certified arborist care from the owner-operated crew that is here year-round.</p>
 
       <div class="hero-actions">
         <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Estimate</a>
-        <a href="/services/emergency-tree-service-storm-cleanup/" class="btn btn-outline-white btn-lg hero-storm-cta">Storm damage? 24/7 emergency tree removal</a>
+        <a href="/services/emergency-tree-service-storm-cleanup/" class="btn btn-outline-white btn-lg hero-storm-cta">Storm damage? Emergency tree removal</a>
         <?php if (!empty($phone)): ?>
         <a href="<?php echo e(phoneHref($phone)); ?>" class="btn btn-outline-white btn-lg">Call Now <?php echo e(formatPhone($phone)); ?></a>
         <?php else: ?>
@@ -729,24 +730,20 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
       <div class="hero-trust">
         <span class="hero-trust-item">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
-          Licensed &amp; Insured
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <?php echo e($gbpRating); ?>&#9733; from <?php echo (int) $gbpReviewCount; ?> Google reviews
         </span>
         <span class="hero-trust-item">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
-          Commercial Contracts
-        </span>
-        <span class="hero-trust-item">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
-          <?php echo e($yearsInBusiness); ?>+ Years in DeLand
-        </span>
-        <span class="hero-trust-item">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-          24/7 Storm Response
+          Residential &middot; Commercial &middot; HOA
         </span>
         <span class="hero-trust-item">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg>
-          Free Estimates
+          Written estimates
+        </span>
+        <span class="hero-trust-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          Debris hauled away
         </span>
       </div>
     </div>
@@ -844,9 +841,9 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">What We Do</span>
       <h2>What Tree Services Does God's Country Tree Service Offer in <span class="text-accent">DeLand</span>?</h2>
-      <p class="hero-answer"><?php echo e($siteName); ?> provides twelve tree services in DeLand, FL: <a href="/services/tree-removal/">tree removal in DeLand</a>, <a href="/services/tree-trimming-services/">tree trimming in DeLand</a>, <a href="/services/tree-pruning-services/">tree pruning</a>, <a href="/services/crown-reduction-shaping/">crown reduction</a>, <a href="/services/dead-hazardous-tree-removal/">dead and hazardous tree removal</a>, <a href="/services/emergency-tree-service-storm-cleanup/">emergency tree removal</a> and storm cleanup, <a href="/services/fallen-tree-removal-cleanup/">fallen tree removal</a>, <a href="/services/tree-maintenance-care/">tree maintenance</a>, <a href="/services/tree-planting-shrub-installation/">tree planting</a>, <a href="/services/certified-arborist-services/">certified arborist services</a>, <a href="/services/residential-tree-services/">residential tree care</a>, and <a href="/services/commercial-hoa-tree-services/">commercial &amp; HOA tree service</a> &mdash; for homeowners, businesses, and HOA communities across Volusia County.</p>
+      <p class="hero-answer"><?php echo e($siteName); ?> offers twelve tree services in DeLand, FL, from removals and trimming to storm cleanup and planting. The most requested are <a href="/services/tree-removal/">tree removal in DeLand</a>, <a href="/services/tree-trimming-services/">tree trimming</a>, <a href="/services/emergency-tree-service-storm-cleanup/">emergency tree removal after storms</a>, and <a href="/services/tree-pruning-services/">structural pruning</a> for live oaks, laurel oaks, pines, and sabal palms.</p>
       <span class="section-subtitle"><?php echo e($tagline); ?></span>
-      <p class="prose">One local crew handles the whole job &mdash; climbing, rigging, skid-steer work, debris hauling, and stump grinding &mdash; so businesses and property managers never juggle multiple contractors or uncoordinated schedules.</p>
+      <p class="prose">The same crew also handles <a href="/services/crown-reduction-shaping/">crown reduction</a>, <a href="/services/dead-hazardous-tree-removal/">dead and hazardous tree removal</a>, <a href="/services/fallen-tree-removal-cleanup/">fallen tree cleanup</a>, <a href="/services/tree-maintenance-care/">scheduled tree maintenance</a>, <a href="/services/tree-planting-shrub-installation/">tree and shrub planting</a>, <a href="/services/certified-arborist-services/">certified arborist assessments</a>, <a href="/services/residential-tree-services/">residential tree care</a>, and <a href="/services/commercial-hoa-tree-services/">commercial and HOA tree service</a>. Climbing, rigging, skid-steer work, chipping, hauling, and stump grinding stay with one company, so nobody has to line up a second contractor to finish the job.</p>
     </div>
 
     <div class="services-grid services-grid--home" data-p1-dynamic>
@@ -891,8 +888,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="section-title" data-animate>
       <span class="eyebrow-label" style="color: var(--color-accent);">The Track Record</span>
-      <h2>Twelve Years of Tree Work in God's Country</h2>
-      <p><?php echo e($siteName); ?> has been climbing, cutting, and cleaning up DeLand's oaks, pines, and palms since <?php echo e($yearEstablished); ?> &mdash; building relationships with homeowners and businesses who value consistent, professional care.</p>
+      <h2>How Long Has God's Country Tree Service Worked in DeLand?</h2>
+      <p><?php echo e($siteName); ?> has worked in DeLand since <?php echo e($yearEstablished); ?> and is owner-operated. The work runs from single backyard oaks to land clearing, across DeLand, Deltona, Orange City, DeBary, Lake Helen, and DeLeon Springs. Four numbers sum up the company, and each one can be checked.</p>
     </div>
     <div class="stats-grid" data-p1-dynamic>
       <?php foreach ($homeStats as $stat): ?>
@@ -931,9 +928,9 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
       <div class="about-content">
         <span class="eyebrow-label">Local Roots</span>
-        <h2>Why DeLand Homeowners Call <span class="text-accent">God's Country</span> First</h2>
-        <p class="about-lede" data-animate><?php echo e($siteName); ?> was built in DeLand. Since <?php echo e($yearEstablished); ?>, the same local crew has handled Volusia County's oaks, pines, and palms &mdash; with the licensing, insurance, and certified arborist expertise that comes from year-round service.</p>
-        <p data-animate>You'll see our branded trucks and skid steers on DeLand streets all year. Tree work and land clearing from one provider means the job gets finished &mdash; cut, hauled, ground, and graded &mdash; without a second contractor.</p>
+        <h2>Why Do DeLand Homeowners Call <span class="text-accent">God's Country</span> First?</h2>
+        <p class="about-lede" data-animate>DeLand homeowners call <?php echo e($siteName); ?> first because the company is local and owner-operated. Caleb, the owner, is a trained arborist with more than two decades in tree work, the trucks stay in Volusia County between storms, and the estimate arrives in writing before any saw starts.</p>
+        <p data-animate>You'll see our trucks and skid steers on DeLand streets all year, not only the week after a hurricane. Tree work and land clearing from one provider means the job gets finished &mdash; cut, hauled, ground, and graded. For the longer story, read <a href="/about/">how God's Country started in DeLand</a>, or see <a href="/service-area/">every west Volusia town we work in</a>.</p>
 
         <h3 style="margin-top: var(--space-8);">The God's Country 4-Step Process</h3>
         <ol class="process-steps" data-p1-dynamic>
@@ -951,8 +948,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <div class="about-image about-image--framed" data-animate="right">
         <?php echo p1_picture($aboutImage, 'Caleb, owner of God\'s Country Tree Service, in orange arborist helmet on a DeLand, FL job site', 600, 750, '(max-width: 768px) 100vw, 600px'); ?>
         <div class="stat-overlay">
-          <div class="big-number"><?php echo e($yearsInBusiness); ?>+</div>
-          <div class="label">Years in DeLand</div>
+          <div class="big-number"><?php echo e($gbpRating); ?>&#9733;</div>
+          <div class="label"><?php echo (int) $gbpReviewCount; ?> Google reviews</div>
         </div>
       </div>
 
@@ -965,8 +962,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Reviews</span>
-      <h2>What DeLand Neighbors Say About Our <span class="text-accent">Tree Work</span></h2>
-      <p class="prose"><?php echo e($siteName); ?> is rated <?php echo e($gbpRating); ?>&#9733; from <?php echo (int) $gbpReviewCount; ?> Google reviews. Real reviews from real jobs around Volusia County &mdash; pulled live from our Google Business Profile.</p>
+      <h2>What Do DeLand Neighbors Say About Our <span class="text-accent">Tree Work</span>?</h2>
+      <p class="prose">DeLand neighbors rate <?php echo e($siteName); ?> <?php echo e($gbpRating); ?>&#9733; across <?php echo (int) $gbpReviewCount; ?> Google reviews. The reviews below load straight from the company's Google Business Profile, so nothing in this section is hand-picked or edited by us. That same profile is where DeLand customers leave a review of their own after a job.</p>
     </div>
 
     <!-- Elfsight reviews widget (intake-provided embed, pasted verbatim) -->
@@ -990,13 +987,20 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   </div>
 </section>
 
+<!-- ============ RECENT WORK — live feed from the Google Business Profile (v8) ============ -->
+<?php
+  require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/recent-work.php';
+  $recentWork = p1_recent_work($slug, ['heading' => "Latest from God's Country Tree Service in DeLand", 'limit' => 8]);
+  if ($recentWork !== '') echo $recentWork;
+?>
+
 <!-- ============ FAQ — 04 ============ -->
 <section class="numbered-section faq-home" data-num="04" aria-label="Frequently asked questions">
   <div class="container">
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Good Questions</span>
-      <h2>Tree Service Questions DeLand Homeowners <span class="text-accent">Actually Ask</span></h2>
-      <p class="prose">Straight answers on cost, storm response, licensing, and what we service. Have a different one? Ask it in the estimate form &mdash; we respond within 24 hours.</p>
+      <h2>What Do DeLand Homeowners Ask Before Hiring a <span class="text-accent">Tree Service</span>?</h2>
+      <p class="prose">DeLand homeowners ask a tree service six things before hiring: storm response, proof of insurance, cost, which trees are handled, preventative care, and how far the crew travels. The answers below come from <?php echo e($siteName); ?>; the <a href="/faq/">full FAQ page</a> covers permits, stumps, and scheduling.</p>
     </div>
 
     <div class="faq-grid" data-p1-dynamic>
@@ -1053,7 +1057,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <span class="eyebrow-label" style="color: var(--color-accent);">Residential &middot; Commercial &middot; HOA</span>
     <h2>Get Your Free Tree Service Estimate in DeLand</h2>
-    <p>Property managers, business owners, and homeowners across Volusia County trust <?php echo e($siteName); ?> for professional tree care. Whether you need a one-time removal, seasonal trimming, or a scheduled commercial contract &mdash; we respond within 24 hours with a written, all-in quote.</p>
+    <p>Tell <?php echo e($siteName); ?> about the one tree or the whole property. The phone is answered Monday through Friday 7 AM to 10 PM and Saturday 8 AM to 9 PM, the visit is free, and the price comes back in writing with hauling and stump work spelled out.</p>
     <div class="hero-actions">
       <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Estimate</a>
       <a href="/services/commercial-hoa-tree-services/" class="btn btn-outline-white btn-lg">Commercial Contracts</a>

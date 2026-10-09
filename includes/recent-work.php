@@ -57,7 +57,8 @@ if (!function_exists('p1_recent_work_data')) {
         ob_start(); ?>
 <section class="p1-recent" aria-labelledby="p1-recent-h" data-p1-component="recent-work">
 <style>
-.p1-recent{padding:var(--space-xl,4rem) 0}
+/* site token aliases (this site names its tokens differently from the component defaults) */
+.p1-recent{--color-paper-2:var(--color-cream);--bg-alt:var(--color-light);--color-line:var(--color-gray-light);--color-muted:var(--color-gray);--color-surface:var(--color-white);--container-max:var(--max-width);padding:var(--space-xl,4rem) 0}
 .p1-recent__inner{max-width:var(--container-max,1180px);margin:0 auto;padding:0 var(--space-lg,1.5rem)}
 .p1-recent__head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-bottom:var(--space-md,1rem)}
 .p1-recent__head h2{margin:0;font-family:var(--font-heading,inherit)}

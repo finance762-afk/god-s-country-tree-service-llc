@@ -29,7 +29,8 @@ if (!function_exists('p1_zip_check')) {
         ob_start(); ?>
 <section class="p1-zip" id="<?= $h($id) ?>" aria-labelledby="<?= $h($id) ?>-h" data-p1-component="zip-check" data-areas="<?= $data ?>">
 <style>
-.p1-zip{padding:var(--space-xl,4rem) 0;background:var(--color-paper-2,var(--bg-alt,#f6f6f4))}
+/* site token aliases (this site names its tokens differently from the component defaults) */
+.p1-zip{--color-paper-2:var(--color-cream);--bg-alt:var(--color-light);--color-line:var(--color-gray-light);--color-muted:var(--color-gray);--color-surface:var(--color-white);--container-max:var(--max-width);padding:var(--space-xl,4rem) 0;background:var(--color-paper-2,var(--bg-alt,#f6f6f4))}
 .p1-zip__inner{max-width:720px;margin:0 auto;padding:0 var(--space-lg,1.5rem);text-align:center}
 .p1-zip__inner h2{margin:0 0 .5rem;font-family:var(--font-heading,inherit)}
 .p1-zip__inner>p{color:var(--color-muted,#666);margin:0 0 1rem}

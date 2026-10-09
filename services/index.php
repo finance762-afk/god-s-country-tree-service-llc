@@ -39,7 +39,7 @@ $decisionPaths = [
     [
         'icon'  => 'siren',
         'title' => 'Something already happened',
-        'text'  => 'A tree is down, split, or hanging over the house after a storm. Start with emergency response — we answer 24/7 and make the scene safe first, then handle cleanup.',
+        'text'  => 'A tree is down, split, or hanging over the house after a storm. Start with emergency response: the scene is made safe first, then handle cleanup.',
         'links' => [
             ['label' => 'Emergency & Storm Cleanup', 'url' => '/services/emergency-tree-service-storm-cleanup/'],
             ['label' => 'Fallen Tree Removal',        'url' => '/services/fallen-tree-removal-cleanup/'],
@@ -526,7 +526,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <h1>Tree Services in DeLand, FL &mdash; <span class="text-accent">One Local Crew, Twelve Specialties</span></h1>
 
-    <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, offering twelve specialized services &mdash; from tree removal and trimming to 24/7 storm cleanup and certified arborist care &mdash; for homes, businesses, and HOA communities across Volusia County since <?php echo e($yearEstablished); ?>.</p>
+    <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, offering twelve specialized services &mdash; from tree removal and trimming to 24-hour storm cleanup and certified arborist care &mdash; for homes, businesses, and HOA communities across Volusia County since <?php echo e($yearEstablished); ?>.</p>
 
     <div class="hero-actions">
       <a href="/#estimate-form" class="btn btn-accent btn-lg">Get a Free Estimate</a>
@@ -534,10 +534,9 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     </div>
 
     <div class="hero-trust">
-      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
-      <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
-      <span class="hero-trust-item"><?php echo icon('zap'); ?> 24/7 Storm Response</span>
-      <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
+      <span class="hero-trust-item"><?php echo icon('star'); ?> <?php echo e($gbpRating); ?>&#9733; from <?php echo (int) $gbpReviewCount; ?> Google reviews</span>
+      <span class="hero-trust-item"><?php echo icon('truck'); ?> Debris Hauled Away</span>
+      <span class="hero-trust-item"><?php echo icon('map-pin'); ?> ~50-Mile Radius from DeLand</span>
     </div>
   </div>
 </section>
@@ -548,7 +547,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">What We Do</span>
       <h2>Which tree services does God's Country offer in <span class="text-accent">DeLand</span>?</h2>
-      <p class="answer-block"><?php echo e($siteName); ?> offers twelve tree services in DeLand: removal, dead and hazardous tree removal, trimming, pruning, crown reduction, 24/7 emergency storm cleanup, fallen tree cleanup, planting and shrub installation, residential and commercial care, maintenance plans, and certified arborist consultations. Every card below links to the full service page.</p>
+      <p class="answer-block"><?php echo e($siteName); ?> offers twelve tree services in DeLand, and every one has its own page below. They fall into three groups: removals (standing, dead, hazardous, fallen, and storm-damaged trees), canopy work (trimming, pruning, and crown reduction), and ongoing care (maintenance, planting, arborist assessments, and residential or commercial programs).</p>
     </div>
 
     <?php renderServiceCards(array_column($services, 'slug'), $serviceCardData); ?>
@@ -566,7 +565,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Start Here</span>
       <h2>How do you know which tree service you need?</h2>
-      <p class="answer-block">Match your situation to one of three starting points: something already happened (storm damage, a downed tree), something looks wrong (a lean, deadwood, fungus), or you're planning ahead (trimming, planting, a maintenance schedule). Pick the path below &mdash; or just request an estimate and we'll sort it out on the walk-through.</p>
+      <p class="answer-block">The tree service you need depends on which of three situations you are in. Something already happened (storm damage, a downed tree), something looks wrong (a lean, deadwood, fungus), or you're planning ahead (trimming, planting, a maintenance schedule). Pick the path below, or request an estimate and we'll sort it out on the walk-through.</p>
     </div>
 
     <div class="svcx-paths" data-p1-dynamic>
@@ -591,7 +590,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <span class="eyebrow-label" style="color: var(--color-accent);">Not Sure? Ask the Crew</span>
     <h2>Can't Tell Whether That Oak Needs Trimming or Removal?</h2>
-    <p class="answer-block">You don't have to diagnose it yourself. Request a free estimate and <?php echo e($siteName); ?> walks the property with you, tells you honestly which service fits &mdash; trimming, reduction, or removal &mdash; and puts the price in writing within 24 hours. No obligation either way.</p>
+    <p class="answer-block">You don't have to diagnose it yourself. Request a free estimate and <?php echo e($siteName); ?> walks the property with you, tells you honestly which service fits &mdash; trimming, reduction, or removal &mdash; and puts the price in writing. No obligation either way.</p>
     <a href="/#estimate-form" class="btn btn-accent btn-lg">Request a Free Walk-Through</a>
     <a href="/services/certified-arborist-services/" class="btn btn-outline-white btn-lg">Ask a Certified Arborist</a>
   </div>
@@ -602,8 +601,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Local Coverage</span>
-      <h2>Looking for tree service near me in DeLand?</h2>
-      <p class="answer-block">If you're searching for tree service near me in DeLand, you found the local option: <?php echo e($siteName); ?> is based in DeLand (32720) and works within roughly 50 miles &mdash; Deltona, Orange City, DeBary, Lake Helen, and the rest of Volusia County &mdash; with the same crew and equipment on every job.</p>
+      <h2>Who offers tree service near me in DeLand?</h2>
+      <p class="answer-block"><?php echo e($siteName); ?> offers tree service near you from its base in DeLand (32720). The crew works within roughly 50 miles, with pages for <a href="/service-area/deltona/">Deltona</a>, <a href="/service-area/orange-city/">Orange City</a>, <a href="/service-area/debary/">DeBary</a>, <a href="/service-area/lake-helen/">Lake Helen</a>, and <a href="/service-area/deleon-springs/">DeLeon Springs</a>. The <a href="/service-area/">service area page</a> has a ZIP checker if your town is not listed here.</p>
     </div>
 
     <div class="svcx-local-grid">
@@ -642,9 +641,9 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 <!-- ============ CLOSING CTA (C9.2) ============ -->
 <section class="svcx-closing" aria-label="Get a free estimate">
   <div class="container">
-    <span class="eyebrow-label" style="color: var(--color-accent);">Free &middot; Written &middot; Within 24 Hours</span>
+    <span class="eyebrow-label" style="color: var(--color-accent);">Free &middot; Written &middot; No Obligation</span>
     <h2>Which of Your Trees Should We Look at First?</h2>
-    <p class="answer-block">Tell us what's going on &mdash; a leaning pine, an overgrown canopy, storm debris, or a whole property that needs a plan. <?php echo e($siteName); ?> responds within 24 hours with an honest read and a straight, all-in written quote for whichever of our twelve services fits.</p>
+    <p class="answer-block">Tell us what's going on &mdash; a leaning pine, an overgrown canopy, storm debris, or a whole property that needs a plan. <?php echo e($siteName); ?> comes back with an honest read and a straight, all-in written quote for whichever of the twelve services fits.</p>
     <div class="hero-actions">
       <a href="/#estimate-form" class="btn btn-accent btn-lg">Get a Free Estimate</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact Us</a>

@@ -257,6 +257,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 .sa-area-card--primary { grid-column: span 3; flex-direction: row; }
 .sa-area-media { position: relative; overflow: hidden; aspect-ratio: 16 / 10; }
 .sa-area-card--primary .sa-area-media { flex: 1 1 46%; aspect-ratio: auto; min-height: 280px; }
+.sa-area-media picture { display: block; width: 100%; height: 100%; }
 .sa-area-media img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-slow); }
 .sa-area-card:hover .sa-area-media img { transform: scale(1.06); }
 .sa-area-badge {
@@ -509,7 +510,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 
     <h1>Tree Service in DeLand &amp; <span class="text-accent">Surrounding Communities</span></h1>
 
-    <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, working roughly 50 miles across Volusia County since <?php echo e($yearEstablished); ?> &mdash; from Deltona and Orange City to DeBary, Lake Helen, and DeLeon Springs. Same local crew, same trucks, free written estimates within 24 hours.</p>
+    <p class="hero-answer"><?php echo e($siteName); ?> is a licensed and insured tree service based in DeLand, Florida, working roughly 50 miles across Volusia County since <?php echo e($yearEstablished); ?>, from Deltona and Orange City to DeBary, Lake Helen, and DeLeon Springs. One crew and one set of trucks cover every town on this page, and the written estimate is free.</p>
 
     <div class="hero-actions">
       <a href="/contact/" class="btn btn-accent btn-lg">Get a Free Estimate</a>
@@ -517,9 +518,9 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     </div>
 
     <div class="hero-trust">
-      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
-      <span class="hero-trust-item"><?php echo icon('map-pin'); ?> ~50-Mile Radius</span>
-      <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in Volusia County</span>
+      <span class="hero-trust-item"><?php echo icon('map-pin'); ?> ~50-Mile Radius from DeLand</span>
+      <span class="hero-trust-item"><?php echo icon('star'); ?> <?php echo e($gbpRating); ?>&#9733; from <?php echo (int) $gbpReviewCount; ?> Google reviews</span>
+      <span class="hero-trust-item"><?php echo icon('truck'); ?> Residential &middot; Commercial &middot; HOA</span>
     </div>
   </div>
 </section>
@@ -536,11 +537,11 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <div class="sa-coverage-copy">
         <span class="sa-eyebrow">One Local Crew, One Region</span>
         <h2 style="text-wrap:balance; margin-bottom: var(--space-4);">What areas does God's Country Tree Service cover around DeLand?</h2>
-        <p class="answer-block drop-cap">God's Country Tree Service covers DeLand and the surrounding west-Volusia communities within about a 50-mile radius, including Deltona, Orange City, DeBary, Lake Helen, and DeLeon Springs. From our DeLand base we bring the same climbers, grapple loader, and skid steer to every job &mdash; residential, commercial, or HOA &mdash; with free written estimates in 24 hours.</p>
+        <p class="answer-block drop-cap">God's Country Tree Service covers DeLand and the surrounding west-Volusia communities within about a 50-mile radius, including Deltona, Orange City, DeBary, Lake Helen, and DeLeon Springs. The same climbers, grapple loader, and skid steer leave the DeLand yard for every job, whether it is one backyard oak in Lake Helen or acreage in DeLeon Springs.</p>
         <ul class="sa-coverage-points" data-p1-dynamic>
           <li data-animate><?php echo icon('map-pin'); ?><p><strong>Based in DeLand since <?php echo e($yearEstablished); ?>.</strong> We are your neighbors, not storm-chasers who leave when the hurricane season ends.</p></li>
           <li data-animate><?php echo icon('truck'); ?><p><strong>Full equipment travels with us.</strong> Climbing gear, boom lift, grapple loader, chipper, and skid steer reach every town on this page.</p></li>
-          <li data-animate><?php echo icon('clock'); ?><p><strong>24-hour emergency response.</strong> When a storm drops a tree anywhere in west Volusia, we answer around the clock.</p></li>
+          <li data-animate><?php echo icon('clock'); ?><p><strong>24-hour emergency response.</strong> When a storm drops a tree anywhere in west Volusia, the call is answered and genuine hazards are seen the same day.</p></li>
         </ul>
       </div>
       <div>
@@ -556,6 +557,12 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   </div>
 </section>
 
+<!-- ============ ZIP / TOWN CHECKER (v8) ============ -->
+<?php
+  require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/zip-check.php';
+  echo p1_zip_check(['heading' => 'Do we serve your address?']);
+?>
+
 <!-- Divider: torn edge (white → cream) -->
 <div class="sa-divider sa-divider--flush" aria-hidden="true">
   <svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,60 L0,38 L70,42 L140,33 L220,44 L300,30 L390,46 L470,36 L570,44 L670,28 L770,41 L870,33 L960,44 L1060,31 L1150,41 L1200,36 L1200,60 Z" fill="var(--color-cream)"/></svg>
@@ -566,8 +573,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="sa-section-title" data-animate>
       <span class="sa-eyebrow">Pick Your Town</span>
-      <h2>Tree service for every west-Volusia community we call home</h2>
-      <p class="answer-block">Each town below has its own trees, soils, and storm history &mdash; and its own page explaining how <?php echo e($siteName); ?> handles them. Tap through to the community closest to you for local details, or call for a free estimate anywhere in the area.</p>
+      <h2>Which west Volusia towns does God's Country Tree Service work in?</h2>
+      <p class="answer-block">God's Country Tree Service works in six west Volusia towns: DeLand, Deltona, Orange City, DeBary, Lake Helen, and DeLeon Springs. Each has its own page: <a href="/service-area/deltona/">storm cleanup on Deltona's lake lots</a>, <a href="/service-area/orange-city/">oak care in Orange City</a>, <a href="/service-area/debary/">tree service for DeBary subdivisions</a>, <a href="/service-area/lake-helen/">heritage oak pruning in Lake Helen</a>, and <a href="/service-area/deleon-springs/">acreage and land clearing in DeLeon Springs</a>.</p>
     </div>
 
     <div class="sa-area-grid" data-p1-dynamic>
@@ -579,7 +586,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       ?>
       <article class="<?php echo $cardClass; ?> reveal-up reveal-delay-<?php echo $delay; ?>" data-animate>
         <div class="sa-area-media">
-          <img src="<?php echo e($area['img']); ?>" alt="Tree work by God's Country Tree Service in <?php echo e($area['city']); ?>, <?php echo e($area['state']); ?>" width="600" height="375" loading="lazy">
+          <?php echo p1_picture($area['img'], "Tree work by God's Country Tree Service, which serves " . $area['city'] . ', ' . $area['state'], 600, 375, '(max-width: 768px) 100vw, 600px'); ?>
           <span class="sa-area-badge<?php echo $isPrimary ? ' sa-area-badge--home' : ''; ?>"><?php echo icon(($isPrimary ? 'house' : 'map-pin')); ?> <?php echo $isPrimary ? 'Home Base' : e($area['distance']); ?></span>
         </div>
         <div class="sa-area-body">
@@ -606,7 +613,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <div class="sa-stat" data-animate><div class="num" data-count="<?php echo e($yearsInBusiness); ?>"><?php echo e($yearsInBusiness); ?><span>+</span></div><div class="lbl">Years in Volusia County</div></div>
       <div class="sa-stat" data-animate><div class="num" data-count="50">50<span>mi</span></div><div class="lbl">Service Radius from DeLand</div></div>
       <div class="sa-stat" data-animate><div class="num" data-count="6">6</div><div class="lbl">Communities Covered</div></div>
-      <div class="sa-stat" data-animate><div class="num">24<span>/7</span></div><div class="lbl">Storm Response</div></div>
+      <div class="sa-stat" data-animate><div class="num" data-count="<?php echo count($services); ?>"><?php echo count($services); ?></div><div class="lbl">Tree Services Offered</div></div>
     </div>
     <div class="sa-chip-row" data-p1-dynamic>
       <?php foreach ($serviceAreas as $area): ?>
@@ -628,7 +635,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="sa-section-title" data-animate>
       <span class="sa-eyebrow">Why a Local Crew Matters</span>
       <h2>Why hire a DeLand-based tree service instead of an out-of-town outfit?</h2>
-      <p class="answer-block">Because west Volusia's sandy soils, hurricane exposure, and protected heritage oaks reward crews who know them. <?php echo e($siteName); ?> lives and works here year-round &mdash; licensed, insured, and accountable long after the chipper leaves your street.</p>
+      <p class="answer-block">A DeLand-based tree service knows west Volusia's sandy soils, hurricane exposure, and protected heritage oaks, and it is still here after the storm. <?php echo e($siteName); ?> works in these towns year-round and answers the same phone number long after the chipper leaves your street. The <a href="/services/">services page</a> lists the work on offer.</p>
     </div>
 
     <div class="sa-why-grid" data-p1-dynamic>
@@ -640,7 +647,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <div class="sa-why-card reveal-up reveal-delay-2" data-animate>
         <div class="sa-why-icon"><?php echo icon('cloud-lightning'); ?></div>
         <h3>Built for Florida storm season</h3>
-        <p>Hurricanes hit all of Volusia County. Our 24-hour crew clears fallen and hazardous trees across every town on this page, then helps you prune the survivors before the next system.</p>
+        <p>Hurricanes hit all of Volusia County. The crew handles <a href="/services/emergency-tree-service-storm-cleanup/">emergency tree removal and storm cleanup</a> across every town on this page, then prunes the survivors before the next system.</p>
       </div>
       <div class="sa-why-card reveal-up reveal-delay-3" data-animate>
         <div class="sa-why-icon"><?php echo icon('badge-check'); ?></div>
@@ -654,9 +661,9 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 <!-- ============ CLOSING CTA ============ -->
 <section class="sa-cta" aria-label="Get a free estimate in your area">
   <div class="container">
-    <span class="sa-eyebrow" style="color: var(--color-accent);">Free &middot; Written &middot; Within 24 Hours</span>
+    <span class="sa-eyebrow" style="color: var(--color-accent);">Free &middot; Written &middot; No Obligation</span>
     <h2>Tell Us Which Volusia County Town Your Tree Is In</h2>
-    <p>Whether it's a leaning oak in DeLand, a storm-split pine in Deltona, or a heritage tree in Lake Helen, <?php echo e($siteName); ?> will walk the property, give you an honest read, and put a straight all-in price in writing.</p>
+    <p>Whether it's a leaning oak in DeLand, a storm-split pine in Deltona, or a heritage tree in Lake Helen, <?php echo e($siteName); ?> will walk the property, give you an honest read, and put a straight all-in price in writing within 24 hours.</p>
     <div class="hero-actions">
       <a href="/contact/" class="btn btn-accent btn-lg">Get a Free Estimate</a>
       <a href="/services/" class="btn btn-outline-white btn-lg">Browse All Services</a>
