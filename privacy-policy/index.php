@@ -165,9 +165,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <?php if (!empty($phone)): ?>Phone: <a href="<?php echo e(phoneHref($phone)); ?>"><?php echo e(formatPhone($phone)); ?></a><?php endif; ?>
   </div>
 
-  <div class="legal-disclaimer">
-    This Privacy Policy is provided as a general template. We recommend reviewing this document with a licensed <?php echo e($companyState); ?> attorney before publication to ensure compliance with current state and federal privacy laws.
-  </div>
 
 </article>
 

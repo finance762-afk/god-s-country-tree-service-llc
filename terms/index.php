@@ -143,9 +143,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
     <?php if (!empty($phone)): ?>Phone: <a href="<?php echo e(phoneHref($phone)); ?>"><?php echo e(formatPhone($phone)); ?></a><?php endif; ?>
   </div>
 
-  <div class="legal-disclaimer">
-    This document is provided as a general template. We recommend reviewing it with a licensed <?php echo e($companyState); ?> attorney before publication.
-  </div>
 
 </article>
 
