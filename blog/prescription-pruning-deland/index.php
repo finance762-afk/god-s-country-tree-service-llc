@@ -4,11 +4,11 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php';
 
 $pageTitle = 'What Is Prescription Pruning? Rx Pruning in DeLand';
-$pageDescription = 'Prescription pruning is a certified arborist\'s written plan per tree: objective, cuts, dose, and timing. See how Rx pruning works for DeLand oaks and pines.';
+$pageDescription = 'Prescription pruning is an arborist\'s written plan for each tree: objective, cuts, dose, and timing. See how Rx pruning works for DeLand oaks and pines.';
 $canonicalUrl = $siteUrl . '/blog/prescription-pruning-deland/';
 $currentPage = 'blog';
 $postFaqs = [
-    ['q' => 'What is prescription pruning?', 'a' => 'Prescription pruning, often shortened to Rx pruning, is pruning done to a written plan prepared by a certified arborist for a specific tree. The prescription names the objective, the types of cuts, how much of the live crown may be removed, which parts of the tree to work, and when to do it. It follows ANSI A300 pruning principles rather than a one-size trim.'],
+    ['q' => 'What is prescription pruning?', 'a' => 'Prescription pruning, often shortened to Rx pruning, is pruning done to a written plan prepared by an arborist for a specific tree. The prescription names the objective, the types of cuts, how much of the live crown may be removed, which parts of the tree to work, and when to do it. It follows ANSI A300 pruning principles rather than a one-size trim.'],
     ['q' => 'How is prescription pruning different from regular tree trimming?', 'a' => 'Regular trimming is usually described by the result the customer wants, such as "clear it off the roof" or "thin it out." A prescription starts from the tree. The arborist looks at species, age, structure, defects, and site, then writes a plan that gets the customer the result without over-cutting or creating new problems. The crew prunes to the plan, not to a guess.'],
     ['q' => 'Does prescription pruning cost more than a standard trim?', 'a' => 'It includes an arborist assessment and a written plan, so there is more work before the first cut. In practice it often saves money over the life of the tree because the right cuts at the right time mean fewer emergency calls, fewer storm failures, and less corrective pruning later. God\'s Country Tree Service provides a free written estimate for the pruning itself.'],
     ['q' => 'Which DeLand trees benefit most from Rx pruning?', 'a' => 'Live oaks and laurel oaks over houses, sand pines and slash pines near structures, Southern magnolias, and any young shade tree that is still forming its branch structure. Trees with co-dominant stems, included bark, or a history of storm damage benefit the most because a prescription addresses the specific defect.'],
@@ -56,7 +56,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <p>Most pruning problems come from treating every tree the same way. A live oak, a laurel oak, a slash pine, and a Southern magnolia respond very differently to the same cuts, and DeLand yards often have all four. A prescription accounts for the species, the age, the defects the arborist can see, and what the tree is growing over.</p>
 
         <h3>Live oaks</h3>
-        <p>Live oaks compartmentalize wounds well and tolerate reduction pruning, which makes them good candidates for careful <a href="/services/crown-reduction-shaping/">crown reduction</a> over roofs. They also respond to over-thinning by pushing dense interior sprouts, so the dose in the prescription matters.</p>
+        <p>Live oaks compartmentalize wounds well and tolerate reduction pruning, which makes them good candidates for careful <a href="/services/tree-trimming-services/">crown reduction</a> over roofs. They also respond to over-thinning by pushing dense interior sprouts, so the dose in the prescription matters.</p>
 
         <h3>Laurel oaks</h3>
         <p>Laurel oaks grow fast, decay fast, and are the oak most often involved in storm failures around DeLand. A prescription for a laurel oak usually focuses on removing dead wood, reducing long heavy limbs, and inspecting for decay rather than opening up the canopy.</p>
@@ -68,6 +68,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <p>Magnolias are pruned lightly and at the right time to avoid losing the next season's flowers. Young trees of any species get structural pruning, which is the most valuable prescription of all because it decides the tree's shape for the next fifty years.</p>
 
         <h2>What Are the Common Pruning Prescriptions?</h2>
+        <p>The common pruning prescriptions are structural pruning, crown cleaning, crown thinning, crown raising, and crown reduction. Each one names a different objective, so the arborist picks the prescription from what the tree needs and what it is growing over. One tree can carry two prescriptions in the same visit.</p>
         <ul>
           <li><strong>Structural pruning (young trees).</strong> Select one dominant leader, remove or shorten competing stems, and space the main branches. Done every few years while the tree is small, it prevents the co-dominant splits that bring mature oaks down.</li>
           <li><strong>Crown cleaning.</strong> Remove dead, dying, broken, and rubbing branches. The default prescription for a mature tree that is basically healthy.</li>
@@ -77,27 +78,28 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         </ul>
 
         <h2>When Should Rx Pruning Be Done in Central Florida?</h2>
-        <p>Timing is part of the prescription because the right window changes with the objective. Structural and clearance pruning is usually scheduled in the cooler dormant months. Hurricane thinning is finished before June. Oaks are generally not pruned during peak spring growth, and magnolias are pruned after they flower. Our guide to the <a href="/blog/best-time-trim-trees-florida/">best time to trim trees in Florida</a> goes species by species. Dead and hazardous limbs are the exception and come off whenever they are found.</p>
+        <p>Rx pruning in Central Florida is timed by objective: structural and clearance work in the cooler months, hurricane thinning finished before June. Heavy pruning of oaks is generally avoided during the spring growth flush, and magnolias are pruned after they flower. Dead and hazardous limbs are the exception and come off whenever they are found.</p>
+        <p>Timing is part of the prescription because the right window changes with the objective. Our guide to the <a href="/blog/best-time-trim-trees-florida/">best time to trim trees in Florida</a> goes species by species.</p>
 
         <h2>What Does a Bad Prescription Look Like?</h2>
-        <p>If you have had a tree pruned before and it looked wrong afterward, one of these is usually the reason:</p>
+        <p>A bad prescription looks like lion-tailing, flush cuts, over-thinning, or topping. All four remove the wrong wood or too much of it, and the tree shows it later through weak sprouts, decay, or snapped limbs. If a tree looked wrong after earlier pruning, one of these is usually the reason:</p>
         <ul>
           <li><strong>Lion-tailing.</strong> Stripping the interior branches and leaving tufts of foliage at the ends. It looks tidy and it makes limbs more likely to snap in wind.</li>
           <li><strong>Flush cuts.</strong> Cutting into the branch collar instead of just outside it, which prevents the tree from sealing the wound and invites decay.</li>
           <li><strong>Over-thinning.</strong> Removing far more live crown than the tree can afford in one visit, which stresses the tree and triggers sprouting.</li>
           <li><strong>Topping.</strong> Cutting limbs back to stubs with no lateral branch. The regrowth is weakly attached and the tree is worse off every year after.</li>
         </ul>
-        <p>A written prescription prevents all four because the cut types and the dose are decided before the climber goes up. If you are worried a tree has already been damaged by poor pruning, a <a href="/services/certified-arborist-services/">certified arborist assessment</a> can tell you what can be corrected and how.</p>
+        <p>A written prescription prevents all four because the cut types and the dose are decided before the climber goes up. If you are worried a tree has already been damaged by poor pruning, a <a href="/services/certified-arborist-services/">arborist assessment</a> can tell you what can be corrected and how.</p>
 
         <h2>What Do You Receive with Prescription Pruning?</h2>
         <ol>
-          <li><strong>A site visit by a certified arborist</strong> who looks at each tree's species, structure, and surroundings.</li>
+          <li><strong>A site visit by the arborist</strong> who looks at each tree's species, structure, and surroundings.</li>
           <li><strong>A written prescription per tree</strong> with the objective, cut types, dose limit, canopy zones, and timing.</li>
           <li><strong>A free written estimate</strong> for the pruning work itself.</li>
           <li><strong>Pruning to the plan</strong> by a crew that works from the prescription, with the arborist available for questions on site.</li>
           <li><strong>A note for next time</strong> so the next visit, often years out, builds on this one.</li>
         </ol>
-        <p>God's Country Tree Service has pruned trees in DeLand and Volusia County since 2014, is licensed and insured, and has a certified arborist on staff. If you want <a href="/services/tree-pruning-services/">tree pruning in DeLand</a> done to a plan rather than a guess, call (407) 280-3484 and ask for a prescription visit.</p>
+        <p>God's Country Tree Service has pruned trees in DeLand and Volusia County since 2014, is licensed and insured, and has a certified arborist on staff. If you want <a href="/services/tree-trimming-services/">tree pruning in DeLand</a> done to a plan rather than a guess, call (407) 280-3484 and ask for a prescription visit.</p>
 
         <h2>Prescription Pruning FAQs</h2>
 
@@ -110,17 +112,15 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
         <div class="blog-cta">
           <h3>Want a pruning plan for your trees?</h3>
-          <p>Our certified arborist will walk your property, write a prescription for each tree, and give you a free written estimate for the work.</p>
+          <p>The arborist will walk your property, write a prescription for each tree, and give you a free written estimate for the work.</p>
           <a href="/contact/" class="btn btn-primary">Schedule an Arborist Visit</a>
         </div>
 
         <div class="blog-related-services">
           <h3>Related Tree Services</h3>
           <ul>
-            <li><a href="/services/tree-pruning-services/">Tree Pruning Services</a></li>
+            <li><a href="/services/tree-trimming-services/">Tree Trimming &amp; Pruning</a></li>
             <li><a href="/services/certified-arborist-services/">Certified Arborist Services</a></li>
-            <li><a href="/services/crown-reduction-shaping/">Crown Reduction &amp; Shaping</a></li>
-            <li><a href="/services/tree-trimming-services/">Tree Trimming Services</a></li>
           </ul>
         </div>
 

@@ -320,7 +320,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
       <!-- Form -->
       <div class="contact-form-card">
         <h2>Request a Free Estimate</h2>
-        <p class="form-lede">Fill out the form and the DeLand crew will get back to you within 24 hours. No obligation, ever.</p>
+        <p class="form-lede">Fill out the form and the DeLand crew will get back to you with next steps. No obligation, ever.</p>
 
         <form action="<?php echo e($formAction); ?>" method="POST" class="contact-form">
           <!-- Formsubmit.co directives -->

@@ -202,7 +202,7 @@ function icon($name, $class = '') {
 // variants degrades to a plain <img>.
 function p1_variants(string $src, string $ext): array {
     if ($src === '' || $src[0] !== '/') return [];
-    $base = preg_replace('/\.(webp|avif|jpe?g|png)$/i', '', $src);
+    $base = preg_replace('/(-(480|960|1600))?\.(webp|avif|jpe?g|png)$/i', '', $src); // a src that already names a variant resolves to the same set
     $out = [];
     foreach ([480, 960, 1600] as $w) {
         if (is_file($_SERVER['DOCUMENT_ROOT'] . "{$base}-{$w}.{$ext}")) $out[$w] = "{$base}-{$w}.{$ext}";

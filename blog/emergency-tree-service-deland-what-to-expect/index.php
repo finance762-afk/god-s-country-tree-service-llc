@@ -4,7 +4,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php';
 
 $pageTitle = 'Emergency Tree Service in DeLand: What to Expect';
-$pageDescription = 'Tree on your roof, car, or power line in DeLand? See what counts as an emergency, what to do first, and how the crew and insurance work. We answer 24/7.';
+$pageDescription = 'Tree on your roof, car, or power line in DeLand? See what counts as an emergency, what to do first, how the crew works, and how insurance handles it.';
 $canonicalUrl = $siteUrl . '/blog/emergency-tree-service-deland-what-to-expect/';
 $currentPage = 'blog';
 $postFaqs = [
@@ -52,7 +52,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         </div>
 
         <h2>What Counts as a Tree Emergency in DeLand?</h2>
-        <p>Not every fallen tree needs a crew at 2 a.m. The crew's first job on the phone is to sort a real hazard from a job that is better done safely in daylight. These situations get a same-day response:</p>
+        <p>Not every fallen tree needs a crew at 2 a.m. The crew's first job on the phone is to sort a real hazard from a job that is better done safely in daylight. These situations are treated as emergencies:</p>
 
         <h3>Emergency situations</h3>
         <ul>
@@ -67,12 +67,13 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <p>A tree that came down in an open part of the yard, a large limb on the lawn, or a leaning tree that is not over anything can usually be handled as a scheduled <a href="/services/fallen-tree-removal-cleanup/">fallen tree removal and cleanup</a>. You still get a fast response, but the crew works it with full daylight and the right equipment rather than in the dark. If you are not sure which category you are in, call anyway. We would rather tell you it can wait than have you guess wrong.</p>
 
         <h2>What Should You Do Before the Crew Arrives?</h2>
+        <p>Before the crew arrives, keep everyone clear of the tree and any downed wire, and leave the cutting to the crew. Then use the wait to photograph the damage and protect what you safely can indoors. The five steps below are in the order that matters.</p>
         <ol>
           <li><strong>Stay away from downed lines.</strong> Keep at least a house-length back. Wet grass and metal fences carry current farther than people expect.</li>
           <li><strong>Do not start cutting.</strong> A tree on a structure is spring-loaded. Removing one limb changes where the weight goes, and that is how homeowners get pinned or push a trunk through the roof.</li>
           <li><strong>Photograph everything.</strong> The tree, the point of impact, the damage inside if it is safe to look, and the base of the tree. Do this before any branches are moved.</li>
           <li><strong>Protect the interior if you can do it safely.</strong> A tarp over furniture or a bucket under a drip is fine. Climbing onto a damaged roof is not.</li>
-          <li><strong>Call your insurer after you call us.</strong> Most carriers want a claim opened the same day, and they want the removal estimate in writing.</li>
+          <li><strong>Call your insurer after you call us.</strong> Most carriers want a claim opened promptly, and they want the removal estimate in writing.</li>
         </ol>
 
         <h2>What Happens on the Call and When the Crew Arrives?</h2>
@@ -90,10 +91,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <p>You receive a free written estimate before the work and an itemized invoice after. Both describe where the tree was and what it damaged, which is the language adjusters need.</p>
 
         <h2>How Does Insurance Work for Emergency Tree Removal?</h2>
-        <p>In Florida, a homeowner policy generally covers tree removal when the tree damaged a covered structure. The house, an attached garage, a fence, and sometimes a shed or pool screen qualify. A tree that fell in the yard and hit nothing is often excluded or capped at a small amount. The deductible applies either way, so for a small cleanup it may not be worth filing. Our guide to <a href="/blog/insurance-fallen-tree-removal-florida/">insurance and fallen tree removal in Florida</a> walks through the claim step by step, and the <a href="/blog/tree-fell-on-house-deland-fl/">tree-on-house checklist</a> covers the first hours in more detail.</p>
+        <p>Insurance generally pays for emergency tree removal in Florida when the tree damaged a covered structure. The house, an attached garage, a fence, and sometimes a shed or pool screen qualify. A tree that fell in the yard and hit nothing is often excluded or capped, and the deductible applies either way.</p>
+        <p>For a small cleanup it may not be worth filing a claim. Our guide to <a href="/blog/insurance-fallen-tree-removal-florida/">insurance and fallen tree removal in Florida</a> walks through the claim step by step, and the <a href="/blog/tree-fell-on-house-deland-fl/">tree-on-house checklist</a> covers the first hours in more detail.</p>
 
         <h2>How Is Work Prioritized After a Hurricane?</h2>
-        <p>After a storm like the ones that have crossed Volusia County in recent seasons, every call is an emergency to the person making it. The crew works a triage order so the highest risks are handled first:</p>
+        <p>After a hurricane, work is prioritized by risk to people first and property second. Trees on occupied homes come before blocked roads, lines the utility has cleared, and hangers over structures, and trees down in open yards come last. The crew works the triage order below so the highest risks are handled first:</p>
         <ol>
           <li>Trees on occupied homes, especially where the roof is open</li>
           <li>Trees blocking roads, driveways, and access for first responders</li>
@@ -117,7 +119,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
         <div class="blog-cta">
           <h3>Tree on your house right now?</h3>
-          <p>Call (407) 280-3484. We answer 24 hours a day and send a crew the same day for genuine hazards anywhere in Volusia County.</p>
+          <p>Call (407) 280-3484 at any hour. We send a crew for genuine hazards anywhere in Volusia County.</p>
           <a href="tel:+14072803484" class="btn btn-primary">Call (407) 280-3484</a>
         </div>
 

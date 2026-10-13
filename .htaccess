@@ -59,6 +59,12 @@ DirectoryIndex index.php index.html
     # Dynamic sitemap — /sitemap.xml is served by sitemap.php (Phase 5)
     RewriteRule ^sitemap\.xml$ /sitemap.php [L]
 
+    # 2026-10-13 SEO fixes: pruning, crown reduction and maintenance pages
+    # merged into /services/tree-trimming-services/ (one page per intent)
+    RewriteRule ^services/tree-pruning-services/?$ /services/tree-trimming-services/ [R=301,L]
+    RewriteRule ^services/crown-reduction-shaping/?$ /services/tree-trimming-services/ [R=301,L]
+    RewriteRule ^services/tree-maintenance-care/?$ /services/tree-trimming-services/ [R=301,L]
+
     # Rewrite extensionless URLs to their .php file ONLY when that file
     # exists. Without the existence check, a request for an existing
     # DIRECTORY (/services/) was rewritten to services/.php → 404 on every

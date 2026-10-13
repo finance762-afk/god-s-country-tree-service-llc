@@ -59,7 +59,7 @@ $warningSigns = [
 // ---- What's included (glass cards on dark, C6.4) ----
 $includedItems = [
     ['icon' => 'search-check',   'title' => 'Honest hazard assessment',   'text' => 'We look at the whole failure picture — decay, lean, targets, escape routes — and tell you plainly whether yours is a remove-now, a watch-it, or a tree worth saving.'],
-    ['icon' => 'file-text',      'title' => 'Written 24-hour estimate',   'text' => 'One all-in number in writing: takedown, chipping, hauling, and the stump option itemized before anyone starts a saw.'],
+    ['icon' => 'file-text',      'title' => 'Written, itemized estimate',   'text' => 'One all-in number in writing: takedown, chipping, hauling, and the stump option itemized before anyone starts a saw.'],
     ['icon' => 'cable',          'title' => 'Rigging & lift plan',        'text' => 'Dead wood never gets climbed on faith. Boom lift positions, ropes, and lowering points are planned around what the trunk can actually still hold.'],
     ['icon' => 'construction',   'title' => 'Controlled dismantle',       'text' => 'Sections come down roped and lowered over roofs, fences, and pool screen enclosures — never free-dropped over a target.'],
     ['icon' => 'truck',          'title' => 'Chip, haul & stump option',  'text' => 'Brush is chipped and debris hauled the same day on most jobs. Stump grinding is quoted up front with the removal if you want every trace of the hazard gone.'],
@@ -71,22 +71,22 @@ $costFactors = [
     ['title' => 'How far gone it is',  'text' => 'Brittle, decayed wood forces slower rigging and more lift work. A tree that died two years ago costs more to remove than the same tree taken down the season it declined.'],
     ['title' => 'What\'s underneath',  'text' => 'Open lawn — or a roofline, pool screen enclosure, and fence? Every section rigged over a target adds crew time, and that\'s where most of the price lives.'],
     ['title' => 'Size & species',      'text' => 'An 80-foot slash pine spar and a hollow multi-trunk live oak fail differently and get dismantled differently. Height, spread, and wood weight drive the hours.'],
-    ['title' => 'Access to the tree',  'text' => 'Gate width decides which machines fit. Our compact grapple loader works most DeLand backyards; true hand-carry jobs take longer and the quote says so honestly.'],
+    ['title' => 'Access to the tree',  'text' => 'Gate width decides which machines fit. Our compact grapple loader fits through many DeLand backyard gates; true hand-carry jobs take longer and the quote says so.'],
 ];
 
 // ---- Comparison: waiting it out vs removing on your schedule ----
 $comparison = [
-    ['wait' => 'Every storm sheds more limbs onto whatever sits below',            'now' => 'Removal booked in dry weather, at standard rates, on your calendar'],
+    ['wait' => 'Every storm sheds more limbs onto whatever sits below',            'now' => 'Removal booked in dry weather, on your calendar, with the scope in writing first'],
     ['wait' => 'Wood grows more brittle — and pricier to rig — every season',      'now' => 'Roped dismantle while the trunk is still sound enough to work safely'],
     ['wait' => 'A known, documented hazard can complicate an insurance claim',     'now' => 'Condition photographed and documented before hurricane season'],
-    ['wait' => 'Failure picks the timing: emergency rates, tarps, and adjusters',  'now' => 'Debris chipped and hauled the same day on most jobs'],
+    ['wait' => 'Failure picks the timing: tarps, adjusters, and a crew working around a damaged roof',  'now' => 'Grapple loader and chipper clear the debris while the crew is still on site'],
 ];
 
 // ---- FAQs (conversational, 40-80 word answers) ----
 $faqs = [
     [
         'q' => 'Do I need a permit to remove a dead tree in DeLand?',
-        'a' => 'Possibly. DeLand and Volusia County protect certain trees, though dead and hazardous trees are handled differently from healthy ones. Requirements turn on species, size, and where the tree stands, so we flag permit questions during your free estimate, before any cutting is scheduled.',
+        'a' => 'Possibly. The City of DeLand and Volusia County protect certain trees, and the rules for a dead or hazardous tree can differ from those for a healthy one. Requirements turn on species, size, and where the tree stands, so we raise the permit question at the estimate visit. Confirm the current rule with the City of DeLand or Volusia County before any cutting is scheduled.',
     ],
     [
         'q' => "Will homeowner's insurance pay to remove a standing dead tree?",
@@ -106,7 +106,7 @@ $faqs = [
     ],
     [
         'q' => 'How fast can you remove a hazardous tree?',
-        'a' => 'Estimates go out within 24 hours, and genuinely dangerous trees jump the schedule. Most single-tree hazardous removals around DeLand are finished in a day, cleanup included. If the tree has already failed or is touching a structure, use our 24/7 emergency tree service instead — that work gets a same-day response.',
+        'a' => 'Genuinely dangerous trees move up the schedule. The written estimate comes first, so you know the scope before a date is set, and how long the job takes depends on the size of the tree and what it stands over. If the tree has already failed or is resting on a structure, call (407) 280-3484 for emergency storm response instead of booking a standard removal.',
     ],
 ];
 
@@ -724,6 +724,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 }
 </style>
 
+<article class="service-article">
+
 <!-- ============ HERO (C1.4) ============ -->
 <section class="dhz-hero has-hero-bg" aria-label="Dead and hazardous tree removal in DeLand, Florida">
   <?php echo p1_hero_picture($heroImage); ?>
@@ -749,10 +751,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     </div>
 
     <div class="hero-trust">
-      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Licensed &amp; Insured</span>
-      <span class="hero-trust-item"><?php echo icon('award'); ?> <?php echo e($yearsInBusiness); ?>+ Years in DeLand</span>
+      <span class="hero-trust-item"><?php echo icon('shield-check'); ?> Owner-Operated in DeLand</span>
+      <span class="hero-trust-item"><?php echo icon('award'); ?> Boom Lift &amp; Grapple Loader</span>
       <span class="hero-trust-item"><?php echo icon('camera'); ?> Photo Documentation Included</span>
-      <span class="hero-trust-item"><?php echo icon('clock'); ?> Estimates Within 24 Hours</span>
+      <span class="hero-trust-item"><?php echo icon('clock'); ?> Roped Lowering Over Roofs</span>
     </div>
     </div>
 
@@ -770,7 +772,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Six Warning Signs</span>
       <h2>How do you know a tree is dead or dangerous in DeLand, FL?</h2>
-      <p class="answer-block">A dead or dangerous tree in DeLand usually announces itself: mushrooms or shelf fungus at the base, bare limbs at the top of the crown, hollow cavities, sliding bark, or a lean that wasn't there last year. One sign deserves a look; two or more mean the tree needs an assessment before hurricane season.</p>
+      <p class="answer-block">A dead or dangerous tree in DeLand shows fungus at the base, bare limbs in the upper crown, hollow cavities, sliding bark, or a new lean. One sign deserves a look. Two or more mean the tree needs an assessment before hurricane season starts on June 1.</p>
     </div>
 
     <div class="dhz-bento">
@@ -797,20 +799,20 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <div class="dhz-expert-copy">
         <span class="eyebrow-label">Dead Wood Plays by Different Rules</span>
         <h2>What makes dangerous tree removal different from standard takedowns?</h2>
-        <p class="answer-block">Dead trees are unpredictable in ways live ones aren't &mdash; brittle limbs snap without warning, hollow trunks won't hold a climber, and decayed wood tears instead of hinging on the cut. Dangerous tree removal means slower rigging, more machine work, and a crew that reads decay before trusting it with weight.</p>
-        <p data-animate>On the dead pines and declining live oaks we're called to in DeLand, Deltona, Orange City, and DeBary, the wood can't be trusted to hinge or hold rigging. So the crew sounds the trunk, tests every tie-in, and moves the load onto the boom lift and grapple loader.</p>
+        <p class="answer-block">Dangerous tree removal is different because dead wood cannot be trusted to hold a climber, a rope, or a hinge cut. Brittle limbs snap without warning and decayed trunks tear instead of folding. The work is slower, leans on the boom lift, and starts with a crew that reads the decay before loading it.</p>
+        <p data-animate>On the dead slash pines and declining live oaks around DeLand, Deltona, Orange City, and DeBary, the crew sounds the trunk, tests every tie-in, and moves the load onto the boom lift and grapple loader instead of the tree.</p>
         <ul class="dhz-expert-points" data-p1-dynamic>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
-            <p><strong>Machines carry the risk.</strong> When a trunk is too far gone to climb, our boom lift and compact grapple loader do the reaching and the lifting &mdash; the same one-crew tree-and-land-clearing setup, no subcontractors.</p>
+            <p><strong>Machines carry the risk.</strong> When a trunk is too far gone to climb, our boom lift and compact grapple loader do the reaching and the lifting, run by the same DeLand crew that handles the takedown and the cleanup.</p>
           </li>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
-            <p><strong>Certified arborist judgment.</strong> Declining isn't always dead. If a scratch test and a look at the crown say the tree can be saved with pruning or care, that's the answer you get at the estimate.</p>
+            <p><strong>Declining isn't always dead.</strong> If a scratch test and a look at the crown say the tree can be saved with pruning or care, that's the answer you get at the estimate.</p>
           </li>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
-            <p><strong>Insurance you can verify.</strong> Licensed and insured, with proof available before a saw starts.</p>
+            <p><strong>Coverage shown, not claimed.</strong> Liability and workers' compensation certificates are available on request before the crew sets up, which matters most on jobs where brittle wood hangs over a roof.</p>
           </li>
         </ul>
       </div>
@@ -840,7 +842,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Scope, In Writing</span>
       <h2>What tree removal services are included with a hazardous removal?</h2>
-      <p class="answer-block">Every hazardous removal we quote in DeLand includes the risk assessment, a written 24-hour estimate, roped or lift-assisted dismantling, chipping, and same-day debris hauling on most jobs. Photo documentation of the tree's condition comes standard, and stump grinding is quoted up front &mdash; never sprung on you after.</p>
+      <p class="answer-block">A hazardous removal from God's Country Tree Service LLC includes the risk assessment, a written estimate, roped or lift-assisted dismantling, chipping, and debris hauling. Condition photos of the tree go in your file for insurance and property records. Stump grinding is quoted with the removal, so the tree removal services you approve are listed before work starts.</p>
     </div>
 
     <div class="dhz-glass-grid">
@@ -867,7 +869,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Straight Pricing</span>
       <h2>How much does hazardous tree removal cost?</h2>
-      <p class="answer-block">Hazardous tree removal in DeLand usually costs more than removing a comparable healthy tree, because decay forces slower rigging and heavier equipment. Small dead trees in open yards run a few hundred dollars; large brittle oaks or pines over structures cost considerably more. You get a free written, all-in estimate within 24 hours.</p>
+      <p class="answer-block">Hazardous tree removal costs more than removing a comparable healthy tree, because decay forces slower rigging and more lift work. A dead sand pine in an open DeLand yard is the simple end; a brittle laurel oak over a pool enclosure is the other. The written estimate follows an on-site look at the tree.</p>
     </div>
 
     <div class="dhz-cost-grid">
@@ -891,14 +893,14 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Local Proof</span>
-      <h2>Searching for dead tree removal near me in DeLand?</h2>
-      <p class="answer-block">If you're typing dead tree removal near me in DeLand, this is what the work looks like nearby: a declining oak dismantled from a bucket at first light, and a tall leaner assessed over a pool screen enclosure before a rope ever goes up. We work within about 50 miles of DeLand.</p>
+      <h2>Who handles dead tree removal near me in DeLand, FL?</h2>
+      <p class="answer-block">God's Country Tree Service LLC handles dead tree removal near you in DeLand and within about 50 miles of it. The two jobs below are local: a declining oak dismantled from a bucket at first light, and a tall leaner assessed over a pool screen enclosure before any rope went up.</p>
     </div>
 
     <div class="dhz-proof-grid">
       <figure data-animate>
         <?php echo p1_picture($bodyPhotos['dawnoak']['src'], $bodyPhotos['dawnoak']['alt'], 600, 800, '(max-width: 768px) 100vw, 600px'); ?>
-        <figcaption>Dawn start on a declining oak &mdash; down before the afternoon heat</figcaption>
+        <figcaption>Dawn start on a declining oak in DeLand</figcaption>
       </figure>
       <figure class="reveal-delay-1" data-animate>
         <?php echo p1_picture($bodyPhotos['poolscreen']['src'], $bodyPhotos['poolscreen']['alt'], 600, 800, '(max-width: 768px) 100vw, 600px'); ?>
@@ -923,7 +925,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">The Liability Math</span>
       <h2>Should you remove a dying tree now or wait until it falls?</h2>
-      <p class="answer-block">Remove it now. A dead tree never gets safer &mdash; Central Florida sun, rain, and beetles make it more brittle every month, and hurricane season sets the deadline. Removal on your schedule happens at standard rates in good weather; removal after it fails means emergency pricing, and possibly a roof.</p>
+      <p class="answer-block">Remove a dying tree now, while the trunk is still sound enough to rig and the weather is dry. A dead tree never gets safer: Central Florida sun, rain, and beetles make it more brittle every month. Waiting lets hurricane season choose the day, and possibly the roof it lands on.</p>
     </div>
 
     <div class="dhz-compare-grid">
@@ -953,7 +955,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Good Questions</span>
       <h2>What do DeLand homeowners ask about dead and dangerous trees?</h2>
-      <p class="answer-block">Mostly insurance, permits, and whether the tree is really dead &mdash; answered by a crew making the save-or-remove call across Volusia County since <?php echo e($yearEstablished); ?>. If your question isn't here, send it through the estimate form and you'll hear back within 24 hours.</p>
+      <p class="answer-block">DeLand homeowners ask mostly about permits for dead trees, what insurance covers, a neighbor's dangerous tree, and whether a bare tree is really dead. The answers below come from a DeLand crew that has made the save-or-remove call across Volusia County since <?php echo e($yearEstablished); ?>. Send other questions through the estimate form.</p>
     </div>
 
     <div class="faq-grid" data-p1-dynamic>
@@ -976,7 +978,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Same Crew, Next Job</span>
       <h2>What other tree services do DeLand property owners pair with dead tree removal?</h2>
-      <p class="answer-block">Three services pair naturally with a hazardous removal: <a href="/services/tree-removal/">tree removal in DeLand</a> for healthy trees coming down in the same visit, <a href="/services/emergency-tree-service-storm-cleanup/">emergency tree removal</a> for the dead tree that stopped waiting, and <a href="/services/certified-arborist-services/">certified arborist assessments</a> for the borderline trees you're not sure about. One DeLand crew, one written estimate.</p>
+      <p class="answer-block">DeLand property owners pair dead tree removal with three other tree services from God's Country Tree Service LLC. <a href="/services/tree-removal/">Standard tree removal in DeLand</a> covers healthy trees coming down in the same visit, <a href="/services/emergency-tree-service-storm-cleanup/">emergency tree removal</a> covers the dead tree that stopped waiting, and <a href="/services/certified-arborist-services/">certified arborist assessments</a> settle the borderline trees. The <a href="/services/">complete list of tree services</a> covers the rest.</p>
     </div>
 
     <?php renderServiceCards(['tree-removal', 'emergency-tree-service-storm-cleanup', 'certified-arborist-services'], $serviceCardData); ?>
@@ -988,7 +990,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <span class="eyebrow-label">Free &middot; Written &middot; Within 24 Hours</span>
     <h2>Still Sizing Up That Dead Tree Every Time the Wind Picks Up?</h2>
-    <p class="answer-block">Send a photo or a description through the estimate form and <?php echo e($siteName); ?> will look at the tree, tell you honestly whether it's a hazard, and put a written, all-in price on removing it &mdash; usually within 24 hours, and always before storm season beats you to it.</p>
+    <p class="answer-block">Describe the tree in the estimate form and <?php echo e($siteName); ?> will look at it on site, tell you honestly whether it's a hazard, and put a written price on removing it, with the hauling and the stump option listed.</p>
     <div class="dhz-hero-actions">
       <a href="#estimate-form" class="btn btn-accent btn-lg">Get a Free Hazard Assessment</a>
       <a href="/contact/" class="btn btn-outline-white btn-lg">Contact Us</a>
@@ -997,5 +999,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
 </section>
 
 <p class="last-updated">Last Updated: <?php echo date('F Y'); ?></p>
+
+</article>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>

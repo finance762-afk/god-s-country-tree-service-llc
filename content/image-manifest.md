@@ -93,3 +93,11 @@ Unallocated / flex (about page, brand, community): hut61g (merch), 3dppkw (spons
 - **Duplicates reduce the pool:** 46 files but 42 unique images (06l0z2 = txc0be = bhsp6r; 5u2i8m = 86uhhi).
 - **nearta** (Vermeer with googly eyes) appears to be a northern/non-Florida setting — confirm provenance before publishing.
 - hut61g and 3dppkw are merch/community photos — suitable only for About/brand sections, not service pages.
+
+## 2026-10-13 SEO-fix allocation (merge + three new service pages)
+
+- `/services/tree-trimming-services/` now also carries the pruning, crown-reduction and maintenance photos: 5nqz2k (pruning cuts), ri3d15 + ixwxr0 (reduction gallery). Hero stays otgffb.
+- `/services/palm-tree-trimming/` — hero cjgzse; body pr9hsn, 73serd, fuv06z, nsuvrpt. No palm-trimming action photo exists (GAP: ask the client for one).
+- `/services/stump-grinding/` — hero g1q71x (flush-cut stump); body ekffah, 2wp304, 5oqzq0. No grinder-in-action photo exists (GAP, already noted above).
+- `/services/land-clearing/` — hero t1gqhh; body ekffah, gzvyp4, tm1j7f, 5ppnr0, x2rpuy, 2dtirn.
+- 960px webp+avif variants generated (sharp) for the landscape photos above; the processed originals on Supabase are at most 960px wide, so portrait photos stay at 480px only and no 1600px variant exists for any photo.

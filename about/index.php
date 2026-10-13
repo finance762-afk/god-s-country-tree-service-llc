@@ -27,15 +27,15 @@ $ogImage          = $siteUrl . p1_best_src($heroImage);
 
 $storyImage = [
     'src' => '/assets/images/bqd1cau-960.webp',
-    'alt' => 'Caleb, owner of God\'s Country Tree Service, positioned high in a pine tree during arborist work in DeLand, FL',
+    'alt' => 'Caleb, owner of God\'s Country Tree Service, with his wife and two children',
 ];
 $storyImage2 = [
     'src' => '/assets/images/awf2hm0-960.webp',
-    'alt' => 'Caleb, owner of God\'s Country Tree Service, positioned high in a pine tree during arborist work in DeLand, FL',
+    'alt' => 'Caleb, owner of God\'s Country Tree Service, in an orange helmet up in a pine tree',
 ];
 $valuesImage = [
     'src' => '/assets/images/nsuvrpt-960.webp',
-    'alt' => "God's Country climber roped high in a live oak canopy over a DeLand, FL yard",
+    'alt' => "God's Country bucket truck with its boom raised into an oak canopy",
 ];
 
 // ---- Core values (grounded in owner's story: honesty, arborist training, tree + land clearing, clean job sites) ----
@@ -50,27 +50,23 @@ $values = [
 $milestones = [
     ['year' => 'The Beginning', 'title' => 'Raised in the timber industry', 'text' => 'Caleb grew up around trees, learning how they grow and what it takes to work safely around them — falling timber, operating equipment, climbing, and running saws.'],
     ['year' => 'The Craft',     'title' => 'Trained as an arborist', 'text' => 'Those early years led into professional arboriculture, where Caleb learned proper tree pruning, trimming, removal, rigging, climbing, and long-term tree health.'],
-    ['year' => '21+ Years',     'title' => 'Owned a tree service in the Pacific Northwest', 'text' => 'For more than 21 years, Caleb owned and operated a successful Pacific Northwest tree service, helping thousands of homeowners and businesses maintain and protect their trees.'],
+    ['year' => 'The Northwest', 'title' => 'Owned a tree service in the Pacific Northwest', 'text' => 'Caleb owned and operated his own Pacific Northwest tree service for more than two decades: removals, pruning, hazard work, and care for mature landscapes.'],
     ['year' => 'A New Chapter', 'title' => 'Faith and family brought us to Florida', 'text' => "Through what Caleb believes was God's timing, the family moved to Florida and he was given the opportunity to purchase God's Country Tree Service."],
     ['year' => 'Today',         'title' => 'Serving Central & North Central Florida', 'text' => "God's Country already had a strong reputation for honesty and dependable service. Today the goal is simple — continue that reputation for even more Florida families and businesses."],
 ];
 
 // ---- Credentials (grounded: licensed/insured, arborist training, BBB, storm response) ----
 $credentials = [
-    ['icon' => 'badge-check', 'title' => 'Licensed & Insured', 'text' => 'Full liability and workers\' compensation coverage — proof available on request.'],
-    ['icon' => 'trees',       'title' => 'Trained Arborist Expertise', 'text' => 'Tree health, risk, and pruning decisions guided by decades of hands-on arborist experience.'],
+    ['icon' => 'badge-check', 'title' => 'Licensed & Insured', 'text' => 'Liability and workers\' compensation coverage, with proof available on request before work starts.'],
+    ['icon' => 'trees',       'title' => 'Trained Arborist Expertise', 'text' => 'Tree health, risk, and pruning decisions are made by an owner who trained as an arborist and still works the jobs.'],
     ['icon' => 'award',       'title' => 'BBB Business Profile', 'text' => 'An established, reviewable business profile you can verify before you hire.'],
-    ['icon' => 'clock',       'title' => '24/7 Storm Response', 'text' => 'Around-the-clock emergency availability through Central Florida\'s hurricane season.'],
+    ['icon' => 'clock',       'title' => '24-Hour Storm Response', 'text' => 'Emergency calls for trees on roofs, driveways, and lines are answered through Central Florida\'s hurricane season.'],
 ];
 
-// ---- Certification Badges (actual credential images) ----
-$certificationBadges = [
-    [
-        'src' => '/assets/images/certified-arborist-examining-tree-health-in-dela-960.webp',
-        'alt' => 'Certified Arborist certification from International Society of Arboriculture',
-        'title' => 'ISA Certified Arborist',
-    ],
-];
+// ---- Certification Badges ----
+// v8 2026-10-09: emptied. The only entry was a job photo (climber in a live oak) labelled as an ISA
+// certificate. Add an entry only for a real credential image supplied by the client.
+$certificationBadges = [];
 
 // ---- Stats band ----
 $aboutStats = [
@@ -607,7 +603,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="story-split">
       <div class="story-copy">
         <span class="eyebrow-label">Meet the Owner</span>
-        <h2>About God's Country Tree Service</h2>
+        <h2>Who Owns God's Country Tree Service in DeLand?</h2>
+        <p class="answer-block"><?php echo e($siteName); ?> is owned and operated by Caleb, a trained arborist who bought the DeLand tree service after running his own in the Pacific Northwest. The company has worked in DeLand since <?php echo e($yearEstablished); ?>. The letter below is his own account of how he got here, in his own words.</p>
         <p class="drop-cap" data-animate>My name is Caleb, and trees have been a part of my life for as long as I can remember. Growing up in the timber industry gave me the opportunity to learn how trees grow, how forests stay healthy, and what it takes to safely work around them.</p>
         <p data-animate>I spent my younger years falling timber, operating equipment, climbing trees, running saws, and learning firsthand how to care for one of God's greatest creations. Those experiences eventually led me into professional arboriculture, where I trained as an arborist and learned the proper techniques for tree pruning, trimming, removal, rigging, climbing, and preserving the long-term health of trees.</p>
         <p data-animate>For more than 21 years, I owned and operated a successful tree service in the Pacific Northwest. During that time, I helped thousands of homeowners and businesses safely maintain their trees, remove hazardous trees, improve the health of mature landscapes, and protect their properties. Every job reinforced something I have always believed &mdash; doing the work the right way is more important than doing it the fastest.</p>
@@ -643,8 +640,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="section-title" data-animate>
       <span class="eyebrow-label">What We Stand For</span>
-      <h2>How God's Country Approaches Every Florida Tree Job</h2>
-      <p class="answer-block"><?php echo e($siteName); ?> runs on four principles that show up on every project &mdash; honest recommendations and fair pricing, trained arborist judgment, one crew for the whole job, and a job site left cleaner than we found it.</p>
+      <h2>How Does God's Country Approach a Florida Tree Job?</h2>
+      <p class="answer-block"><?php echo e($siteName); ?> approaches every tree job with four working rules. Recommend only the cutting a tree needs, let trained arborist judgment decide between pruning and removal, keep the whole job with one crew, and leave the site cleaner than it was. The <a href="/services/">full list of tree services</a> shows where those rules apply.</p>
       <span class="section-subtitle"><?php echo e($tagline); ?></span>
     </div>
 
@@ -685,8 +682,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="section-title" data-animate>
       <span class="eyebrow-label">The Road Here</span>
-      <h2>From the Timber Woods to God's Country</h2>
-      <p class="answer-block">From the timber industry to more than 21 years running his own Pacific Northwest tree service, owner Caleb's path led to purchasing God's Country Tree Service and continuing its trusted reputation across Central and North Central Florida.</p>
+      <h2>How Did Caleb Come to Own God's Country Tree Service?</h2>
+      <p class="answer-block">Caleb came to own God's Country Tree Service by way of the timber industry and his own Pacific Northwest tree company. He grew up falling timber, trained as an arborist, ran that company for two decades, then moved his family to Florida and bought the DeLand business. The five steps below follow that road.</p>
     </div>
 
     <ol class="timeline" data-p1-dynamic>
@@ -711,8 +708,8 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Credentials</span>
-      <h2>Why Florida Homeowners &amp; Businesses Can Hire With Confidence</h2>
-      <p class="answer-block"><?php echo e($siteName); ?> backs its work with credentials you can verify &mdash; full licensing and insurance, decades of trained arborist expertise, an established BBB business profile, and genuine 24/7 storm availability across Central and North Central Florida. Property managers and HOA boards receive documentation before work begins, and commercial contracts include scheduled maintenance and written assessments.</p>
+      <h2>What Credentials Does God's Country Tree Service Hold?</h2>
+      <p class="answer-block"><?php echo e($siteName); ?> holds four credentials a customer can check before hiring. The company is licensed and insured, the owner is a trained arborist, the business has a public BBB profile, and storm calls are answered around the clock. Our <a href="/service-area/">service area page</a> lists the towns covered.</p>
     </div>
 
     <div class="creds-grid">
@@ -754,7 +751,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
   <div class="container">
     <span class="eyebrow-label" style="color: var(--color-accent);">Residential &middot; Commercial &middot; HOA</span>
     <h2>Put an Owner-Operated Crew You Can Trust on Your Property</h2>
-    <p>Whether you're a homeowner with a leaning oak, a property manager needing scheduled maintenance, or a business owner with a lot that needs clearing &mdash; <?php echo e($siteName); ?> will walk the property, give you an honest read, and put a straight price in writing, usually within 24 hours.</p>
+    <p>A leaning oak, an HOA entrance that needs a maintenance schedule, a lot that needs clearing: <?php echo e($siteName); ?> will walk the property, give you an honest read, and put a straight price in writing. Start with the <a href="/contact/">estimate request form</a> or call <?php echo e($phone); ?>.</p>
     <div class="hero-actions">
       <a href="/contact/" class="btn btn-accent btn-lg">Get a Free Estimate</a>
       <a href="/services/commercial-hoa-tree-services/" class="btn btn-outline-white btn-lg">Commercial Contracts</a>
