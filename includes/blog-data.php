@@ -13,6 +13,45 @@
 
 $blogPosts = [
     [
+        'slug'      => 'laurel-oak-vs-live-oak',
+        'title'     => 'Laurel Oak or Live Oak? How to Tell, and Why It Matters',
+        'excerpt'   => 'Laurel oaks and live oaks look alike from the street but age very differently. How to tell them apart by leaves, bark and shape, and why a mature laurel oak over a house is worth having checked.',
+        'image'     => '/assets/images/1784062744583-c9q0jo-49949171_2228682217352378_6923483969732214784_n-480.webp',
+        'alt'       => 'Broad mature oak shading a corner-lot home in DeLand, FL',
+        'date'      => 'October 13, 2026',
+        'dateISO'   => '2026-10-13',
+        'category'  => 'Tree Health',
+        'readtime'  => '4 min read',
+        'byline'    => 'Published by Page One Insights LLC',
+        'publisher' => ['name' => 'Page One Insights LLC', 'url' => 'https://pageoneinsights.com'],
+    ],
+    [
+        'slug'      => 'pine-tree-turning-brown-florida',
+        'title'     => 'Why Is My Pine Tree Turning Brown? A Volusia County Checklist',
+        'excerpt'   => 'A pine that turns brown is often already dying. Use this checklist to read the browning pattern, check the trunk for beetle signs, and decide when a Volusia County pine needs to come down.',
+        'image'     => '/assets/images/1784062730640-gzvyp4-31206267_2042462085974393_6334697554642468864_n-960.webp',
+        'alt'       => 'Pines marked with a red X for removal on a DeLand, FL lot, chipper crew behind',
+        'date'      => 'October 13, 2026',
+        'dateISO'   => '2026-10-13',
+        'category'  => 'Tree Health',
+        'readtime'  => '4 min read',
+        'byline'    => 'Published by Page One Insights LLC',
+        'publisher' => ['name' => 'Page One Insights LLC', 'url' => 'https://pageoneinsights.com'],
+    ],
+    [
+        'slug'      => 'tree-roots-lifting-driveway',
+        'title'     => 'Tree Roots Lifting Your Driveway or Sidewalk: Options Before Removal',
+        'excerpt'   => 'A heaving driveway does not always mean the tree has to go. The fixes that keep the tree, why cutting big roots near the trunk can make it blow over, and when removal is the honest answer.',
+        'image'     => '/assets/images/1784062765583-t90qfe-504464588_4046117555608826_3413761751549071197_n-480.webp',
+        'alt'       => 'God\'s Country grapple loader beside a green oak at a DeLand, FL home',
+        'date'      => 'October 13, 2026',
+        'dateISO'   => '2026-10-13',
+        'category'  => 'Tree Removal',
+        'readtime'  => '4 min read',
+        'byline'    => 'Published by Page One Insights LLC',
+        'publisher' => ['name' => 'Page One Insights LLC', 'url' => 'https://pageoneinsights.com'],
+    ],
+    [
         'slug'     => 'emergency-tree-service-deland-what-to-expect',
         'title'    => 'Emergency Tree Service in DeLand: What to Expect',
         'excerpt'  => 'A tree on the roof, a car, or a power line is an emergency. Here is what to do first, what happens when the crew arrives, and how insurance and after-storm triage work in Volusia County.',
@@ -219,7 +258,10 @@ function blogPostSchema($slug, $keywords, $description)
                     'name'  => $siteName,
                     '@id'   => $siteUrl . '/#organization',
                 ],
-                'publisher'        => ['@id' => $siteUrl . '/#organization'],
+                // Optional per-post publisher override (e.g. agency-published posts); default is the site Organization.
+                'publisher'        => isset($post['publisher'])
+                    ? ['@type' => 'Organization', 'name' => $post['publisher']['name'], 'url' => $post['publisher']['url']]
+                    : ['@id' => $siteUrl . '/#organization'],
                 'url'              => $postUrl,
                 'mainEntityOfPage' => $postUrl,
                 'articleSection'   => $post['category'],

@@ -255,7 +255,7 @@ $logoAnalysis = [
 ];
 
 // ---- Cache Busting -----------------------------------------
-$cssVersion = '9'; // increment on every framework.css change
+$cssVersion = '10'; // increment on every framework.css change
 
 // ---- Business Facts ----------------------------------------
 $yearsInBusiness = 12;
