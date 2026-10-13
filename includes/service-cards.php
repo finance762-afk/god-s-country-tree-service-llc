@@ -5,7 +5,8 @@
  * God's Country Tree Service LLC — DeLand, FL
  *
  * One card definition per service, keyed by slug. Used by:
- *   - /services/index.php (full 12-card grid)
+ *   - /services/index.php (full 12-card grid; 2026-10-13: pruning, crown reduction and
+ *     maintenance merged into tree-trimming-services; palm, stump grinding, land clearing added)
  *   - each service page's "Related Services" grid (3 cards)
  * Card images are each service's canonical thumbnail from
  * content/image-manifest.md (homepage card images reused where
@@ -27,28 +28,20 @@ $serviceCardData = [
         'bullets' => ['Florida native species guidance', 'Homes, businesses & HOAs', 'Planted for healthy growth'],
     ],
     'tree-trimming-services' => [
-        'name'    => 'Tree Trimming Services',
+        'name'    => 'Tree Trimming & Pruning',
         'icon'    => 'scissors',
         'img'     => '/assets/images/nsuvrpt-960.webp',
         'alt'     => 'God\'s Country bucket truck with its boom raised into an oak canopy in DeLand, FL',
-        'desc'    => 'Seasonal and routine trimming for trees of every size.',
-        'bullets' => ['Seasonal & routine schedules', 'All tree sizes handled', 'Health, looks & safety'],
+        'desc'    => 'Clearance trimming, structural pruning, crown reduction and maintenance plans.',
+        'bullets' => ['Roof & pool-screen clearance', 'Crown reduction, never topping', 'Recurring plans for homes & HOAs'],
     ],
-    'tree-pruning-services' => [
-        'name'    => 'Tree Pruning Services',
-        'icon'    => 'leaf',
-        'img'     => $imgBase . '1784062767583-96o2mm-650224392_1767273321337836_3694986581662424202_n.webp',
-        'alt'     => 'Roped arborist pruning branches inside a live oak canopy in DeLand, FL',
-        'desc'    => 'Precision pruning that improves structure, health, and appearance.',
-        'bullets' => ['Certified arborist techniques', 'Stronger branch structure', 'Healthier long-term growth'],
-    ],
-    'crown-reduction-shaping' => [
-        'name'    => 'Crown Reduction & Shaping',
-        'icon'    => 'tree-deciduous',
-        'img'     => $imgBase . '1784062745583-ri3d15-51248376_2242050436015556_1895589103194341376_n.webp',
-        'alt'     => 'Cleanly shaped mature oak against blue sky at a DeLand, FL home',
-        'desc'    => 'Reduce weight and reshape overgrown or storm-stressed canopies.',
-        'bullets' => ['Reduces storm-load weight', 'Better light penetration', 'Reshapes overgrown canopies'],
+    'palm-tree-trimming' => [
+        'name'    => 'Palm Tree Trimming',
+        'icon'    => 'sun',
+        'img'     => $imgBase . '1784062750583-pr9hsn-57170747_2285599344993998_4063638806954246144_n.webp',
+        'alt'     => 'Queen palm with a clean, trimmed crown beside a shade tree at a DeLand, FL home',
+        'desc'    => 'Dead fronds, seed pods and loose boots off queen, sabal and fan palms.',
+        'bullets' => ['Fronds & seed pods removed', 'No hurricane cuts', 'Chipped & hauled same visit'],
     ],
     'tree-removal' => [
         'name'    => 'Tree Removal',
@@ -82,6 +75,22 @@ $serviceCardData = [
         'desc'    => 'Rapid removal of downed trees plus full site cleanup.',
         'bullets' => ['Rapid response cleanup', 'Full debris removal', 'Site restoration included'],
     ],
+    'stump-grinding' => [
+        'name'    => 'Stump Grinding',
+        'icon'    => 'circle-dot',
+        'img'     => $imgBase . '1784062756583-g1q71x-162462401_2868738963346697_5761624918012580393_n.webp',
+        'alt'     => 'Flush-cut oak stump with sawdust around it, ready for grinding at a DeLand, FL home',
+        'desc'    => 'Stumps ground below grade after a removal or from a tree cut years ago.',
+        'bullets' => ['Ground below grade', 'Chips raked or hauled', 'Spot ready for sod or planting'],
+    ],
+    'land-clearing' => [
+        'name'    => 'Lot & Land Clearing',
+        'icon'    => 'tractor',
+        'img'     => $imgBase . '1784062729442-t1gqhh-31144196_2042462182641050_2975434522398556160_n.webp',
+        'alt'     => 'Graded lot ringed by orange tree-protection fencing with crew and loader among kept oaks near DeLand, FL',
+        'desc'    => 'Lots, acreage and overgrown parcels cleared with our own skid steer and grapple loader.',
+        'bullets' => ['Kept trees fenced & protected', 'Stumps & root balls out', 'Brush chipped, debris hauled'],
+    ],
     'residential-tree-services' => [
         'name'    => 'Residential Tree Services',
         'icon'    => 'home',
@@ -97,14 +106,6 @@ $serviceCardData = [
         'alt'     => 'Freshly mowed acreage with skid steer near DeLand, FL',
         'desc'    => 'Scheduled tree management for commercial properties, office parks, and HOA communities.',
         'bullets' => ['Scheduled contract maintenance', 'HOA & property managers', 'Documented insurance on file'],
-    ],
-    'tree-maintenance-care' => [
-        'name'    => 'Tree Maintenance & Care',
-        'icon'    => 'calendar-check',
-        'img'     => $imgBase . '1784062763583-cvnei3-503812193_4046117498942165_6962620168915463637_n.webp',
-        'alt'     => 'Arborist assessing a tall oak over a pool enclosure in DeLand, FL',
-        'desc'    => 'Ongoing inspections and preventative care that keep trees thriving year-round.',
-        'bullets' => ['Seasonal inspection visits', 'Storm-readiness pruning', 'Fewer emergency removals'],
     ],
     'certified-arborist-services' => [
         'name'    => 'Certified Arborist Services',

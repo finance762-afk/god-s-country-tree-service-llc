@@ -1119,10 +1119,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Help It Thrive</span>
       <h2>What other tree services do DeLand property owners pair with tree planting?</h2>
-      <p class="answer-block">DeLand property owners most often pair tree planting with maintenance, structural pruning, and arborist advice. New trees do best with <a href="/services/tree-maintenance-care/">seasonal tree maintenance visits</a>, <a href="/services/tree-pruning-services/">structural pruning while a young tree is easy to shape</a>, and <a href="/services/certified-arborist-services/">a certified arborist's opinion on an established tree</a>. See <a href="/services/">every tree service God's Country offers</a>.</p>
+      <p class="answer-block">DeLand property owners most often pair tree planting with structural pruning, palm care, and arborist advice. New trees do best with <a href="/services/tree-trimming-services/">structural pruning while a young tree is easy to shape</a>, <a href="/services/palm-tree-trimming/">palm trimming once new palms are established</a>, and <a href="/services/certified-arborist-services/">a certified arborist's opinion on an established tree</a>. See <a href="/services/">every tree service God's Country offers</a>.</p>
     </div>
 
-    <?php renderServiceCards(['tree-maintenance-care', 'tree-pruning-services', 'certified-arborist-services'], $serviceCardData); ?>
+    <?php renderServiceCards(['tree-trimming-services', 'palm-tree-trimming', 'certified-arborist-services'], $serviceCardData); ?>
   </div>
 </section>
 

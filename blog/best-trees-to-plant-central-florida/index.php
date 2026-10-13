@@ -66,7 +66,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <li><strong>Winged elm</strong> is the underused third option: an adaptable native with good storm performance.</li>
         </ul>
 
-        <p>Any of the three does best when its branch structure is shaped while the tree is young, which is what a long-term <a href="/services/tree-maintenance-care/">tree maintenance and care plan</a> is for.</p>
+        <p>Any of the three does best when its branch structure is shaped while the tree is young, which is what a long-term <a href="/services/tree-trimming-services/">tree maintenance and care plan</a> is for.</p>
 
         <h2>What Are the Best Small and Ornamental Trees for DeLand Yards?</h2>
         <p>The best small and ornamental trees for DeLand yards are crape myrtle, Eastern redbud, and tabebuia. Crape myrtle blooms for months in summer, redbud flowers in early spring on a small native frame, and tabebuia gives the most dramatic display but needs a spot sheltered from cold snaps.</p>
@@ -127,8 +127,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <h3>Related Tree Services</h3>
           <ul>
             <li><a href="/services/tree-planting-shrub-installation/">Tree Planting & Shrub Installation</a></li>
-            <li><a href="/services/tree-maintenance-care/">Tree Maintenance & Care</a></li>
-            <li><a href="/services/tree-trimming-services/">Tree Trimming Services</a></li>
+            <li><a href="/services/tree-trimming-services/">Tree Trimming &amp; Pruning</a></li>
           </ul>
         </div>
 

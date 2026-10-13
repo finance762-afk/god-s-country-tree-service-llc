@@ -56,7 +56,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <p>Most pruning problems come from treating every tree the same way. A live oak, a laurel oak, a slash pine, and a Southern magnolia respond very differently to the same cuts, and DeLand yards often have all four. A prescription accounts for the species, the age, the defects the arborist can see, and what the tree is growing over.</p>
 
         <h3>Live oaks</h3>
-        <p>Live oaks compartmentalize wounds well and tolerate reduction pruning, which makes them good candidates for careful <a href="/services/crown-reduction-shaping/">crown reduction</a> over roofs. They also respond to over-thinning by pushing dense interior sprouts, so the dose in the prescription matters.</p>
+        <p>Live oaks compartmentalize wounds well and tolerate reduction pruning, which makes them good candidates for careful <a href="/services/tree-trimming-services/">crown reduction</a> over roofs. They also respond to over-thinning by pushing dense interior sprouts, so the dose in the prescription matters.</p>
 
         <h3>Laurel oaks</h3>
         <p>Laurel oaks grow fast, decay fast, and are the oak most often involved in storm failures around DeLand. A prescription for a laurel oak usually focuses on removing dead wood, reducing long heavy limbs, and inspecting for decay rather than opening up the canopy.</p>
@@ -99,7 +99,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <li><strong>Pruning to the plan</strong> by a crew that works from the prescription, with the arborist available for questions on site.</li>
           <li><strong>A note for next time</strong> so the next visit, often years out, builds on this one.</li>
         </ol>
-        <p>God's Country Tree Service has pruned trees in DeLand and Volusia County since 2014, is licensed and insured, and has a certified arborist on staff. If you want <a href="/services/tree-pruning-services/">tree pruning in DeLand</a> done to a plan rather than a guess, call (407) 280-3484 and ask for a prescription visit.</p>
+        <p>God's Country Tree Service has pruned trees in DeLand and Volusia County since 2014, is licensed and insured, and has a certified arborist on staff. If you want <a href="/services/tree-trimming-services/">tree pruning in DeLand</a> done to a plan rather than a guess, call (407) 280-3484 and ask for a prescription visit.</p>
 
         <h2>Prescription Pruning FAQs</h2>
 
@@ -119,10 +119,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <div class="blog-related-services">
           <h3>Related Tree Services</h3>
           <ul>
-            <li><a href="/services/tree-pruning-services/">Tree Pruning Services</a></li>
+            <li><a href="/services/tree-trimming-services/">Tree Trimming &amp; Pruning</a></li>
             <li><a href="/services/certified-arborist-services/">Certified Arborist Services</a></li>
-            <li><a href="/services/crown-reduction-shaping/">Crown Reduction &amp; Shaping</a></li>
-            <li><a href="/services/tree-trimming-services/">Tree Trimming Services</a></li>
           </ul>
         </div>
 

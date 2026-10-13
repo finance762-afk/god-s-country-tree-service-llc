@@ -698,7 +698,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <p class="answer-block">The tree services available in DeLeon Springs are tree removal, fallen-tree cleanup, trimming, maintenance, commercial and HOA work, and emergency storm cleanup. <?php echo e($siteName); ?> runs them with the crew and equipment from its DeLand base, about seven miles south on US-17. Land and brush clearing is quoted alongside any of them on the same written estimate.</p>
     </div>
 
-    <?php renderServiceCards(['tree-removal', 'fallen-tree-removal-cleanup', 'tree-trimming-services', 'tree-maintenance-care', 'commercial-hoa-tree-services', 'emergency-tree-service-storm-cleanup'], $serviceCardData); ?>
+    <?php renderServiceCards(['tree-removal', 'fallen-tree-removal-cleanup', 'tree-trimming-services', 'land-clearing', 'commercial-hoa-tree-services', 'emergency-tree-service-storm-cleanup'], $serviceCardData); ?>
   </div>
 </section>
 

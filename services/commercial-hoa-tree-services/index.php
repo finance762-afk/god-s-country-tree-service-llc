@@ -995,10 +995,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Round Out the Schedule</span>
       <h2>What other tree services do DeLand property owners pair with commercial &amp; HOA tree care?</h2>
-      <p class="answer-block">DeLand property owners most often pair commercial and HOA tree care with three other services. Those are <a href="/services/tree-maintenance-care/">seasonal tree maintenance visits</a> between big jobs, <a href="/services/dead-hazardous-tree-removal/">removal of dead and hazardous trees</a> flagged on a walk-through, and <a href="/services/emergency-tree-service-storm-cleanup/">emergency storm cleanup</a>. All of them are on <a href="/services/">the full list of God&rsquo;s Country tree services</a>.</p>
+      <p class="answer-block">DeLand property owners most often pair commercial and HOA tree care with three other services. Those are <a href="/services/tree-trimming-services/">seasonal trimming and maintenance visits</a> between big jobs, <a href="/services/land-clearing/">lot and land clearing</a> for common areas and new phases, and <a href="/services/emergency-tree-service-storm-cleanup/">emergency storm cleanup</a>. All of them are on <a href="/services/">the full list of God&rsquo;s Country tree services</a>.</p>
     </div>
 
-    <?php renderServiceCards(['tree-maintenance-care', 'dead-hazardous-tree-removal', 'emergency-tree-service-storm-cleanup'], $serviceCardData); ?>
+    <?php renderServiceCards(['tree-trimming-services', 'land-clearing', 'emergency-tree-service-storm-cleanup'], $serviceCardData); ?>
   </div>
 </section>
 

@@ -47,6 +47,9 @@ $secondaryKeywords = [
     'dead tree removal deland fl',
     'tree service near me deland',
     'tree removal deltona fl',
+    'palm tree trimming deland fl',
+    'stump grinding deland fl',
+    'land clearing deland fl',
 ];
 
 // ---- Services ----------------------------------------------
@@ -58,22 +61,16 @@ $services = [
         'keywords'    => ['tree planting DeLand FL', 'shrub installation', 'residential tree planting', 'landscape planting services'],
     ],
     [
-        'name'        => 'Tree Trimming Services',
+        'name'        => 'Tree Trimming & Pruning',
         'slug'        => 'tree-trimming-services',
-        'description' => 'Expert tree trimming to maintain health, appearance, and safety. Seasonal and routine trimming available for trees of all sizes throughout DeLand.',
-        'keywords'    => ['tree trimming DeLand FL', 'tree trimming near me', 'seasonal tree trimming', 'professional tree trimming'],
+        'description' => 'Tree trimming, structural pruning, crown reduction and recurring maintenance plans for DeLand homes and HOAs. Clearance cuts, deadwood removal and canopy thinning for trees of every size.',
+        'keywords'    => ['tree trimming DeLand FL', 'tree pruning DeLand FL', 'crown reduction DeLand', 'tree maintenance DeLand FL'],
     ],
     [
-        'name'        => 'Tree Pruning Services',
-        'slug'        => 'tree-pruning-services',
-        'description' => 'Precision pruning to improve tree structure, health, and aesthetics. Our certified arborists use proven techniques for optimal results.',
-        'keywords'    => ['tree pruning DeLand FL', 'tree pruning services', 'professional pruning', 'certified arborist pruning'],
-    ],
-    [
-        'name'        => 'Crown Reduction & Shaping',
-        'slug'        => 'crown-reduction-shaping',
-        'description' => 'Crown reduction and thinning services to reduce weight, improve light penetration, and enhance tree shape. Ideal for overgrown or storm-damaged trees.',
-        'keywords'    => ['crown reduction DeLand', 'crown thinning', 'tree shaping', 'tree crown work'],
+        'name'        => 'Palm Tree Trimming',
+        'slug'        => 'palm-tree-trimming',
+        'description' => 'Palm trimming for queen, sabal and fan palms in DeLand: dead fronds, seed pods and loose boots removed without over-skinning the crown. Fronds chipped and hauled the same visit.',
+        'keywords'    => ['palm tree trimming DeLand FL', 'palm trimming near me', 'queen palm trimming', 'sabal palm trimming'],
     ],
     [
         'name'        => 'Tree Removal',
@@ -100,6 +97,18 @@ $services = [
         'keywords'    => ['fallen tree removal DeLand', 'fallen tree cleanup', 'tree debris removal', 'storm cleanup'],
     ],
     [
+        'name'        => 'Stump Grinding',
+        'slug'        => 'stump-grinding',
+        'description' => 'Stump grinding in DeLand after a removal, or for stumps someone else left behind. Ground below grade, chips raked out or hauled, and the spot left ready for sod or a new planting.',
+        'keywords'    => ['stump grinding DeLand FL', 'stump removal near me', 'stump grinding cost', 'tree stump grinding'],
+    ],
+    [
+        'name'        => 'Lot & Land Clearing',
+        'slug'        => 'land-clearing',
+        'description' => 'Lot and land clearing in DeLand and Volusia County with our own skid steer and grapple track loader: selective tree removal, brush and undergrowth, stumps and root balls, debris hauled off.',
+        'keywords'    => ['land clearing DeLand FL', 'lot clearing Volusia County', 'brush clearing', 'land clearing near me'],
+    ],
+    [
         'name'        => 'Residential Tree Services',
         'slug'        => 'residential-tree-services',
         'description' => 'Comprehensive tree care for homeowners including trimming, pruning, removal, and maintenance. Keep your residential landscape healthy and safe.',
@@ -110,12 +119,6 @@ $services = [
         'slug'        => 'commercial-hoa-tree-services',
         'description' => 'Professional tree management for commercial properties, office parks, and HOA communities. Scheduled maintenance and property enhancement.',
         'keywords'    => ['commercial tree service DeLand FL', 'HOA tree services', 'business tree care', 'property tree maintenance'],
-    ],
-    [
-        'name'        => 'Tree Maintenance & Care',
-        'slug'        => 'tree-maintenance-care',
-        'description' => 'Ongoing tree health and maintenance services including inspections, fertilization, and preventative care. Keep your trees thriving year-round.',
-        'keywords'    => ['tree maintenance DeLand FL', 'tree care services', 'tree health care', 'arborist services'],
     ],
     [
         'name'        => 'Certified Arborist Services',

@@ -605,7 +605,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <div class="oc-story-copy">
         <span class="eyebrow-label" style="color: var(--color-primary); font-family: var(--font-heading); font-size: var(--font-size-xs); font-weight: 700; text-transform: uppercase; letter-spacing: 2.5px; display:inline-block; margin-bottom: var(--space-3);">Rooted in Orange City</span>
         <h2 style="text-wrap: balance; margin-bottom: var(--space-5);">Why do Orange City&rsquo;s old live oaks need careful pruning?</h2>
-        <p class="oc-dropcap" data-animate>Orange City&rsquo;s old live oaks need careful pruning because their roots spread wide and shallow in fast-draining sand and their canopies carry heavy moss. Hard cuts open those trees to decay, so we rely on <a href="/services/tree-pruning-services/">structural pruning that follows the branch collar</a> and on <a href="/services/tree-trimming-services/">lighter routine trimming</a> between visits.</p>
+        <p class="oc-dropcap" data-animate>Orange City&rsquo;s old live oaks need careful pruning because their roots spread wide and shallow in fast-draining sand and their canopies carry heavy moss. Hard cuts open those trees to decay, so we rely on <a href="/services/tree-trimming-services/">structural pruning that follows the branch collar</a> and on lighter routine trimming between visits.</p>
         <p data-animate>The streets around the historic district were first platted for citrus in the 1880s, and the town still carries the name. Those streets are now shaded by mature live oaks draped in Spanish moss, a canopy that takes generations to grow and only one bad topping job to ruin.</p>
         <p data-animate>The town is best known for Blue Spring State Park, a spring on the St. Johns River and a winter refuge for manatees. Around it, housing runs from older homes under big oaks near US Highway 17-92 to newer subdivisions still filling in their canopy. Each calls for a different hand: preservation pruning for the old trees, structural training for the young ones.</p>
         <p data-animate>Valentine Park and Mill Lake sit inside the same canopy. If you are searching for &ldquo;tree service near me in Orange City,&rdquo; the useful question to put to any crew is how they reduce storm load without topping. Our answer is selective reduction cuts, laid out step by step in the next section.</p>
@@ -649,9 +649,9 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="oc-heading" data-animate>
       <span class="eyebrow-label">What We Do</span>
       <h2>Which tree services are available in <span style="color: var(--color-accent);">Orange City</span>, FL?</h2>
-      <p class="answer-block">The tree services available in Orange City are trimming, pruning, arborist consultation, crown reduction, maintenance and dead or hazardous tree removal. One DeLand crew does all six with its own chipper, boom lift and grapple loader. Storm-prone canopies usually start with <a href="/services/crown-reduction-shaping/">a crown reduction plan for the heaviest limbs</a>.</p>
+      <p class="answer-block">The tree services available in Orange City are trimming and pruning, palm trimming, arborist consultation, stump grinding, lot clearing and dead or hazardous tree removal. One DeLand crew does all six with its own chipper, boom lift and grapple loader. Storm-prone canopies usually start with <a href="/services/tree-trimming-services/">a crown reduction plan for the heaviest limbs</a>.</p>
     </div>
-    <?php renderServiceCards(['tree-trimming-services','tree-pruning-services','certified-arborist-services','crown-reduction-shaping','tree-maintenance-care','dead-hazardous-tree-removal'], $serviceCardData); ?>
+    <?php renderServiceCards(['tree-trimming-services','palm-tree-trimming','certified-arborist-services','stump-grinding','land-clearing','dead-hazardous-tree-removal'], $serviceCardData); ?>
   </div>
 </section>
 

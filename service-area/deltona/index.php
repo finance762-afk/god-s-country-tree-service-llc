@@ -679,7 +679,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
 
     <div class="dlt-story-grid">
       <div class="dlt-story-copy" data-animate="left">
-        <p>Deltona&rsquo;s quarter-acre lots mostly carry tall sand and slash pines, laurel oaks and live oaks rooted in dry, sandy soil. That mix is why most of our Deltona calls are for <a href="/services/tree-removal/">roped tree removal close to a house</a> or for <a href="/services/crown-reduction-shaping/">crown reduction on a top-heavy canopy</a>.</p>
+        <p>Deltona&rsquo;s quarter-acre lots mostly carry tall sand and slash pines, laurel oaks and live oaks rooted in dry, sandy soil. That mix is why most of our Deltona calls are for <a href="/services/tree-removal/">roped tree removal close to a house</a> or for <a href="/services/tree-trimming-services/">crown reduction on a top-heavy canopy</a>.</p>
         <p><strong>Deltona is the largest city in Volusia County</strong> and calls itself the City of Lakes. Its southern edge fronts Lake Monroe and the St. Johns River, and its homesites were laid out small, so mature pines and oaks now stand a short distance from roofs, fences and pool screens.</p>
         <p>Established neighborhoods like Deltona Lakes, Arbor Ridge and Saxon Woods share the same conditions: well-drained sand, pines that have outgrown their lots, and aging laurel oaks. People who search for <strong>tree service near me in Deltona</strong> usually have one of three problems, and each has its own fix: removal for a leaning pine, reduction for an overextended oak, deadwood pruning for a tree worth keeping.</p>
         <p>We have worked this ground since <?php echo e($yearEstablished); ?>. Deltona sits along the Interstate 4 corridor about 10 miles from our DeLand base, and the shopping plazas we maintain along Howland Boulevard get the same crew and machines as a backyard takedown.</p>
@@ -754,7 +754,7 @@ html.js-anim [data-animate].reveal-delay-4 { transition-delay: 0.32s; }
       <p class="answer-block">The tree services Deltona homeowners book most are controlled removal, storm cleanup, fallen-tree cleanup, hazardous-tree work, trimming and crown reduction. <?php echo e($siteName); ?> runs each one with a single crew that climbs, rigs, loads and hauls. When a storm puts a tree on a roof or driveway, start with our <a href="/services/emergency-tree-service-storm-cleanup/">emergency storm cleanup service</a>.</p>
     </div>
 
-    <?php renderServiceCards(['tree-removal', 'emergency-tree-service-storm-cleanup', 'fallen-tree-removal-cleanup', 'dead-hazardous-tree-removal', 'tree-trimming-services', 'crown-reduction-shaping'], $serviceCardData); ?>
+    <?php renderServiceCards(['tree-removal', 'emergency-tree-service-storm-cleanup', 'fallen-tree-removal-cleanup', 'dead-hazardous-tree-removal', 'tree-trimming-services', 'stump-grinding'], $serviceCardData); ?>
   </div>
 </section>
 
