@@ -1511,3 +1511,10 @@ html.js-anim [data-animate].animated { transform: none; }
 .has-hero-bg { position: relative; isolation: isolate; }
 .has-hero-bg > .hero-bg { position: absolute; inset: 0; z-index: -1; }
 .has-hero-bg > .hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+
+/* ── Blog: inline photo figure + byline (2026-10-13) ───────────── */
+.blog-meta { flex-wrap: wrap; }
+.blog-post__content .blog-figure { margin: var(--space-6) auto; text-align: center; }
+.blog-post__content .blog-figure img { margin-inline: auto; border-radius: var(--radius-md); }
+.blog-post__content .blog-figure figcaption { margin-top: var(--space-2); font-size: var(--font-size-sm); color: var(--color-text); opacity: 0.8; }
+.blog-cta p a { text-decoration: underline; text-underline-offset: 0.15em; }
