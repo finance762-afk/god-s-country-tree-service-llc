@@ -833,7 +833,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <p class="answer-block">Yes &mdash; trimming, pruning, and full residential tree removal all come from the same God's Country crew. Because we run our own skid steer, chipper, and grapple equipment, a job that starts as a trim can fold in a takedown and stump work in the same visit, under one written DeLand quote.</p>
     </div>
 
-    <p class="res-lede" data-animate>This page is the homeowner's front door to <a href="/services/">the full list of tree services we run out of DeLand</a>. Most yards need a mix: <a href="/services/tree-trimming-services/">tree trimming</a> to get live oak limbs off the roofline, structural <a href="/services/tree-pruning-services/">tree pruning</a> to keep young canopies growing strong, and sometimes a full <a href="/services/tree-removal/">tree removal</a> when a pine is past saving. Whatever combination your lot needs, it goes on one written quote and one work day.</p>
+    <p class="res-lede" data-animate>This page is the homeowner's front door to <a href="/services/">the full list of tree services we run out of DeLand</a>. Most yards need a mix: <a href="/services/tree-trimming-services/">tree trimming and structural pruning</a> to get live oak limbs off the roofline and keep young canopies growing strong, <a href="/services/palm-tree-trimming/">palm trimming</a> for the queen palms by the drive, and sometimes a full <a href="/services/tree-removal/">tree removal</a> when a pine is past saving. Whatever combination your lot needs, it goes on one written quote and one work day.</p>
 
     <div class="res-scenarios-grid">
       <article class="res-scenario-featured" data-animate>
@@ -1043,10 +1043,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">Round Out the Plan</span>
       <h2>What other tree services do DeLand property owners pair with residential tree care?</h2>
-      <p class="answer-block">DeLand property owners most often pair residential tree care with trimming, removal, and a maintenance schedule. Trimming keeps live oak canopies off the roof, removal handles the pine or laurel oak that is past saving, and <a href="/services/tree-maintenance-care/">a seasonal tree maintenance plan</a> keeps the same yard from needing a rescue visit later.</p>
+      <p class="answer-block">DeLand property owners most often pair residential tree care with trimming, removal, and palm care. Trimming keeps live oak canopies off the roof, removal handles the pine or laurel oak that is past saving, and <a href="/services/palm-tree-trimming/">palm tree trimming</a> keeps the queen palms by the drive from dropping fronds on the cars. <a href="/services/tree-trimming-services/">A seasonal trimming and maintenance plan</a> keeps the same yard from needing a rescue visit later.</p>
     </div>
 
-    <?php renderServiceCards(['tree-trimming-services', 'tree-removal', 'tree-maintenance-care'], $serviceCardData); ?>
+    <?php renderServiceCards(['tree-trimming-services', 'tree-removal', 'palm-tree-trimming'], $serviceCardData); ?>
   </div>
 </section>
 

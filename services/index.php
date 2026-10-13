@@ -33,7 +33,7 @@ $decisionPaths = [
         'text'  => 'Property managers, HOA boards, and business owners need scheduled maintenance contracts with documentation, insurance, and one crew for trees, land clearing, and storm response.',
         'links' => [
             ['label' => 'Commercial & HOA Services', 'url' => '/services/commercial-hoa-tree-services/'],
-            ['label' => 'Maintenance Contracts',     'url' => '/services/tree-maintenance-care/'],
+            ['label' => 'Lot & Land Clearing',       'url' => '/services/land-clearing/'],
         ],
     ],
     [
@@ -60,7 +60,7 @@ $decisionPaths = [
         'text'  => 'Overgrown canopies, a yard refresh, new plantings, or a property that needs a standing maintenance schedule. Planned work is always the cheapest tree work.',
         'links' => [
             ['label' => 'Trimming & Pruning',    'url' => '/services/tree-trimming-services/'],
-            ['label' => 'Maintenance Plans',      'url' => '/services/tree-maintenance-care/'],
+            ['label' => 'Maintenance Plans',      'url' => '/services/tree-trimming-services/#maintenance-plans'],
             ['label' => 'Planting & Shrubs',      'url' => '/services/tree-planting-shrub-installation/'],
         ],
     ],
@@ -547,7 +547,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">What We Do</span>
       <h2>Which tree services does God's Country offer in <span class="text-accent">DeLand</span>?</h2>
-      <p class="answer-block"><?php echo e($siteName); ?> offers twelve tree services in DeLand, and every one has its own page below. They fall into three groups: removals (standing, dead, hazardous, fallen, and storm-damaged trees), canopy work (trimming, pruning, and crown reduction), and ongoing care (maintenance, planting, arborist assessments, and residential or commercial programs).</p>
+      <p class="answer-block"><?php echo e($siteName); ?> offers twelve tree services in DeLand, and every one has its own page below. They fall into four groups: removals (standing, dead, hazardous, fallen, and storm-damaged trees), canopy work (trimming, pruning, crown reduction and palm trimming), ground work (stump grinding and lot clearing), and ongoing care (maintenance plans, planting, arborist assessments, and residential or commercial programs).</p>
     </div>
 
     <?php renderServiceCards(array_column($services, 'slug'), $serviceCardData); ?>

@@ -53,23 +53,23 @@ $homeServiceCards = [
     ],
     [
         'slug'    => 'tree-trimming-services',
-        'name'    => 'Tree Trimming Services',
+        'name'    => 'Tree Trimming & Pruning',
         'icon'    => 'scissors',
         'img'     => '/assets/images/nsuvrpt-960.webp',
         'alt'     => "God's Country bucket truck with its boom raised into an oak canopy during tree trimming in DeLand, FL",
-        'desc'    => 'Seasonal and routine trimming for trees of every size.',
+        'desc'    => 'Clearance trimming, structural pruning, crown reduction and maintenance plans.',
         'anchor'  => 'Tree trimming in DeLand',
-        'bullets' => ['Seasonal & routine schedules', 'All tree sizes handled', 'Health, looks & safety'],
+        'bullets' => ['Roof & pool-screen clearance', 'Crown reduction, never topping', 'Recurring plans for homes & HOAs'],
     ],
     [
-        'slug'    => 'tree-pruning-services',
-        'name'    => 'Tree Pruning Services',
-        'icon'    => 'leaf',
-        'img'     => $imgBase . '1784062767583-96o2mm-650224392_1767273321337836_3694986581662424202_n.webp',
-        'alt'     => 'Roped arborist pruning branches inside an oak canopy in DeLand, FL',
-        'desc'    => 'Precision pruning that improves structure, health, and appearance.',
-        'anchor'  => 'Tree pruning in DeLand',
-        'bullets' => ['Certified arborist techniques', 'Stronger branch structure', 'Healthier long-term growth'],
+        'slug'    => 'stump-grinding',
+        'name'    => 'Stump Grinding',
+        'icon'    => 'circle-dot',
+        'img'     => $imgBase . '1784062756583-g1q71x-162462401_2868738963346697_5761624918012580393_n.webp',
+        'alt'     => 'Flush-cut oak stump with sawdust around it, ready for stump grinding at a DeLand, FL home',
+        'desc'    => 'Stumps ground below grade after a removal or from a tree cut years ago.',
+        'anchor'  => 'Stump grinding in DeLand',
+        'bullets' => ['Ground below grade', 'Chips raked or hauled', 'Spot ready for sod or planting'],
     ],
     [
         'slug'    => 'dead-hazardous-tree-removal',
@@ -92,14 +92,14 @@ $homeServiceCards = [
         'bullets' => ['Rapid response cleanup', 'Full debris removal', 'Site restoration included'],
     ],
     [
-        'slug'    => 'crown-reduction-shaping',
-        'name'    => 'Crown Reduction & Shaping',
-        'icon'    => 'tree-deciduous',
-        'img'     => $imgBase . '1784062745583-ri3d15-51248376_2242050436015556_1895589103194341376_n.webp',
-        'alt'     => 'Cleanly reduced and shaped mature oak crown against blue sky after crown reduction in DeLand, FL',
-        'desc'    => 'Reduce weight and reshape overgrown or storm-stressed canopies.',
-        'anchor'  => 'Crown reduction in DeLand',
-        'bullets' => ['Reduces storm-load weight', 'Better light penetration', 'Reshapes overgrown canopies'],
+        'slug'    => 'land-clearing',
+        'name'    => 'Lot & Land Clearing',
+        'icon'    => 'tractor',
+        'img'     => $imgBase . '1784062729442-t1gqhh-31144196_2042462182641050_2975434522398556160_n.webp',
+        'alt'     => 'Graded lot ringed by orange tree-protection fencing with crew and loader among kept oaks near DeLand, FL',
+        'desc'    => 'Lots, acreage and overgrown parcels cleared with our own skid steer and grapple loader.',
+        'anchor'  => 'Land clearing in DeLand',
+        'bullets' => ['Kept trees fenced & protected', 'Stumps & root balls out', 'Brush chipped, debris hauled'],
     ],
     [
         'slug'    => 'commercial-hoa-tree-services',
@@ -128,6 +128,7 @@ $tickerItems = [
     'DeLand, Florida &middot; Since 2014',
     'Tree Removal',
     'Trimming &amp; Pruning',
+    'Palm Trimming',
     'Storm Cleanup',
     'Crown Reduction',
     'Stump Grinding',
@@ -841,9 +842,9 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">What We Do</span>
       <h2>What Tree Services Does God's Country Tree Service Offer in <span class="text-accent">DeLand</span>?</h2>
-      <p class="hero-answer"><?php echo e($siteName); ?> offers twelve tree services in DeLand, FL, from removals and trimming to storm cleanup and planting. The most requested are <a href="/services/tree-removal/">tree removal in DeLand</a>, <a href="/services/tree-trimming-services/">tree trimming</a>, <a href="/services/emergency-tree-service-storm-cleanup/">emergency tree removal after storms</a>, and <a href="/services/tree-pruning-services/">structural pruning</a> for live oaks, laurel oaks, pines, and sabal palms.</p>
+      <p class="hero-answer"><?php echo e($siteName); ?> offers twelve tree services in DeLand, FL, from removals and trimming to storm cleanup and planting. The most requested are <a href="/services/tree-removal/">tree removal in DeLand</a>, <a href="/services/tree-trimming-services/">tree trimming and structural pruning</a> for live oaks, laurel oaks and pines, <a href="/services/emergency-tree-service-storm-cleanup/">emergency tree removal after storms</a>, and <a href="/services/palm-tree-trimming/">palm tree trimming</a> for queen and sabal palms.</p>
       <span class="section-subtitle"><?php echo e($tagline); ?></span>
-      <p class="prose">The same crew also handles <a href="/services/crown-reduction-shaping/">crown reduction</a>, <a href="/services/dead-hazardous-tree-removal/">dead and hazardous tree removal</a>, <a href="/services/fallen-tree-removal-cleanup/">fallen tree cleanup</a>, <a href="/services/tree-maintenance-care/">scheduled tree maintenance</a>, <a href="/services/tree-planting-shrub-installation/">tree and shrub planting</a>, <a href="/services/certified-arborist-services/">certified arborist assessments</a>, <a href="/services/residential-tree-services/">residential tree care</a>, and <a href="/services/commercial-hoa-tree-services/">commercial and HOA tree service</a>. Climbing, rigging, skid-steer work, chipping, hauling, and stump grinding stay with one company, so nobody has to line up a second contractor to finish the job.</p>
+      <p class="prose">The same crew also handles <a href="/services/tree-trimming-services/#maintenance-plans">crown reduction and scheduled maintenance plans</a>, <a href="/services/stump-grinding/">stump grinding</a>, <a href="/services/land-clearing/">lot and land clearing</a>, <a href="/services/dead-hazardous-tree-removal/">dead and hazardous tree removal</a>, <a href="/services/fallen-tree-removal-cleanup/">fallen tree cleanup</a>, <a href="/services/tree-planting-shrub-installation/">tree and shrub planting</a>, <a href="/services/certified-arborist-services/">certified arborist assessments</a>, <a href="/services/residential-tree-services/">residential tree care</a>, and <a href="/services/commercial-hoa-tree-services/">commercial and HOA tree service</a>. Climbing, rigging, skid-steer work, chipping, hauling, and stump grinding stay with one company, so nobody has to line up a second contractor to finish the job.</p>
     </div>
 
     <div class="services-grid services-grid--home" data-p1-dynamic>

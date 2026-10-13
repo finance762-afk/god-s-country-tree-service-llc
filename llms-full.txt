@@ -36,32 +36,25 @@ Professional safe removal of trees of all sizes using controlled lowering techni
 
 Cost factors: Tree height, diameter, proximity to structures, access constraints, stump diameter, debris volume.
 
-### 2. Tree Trimming Services
-Seasonal and routine trimming for health, safety, and aesthetics. Includes deadwood removal, crossing branch elimination, clearance from rooflines and power lines (coordinated with utility companies), weight reduction for hurricane preparedness, and shape correction. Follows ANSI A300 standards.
+### 2. Tree Trimming & Pruning
+URL: https://godscountrytree.com/services/tree-trimming-services/
+One page covers the canopy work (2026-10-13: the former tree pruning, crown reduction and tree maintenance pages were merged here and redirect to it).
+- Clearance trimming over roofs, gutters, driveways and pool screen enclosures; canopy health trimming (interior deadwood, Spanish moss, crossing limbs); appearance trimming on street-facing trees.
+- Structural pruning (one dominant leader, spaced scaffold limbs), deadwood removal, crown thinning and clearance pruning, all cut at the branch collar.
+- Crown reduction: limbs shortened back to healthy laterals so a canopy comes down in size. The company refuses topping and will say so at the estimate.
+- Recurring maintenance plans for homes and HOAs: walk-through inspection, preventative cuts, written watch list; follow-up visits quoted in writing first.
+- Heaviest work booked in the dry season (roughly December through February); storm-prep clearance before June 1; light trimming year-round.
+- Brush chipped and hauled the same day; the written estimate names each tree and what comes off it.
 
-Best seasons in Central Florida: Late winter (February–March) before spring flush, or late fall (November) after summer growth. Avoid trimming during active hurricane season (June–November peak) unless emergency work.
+### 3. Palm Tree Trimming
+URL: https://godscountrytree.com/services/palm-tree-trimming/
+- Queen, sabal (cabbage), fan/palmetto and sago palms.
+- Removes fully brown fronds, seed pods and flower stalks, and leaf boots that are already loose; every green frond stays. Nothing above the horizontal (the 9-to-3 line in UF/IFAS guidance) is cut.
+- No hurricane cuts (stripping a palm to a few upright fronds weakens it) and no climbing spikes on a palm that is staying; crowns are reached from the forestry bucket truck or a roped climb.
+- Most palms get yearly attention, booked before hurricane season opens June 1; queen palms after they flower so seed pods come off before they drop.
+- Fronds chipped and hauled the same visit.
 
-### 3. Tree Pruning Services
-Targets include:
-- Crown cleaning (deadwood, diseased limbs, weak attachments)
-- Crown raising (clearance over driveways, walkways, turf)
-- Subordination cuts (reducing competing leaders)
-- Restoration pruning (correcting prior topping or storm damage)
-
-Species-specific techniques for live oak (respect apical dominance), laurel oak (manage rapid growth and weak wood), sabal palm (frond removal at 9–3 o'clock only), longleaf pine (minimal intervention).
-
-### 4. Crown Reduction & Shaping
-Reduces overall tree height or spread by selectively cutting back to lateral branches. Used for:
-- Overgrown trees threatening structures or utilities
-- Storm-damaged canopies with split leaders or broken tops
-- Trees outgrowing their planting site
-- Restoring balance to lopsided or asymmetric crowns
-
-**Critical distinction:** Crown reduction is NOT topping. Topping (indiscriminate cutting to stubs) causes decay, weak regrowth, and tree decline. God's Country uses arborist-approved reduction cuts to living lateral branches at least 1/3 the diameter of the removed section.
-
-Target reduction: 15–25% of crown volume per session to avoid shock.
-
-### 5. Dead & Hazardous Tree Removal
+### 4. Dead & Hazardous Tree Removal
 Specialized high-risk removals including:
 - Standing dead trees (snags) with advanced decay and unpredictable failure
 - Trees with root rot (Ganoderma, Armillaria) or butt rot causing instability
@@ -71,7 +64,7 @@ Specialized high-risk removals including:
 
 Emergency removals prioritized for imminent threats.
 
-### 6. Emergency Tree Removal & Storm Cleanup
+### 5. Emergency Tree Removal & Storm Cleanup
 URL: https://godscountrytree.com/services/emergency-tree-service-storm-cleanup/ — the page for emergency tree removal in DeLand, FL and storm damage tree removal. Call (407) 280-3484, answered 24/7. Available around the clock during and immediately after hurricanes, tropical storms, severe thunderstorms, and tornado events. Services include:
 - Removing trees from structures (roofs, vehicles, fences)
 - Clearing blocked roadways and driveways
@@ -82,11 +75,26 @@ URL: https://godscountrytree.com/services/emergency-tree-service-storm-cleanup/ 
 
 Response: same-day for genuine hazards (trees on homes and blocked access first, standing hazards next, yard debris after). Written price before cutting. Never touch a tree in contact with a power line; the utility must de-energize or clear it first.
 
-### 7. Fallen Tree Removal & Cleanup
+### 6. Fallen Tree Removal & Cleanup
 URL: https://godscountrytree.com/services/fallen-tree-removal-cleanup/ — fallen tree removal (tree already down, not an active emergency).
 Post-storm or blow-down cleanup for trees already on the ground. Includes sectioning, debris chipping, log hauling, and site restoration. Grapple loader used for efficient large-volume debris handling. Stump grinding available as add-on.
 
-### 8. Residential Tree Services
+### 7. Stump Grinding
+URL: https://godscountrytree.com/services/stump-grinding/
+- Quoted on most tree removal estimates as its own line, and as a standalone job for stumps left by a storm, a previous contractor or a tree cut years ago.
+- Stump ground below grade; how deep depends on what is going over the spot (sod, a bed, a planting, a fence post), which is settled at the estimate.
+- Grindings raked back into the hole or hauled off; the owner points out irrigation, septic and buried lines before the grinder starts.
+- Pulling stumps and root balls whole with the grapple track loader is the alternative on lots being cleared.
+
+### 8. Lot & Land Clearing
+URL: https://godscountrytree.com/services/land-clearing/
+- Wooded homesites before a build, overgrown acreage, fence lines and access drives, and selective clearing that keeps the oaks. Customers include homeowners, businesses, farms and property owners.
+- Process: trees that stay are fenced with orange tree-protection fencing; removals are marked with a red X; marked trees are felled and chipped on site; stumps and root balls are pulled with the Kubota SVL75-2 grapple track loader; the skid steer rough-grades the ground; debris leaves on the company's trucks.
+- Bush-hogging is offered where an overgrown parcel only needs knocking back rather than a full clear.
+- DeLand has a tree protection ordinance and Volusia County regulates protected trees; the company flags likely permit trees at the estimate and the owner confirms with the city or county before clearing.
+- Written estimate itemizes tree removal, stump and root-ball work, brush, hauling and grading so the job can be phased.
+
+### 9. Residential Tree Services
 Comprehensive tree care for single-family homes, townhomes, and residential properties. Services bundled or à la carte:
 - Annual or bi-annual maintenance trimming
 - Seasonal pruning for fruit trees (citrus, mango, avocado common in Central Florida)
@@ -97,7 +105,7 @@ Comprehensive tree care for single-family homes, townhomes, and residential prop
 
 Homeowner education provided on watering, mulching, and recognizing early signs of stress or disease.
 
-### 9. Commercial & HOA Tree Services
+### 10. Commercial & HOA Tree Services
 Scheduled maintenance for office parks, retail centers, apartment complexes, HOA communities, and municipal properties. Recurring service contracts available (monthly, quarterly, annual). Benefits:
 - Predictable budgeting with flat-rate agreements
 - Compliance with community covenants and landscape codes
@@ -105,17 +113,6 @@ Scheduled maintenance for office parks, retail centers, apartment complexes, HOA
 - Coordinated work during low-traffic windows to minimize disruption
 
 Commercial work covers shopping plazas, office parks and HOA common areas across the service area.
-
-### 10. Tree Maintenance & Care
-Ongoing health management including:
-- Soil testing and amendment recommendations (Central Florida's sandy soils often deficient in micronutrients)
-- Deep-root fertilization (injection method for established trees)
-- Insect and disease monitoring (lethal yellowing in palms, laurel wilt, oak decline, boring insects)
-- Mulch replenishment (maintaining 2–4 inch depth, keeping clear of trunk flare)
-- Irrigation assessment and adjustment recommendations
-- Cabling and bracing for trees with structural defects
-
-Preventative care significantly extends tree lifespan and reduces emergency removal costs.
 
 ### 11. Certified Arborist Services
 Services include:

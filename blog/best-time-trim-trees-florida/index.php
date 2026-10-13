@@ -56,7 +56,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <h2>Why Does Tree-Trimming Timing Matter in Florida?</h2>
         <p>Tree-trimming timing matters in Florida because a cut made in the wrong month can stress the tree, invite pests and disease, or trigger weak regrowth. Central Florida trees rarely go fully dormant, so the right month depends on the species, on where it is in its growth cycle, and on how close hurricane season is.</p>
 
-        <p>Florida's subtropical climate means trees don't follow the same dormancy patterns as northern trees. Many species grow year-round with seasonal slowdowns rather than a full rest. Timing cuts around growth cycles, nesting birds, and storm season improves tree health and reduces risk. That is why <a href="/services/tree-pruning-services/">the pruning work we do on DeLand oaks, pines, and magnolias</a> is planned species by species, and why a <a href="/blog/prescription-pruning-deland/">written pruning prescription for each tree</a> beats a blanket "trim everything" visit.</p>
+        <p>Florida's subtropical climate means trees don't follow the same dormancy patterns as northern trees. Many species grow year-round with seasonal slowdowns rather than a full rest. Timing cuts around growth cycles, nesting birds, and storm season improves tree health and reduces risk. That is why <a href="/services/tree-trimming-services/">the pruning work we do on DeLand oaks, pines, and magnolias</a> is planned species by species, and why a <a href="/blog/prescription-pruning-deland/">written pruning prescription for each tree</a> beats a blanket "trim everything" visit.</p>
 
         <h2>What Does a Month-by-Month Tree-Trimming Calendar Look Like in DeLand, FL?</h2>
         <p>A DeLand tree-trimming calendar has four working windows. December through February suits structural pruning of pines, magnolias, and crape myrtles. March through May is for storm-prep thinning. June through November is for hazards and storm damage only. Late summer is the stretch where UF/IFAS guidance advises against heavy pruning.</p>
@@ -126,7 +126,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <li>Raising the canopy over streets, driveways, and rooflines (crown lifting)</li>
         </ul>
 
-        <p><strong>Never top an oak.</strong> Topping (cutting the main trunk or large branches back to stubs) creates weak epicormic sprouts that are more likely to break in storms than the original branches. If an oak has outgrown its space, a proper reduction cut or removal and replanting is better than topping. Our post on <a href="/blog/tree-topping-vs-crown-reduction/">tree topping versus crown reduction</a> shows the difference, and <a href="/services/crown-reduction-shaping/">crown reduction and shaping</a> is the service that does it correctly.</p>
+        <p><strong>Never top an oak.</strong> Topping (cutting the main trunk or large branches back to stubs) creates weak epicormic sprouts that are more likely to break in storms than the original branches. If an oak has outgrown its space, a proper reduction cut or removal and replanting is better than topping. Our post on <a href="/blog/tree-topping-vs-crown-reduction/">tree topping versus crown reduction</a> shows the difference, and <a href="/services/tree-trimming-services/">crown reduction and shaping</a> is the service that does it correctly.</p>
 
         <h3>Palm Trees (Cabbage Palms, Queen Palms, Sabal Palms)</h3>
         <p><strong>Best trimming months:</strong> Year-round<br>
@@ -213,9 +213,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <div class="blog-related-services">
           <h3>Related Tree Services</h3>
           <ul>
-            <li><a href="/services/tree-trimming-services/">Tree Trimming & Pruning Services</a></li>
-            <li><a href="/services/tree-pruning-services/">Tree Pruning Services</a></li>
-            <li><a href="/services/tree-maintenance-care/">Tree Maintenance & Care</a></li>
+            <li><a href="/services/tree-trimming-services/">Tree Trimming &amp; Pruning</a></li>
             <li><a href="/services/certified-arborist-services/">Tree Health Assessments</a></li>
             <li><a href="/services/dead-hazardous-tree-removal/">Dead & Hazardous Tree Removal</a></li>
           </ul>

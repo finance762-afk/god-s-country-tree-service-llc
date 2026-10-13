@@ -1139,10 +1139,10 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     <div class="section-title" data-animate>
       <span class="eyebrow-label">After the Diagnosis</span>
       <h2>What other tree services do DeLand property owners pair with arborist services?</h2>
-      <p class="answer-block">DeLand property owners most often follow an arborist assessment with pruning, maintenance or hazard removal. <a href="/services/tree-pruning-services/">Corrective tree pruning</a> handles the trees worth saving, an <a href="/services/tree-maintenance-care/">ongoing tree maintenance plan</a> keeps them that way, and <a href="/services/dead-hazardous-tree-removal/">dead and hazardous tree removal</a> covers the hazard that cannot be treated. The crew that diagnosed the tree quotes all three.</p>
+      <p class="answer-block">DeLand property owners most often follow an arborist assessment with pruning, hazard removal or stump work. <a href="/services/tree-trimming-services/">Corrective tree pruning and crown reduction</a> handle the trees worth saving, <a href="/services/dead-hazardous-tree-removal/">dead and hazardous tree removal</a> covers the hazard that cannot be treated, and <a href="/services/stump-grinding/">stump grinding</a> finishes the spot where a tree came out. The crew that diagnosed the tree quotes all three.</p>
     </div>
 
-    <?php renderServiceCards(['tree-pruning-services', 'tree-maintenance-care', 'dead-hazardous-tree-removal'], $serviceCardData); ?>
+    <?php renderServiceCards(['tree-trimming-services', 'dead-hazardous-tree-removal', 'stump-grinding'], $serviceCardData); ?>
   </div>
 </section>
 

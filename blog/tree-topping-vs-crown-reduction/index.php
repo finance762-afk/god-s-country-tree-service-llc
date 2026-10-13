@@ -51,7 +51,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
     <div class="blog-post__content">
       <div class="container">
-        <p class="lead">Tree topping, which means sawing main branches back to stubs at one height to make a tree shorter, permanently damages the tree. It starves the canopy, opens the trunk to decay, and triggers weak regrowth that fails in storms. The professional alternative is <a href="/services/crown-reduction-shaping/">crown reduction</a>: cutting back to healthy lateral branches so the tree gets smaller while keeping its natural structure. One is mutilation. The other is pruning.</p>
+        <p class="lead">Tree topping, which means sawing main branches back to stubs at one height to make a tree shorter, permanently damages the tree. It starves the canopy, opens the trunk to decay, and triggers weak regrowth that fails in storms. The professional alternative is <a href="/services/tree-trimming-services/">crown reduction</a>: cutting back to healthy lateral branches so the tree gets smaller while keeping its natural structure. One is mutilation. The other is pruning.</p>
 
         <div class="answer-block">
           <h3>Quick Answer: Is topping a tree bad?</h3>
@@ -71,7 +71,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <p>The last reason is price. Topping is cheap because it is fast and takes no skill: any crew with a chainsaw can lop everything at one height. The topped tree then needs re-cutting every few years as the sprouts regrow, and it declines the whole time. Homeowners pay repeatedly for damage, then pay for removal anyway.</p>
 
         <h2>What Is Crown Reduction, and How Is It Different?</h2>
-        <p>Crown reduction makes a tree shorter by cutting each branch back to a lateral branch large enough to take over as the new growing tip. The tree keeps its natural form at a smaller scale, and every cut lands where the tree can seal it. It is the method behind our <a href="/services/crown-reduction-shaping/">crown reduction and shaping service</a>.</p>
+        <p>Crown reduction makes a tree shorter by cutting each branch back to a lateral branch large enough to take over as the new growing tip. The tree keeps its natural form at a smaller scale, and every cut lands where the tree can seal it. It is the method behind our <a href="/services/tree-trimming-services/">crown reduction and shaping service</a>.</p>
         <p>Because the new endpoint is a living, attached branch, there is no stub, no burst of sprouts and no column of decay. The reduced canopy also catches less wind, and the load still passes through sound wood into the trunk. Done well, a reduced tree barely looks pruned.</p>
 
         <div class="compare-table-wrap">
@@ -121,7 +121,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <li><strong>Weight reduction</strong> shortens over-extended limbs back to laterals, especially long horizontal ones over roofs and driveways.</li>
           <li><strong>Structural pruning</strong>, done over several visits, corrects weak V-shaped unions and competing leaders before they become failure points.</li>
         </ul>
-        <p>Our guide to <a href="/blog/hurricane-prep-tree-trimming-deland/">hurricane prep tree trimming in DeLand</a> covers the full approach, and the <a href="/blog/best-time-trim-trees-florida/">best time to trim trees in Florida</a> post explains how to schedule it ahead of the season. If you want each cut written down and justified before work starts, see how <a href="/blog/prescription-pruning-deland/">prescription pruning in DeLand</a> works. This is the everyday work of our <a href="/services/tree-pruning-services/">tree pruning</a> and <a href="/services/tree-trimming-services/">tree trimming</a> crews.</p>
+        <p>Our guide to <a href="/blog/hurricane-prep-tree-trimming-deland/">hurricane prep tree trimming in DeLand</a> covers the full approach, and the <a href="/blog/best-time-trim-trees-florida/">best time to trim trees in Florida</a> post explains how to schedule it ahead of the season. If you want each cut written down and justified before work starts, see how <a href="/blog/prescription-pruning-deland/">prescription pruning in DeLand</a> works. This is the everyday work of our <a href="/services/tree-trimming-services/">tree trimming and pruning</a> crew.</p>
 
         <h2>When Is Removal the Honest Answer?</h2>
         <p>Removal is the honest answer when the tree is the wrong tree for the spot and no pruning can fix where it stands. A laurel oak planted ten feet from a foundation, a pine directly over the only bedroom, or a fast-growing species under a service drop are the usual cases.</p>
@@ -149,9 +149,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <div class="blog-related-services">
           <h3>Related Tree Services</h3>
           <ul>
-            <li><a href="/services/crown-reduction-shaping/">Crown Reduction & Shaping</a></li>
-            <li><a href="/services/tree-pruning-services/">Tree Pruning Services</a></li>
-            <li><a href="/services/tree-trimming-services/">Tree Trimming Services</a></li>
+            <li><a href="/services/tree-trimming-services/">Tree Trimming &amp; Pruning</a></li>
             <li><a href="/services/tree-removal/">Tree Removal Services</a></li>
           </ul>
         </div>

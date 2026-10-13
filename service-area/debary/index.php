@@ -716,7 +716,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
       <p class="answer-block">The tree services available in DeBary are planting and shrub installation, trimming, crown reduction, residential care, HOA and commercial maintenance, and removal. <?php echo e($siteName); ?> sends the crew and equipment it runs from DeLand, so a new-yard planting and a large takedown can be quoted on one written estimate.</p>
     </div>
 
-    <?php renderServiceCards(['tree-planting-shrub-installation', 'tree-trimming-services', 'residential-tree-services', 'commercial-hoa-tree-services', 'tree-removal', 'crown-reduction-shaping'], $serviceCardData); ?>
+    <?php renderServiceCards(['tree-planting-shrub-installation', 'tree-trimming-services', 'residential-tree-services', 'commercial-hoa-tree-services', 'tree-removal', 'palm-tree-trimming'], $serviceCardData); ?>
   </div>
 </section>
 

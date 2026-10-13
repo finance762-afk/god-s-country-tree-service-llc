@@ -97,7 +97,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <li><strong>Chicken of the woods</strong> — bright orange/yellow shelf fungi (causes brown cubical rot)</li>
         </ul>
 
-        <p>Not all fungi kill trees immediately, but their presence means the tree's structural integrity is compromised. A tree with extensive fungal decay may look healthy in the canopy but lack the internal strength to withstand wind loads. If you see mushrooms, schedule <a href="/services/certified-arborist-services/">a tree health and risk assessment with our arborist</a>. Where the extent of internal decay is in doubt, specialist tools such as resistance drilling or sonic tomography can measure it. Regular <a href="/services/tree-maintenance-care/">tree maintenance and care</a> can help catch these issues early.</p>
+        <p>Not all fungi kill trees immediately, but their presence means the tree's structural integrity is compromised. A tree with extensive fungal decay may look healthy in the canopy but lack the internal strength to withstand wind loads. If you see mushrooms, schedule <a href="/services/certified-arborist-services/">a tree health and risk assessment with our arborist</a>. Where the extent of internal decay is in doubt, specialist tools such as resistance drilling or sonic tomography can measure it. Regular <a href="/services/tree-trimming-services/">tree maintenance and care</a> can help catch these issues early.</p>
 
         <h2>4. Cavities and Hollow Areas</h2>
         <p>A cavity is a hollow area inside the trunk or a major branch, usually caused by decay following an injury or pruning wound. Small cavities (less than 1/3 of the trunk's diameter) may not significantly weaken the tree. Large cavities (more than half the trunk's diameter) drastically reduce strength.</p>
@@ -147,7 +147,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <li>One trunk is significantly heavier or taller than the other (unbalanced load)</li>
         </ul>
 
-        <p>Some co-dominant stems can be cabled or braced to reduce failure risk, but if the union is already cracking or one trunk is leaning away from the other, removal is the safer option. Most weak unions can be prevented with <a href="/services/tree-pruning-services/">structural pruning while the tree is young</a>. Don't gamble on a poorly structured tree above your home.</p>
+        <p>Some co-dominant stems can be cabled or braced to reduce failure risk, but if the union is already cracking or one trunk is leaning away from the other, removal is the safer option. Most weak unions can be prevented with <a href="/services/tree-trimming-services/">structural pruning while the tree is young</a>. Don't gamble on a poorly structured tree above your home.</p>
 
         <h2>8. Sudden Leaf Loss, Canopy Dieback, or Off-Season Color Change</h2>
         <p>A tree that suddenly drops leaves in summer, develops large areas of dead canopy, or turns brown/yellow out of season is stressed or diseased. Possible causes include:</p>
@@ -229,7 +229,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
             <li><a href="/services/certified-arborist-services/">Tree Health Assessments</a></li>
             <li><a href="/services/tree-removal/">Tree Removal Services</a></li>
             <li><a href="/services/emergency-tree-service-storm-cleanup/">Emergency Tree Service & Storm Cleanup</a></li>
-            <li><a href="/services/tree-trimming-services/">Tree Trimming Services</a></li>
+            <li><a href="/services/tree-trimming-services/">Tree Trimming &amp; Pruning</a></li>
           </ul>
         </div>
 

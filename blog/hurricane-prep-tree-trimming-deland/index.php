@@ -72,7 +72,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <h2>Should you "hurricane cut" a tree down to bare stubs?</h2>
         <p>A "hurricane cut" that takes a tree down to bare stubs does not reduce storm risk; it creates it. Topping forces weak sprouts that are more likely to fail than properly pruned branches. Arborists use selective thinning and crown reduction instead, removing targeted limbs while preserving the tree's natural structure.</p>
 
-        <p>Our comparison of <a href="/blog/tree-topping-vs-crown-reduction/">tree topping versus crown reduction</a> shows what each cut does to the tree, and <a href="/services/crown-reduction-shaping/">crown reduction and shaping</a> is the service to ask for when a canopy needs to come down in size.</p>
+        <p>Our comparison of <a href="/blog/tree-topping-vs-crown-reduction/">tree topping versus crown reduction</a> shows what each cut does to the tree, and <a href="/services/tree-trimming-services/">crown reduction and shaping</a> is the service to ask for when a canopy needs to come down in size.</p>
 
         <h2>How much does pre-season tree trimming cost in DeLand?</h2>
         <p>Pre-season tree trimming in DeLand is priced by tree size, condition, and access. Typical Central Florida market ranges run about $300-$800 for one large oak, $150-$400 for a mid-sized crape myrtle, and $800-$2,000 for several trees on a residential lot. These are market figures, not our quote.</p>
@@ -121,8 +121,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <div class="blog-related-services">
           <h3>Related Tree Services</h3>
           <ul>
-            <li><a href="/services/tree-trimming-services/">Tree Trimming Services</a></li>
-            <li><a href="/services/tree-pruning-services/">Tree Pruning Services</a></li>
+            <li><a href="/services/tree-trimming-services/">Tree Trimming &amp; Pruning</a></li>
             <li><a href="/services/emergency-tree-service-storm-cleanup/">Emergency Tree Service & Storm Cleanup</a></li>
             <li><a href="/services/dead-hazardous-tree-removal/">Dead & Hazardous Tree Removal</a></li>
           </ul>

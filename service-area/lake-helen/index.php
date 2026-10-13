@@ -685,7 +685,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     </div>
 
     <div class="lh-prose">
-      <p class="lh-drop-cap" data-animate>Tree work in Lake Helen is different because the town&rsquo;s Victorian historic district is defined by its live oaks and longleaf pines. Most visits here are <a href="/services/tree-pruning-services/">preservation pruning on mature oaks</a> or <a href="/services/crown-reduction-shaping/">crown reduction to lighten long limbs</a>, with removal kept for trees that cannot be made safe.</p>
+      <p class="lh-drop-cap" data-animate>Tree work in Lake Helen is different because the town&rsquo;s Victorian historic district is defined by its live oaks and longleaf pines. Most visits here are <a href="/services/tree-trimming-services/">preservation pruning on mature oaks or crown reduction to lighten long limbs</a>, with removal kept for trees that cannot be made safe.</p>
       
       <p data-animate>Nicknamed the &ldquo;Gem of Florida,&rdquo; Lake Helen is one of the quietest, most tree-shaded corners of western Volusia County. Many of the oaks in its compact historic district are older than the houses under them, and residents watch what happens to them.</p>
 
@@ -761,7 +761,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
     </div>
     <p class="answer-block" data-animate>The tree services available in Lake Helen are arborist consultation, pruning, crown reduction, maintenance, hazardous tree removal and trimming. <?php echo e($siteName); ?> starts each job with an on-site assessment and a written estimate. For a tree you are unsure about, begin with <a href="/services/certified-arborist-services/">an arborist assessment of the tree&rsquo;s health and structure</a>.</p>
 
-    <?php renderServiceCards(['certified-arborist-services', 'tree-pruning-services', 'crown-reduction-shaping', 'tree-maintenance-care', 'dead-hazardous-tree-removal', 'tree-trimming-services'], $serviceCardData); ?>
+    <?php renderServiceCards(['certified-arborist-services', 'tree-trimming-services', 'palm-tree-trimming', 'dead-hazardous-tree-removal', 'tree-removal', 'stump-grinding'], $serviceCardData); ?>
   </div>
 </section>
 

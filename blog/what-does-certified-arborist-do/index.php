@@ -55,7 +55,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 
         <h2>What Does an Arborist Actually Do on a Job?</h2>
         <p>An arborist on a job starts by inspecting the tree, not cutting it. A hazard assessment moves from the ground up: root flare and soil heave, trunk cavities and cracks, old pruning wounds, deadwood in the canopy, dieback at the branch tips and any change in lean.</p>
-        <p>Those observations decide whether a tree needs <a href="/services/tree-pruning-services/">structural pruning</a>, treatment, monitoring or removal, and in what order of urgency. If you have noticed <a href="/blog/signs-dangerous-tree-deland/">warning signs like fungal growth or a sudden lean</a>, this assessment is the step that turns worry into a plan.</p>
+        <p>Those observations decide whether a tree needs <a href="/services/tree-trimming-services/">structural pruning</a>, treatment, monitoring or removal, and in what order of urgency. If you have noticed <a href="/blog/signs-dangerous-tree-deland/">warning signs like fungal growth or a sudden lean</a>, this assessment is the step that turns worry into a plan.</p>
         <p>Diagnosis is the other half of the job. Central Florida trees present problems a generalist can misread: oak galls that look alarming but rarely threaten the tree, palm nutrient deficiencies that show up as yellowing or frizzled new fronds, and root-zone trouble in our sandy soils, where water and nutrients leach away fast and construction compaction chokes roots that grow shallow to begin with. Spanish moss is another one homeowners worry about, and our post on <a href="/blog/is-spanish-moss-bad-for-trees/">whether Spanish moss is bad for trees</a> explains when it matters. An arborist sorts the cosmetic from the fatal and matches the response to the actual problem. That work is the core of our <a href="/services/certified-arborist-services/">arborist consultation and diagnosis service</a>, and it often costs less than the unnecessary removal it prevents.</p>
 
         <h2>Arborist vs. Tree Guy With a Chainsaw: When Does the Credential Matter?</h2>
@@ -73,7 +73,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
         <h2>How Does Florida's Climate Shape the Work?</h2>
         <p>Florida's climate shapes an arborist's work through hurricane wind, frequent lightning, sandy soil and a short list of fatal diseases. Around DeLand that means pruning planned for wind, strike-damage checks after summer storms, and watching bay trees and palms for laurel wilt and lethal bronzing.</p>
         <p>Hurricane stress is the obvious one. Wind loading decides how a canopy is thinned, and it is why structural pruning matters more here than almost anywhere: done right it helps a tree shed wind, done wrong it creates the weak regrowth that storms exploit. Laurel wilt has been killing bay trees across the region. Lethal bronzing is a bacterial disease of palms with no cure, so early identification protects the palms around an infected one.</p>
-        <p>Timing matters too. Our <a href="/blog/best-time-trim-trees-florida/">Florida trimming calendar</a> exists because pruning the right tree in the wrong month invites problems. It is also why ongoing <a href="/services/tree-maintenance-care/">tree maintenance and care</a> beats crisis calls: trees checked season to season rarely deliver surprises.</p>
+        <p>Timing matters too. Our <a href="/blog/best-time-trim-trees-florida/">Florida trimming calendar</a> exists because pruning the right tree in the wrong month invites problems. It is also why ongoing <a href="/services/tree-trimming-services/">tree maintenance and care</a> beats crisis calls: trees checked season to season rarely deliver surprises.</p>
 
         <h2>What Are the Red Flags of an Unqualified Tree Crew?</h2>
         <p>The red flags of an unqualified tree crew are topping, climbing spikes on a live tree, no proof of insurance and pressure to decide on the spot. God's Country Tree Service gets called to correct this kind of work around DeLand, and the same four patterns keep turning up.</p>
@@ -116,9 +116,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <h3>Related Tree Services</h3>
           <ul>
             <li><a href="/services/certified-arborist-services/">Certified Arborist Services</a></li>
-            <li><a href="/services/tree-pruning-services/">Tree Pruning Services</a></li>
+            <li><a href="/services/tree-trimming-services/">Tree Trimming &amp; Pruning</a></li>
             <li><a href="/services/dead-hazardous-tree-removal/">Dead & Hazardous Tree Removal</a></li>
-            <li><a href="/services/tree-maintenance-care/">Tree Maintenance & Care</a></li>
           </ul>
         </div>
 

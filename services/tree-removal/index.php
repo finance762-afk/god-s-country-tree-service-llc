@@ -817,7 +817,7 @@ html.js-anim [data-animate].reveal-delay-3 { transition-delay: 0.24s; }
           </li>
           <li data-animate>
             <?php echo icon('check-circle'); ?>
-            <p><strong>An arborist's read first.</strong> If <a href="/services/crown-reduction-shaping/">crown reduction to take weight off the canopy</a> or structural pruning can save the tree, we say so at the estimate. Removal is the answer when it's the honest answer.</p>
+            <p><strong>An arborist's read first.</strong> If <a href="/services/tree-trimming-services/">crown reduction to take weight off the canopy</a> or structural pruning can save the tree, we say so at the estimate. Removal is the answer when it's the honest answer.</p>
           </li>
           <li data-animate>
             <?php echo icon('check-circle'); ?>

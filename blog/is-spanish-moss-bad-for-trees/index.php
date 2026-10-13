@@ -65,7 +65,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <li><strong>Wind sail in storms.</strong> Thick moss curtains catch wind. During a tropical storm or hurricane, that extra drag increases the force on every branch it hangs from. A heavily draped, structurally weak tree carries more failure risk than a clean one, which is one reason our <a href="/blog/hurricane-prep-tree-trimming-deland/">hurricane-prep trimming guide for DeLand</a> starts with deadwood.</li>
           <li><strong>Shading a struggling tree.</strong> On a healthy tree, moss shade is irrelevant. But a tree already fighting to photosynthesize with a thin canopy doesn't need dense moss intercepting what light remains on its interior growth. Here, thinning the moss can buy the tree breathing room while the underlying problem gets treated.</li>
         </ul>
-        <p>That's why moss management works best as part of a broader <a href="/services/tree-maintenance-care/">tree maintenance and care plan</a>, not as a standalone fix.</p>
+        <p>That's why moss management works best as part of a broader <a href="/services/tree-trimming-services/">tree maintenance and care plan</a>, not as a standalone fix.</p>
 
         <h2>What About Ball Moss? Is It Different?</h2>
         <p>Ball moss (<em>Tillandsia recurvata</em>) is a compact cousin of Spanish moss and is not different in how it treats the tree. It is another air-fed, non-parasitic bromeliad. Instead of long gray strands, it grows in dense, grayish-green tufts the size of a softball, packed along interior branches and twigs.</p>
@@ -92,8 +92,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
           <h3>Related Tree Services</h3>
           <ul>
             <li><a href="/services/certified-arborist-services/">Certified Arborist Services</a></li>
-            <li><a href="/services/tree-maintenance-care/">Tree Maintenance & Care</a></li>
-            <li><a href="/services/tree-trimming-services/">Tree Trimming Services</a></li>
+            <li><a href="/services/tree-trimming-services/">Tree Trimming &amp; Pruning</a></li>
             <li><a href="/services/dead-hazardous-tree-removal/">Dead & Hazardous Tree Removal</a></li>
           </ul>
         </div>
